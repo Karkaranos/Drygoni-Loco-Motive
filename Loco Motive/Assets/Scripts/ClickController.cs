@@ -44,6 +44,7 @@ public class Controller : MonoBehaviour
             if (hit.transform.GetComponent<RoomMove>())
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
+                transform.position = new Vector3(transform.position.x, transform.position.y, -10);
             }
 
         }
