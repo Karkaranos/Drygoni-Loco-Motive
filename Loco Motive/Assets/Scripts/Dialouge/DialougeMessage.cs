@@ -7,8 +7,6 @@ public class DialougeMessage
 {
     public string Message;
     public string Speaker;
-    //Public Sprite Portrait;
-    public Sprite Maiden;
-    public Sprite HeroM;
-    public Sprite HeroF;
+    public Sprite Portrait;
+    
 }
