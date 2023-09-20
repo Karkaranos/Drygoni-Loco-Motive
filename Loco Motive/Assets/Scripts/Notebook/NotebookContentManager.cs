@@ -19,7 +19,7 @@ public class NotebookContentManager : MonoBehaviour
     [SerializeField] private Sprite item1;
     [SerializeField] private Sprite item2;
 
-    private static int ITEMS_PER_PAGE = 7;
+    public int ITEMS_PER_PAGE = 7;
     #endregion
 
     #region Functions
@@ -62,6 +62,17 @@ public class NotebookContentManager : MonoBehaviour
         image[1] = item2;
 
 
+    }
+
+    public void BasicInformationVisible(int pageNumber)
+    {
+        for (int i = 0; i < ITEMS_PER_PAGE; i++)
+        {
+            if (i != 3)
+            {
+                contentVisible[pageNumber, i] = true;
+            }
+        }
     }
 
     #endregion

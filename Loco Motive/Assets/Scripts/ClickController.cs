@@ -47,6 +47,10 @@ public class Controller : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
             }
 
+            if (hit.transform.GetComponent<ObjectHandler>())
+            {
+                hit.transform.GetComponent<ObjectHandler>().Interact();
+            }
         }
     }
 

@@ -54,6 +54,8 @@ public class NotebookManager : MonoBehaviour
         content[4] = bodyText3;
         content[5] = subHeader;
 
+        notebook.SetActive(false);
+
     }
 
     /// <summary>
@@ -99,7 +101,6 @@ public class NotebookManager : MonoBehaviour
             photo.sprite = ncm.image[currentPage];
         }
     }
-
 
     // temp function- remove later
     void Update()
