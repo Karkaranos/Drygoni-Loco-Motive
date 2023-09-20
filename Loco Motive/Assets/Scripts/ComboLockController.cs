@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ComboLockController : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class ComboLockController : MonoBehaviour
     public int correctDigitTwo;
     public int correctDigitThree;
     public GameObject OpenSafe;
+    public TMP_Text SafeText;
+    public GameObject DigitOne;
+    public GameObject DigitTwo;
+    public GameObject DigitThree;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +29,16 @@ public class ComboLockController : MonoBehaviour
         {
             OpenLock();
         }
+        SafeText.text = digitOne + "  " + digitTwo + "  " + digitThree;
     }
 
     void OpenLock()
     {
-
+        OpenSafe.SetActive(true);
+        Destroy(DigitOne);
+        Destroy(DigitTwo);
+        Destroy(DigitThree);
+        Destroy(SafeText);
+        Destroy(gameObject);
     }
 }
