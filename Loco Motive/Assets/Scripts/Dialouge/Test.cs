@@ -19,7 +19,6 @@ public class Test : MonoBehaviour
         //Scene currentScene = SceneManager.GetActiveScene();
         dialouge = DialougeSystem.instance;
         //sceneName = currentScene.name;
-        
     }
 
 
@@ -29,19 +28,16 @@ public class Test : MonoBehaviour
     {
         // if (GameController.Gc.CurrentLevel.CurrentState == LevelController.LevelState.dialogue)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return)) //Change to new input system
             {
-
                 if (i >= MyMessages.Length)
                 {
-
                     //Idk what we need this for yet
                     return;
                 }
                 Say(MyMessages[i]);
                 Level.PlayOneShot(Click);
                 i++;
-
             }
         }
         void Say(DialougeMessage message)
