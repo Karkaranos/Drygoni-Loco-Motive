@@ -46,17 +46,17 @@ public class NotebookManager : MonoBehaviour
 
     private void GetPageInformation()
     {
-
         pageTitle.text = ncm.notebookContent[currentPage, 0];
         imageCaption.text = ncm.notebookContent[currentPage, 1];
         bodyText1.text = ncm.notebookContent[currentPage, 2];
         bodyText2.text = ncm.notebookContent[currentPage, 3];
         bodyText3.text = ncm.notebookContent[currentPage, 4];
         subHeader.text = ncm.notebookContent[currentPage, 5];
+        photo.sprite = ncm.image[currentPage];
     }
 
 
-    // Update is called once per frame
+    // temp function- remove later
     void Update()
     {
         GetPageInformation();
