@@ -20,10 +20,8 @@ public class InventoryBehavior : MonoBehaviour
     [Header("Inventory General")]
     [SerializeField] private int inventorySize;
     [SerializeField] private Sprite placeholder;
-    private Sprite[] inventoryVisual;
-    private Image[] inventorySpaces;
-    private Items[] inventoryName;
-    public enum Items {EMPTY, ITEM1, ITEM2, ITEM3, ITEM4, ITEM5 }
+    [SerializeField] private GameObject inventory;
+
 
     [Header("Inventory Potential Contents")]
     [SerializeField] private Sprite item1;
@@ -45,6 +43,11 @@ public class InventoryBehavior : MonoBehaviour
     public int itemAdded;
     public int itemRemoved;
 
+    private Sprite[] inventoryVisual;
+    private Image[] inventorySpaces;
+    private Items[] inventoryName;
+    public enum Items { EMPTY, ITEM1, ITEM2, ITEM3, ITEM4, ITEM5 }
+
     #endregion
 
 
@@ -62,8 +65,26 @@ public class InventoryBehavior : MonoBehaviour
         inventorySpaces = new Image[inventorySize];
         inventoryName = new Items[inventorySize];
 
-        PopulateArrays();        
+        PopulateArrays();
 
+        CloseInventory();
+
+    }
+
+    /// <summary>
+    /// Opens the inventory Screen
+    /// </summary>
+    public void OpenInventory()
+    {
+        inventory.SetActive(true);
+    }
+
+    /// <summary>
+    /// Closes the inventory Screen
+    /// </summary>
+    public void CloseInventory()
+    {
+        inventory.SetActive(false);
     }
 
     /// <summary>
