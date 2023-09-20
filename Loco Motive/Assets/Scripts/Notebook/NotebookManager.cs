@@ -3,8 +3,8 @@
 // Author :            Cade R. Naylor
 // Creation Date :     September 18, 2023
 //
-// Brief Description :  Handles adding objects to the inventory and removing them,
-                        as well as updating the inventory
+// Brief Description :  Handles updating the notebook with what the player knows
+                        and switching pages
 *****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
@@ -18,6 +18,7 @@ public class NotebookManager : MonoBehaviour
 
     [Header("Notebook General")]
     public int currentPage;
+    [SerializeField] private GameObject notebook;
 
     [Header("Notebook Content")]
     [SerializeField] private TMP_Text pageTitle;
@@ -27,6 +28,9 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private TMP_Text bodyText3;
     [SerializeField] private TMP_Text subHeader;
     [SerializeField] private Image photo;
+    private TMP_Text[] content;
+
+    private static int TEXT_ITEMS_PER_PAGE = 6;
 
     private NotebookContentManager ncm;
     #endregion
@@ -41,18 +45,59 @@ public class NotebookManager : MonoBehaviour
 
         currentPage = 0;
 
+        content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
+
+        content[0] = pageTitle;
+        content[1] = imageCaption;
+        content[2] = bodyText1;
+        content[3] = bodyText2;
+        content[4] = bodyText3;
+        content[5] = subHeader;
+
     }
 
+    /// <summary>
+    /// Opens the notebook Screen and gets its information
+    /// </summary>
+    public void OpenNotebook()
+    {
+        notebook.SetActive(true);
+        GetPageInformation();
+    }
 
+    /// <summary>
+    /// Closes the notebook Screen
+    /// </summary>
+    public void CloseNotebook()
+    {
+        notebook.SetActive(false);
+    }
+
+    /// <summary>
+    /// Takes the current page and checks what information is available, then sets
+    /// the current information to what the player knows for each item
+    /// </summary>
     private void GetPageInformation()
     {
-        pageTitle.text = ncm.notebookContent[currentPage, 0];
-        imageCaption.text = ncm.notebookContent[currentPage, 1];
-        bodyText1.text = ncm.notebookContent[currentPage, 2];
-        bodyText2.text = ncm.notebookContent[currentPage, 3];
-        bodyText3.text = ncm.notebookContent[currentPage, 4];
-        subHeader.text = ncm.notebookContent[currentPage, 5];
-        photo.sprite = ncm.image[currentPage];
+        //Sets the visible content
+        for(int i=0; i<TEXT_ITEMS_PER_PAGE; i++)
+        {
+            //If the player can see the content, set its text to the provided info
+            if (ncm.contentVisible[currentPage, i])
+            {
+                content[i].text = ncm.notebookContent[currentPage, i];
+            }
+            //Otherwise, indicate the player does not know the information
+            else
+            {
+                content[i].text = "???";
+            }
+        }
+
+        if(ncm.contentVisible[currentPage, 6])
+        {
+            photo.sprite = ncm.image[currentPage];
+        }
     }
 
 
