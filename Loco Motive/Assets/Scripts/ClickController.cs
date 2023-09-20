@@ -90,6 +90,10 @@ public class Controller : MonoBehaviour
                 }
             }
 
+            if (hit.transform.GetComponent<ObjectHandler>())
+            {
+                hit.transform.GetComponent<ObjectHandler>().Interact();
+            }
         }
     }
 
