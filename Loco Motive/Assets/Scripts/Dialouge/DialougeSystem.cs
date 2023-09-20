@@ -1,7 +1,7 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class DialougeSystem : MonoBehaviour
 {
@@ -10,17 +10,14 @@ public class DialougeSystem : MonoBehaviour
     public GameObject SpeechPanel;
     public TMP_Text SpeakerNameText;
     public TMP_Text SpeechText;
+    public Sprite Portrait;
 
-    public Image Player;
-    public Image Maiden;
+    // Use in interrogation
+    public Image OtherPerson;
 
     public bool IsWaitingForInput = false;
     Coroutine Speaking = null;
 
-    public Sprite PlayerM;
-    public Sprite PlayerF;
-
-   
     private void Awake()
     {
         instance = this;
@@ -29,28 +26,15 @@ public class DialougeSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var playerCharcater = PlayerPrefs.GetInt("SelectedCharacter");
-        if (playerCharcater == 0)
-        {
-            Player.sprite = PlayerM; // check player pref
-        }
-        else if (playerCharcater == 1)
-        {
-            Player.sprite = PlayerF;
-        }
+
+        //OtherPerson.sprite = Portrait; 
+
     }
     public void Say(DialougeMessage message)
     {
-        var playerCharcater = PlayerPrefs.GetInt("SelectedCharacter");
-        if (playerCharcater == 0)
-        {
-            Player.sprite = message.HeroM; // check player pref
-        }
-        else if (playerCharcater == 1)
-        {
-            Player.sprite = message.HeroF;
-        }
-        Maiden.sprite = message.Maiden;
+        OtherPerson.sprite = message.Portrait; 
+        
+        //Maiden.sprite = message.Maiden;
         StopSpeaking();
         Speaking = StartCoroutine(speaking(message.Message, message.Speaker));
     }
@@ -65,19 +49,15 @@ public class DialougeSystem : MonoBehaviour
             Speaking = null;
         }
     }
-    /*if(Speaking != null)
-        {
-        IsSpeaking = true;
-        }*/
 
-
+    //no way to progress dialogue yet
     IEnumerator speaking(string targetSpeech, string speaker)
     {
         SpeechPanel.SetActive(true);
         SpeechText.text = "";
         SpeakerNameText.text = speaker;
         IsWaitingForInput = false;
-        
+
         while (SpeechText.text != targetSpeech)
         {
             SpeechText.text += targetSpeech[SpeechText.text.Length];
