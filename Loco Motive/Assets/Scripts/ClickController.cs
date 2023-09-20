@@ -14,6 +14,8 @@ public class Controller : MonoBehaviour
 
     private Vector2 currPos;
 
+    public ComboLockController clc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,11 @@ public class Controller : MonoBehaviour
         currPos = mPos.ReadValue<Vector2>();
     }
 
+    /// <summary>
+    /// When the player clicks, uses raycasting to hit the gameObject they clicked,
+    /// then checks what they hit if they hit something
+    /// </summary>
+    /// <param name="obj"></param>
     private void Interact_performed(InputAction.CallbackContext obj)
     {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(currPos), Vector2.zero);
@@ -45,6 +52,42 @@ public class Controller : MonoBehaviour
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+            }
+
+            else if (hit.collider.CompareTag("DigitOne"))
+            {
+                if (clc.digitOne == 9)
+                {
+                    clc.digitOne = 0;
+                }
+                else
+                {
+                    clc.digitOne += 1;
+                }
+            }
+
+            else if (hit.collider.CompareTag("DigitTwo"))
+            {
+                if (clc.digitTwo == 9)
+                {
+                    clc.digitTwo = 0;
+                }
+                else
+                {
+                    clc.digitTwo += 1;
+                }
+            }
+
+            if (hit.collider.CompareTag("DigitThree"))
+            {
+                if (clc.digitThree == 9)
+                {
+                    clc.digitThree = 0;
+                }
+                else
+                {
+                    clc.digitThree += 1;
+                }
             }
 
         }
