@@ -36,6 +36,7 @@ public class ObjectHandler : MonoBehaviour
         if (updatesNotebook)
         {
             ncm.BasicInformationVisible(pageNumber);
+            nm.GetPageInformation();
         }
         Destroy(gameObject);
     }

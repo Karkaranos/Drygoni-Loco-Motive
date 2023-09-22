@@ -79,7 +79,7 @@ public class NotebookManager : MonoBehaviour
     /// Takes the current page and checks what information is available, then sets
     /// the current information to what the player knows for each item
     /// </summary>
-    private void GetPageInformation()
+    public void GetPageInformation()
     {
         //Sets the visible content
         for(int i=0; i<TEXT_ITEMS_PER_PAGE; i++)
@@ -100,12 +100,31 @@ public class NotebookManager : MonoBehaviour
         {
             photo.sprite = ncm.image[currentPage];
         }
+        else
+        {
+            photo.sprite = ncm.empty;
+        }
     }
 
-    // temp function- remove later
-    void Update()
+    /// <summary>
+    /// Moves the player to the next notebook page, if applicable
+    /// </summary>
+    public void NextPage()
     {
-        GetPageInformation();
+        if(currentPage < ncm.pageCount-1)
+        {
+            currentPage++;
+            GetPageInformation();
+        }
+    }
+
+    public void PreviousPage()
+    {
+        if(currentPage > 0)
+        {
+            currentPage--;
+            GetPageInformation();
+        }
     }
 
     #endregion
