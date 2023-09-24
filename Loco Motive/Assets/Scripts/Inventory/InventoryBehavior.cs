@@ -23,6 +23,8 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private GameObject inventory;
     [SerializeField] private GameObject inventoryIcon;
     [SerializeField] private GameObject notebookManager;
+    [SerializeField] private GameObject inventoryLarge;
+    [SerializeField] private Image largeObject;
 
 
     [Header("Inventory Potential Contents")]
@@ -90,6 +92,18 @@ public class InventoryBehavior : MonoBehaviour
     {
         inventory.SetActive(false);
         inventoryIcon.SetActive(true);
+    }
+
+    public void OpenLargeView(int i)
+    {
+        inventoryLarge.SetActive(true);
+        largeObject.sprite = inventoryVisual[i-1];
+    }
+
+    public void CloseLargeView()
+    {
+        inventoryLarge.SetActive(false);
+        largeObject.sprite = placeholder;
     }
 
     /// <summary>
