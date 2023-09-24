@@ -1,16 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class Test : MonoBehaviour
 {
+    private PlayerInput mouseController;
+
+    private InputAction playDialogue;
+
     DialougeSystem dialouge;
     public DialougeMessage[] MyMessages;
 
     //string sceneName;
     //public GameObject ChoicePanel;
 
-    public AudioSource Level;
-    public AudioClip Click;
+    //public AudioSource Level;
+    //public AudioClip Click;
     public bool InEnding;
 
     // Start is called before the first frame update
@@ -19,6 +24,11 @@ public class Test : MonoBehaviour
         //Scene currentScene = SceneManager.GetActiveScene();
         dialouge = DialougeSystem.instance;
         //sceneName = currentScene.name;
+
+        mouseController = GetComponent<PlayerInput>();
+        mouseController.currentActionMap.Enable();
+
+        playDialogue = mouseController.currentActionMap.FindAction("ProgressDialogue");
     }
 
 
@@ -27,19 +37,18 @@ public class Test : MonoBehaviour
     void Update()
     {
         // if (GameController.Gc.CurrentLevel.CurrentState == LevelController.LevelState.dialogue)
+    }
+
+    public void PlayDialogue()
+    {
+        if (i >= MyMessages.Length)
         {
-            if (Input.GetKeyDown(KeyCode.Return)) //Change to new input system
-            {
-                if (i >= MyMessages.Length)
-                {
-                    //Idk what we need this for yet
-                    return;
-                }
-                Say(MyMessages[i]);
-                Level.PlayOneShot(Click);
-                i++;
-            }
+            return;
         }
+        Say(MyMessages[i]);
+        //Level.PlayOneShot(Click);
+        i++;
+
         void Say(DialougeMessage message)
         {
             dialouge.Say(message);
