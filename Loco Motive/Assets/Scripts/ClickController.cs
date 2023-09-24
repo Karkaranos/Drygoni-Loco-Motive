@@ -3,18 +3,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class Controller : MonoBehaviour
 {
     private PlayerInput mouseController;
 
     private InputAction mPos;
-
     private InputAction interact;
 
     private Vector2 currPos;
 
     public ComboLockController clc;
+    public StoredDialogue sd;
+
+    public bool isTalking = false;
+    public int currDialogue = 0;
+    public int currTalkChar;
+    public int strLength;
+    public int branchNum;
+    public bool interrogating = false;
+
+    
+    //CHANGE THIS TO 0 AFTER MERGE, IS CURRENTLY 4 FOR TESTING
+    public int interrogateEvidence = 4;
+    public int interrogateCount = 0;
+    public bool askedOne = false;
+    public bool askedTwo = false;
+    public bool askedThree = false;
+    public bool askedFour = false;
+
+    public TMP_Text DialogueBox;
+    public TMP_Text DialogueBoxI;
+    public TMP_Text SpeakerName;
+    public TMP_Text SpeakerNameI;
+    public TMP_Text ButtonTextOne;
+    public TMP_Text ButtonTextTwo;
+    public TMP_Text ContinueText;
+    public TMP_Text QuestionOne;
+    public TMP_Text QuestionTwo;
+    public TMP_Text QuestionThree;
+    public TMP_Text QuestionFour;
+
+    public GameObject DialogueScreen;
+    public GameObject InterrogationScreen;
+    public GameObject BranchButtons;
+    public GameObject BranchButtonsI;
+    public GameObject BranchButtonI1;
+    public GameObject BranchButtonI2;
+    public GameObject BranchButtonI3;
+    public GameObject BranchButtonI4;
+    public GameObject ContinueButton;
+    public GameObject ContinueButtonI;
+    public GameObject InterrogateButton;
+
+
+    // MAKE SURE TO REMOVE THIS, IT IS JUST TO SHOW THAT INTERROGATION MAKES OBJECTS BECOME INTERACTABLE
+    public GameObject TempInterrogateObject;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,19 +68,30 @@ public class Controller : MonoBehaviour
         mouseController = GetComponent<PlayerInput>();
         mouseController.currentActionMap.Enable();
 
+
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
 
         interact.performed += Interact_performed;
 
+        ContinueText.text = "Continue";
 
+        DialogueScreen.SetActive(false);
+        InterrogationScreen.SetActive(false);
     }
 
-    
+
+
     void Update()
     {
         currPos = mPos.ReadValue<Vector2>();
+
+        if (interrogateEvidence >= 4)
+        {
+            InterrogateButton.SetActive(true);
+        }
     }
+
 
     /// <summary>
     /// When the player clicks, uses raycasting to hit the gameObject they clicked,
@@ -47,11 +104,22 @@ public class Controller : MonoBehaviour
 
         if (hit.collider != null)
         {
-            //Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
+
+            if (hit.transform.GetComponent<ObjectHandler>())
+            {
+                hit.transform.GetComponent<ObjectHandler>().Interact();
+            }
             if (hit.transform.GetComponent<RoomMove>())
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+            }
+
+            else if (hit.collider.CompareTag("SuspectOne"))
+            {
+                currTalkChar = 1;
+                strLength = 0;
+                StartDialogue();
             }
 
             else if (hit.collider.CompareTag("DigitOne"))
@@ -78,7 +146,7 @@ public class Controller : MonoBehaviour
                 }
             }
 
-            if (hit.collider.CompareTag("DigitThree"))
+            else if (hit.collider.CompareTag("DigitThree"))
             {
                 if (clc.digitThree == 9)
                 {
@@ -89,14 +157,244 @@ public class Controller : MonoBehaviour
                     clc.digitThree += 1;
                 }
             }
+        }
+    }
 
-            if (hit.transform.GetComponent<ObjectHandler>())
+
+
+    /// <summary>
+    /// Starts playing dialogue when a character is clicked
+    /// </summary>
+    public void StartDialogue()
+    {
+        isTalking = true;
+        if (currTalkChar == 1)
+        {
+            DialogueScreen.SetActive(true);
+            SpeakerName.text = "Suspect One";
+            ButtonTextOne.text = sd.sOneResponse[0];
+            ButtonTextTwo.text = sd.sOneResponse[1];
+            DialogueBox.text = sd.sOneDialogue[currDialogue];
+            ContinueButton.SetActive(false);
+            BranchButtons.SetActive(true);
+        }
+    }
+
+    public void StartInterrogation()
+    {
+        interrogateCount += interrogateEvidence - 1;
+        interrogateEvidence = 0;
+        interrogating = true;
+        DialogueScreen.SetActive(false);
+        InterrogateButton.SetActive(false);
+        InterrogationScreen.SetActive(true);
+        ContinueButton.SetActive(false);
+        if (currTalkChar == 1)
+        {
+            SpeakerNameI.text = "Suspect One";
+            QuestionOne.text = sd.sOneQuestionsI1[0];
+            QuestionTwo.text = sd.sOneQuestionsI1[1];
+            QuestionThree.text = sd.sOneQuestionsI1[2];
+            QuestionFour.text = sd.sOneQuestionsI1[3];
+            DialogueBoxI.text = "";
+        }
+    }
+
+    public void ProgDialogue()
+    {
+        if (currTalkChar == 1 && strLength != currDialogue && interrogating == false)
+        {
+            if(branchNum == 1)
             {
-                hit.transform.GetComponent<ObjectHandler>().Interact();
+                currDialogue++;
+                DialogueBox.text = sd.sOneDialogueB1[currDialogue];
+            }
+
+            else if (branchNum == 2)
+            {
+                currDialogue++;
+                DialogueBox.text = sd.sOneDialogueB2[currDialogue];
+            }
+
+            else if (branchNum == 3)
+            {
+                currDialogue++;
+                //DialogueBox.text = sd.sOneDialogueB3[currDialogue];
+            }
+
+            else if (branchNum == 4)
+            {
+                currDialogue++;
+                //DialogueBox.text = sd.sOneDialogueB4[currDialogue];
+            }
+        }
+
+        else if (currTalkChar == 1 && strLength != currDialogue && interrogating == true)
+        {
+            if (branchNum == 1)
+            {
+                currDialogue++;
+                DialogueBoxI.text = sd.sOneDialogueI1B1[currDialogue];
+            }
+
+            else if (branchNum == 2)
+            {
+                currDialogue++;
+                DialogueBoxI.text = sd.sOneDialogueI1B2[currDialogue];
+            }
+
+            else if (branchNum == 3)
+            {
+                currDialogue++;
+                DialogueBoxI.text = sd.sOneDialogueI1B3[currDialogue];
+            }
+
+            else if (branchNum == 4)
+            {
+                currDialogue++;
+                DialogueBoxI.text = sd.sOneDialogueI1B4[currDialogue];
+            }
+        }
+
+        else
+        {
+            currDialogue = 0;
+            strLength = 0;
+            isTalking = false;
+            
+            if (interrogating == false)
+            {
+                DialogueScreen.SetActive(false);
+            }
+            
+            else if (interrogating == true && interrogateCount > 0)
+            {
+                interrogateCount -= 1;
+                DialogueBoxI.text = "";
+                BranchButtonsI.SetActive(true);
+                ContinueButtonI.SetActive(false);
+
+                if (askedOne == true)
+                {
+                    BranchButtonI1.SetActive(false);
+                }
+
+                if (askedTwo == true)
+                {
+                    BranchButtonI2.SetActive(false);
+                }
+
+                if (askedThree == true)
+                {
+                    BranchButtonI3.SetActive(false);
+                }
+
+                if (askedFour == true)
+                {
+                    BranchButtonI4.SetActive(false);
+                }
+            }
+
+            else if (interrogating == true && interrogateCount <= 0)
+            {
+                interrogating = false;
+                InterrogationScreen.SetActive(false);
             }
         }
     }
 
+
+    
+
+
+    public void BranchOne()
+    {
+        branchNum = 1;
+        if (currTalkChar == 1)
+        {
+            if (interrogating == false)
+            {
+                DialogueBox.text = sd.sOneDialogueB1[0];
+                strLength = 2;
+                BranchButtons.SetActive(false);
+                ContinueButton.SetActive(true);
+            }
+
+            else if (interrogating == true)
+            {
+                DialogueBoxI.text = sd.sOneDialogueI1B1[0];
+                strLength = 1;
+                currDialogue = 0;
+                BranchButtonsI.SetActive(false);
+                ContinueButton.SetActive(true);
+                TempInterrogateObject.SetActive(true);
+
+            }
+        }
+    }
+
+
+    public void BranchTwo()
+    {
+        branchNum = 2;
+        if (currTalkChar == 1)
+        {
+            if (interrogating == false)
+            {
+                DialogueBox.text = sd.sOneDialogueB2[0];
+                strLength = 2;
+                BranchButtons.SetActive(false);
+                ContinueButton.SetActive(true);
+            }
+            
+            else if (interrogating == true)
+            {
+                DialogueBoxI.text = sd.sOneDialogueI1B2[0];
+                strLength = 1;
+                BranchButtonsI.SetActive(false);
+                ContinueButtonI.SetActive(true);
+            }
+        }
+    }
+
+
+    public void BranchThree()
+    {
+        branchNum = 3;
+        if (currTalkChar == 1)
+        {
+            if (interrogating == false)
+            {
+
+            }
+
+            if (interrogating == true)
+            {
+                DialogueBoxI.text = sd.sOneDialogueI1B3[0];
+                strLength = 1;
+                BranchButtonsI.SetActive(false);
+                ContinueButtonI.SetActive(true);
+            }
+        }
+    }
+
+
+    public void BranchFour()
+    {
+        branchNum = 4;
+        if (interrogating == false)
+        {
+
+        }
+
+        if (interrogating == true)
+        {
+            DialogueBoxI.text = sd.sOneDialogueI1B4[0];
+            strLength = 1;
+            BranchButtonsI.SetActive(false);
+            ContinueButtonI.SetActive(true);
+        }
+    }
 
 
 
