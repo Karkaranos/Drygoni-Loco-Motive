@@ -21,6 +21,8 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private int inventorySize;
     [SerializeField] private Sprite placeholder;
     [SerializeField] private GameObject inventory;
+    [SerializeField] private GameObject inventoryIcon;
+    [SerializeField] private GameObject notebookManager;
 
 
     [Header("Inventory Potential Contents")]
@@ -36,7 +38,6 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private Image slot3;
     [SerializeField] private Image slot4;
     [SerializeField] private Image slot5;
-
 
     #endregion
 
@@ -76,7 +77,10 @@ public class InventoryBehavior : MonoBehaviour
     /// </summary>
     public void OpenInventory()
     {
+        notebookManager.GetComponent<NotebookManager>().CloseNotebook();
         inventory.SetActive(true);
+        UpdateInventory();
+        inventoryIcon.SetActive(false);
     }
 
     /// <summary>
@@ -85,6 +89,7 @@ public class InventoryBehavior : MonoBehaviour
     public void CloseInventory()
     {
         inventory.SetActive(false);
+        inventoryIcon.SetActive(true);
     }
 
     /// <summary>
