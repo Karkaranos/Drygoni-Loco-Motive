@@ -19,6 +19,10 @@ public class NotebookManager : MonoBehaviour
     [Header("Notebook General")]
     public int currentPage;
     [SerializeField] private GameObject notebook;
+    [SerializeField] private GameObject notebookIcon;
+    [SerializeField] private GameObject inventoryManager;
+    [SerializeField] private GameObject nextPage;
+    [SerializeField] private GameObject lastPage;
 
     [Header("Notebook Content")]
     [SerializeField] private TMP_Text pageTitle;
@@ -28,7 +32,9 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private TMP_Text bodyText3;
     [SerializeField] private TMP_Text subHeader;
     [SerializeField] private Image photo;
+    [SerializeField] private TMP_Text pageNumber;
     private TMP_Text[] content;
+
 
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
@@ -64,7 +70,9 @@ public class NotebookManager : MonoBehaviour
     public void OpenNotebook()
     {
         notebook.SetActive(true);
+        inventoryManager.GetComponent<InventoryBehavior>().CloseInventory();
         GetPageInformation();
+        notebookIcon.SetActive(false);
     }
 
     /// <summary>
@@ -73,6 +81,7 @@ public class NotebookManager : MonoBehaviour
     public void CloseNotebook()
     {
         notebook.SetActive(false);
+        notebookIcon.SetActive(true);
     }
 
     /// <summary>
@@ -104,6 +113,27 @@ public class NotebookManager : MonoBehaviour
         {
             photo.sprite = ncm.empty;
         }
+
+        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
+
+        if(currentPage == 0)
+        {
+            lastPage.SetActive(false);
+        }
+        else
+        {
+            lastPage.SetActive(true);
+        }
+
+        if(currentPage+1 < ncm.pageCount)
+        {
+            nextPage.SetActive(true);
+        }
+        else
+        {
+            nextPage.SetActive(false);
+        }
+
     }
 
     /// <summary>

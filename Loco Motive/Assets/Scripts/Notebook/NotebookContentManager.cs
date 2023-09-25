@@ -16,7 +16,7 @@ public class NotebookContentManager : MonoBehaviour
     public string[,] notebookContent;
     public Sprite[] image;
     public bool[,] contentVisible;
-    [SerializeField] public Sprite empty;
+    public Sprite empty;
     [SerializeField] private Sprite item1;
     [SerializeField] private Sprite item2;
 
