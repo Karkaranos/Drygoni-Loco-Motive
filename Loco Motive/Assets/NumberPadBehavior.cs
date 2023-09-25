@@ -9,6 +9,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class NumberPadBehavior : MonoBehaviour
@@ -18,9 +19,11 @@ public class NumberPadBehavior : MonoBehaviour
     [SerializeField] private int code;
     [SerializeField] private bool startsWith0;
     [SerializeField] private int digitsInCode;
-    private int playerGuess;
+    private int playerGuess = 0;
     private bool playerGuessStartWith0 = false;
     private int digitsEntered=0;
+    [SerializeField] private TMP_Text codeText;
+    [SerializeField] private GameObject numberPadObject;
 
 
     public bool unlocked = false;
@@ -69,6 +72,14 @@ public class NumberPadBehavior : MonoBehaviour
             }
             //Increase the number of digits guessed
             digitsEntered++;
+            if (playerGuessStartWith0 && playerGuess!=0)
+            {
+                codeText.text = "0" + playerGuess;
+            }
+            else
+            {
+                codeText.text = playerGuess.ToString();
+            }
         }
         //Otherwise if there are the same number of digits in both, check the code
         else
@@ -91,13 +102,25 @@ public class NumberPadBehavior : MonoBehaviour
                 unlocked = true;
                 print("Lock Broken!");
                 numberPad.SetActive(false);
+                numberPadObject.SetActive(false);
             }
             //Otherwise reset the lock
             else
             {
                 playerGuess = 0;
+                digitsEntered = 0;
                 print("fail");
+                playerGuessStartWith0 = false;
+                codeText.text = "WRONG";
             }
+        }
+        else
+        {
+            playerGuess = 0;
+            digitsEntered = 0;
+            print("fail");
+            playerGuessStartWith0 = false;
+            codeText.text = "WRONG";
         }
     }
 
@@ -107,6 +130,20 @@ public class NumberPadBehavior : MonoBehaviour
     public void CloseLock()
     {
         numberPad.SetActive(false);
+        playerGuess = 0;
+        digitsEntered = 0;
+        numberPadObject.SetActive(true);
+        playerGuessStartWith0 = false;
+    }
+
+    /// <summary>
+    /// Opens the lock window
+    /// </summary>
+    public void OpenLock()
+    {
+        numberPad.SetActive(true);
+        numberPadObject.SetActive(false);
+        codeText.text = playerGuess.ToString();
     }
     #endregion
 }

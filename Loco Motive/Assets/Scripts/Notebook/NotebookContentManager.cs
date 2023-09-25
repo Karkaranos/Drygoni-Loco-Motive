@@ -44,16 +44,16 @@ public class NotebookContentManager : MonoBehaviour
 
         //Page 1 content
         notebookContent[0, 0] = "Evidence 1";
-        notebookContent[0, 1] = "A leaf of a toxic plant";
-        notebookContent[0, 2] = "This item was found in Suspect 1's car behind a locked box.";
-        notebookContent[0, 3] = "After talking to Suspect 1, we learned they found this item in the kitchen. I should investigate the kitchen to see if there is more information about this item.";
+        notebookContent[0, 1] = "A Signed Photo of Corporate Ladder";
+        notebookContent[0, 2] = "This item was found in Suspect 1's room behind a locked box. It must be a highly prized posession.";
+        notebookContent[0, 3] = "Hunter was tempted to steal this item and keep it for himself. I tried to stop him from stealing it- We are detectives, not thieves. We would be acting in opposition to the law we try to uphold. I stopped him but he may have gone back and stolen it.";
         notebookContent[0, 4] = "Potential Suspect 1";
         notebookContent[0, 5] = "Suspects for Item";
 
         //Page 2 content
         notebookContent[1, 0] = "Evidence 2";
-        notebookContent[1, 1] = "A very scary monster";
-        notebookContent[1, 2] = "This item was found in the kitchen where Suspect 1 said they found the leaf.";
+        notebookContent[1, 1] = "A scary-looking Plant";
+        notebookContent[1, 2] = "This item was found in Suspect 1's room behind a locked box.";
         notebookContent[1, 3] = "More sample text describing the object, its location. Maybe this reveals after interrogating the right suspect. To differentiate this from the previous sample, here is more text.";
         notebookContent[1, 4] = "Potential Suspect\nAnother Potential Suspect\nAnother Potential Suspect";
         notebookContent[1, 5] = "Suspects for Item";
@@ -74,6 +74,11 @@ public class NotebookContentManager : MonoBehaviour
                 contentVisible[pageNumber, i] = true;
             }
         }
+    }
+
+    public void AdvancedInformationVisible(int pageNumber)
+    {
+        contentVisible[pageNumber, 3] = true;
     }
 
     #endregion
