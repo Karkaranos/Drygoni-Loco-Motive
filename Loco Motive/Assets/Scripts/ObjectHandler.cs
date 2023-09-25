@@ -27,6 +27,9 @@ public class ObjectHandler : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Adds objects to the inventory or notebook if they can be picked up
+    /// </summary>
     public void Interact()
     {
         if (canBePickedUp)

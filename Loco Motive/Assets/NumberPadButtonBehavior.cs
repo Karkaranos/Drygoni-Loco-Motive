@@ -3,7 +3,7 @@
 // Author :            Cade R. Naylor
 // Creation Date :     September 22, 2023
 //
-// Brief Description :  Passes an integer to Number Pad Behavior
+// Brief Description :  Calls functions from NumberPadBehavior
 *****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
@@ -30,5 +30,13 @@ public class NumberPadButtonBehavior : MonoBehaviour
     public void OnClick()
     {
         npb.NumberPressed(number);
+    }
+
+    /// <summary>
+    /// Opens the Numberpad that was clicked
+    /// </summary>
+    public void OpenPad()
+    {
+        npb.OpenLock();
     }
 }

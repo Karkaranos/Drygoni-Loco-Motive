@@ -109,6 +109,11 @@ public class Controller : MonoBehaviour
             {
                 hit.transform.GetComponent<ObjectHandler>().Interact();
             }
+
+            if (hit.transform.GetComponent<NumberPadButtonBehavior>())
+            {
+                hit.transform.GetComponent<NumberPadButtonBehavior>().OpenPad();
+            }
             if (hit.transform.GetComponent<RoomMove>())
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
