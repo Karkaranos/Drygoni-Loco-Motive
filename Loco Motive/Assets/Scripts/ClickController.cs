@@ -61,8 +61,8 @@ public class Controller : MonoBehaviour
     public GameObject ContinueButtonI;
     public GameObject InterrogateButton;
     public GameObject NumPadCollider;
-    public GameObject Inventory;
-    public GameObject Notebook;
+    public GameObject InventoryButton;
+    public GameObject NotebookButton;
 
 
     // Start is called before the first frame update
@@ -189,8 +189,8 @@ public class Controller : MonoBehaviour
     public void StartDialogue()
     {
         isTalking = true;
-        Inventory.SetActive(false);
-        Notebook.SetActive(false);
+        InventoryButton.SetActive(false);
+        NotebookButton.SetActive(false);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
@@ -434,8 +434,8 @@ public class Controller : MonoBehaviour
             if (interrogating == false)
             {
                 DialogueScreen.SetActive(false);
-                Inventory.SetActive(true);
-                Notebook.SetActive(true);
+                InventoryButton.SetActive(true);
+                NotebookButton.SetActive(true);
             }
 
             else if (interrogating == true && interrogateCount > 0)
@@ -474,8 +474,8 @@ public class Controller : MonoBehaviour
                 askedTwo = false;
                 askedThree = false;
                 askedFour = false;
-                Inventory.SetActive(true);
-                Notebook.SetActive(true);
+                InventoryButton.SetActive(true);
+                NotebookButton.SetActive(true);
             }
         }
     }
