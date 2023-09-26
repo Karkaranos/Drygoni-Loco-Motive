@@ -8,6 +8,8 @@ TagManager:
   - DigitTwo
   - DigitThree
   - SuspectOne
+  - Hunter
+  - NumPadCollider
   layers:
   - Default
   - TransparentFX
