@@ -22,6 +22,7 @@ public class Controller : MonoBehaviour
     public int currTalkChar;
     public int strLength;
     public int branchNum;
+    public int currSpeaker;
     public bool interrogating = false;
 
 
@@ -351,21 +352,21 @@ public class Controller : MonoBehaviour
                 interrogateEvidence += 1;
                 currDialogue++;
                 DialogueBoxI.text = sd.hDialogueIB1[currDialogue];
-                SpeakerName.text = sd.hIB1Names[currDialogue];
+                SpeakerNameI.text = sd.hIB1Names[currDialogue];
             }
 
             else if (branchNum == 2)
             {
                 currDialogue++;
                 DialogueBoxI.text = sd.hDialogueIB2[currDialogue];
-                SpeakerName.text = sd.hIB2Names[currDialogue];
+                SpeakerNameI.text = sd.hIB2Names[currDialogue];
             }
 
             else if (branchNum == 3)
             {
                 currDialogue++;
                 DialogueBoxI.text = sd.hDialogueIB3[currDialogue];
-                SpeakerName.text = sd.hIB3Names[currDialogue];
+                SpeakerNameI.text = sd.hIB3Names[currDialogue];
             }
         }
 
@@ -403,14 +404,15 @@ public class Controller : MonoBehaviour
             {
                 currDialogue++;
                 DialogueBoxI.text = sd.sOneDialogueI1B1[currDialogue];
-                SpeakerName.text = sd.sOneI1B1Names[currDialogue];
+                SpeakerNameI.text = sd.sOneI1B1Names[currDialogue];
+                
             }
 
             else if (branchNum == 2)
             {
                 currDialogue++;
                 DialogueBoxI.text = sd.sOneDialogueI1B2[currDialogue];
-                SpeakerName.text = sd.sOneI1B2Names[currDialogue];
+                SpeakerNameI.text = sd.sOneI1B2Names[currDialogue];
             }
 
             else if (branchNum == 3)
@@ -504,6 +506,7 @@ public class Controller : MonoBehaviour
             else if (interrogating == false && opening == true)
             {
                 DialogueBox.text = sd.openingB1[0];
+                SpeakerName.text = sd.oB1Names[0];
                 strLength = 5;
                 BranchButtons.SetActive(false);
                 ContinueButton.SetActive(true);
@@ -512,6 +515,7 @@ public class Controller : MonoBehaviour
             else if (interrogating == true)
             {
                 DialogueBoxI.text = sd.hDialogueIB1[0];
+                SpeakerNameI.text = sd.hIB1Names[0];
                 strLength = 6;
                 BranchButtonsI.SetActive(false);
                 ContinueButtonI.SetActive(true);
@@ -557,7 +561,7 @@ public class Controller : MonoBehaviour
             else if (interrogating == false && opening == true)
             {
                 DialogueBox.text = sd.openingB2[0];
-                SpeakerName.text = sd.oB1Names[0];
+                SpeakerName.text = sd.oB2Names[0];
                 strLength = 6;
                 BranchButtons.SetActive(false);
                 ContinueButton.SetActive(true);
@@ -611,6 +615,7 @@ public class Controller : MonoBehaviour
             if (interrogating == true)
             {
                 DialogueBoxI.text = sd.hDialogueIB3[0];
+                SpeakerNameI.text = sd.hIB3Names[0];
                 strLength = 1;
                 BranchButtonsI.SetActive(false);
                 ContinueButtonI.SetActive(true);
