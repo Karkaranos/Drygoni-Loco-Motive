@@ -65,6 +65,7 @@ public class Controller : MonoBehaviour
     public GameObject InventoryButton;
     public GameObject NotebookButton;
     public GameObject Movement;
+    private NotebookManager nm;
 
 
     // Start is called before the first frame update
@@ -73,6 +74,7 @@ public class Controller : MonoBehaviour
         mouseController = GetComponent<PlayerInput>();
         mouseController.currentActionMap.Enable();
 
+        nm = GameObject.Find("NotebookManager").GetComponent<NotebookManager>();
 
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
@@ -520,6 +522,7 @@ public class Controller : MonoBehaviour
                 BranchButtonsI.SetActive(false);
                 ContinueButtonI.SetActive(true);
                 askedOne = true;
+                nm.RevealComplexInformation(0);
             }
         }
 

@@ -42,26 +42,37 @@ public class NotebookContentManager : MonoBehaviour
             }
         }
 
-        //Page 1 content
-        notebookContent[0, 0] = "Evidence 1";
-        notebookContent[0, 1] = "A Signed Photo of Corporate Ladder";
-        notebookContent[0, 2] = "This item was found in Suspect 1's room behind a locked box. It must be a highly prized posession.";
-        notebookContent[0, 3] = "Hunter was tempted to steal this item and keep it for himself. I tried to stop him from stealing it- We are detectives, not thieves. We would be acting in opposition to the law we try to uphold. I stopped him but he may have gone back and stolen it.";
-        notebookContent[0, 4] = "Potential Suspect 1";
-        notebookContent[0, 5] = "Suspects for Item";
+        //Page 1 Content
+        notebookContent[0, 0] = "Suspect 1";
+        notebookContent[0, 1] = "A photo of Alexander";
+        notebookContent[0, 2] = "Alexander, the Chief Financial Officer and Secons-In-Charge of Defiant Door Studios. Seems friendly enough";
+        notebookContent[0, 3] = "Very passionate about his son. His son, Joseph, was born September 9, 2003(9/9/03) and makes his father very happy.";
+        notebookContent[0, 4] = "Climbing the Corporate Ladder";
+        notebookContent[0, 5] = "Potential Motive";
+
 
         //Page 2 content
-        notebookContent[1, 0] = "Evidence 2";
-        notebookContent[1, 1] = "A scary-looking Plant";
-        notebookContent[1, 2] = "This item was found in Suspect 1's room behind a locked box.";
-        notebookContent[1, 3] = "More sample text describing the object, its location. Maybe this reveals after interrogating the right suspect. To differentiate this from the previous sample, here is more text.";
-        notebookContent[1, 4] = "Potential Suspect\nAnother Potential Suspect\nAnother Potential Suspect";
+        notebookContent[1, 0] = "Evidence 1";
+        notebookContent[1, 1] = "A Signed Photo of Corporate Ladder";
+        notebookContent[1, 2] = "This item was found in Suspect 1's room behind a locked box. It must be a highly prized posession.";
+        notebookContent[1, 3] = "Hunter was tempted to steal this item and keep it for himself. I tried to stop him from stealing it- We are detectives, not thieves. We would be acting in opposition to the law we try to uphold. I stopped him but he may have gone back and stolen it.\nThis item is dated April 20th (4/20)";
+        notebookContent[1, 4] = "Potential Suspect 1";
         notebookContent[1, 5] = "Suspects for Item";
 
-        //Assigning visuals
-        image[0] = item1;
-        image[1] = item2;
+        //Page 3 content
+        notebookContent[2, 0] = "Evidence 2";
+        notebookContent[2, 1] = "A scary-looking Plant";
+        notebookContent[2, 2] = "This item was found in Suspect 1's room behind a locked box.";
+        notebookContent[2, 3] = "More sample text describing the object, its location. Maybe this reveals after interrogating the right suspect. To differentiate this from the previous sample, here is more text.";
+        notebookContent[2, 4] = "Potential Suspect\nAnother Potential Suspect\nAnother Potential Suspect";
+        notebookContent[2, 5] = "Suspects for Item";
 
+        //Assigning visuals
+        image[0] = empty;
+        image[1] = item1;
+        image[2] = item2;
+
+        BasicInformationVisible(0);
 
     }
 

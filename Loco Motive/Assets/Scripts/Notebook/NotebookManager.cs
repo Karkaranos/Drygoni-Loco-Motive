@@ -157,5 +157,10 @@ public class NotebookManager : MonoBehaviour
         }
     }
 
+
+    public void RevealComplexInformation(int pageNumber)
+    {
+        ncm.AdvancedInformationVisible(pageNumber);
+    }
     #endregion
 }
