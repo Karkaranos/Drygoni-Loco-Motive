@@ -63,6 +63,7 @@ public class Controller : MonoBehaviour
     public GameObject NumPadCollider;
     public GameObject InventoryButton;
     public GameObject NotebookButton;
+    public GameObject Movement;
 
 
     // Start is called before the first frame update
@@ -191,6 +192,7 @@ public class Controller : MonoBehaviour
         isTalking = true;
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
+        Movement.SetActive(false);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
@@ -263,6 +265,7 @@ public class Controller : MonoBehaviour
         BranchButtonI2.SetActive(true);
         BranchButtonI3.SetActive(true);
         BranchButtonI4.SetActive(true);
+        Movement.SetActive(false);
         if (currTalkChar == 0)
         {
             needNumInfo = false;
@@ -436,6 +439,7 @@ public class Controller : MonoBehaviour
                 DialogueScreen.SetActive(false);
                 InventoryButton.SetActive(true);
                 NotebookButton.SetActive(true);
+                Movement.SetActive(true);
             }
 
             else if (interrogating == true && interrogateCount > 0)
@@ -476,6 +480,7 @@ public class Controller : MonoBehaviour
                 askedFour = false;
                 InventoryButton.SetActive(true);
                 NotebookButton.SetActive(true);
+                Movement.SetActive(true);
             }
         }
     }
@@ -528,7 +533,7 @@ public class Controller : MonoBehaviour
             {
                 DialogueBoxI.text = sd.sOneDialogueI1B1[0];
                 SpeakerNameI.text = sd.sOneI1B1Names[0];
-                strLength = 1;
+                strLength = 3;
                 currDialogue = 0;
                 BranchButtonsI.SetActive(false);
                 ContinueButton.SetActive(true);

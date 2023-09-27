@@ -31,9 +31,9 @@ public class StoredDialogue : MonoBehaviour
     //public string[] sOneDialogueB2 = new string[3];
 
     public string[] sOneQuestionsI1 = new string[2];
-    public string[] sOneDialogueI1B1 = new string[3];
+    public string[] sOneDialogueI1B1 = new string[4];
     public string[] sOneDialogueI1B2 = new string[5];
-    public string[] sOneI1B1Names = new string[3];
+    public string[] sOneI1B1Names = new string[4];
     public string[] sOneI1B2Names = new string[5];
 
     // Start is called before the first frame update
@@ -129,8 +129,9 @@ public class StoredDialogue : MonoBehaviour
         sOneQuestionsI1[1] = "Destination";
         
         sOneDialogueI1B1[0] = "Is this your kid in the photo?";
-        sOneDialogueI1B1[1] = "Yes! I’m so glad you asked! That’s my son Joseph and he is the sweetest little boy in the entire world! I can still remember the first time I held him. He was born on September 9, 2003. He was so small back then, I could hold up above my head but he’s a bit too big for that now. Still, that's probably the happiest day of my life!";
-        sOneDialogueI1B1[2] = "Right, I’ve heard enough. (He seems to really love his kid, 9/9/03? That’s probably an important date to remember.)";
+        sOneDialogueI1B1[1] = "Yes! I’m so glad you asked! That’s my son Joseph and he is the sweetest little boy in the entire world!";
+        sOneDialogueI1B1[2] = "I can still remember the first time I held him. He was born on September 9, 2003. He was so small back then, I could hold up above my head but he’s a bit too big for that now. Still, that's probably the happiest day of my life!";
+        sOneDialogueI1B1[3] = "Right, I’ve heard enough. (He seems to really love his kid, 9/9/03? That’s probably an important date to remember.)";
 
         sOneDialogueI1B2[0] = "So, um, where are we going?";
         sOneDialogueI1B2[1] = "You got onto a train without knowing where it was headed? That doesn’t seem safe.";
@@ -140,7 +141,8 @@ public class StoredDialogue : MonoBehaviour
 
         sOneI1B1Names[0] = "Casey";
         sOneI1B1Names[1] = "Alexander";
-        sOneI1B1Names[2] = "Casey";
+        sOneI1B1Names[2] = "Alexander";
+        sOneI1B1Names[3] = "Casey";
 
         sOneI1B2Names[0] = "Casey";
         sOneI1B2Names[1] = "Alexander";
