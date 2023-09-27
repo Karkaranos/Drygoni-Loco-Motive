@@ -40,6 +40,7 @@ public class ObjectHandler : MonoBehaviour
         {
             ncm.BasicInformationVisible(pageNumber);
             nm.GetPageInformation();
+            ncm.AdvancedInformationVisible(pageNumber);
         }
         Destroy(gameObject);
     }
