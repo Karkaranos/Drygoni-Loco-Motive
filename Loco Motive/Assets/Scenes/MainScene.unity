@@ -779,6 +779,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &233710898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233710900}
+  - component: {fileID: 233710899}
+  m_Layer: 0
+  m_Name: DialogueController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &233710899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233710898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b8e71b7d185ba4ba7ee2dc8864cfbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opening: 1
+  numPadDialogue: 0
+  needNumInfo: 0
+  isTalking: 0
+  currTalkChar: 0
+  strLength: 0
+  currSpeaker: 0
+  DialogueBox: {fileID: 1793937054}
+  DialogueBoxI: {fileID: 389633272}
+  SpeakerName: {fileID: 1265532100}
+  SpeakerNameI: {fileID: 462606045}
+  ButtonTextOne: {fileID: 1686478892}
+  ButtonTextTwo: {fileID: 273108702}
+  ContinueText: {fileID: 966566628}
+  QuestionOne: {fileID: 1220746737}
+  QuestionTwo: {fileID: 1323418343}
+  QuestionThree: {fileID: 120372931}
+  QuestionFour: {fileID: 963136943}
+  DialogueScreen: {fileID: 19795971}
+  InterrogationScreen: {fileID: 1038306691}
+  BranchButtons: {fileID: 1290826208}
+  BranchButtonsI: {fileID: 1605663077}
+  BranchButtonI1: {fileID: 259780354}
+  BranchButtonI2: {fileID: 1185694526}
+  BranchButtonI3: {fileID: 1543511416}
+  BranchButtonI4: {fileID: 233885989}
+  ContinueButton: {fileID: 1537528252}
+  ContinueButtonI: {fileID: 1475512154}
+  InterrogateButton: {fileID: 1080773541}
+  InventoryButton: {fileID: 8593815369216764045}
+  NotebookButton: {fileID: 1857385534}
+  cc: {fileID: 626313101}
+  sd: {fileID: 933638986}
+  nm: {fileID: 459028350}
+--- !u!4 &233710900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233710898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.031409, y: -1.1647445, z: -0.08749668}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 933638987}
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &233885989
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,8 +942,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: BranchFour
         m_Mode: 1
         m_Arguments:
@@ -1120,8 +1199,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: BranchOne
         m_Mode: 1
         m_Arguments:
@@ -1942,7 +2021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2072,6 +2151,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9086573345517840983, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
   m_PrefabInstance: {fileID: 450314237}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &459028350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 570540782836506285, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+  m_PrefabInstance: {fileID: 450314237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459028348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261e44f5445f47e4a9f7967ac7bdc0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &462606044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,48 +2460,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clc: {fileID: 360841803}
-  sd: {fileID: 1270660284}
-  isTalking: 0
-  currDialogue: 0
-  currTalkChar: 0
-  strLength: 0
-  branchNum: 0
-  currSpeaker: 0
-  interrogating: 0
-  interrogateEvidence: 0
-  interrogateCount: 0
-  askedOne: 0
-  askedTwo: 0
-  askedThree: 0
-  askedFour: 0
-  opening: 1
-  numPadDialogue: 0
-  needNumInfo: 0
-  DialogueBox: {fileID: 1793937054}
-  DialogueBoxI: {fileID: 389633272}
-  SpeakerName: {fileID: 1265532100}
-  SpeakerNameI: {fileID: 462606045}
-  ButtonTextOne: {fileID: 1686478892}
-  ButtonTextTwo: {fileID: 273108702}
-  ContinueText: {fileID: 966566628}
-  QuestionOne: {fileID: 1220746737}
-  QuestionTwo: {fileID: 1323418343}
-  QuestionThree: {fileID: 120372931}
-  QuestionFour: {fileID: 963136943}
-  DialogueScreen: {fileID: 19795971}
-  InterrogationScreen: {fileID: 1038306691}
-  BranchButtons: {fileID: 1290826208}
-  BranchButtonsI: {fileID: 1605663077}
-  BranchButtonI1: {fileID: 259780354}
-  BranchButtonI2: {fileID: 1185694526}
-  BranchButtonI3: {fileID: 1543511416}
-  BranchButtonI4: {fileID: 233885989}
-  ContinueButton: {fileID: 1475512154}
-  ContinueButtonI: {fileID: 1475512154}
-  InterrogateButton: {fileID: 1080773541}
+  dc: {fileID: 233710899}
   NumPadCollider: {fileID: 352615272}
-  InventoryButton: {fileID: 8593815369216764045}
-  NotebookButton: {fileID: 1857385534}
   Movement: {fileID: 1698895290}
 --- !u!114 &626313102
 MonoBehaviour:
@@ -2601,8 +2651,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: BranchOne
         m_Mode: 1
         m_Arguments:
@@ -2969,8 +3019,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: BranchTwo
         m_Mode: 1
         m_Arguments:
@@ -3122,6 +3172,162 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &933638985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933638987}
+  - component: {fileID: 933638986}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &933638986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933638985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c025613e9d27f4e8692c9e055e2320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openingDialogue:
+  - 
+  openingResponses:
+  - 
+  - 
+  openingNames:
+  - 
+  openingB1:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  oB1Names:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  openingB2:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  oB2Names:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numPad:
+  - 
+  - 
+  numPadNames:
+  - 
+  - 
+  hDialogue:
+  - 
+  hDialogueIQuestion:
+  - 
+  - 
+  - 
+  hDialogueIB1:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  hDialogueIB2:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  hDialogueIB3:
+  - 
+  - 
+  hIB1Names:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  hIB2Names:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  hIB3Names:
+  - 
+  - 
+  sOneDialogue:
+  - 
+  sOneQuestionsI1:
+  - 
+  - 
+  sOneDialogueI1B1:
+  - 
+  - 
+  - 
+  - 
+  sOneDialogueI1B2:
+  - 
+  - 
+  - 
+  - 
+  - 
+  sOneI1B1Names:
+  - 
+  - 
+  - 
+  - 
+  sOneI1B2Names:
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!4 &933638987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933638985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 233710900}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963136941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,8 +3887,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: StartInterrogation
         m_Mode: 1
         m_Arguments:
@@ -4021,8 +4227,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: BranchTwo
         m_Mode: 1
         m_Arguments:
@@ -4838,8 +5044,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: ProgDialogue
         m_Mode: 1
         m_Arguments:
@@ -4993,8 +5199,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: ProgDialogue
         m_Mode: 1
         m_Arguments:
@@ -5106,8 +5312,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626313101}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 233710899}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: BranchThree
         m_Mode: 1
         m_Arguments:
@@ -5951,6 +6157,10 @@ PrefabInstance:
       propertyPath: code
       value: 9903
       objectReference: {fileID: 0}
+    - target: {fileID: 4969101885001630393, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
+      propertyPath: numPadEvidence
+      value: 
+      objectReference: {fileID: 1629915505}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

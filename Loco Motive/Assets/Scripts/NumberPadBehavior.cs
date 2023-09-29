@@ -24,12 +24,19 @@ public class NumberPadBehavior : MonoBehaviour
     private int digitsEntered=0;
     [SerializeField] private TMP_Text codeText;
     [SerializeField] private GameObject numberPadObject;
+    [SerializeField] private GameObject numPadEvidence; 
 
 
     public bool unlocked = false;
     #endregion
 
     #region Functions
+
+    private void Start()
+    {
+        numPadEvidence.SetActive(false);
+    }
+
     /// <summary>
     /// Takes in a number and adds it to the player's current guess. 
     /// </summary>
@@ -103,6 +110,7 @@ public class NumberPadBehavior : MonoBehaviour
                 print("Lock Broken!");
                 numberPad.SetActive(false);
                 numberPadObject.SetActive(false);
+                numPadEvidence.SetActive(true);
             }
             //Otherwise reset the lock
             else
