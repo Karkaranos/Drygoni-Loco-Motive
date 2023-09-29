@@ -24,6 +24,7 @@ public class NumberPadBehavior : MonoBehaviour
     private int digitsEntered=0;
     [SerializeField] private TMP_Text codeText;
     [SerializeField] private GameObject numberPadObject;
+    [SerializeField] private GameObject hiddenObject;
 
 
     public bool unlocked = false;
@@ -103,6 +104,7 @@ public class NumberPadBehavior : MonoBehaviour
                 print("Lock Broken!");
                 numberPad.SetActive(false);
                 numberPadObject.SetActive(false);
+                hiddenObject.SetActive(true);
             }
             //Otherwise reset the lock
             else
@@ -134,6 +136,7 @@ public class NumberPadBehavior : MonoBehaviour
         digitsEntered = 0;
         numberPadObject.SetActive(true);
         playerGuessStartWith0 = false;
+
     }
 
     /// <summary>
@@ -141,6 +144,7 @@ public class NumberPadBehavior : MonoBehaviour
     /// </summary>
     public void OpenLock()
     {
+        hiddenObject.SetActive(false);
         numberPad.SetActive(true);
         numberPadObject.SetActive(false);
         codeText.text = playerGuess.ToString();

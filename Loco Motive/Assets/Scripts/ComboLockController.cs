@@ -16,10 +16,12 @@ public class ComboLockController : MonoBehaviour
     public GameObject DigitOne;
     public GameObject DigitTwo;
     public GameObject DigitThree;
+    [SerializeField] GameObject endText;
     // Start is called before the first frame update
     void Start()
     {
         OpenSafe.SetActive(false);
+        endText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,6 +37,7 @@ public class ComboLockController : MonoBehaviour
     void OpenLock()
     {
         OpenSafe.SetActive(true);
+        endText.SetActive(true);
         Destroy(DigitOne);
         Destroy(DigitTwo);
         Destroy(DigitThree);
