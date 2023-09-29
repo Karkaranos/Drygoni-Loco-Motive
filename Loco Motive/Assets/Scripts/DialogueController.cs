@@ -173,6 +173,7 @@ public class DialogueController : MonoBehaviour
 
     public void ProgDialogue()
     {
+        ContinueButton.SetActive(true);
         if (opening == true && strLength != currDialogue)
         {
             if (branchNum == 1)
