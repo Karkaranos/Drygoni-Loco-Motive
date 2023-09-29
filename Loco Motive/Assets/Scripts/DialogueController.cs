@@ -168,6 +168,7 @@ public class DialogueController : MonoBehaviour
             DialogueBoxI.text = "";
             BranchButtonI3.SetActive(false);
             BranchButtonI4.SetActive(false);
+            nm.RevealComplexInformation(0);
         }
     }
 
@@ -400,7 +401,7 @@ public class DialogueController : MonoBehaviour
                 BranchButtonsI.SetActive(false);
                 ContinueButtonI.SetActive(true);
                 askedOne = true;
-                nm.RevealComplexInformation(0);
+                //nm.RevealComplexInformation(0);
             }
         }
 
