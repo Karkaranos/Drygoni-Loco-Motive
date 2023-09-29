@@ -140,6 +140,7 @@ public class DialogueController : MonoBehaviour
         InterrogateButton.SetActive(false);
         InterrogationScreen.SetActive(true);
         ContinueButton.SetActive(false);
+        ContinueButtonI.SetActive(false);
         BranchButtonsI.SetActive(true);
         BranchButtonI1.SetActive(true);
         BranchButtonI2.SetActive(true);
@@ -173,7 +174,6 @@ public class DialogueController : MonoBehaviour
 
     public void ProgDialogue()
     {
-        ContinueButton.SetActive(true);
         if (opening == true && strLength != currDialogue)
         {
             if (branchNum == 1)
@@ -422,7 +422,7 @@ public class DialogueController : MonoBehaviour
                 strLength = 3;
                 currDialogue = 0;
                 BranchButtonsI.SetActive(false);
-                ContinueButton.SetActive(true);
+                ContinueButtonI.SetActive(true);
                 askedOne = true;
             }
         }
