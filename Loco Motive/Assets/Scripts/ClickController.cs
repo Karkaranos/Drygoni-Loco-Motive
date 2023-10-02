@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 
 public class ClickController : MonoBehaviour
 {
+    private int arrLength = 0;
     private PlayerInput mouseController;
 
     private InputAction mPos;
@@ -20,8 +21,10 @@ public class ClickController : MonoBehaviour
 
     public GameObject NumPadCollider;
     public GameObject Movement;
+    public GameObject Map;
     private NotebookManager nm;
-    
+
+    [SerializeField] private GameObject[] MapRooms;
 
 
     // Start is called before the first frame update
@@ -44,6 +47,8 @@ public class ClickController : MonoBehaviour
 
         dc.opening = true;
         dc.StartDialogue();
+
+        MapRooms[4].GetComponent<Renderer>().material.color = Color.gray;
     }
 
 
@@ -79,6 +84,19 @@ public class ClickController : MonoBehaviour
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+                Map.transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
+                Vector2 pos = transform.position;
+                pos.x += -15.45f;
+                pos.y = 2.5f;
+                Map.transform.position = pos;
+                arrLength = 0;
+                while (arrLength < MapRooms.Length)
+                {
+                    MapRooms[arrLength].GetComponent<Renderer>().material.color = Color.white;
+                    arrLength++;
+                }
+                int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
+                MapRooms[roomNum].GetComponent<Renderer>().material.color = Color.gray;
             }
 
             else if (hit.collider.CompareTag("Hunter"))

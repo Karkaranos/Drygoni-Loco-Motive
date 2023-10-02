@@ -5,6 +5,7 @@ using TMPro;
 
 public class DialogueController : MonoBehaviour
 {
+    #region Variables
     private int interrogateEvidence = 0;
     private int interrogateCount = 0;
     private bool askedOne = false;
@@ -23,27 +24,27 @@ public class DialogueController : MonoBehaviour
     private bool interrogating = false;
 
     public TMP_Text DialogueBox;
-    public TMP_Text DialogueBoxI;
+    public TMP_Text DialogueBoxInterrogation;
     public TMP_Text SpeakerName;
-    public TMP_Text SpeakerNameI;
+    public TMP_Text SpeakerNameInterrogation;
     public TMP_Text ButtonTextOne;
     public TMP_Text ButtonTextTwo;
     public TMP_Text ContinueText;
-    public TMP_Text QuestionOne;
-    public TMP_Text QuestionTwo;
-    public TMP_Text QuestionThree;
-    public TMP_Text QuestionFour;
+    public TMP_Text InterrogateQuestionOne;
+    public TMP_Text InterrogateQuestionTwo;
+    public TMP_Text InterrogateQuestionThree;
+    public TMP_Text InterrogateQuestionFour;
 
     public GameObject DialogueScreen;
     public GameObject InterrogationScreen;
     public GameObject BranchButtons;
-    public GameObject BranchButtonsI;
-    public GameObject BranchButtonI1;
-    public GameObject BranchButtonI2;
-    public GameObject BranchButtonI3;
-    public GameObject BranchButtonI4;
+    public GameObject BranchButttonsInterrogation;
+    public GameObject BranchButtonInterrogation1;
+    public GameObject BranchButtonInterrogation2;
+    public GameObject BranchButtonInterrogation3;
+    public GameObject BranchButtonInterrogation4;
     public GameObject ContinueButton;
-    public GameObject ContinueButtonI;
+    public GameObject ContinueButtonInterrogation;
     public GameObject InterrogateButton;
     public GameObject InventoryButton;
     public GameObject NotebookButton;
@@ -51,7 +52,7 @@ public class DialogueController : MonoBehaviour
     public ClickController cc;
     public StoredDialogue sd;
     public NotebookManager nm;
-
+#endregion
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +74,7 @@ public class DialogueController : MonoBehaviour
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
         cc.Movement.SetActive(false);
+        cc.Map.SetActive(false);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
@@ -140,35 +142,36 @@ public class DialogueController : MonoBehaviour
         InterrogateButton.SetActive(false);
         InterrogationScreen.SetActive(true);
         ContinueButton.SetActive(false);
-        ContinueButtonI.SetActive(false);
-        BranchButtonsI.SetActive(true);
-        BranchButtonI1.SetActive(true);
-        BranchButtonI2.SetActive(true);
-        BranchButtonI3.SetActive(true);
-        BranchButtonI4.SetActive(true);
+        ContinueButtonInterrogation.SetActive(false);
+        BranchButttonsInterrogation.SetActive(true);
+        BranchButtonInterrogation1.SetActive(true);
+        BranchButtonInterrogation2.SetActive(true);
+        BranchButtonInterrogation3.SetActive(true);
+        BranchButtonInterrogation4.SetActive(true);
         cc.Movement.SetActive(false);
+        cc.Map.SetActive(false);
         if (currTalkChar == 0)
         {
             needNumInfo = false;
             interrogateCount = 2;
-            SpeakerNameI.text = "Hunter";
-            QuestionOne.text = sd.hDialogueIQuestion[0];
-            QuestionTwo.text = sd.hDialogueIQuestion[1];
-            QuestionThree.text = sd.hDialogueIQuestion[2];
-            DialogueBoxI.text = "";
-            BranchButtonI4.SetActive(false);
+            SpeakerNameInterrogation.text = "Hunter";
+            InterrogateQuestionOne.text = sd.hDialogueIQuestion[0];
+            InterrogateQuestionTwo.text = sd.hDialogueIQuestion[1];
+            InterrogateQuestionThree.text = sd.hDialogueIQuestion[2];
+            DialogueBoxInterrogation.text = "";
+            BranchButtonInterrogation4.SetActive(false);
         }
         else if (currTalkChar == 1)
         {
             interrogateCount = 1;
-            SpeakerNameI.text = "Alexander";
-            QuestionOne.text = sd.sOneQuestionsI1[0];
-            QuestionTwo.text = sd.sOneQuestionsI1[1];
+            SpeakerNameInterrogation.text = "Alexander";
+            InterrogateQuestionOne.text = sd.sOneQuestionsI1[0];
+            InterrogateQuestionTwo.text = sd.sOneQuestionsI1[1];
             //QuestionThree.text = sd.sOneQuestionsI1[2];
             //QuestionFour.text = sd.sOneQuestionsI1[3];
-            DialogueBoxI.text = "";
-            BranchButtonI3.SetActive(false);
-            BranchButtonI4.SetActive(false);
+            DialogueBoxInterrogation.text = "";
+            BranchButtonInterrogation3.SetActive(false);
+            BranchButtonInterrogation4.SetActive(false);
         }
     }
 
@@ -231,22 +234,22 @@ public class DialogueController : MonoBehaviour
             {
                 interrogateEvidence += 1;
                 currDialogue++;
-                DialogueBoxI.text = sd.hDialogueIB1[currDialogue];
-                SpeakerNameI.text = sd.hIB1Names[currDialogue];
+                DialogueBoxInterrogation.text = sd.hDialogueIB1[currDialogue];
+                SpeakerNameInterrogation.text = sd.hIB1Names[currDialogue];
             }
 
             else if (branchNum == 2)
             {
                 currDialogue++;
-                DialogueBoxI.text = sd.hDialogueIB2[currDialogue];
-                SpeakerNameI.text = sd.hIB2Names[currDialogue];
+                DialogueBoxInterrogation.text = sd.hDialogueIB2[currDialogue];
+                SpeakerNameInterrogation.text = sd.hIB2Names[currDialogue];
             }
 
             else if (branchNum == 3)
             {
                 currDialogue++;
-                DialogueBoxI.text = sd.hDialogueIB3[currDialogue];
-                SpeakerNameI.text = sd.hIB3Names[currDialogue];
+                DialogueBoxInterrogation.text = sd.hDialogueIB3[currDialogue];
+                SpeakerNameInterrogation.text = sd.hIB3Names[currDialogue];
             }
         }
 
@@ -283,16 +286,16 @@ public class DialogueController : MonoBehaviour
             if (branchNum == 1)
             {
                 currDialogue++;
-                DialogueBoxI.text = sd.sOneDialogueI1B1[currDialogue];
-                SpeakerNameI.text = sd.sOneI1B1Names[currDialogue];
+                DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[currDialogue];
+                SpeakerNameInterrogation.text = sd.sOneI1B1Names[currDialogue];
 
             }
 
             else if (branchNum == 2)
             {
                 currDialogue++;
-                DialogueBoxI.text = sd.sOneDialogueI1B2[currDialogue];
-                SpeakerNameI.text = sd.sOneI1B2Names[currDialogue];
+                DialogueBoxInterrogation.text = sd.sOneDialogueI1B2[currDialogue];
+                SpeakerNameInterrogation.text = sd.sOneI1B2Names[currDialogue];
             }
 
             else if (branchNum == 3)
@@ -322,33 +325,34 @@ public class DialogueController : MonoBehaviour
                 InventoryButton.SetActive(true);
                 NotebookButton.SetActive(true);
                 cc.Movement.SetActive(true);
+                cc.Map.SetActive(true);
             }
 
             else if (interrogating == true && interrogateCount > 0)
             {
                 interrogateCount -= 1;
-                DialogueBoxI.text = "";
-                BranchButtonsI.SetActive(true);
-                ContinueButtonI.SetActive(false);
+                DialogueBoxInterrogation.text = "";
+                BranchButttonsInterrogation.SetActive(true);
+                ContinueButtonInterrogation.SetActive(false);
 
                 if (askedOne == true)
                 {
-                    BranchButtonI1.SetActive(false);
+                    BranchButtonInterrogation1.SetActive(false);
                 }
 
                 if (askedTwo == true)
                 {
-                    BranchButtonI2.SetActive(false);
+                    BranchButtonInterrogation2.SetActive(false);
                 }
 
                 if (askedThree == true)
                 {
-                    BranchButtonI3.SetActive(false);
+                    BranchButtonInterrogation3.SetActive(false);
                 }
 
                 if (askedFour == true)
                 {
-                    BranchButtonI4.SetActive(false);
+                    BranchButtonInterrogation4.SetActive(false);
                 }
             }
 
@@ -363,6 +367,7 @@ public class DialogueController : MonoBehaviour
                 InventoryButton.SetActive(true);
                 NotebookButton.SetActive(true);
                 cc.Movement.SetActive(true);
+                cc.Map.SetActive(true);
             }
         }
     }
@@ -395,11 +400,11 @@ public class DialogueController : MonoBehaviour
 
             else if (interrogating == true)
             {
-                DialogueBoxI.text = sd.hDialogueIB1[0];
-                SpeakerNameI.text = sd.hIB1Names[0];
+                DialogueBoxInterrogation.text = sd.hDialogueIB1[0];
+                SpeakerNameInterrogation.text = sd.hIB1Names[0];
                 strLength = 6;
-                BranchButtonsI.SetActive(false);
-                ContinueButtonI.SetActive(true);
+                BranchButttonsInterrogation.SetActive(false);
+                ContinueButtonInterrogation.SetActive(true);
                 askedOne = true;
                 nm.RevealComplexInformation(0);
             }
@@ -417,12 +422,12 @@ public class DialogueController : MonoBehaviour
 
             else if (interrogating == true)
             {
-                DialogueBoxI.text = sd.sOneDialogueI1B1[0];
-                SpeakerNameI.text = sd.sOneI1B1Names[0];
+                DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[0];
+                SpeakerNameInterrogation.text = sd.sOneI1B1Names[0];
                 strLength = 3;
                 currDialogue = 0;
-                BranchButtonsI.SetActive(false);
-                ContinueButtonI.SetActive(true);
+                BranchButttonsInterrogation.SetActive(false);
+                ContinueButtonInterrogation.SetActive(true);
                 askedOne = true;
             }
         }
@@ -452,11 +457,11 @@ public class DialogueController : MonoBehaviour
 
             if (interrogating == true)
             {
-                DialogueBoxI.text = sd.hDialogueIB2[0];
-                SpeakerNameI.text = sd.hIB2Names[0];
+                DialogueBoxInterrogation.text = sd.hDialogueIB2[0];
+                SpeakerNameInterrogation.text = sd.hIB2Names[0];
                 strLength = 5;
-                BranchButtonsI.SetActive(false);
-                ContinueButtonI.SetActive(true);
+                BranchButttonsInterrogation.SetActive(false);
+                ContinueButtonInterrogation.SetActive(true);
                 askedTwo = true;
 
             }
@@ -474,11 +479,11 @@ public class DialogueController : MonoBehaviour
 
             else if (interrogating == true)
             {
-                DialogueBoxI.text = sd.sOneDialogueI1B2[0];
-                SpeakerNameI.text = sd.sOneI1B2Names[0];
+                DialogueBoxInterrogation.text = sd.sOneDialogueI1B2[0];
+                SpeakerNameInterrogation.text = sd.sOneI1B2Names[0];
                 strLength = 4;
-                BranchButtonsI.SetActive(false);
-                ContinueButtonI.SetActive(true);
+                BranchButttonsInterrogation.SetActive(false);
+                ContinueButtonInterrogation.SetActive(true);
                 askedTwo = true;
             }
         }
@@ -499,11 +504,11 @@ public class DialogueController : MonoBehaviour
 
             if (interrogating == true)
             {
-                DialogueBoxI.text = sd.hDialogueIB3[0];
-                SpeakerNameI.text = sd.hIB3Names[0];
+                DialogueBoxInterrogation.text = sd.hDialogueIB3[0];
+                SpeakerNameInterrogation.text = sd.hIB3Names[0];
                 strLength = 1;
-                BranchButtonsI.SetActive(false);
-                ContinueButtonI.SetActive(true);
+                BranchButttonsInterrogation.SetActive(false);
+                ContinueButtonInterrogation.SetActive(true);
                 askedThree = true;
             }
         }
@@ -518,8 +523,8 @@ public class DialogueController : MonoBehaviour
             {
                 //DialogueBoxI.text = sd.sOneDialogueI1B3[0];
                 strLength = 1;
-                BranchButtonsI.SetActive(false);
-                ContinueButtonI.SetActive(true);
+                BranchButttonsInterrogation.SetActive(false);
+                ContinueButtonInterrogation.SetActive(true);
                 askedThree = true;
             }
         }
@@ -540,8 +545,8 @@ public class DialogueController : MonoBehaviour
         {
             //DialogueBoxI.text = sd.sOneDialogueI1B4[0];
             strLength = 1;
-            BranchButtonsI.SetActive(false);
-            ContinueButtonI.SetActive(true);
+            BranchButttonsInterrogation.SetActive(false);
+            ContinueButtonInterrogation.SetActive(true);
             askedFour = true;
         }
     }
