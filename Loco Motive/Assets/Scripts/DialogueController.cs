@@ -288,6 +288,7 @@ public class DialogueController : MonoBehaviour
                 currDialogue++;
                 DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[currDialogue];
                 SpeakerNameInterrogation.text = sd.sOneI1B1Names[currDialogue];
+                nm.RevealComplexInformation(0);
 
             }
 
