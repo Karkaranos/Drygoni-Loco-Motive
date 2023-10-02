@@ -406,7 +406,7 @@ public class DialogueController : MonoBehaviour
                 BranchButttonsInterrogation.SetActive(false);
                 ContinueButtonInterrogation.SetActive(true);
                 askedOne = true;
-                nm.RevealComplexInformation(0);
+                //nm.RevealComplexInformation(0);
             }
         }
 
