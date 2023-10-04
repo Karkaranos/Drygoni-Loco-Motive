@@ -52,6 +52,8 @@ public class DialogueController : MonoBehaviour
     public ClickController cc;
     public StoredDialogue sd;
     public NotebookManager nm;
+
+    public List<GameObject> ChoiceBranch;
 #endregion
     // Start is called before the first frame update
     void Start()
@@ -63,6 +65,29 @@ public class DialogueController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateScreen(DIalogueMessage x)
+    {
+        DialogueScreen.SetActive(true);
+        DialogueBox.text = x.Text;
+        SpeakerName.text = getName(x.Names);
+        if (x.Branch.Count > 0)
+        {
+            for( int i = 0; i < x.Branch.Count; i++)
+            {
+                ChoiceBranch[i].SetActive(true);
+            }
+            ContinueButton.SetActive(false);
+        }
+        else
+        {
+            for (int i = 0; i < ChoiceBranch.Count; i++)
+            {
+                ChoiceBranch[i].SetActive(false);
+            }
+            ContinueButton.SetActive(true);
+        }
     }
 
     /// <summary>
@@ -549,6 +574,23 @@ public class DialogueController : MonoBehaviour
             BranchButttonsInterrogation.SetActive(false);
             ContinueButtonInterrogation.SetActive(true);
             askedFour = true;
+        }
+    }
+
+    public string getName(Constants.Names x)
+    {
+        switch (x)
+        {
+            case Constants.Names.Hunter:
+                return "Hunter";
+
+            case Constants.Names.Casey:
+                return "Casey";
+
+            case Constants.Names.Alex:
+                return "Alex";
+            default:
+                return "???";
         }
     }
 }

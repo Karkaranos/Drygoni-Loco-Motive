@@ -45,6 +45,8 @@ public class InventoryBehavior : MonoBehaviour
 
     public int itemAdded;
     public int itemRemoved;
+    public int pieceCounter = 0;
+    public bool keyCollected = false;
 
     private Sprite[] inventoryVisual;
     private Image[] inventorySpaces;
@@ -169,14 +171,19 @@ public class InventoryBehavior : MonoBehaviour
             case 2:
                 newItem = item2;
                 newName = Items.ITEM2;
+                keyCollected = true;
                 break;
             case 3:
                 newItem = item3;
                 newName = Items.ITEM3;
+                //Change where pieceCounter++ is to where torn paper pieces are
+                pieceCounter++;
                 break;
             case 4:
                 newItem = item4;
                 newName = Items.ITEM4;
+                //Change where pieceCounter++ is to where torn paper pieces are
+                pieceCounter++;
                 break;
             default:
                 newItem = item5;
@@ -188,6 +195,15 @@ public class InventoryBehavior : MonoBehaviour
         inventoryVisual[currIndex] = newItem;
         inventoryName[currIndex] = newName;
 
+        //Checks if both pieces of CombineObject puzzle are collected
+        if (pieceCounter == 2)
+        {
+            RemoveItemFromInventory(Items.ITEM3);
+            RemoveItemFromInventory(Items.ITEM4);
+            pieceCounter = 0;
+            //Assign Full Note's ItemIndex when it is added
+            AddItemToInventory(5);
+        }
         //Update the Inventory to match its current state
         UpdateInventory();
     }

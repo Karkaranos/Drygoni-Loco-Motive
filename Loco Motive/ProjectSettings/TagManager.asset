@@ -10,6 +10,7 @@ TagManager:
   - SuspectOne
   - Hunter
   - NumPadCollider
+  - Lock
   layers:
   - Default
   - TransparentFX

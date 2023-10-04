@@ -18,12 +18,22 @@ public class ClickController : MonoBehaviour
     public ComboLockController clc;
     private StoredDialogue sd;
     public DialogueController dc;
+    public InventoryBehavior ib;
 
     public GameObject NumPadCollider;
     public GameObject Movement;
     public GameObject Map;
+    public GameObject Lock;
+    public GameObject OpenLockBox;
     private NotebookManager nm;
+    public DialogueInstance OpeningDialogue;
+    public DialogueInstance D1;
 
+    public DialogueInstance D2;
+
+    public DialogueInstance D3;
+
+    public DialogueInstance CurrentDialogue; 
     [SerializeField] private GameObject[] MapRooms;
 
 
@@ -44,11 +54,13 @@ public class ClickController : MonoBehaviour
 
         dc.DialogueScreen.SetActive(false);
         dc.InterrogationScreen.SetActive(false);
+        OpenLockBox.SetActive(false);
 
         dc.opening = true;
-        dc.StartDialogue();
+        CurrentDialogue = OpeningDialogue; 
+        //dc.UpdateScreen(OpeningDialogue.AllMessages[CurrentDialogue.currMessage]);
 
-        MapRooms[4].GetComponent<Renderer>().material.color = Color.gray;
+        MapRooms[4].GetComponent<Renderer>().material.color = Color.blue;
     }
 
 
@@ -96,7 +108,7 @@ public class ClickController : MonoBehaviour
                     arrLength++;
                 }
                 int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
-                MapRooms[roomNum].GetComponent<Renderer>().material.color = Color.gray;
+                MapRooms[roomNum].GetComponent<Renderer>().material.color = Color.blue;
             }
 
             else if (hit.collider.CompareTag("Hunter"))
@@ -155,6 +167,17 @@ public class ClickController : MonoBehaviour
                 dc.StartDialogue();
                 NumPadCollider.SetActive(false);
                 dc.strLength = 1;
+            }
+
+            else if (hit.collider.CompareTag("Lock"))
+            {
+                if (ib.keyCollected == true)
+                {
+                    OpenLockBox.SetActive(true);
+                    Lock.SetActive(false);
+                    //Replace ITEM2 with the correct enum of the key
+                    ib.RemoveItemFromInventory(InventoryBehavior.Items.ITEM2);
+                }
             }
         }
     }
