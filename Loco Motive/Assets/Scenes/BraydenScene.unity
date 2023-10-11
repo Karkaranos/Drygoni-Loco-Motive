@@ -289,7 +289,7 @@ Transform:
   - {fileID: 1023000452}
   - {fileID: 1460189586}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &183963713
 GameObject:
@@ -450,7 +450,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262645069
 GameObject:
@@ -600,8 +600,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextDialogue: 0
-  ButtonText: {fileID: 0}
-  CC: {fileID: 0}
+  ButtonText: {fileID: 1186961518}
+  CC: {fileID: 922497191}
+  DC: {fileID: 0}
 --- !u!1 &296970163
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +709,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331128308
 GameObject:
@@ -830,7 +831,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6352807, g: 1, b: 0.47798735, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -872,8 +873,8 @@ RectTransform:
   m_Children:
   - {fileID: 1786375172}
   - {fileID: 1863276197}
-  - {fileID: 1710493622}
   - {fileID: 703367145}
+  - {fileID: 1710493622}
   - {fileID: 1996754699}
   - {fileID: 1421560276}
   - {fileID: 404715558}
@@ -1224,7 +1225,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502711540
 GameObject:
@@ -1261,7 +1262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 25, y: 40}
+  m_AnchoredPosition: {x: 25, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &502711542
@@ -1643,8 +1644,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextDialogue: 0
-  ButtonText: {fileID: 0}
-  CC: {fileID: 0}
+  ButtonText: {fileID: 618463532}
+  CC: {fileID: 922497191}
+  DC: {fileID: 0}
 --- !u!1 &567752261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +1745,7 @@ Transform:
   m_Children:
   - {fileID: 183963714}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609255197
 GameObject:
@@ -1890,7 +1892,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618463529
 GameObject:
@@ -2480,7 +2482,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.54402506, b: 0.54402506, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2759,7 +2761,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &703367144
 GameObject:
@@ -2919,7 +2921,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &853818787
 GameObject:
@@ -3049,7 +3051,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887212938
 GameObject:
@@ -3236,7 +3238,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &922497190
 GameObject:
@@ -3413,7 +3415,7 @@ PrefabInstance:
       objectReference: {fileID: 1838137347}
     - target: {fileID: 859821414722493764, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 859821414722493764, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3609,7 +3611,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56427056, g: 1, b: 0.55345905, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3868,7 +3870,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.5157232, b: 0.5157232, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3906,7 +3908,7 @@ GameObject:
   - component: {fileID: 1173106217}
   - component: {fileID: 1173106216}
   m_Layer: 0
-  m_Name: MapGoToDiner
+  m_Name: MapGoToBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3939,7 +3941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
+  connectedRoom: {fileID: 567752262}
 --- !u!61 &1173106217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4027,7 +4029,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.55345905, b: 0.55345905, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4051,7 +4053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902935908774605945, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2902935908774605945, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4281,7 +4283,7 @@ Transform:
   - {fileID: 1683779458}
   - {fileID: 651765820}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1248623329
 GameObject:
@@ -4627,7 +4629,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.44025153, g: 1, b: 0.53624064, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4771,7 +4773,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.57578677, b: 0.044025064, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4814,7 +4816,7 @@ RectTransform:
   m_Children:
   - {fileID: 1769166937}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4966,7 +4968,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341508404
 GameObject:
@@ -5066,7 +5068,7 @@ Transform:
   m_Children:
   - {fileID: 2108860892}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375556137
 GameObject:
@@ -5188,7 +5190,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.5646764, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5676,7 +5678,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443016122
 GameObject:
@@ -5832,7 +5834,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443889126
 GameObject:
@@ -5980,7 +5982,7 @@ GameObject:
   - component: {fileID: 1445187419}
   - component: {fileID: 1445187418}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DialogueInstance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6000,13 +6002,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: 
+  - Text: This shows it works
     Names: 0
     Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
+    - choiceText: ChoiceOne
+      nextDialogue: 1
+    - choiceText: ChoiceTwo
+      nextDialogue: 3
+    NextTextOverride: 0
+    EndDialogue: 0
+  - Text: Screen changed
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+  - Text: TextWasProgressed
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+  - Text: Choice 2
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+  - Text: DialogueShouldEnd
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+  - Text: DialogueHasn'tEnded
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+  dc: {fileID: 0}
 --- !u!4 &1445187419
 Transform:
   m_ObjectHideFlags: 0
@@ -6020,7 +6050,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1460189585
 GameObject:
@@ -6335,7 +6365,7 @@ RectTransform:
   - {fileID: 383136707}
   - {fileID: 1403169700}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6487,7 +6517,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609512008
 GameObject:
@@ -6634,7 +6664,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647038365
 GameObject:
@@ -6648,6 +6678,7 @@ GameObject:
   - component: {fileID: 1647038369}
   - component: {fileID: 1647038368}
   - component: {fileID: 1647038367}
+  - component: {fileID: 1647038370}
   m_Layer: 5
   m_Name: ContinueInterrogation
   m_TagString: Untagged
@@ -6720,9 +6751,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1705742334}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: ProgDialogue
+      - m_Target: {fileID: 1647038370}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ContinueProgress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6770,6 +6801,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647038365}
   m_CullTransparentMesh: 1
+--- !u!114 &1647038370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647038365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591ab3433c31e0e4f8db9eb580117652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextDialogue: 0
+  ButtonText: {fileID: 0}
+  CC: {fileID: 922497191}
+  DC: {fileID: 0}
 --- !u!1 &1672830085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7025,7 +7072,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.55345905, g: 1, b: 0.6368298, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7098,6 +7145,7 @@ MonoBehaviour:
   cc: {fileID: 922497191}
   sd: {fileID: 1983368347}
   nm: {fileID: 924125660}
+  openingDialogue: {fileID: 1445187418}
   ChoiceBranch:
   - {fileID: 563444875}
   - {fileID: 262645069}
@@ -7115,7 +7163,7 @@ Transform:
   m_Children:
   - {fileID: 1983368348}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710493621
 GameObject:
@@ -7263,27 +7311,13 @@ GameObject:
   - component: {fileID: 1768640670}
   - component: {fileID: 1768640669}
   - component: {fileID: 1768640668}
-  - component: {fileID: 1768640667}
   m_Layer: 0
-  m_Name: MapGoToBar
+  m_Name: MapGoToDiner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1768640667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768640666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 567752262}
 --- !u!61 &1768640668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7371,7 +7405,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6393785, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7725,7 +7759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1838137346
 PrefabInstance:
@@ -7737,7 +7771,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3509904593904446660, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3509904593904446660, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7987,7 +8021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 25, y: 40}
+  m_AnchoredPosition: {x: 25, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1863276198
@@ -8283,7 +8317,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.58176094, b: 0.58176094, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8595,6 +8629,7 @@ GameObject:
   - component: {fileID: 1996754702}
   - component: {fileID: 1996754701}
   - component: {fileID: 1996754700}
+  - component: {fileID: 1996754703}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -8667,9 +8702,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1705742334}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: ProgDialogue
+      - m_Target: {fileID: 1996754703}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ContinueProgress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8717,6 +8752,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996754698}
   m_CullTransparentMesh: 1
+--- !u!114 &1996754703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996754698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591ab3433c31e0e4f8db9eb580117652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextDialogue: 0
+  ButtonText: {fileID: 0}
+  CC: {fileID: 922497191}
+  DC: {fileID: 0}
 --- !u!1 &2023100014
 GameObject:
   m_ObjectHideFlags: 0
@@ -8862,7 +8913,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2024829747
 GameObject:

@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 public class ClickController : MonoBehaviour
 {
     private int arrLength = 0;
+    private bool isHighlighted = false;
     private PlayerInput mouseController;
 
     private InputAction mPos;
@@ -19,6 +20,9 @@ public class ClickController : MonoBehaviour
     private StoredDialogue sd;
     public DialogueController dc;
     public InventoryBehavior ib;
+
+    private Color originalColor;
+    private GameObject HighlightedObject;
 
     public GameObject NumPadCollider;
     public GameObject Movement;
@@ -33,7 +37,8 @@ public class ClickController : MonoBehaviour
 
     public DialogueInstance D3;
 
-    public DialogueInstance CurrentDialogue; 
+    //Update this to dialogue being used
+    public DialogueInstance CurrentDialogue;
     [SerializeField] private GameObject[] MapRooms;
 
 
@@ -58,9 +63,9 @@ public class ClickController : MonoBehaviour
 
         dc.opening = true;
         CurrentDialogue = OpeningDialogue; 
-        //dc.UpdateScreen(OpeningDialogue.AllMessages[CurrentDialogue.currMessage]);
+        dc.UpdateScreen(OpeningDialogue.AllMessages[CurrentDialogue.currMessage]);
 
-        MapRooms[4].GetComponent<Renderer>().material.color = Color.blue;
+        MapRooms[4].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
 
@@ -68,6 +73,25 @@ public class ClickController : MonoBehaviour
     void Update()
     {
         currPos = mPos.ReadValue<Vector2>();
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(currPos), Vector2.zero);
+
+        if (hit.collider != null && dc.isTalking == false)
+        {
+            if (isHighlighted == false)
+            {
+                HighlightedObject = hit.collider.gameObject;
+                originalColor = HighlightedObject.GetComponent<SpriteRenderer>().color;
+                HighlightedObject.GetComponent<SpriteRenderer>().color = Color.white;
+                isHighlighted = true;
+            }
+        }
+        
+        else if (isHighlighted == true)
+        {
+            HighlightedObject.GetComponent<SpriteRenderer>().color = originalColor;
+            isHighlighted = false;
+
+        }
     }
 
 
@@ -104,11 +128,11 @@ public class ClickController : MonoBehaviour
                 arrLength = 0;
                 while (arrLength < MapRooms.Length)
                 {
-                    MapRooms[arrLength].GetComponent<Renderer>().material.color = Color.white;
+                    MapRooms[arrLength].GetComponent<SpriteRenderer>().color = Color.white;
                     arrLength++;
                 }
                 int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
-                MapRooms[roomNum].GetComponent<Renderer>().material.color = Color.blue;
+                MapRooms[roomNum].GetComponent<SpriteRenderer>().color = Color.blue;
             }
 
             else if (hit.collider.CompareTag("Hunter"))
@@ -166,7 +190,7 @@ public class ClickController : MonoBehaviour
                 dc.needNumInfo = true;
                 dc.StartDialogue();
                 NumPadCollider.SetActive(false);
-                dc.strLength = 1;
+                //dc.strLength = 1;
             }
 
             else if (hit.collider.CompareTag("Lock"))

@@ -7,4 +7,6 @@ public class DIalogueMessage
     public string Text;
     public Constants.Names Names;
     public List<Choice> Branch;
+    public int NextTextOverride;
+    public bool EndDialogue;
 }

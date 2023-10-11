@@ -52,6 +52,7 @@ public class DialogueController : MonoBehaviour
     public ClickController cc;
     public StoredDialogue sd;
     public NotebookManager nm;
+    public DialogueInstance openingDialogue;
 
     public List<GameObject> ChoiceBranch;
 #endregion
@@ -76,6 +77,7 @@ public class DialogueController : MonoBehaviour
         {
             for( int i = 0; i < x.Branch.Count; i++)
             {
+                ChoiceBranch[i].GetComponent<DialogueButton>().UpdateButton(x.Branch[i].nextDialogue, x.Branch[i].choiceText);
                 ChoiceBranch[i].SetActive(true);
             }
             ContinueButton.SetActive(false);
@@ -106,10 +108,11 @@ public class DialogueController : MonoBehaviour
             ContinueButton.SetActive(false);
             BranchButtons.SetActive(true);
             InterrogateButton.SetActive(false);
-            ButtonTextOne.text = "Yes";
-            ButtonTextTwo.text = "No";
-            DialogueBox.text = "Have you ever been on a train before?";
-            SpeakerName.text = "Hunter";
+            openingDialogue.ProgText();
+            //ButtonTextOne.text = "Yes";
+            //ButtonTextTwo.text = "No";
+            //DialogueBox.text = "Have you ever been on a train before?";
+            //SpeakerName.text = "Hunter";
         }
         else if (numPadDialogue == true)
         {
@@ -200,383 +203,6 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    public void ProgDialogue()
-    {
-        if (opening == true && strLength != currDialogue)
-        {
-            if (branchNum == 1)
-            {
-                currDialogue++;
-                DialogueBox.text = sd.openingB1[currDialogue];
-                SpeakerName.text = sd.oB1Names[currDialogue];
-            }
-
-            else if (branchNum == 2)
-            {
-                currDialogue++;
-                DialogueBox.text = sd.openingB2[currDialogue];
-                SpeakerName.text = sd.oB2Names[currDialogue];
-            }
-        }
-
-        else if (numPadDialogue == true && strLength != currDialogue)
-        {
-            currDialogue++;
-            DialogueBox.text = sd.numPad[currDialogue];
-            SpeakerName.text = sd.numPadNames[currDialogue];
-        }
-
-        else if (currTalkChar == 0 && strLength != currDialogue && interrogating == false)
-        {
-            if (branchNum == 1)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.hDialogueB1[currDialogue];
-            }
-
-            else if (branchNum == 2)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.hDialogueB2[currDialogue];
-            }
-
-            else if (branchNum == 3)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.sOneDialogueB3[currDialogue];
-            }
-
-            else if (branchNum == 4)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.sOneDialogueB4[currDialogue];
-            }
-        }
-
-        else if (currTalkChar == 0 && strLength != currDialogue && interrogating == true)
-        {
-            if (branchNum == 1)
-            {
-                interrogateEvidence += 1;
-                currDialogue++;
-                DialogueBoxInterrogation.text = sd.hDialogueIB1[currDialogue];
-                SpeakerNameInterrogation.text = sd.hIB1Names[currDialogue];
-            }
-
-            else if (branchNum == 2)
-            {
-                currDialogue++;
-                DialogueBoxInterrogation.text = sd.hDialogueIB2[currDialogue];
-                SpeakerNameInterrogation.text = sd.hIB2Names[currDialogue];
-            }
-
-            else if (branchNum == 3)
-            {
-                currDialogue++;
-                DialogueBoxInterrogation.text = sd.hDialogueIB3[currDialogue];
-                SpeakerNameInterrogation.text = sd.hIB3Names[currDialogue];
-            }
-        }
-
-
-        else if (currTalkChar == 1 && strLength != currDialogue && interrogating == false)
-        {
-            if (branchNum == 1)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.sOneDialogueB1[currDialogue];
-            }
-
-            else if (branchNum == 2)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.sOneDialogueB2[currDialogue];
-            }
-
-            else if (branchNum == 3)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.sOneDialogueB3[currDialogue];
-            }
-
-            else if (branchNum == 4)
-            {
-                currDialogue++;
-                //DialogueBox.text = sd.sOneDialogueB4[currDialogue];
-            }
-        }
-
-        else if (currTalkChar == 1 && strLength != currDialogue && interrogating == true)
-        {
-            if (branchNum == 1)
-            {
-                currDialogue++;
-                DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[currDialogue];
-                SpeakerNameInterrogation.text = sd.sOneI1B1Names[currDialogue];
-                nm.RevealComplexInformation(0);
-
-            }
-
-            else if (branchNum == 2)
-            {
-                currDialogue++;
-                DialogueBoxInterrogation.text = sd.sOneDialogueI1B2[currDialogue];
-                SpeakerNameInterrogation.text = sd.sOneI1B2Names[currDialogue];
-            }
-
-            else if (branchNum == 3)
-            {
-                currDialogue++;
-                //DialogueBoxI.text = sd.sOneDialogueI1B3[currDialogue];
-            }
-
-            else if (branchNum == 4)
-            {
-                currDialogue++;
-                //DialogueBoxI.text = sd.sOneDialogueI1B4[currDialogue];
-            }
-        }
-
-        else
-        {
-            currDialogue = 0;
-            strLength = 0;
-            isTalking = false;
-            opening = false;
-            numPadDialogue = false;
-
-            if (interrogating == false)
-            {
-                DialogueScreen.SetActive(false);
-                InventoryButton.SetActive(true);
-                NotebookButton.SetActive(true);
-                cc.Movement.SetActive(true);
-                cc.Map.SetActive(true);
-            }
-
-            else if (interrogating == true && interrogateCount > 0)
-            {
-                interrogateCount -= 1;
-                DialogueBoxInterrogation.text = "";
-                BranchButttonsInterrogation.SetActive(true);
-                ContinueButtonInterrogation.SetActive(false);
-
-                if (askedOne == true)
-                {
-                    BranchButtonInterrogation1.SetActive(false);
-                }
-
-                if (askedTwo == true)
-                {
-                    BranchButtonInterrogation2.SetActive(false);
-                }
-
-                if (askedThree == true)
-                {
-                    BranchButtonInterrogation3.SetActive(false);
-                }
-
-                if (askedFour == true)
-                {
-                    BranchButtonInterrogation4.SetActive(false);
-                }
-            }
-
-            else if (interrogating == true && interrogateCount <= 0)
-            {
-                interrogating = false;
-                InterrogationScreen.SetActive(false);
-                askedOne = false;
-                askedTwo = false;
-                askedThree = false;
-                askedFour = false;
-                InventoryButton.SetActive(true);
-                NotebookButton.SetActive(true);
-                cc.Movement.SetActive(true);
-                cc.Map.SetActive(true);
-            }
-        }
-    }
-
-
-
-
-
-    public void BranchOne()
-    {
-        branchNum = 1;
-        ContinueButton.SetActive(true);
-
-        if (currTalkChar == 0)
-        {
-            if (interrogating == false && opening == false)
-            {
-                strLength = 0;
-                ContinueButton.SetActive(true);
-            }
-
-            else if (interrogating == false && opening == true)
-            {
-                DialogueBox.text = sd.openingB1[0];
-                SpeakerName.text = sd.oB1Names[0];
-                strLength = 5;
-                BranchButtons.SetActive(false);
-                ContinueButton.SetActive(true);
-            }
-
-            else if (interrogating == true)
-            {
-                DialogueBoxInterrogation.text = sd.hDialogueIB1[0];
-                SpeakerNameInterrogation.text = sd.hIB1Names[0];
-                strLength = 6;
-                BranchButttonsInterrogation.SetActive(false);
-                ContinueButtonInterrogation.SetActive(true);
-                askedOne = true;
-                //nm.RevealComplexInformation(0);
-            }
-        }
-
-        else if (currTalkChar == 1)
-        {
-            if (interrogating == false)
-            {
-                //DialogueBox.text = sd.sOneDialogueB1[0];
-                strLength = 2;
-                BranchButtons.SetActive(false);
-                ContinueButton.SetActive(true);
-            }
-
-            else if (interrogating == true)
-            {
-                DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[0];
-                SpeakerNameInterrogation.text = sd.sOneI1B1Names[0];
-                strLength = 3;
-                currDialogue = 0;
-                BranchButttonsInterrogation.SetActive(false);
-                ContinueButtonInterrogation.SetActive(true);
-                askedOne = true;
-            }
-        }
-    }
-
-
-    public void BranchTwo()
-    {
-        branchNum = 2;
-        ContinueButton.SetActive(true);
-
-        if (currTalkChar == 0)
-        {
-            if (interrogating == false && opening == false)
-            {
-
-            }
-
-            else if (interrogating == false && opening == true)
-            {
-                DialogueBox.text = sd.openingB2[0];
-                SpeakerName.text = sd.oB2Names[0];
-                strLength = 6;
-                BranchButtons.SetActive(false);
-                ContinueButton.SetActive(true);
-            }
-
-            if (interrogating == true)
-            {
-                DialogueBoxInterrogation.text = sd.hDialogueIB2[0];
-                SpeakerNameInterrogation.text = sd.hIB2Names[0];
-                strLength = 5;
-                BranchButttonsInterrogation.SetActive(false);
-                ContinueButtonInterrogation.SetActive(true);
-                askedTwo = true;
-
-            }
-        }
-
-        else if (currTalkChar == 1)
-        {
-            if (interrogating == false)
-            {
-                //DialogueBox.text = sd.sOneDialogueB2[0];
-                strLength = 2;
-                BranchButtons.SetActive(false);
-                ContinueButton.SetActive(true);
-            }
-
-            else if (interrogating == true)
-            {
-                DialogueBoxInterrogation.text = sd.sOneDialogueI1B2[0];
-                SpeakerNameInterrogation.text = sd.sOneI1B2Names[0];
-                strLength = 4;
-                BranchButttonsInterrogation.SetActive(false);
-                ContinueButtonInterrogation.SetActive(true);
-                askedTwo = true;
-            }
-        }
-    }
-
-
-    public void BranchThree()
-    {
-        branchNum = 3;
-        ContinueButton.SetActive(true);
-        
-        if (currTalkChar == 0)
-        {
-            if (interrogating == false)
-            {
-
-            }
-
-            if (interrogating == true)
-            {
-                DialogueBoxInterrogation.text = sd.hDialogueIB3[0];
-                SpeakerNameInterrogation.text = sd.hIB3Names[0];
-                strLength = 1;
-                BranchButttonsInterrogation.SetActive(false);
-                ContinueButtonInterrogation.SetActive(true);
-                askedThree = true;
-            }
-        }
-        else if (currTalkChar == 1)
-        {
-            if (interrogating == false)
-            {
-
-            }
-
-            if (interrogating == true)
-            {
-                //DialogueBoxI.text = sd.sOneDialogueI1B3[0];
-                strLength = 1;
-                BranchButttonsInterrogation.SetActive(false);
-                ContinueButtonInterrogation.SetActive(true);
-                askedThree = true;
-            }
-        }
-    }
-
-
-    public void BranchFour()
-    {
-        branchNum = 4;
-        ContinueButton.SetActive(true);
-
-        if (interrogating == false)
-        {
-
-        }
-
-        if (interrogating == true)
-        {
-            //DialogueBoxI.text = sd.sOneDialogueI1B4[0];
-            strLength = 1;
-            BranchButttonsInterrogation.SetActive(false);
-            ContinueButtonInterrogation.SetActive(true);
-            askedFour = true;
-        }
-    }
-
     public string getName(Constants.Names x)
     {
         switch (x)
@@ -593,4 +219,392 @@ public class DialogueController : MonoBehaviour
                 return "???";
         }
     }
+
+    public void StopDialogue()
+    {
+        DialogueScreen.SetActive(false);
+        InventoryButton.SetActive(true);
+        NotebookButton.SetActive(true);
+        cc.Movement.SetActive(true);
+        cc.Map.SetActive(true);
+    }
+
+    //public void ProgDialogue()
+    //{
+    //    if (opening == true && strLength != currDialogue)
+    //    {
+    //        if (branchNum == 1)
+    //        {
+    //            currDialogue++;
+    //            DialogueBox.text = sd.openingB1[currDialogue];
+    //            SpeakerName.text = sd.oB1Names[currDialogue];
+    //        }
+
+    //        else if (branchNum == 2)
+    //        {
+    //            currDialogue++;
+    //            DialogueBox.text = sd.openingB2[currDialogue];
+    //            SpeakerName.text = sd.oB2Names[currDialogue];
+    //        }
+    //    }
+
+    //    else if (numPadDialogue == true && strLength != currDialogue)
+    //    {
+    //        currDialogue++;
+    //        DialogueBox.text = sd.numPad[currDialogue];
+    //        SpeakerName.text = sd.numPadNames[currDialogue];
+    //    }
+
+    //    else if (currTalkChar == 0 && strLength != currDialogue && interrogating == false)
+    //    {
+    //        if (branchNum == 1)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.hDialogueB1[currDialogue];
+    //        }
+
+    //        else if (branchNum == 2)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.hDialogueB2[currDialogue];
+    //        }
+
+    //        else if (branchNum == 3)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.sOneDialogueB3[currDialogue];
+    //        }
+
+    //        else if (branchNum == 4)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.sOneDialogueB4[currDialogue];
+    //        }
+    //    }
+
+    //    else if (currTalkChar == 0 && strLength != currDialogue && interrogating == true)
+    //    {
+    //        if (branchNum == 1)
+    //        {
+    //            interrogateEvidence += 1;
+    //            currDialogue++;
+    //            DialogueBoxInterrogation.text = sd.hDialogueIB1[currDialogue];
+    //            SpeakerNameInterrogation.text = sd.hIB1Names[currDialogue];
+    //        }
+
+    //        else if (branchNum == 2)
+    //        {
+    //            currDialogue++;
+    //            DialogueBoxInterrogation.text = sd.hDialogueIB2[currDialogue];
+    //            SpeakerNameInterrogation.text = sd.hIB2Names[currDialogue];
+    //        }
+
+    //        else if (branchNum == 3)
+    //        {
+    //            currDialogue++;
+    //            DialogueBoxInterrogation.text = sd.hDialogueIB3[currDialogue];
+    //            SpeakerNameInterrogation.text = sd.hIB3Names[currDialogue];
+    //        }
+    //    }
+
+
+    //    else if (currTalkChar == 1 && strLength != currDialogue && interrogating == false)
+    //    {
+    //        if (branchNum == 1)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.sOneDialogueB1[currDialogue];
+    //        }
+
+    //        else if (branchNum == 2)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.sOneDialogueB2[currDialogue];
+    //        }
+
+    //        else if (branchNum == 3)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.sOneDialogueB3[currDialogue];
+    //        }
+
+    //        else if (branchNum == 4)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBox.text = sd.sOneDialogueB4[currDialogue];
+    //        }
+    //    }
+
+    //    else if (currTalkChar == 1 && strLength != currDialogue && interrogating == true)
+    //    {
+    //        if (branchNum == 1)
+    //        {
+    //            currDialogue++;
+    //            DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[currDialogue];
+    //            SpeakerNameInterrogation.text = sd.sOneI1B1Names[currDialogue];
+    //            nm.RevealComplexInformation(0);
+
+    //        }
+
+    //        else if (branchNum == 2)
+    //        {
+    //            currDialogue++;
+    //            DialogueBoxInterrogation.text = sd.sOneDialogueI1B2[currDialogue];
+    //            SpeakerNameInterrogation.text = sd.sOneI1B2Names[currDialogue];
+    //        }
+
+    //        else if (branchNum == 3)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBoxI.text = sd.sOneDialogueI1B3[currDialogue];
+    //        }
+
+    //        else if (branchNum == 4)
+    //        {
+    //            currDialogue++;
+    //            //DialogueBoxI.text = sd.sOneDialogueI1B4[currDialogue];
+    //        }
+    //    }
+
+    //    else
+    //    {
+    //        currDialogue = 0;
+    //        strLength = 0;
+    //        isTalking = false;
+    //        opening = false;
+    //        numPadDialogue = false;
+
+    //        if (interrogating == false)
+    //        {
+    //            DialogueScreen.SetActive(false);
+    //            InventoryButton.SetActive(true);
+    //            NotebookButton.SetActive(true);
+    //            cc.Movement.SetActive(true);
+    //            cc.Map.SetActive(true);
+    //        }
+
+    //        else if (interrogating == true && interrogateCount > 0)
+    //        {
+    //            interrogateCount -= 1;
+    //            DialogueBoxInterrogation.text = "";
+    //            BranchButttonsInterrogation.SetActive(true);
+    //            ContinueButtonInterrogation.SetActive(false);
+
+    //            if (askedOne == true)
+    //            {
+    //                BranchButtonInterrogation1.SetActive(false);
+    //            }
+
+    //            if (askedTwo == true)
+    //            {
+    //                BranchButtonInterrogation2.SetActive(false);
+    //            }
+
+    //            if (askedThree == true)
+    //            {
+    //                BranchButtonInterrogation3.SetActive(false);
+    //            }
+
+    //            if (askedFour == true)
+    //            {
+    //                BranchButtonInterrogation4.SetActive(false);
+    //            }
+    //        }
+
+    //        else if (interrogating == true && interrogateCount <= 0)
+    //        {
+    //            interrogating = false;
+    //            InterrogationScreen.SetActive(false);
+    //            askedOne = false;
+    //            askedTwo = false;
+    //            askedThree = false;
+    //            askedFour = false;
+    //            InventoryButton.SetActive(true);
+    //            NotebookButton.SetActive(true);
+    //            cc.Movement.SetActive(true);
+    //            cc.Map.SetActive(true);
+    //        }
+    //    }
+    //}
+
+
+
+
+
+    //public void BranchOne()
+    //{
+    //    branchNum = 1;
+    //    ContinueButton.SetActive(true);
+
+    //    if (currTalkChar == 0)
+    //    {
+    //        if (interrogating == false && opening == false)
+    //        {
+    //            strLength = 0;
+    //            ContinueButton.SetActive(true);
+    //        }
+
+    //        else if (interrogating == false && opening == true)
+    //        {
+    //            DialogueBox.text = sd.openingB1[0];
+    //            SpeakerName.text = sd.oB1Names[0];
+    //            strLength = 5;
+    //            BranchButtons.SetActive(false);
+    //            ContinueButton.SetActive(true);
+    //        }
+
+    //        else if (interrogating == true)
+    //        {
+    //            DialogueBoxInterrogation.text = sd.hDialogueIB1[0];
+    //            SpeakerNameInterrogation.text = sd.hIB1Names[0];
+    //            strLength = 6;
+    //            BranchButttonsInterrogation.SetActive(false);
+    //            ContinueButtonInterrogation.SetActive(true);
+    //            askedOne = true;
+    //            //nm.RevealComplexInformation(0);
+    //        }
+    //    }
+
+    //    else if (currTalkChar == 1)
+    //    {
+    //        if (interrogating == false)
+    //        {
+    //            //DialogueBox.text = sd.sOneDialogueB1[0];
+    //            strLength = 2;
+    //            BranchButtons.SetActive(false);
+    //            ContinueButton.SetActive(true);
+    //        }
+
+    //        else if (interrogating == true)
+    //        {
+    //            DialogueBoxInterrogation.text = sd.sOneDialogueI1B1[0];
+    //            SpeakerNameInterrogation.text = sd.sOneI1B1Names[0];
+    //            strLength = 3;
+    //            currDialogue = 0;
+    //            BranchButttonsInterrogation.SetActive(false);
+    //            ContinueButtonInterrogation.SetActive(true);
+    //            askedOne = true;
+    //        }
+    //    }
+    //}
+
+
+    //public void BranchTwo()
+    //{
+    //    branchNum = 2;
+    //    ContinueButton.SetActive(true);
+
+    //    if (currTalkChar == 0)
+    //    {
+    //        if (interrogating == false && opening == false)
+    //        {
+
+    //        }
+
+    //        else if (interrogating == false && opening == true)
+    //        {
+    //            DialogueBox.text = sd.openingB2[0];
+    //            SpeakerName.text = sd.oB2Names[0];
+    //            strLength = 6;
+    //            BranchButtons.SetActive(false);
+    //            ContinueButton.SetActive(true);
+    //        }
+
+    //        if (interrogating == true)
+    //        {
+    //            DialogueBoxInterrogation.text = sd.hDialogueIB2[0];
+    //            SpeakerNameInterrogation.text = sd.hIB2Names[0];
+    //            strLength = 5;
+    //            BranchButttonsInterrogation.SetActive(false);
+    //            ContinueButtonInterrogation.SetActive(true);
+    //            askedTwo = true;
+
+    //        }
+    //    }
+
+    //    else if (currTalkChar == 1)
+    //    {
+    //        if (interrogating == false)
+    //        {
+    //            //DialogueBox.text = sd.sOneDialogueB2[0];
+    //            strLength = 2;
+    //            BranchButtons.SetActive(false);
+    //            ContinueButton.SetActive(true);
+    //        }
+
+    //        else if (interrogating == true)
+    //        {
+    //            DialogueBoxInterrogation.text = sd.sOneDialogueI1B2[0];
+    //            SpeakerNameInterrogation.text = sd.sOneI1B2Names[0];
+    //            strLength = 4;
+    //            BranchButttonsInterrogation.SetActive(false);
+    //            ContinueButtonInterrogation.SetActive(true);
+    //            askedTwo = true;
+    //        }
+    //    }
+    //}
+
+
+    //public void BranchThree()
+    //{
+    //    branchNum = 3;
+    //    ContinueButton.SetActive(true);
+
+    //    if (currTalkChar == 0)
+    //    {
+    //        if (interrogating == false)
+    //        {
+
+    //        }
+
+    //        if (interrogating == true)
+    //        {
+    //            DialogueBoxInterrogation.text = sd.hDialogueIB3[0];
+    //            SpeakerNameInterrogation.text = sd.hIB3Names[0];
+    //            strLength = 1;
+    //            BranchButttonsInterrogation.SetActive(false);
+    //            ContinueButtonInterrogation.SetActive(true);
+    //            askedThree = true;
+    //        }
+    //    }
+    //    else if (currTalkChar == 1)
+    //    {
+    //        if (interrogating == false)
+    //        {
+
+    //        }
+
+    //        if (interrogating == true)
+    //        {
+    //            //DialogueBoxI.text = sd.sOneDialogueI1B3[0];
+    //            strLength = 1;
+    //            BranchButttonsInterrogation.SetActive(false);
+    //            ContinueButtonInterrogation.SetActive(true);
+    //            askedThree = true;
+    //        }
+    //    }
+    //}
+
+
+    //public void BranchFour()
+    //{
+    //    branchNum = 4;
+    //    ContinueButton.SetActive(true);
+
+    //    if (interrogating == false)
+    //    {
+
+    //    }
+
+    //    if (interrogating == true)
+    //    {
+    //        //DialogueBoxI.text = sd.sOneDialogueI1B4[0];
+    //        strLength = 1;
+    //        BranchButttonsInterrogation.SetActive(false);
+    //        ContinueButtonInterrogation.SetActive(true);
+    //        askedFour = true;
+    //    }
+    //}
+
+
 }
