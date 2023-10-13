@@ -57,8 +57,9 @@ public class NotebookManager : MonoBehaviour
         content[1] = imageCaption;
         content[2] = bodyText1;
         content[3] = bodyText2;
-        content[4] = bodyText3;
-        content[5] = subHeader;
+        content[4] = subHeader;
+        content[5] = bodyText3;
+
 
         notebook.SetActive(false);
 
@@ -90,33 +91,57 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void GetPageInformation()
     {
-        //Sets the visible content
-        for(int i=0; i<TEXT_ITEMS_PER_PAGE; i++)
+        //Sets the content if the current page is NOT a timeline page
+        if(currentPage < ncm.pageCount-1)
         {
-            //If the player can see the content, set its text to the provided info
-            if (ncm.contentVisible[currentPage, i])
+            //Sets the visible content
+            for (int i = 0; i < TEXT_ITEMS_PER_PAGE; i++)
             {
-                content[i].text = ncm.notebookContent[currentPage, i];
+                //If the player can see the content, set its text to the provided info
+                if (ncm.contentVisible[currentPage, i])
+                {
+                    //content[i].text = ncm.notebookContent[currentPage, i];
+                    string[] temp = new string[ncm.ITEMS_PER_PAGE];
+                    temp = ncm.pages[currentPage];
+                    content[i].text = temp[i];
+                    print(temp);
+                }
+                //Otherwise, indicate the player does not know the information
+                else
+                {
+                    content[i].text = "???";
+                }
             }
-            //Otherwise, indicate the player does not know the information
+
+            GameObject.Find("Photo").SetActive(true);
+
+            //If the image should be visible, set it to the stored image
+            if (ncm.contentVisible[currentPage, 6])
+            {
+                photo.sprite = ncm.image[currentPage];
+            }
+            //Otherwise set it to a blank image
             else
             {
-                content[i].text = "???";
+                photo.sprite = ncm.empty;
             }
-        }
 
-        if(ncm.contentVisible[currentPage, 6])
-        {
-            photo.sprite = ncm.image[currentPage];
+
         }
+        //If is a timeline page
         else
         {
-            photo.sprite = ncm.empty;
+            //Set the normal text and image to be invisible
+            for (int i=0; i < TEXT_ITEMS_PER_PAGE; i++)
+            {
+                content[i].text = "";
+            }
+            GameObject.Find("Photo").SetActive(false);
+
+
         }
 
-        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
-
-        if(currentPage == 0)
+        if (currentPage == 0)
         {
             lastPage.SetActive(false);
         }
@@ -125,7 +150,7 @@ public class NotebookManager : MonoBehaviour
             lastPage.SetActive(true);
         }
 
-        if(currentPage+1 < ncm.pageCount)
+        if (currentPage + 1 < ncm.pageCount)
         {
             nextPage.SetActive(true);
         }
@@ -133,6 +158,8 @@ public class NotebookManager : MonoBehaviour
         {
             nextPage.SetActive(false);
         }
+
+        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
 
     }
 
@@ -148,6 +175,9 @@ public class NotebookManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Moves the player to the previous notebook page, if applicable
+    /// </summary>
     public void PreviousPage()
     {
         if(currentPage > 0)
@@ -157,7 +187,10 @@ public class NotebookManager : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Calls revealing all information for a page
+    /// </summary>
+    /// <param name="pageNumber"></param>
     public void RevealComplexInformation(int pageNumber)
     {
         ncm.AdvancedInformationVisible(pageNumber);

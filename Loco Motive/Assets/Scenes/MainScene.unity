@@ -979,6 +979,8 @@ MonoBehaviour:
   cc: {fileID: 626313101}
   sd: {fileID: 933638986}
   nm: {fileID: 459028350}
+  openingDialogue: {fileID: 0}
+  ChoiceBranch: []
 --- !u!4 &233710900
 Transform:
   m_ObjectHideFlags: 0
@@ -2052,7 +2054,6 @@ MonoBehaviour:
   DigitOne: {fileID: 1957365502}
   DigitTwo: {fileID: 1160758300}
   DigitThree: {fileID: 295596681}
-  winText: {fileID: 0}
 --- !u!212 &360841804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2252,7 +2253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 25, y: 40}
+  m_AnchoredPosition: {x: 25, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &396321409
@@ -2421,7 +2422,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageCount
-      value: 3
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: page1notebookContent.Array.data[0]
+      value: Josephine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: page1notebookContent.Array.data[1]
+      value: A photo of Josephine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: page1notebookContent.Array.data[2]
+      value: Josephine is the founder and CEO of Defiant Door Studios. She is an
+        ambitious person and is very extroverted and confident. She hired Hunter
+        and I to investigate her potential murder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: page1notebookContent.Array.data[3]
+      value: "She unfortunately was right to hire us. She was found dead lying in
+        a pool of blood in her and Hana\u2019s room on Monday morning. Josephine
+        was stabbed several times with a sharp object- whoever killed her wanted
+        to make sure the job was done. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: page1notebookContent.Array.data[4]
+      value: Suspects
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: page1notebookContent.Array.data[5]
+      value: 'Alex Brady Dominic Hana '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2641,6 +2671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 566166746}
+  roomNum: 0
 --- !u!212 &615174742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2743,8 +2774,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clc: {fileID: 360841803}
   dc: {fileID: 233710899}
+  ib: {fileID: 0}
   NumPadCollider: {fileID: 352615272}
   Movement: {fileID: 1698895290}
+  Map: {fileID: 0}
+  Lock: {fileID: 0}
+  OpenLockBox: {fileID: 0}
+  OpeningDialogue: {fileID: 0}
+  D1: {fileID: 0}
+  D2: {fileID: 0}
+  D3: {fileID: 0}
+  CurrentDialogue: {fileID: 0}
+  MapRooms: []
 --- !u!114 &626313102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3149,6 +3190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 42357773}
+  roomNum: 0
 --- !u!212 &775306180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6436,7 +6478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 25, y: 40}
+  m_AnchoredPosition: {x: 25, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1857385534 stripped
