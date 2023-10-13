@@ -2422,7 +2422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageCount
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7915095454129529972, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: page1notebookContent.Array.data[0]
