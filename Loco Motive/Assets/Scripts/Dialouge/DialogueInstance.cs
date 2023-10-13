@@ -5,8 +5,10 @@ using UnityEngine;
 public class DialogueInstance : MonoBehaviour
 {
     public int currMessage;
-    public List<DIalogueMessage> AllMessages;
+    public List<DialogueMessage> AllMessages;
     public DialogueController dc;
+    public bool canInterrogate = false;
+    public InterrogationInstance thisInterrogation;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,8 @@ public class DialogueInstance : MonoBehaviour
 
     }
 
-    public void ProgText(int startMessage = 0)
+    //Starts dialogue
+    public void StartText(int startMessage = 0)
     {
         currMessage = startMessage;
         if (AllMessages[currMessage].Branch.Count == 0)
@@ -31,7 +34,6 @@ public class DialogueInstance : MonoBehaviour
             dc.UpdateScreen(AllMessages[currMessage]);
         }
     }
-
     public void UpdateDisplay()
     {
         

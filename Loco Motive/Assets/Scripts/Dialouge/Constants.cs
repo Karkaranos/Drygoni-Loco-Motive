@@ -6,6 +6,6 @@ public class Constants
 {
     public enum Names
     {
-        Hunter, Casey, Alex
+        Hunter, Casey, Alex, Hana, Brady, Dominic, Josephine
     }
 }

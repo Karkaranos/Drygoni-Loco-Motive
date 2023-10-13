@@ -2,26 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
     #region Variables
-    private int interrogateEvidence = 0;
-    private int interrogateCount = 0;
-    private bool askedOne = false;
-    private bool askedTwo = false;
-    private bool askedThree = false;
-    private bool askedFour = false;
     public bool opening = true;
     public bool numPadDialogue = false;
     public bool needNumInfo = false;
-    public bool isTalking = false;
-    private int currDialogue = 0;
+    public bool isTalking = true;
     public int currTalkChar;
     public int strLength;
-    private int branchNum;
     public int currSpeaker;
-    private bool interrogating = false;
+    public bool interrogating = false;
+    public Image PortraitImage;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -53,29 +47,36 @@ public class DialogueController : MonoBehaviour
     public StoredDialogue sd;
     public NotebookManager nm;
     public DialogueInstance openingDialogue;
+    public DialogueInstance currentDialogue;
+    public InterrogationInstance currentInterrogation;
 
     public List<GameObject> ChoiceBranch;
-#endregion
+    #endregion
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentDialogue = openingDialogue;
+        isTalking = true;
+        UpdateScreen(currentDialogue.AllMessages[currentDialogue.currMessage]);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void UpdateScreen(DIalogueMessage x)
+    public void UpdateScreen(DialogueMessage x)
     {
         DialogueScreen.SetActive(true);
         DialogueBox.text = x.Text;
         SpeakerName.text = getName(x.Names);
+        PortraitImage.sprite = x.Portrait;
+        InterrogateButton.SetActive(currentDialogue.canInterrogate);
+        
         if (x.Branch.Count > 0)
         {
-            for( int i = 0; i < x.Branch.Count; i++)
+            for (int i = 0; i < x.Branch.Count; i++)
             {
                 ChoiceBranch[i].GetComponent<DialogueButton>().UpdateButton(x.Branch[i].nextDialogue, x.Branch[i].choiceText);
                 ChoiceBranch[i].SetActive(true);
@@ -108,99 +109,67 @@ public class DialogueController : MonoBehaviour
             ContinueButton.SetActive(false);
             BranchButtons.SetActive(true);
             InterrogateButton.SetActive(false);
-            openingDialogue.ProgText();
+            currentDialogue.StartText();
             //ButtonTextOne.text = "Yes";
             //ButtonTextTwo.text = "No";
             //DialogueBox.text = "Have you ever been on a train before?";
             //SpeakerName.text = "Hunter";
         }
-        else if (numPadDialogue == true)
-        {
-            DialogueScreen.SetActive(true);
-            SpeakerName.text = sd.numPadNames[currDialogue];
-            DialogueBox.text = sd.numPad[currDialogue];
-            ContinueButton.SetActive(true);
-            BranchButtons.SetActive(false);
-            InterrogateButton.SetActive(false);
-        }
-        else if (currTalkChar == 0)
-        {
-            DialogueScreen.SetActive(true);
-            SpeakerName.text = "Hunter";
-            //ButtonTextOne.text = sd.hResponse[0];
-            //ButtonTextTwo.text = sd.hResponse[1];
-            DialogueBox.text = sd.hDialogue[currDialogue];
-            ContinueButton.SetActive(true);
-            //BranchButtons.SetActive(true);
-            if (needNumInfo == true)
-            {
-                InterrogateButton.SetActive(true);
-            }
-            else
-            {
-                InterrogateButton.SetActive(false);
-            }
-        }
-        else if (currTalkChar == 1)
-        {
-            DialogueScreen.SetActive(true);
-            SpeakerName.text = "Alexander";
-            //ButtonTextOne.text = sd.sOneResponse[0];
-            //ButtonTextTwo.text = sd.sOneResponse[1];
-            DialogueBox.text = sd.sOneDialogue[currDialogue];
-            ContinueButton.SetActive(true);
-            BranchButtons.SetActive(false);
-            if (interrogateEvidence >= 1)
-            {
-                InterrogateButton.SetActive(true);
-            }
-            else
-            {
-                InterrogateButton.SetActive(false);
-            }
-        }
+        //else if (numPadDialogue == true)
+        //{
+        //    DialogueScreen.SetActive(true);
+        //    SpeakerName.text = sd.numPadNames[currDialogue];
+        //    DialogueBox.text = sd.numPad[currDialogue];
+        //    ContinueButton.SetActive(true);
+        //    BranchButtons.SetActive(false);
+        //    InterrogateButton.SetActive(false);
+        //}
+        //else if (currTalkChar == 0)
+        //{
+        //    DialogueScreen.SetActive(true);
+        //    SpeakerName.text = "Hunter";
+        //    //ButtonTextOne.text = sd.hResponse[0];
+        //    //ButtonTextTwo.text = sd.hResponse[1];
+        //    DialogueBox.text = sd.hDialogue[currDialogue];
+        //    ContinueButton.SetActive(true);
+        //    //BranchButtons.SetActive(true);
+        //    if (needNumInfo == true)
+        //    {
+        //        InterrogateButton.SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        InterrogateButton.SetActive(false);
+        //    }
+        //}
+        //else if (currTalkChar == 1)
+        //{
+        //    DialogueScreen.SetActive(true);
+        //    SpeakerName.text = "Alexander";
+        //    //ButtonTextOne.text = sd.sOneResponse[0];
+        //    //ButtonTextTwo.text = sd.sOneResponse[1];
+        //    DialogueBox.text = sd.sOneDialogue[currDialogue];
+        //    ContinueButton.SetActive(true);
+        //    BranchButtons.SetActive(false);
+        //    if (interrogateEvidence >= 1)
+        //    {
+        //        InterrogateButton.SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        InterrogateButton.SetActive(false);
+        //    }
+        //}
     }
 
     public void StartInterrogation()
     {
-        interrogateCount += interrogateEvidence - 1;
-        interrogateEvidence = 0;
+        currentInterrogation = currentDialogue.thisInterrogation;
         interrogating = true;
-        DialogueScreen.SetActive(false);
-        InterrogateButton.SetActive(false);
-        InterrogationScreen.SetActive(true);
-        ContinueButton.SetActive(false);
-        ContinueButtonInterrogation.SetActive(false);
-        BranchButttonsInterrogation.SetActive(true);
-        BranchButtonInterrogation1.SetActive(true);
-        BranchButtonInterrogation2.SetActive(true);
-        BranchButtonInterrogation3.SetActive(true);
-        BranchButtonInterrogation4.SetActive(true);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
-        if (currTalkChar == 0)
-        {
-            needNumInfo = false;
-            interrogateCount = 2;
-            SpeakerNameInterrogation.text = "Hunter";
-            InterrogateQuestionOne.text = sd.hDialogueIQuestion[0];
-            InterrogateQuestionTwo.text = sd.hDialogueIQuestion[1];
-            InterrogateQuestionThree.text = sd.hDialogueIQuestion[2];
-            DialogueBoxInterrogation.text = "";
-            BranchButtonInterrogation4.SetActive(false);
-        }
-        else if (currTalkChar == 1)
-        {
-            interrogateCount = 1;
-            SpeakerNameInterrogation.text = "Alexander";
-            InterrogateQuestionOne.text = sd.sOneQuestionsI1[0];
-            InterrogateQuestionTwo.text = sd.sOneQuestionsI1[1];
-            //QuestionThree.text = sd.sOneQuestionsI1[2];
-            //QuestionFour.text = sd.sOneQuestionsI1[3];
-            DialogueBoxInterrogation.text = "";
-            BranchButtonInterrogation3.SetActive(false);
-            BranchButtonInterrogation4.SetActive(false);
-        }
+        UpdateScreen(currentInterrogation.AllMessages[0]);
+        
     }
 
     public string getName(Constants.Names x)
@@ -227,6 +196,7 @@ public class DialogueController : MonoBehaviour
         NotebookButton.SetActive(true);
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
+        isTalking = false;
     }
 
     //public void ProgDialogue()

@@ -38,7 +38,6 @@ public class ClickController : MonoBehaviour
     public DialogueInstance D3;
 
     //Update this to dialogue being used
-    public DialogueInstance CurrentDialogue;
     [SerializeField] private GameObject[] MapRooms;
 
 
@@ -62,8 +61,7 @@ public class ClickController : MonoBehaviour
         OpenLockBox.SetActive(false);
 
         dc.opening = true;
-        CurrentDialogue = OpeningDialogue; 
-        dc.UpdateScreen(OpeningDialogue.AllMessages[CurrentDialogue.currMessage]);
+        
 
         MapRooms[4].GetComponent<SpriteRenderer>().color = Color.blue;
     }
@@ -135,10 +133,9 @@ public class ClickController : MonoBehaviour
                 MapRooms[roomNum].GetComponent<SpriteRenderer>().color = Color.blue;
             }
 
-            else if (hit.collider.CompareTag("Hunter"))
+            else if (hit.collider.GetComponent<DialogueInstance>())
             {
-                dc.currTalkChar = 0;
-                dc.strLength = 0;
+                dc.currentDialogue = hit.collider.GetComponent<DialogueInstance>();
                 dc.StartDialogue();
             }
             else if (hit.collider.CompareTag("SuspectOne"))

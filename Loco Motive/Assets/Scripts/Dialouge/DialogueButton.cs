@@ -23,34 +23,105 @@ public class DialogueButton : MonoBehaviour
 
     public void ProgText()
     {
-        if (CC.CurrentDialogue.AllMessages[CC.CurrentDialogue.currMessage].EndDialogue == false)
+        if (DC.interrogating == false)
         {
-            CC.CurrentDialogue.currMessage = NextDialogue;
-            CC.dc.UpdateScreen(CC.CurrentDialogue.AllMessages[CC.CurrentDialogue.currMessage]);
-        }
-        else
-        {
-            DC.StopDialogue();
-        }
-    }
-
-    public void ContinueProgress()
-    {
-        if (CC.CurrentDialogue.AllMessages[CC.CurrentDialogue.currMessage].EndDialogue == false)
-        {
-            if (CC.CurrentDialogue.AllMessages[CC.CurrentDialogue.currMessage].NextTextOverride != 0)
+            if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
             {
-                CC.CurrentDialogue.currMessage = CC.CurrentDialogue.AllMessages[CC.CurrentDialogue.currMessage].NextTextOverride;
+                DC.currentDialogue.currMessage = NextDialogue;
+                DC.UpdateScreen(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage]);
             }
             else
             {
-                CC.CurrentDialogue.currMessage++;
+                DC.StopDialogue();
             }
-            CC.dc.UpdateScreen(CC.CurrentDialogue.AllMessages[CC.CurrentDialogue.currMessage]);
         }
+        
         else
         {
-            DC.StopDialogue();
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
+            {
+                DC.currentInterrogation.currMessage = NextDialogue;
+                DC.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
+            }
+            else
+            {
+                DC.StopDialogue();
+            }
+        }
+    }
+
+    //Progress dialogue when hitting continue button
+    public void ContinueProgress()
+    {
+        //Progresses dialogue if not in an interrogation
+        if (DC.interrogating == false)
+        {
+            if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
+            {
+                //Goes to specific line of dialogue if NextTextOverride isn't 0
+                if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].NextTextOverride != 0)
+                {
+                    DC.currentDialogue.currMessage = DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].NextTextOverride;
+                }
+                else
+                {
+                    DC.currentDialogue.currMessage++;
+                }
+                CC.dc.UpdateScreen(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage]);
+            }
+
+            else
+            {
+                DC.StopDialogue();
+            }
+        }
+
+        //Progresses dialogue if in an interrogation
+        else
+        {
+            //Progresses dialogue if EndDialogue is false
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
+            {
+                //Goes to specific line of dialogue if NextTextOverride isn't 0
+                if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].NextTextOverride != 0)
+                {
+                    DC.currentInterrogation.currMessage = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].NextTextOverride;
+                }
+                else
+                {
+                    DC.currentInterrogation.currMessage++;
+                }
+                CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
+            }
+
+            //Runs if EndDialogue is true
+            else
+            {
+                //If hasRead is false, sets hasRead to true and adds 1 to currCounter
+                if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead == false)
+                {
+                    DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead = true;
+                    DC.currentInterrogation.currCounter++;
+                    //If currCounter is equal to maxCounter, ends interrogation
+                    if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
+                    {
+                        DC.StopDialogue();
+                    }
+                    //If currCounter isn't equal to maxCounter, goes back to branches of interrogation
+                    else
+                    {
+                        DC.currentInterrogation.currMessage = 0;
+                        CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
+                    }
+                }
+
+                //If hasRead is true, returns to branches of interrogation
+                else if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead == true)
+                {
+                    DC.currentInterrogation.currMessage = 0;
+                    CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
+                }
+            }
         }
     }
 }
