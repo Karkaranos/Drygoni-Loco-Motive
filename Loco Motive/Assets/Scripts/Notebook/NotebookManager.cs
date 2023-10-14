@@ -19,6 +19,8 @@ public class NotebookManager : MonoBehaviour
     [Header("Notebook General")]
     public int currentPage;
     [SerializeField] private GameObject notebook;
+    [SerializeField] private GameObject notebookContentPage;
+    [SerializeField] private GameObject notebookTimelinePage;
     [SerializeField] private GameObject notebookIcon;
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
@@ -35,6 +37,13 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private TMP_Text pageNumber;
     private TMP_Text[] content;
 
+    [Header("Timeline Content")]
+    [SerializeField] private TMP_Text event1;
+    [SerializeField] private TMP_Text event2;
+    [SerializeField] private TMP_Text event3;
+    [SerializeField] private TMP_Text event4;
+    [SerializeField] private TMP_Text event5;
+    private TMP_Text[] eventText;
 
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
@@ -52,15 +61,23 @@ public class NotebookManager : MonoBehaviour
         currentPage = 0;
 
         content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
+        eventText = new TMP_Text[ncm.timelineCount];
 
         content[0] = pageTitle;
         content[1] = imageCaption;
         content[2] = bodyText1;
         content[3] = bodyText2;
-        content[4] = bodyText3;
-        content[5] = subHeader;
+        content[4] = subHeader;
+        content[5] = bodyText3;
 
-        notebook.SetActive(false);
+        eventText[0] = event1;
+        eventText[1] = event2;
+        eventText[2] = event3;
+        eventText[3] = event4;
+        eventText[4] = event5;
+
+
+        CloseNotebook();
 
     }
 
@@ -81,6 +98,8 @@ public class NotebookManager : MonoBehaviour
     public void CloseNotebook()
     {
         notebook.SetActive(false);
+        notebookContentPage.SetActive(false);
+        notebookTimelinePage.SetActive(false);
         notebookIcon.SetActive(true);
     }
 
@@ -90,33 +109,66 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void GetPageInformation()
     {
-        //Sets the visible content
-        for(int i=0; i<TEXT_ITEMS_PER_PAGE; i++)
+        //Sets the content if the current page is NOT a timeline page
+        if (currentPage < ncm.pageCount - 1)
         {
-            //If the player can see the content, set its text to the provided info
-            if (ncm.contentVisible[currentPage, i])
+            notebookContentPage.SetActive(true);
+            notebookTimelinePage.SetActive(false);
+            //Sets the visible content
+            for (int i = 0; i < TEXT_ITEMS_PER_PAGE; i++)
             {
-                content[i].text = ncm.notebookContent[currentPage, i];
+                //If the player can see the content, set its text to the provided info
+                if (ncm.contentVisible[currentPage, i])
+                {
+                    //content[i].text = ncm.notebookContent[currentPage, i];
+                    string[] temp = new string[ncm.ITEMS_PER_PAGE];
+                    temp = ncm.pages[currentPage];
+                    content[i].text = temp[i];
+                }
+                //Otherwise, indicate the player does not know the information
+                else
+                {
+                    content[i].text = "???";
+                }
             }
-            //Otherwise, indicate the player does not know the information
+
+            GameObject.Find("Photo").SetActive(true);
+
+            //If the image should be visible, set it to the stored image
+            if (ncm.contentVisible[currentPage, 6])
+            {
+                photo.sprite = ncm.image[currentPage];
+            }
+            //Otherwise set it to a blank image
             else
             {
-                content[i].text = "???";
+                photo.sprite = ncm.empty;
             }
-        }
 
-        if(ncm.contentVisible[currentPage, 6])
-        {
-            photo.sprite = ncm.image[currentPage];
+
         }
+        //If is a timeline page
         else
         {
-            photo.sprite = ncm.empty;
+            notebookContentPage.SetActive(false);
+            notebookTimelinePage.SetActive(true);
+
+            for (int i = 0; i < ncm.timelineCount; i++)
+            {
+                if (ncm.timelineVisible[i])
+                {
+                    eventText[i].text = ncm.timelinenotebookContent[i];
+                }
+                else
+                {
+                    eventText[i].text = "???";
+                }
+            }
+
+
         }
 
-        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
-
-        if(currentPage == 0)
+        if (currentPage == 0)
         {
             lastPage.SetActive(false);
         }
@@ -125,7 +177,7 @@ public class NotebookManager : MonoBehaviour
             lastPage.SetActive(true);
         }
 
-        if(currentPage+1 < ncm.pageCount)
+        if (currentPage + 1 < ncm.pageCount)
         {
             nextPage.SetActive(true);
         }
@@ -134,6 +186,8 @@ public class NotebookManager : MonoBehaviour
             nextPage.SetActive(false);
         }
 
+        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
+
     }
 
     /// <summary>
@@ -141,26 +195,38 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void NextPage()
     {
-        if(currentPage < ncm.pageCount-1)
+        if (currentPage < ncm.pageCount - 1)
         {
             currentPage++;
             GetPageInformation();
         }
     }
 
+    /// <summary>
+    /// Moves the player to the previous notebook page, if applicable
+    /// </summary>
     public void PreviousPage()
     {
-        if(currentPage > 0)
+        if (currentPage > 0)
         {
             currentPage--;
             GetPageInformation();
         }
     }
 
-
+    /// <summary>
+    /// Calls revealing all information for a page
+    /// </summary>
+    /// <param name="pageNumber"></param>
     public void RevealComplexInformation(int pageNumber)
     {
         ncm.AdvancedInformationVisible(pageNumber);
+    }
+
+
+    public void RevealNewTimelineEvent(int eventNumber)
+    {
+        ncm.RevealEvent(eventNumber);
     }
     #endregion
 }
