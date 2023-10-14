@@ -13,6 +13,8 @@ public class ClickController : MonoBehaviour
 
     private InputAction mPos;
     private InputAction interact;
+    private InputAction restart;
+    private InputAction exit;
 
     private Vector2 currPos;
 
@@ -51,8 +53,13 @@ public class ClickController : MonoBehaviour
 
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
+        restart = mouseController.currentActionMap.FindAction("Restart");
+        exit = mouseController.currentActionMap.FindAction("Exit");
 
         interact.performed += Interact_performed;
+        restart.performed += Restart_performed;
+        exit.performed += Exit_performed;
+
 
         dc.ContinueText.text = "Continue";
 
@@ -66,7 +73,15 @@ public class ClickController : MonoBehaviour
         MapRooms[4].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
+    private void Restart_performed(InputAction.CallbackContext obj)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
 
+    private void Exit_performed(InputAction.CallbackContext obj)
+    {
+        Application.Quit();
+    }
 
     void Update()
     {

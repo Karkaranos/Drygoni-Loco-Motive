@@ -55,8 +55,10 @@ public class DialogueController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         currentDialogue = openingDialogue;
-        isTalking = true;
+        DialogueScreen.SetActive(true);
+        //isTalking = true;
         UpdateScreen(currentDialogue.AllMessages[currentDialogue.currMessage]);
     }
 
@@ -68,6 +70,7 @@ public class DialogueController : MonoBehaviour
 
     public void UpdateScreen(DialogueMessage x)
     {
+        Debug.Log("This plays");
         DialogueScreen.SetActive(true);
         DialogueBox.text = x.Text;
         SpeakerName.text = getName(x.Names);
