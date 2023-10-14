@@ -13,9 +13,12 @@ public class NotebookContentManager : MonoBehaviour
 {
     #region Variables
     public int pageCount = 7;
-    
+
+    public int timelineCount = 5;
+
     public Sprite[] image;
     public bool[,] contentVisible;
+    public bool[] timelineVisible;
     public Sprite empty;
     [SerializeField] private Sprite item1;
     [SerializeField] private Sprite item2;
@@ -28,6 +31,8 @@ public class NotebookContentManager : MonoBehaviour
     public string[] page6notebookContent = new string[6];
     public string[] page7notebookContent = new string[6];
     public string[] page8notebookContent = new string[6];
+
+    public string[] timelinenotebookContent = new string[5];
 
     public List<string[]> pages = new List<string[]>();
 
@@ -43,6 +48,7 @@ public class NotebookContentManager : MonoBehaviour
     {
         print(pageCount);
         image = new Sprite[pageCount];
+        timelineVisible = new bool[timelineCount];
         contentVisible = new bool[pageCount,ITEMS_PER_PAGE];
 
         for(int i=0; i<ITEMS_PER_PAGE; i++)
@@ -53,6 +59,11 @@ public class NotebookContentManager : MonoBehaviour
             }
         }
 
+        for (int i=0; i<timelineCount; i++)
+        {
+            timelineVisible[i] = false;
+        }
+
         pages.Add(page1notebookContent);
         pages.Add(page2notebookContent);
         pages.Add(page3notebookContent);
@@ -60,7 +71,8 @@ public class NotebookContentManager : MonoBehaviour
         pages.Add(page5notebookContent);
         pages.Add(page6notebookContent);
         pages.Add(page7notebookContent);
-        pages.Add(page8notebookContent);
+        pages.Add(timelinenotebookContent);
+        //pages.Add(page8notebookContent);
 
         
         //Assigning visuals
@@ -72,7 +84,9 @@ public class NotebookContentManager : MonoBehaviour
         BasicInformationVisible(1);
         BasicInformationVisible(2);
         BasicInformationVisible(3);
-        BasicInformationVisible(4);
+
+        RevealEvent(4);
+        RevealEvent(3);
     }
 
     /// <summary>
@@ -100,6 +114,11 @@ public class NotebookContentManager : MonoBehaviour
         {
             contentVisible[pageNumber, i] = true;
         }
+    }
+
+    public void RevealEvent(int eventNumber)
+    {
+        timelineVisible[eventNumber] = true;
     }
 
     #endregion

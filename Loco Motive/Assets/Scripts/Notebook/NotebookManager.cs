@@ -19,6 +19,8 @@ public class NotebookManager : MonoBehaviour
     [Header("Notebook General")]
     public int currentPage;
     [SerializeField] private GameObject notebook;
+    [SerializeField] private GameObject notebookContentPage;
+    [SerializeField] private GameObject notebookTimelinePage;
     [SerializeField] private GameObject notebookIcon;
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
@@ -35,6 +37,13 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private TMP_Text pageNumber;
     private TMP_Text[] content;
 
+    [Header("Timeline Content")]
+    [SerializeField] private TMP_Text event1;
+    [SerializeField] private TMP_Text event2;
+    [SerializeField] private TMP_Text event3;
+    [SerializeField] private TMP_Text event4;
+    [SerializeField] private TMP_Text event5;
+    private TMP_Text[] eventText;
 
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
@@ -52,6 +61,7 @@ public class NotebookManager : MonoBehaviour
         currentPage = 0;
 
         content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
+        eventText = new TMP_Text[ncm.timelineCount];
 
         content[0] = pageTitle;
         content[1] = imageCaption;
@@ -60,8 +70,14 @@ public class NotebookManager : MonoBehaviour
         content[4] = subHeader;
         content[5] = bodyText3;
 
+        eventText[0] = event1;
+        eventText[1] = event2;
+        eventText[2] = event3;
+        eventText[3] = event4;
+        eventText[4] = event5;
 
-        notebook.SetActive(false);
+
+        CloseNotebook();
 
     }
 
@@ -82,6 +98,8 @@ public class NotebookManager : MonoBehaviour
     public void CloseNotebook()
     {
         notebook.SetActive(false);
+        notebookContentPage.SetActive(false);
+        notebookTimelinePage.SetActive(false);
         notebookIcon.SetActive(true);
     }
 
@@ -94,6 +112,8 @@ public class NotebookManager : MonoBehaviour
         //Sets the content if the current page is NOT a timeline page
         if(currentPage < ncm.pageCount-1)
         {
+            notebookContentPage.SetActive(true);
+            notebookTimelinePage.SetActive(false);
             //Sets the visible content
             for (int i = 0; i < TEXT_ITEMS_PER_PAGE; i++)
             {
@@ -104,7 +124,6 @@ public class NotebookManager : MonoBehaviour
                     string[] temp = new string[ncm.ITEMS_PER_PAGE];
                     temp = ncm.pages[currentPage];
                     content[i].text = temp[i];
-                    print(temp);
                 }
                 //Otherwise, indicate the player does not know the information
                 else
@@ -131,12 +150,20 @@ public class NotebookManager : MonoBehaviour
         //If is a timeline page
         else
         {
-            //Set the normal text and image to be invisible
-            for (int i=0; i < TEXT_ITEMS_PER_PAGE; i++)
+            notebookContentPage.SetActive(false);
+            notebookTimelinePage.SetActive(true);
+
+            for(int i=0; i<ncm.timelineCount; i++)
             {
-                content[i].text = "";
+                if (ncm.timelineVisible[i])
+                {
+                    eventText[i].text = ncm.timelinenotebookContent[i];
+                }
+                else
+                {
+                    eventText[i].text = "???";
+                }
             }
-            GameObject.Find("Photo").SetActive(false);
 
 
         }
@@ -194,6 +221,12 @@ public class NotebookManager : MonoBehaviour
     public void RevealComplexInformation(int pageNumber)
     {
         ncm.AdvancedInformationVisible(pageNumber);
+    }
+
+
+    public void RevealNewTimelineEvent(int eventNumber)
+    {
+        ncm.RevealEvent(eventNumber);
     }
     #endregion
 }
