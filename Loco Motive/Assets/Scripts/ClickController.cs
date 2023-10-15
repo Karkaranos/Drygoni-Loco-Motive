@@ -136,7 +136,7 @@ public class ClickController : MonoBehaviour
                 Map.transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 Vector2 pos = transform.position;
                 pos.x += -15.45f;
-                pos.y = 2.5f;
+                pos.y += 2.5f;
                 Map.transform.position = pos;
                 arrLength = 0;
                 while (arrLength < MapRooms.Length)
