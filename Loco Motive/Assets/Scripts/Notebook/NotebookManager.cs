@@ -25,6 +25,9 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
     [SerializeField] private GameObject lastPage;
+    [SerializeField] private GameObject movementArrows;
+    [SerializeField] private GameObject map;
+    [SerializeField] private GameObject inventoryIcon;
 
     [Header("Notebook Content")]
     [SerializeField] private TMP_Text pageTitle;
@@ -90,6 +93,9 @@ public class NotebookManager : MonoBehaviour
         inventoryManager.GetComponent<InventoryBehavior>().CloseInventory();
         GetPageInformation();
         notebookIcon.SetActive(false);
+        map.SetActive(false);
+        movementArrows.SetActive(false);
+        inventoryIcon.SetActive(false);
     }
 
     /// <summary>
@@ -101,6 +107,9 @@ public class NotebookManager : MonoBehaviour
         notebookContentPage.SetActive(false);
         notebookTimelinePage.SetActive(false);
         notebookIcon.SetActive(true);
+        map.SetActive(true);
+        movementArrows.SetActive(true);
+        inventoryIcon.SetActive(true);
     }
 
     /// <summary>
