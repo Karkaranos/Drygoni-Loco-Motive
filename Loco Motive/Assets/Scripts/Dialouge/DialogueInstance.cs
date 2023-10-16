@@ -8,7 +8,9 @@ public class DialogueInstance : MonoBehaviour
     public List<DialogueMessage> AllMessages;
     public DialogueController dc;
     public bool canInterrogate = false;
+    public bool canAccuse = false;
     public InterrogationInstance thisInterrogation;
+    public AccusationInstance thisAccusation;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class DialogueInstance : MonoBehaviour
     //Starts dialogue
     public void StartText(int startMessage = 0)
     {
+        dc = FindObjectOfType<DialogueController>();
         currMessage = startMessage;
         if (AllMessages[currMessage].Branch.Count == 0)
         {

@@ -15,6 +15,7 @@ public class DialogueController : MonoBehaviour
     public int strLength;
     public int currSpeaker;
     public bool interrogating = false;
+    public bool accusing = false;
     public Image PortraitImage;
 
     public TMP_Text DialogueBox;
@@ -42,6 +43,7 @@ public class DialogueController : MonoBehaviour
     public GameObject InterrogateButton;
     public GameObject InventoryButton;
     public GameObject NotebookButton;
+    public GameObject AccusationButton;
 
     public ClickController cc;
     public StoredDialogue sd;
@@ -49,6 +51,7 @@ public class DialogueController : MonoBehaviour
     public DialogueInstance openingDialogue;
     public DialogueInstance currentDialogue;
     public InterrogationInstance currentInterrogation;
+    public AccusationInstance currentAccusation;
 
     public List<GameObject> ChoiceBranch;
     #endregion
@@ -58,8 +61,9 @@ public class DialogueController : MonoBehaviour
         
         currentDialogue = openingDialogue;
         DialogueScreen.SetActive(true);
-        //isTalking = true;
-        UpdateScreen(currentDialogue.AllMessages[currentDialogue.currMessage]);
+        StartDialogue();
+        isTalking = true;
+        //UpdateScreen(currentDialogue.AllMessages[currentDialogue.currMessage]);
     }
 
     // Update is called once per frame
@@ -70,7 +74,6 @@ public class DialogueController : MonoBehaviour
 
     public void UpdateScreen(DialogueMessage x)
     {
-        Debug.Log("This plays");
         DialogueScreen.SetActive(true);
         DialogueBox.text = x.Text;
         SpeakerName.text = getName(x.Names);
@@ -101,6 +104,7 @@ public class DialogueController : MonoBehaviour
     /// </summary>
     public void StartDialogue()
     {
+        Debug.Log("This works");
         isTalking = true;
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
@@ -167,13 +171,26 @@ public class DialogueController : MonoBehaviour
 
     public void StartInterrogation()
     {
+        currentDialogue.canInterrogate = false;
         currentInterrogation = currentDialogue.thisInterrogation;
         interrogating = true;
+        InterrogateButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         UpdateScreen(currentInterrogation.AllMessages[0]);
         
     }
+    
+    public void StartAccusation()
+    {
+        currentAccusation = currentDialogue.thisAccusation;
+        accusing = true;
+        AccusationButton.SetActive(false);
+        cc.Movement.SetActive(false);
+        cc.Map.SetActive(false);
+        UpdateScreen(currentAccusation.AllMessages[0]);
+    }
+        
 
     public string getName(Constants.Names x)
     {
@@ -187,11 +204,23 @@ public class DialogueController : MonoBehaviour
 
             case Constants.Names.Alex:
                 return "Alex";
+
+            case Constants.Names.Hana:
+                return "Hana";
+            
+            case Constants.Names.Brady:
+                return "Brady";
+
+            case Constants.Names.Dominic:
+                return "Dominic";
+
+            case Constants.Names.Josephine:
+                return "Josephine";
+
             default:
                 return "???";
         }
     }
-
     public void StopDialogue()
     {
         DialogueScreen.SetActive(false);
@@ -200,6 +229,8 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
+        interrogating = false;
+        accusing = false;
     }
 
     //public void ProgDialogue()
