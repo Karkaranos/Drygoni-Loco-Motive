@@ -24,7 +24,10 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private GameObject inventoryIcon;
     [SerializeField] private GameObject notebookManager;
     [SerializeField] private GameObject inventoryLarge;
-    [SerializeField] private Image largeObject;
+    [SerializeField] private Image largeObject;    
+    [SerializeField] private GameObject map;
+    [SerializeField] private GameObject movementArrows;
+    [SerializeField] private GameObject notebookIcon;
 
 
     [Header("Inventory Potential Contents")]
@@ -52,6 +55,8 @@ public class InventoryBehavior : MonoBehaviour
     private Image[] inventorySpaces;
     private Items[] inventoryName;
     public enum Items { EMPTY, ITEM1, ITEM2, ITEM3, ITEM4, ITEM5 }
+
+
 
     #endregion
 
@@ -85,6 +90,9 @@ public class InventoryBehavior : MonoBehaviour
         inventory.SetActive(true);
         UpdateInventory();
         inventoryIcon.SetActive(false);
+        map.SetActive(false);
+        movementArrows.SetActive(false);
+        notebookIcon.SetActive(false);
     }
 
     /// <summary>
@@ -94,6 +102,9 @@ public class InventoryBehavior : MonoBehaviour
     {
         inventory.SetActive(false);
         inventoryIcon.SetActive(true);
+        map.SetActive(true);
+        movementArrows.SetActive(true);
+        notebookIcon.SetActive(true);
     }
 
     public void OpenLargeView(int i)

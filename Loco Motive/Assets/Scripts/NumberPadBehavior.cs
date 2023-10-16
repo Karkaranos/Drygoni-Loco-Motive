@@ -24,7 +24,11 @@ public class NumberPadBehavior : MonoBehaviour
     private int digitsEntered=0;
     [SerializeField] private TMP_Text codeText;
     [SerializeField] private GameObject numberPadObject;
-    [SerializeField] private GameObject numPadEvidence; 
+    [SerializeField] private GameObject numPadEvidence;
+    [SerializeField] private GameObject map;
+    [SerializeField] private GameObject movementArrows;
+    [SerializeField] private GameObject inventoryIcon;
+    [SerializeField] private GameObject notebookIcon;
 
 
     public bool unlocked = false;
@@ -142,6 +146,10 @@ public class NumberPadBehavior : MonoBehaviour
         digitsEntered = 0;
         numberPadObject.SetActive(true);
         playerGuessStartWith0 = false;
+        map.SetActive(true);
+        movementArrows.SetActive(true);
+        notebookIcon.SetActive(true);
+        inventoryIcon.SetActive(true);
     }
 
     /// <summary>
@@ -150,8 +158,12 @@ public class NumberPadBehavior : MonoBehaviour
     public void OpenLock()
     {
         numberPad.SetActive(true);
-        numberPadObject.SetActive(false);
+        //numberPadObject.SetActive(false);
         codeText.text = playerGuess.ToString();
+        map.SetActive(false);
+        movementArrows.SetActive(false);
+        notebookIcon.SetActive(false);
+        inventoryIcon.SetActive(false);
     }
     #endregion
 }
