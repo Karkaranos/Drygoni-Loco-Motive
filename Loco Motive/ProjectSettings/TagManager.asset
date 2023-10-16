@@ -11,6 +11,7 @@ TagManager:
   - Hunter
   - NumPadCollider
   - Lock
+  - Map
   layers:
   - Default
   - TransparentFX
