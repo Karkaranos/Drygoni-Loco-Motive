@@ -23,7 +23,7 @@ public class DialogueButton : MonoBehaviour
 
     public void ProgText()
     {
-        if (DC.interrogating == false)
+        if (DC.interrogating == false && DC.accusing == false)
         {
             if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
             {
@@ -36,7 +36,7 @@ public class DialogueButton : MonoBehaviour
             }
         }
         
-        else
+        else if (DC.interrogating == true && DC.accusing == false)
         {
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
             {
@@ -48,12 +48,25 @@ public class DialogueButton : MonoBehaviour
                 DC.StopDialogue();
             }
         }
+
+        else
+        {
+            if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].EndDialogue == false)
+            {
+                DC.currentAccusation.currMessage = NextDialogue;
+                DC.UpdateScreen(DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage]);
+            }
+            else
+            {
+                DC.StopDialogue();
+            }
+        }
     }
 
     //Progress dialogue when hitting continue button
     public void ContinueProgress()
     {
-        //Progresses dialogue if not in an interrogation
+        //Progresses dialogue if not in an interrogation or accusation
         if (DC.interrogating == false)
         {
             if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
@@ -77,7 +90,7 @@ public class DialogueButton : MonoBehaviour
         }
 
         //Progresses dialogue if in an interrogation
-        else
+        else if (DC.interrogating == true && DC.accusing == false)
         {
             //Progresses dialogue if EndDialogue is false
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
@@ -123,5 +136,41 @@ public class DialogueButton : MonoBehaviour
                 }
             }
         }
+
+        //Progresses dialogue if in an accusation
+        else
+        {
+            //Progresses dialogue if EndDialogue is false
+            if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].EndDialogue == false)
+            {
+                //Goes to specific line of dialogue if NextTextOverride isn't 0
+                if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].NextTextOverride != 0)
+                {
+                    DC.currentAccusation.currMessage = DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].NextTextOverride;
+                }
+                else
+                {
+                    DC.currentAccusation.currMessage++;
+                }
+                CC.dc.UpdateScreen(DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage]);
+            }
+
+            //Runs if EndDialogue is true
+            else
+            {
+                //If correctAnswer is true, 
+                if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].correctAnswer == true)
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+                }
+
+                //If correctAnswer is false, 
+                else if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].correctAnswer == false)
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+                }
+            }
+        }
     }
 }
+ 

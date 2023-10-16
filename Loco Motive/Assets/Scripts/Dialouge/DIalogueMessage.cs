@@ -11,4 +11,5 @@ public class DialogueMessage
     public bool EndDialogue;
     public Sprite Portrait;
     public bool hasRead = false;
+    public bool correctAnswer = false;
 }
