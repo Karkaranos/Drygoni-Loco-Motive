@@ -1530,7 +1530,7 @@ GameObject:
   - component: {fileID: 300404341}
   m_Layer: 0
   m_Name: MapGoToDeluxeHallway
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300404339}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
@@ -1673,7 +1673,7 @@ GameObject:
   - component: {fileID: 348503726}
   m_Layer: 0
   m_Name: MapGoToDominicRoom
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2830,7 +2830,7 @@ GameObject:
   - component: {fileID: 478502807}
   m_Layer: 0
   m_Name: MapGoToBar
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3023,7 +3023,7 @@ GameObject:
   - component: {fileID: 519901250}
   m_Layer: 0
   m_Name: MapGoToDeluxeBedroom2
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6492,7 +6492,7 @@ GameObject:
   - component: {fileID: 1142414933}
   m_Layer: 0
   m_Name: MapGoToLounge
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7482,7 +7482,7 @@ GameObject:
   - component: {fileID: 1326643991}
   m_Layer: 0
   m_Name: MapGoToHunterCaseyRoom
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7514,7 +7514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 555417510}
+  connectedRoom: {fileID: 1493883060}
 --- !u!61 &1326643992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9156,9 +9156,10 @@ GameObject:
   - component: {fileID: 1621697830}
   - component: {fileID: 1621697832}
   - component: {fileID: 1621697831}
+  - component: {fileID: 1621697833}
   m_Layer: 0
   m_Name: MapGoToBradyRoom
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9275,6 +9276,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621697833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621697829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedRoom: {fileID: 495125579}
 --- !u!1 &1649360443
 GameObject:
   m_ObjectHideFlags: 0
@@ -9288,7 +9302,7 @@ GameObject:
   - component: {fileID: 1649360445}
   m_Layer: 0
   m_Name: MapGoToAlexRoom
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10119,7 +10133,7 @@ GameObject:
   - component: {fileID: 1792878600}
   m_Layer: 0
   m_Name: MapGoToDiner
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10262,7 +10276,7 @@ GameObject:
   - component: {fileID: 1832804064}
   m_Layer: 0
   m_Name: MapGoToHallway
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10614,7 +10628,7 @@ GameObject:
   - component: {fileID: 1888518418}
   m_Layer: 0
   m_Name: MapGoToDeluxeBedroom1
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

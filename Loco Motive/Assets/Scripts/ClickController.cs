@@ -15,6 +15,7 @@ public class ClickController : MonoBehaviour
     private InputAction interact;
     private InputAction restart;
     private InputAction exit;
+    private int currentRoom;
 
     private Vector2 currPos;
 
@@ -68,9 +69,10 @@ public class ClickController : MonoBehaviour
         OpenLockBox.SetActive(false);
 
         dc.opening = true;
-        
 
-        MapRooms[4].GetComponent<SpriteRenderer>().color = Color.blue;
+        currentRoom = 10;
+
+        MapRooms[10].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
     private void Restart_performed(InputAction.CallbackContext obj)
@@ -88,7 +90,8 @@ public class ClickController : MonoBehaviour
         currPos = mPos.ReadValue<Vector2>();
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(currPos), Vector2.zero);
 
-        if (hit.collider != null && dc.isTalking == false)
+        if (hit.collider != null && dc.isTalking == false && 
+            hit.collider.gameObject.tag != "Map")
         {
             if (isHighlighted == false)
             {
@@ -98,13 +101,47 @@ public class ClickController : MonoBehaviour
                 isHighlighted = true;
             }
         }
+        else if (hit.collider != null && hit.collider.gameObject.tag == "Map")
+        {
+            if (!isHighlighted)
+            {
+                HighlightedObject = hit.collider.gameObject;
+                //If the current room is being hovered over, set the original color to blue
+                if (HighlightedObject == MapRooms[currentRoom])
+                {
+                    originalColor = Color.blue;
+                }
+                //Otherwise set the original color to white
+                else
+                {
+                    originalColor = Color.white;
+                }
+                HighlightedObject.GetComponent<SpriteRenderer>().color = Color.green;
+                isHighlighted = true;
+            }
+        }
         
         else if (isHighlighted == true)
         {
+            if(hit.collider != null && hit.collider.gameObject.tag == "Map")
+            {
+                if (HighlightedObject == MapRooms[currentRoom])
+                {
+                    originalColor = Color.blue;
+                }
+                //Otherwise set the original color to white
+                else
+                {
+                    originalColor = Color.white;
+                }
+            }
             HighlightedObject.GetComponent<SpriteRenderer>().color = originalColor;
             isHighlighted = false;
 
+
+
         }
+
     }
 
 
@@ -146,6 +183,7 @@ public class ClickController : MonoBehaviour
                 }
                 int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
                 MapRooms[roomNum].GetComponent<SpriteRenderer>().color = Color.blue;
+                currentRoom = roomNum;
             }
 
             else if (hit.collider.GetComponent<DialogueInstance>())
