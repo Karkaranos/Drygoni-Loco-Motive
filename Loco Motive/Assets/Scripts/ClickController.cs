@@ -64,7 +64,6 @@ public class ClickController : MonoBehaviour
 
         dc.ContinueText.text = "Continue";
 
-        dc.DialogueScreen.SetActive(false);
         dc.InterrogationScreen.SetActive(false);
         OpenLockBox.SetActive(false);
 
