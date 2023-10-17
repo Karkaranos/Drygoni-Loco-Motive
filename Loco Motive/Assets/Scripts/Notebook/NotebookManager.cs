@@ -80,8 +80,6 @@ public class NotebookManager : MonoBehaviour
         eventText[4] = event5;
 
 
-        CloseNotebook();
-
     }
 
     /// <summary>
