@@ -9,11 +9,13 @@ public class DialogueButton : MonoBehaviour
     public TMP_Text ButtonText;
     public ClickController CC;
     public DialogueController DC;
+    public InventoryBehavior IB;
 
     public void Start()
     {
         CC = FindObjectOfType<ClickController>();
         DC = FindObjectOfType<DialogueController>();
+        IB = FindObjectOfType<InventoryBehavior>();
     }
     public void UpdateButton(int i, string s)
     {
@@ -38,6 +40,22 @@ public class DialogueButton : MonoBehaviour
         
         else if (DC.interrogating == true && DC.accusing == false)
         {
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count != 0)
+            {
+                for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count; i++)
+                {
+                    DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn[i].SetActive(true);
+                }
+            }
+
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff.Count != 0)
+            {
+                for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff.Count; i++)
+                {
+                    DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff[i].SetActive(false);
+                }
+            }
+
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
             {
                 DC.currentInterrogation.currMessage = NextDialogue;
@@ -61,6 +79,15 @@ public class DialogueButton : MonoBehaviour
                 DC.StopDialogue();
             }
         }
+
+
+        //This never runs- it only runs this entire function when the dialogue button option is clicked
+        /*if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
+        {
+            int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
+            Debug.Log("i = " + i);
+            IB.AddItemToInventory(i);
+        }*/
     }
 
     //Progress dialogue when hitting continue button
@@ -105,6 +132,12 @@ public class DialogueButton : MonoBehaviour
                     DC.currentInterrogation.currMessage++;
                 }
                 CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
+                if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
+                {
+                    int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
+                    Debug.Log("i = " + i);
+                    IB.AddItemToInventory(i);
+                }
             }
 
             //Runs if EndDialogue is true
