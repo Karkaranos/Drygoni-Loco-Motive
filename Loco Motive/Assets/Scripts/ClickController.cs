@@ -69,9 +69,9 @@ public class ClickController : MonoBehaviour
 
         dc.opening = true;
 
-        currentRoom = 10;
+        currentRoom = 4;
 
-        MapRooms[10].GetComponent<SpriteRenderer>().color = Color.blue;
+        MapRooms[4].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
     private void Restart_performed(InputAction.CallbackContext obj)

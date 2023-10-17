@@ -61,6 +61,8 @@ public class DialogueController : MonoBehaviour
         
         currentDialogue = openingDialogue;
         DialogueScreen.SetActive(true);
+        NotebookButton.SetActive(false);
+        InventoryButton.SetActive(false);
         StartDialogue();
         isTalking = true;
         //UpdateScreen(currentDialogue.AllMessages[currentDialogue.currMessage]);
@@ -117,6 +119,8 @@ public class DialogueController : MonoBehaviour
             BranchButtons.SetActive(true);
             InterrogateButton.SetActive(false);
             currentDialogue.StartText();
+            InventoryButton.SetActive(false);
+            NotebookButton.SetActive(false);
             //ButtonTextOne.text = "Yes";
             //ButtonTextTwo.text = "No";
             //DialogueBox.text = "Have you ever been on a train before?";
