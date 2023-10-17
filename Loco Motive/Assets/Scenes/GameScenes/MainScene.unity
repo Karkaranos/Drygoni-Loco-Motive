@@ -3420,7 +3420,7 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
-    AddInventoryItem: 1
+    AddInventoryItem: 0
     InventoryItem: 1
   - Text: Other one thing
     Names: 0
@@ -4130,9 +4130,7 @@ MonoBehaviour:
   AllMessages:
   - Text: ThisIsNewDialogue
     Names: 1
-    Branch:
-    - choiceText: 
-      nextDialogue: 0
+    Branch: []
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 451dc2ba809e0f74a969915c03de2cb6, type: 3}
@@ -4997,7 +4995,7 @@ GameObject:
   - component: {fileID: 1003432166}
   - component: {fileID: 1003432167}
   m_Layer: 0
-  m_Name: AccusationTest
+  m_Name: AccusationObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5087,10 +5085,10 @@ MonoBehaviour:
   - Text: Whodunnit
     Names: 1
     Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
+    - choiceText: That Guy!
+      nextDialogue: 6
+    - choiceText: Please work
+      nextDialogue: 5
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 0}
@@ -5100,7 +5098,19 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 0
-  - Text: This thing
+  - Text: Not Right, Sorry!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 0}
+    hasRead: 0
+    correctAnswer: 0
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Welp
     Names: 0
     Branch: []
     NextTextOverride: 0
@@ -5112,26 +5122,14 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 0
-  - Text: 
+  - Text: Correct!
     Names: 0
     Branch: []
     NextTextOverride: 0
-    EndDialogue: 0
+    EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
-    correctAnswer: 0
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: 
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
+    correctAnswer: 1
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -9608,7 +9606,7 @@ GameObject:
   - component: {fileID: 2081785147}
   - component: {fileID: 2081785146}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: AccusationTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9628,12 +9626,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: 'uiuygv '
+  - Text: Woah
     Names: 0
     Branch:
-    - choiceText: 
+    - choiceText: Neat
       nextDialogue: 1
-    - choiceText: 
+    - choiceText: Wow
       nextDialogue: 2
     NextTextOverride: 0
     EndDialogue: 0
@@ -9644,14 +9642,10 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 0
-  - Text: Gotothis
+  - Text: Neat
     Names: 0
-    Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
-    NextTextOverride: 4
+    Branch: []
+    NextTextOverride: 3
     EndDialogue: 0
     Portrait: {fileID: 0}
     hasRead: 0
@@ -9660,15 +9654,11 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 0
-  - Text: OtherOption
+  - Text: Wow
     Names: 0
-    Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
+    Branch: []
     NextTextOverride: 0
-    EndDialogue: 1
+    EndDialogue: 0
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
@@ -9676,45 +9666,9 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 0
-  - Text: vgt77vyvfgyuvg
+  - Text: Final Text
     Names: 0
-    Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: vgt77vyvfgyuvg
-    Names: 0
-    Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: vgt77vyvfgyuvg
-    Names: 0
-    Branch:
-    - choiceText: 
-      nextDialogue: 0
-    - choiceText: 
-      nextDialogue: 0
+    Branch: []
     NextTextOverride: 0
     EndDialogue: 1
     Portrait: {fileID: 0}

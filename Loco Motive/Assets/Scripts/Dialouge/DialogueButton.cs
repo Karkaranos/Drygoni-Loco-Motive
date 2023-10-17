@@ -96,7 +96,7 @@ public class DialogueButton : MonoBehaviour
     public void ContinueProgress()
     {
         //Progresses dialogue if not in an interrogation or accusation
-        if (DC.interrogating == false)
+        if (DC.interrogating == false && DC.accusing == false)
         {
             if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
             {
