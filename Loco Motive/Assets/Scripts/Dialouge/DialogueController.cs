@@ -187,6 +187,7 @@ public class DialogueController : MonoBehaviour
     
     public void StartAccusation()
     {
+        currentDialogue.canAccuse = false;
         currentAccusation = currentDialogue.thisAccusation;
         accusing = true;
         AccusationButton.SetActive(false);

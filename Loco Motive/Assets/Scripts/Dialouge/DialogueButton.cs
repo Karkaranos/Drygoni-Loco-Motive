@@ -71,6 +71,7 @@ public class DialogueButton : MonoBehaviour
         {
             if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].EndDialogue == false)
             {
+                print("sfhd");
                 DC.currentAccusation.currMessage = NextDialogue;
                 DC.UpdateScreen(DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage]);
             }
