@@ -9,11 +9,13 @@ public class DialogueButton : MonoBehaviour
     public TMP_Text ButtonText;
     public ClickController CC;
     public DialogueController DC;
+    public InventoryBehavior IB;
 
     public void Start()
     {
         CC = FindObjectOfType<ClickController>();
         DC = FindObjectOfType<DialogueController>();
+        IB = FindObjectOfType<InventoryBehavior>();
     }
     public void UpdateButton(int i, string s)
     {
@@ -54,6 +56,14 @@ public class DialogueButton : MonoBehaviour
                     DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff[i].SetActive(false);
                 }
             }
+
+            //This never runs, couldn't tell you why
+            //if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem == true)
+            //{
+            //    int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
+            //    Debug.Log("i = " + i);
+            //    IB.AddItemToInventory(i);
+            //}
 
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
             {

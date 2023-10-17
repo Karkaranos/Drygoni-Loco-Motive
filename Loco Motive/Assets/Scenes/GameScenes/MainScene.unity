@@ -632,6 +632,7 @@ MonoBehaviour:
   ButtonText: {fileID: 1989096827}
   CC: {fileID: 1319127852}
   DC: {fileID: 0}
+  IB: {fileID: 0}
 --- !u!114 &105666865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,7 +899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &221183146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1319,6 +1320,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: ProgressingCorrectly
     Names: 2
     Branch: []
@@ -1329,6 +1332,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: AAAAAAAAAAA
     Names: 0
     Branch: []
@@ -1339,6 +1344,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3159,6 +3166,7 @@ MonoBehaviour:
   ButtonText: {fileID: 0}
   CC: {fileID: 1319127852}
   DC: {fileID: 0}
+  IB: {fileID: 0}
 --- !u!114 &617486991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3400,6 +3408,8 @@ MonoBehaviour:
     - {fileID: 221183145}
     CharacterOff:
     - {fileID: 1915142363}
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: You interrogate good
     Names: 0
     Branch: []
@@ -3410,6 +3420,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 1
+    InventoryItem: 1
   - Text: Other one thing
     Names: 0
     Branch: []
@@ -3420,6 +3432,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4126,6 +4140,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: ProgressingCorrectly
     Names: 2
     Branch: []
@@ -4136,6 +4152,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: AAAAAAAAAAA
     Names: 0
     Branch: []
@@ -4146,6 +4164,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -4311,6 +4331,7 @@ MonoBehaviour:
   ButtonText: {fileID: 863471916}
   CC: {fileID: 1319127852}
   DC: {fileID: 0}
+  IB: {fileID: 0}
 --- !u!114 &810011159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5021,6 +5042,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: We found X in...
     Names: 1
     Branch:
@@ -5035,6 +5058,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: No, that doesn't sound right...
     Names: 1
     Branch: []
@@ -5045,6 +5070,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: Yeah, it was there
     Names: 1
     Branch: []
@@ -5055,6 +5082,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: Whodunnit
     Names: 1
     Branch:
@@ -5069,6 +5098,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: This thing
     Names: 0
     Branch: []
@@ -5079,6 +5110,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: 
     Names: 0
     Branch: []
@@ -5089,6 +5122,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: 
     Names: 0
     Branch: []
@@ -5099,6 +5134,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5514,6 +5551,7 @@ MonoBehaviour:
   ButtonText: {fileID: 0}
   CC: {fileID: 1319127852}
   DC: {fileID: 0}
+  IB: {fileID: 0}
 --- !u!114 &1039539744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9604,6 +9642,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: Gotothis
     Names: 0
     Branch:
@@ -9618,6 +9658,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: OtherOption
     Names: 0
     Branch:
@@ -9632,6 +9674,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: vgt77vyvfgyuvg
     Names: 0
     Branch:
@@ -9646,6 +9690,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: vgt77vyvfgyuvg
     Names: 0
     Branch:
@@ -9660,6 +9706,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: vgt77vyvfgyuvg
     Names: 0
     Branch:
@@ -9674,6 +9722,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -9827,6 +9877,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: Screen changed
     Names: 0
     Branch: []
@@ -9837,6 +9889,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: TextWasProgressed
     Names: 0
     Branch: []
@@ -9847,6 +9901,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: Choice 2
     Names: 0
     Branch: []
@@ -9857,6 +9913,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: DialogueShouldEnd
     Names: 0
     Branch: []
@@ -9867,6 +9925,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: DialogueHasn'tEnded
     Names: 0
     Branch: []
@@ -9877,6 +9937,8 @@ MonoBehaviour:
     correctAnswer: 0
     CharacterOn: []
     CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0

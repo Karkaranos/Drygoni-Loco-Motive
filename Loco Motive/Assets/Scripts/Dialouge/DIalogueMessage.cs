@@ -14,4 +14,6 @@ public class DialogueMessage
     public bool correctAnswer = false;
     public List<GameObject> CharacterOn;
     public List<GameObject> CharacterOff;
+    public bool AddInventoryItem;
+    public int InventoryItem;
 }
