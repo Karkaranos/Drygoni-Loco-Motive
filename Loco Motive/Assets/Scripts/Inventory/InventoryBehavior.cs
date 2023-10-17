@@ -63,7 +63,10 @@ public class InventoryBehavior : MonoBehaviour
 
     #region Functions
 
-
+    public void Test()
+    {
+        Debug.Log("hdskjlsdgfdhkfhsajhkfdsalbjhgfdshjss");
+    }
 
     /// <summary>
     /// Start is called on the first frame update. It creates the arrays and calls
@@ -77,7 +80,6 @@ public class InventoryBehavior : MonoBehaviour
 
         PopulateArrays();
 
-        CloseInventory();
 
     }
 
