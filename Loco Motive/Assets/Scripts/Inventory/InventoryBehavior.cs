@@ -46,6 +46,10 @@ public class InventoryBehavior : MonoBehaviour
 
     #endregion
 
+    [SerializeField] int maxItems;
+    private int itemsCollected = 0;
+    [SerializeField] GameObject evidenceText;
+
     public int itemAdded;
     public int itemRemoved;
     public int pieceCounter = 0;
@@ -111,8 +115,12 @@ public class InventoryBehavior : MonoBehaviour
 
     public void OpenLargeView(int i)
     {
-        inventoryLarge.SetActive(true);
-        largeObject.sprite = inventoryVisual[i-1];
+        if(inventoryVisual[i-1] != placeholder)
+        {
+            inventoryLarge.SetActive(true);
+            largeObject.sprite = inventoryVisual[i-1];
+        }
+
     }
 
     public void CloseLargeView()
@@ -219,6 +227,14 @@ public class InventoryBehavior : MonoBehaviour
         }
         //Update the Inventory to match its current state
         UpdateInventory();
+
+
+        itemsCollected++;
+        //Check if all evidence is collected
+        if (itemsCollected == maxItems)
+        {
+            StartCoroutine(AllEvidenceCollected());
+        }
     }
 
     /// <summary>
@@ -265,6 +281,20 @@ public class InventoryBehavior : MonoBehaviour
         {
             inventorySpaces[i].sprite = inventoryVisual[i];
         }
+    }
+
+
+    IEnumerator AllEvidenceCollected()
+    {
+        evidenceText.SetActive(true);
+        Color tCol = evidenceText.GetComponent<Text>().color;
+        yield return new WaitForSeconds(3f);
+        evidenceText.SetActive(false);
+        /*for(float i=1; i>0; i-= .01f)
+        {
+            yield return new WaitForSeconds(.1f);
+            evidenceText.GetComponent<Text>().color = new Color(tCol.r, tCol.g, tCol.b, i);
+        }*/
     }
 
     #endregion
