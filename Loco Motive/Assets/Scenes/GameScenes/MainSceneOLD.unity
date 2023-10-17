@@ -340,7 +340,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -369,7 +369,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &45641574
 GameObject:
@@ -755,8 +755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 15.2}
-  m_SizeDelta: {x: 100, y: 40}
+  m_AnchoredPosition: {x: 4.633, y: -38.322}
+  m_SizeDelta: {x: 263.698, y: 80.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &121681484
 GameObject:
@@ -843,8 +843,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -931,8 +931,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 52.5}
-  m_SizeDelta: {x: 100, y: 40}
+  m_AnchoredPosition: {x: 4.633, y: 36.388}
+  m_SizeDelta: {x: 263.698, y: 80.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248876577
 MonoBehaviour:
@@ -1380,7 +1380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &293799391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,6 +1403,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -1849,6 +1850,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 3
     Branch:
@@ -1859,6 +1861,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
       what actually happened? "
     Names: 1
@@ -1868,6 +1871,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
       me."
     Names: 3
@@ -1877,6 +1881,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: You only look more suspicious when you lie
     Names: 1
     Branch: []
@@ -1885,6 +1890,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
       big, we just both thought the other person had taken care of everything back
       home before we left."
@@ -1895,6 +1901,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "After that I left the room and didn\u2019t go back because Josie usually
       needs a while to cool off. I slept in the lounge last night and when I went
       to apologize in the morning\u2026"
@@ -1905,6 +1912,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
     Names: 3
     Branch: []
@@ -1913,6 +1921,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well that story makes a lot of sense with the other evidence we found.
       Thank you for telling us the truth. We will bring justice for Josephine.
     Names: 1
@@ -1922,6 +1931,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2593,8 +2603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330.6588, y: -182.9}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 825.063, y: -389.55}
+  m_SizeDelta: {x: 269.875, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &450589878
 GameObject:
@@ -2909,8 +2919,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3406,6 +3416,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -3631,8 +3642,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330.65887, y: -205.4}
-  m_SizeDelta: {x: 92.6823, y: 17.3779}
+  m_AnchoredPosition: {x: 833, y: -431}
+  m_SizeDelta: {x: 253.584, y: 92.702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617486990
 MonoBehaviour:
@@ -3838,6 +3849,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 3
     Branch:
@@ -3854,6 +3866,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -3862,6 +3875,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ' I was in the room with Josie'
     Names: 3
     Branch: []
@@ -3870,6 +3884,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: And she was dead when you woke up?
     Names: 1
     Branch: []
@@ -3878,6 +3893,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yes, I think so
     Names: 3
     Branch: []
@@ -3886,6 +3902,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: You think?
     Names: 1
     Branch: []
@@ -3894,6 +3911,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Well I left for breakfast while it was still dark in the room so I didn\u2019t
       see her but when I came back I found her."
     Names: 3
@@ -3903,6 +3921,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: A dead body should be hard to miss...
     Names: 1
     Branch: []
@@ -3911,6 +3930,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -3919,6 +3939,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -3928,6 +3949,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -3936,6 +3958,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -3945,6 +3968,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 003bf00687002dc49977efba7d69b5f7, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 1
     Branch: []
@@ -3953,6 +3977,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -3962,6 +3987,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -3970,6 +3996,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -3978,6 +4005,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -3986,6 +4014,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -3994,6 +4023,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 01a2573eb1c0217449e6c6403ac6d0cf, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -4003,6 +4033,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Thank You
     Names: 1
     Branch: []
@@ -4011,6 +4042,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Do you have any idea who did this? Did Josephine have any enemies?
     Names: 1
     Branch: []
@@ -4019,6 +4051,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
       get along\u2026 Just between you and me, he kinda scares me."
     Names: 3
@@ -4028,6 +4061,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Why\u2019s that?"
     Names: 1
     Branch: []
@@ -4036,6 +4070,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Well, he really likes\u2026 knives"
     Names: 3
     Branch: []
@@ -4044,6 +4079,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Knives, huh? Good to know
     Names: 1
     Branch: []
@@ -4052,6 +4088,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Thank you for the help
     Names: 1
     Branch: []
@@ -4060,6 +4097,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4282,6 +4320,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -5059,6 +5098,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -5201,6 +5241,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -5312,8 +5353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -22.300018}
-  m_SizeDelta: {x: 100, y: 40}
+  m_AnchoredPosition: {x: 4.633, y: -113.432}
+  m_SizeDelta: {x: 263.698, y: 80.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810011158
 MonoBehaviour:
@@ -5809,8 +5850,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5888,8 +5929,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 355.15, y: -56.192}
-  m_SizeDelta: {x: 43.7042, y: 43.7042}
+  m_AnchoredPosition: {x: 613.525, y: -212.916}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871331104
 MonoBehaviour:
@@ -5960,7 +6001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9245283, g: 0.5965824, b: 0.5965824, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6327,6 +6368,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 3
     Branch:
@@ -6343,6 +6385,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
       what actually happened? "
     Names: 1
@@ -6352,6 +6395,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
       me."
     Names: 3
@@ -6361,6 +6405,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: You only look more suspicious when you lie
     Names: 1
     Branch: []
@@ -6369,6 +6414,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
       big, we just both thought the other person had taken care of everything back
       home before we left."
@@ -6379,6 +6425,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "After that I left the room and didn\u2019t go back because Josie usually
       needs a while to cool off. I slept in the lounge last night and when I went
       to apologize in the morning\u2026"
@@ -6389,6 +6436,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
     Names: 3
     Branch: []
@@ -6397,6 +6445,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well that story makes a lot of sense with the other evidence we found.
       Thank you for telling us the truth. We will bring justice for Josephine.
     Names: 1
@@ -6406,6 +6455,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -6414,6 +6464,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -6423,6 +6474,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -6431,6 +6483,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -6440,6 +6493,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 003bf00687002dc49977efba7d69b5f7, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 1
     Branch: []
@@ -6448,6 +6502,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -6457,6 +6512,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -6465,6 +6521,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -6473,6 +6530,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -6481,6 +6539,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -6489,6 +6548,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 01a2573eb1c0217449e6c6403ac6d0cf, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -6498,6 +6558,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Thank You
     Names: 1
     Branch: []
@@ -6506,6 +6567,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Do you have any idea who did this? Did Josephine have any enemies?
     Names: 1
     Branch: []
@@ -6514,6 +6576,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
       get along\u2026 Just between you and me, he kinda scares me."
     Names: 3
@@ -6523,6 +6586,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Why\u2019s that?"
     Names: 1
     Branch: []
@@ -6531,6 +6595,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Well, he really likes\u2026 knives"
     Names: 3
     Branch: []
@@ -6539,6 +6604,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Knives, huh? Good to know
     Names: 1
     Branch: []
@@ -6547,6 +6613,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Thank you for the help
     Names: 1
     Branch: []
@@ -6555,6 +6622,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -7338,6 +7406,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Whatever
     Names: 4
     Branch:
@@ -7352,6 +7421,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -7360,6 +7430,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -7368,6 +7439,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well I need to get the facts straight before I can deduce anything
     Names: 1
     Branch: []
@@ -7376,6 +7448,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "You don\u2019t need to be a detective to figure out people go to sleep
       at night"
     Names: 4
@@ -7385,6 +7458,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -7393,6 +7467,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -7402,6 +7477,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
       fan of yours"
     Names: 1
@@ -7411,6 +7487,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -7419,6 +7496,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Nothing
     Names: 1
     Branch: []
@@ -7427,6 +7505,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Did you notice anything strange last night?
     Names: 1
     Branch: []
@@ -7435,6 +7514,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: How was I supposed to notice anything with Hana and Josie yelling last
       night!
     Names: 4
@@ -7444,6 +7524,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: They were yelling?
     Names: 1
     Branch: []
@@ -7452,6 +7533,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yeah, at each other.
     Names: 4
     Branch: []
@@ -7460,6 +7542,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -7468,6 +7551,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -7477,6 +7561,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
@@ -7485,6 +7570,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -7744,6 +7830,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -7752,6 +7839,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -7760,6 +7848,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -7768,6 +7857,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -7776,6 +7866,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -7861,8 +7952,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -3.75, y: 0}
-  m_SizeDelta: {x: 779.5, y: 143.6227}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 300}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1200133928
 MonoBehaviour:
@@ -8322,8 +8413,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8426,6 +8517,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Whatever
     Names: 4
     Branch:
@@ -8442,6 +8534,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -8450,6 +8543,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -8458,6 +8552,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well I need to get the facts straight before I can deduce anything
     Names: 1
     Branch: []
@@ -8466,6 +8561,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "You don\u2019t need to be a detective to figure out people go to sleep
       at night"
     Names: 4
@@ -8475,6 +8571,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -8483,6 +8580,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -8492,6 +8590,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
       fan of yours"
     Names: 1
@@ -8501,6 +8600,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -8509,6 +8609,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Nothing
     Names: 1
     Branch: []
@@ -8517,6 +8618,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Did you notice anything strange last night?
     Names: 1
     Branch: []
@@ -8525,6 +8627,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: How was I supposed to notice anything with Hana and Josie yelling last
       night!
     Names: 4
@@ -8534,6 +8637,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: They were yelling?
     Names: 1
     Branch: []
@@ -8542,6 +8646,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yeah, at each other.
     Names: 4
     Branch: []
@@ -8550,6 +8655,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -8558,6 +8664,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -8567,6 +8674,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
@@ -8575,6 +8683,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Hana mentioned you are a fan of knives
     Names: 1
     Branch: []
@@ -8583,6 +8692,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -8591,6 +8701,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -8599,6 +8710,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -8608,6 +8720,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -8616,6 +8729,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -8631,6 +8745,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -8639,6 +8754,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -8647,6 +8763,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -8655,6 +8772,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -8663,6 +8781,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 0
     Branch: []
@@ -8671,6 +8790,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -8679,6 +8799,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 0
     Branch: []
@@ -8687,6 +8808,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: OK OK JUST TAKE THE STUPID KEY
     Names: 4
     Branch: []
@@ -8695,14 +8817,16 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Thank you
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 2c00000024000000
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -8711,6 +8835,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -8720,6 +8845,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -8729,15 +8855,17 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 2c00000020000000
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -8746,6 +8874,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -8755,6 +8884,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -8763,6 +8893,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -8771,6 +8902,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -8779,6 +8911,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -8787,6 +8920,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -8795,15 +8929,17 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 2400000020000000
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -8909,8 +9045,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8969,7 +9105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1312352928
 Transform:
   m_ObjectHideFlags: 0
@@ -9008,6 +9144,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -9732,8 +9869,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.999992, y: -153}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -427.19, y: -320}
+  m_SizeDelta: {x: 465.622, y: 80.454}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1411646949
 CanvasRenderer:
@@ -9790,8 +9927,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9826,7 +9963,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -186.72787, y: -16.415619, z: -133.37683, w: 36.93519}
+  m_margin: {x: -1.4098511, y: 20.647976, z: 2.5230634, w: -0.12840411}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9964,6 +10101,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -9972,6 +10110,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -9980,6 +10119,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -9988,6 +10128,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -9996,6 +10137,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -10004,6 +10146,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -10013,6 +10156,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -10022,6 +10166,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yes
     Names: 0
     Branch: []
@@ -10030,6 +10175,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -10039,6 +10185,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -10049,6 +10196,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -10059,6 +10207,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -10068,6 +10217,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -10077,6 +10227,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -10274,6 +10425,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well, she looks dead.
     Names: 0
     Branch: []
@@ -10282,6 +10434,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 1
     Branch: []
@@ -10290,6 +10443,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "There\u2019s a lot of stab wounds, but the clothes aren\u2019t soaked
       with blood in all places"
     Names: 0
@@ -10299,6 +10453,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: How do you think she died?
     Names: 1
     Branch: []
@@ -10307,6 +10462,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: " Didn\u2019t you see all the stab wounds? Obviously, someone stabbed her.
       Several times too"
     Names: 0
@@ -10316,6 +10472,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -10690,6 +10847,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Whatever
     Names: 4
     Branch:
@@ -10700,6 +10858,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Hana mentioned you are a fan of knives
     Names: 1
     Branch: []
@@ -10708,6 +10867,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -10716,6 +10876,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -10724,6 +10885,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -10733,6 +10895,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -10741,6 +10904,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -10756,6 +10920,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -10764,6 +10929,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -10772,6 +10938,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -10780,6 +10947,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -10788,6 +10956,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 0
     Branch: []
@@ -10796,6 +10965,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -10804,6 +10974,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ...
     Names: 0
     Branch: []
@@ -10812,6 +10983,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: OK OK JUST TAKE THE STUPID KEY
     Names: 4
     Branch: []
@@ -10820,6 +10992,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Thank you
     Names: 1
     Branch: []
@@ -10828,6 +11001,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -10836,6 +11010,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -10845,6 +11020,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -10854,6 +11030,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -10863,6 +11040,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -10871,6 +11049,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -10880,6 +11059,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -10888,6 +11068,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -10896,6 +11077,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -10904,6 +11086,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -10912,6 +11095,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -10920,6 +11104,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -10929,6 +11114,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11581,8 +11767,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 88.6}
-  m_SizeDelta: {x: 100, y: 40}
+  m_AnchoredPosition: {x: 4.633, y: 108.694}
+  m_SizeDelta: {x: 263.698, y: 80.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685009731
 MonoBehaviour:
@@ -11823,6 +12009,26 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 393542772}
+    - target: {fileID: 218784770823490389, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 646065576107461091, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120404396398123290, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444960614566643450, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437463521573589907, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11865,6 +12071,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612658334185966682, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8303426333515695901, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
@@ -11927,8 +12137,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 33, y: 39}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 54.914, y: 0}
+  m_SizeDelta: {x: 1429.868, y: 219.55}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1710522196
 CanvasRenderer:
@@ -11985,8 +12195,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12021,7 +12231,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -174.37311, y: -16.415619, z: -169.55927, w: -28.622711}
+  m_margin: {x: 1.6789868, y: 11.382097, z: -5.86171, w: 17.706776}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12060,11 +12270,11 @@ RectTransform:
   m_Father: {fileID: 1036465388}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317, y: -153}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &1728337706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13122,8 +13332,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13736,6 +13946,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -13744,6 +13955,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -13752,6 +13964,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -13760,6 +13973,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -13768,6 +13982,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -13776,6 +13991,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -13785,6 +14001,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -13794,6 +14011,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: Yes
     Names: 0
     Branch: []
@@ -13802,6 +14020,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -13811,6 +14030,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -13821,6 +14041,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -13831,6 +14052,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -13840,6 +14062,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -13849,6 +14072,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     hasRead: 0
     correctAnswer: 0
+    messagesToMarkHasRead: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0

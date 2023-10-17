@@ -114,6 +114,12 @@ public class DialogueButton : MonoBehaviour
                 if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead == false)
                 {
                     DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead = true;
+              
+                        for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].messagesToMarkHasRead.Count; i++)
+                        {
+                            DC.currentInterrogation.AllMessages[DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].messagesToMarkHasRead[i]].hasRead = true;
+                        }
+                    
                     DC.currentInterrogation.currCounter++;
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
@@ -123,7 +129,14 @@ public class DialogueButton : MonoBehaviour
                     //If currCounter isn't equal to maxCounter, goes back to branches of interrogation
                     else
                     {
-                        DC.currentInterrogation.currMessage = 0;
+                        if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].NextTextOverride != 0)
+                        {
+                            DC.currentInterrogation.currMessage = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].NextTextOverride;
+                        }
+                        else
+                        {
+                            DC.currentInterrogation.currMessage = 0;
+                        }
                         CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
                     }
                 }

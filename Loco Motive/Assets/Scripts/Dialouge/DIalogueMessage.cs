@@ -12,4 +12,5 @@ public class DialogueMessage
     public Sprite Portrait;
     public bool hasRead = false;
     public bool correctAnswer = false;
+    public List<int> messagesToMarkHasRead; 
 }
