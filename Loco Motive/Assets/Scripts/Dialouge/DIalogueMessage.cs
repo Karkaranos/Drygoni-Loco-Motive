@@ -12,4 +12,6 @@ public class DialogueMessage
     public Sprite Portrait;
     public bool hasRead = false;
     public bool correctAnswer = false;
+    public List<GameObject> CharacterOn;
+    public List<GameObject> CharacterOff;
 }

@@ -23,6 +23,7 @@ public class DialogueButton : MonoBehaviour
 
     public void ProgText()
     {
+
         if (DC.interrogating == false && DC.accusing == false)
         {
             if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
@@ -38,6 +39,22 @@ public class DialogueButton : MonoBehaviour
         
         else if (DC.interrogating == true && DC.accusing == false)
         {
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count != 0)
+            {
+                for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count; i++)
+                {
+                    DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn[i].SetActive(true);
+                }
+            }
+
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff.Count != 0)
+            {
+                for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff.Count; i++)
+                {
+                    DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff[i].SetActive(false);
+                }
+            }
+
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].EndDialogue == false)
             {
                 DC.currentInterrogation.currMessage = NextDialogue;
@@ -61,6 +78,8 @@ public class DialogueButton : MonoBehaviour
                 DC.StopDialogue();
             }
         }
+
+        
     }
 
     //Progress dialogue when hitting continue button

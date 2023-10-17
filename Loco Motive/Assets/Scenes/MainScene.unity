@@ -408,6 +408,7 @@ MonoBehaviour:
   strLength: 0
   currSpeaker: 0
   interrogating: 0
+  accusing: 0
   PortraitImage: {fileID: 1728337707}
   DialogueBox: {fileID: 1710522197}
   DialogueBoxInterrogation: {fileID: 397480165}
@@ -433,12 +434,14 @@ MonoBehaviour:
   InterrogateButton: {fileID: 871331102}
   InventoryButton: {fileID: 393542774}
   NotebookButton: {fileID: 1678524256}
+  AccusationButton: {fileID: 0}
   cc: {fileID: 1319127852}
   sd: {fileID: 863328926}
   nm: {fileID: 1703891788}
   openingDialogue: {fileID: 2104534795}
   currentDialogue: {fileID: 0}
   currentInterrogation: {fileID: 0}
+  currentAccusation: {fileID: 0}
   ChoiceBranch:
   - {fileID: 810011156}
   - {fileID: 105666863}
@@ -1246,6 +1249,7 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 451dc2ba809e0f74a969915c03de2cb6, type: 3}
     hasRead: 0
+    correctAnswer: 0
   - Text: ProgressingCorrectly
     Names: 2
     Branch: []
@@ -1253,6 +1257,7 @@ MonoBehaviour:
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: 814859c0333eaeb4299cc57fbd2a5653, type: 3}
     hasRead: 0
+    correctAnswer: 0
   - Text: AAAAAAAAAAA
     Names: 0
     Branch: []
@@ -1260,9 +1265,12 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: a66dcce48fd3f1b45a0ac541dad4710a, type: 3}
     hasRead: 0
+    correctAnswer: 0
   dc: {fileID: 0}
   canInterrogate: 0
+  canAccuse: 0
   thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
 --- !u!70 &293799392
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3295,6 +3303,7 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   - Text: You interrogate good
     Names: 0
     Branch: []
@@ -3302,6 +3311,7 @@ MonoBehaviour:
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   - Text: Other one thing
     Names: 0
     Branch: []
@@ -3309,9 +3319,12 @@ MonoBehaviour:
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   dc: {fileID: 0}
   canInterrogate: 0
+  canAccuse: 0
   thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 2
 --- !u!4 &641586932
@@ -4176,6 +4189,7 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 451dc2ba809e0f74a969915c03de2cb6, type: 3}
     hasRead: 0
+    correctAnswer: 0
   - Text: ProgressingCorrectly
     Names: 2
     Branch: []
@@ -4183,6 +4197,7 @@ MonoBehaviour:
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: 814859c0333eaeb4299cc57fbd2a5653, type: 3}
     hasRead: 0
+    correctAnswer: 0
   - Text: AAAAAAAAAAA
     Names: 0
     Branch: []
@@ -4190,9 +4205,12 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: a66dcce48fd3f1b45a0ac541dad4710a, type: 3}
     hasRead: 0
+    correctAnswer: 0
   dc: {fileID: 0}
   canInterrogate: 1
+  canAccuse: 0
   thisInterrogation: {fileID: 641586931}
+  thisAccusation: {fileID: 0}
 --- !u!70 &794733252
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10428,6 +10446,7 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 451dc2ba809e0f74a969915c03de2cb6, type: 3}
     hasRead: 0
+    correctAnswer: 0
   - Text: Screen changed
     Names: 0
     Branch: []
@@ -10435,6 +10454,7 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   - Text: TextWasProgressed
     Names: 0
     Branch: []
@@ -10442,6 +10462,7 @@ MonoBehaviour:
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   - Text: Choice 2
     Names: 0
     Branch: []
@@ -10449,6 +10470,7 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   - Text: DialogueShouldEnd
     Names: 0
     Branch: []
@@ -10456,6 +10478,7 @@ MonoBehaviour:
     EndDialogue: 1
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   - Text: DialogueHasn'tEnded
     Names: 0
     Branch: []
@@ -10463,9 +10486,12 @@ MonoBehaviour:
     EndDialogue: 0
     Portrait: {fileID: 0}
     hasRead: 0
+    correctAnswer: 0
   dc: {fileID: 0}
   canInterrogate: 0
+  canAccuse: 0
   thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
 --- !u!4 &2104534796
 Transform:
   m_ObjectHideFlags: 0
