@@ -107,6 +107,21 @@ public class DialogueButton : MonoBehaviour
                 {
                     DC.currentDialogue.currMessage++;
                 }
+                if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOn.Count != 0)
+                {
+                    for (int i = 0; i < DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOn.Count; i++)
+                    {
+                        DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOn[i].SetActive(true);
+                    }
+                }
+
+                if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOff.Count != 0)
+                {
+                    for (int i = 0; i < DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOff.Count; i++)
+                    {
+                        DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOff[i].SetActive(false);
+                    }
+                }
                 CC.dc.UpdateScreen(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage]);
             }
 
