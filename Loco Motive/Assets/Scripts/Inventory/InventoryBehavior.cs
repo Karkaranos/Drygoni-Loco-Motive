@@ -83,6 +83,7 @@ public class InventoryBehavior : MonoBehaviour
 
         PopulateArrays();
 
+        itemText.SetActive(false);
 
     }
 
@@ -183,11 +184,12 @@ public class InventoryBehavior : MonoBehaviour
             case 1:
                 newItem = item1;
                 newName = Items.PIECE1;
+                pieceCounter++;
                 break;
             case 2:
                 newItem = item2;
                 newName = Items.PIECE2;
-                keyCollected = true;
+                pieceCounter++;
                 break;
             case 3:
                 newItem = item3;
@@ -198,6 +200,7 @@ public class InventoryBehavior : MonoBehaviour
             case 4:
                 newItem = item4;
                 newName = Items.KEY;
+                keyCollected = true;
                 //Change where pieceCounter++ is to where torn paper pieces are
                 pieceCounter++;
                 break;

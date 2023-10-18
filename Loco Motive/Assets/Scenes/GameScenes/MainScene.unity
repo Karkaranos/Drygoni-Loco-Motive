@@ -625,7 +625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &88567332
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5408,8 +5408,8 @@ MonoBehaviour:
     messagesToMarkHasRead: 
     CharacterOn: []
     CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
+    AddInventoryItem: 1
+    InventoryItem: 1
   - Text: Thank You
     Names: 1
     Branch: []
@@ -8454,8 +8454,8 @@ MonoBehaviour:
     messagesToMarkHasRead: 
     CharacterOn: []
     CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
+    AddInventoryItem: 1
+    InventoryItem: 1
   - Text: Thank You
     Names: 1
     Branch: []
