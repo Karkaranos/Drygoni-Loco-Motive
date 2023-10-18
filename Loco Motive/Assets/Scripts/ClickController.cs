@@ -249,7 +249,7 @@ public class ClickController : MonoBehaviour
                     OpenLockBox.SetActive(true);
                     Lock.SetActive(false);
                     //Replace ITEM2 with the correct enum of the key
-                    ib.RemoveItemFromInventory(InventoryBehavior.Items.ITEM2);
+                    ib.RemoveItemFromInventory(InventoryBehavior.Items.KEY);
                 }
             }
         }

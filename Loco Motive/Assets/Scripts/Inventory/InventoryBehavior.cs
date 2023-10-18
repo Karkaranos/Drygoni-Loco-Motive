@@ -28,6 +28,9 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private GameObject map;
     [SerializeField] private GameObject movementArrows;
     [SerializeField] private GameObject notebookIcon;
+    [SerializeField] private GameObject itemText;
+    [SerializeField] private int maxItems;
+    private int itemsCollected;
 
 
     [Header("Inventory Potential Contents")]
@@ -54,7 +57,7 @@ public class InventoryBehavior : MonoBehaviour
     private Sprite[] inventoryVisual;
     private Image[] inventorySpaces;
     private Items[] inventoryName;
-    public enum Items { EMPTY, ITEM1, ITEM2, ITEM3, ITEM4, ITEM5 }
+    public enum Items { EMPTY, PIECE1, PIECE2, FULLNOTE, KEY, KNIFE }
 
 
 
@@ -179,28 +182,28 @@ public class InventoryBehavior : MonoBehaviour
         {
             case 1:
                 newItem = item1;
-                newName = Items.ITEM1;
+                newName = Items.PIECE1;
                 break;
             case 2:
                 newItem = item2;
-                newName = Items.ITEM2;
+                newName = Items.PIECE2;
                 keyCollected = true;
                 break;
             case 3:
                 newItem = item3;
-                newName = Items.ITEM3;
+                newName = Items.FULLNOTE;
                 //Change where pieceCounter++ is to where torn paper pieces are
                 pieceCounter++;
                 break;
             case 4:
                 newItem = item4;
-                newName = Items.ITEM4;
+                newName = Items.KEY;
                 //Change where pieceCounter++ is to where torn paper pieces are
                 pieceCounter++;
                 break;
             default:
                 newItem = item5;
-                newName = Items.ITEM5;
+                newName = Items.KNIFE;
                 break;
         }
 
@@ -211,11 +214,11 @@ public class InventoryBehavior : MonoBehaviour
         //Checks if both pieces of CombineObject puzzle are collected
         if (pieceCounter == 2)
         {
-            RemoveItemFromInventory(Items.ITEM3);
-            RemoveItemFromInventory(Items.ITEM4);
+            RemoveItemFromInventory(Items.PIECE1);
+            RemoveItemFromInventory(Items.PIECE2);
             pieceCounter = 0;
             //Assign Full Note's ItemIndex when it is added
-            AddItemToInventory(5);
+            AddItemToInventory(3);
         }
         //Update the Inventory to match its current state
         UpdateInventory();
@@ -251,7 +254,11 @@ public class InventoryBehavior : MonoBehaviour
 
         //Update the Inventory to match its current state
         UpdateInventory();
-
+        itemsCollected++;
+        if(itemsCollected >= maxItems)
+        {
+            StartCoroutine(AllItemsCollected());
+        }
 
     }
 
@@ -266,6 +273,15 @@ public class InventoryBehavior : MonoBehaviour
             inventorySpaces[i].sprite = inventoryVisual[i];
         }
     }
+
+    IEnumerator AllItemsCollected()
+    {
+        itemText.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        itemText.SetActive(false);
+    }
+
+
 
     #endregion
 }
