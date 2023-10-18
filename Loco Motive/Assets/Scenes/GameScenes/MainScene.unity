@@ -11596,7 +11596,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1319127856}
   - component: {fileID: 1319127855}
-  - component: {fileID: 1319127854}
   - component: {fileID: 1319127852}
   - component: {fileID: 1319127853}
   m_Layer: 0
@@ -11672,14 +11671,6 @@ MonoBehaviour:
   m_DefaultActionMap: New action map
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!81 &1319127854
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319127851}
-  m_Enabled: 1
 --- !u!20 &1319127855
 Camera:
   m_ObjectHideFlags: 0
