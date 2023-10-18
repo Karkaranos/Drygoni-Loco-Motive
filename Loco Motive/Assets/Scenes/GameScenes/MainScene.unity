@@ -1194,7 +1194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &259114119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,8 +1294,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
   m_Color: {r: 1, g: 0.5488704, b: 0, a: 1}
@@ -1316,11 +1316,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259114118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -0.68, z: 0}
+  m_LocalPosition: {x: -8.08, y: -2.11, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 555417511}
+  m_Father: {fileID: 495125580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272795224
@@ -1465,8 +1465,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -1512,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &293799391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
-  thisInterrogation: {fileID: 1096373622}
+  thisInterrogation: {fileID: 1285031899}
   thisAccusation: {fileID: 0}
 --- !u!212 &293799393
 SpriteRenderer:
@@ -1583,8 +1583,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14e7ad8b6b78cdf4a8cc0582f4998bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1609,7 +1609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1096373621}
+  - {fileID: 1285031900}
   m_Father: {fileID: 378678586}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2100,8 +2100,10 @@ MonoBehaviour:
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
+    CharacterOn:
+    - {fileID: 438098456}
+    CharacterOff:
+    - {fileID: 682444746}
     AddInventoryItem: 0
     InventoryItem: 0
   dc: {fileID: 0}
@@ -2510,8 +2512,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -3244,6 +3246,7 @@ MonoBehaviour:
     CharacterOn:
     - {fileID: 1829183097}
     - {fileID: 1344404020}
+    - {fileID: 1295947190}
     CharacterOff:
     - {fileID: 590738571}
     - {fileID: 651809636}
@@ -3294,8 +3297,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3b9b3cc2d1974d449bee86b2260e4e03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3399,8 +3402,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0.55345905, b: 0.55345905, a: 1}
@@ -4100,6 +4103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 259114122}
   - {fileID: 1094013969}
   - {fileID: 439314217}
   - {fileID: 713593186}
@@ -4297,7 +4301,6 @@ Transform:
   - {fileID: 1214022984}
   - {fileID: 598409987}
   - {fileID: 1249020516}
-  - {fileID: 259114122}
   - {fileID: 1346172601}
   - {fileID: 1463173130}
   - {fileID: 1450284286}
@@ -4321,7 +4324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &566386283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4466,7 +4469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590738571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.83, y: -2.8999996, z: -1}
+  m_LocalPosition: {x: 0.02, y: 0.04, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4544,8 +4547,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b8ee7006f06e9f4583b3017012a49ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4590,7 +4593,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.4437871, y: 0.90774584}
+  m_Offset: {x: 7.1477394, y: -2.3539495}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4601,7 +4604,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6905775, y: 3.8204374}
+  m_Size: {x: 1.2814102, y: 3.9889374}
   m_EdgeRadius: 0
 --- !u!1 &598409984
 GameObject:
@@ -4704,8 +4707,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 0}
@@ -5087,7 +5090,7 @@ MonoBehaviour:
   - Text: A dead body should be hard to miss...
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
@@ -5154,7 +5157,7 @@ MonoBehaviour:
   - Text: ...
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
@@ -5247,7 +5250,7 @@ MonoBehaviour:
   - Text: Thank You
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
@@ -5319,14 +5322,16 @@ MonoBehaviour:
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
+    CharacterOn:
+    - {fileID: 1312352927}
+    CharacterOff:
+    - {fileID: 293799390}
     AddInventoryItem: 0
     InventoryItem: 0
   - Text: Thank you for the help
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
     hasRead: 0
@@ -5607,8 +5612,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b8ee7006f06e9f4583b3017012a49ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5692,7 +5697,7 @@ Transform:
   m_GameObject: {fileID: 659377424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.63, y: 1.63, z: 1.63}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1493883061}
@@ -5739,7 +5744,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: ed5b35f0876e2d74ead4d586a2b316a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cbd7d6bf31f03f3429df4d9ce3dc756a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5899,8 +5904,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3b9b3cc2d1974d449bee86b2260e4e03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6014,8 +6019,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -6098,8 +6103,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0.91486406, b: 0.22327036, a: 1}
@@ -6523,7 +6528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1486383283}
+  - {fileID: 1590063227}
   m_Father: {fileID: 378678586}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6557,7 +6562,7 @@ MonoBehaviour:
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
-  thisInterrogation: {fileID: 1486383284}
+  thisInterrogation: {fileID: 1590063226}
   thisAccusation: {fileID: 0}
 --- !u!212 &780851493
 SpriteRenderer:
@@ -6597,8 +6602,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14e7ad8b6b78cdf4a8cc0582f4998bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6817,7 +6822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &794733251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6888,8 +6893,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b8ee7006f06e9f4583b3017012a49ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8198,7 +8203,7 @@ MonoBehaviour:
   - Text: ...
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
@@ -8291,7 +8296,7 @@ MonoBehaviour:
   - Text: Thank You
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
@@ -8363,14 +8368,16 @@ MonoBehaviour:
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
+    CharacterOn:
+    - {fileID: 780851489}
+    CharacterOff:
+    - {fileID: 293799390}
     AddInventoryItem: 0
     InventoryItem: 0
   - Text: Thank you for the help
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
     Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
     hasRead: 0
@@ -8693,6 +8700,7 @@ RectTransform:
   - {fileID: 617486989}
   - {fileID: 871331103}
   - {fileID: 441537241}
+  - {fileID: 1295947194}
   m_Father: {fileID: 35015780}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8890,6 +8898,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039539741}
+  m_CullTransparentMesh: 1
+--- !u!1 &1056606901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056606902}
+  - component: {fileID: 1056606904}
+  - component: {fileID: 1056606903}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1056606902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056606901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1295947194}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1056606903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056606901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: End Game
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1056606904
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056606901}
   m_CullTransparentMesh: 1
 --- !u!1 &1067350907
 GameObject:
@@ -9110,304 +9253,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1096373620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1096373621}
-  - component: {fileID: 1096373622}
-  m_Layer: 0
-  m_Name: Interrogation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1096373621
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096373620}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 293799394}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1096373622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096373620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: I have some questions so I could use your cooperation
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Whatever
-    Names: 4
-    Branch:
-    - choiceText: Where were you?
-      nextDialogue: 2
-    - choiceText: Realtion
-      nextDialogue: 6
-    - choiceText: Anything Strange?
-      nextDialogue: 11
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Where were you last night?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Uh sleeping? In my room?  What kind of question is that?
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Well I need to get the facts straight before I can deduce anything
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "You don\u2019t need to be a detective to figure out people go to sleep
-      at night"
-    Names: 4
-    Branch: []
-    NextTextOverride: 2
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: How were you and Josephine acquainted?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
-      you say you were a fan? Shouldn\u2019t you already know that?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
-      fan of yours"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: What was that?!
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Nothing
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Did you notice anything strange last night?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: How was I supposed to notice anything with Hana and Josie yelling last
-      night!
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: They were yelling?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Yeah, at each other.
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: So they were arguing? Do you know what about?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
-      care so I put on my headphones to try and drown the sound out."
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "That\u2019s good to know"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
-  currCounter: 0
-  maxCounter: 3
 --- !u!1 &1142414929
 GameObject:
   m_ObjectHideFlags: 0
@@ -9624,8 +9469,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: df405b702484547448090a4c25f7b9d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10364,7 +10209,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10385,7 +10230,7 @@ MonoBehaviour:
       nextDialogue: 18
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10398,7 +10243,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10411,7 +10256,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10424,7 +10269,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10436,9 +10281,9 @@ MonoBehaviour:
       at night"
     Names: 4
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10451,7 +10296,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10465,7 +10310,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10479,7 +10324,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10492,7 +10337,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10503,9 +10348,9 @@ MonoBehaviour:
   - Text: Nothing
     Names: 1
     Branch: []
-    NextTextOverride: 0
+    NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10518,7 +10363,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10532,12 +10377,14 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
+    CharacterOn:
+    - {fileID: 651809636}
+    CharacterOff:
+    - {fileID: 794733250}
     AddInventoryItem: 0
     InventoryItem: 0
   - Text: They were yelling?
@@ -10545,7 +10392,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10558,7 +10405,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10571,7 +10418,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10585,7 +10432,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10596,9 +10443,9 @@ MonoBehaviour:
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
-    NextTextOverride: 0
+    NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10611,7 +10458,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10624,7 +10471,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10637,7 +10484,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10651,7 +10498,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10664,7 +10511,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10684,7 +10531,7 @@ MonoBehaviour:
       nextDialogue: 38
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10697,7 +10544,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10710,7 +10557,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10736,7 +10583,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10749,7 +10596,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10762,7 +10609,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10775,7 +10622,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10788,23 +10635,24 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn: []
+    CharacterOn:
+    - {fileID: 259114118}
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 1
   - Text: Thank you
     Names: 1
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 240000002c000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -10814,7 +10662,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10828,7 +10676,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10842,7 +10690,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10854,22 +10702,23 @@ MonoBehaviour:
       the key, just don\u2019t touch my knives alright?"
     Names: 4
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
+    messagesToMarkHasRead: 2c00000020000000
+    CharacterOn:
+    - {fileID: 259114118}
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 1
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10883,7 +10732,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10896,7 +10745,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10909,7 +10758,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10922,7 +10771,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10935,7 +10784,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10948,7 +10797,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -10960,16 +10809,17 @@ MonoBehaviour:
       give you the key will you leave me alone?"
     Names: 4
     Branch: []
-    NextTextOverride: 2
+    NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
+    messagesToMarkHasRead: 2400000020000000
+    CharacterOn:
+    - {fileID: 259114118}
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 1
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11117,6 +10967,440 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1285031898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285031900}
+  - component: {fileID: 1285031899}
+  m_Layer: 0
+  m_Name: Interrogation (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1285031899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285031898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: I have some questions so I could use your cooperation
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Whatever
+    Names: 4
+    Branch:
+    - choiceText: Where were you?
+      nextDialogue: 2
+    - choiceText: Realtion
+      nextDialogue: 6
+    - choiceText: Anything Strange?
+      nextDialogue: 11
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Where were you last night?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Uh sleeping? In my room?  What kind of question is that?
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Well I need to get the facts straight before I can deduce anything
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "You don\u2019t need to be a detective to figure out people go to sleep
+      at night"
+    Names: 4
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: How were you and Josephine acquainted?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
+      you say you were a fan? Shouldn\u2019t you already know that?"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
+      fan of yours"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: What was that?!
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Nothing
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Did you notice anything strange last night?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: How was I supposed to notice anything with Hana and Josie yelling last
+      night!
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn:
+    - {fileID: 590738571}
+    CharacterOff:
+    - {fileID: 794733250}
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: They were yelling?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Yeah, at each other.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: So they were arguing? Do you know what about?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
+      care so I put on my headphones to try and drown the sound out."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "That\u2019s good to know"
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+  currCounter: 0
+  maxCounter: 3
+--- !u!4 &1285031900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285031898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 293799394}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1295947190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295947194}
+  - component: {fileID: 1295947193}
+  - component: {fileID: 1295947192}
+  - component: {fileID: 1295947191}
+  m_Layer: 5
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1295947191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295947190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1295947192}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1846208708}
+        m_TargetAssemblyTypeName: UIButtonManager, Assembly-CSharp
+        m_MethodName: WinScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1295947192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295947190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1295947193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295947190}
+  m_CullTransparentMesh: 1
+--- !u!224 &1295947194
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295947190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1056606902}
+  m_Father: {fileID: 1036465388}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1312352927
 GameObject:
   m_ObjectHideFlags: 0
@@ -11222,8 +11506,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14e7ad8b6b78cdf4a8cc0582f4998bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11719,8 +12003,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b8ee7006f06e9f4583b3017012a49ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11867,8 +12151,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e70c73eef1044924f8c2ba9c87449a1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12003,8 +12287,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 0.9339623, g: 0.06755065, b: 0.36917928, a: 1}
@@ -12525,8 +12809,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12594,8 +12878,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2135585597343286014, guid: 5aa8b770bc43046bc8d993d0d5b7f4a5, type: 3}
   m_Color: {r: 0, g: 1, b: 0.028474092, a: 1}
@@ -12676,7 +12960,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -12689,7 +12973,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -12702,7 +12986,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -12716,7 +13000,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -12729,7 +13013,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -12743,7 +13027,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 1
-    Portrait: {fileID: 0}
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -12829,8 +13113,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3787cefa42a277f4e98eb85a9268861a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13071,451 +13355,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1486383282
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1486383283}
-  - component: {fileID: 1486383284}
-  m_Layer: 0
-  m_Name: Interrogation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1486383283
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486383282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 780851490}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1486383284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486383282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: I have some questions so I could use your cooperation
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Whatever
-    Names: 4
-    Branch:
-    - choiceText: Knives
-      nextDialogue: 2
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Hana mentioned you are a fan of knives
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: huh yeah? So? Is that a crime?
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Well no, but do you have any knives with you?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
-      people out there\u2026"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Would you mind if I took a look at your collection?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
-      as \u201Cevidence\u201D"
-    Names: 4
-    Branch:
-    - choiceText: The Usual
-      nextDialogue: 8
-    - choiceText: Or else...
-      nextDialogue: 17
-    - choiceText: THE corporate ladder
-      nextDialogue: 21
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: ' Fine.'
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Should we go with the usual?
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "Yeah, I guess that\u2019s our only option\u2026"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "What? What\u2019s the usual?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: ...
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "WHAT\u2019S THE USUAL?!"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: ...
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: OK OK JUST TAKE THE STUPID KEY
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Thank you
-    Names: 1
-    Branch: []
-    NextTextOverride: 2
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "Give me the key\u2026 Or else\u2026"
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
-      that right?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
-      him out."
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "There\u2019s no reason to do something so drastic! Look you can just take
-      the key, just don\u2019t touch my knives alright?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 2
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Are you familiar with The Corporate Ladder?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: Yeah of course I work a corporate job. You start at entry level and eventually
-      work your way to the top.
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: No, I mean THE Corporate Ladder
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "\u2026what?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: THE Corporate Ladder!
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: I heard you the first time! What are you talking about?
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "I think you know\u2026"
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
-      give you the key will you leave me alone?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 2
-    EndDialogue: 1
-    Portrait: {fileID: 0}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
-  currCounter: 0
-  maxCounter: 1
 --- !u!1 &1489301081
 GameObject:
   m_ObjectHideFlags: 0
@@ -13846,6 +13685,456 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1590063225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590063227}
+  - component: {fileID: 1590063226}
+  m_Layer: 0
+  m_Name: Interrogation (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1590063226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590063225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: I have some questions so I could use your cooperation
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Whatever
+    Names: 4
+    Branch:
+    - choiceText: Knives
+      nextDialogue: 2
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Hana mentioned you are a fan of knives
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn:
+    - {fileID: 438098456}
+    CharacterOff:
+    - {fileID: 682444746}
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: huh yeah? So? Is that a crime?
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Well no, but do you have any knives with you?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
+      people out there\u2026"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Would you mind if I took a look at your collection?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
+      as \u201Cevidence\u201D"
+    Names: 4
+    Branch:
+    - choiceText: The Usual
+      nextDialogue: 8
+    - choiceText: Or else...
+      nextDialogue: 17
+    - choiceText: THE corporate ladder
+      nextDialogue: 21
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: ' Fine.'
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Should we go with the usual?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "Yeah, I guess that\u2019s our only option\u2026"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 0}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "What? What\u2019s the usual?"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: ...
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "WHAT\u2019S THE USUAL?!"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: ...
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: OK OK JUST TAKE THE STUPID KEY
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn:
+    - {fileID: 259114118}
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 1
+  - Text: Thank you
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 1c00000014000000
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "Give me the key\u2026 Or else\u2026"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
+      that right?"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
+      him out."
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "There\u2019s no reason to do something so drastic! Look you can just take
+      the key, just don\u2019t touch my knives alright?"
+    Names: 4
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 100000001c000000
+    CharacterOn:
+    - {fileID: 259114118}
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 1
+  - Text: Are you familiar with The Corporate Ladder?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: Yeah of course I work a corporate job. You start at entry level and eventually
+      work your way to the top.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: No, I mean THE Corporate Ladder
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "\u2026what?"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: THE Corporate Ladder!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: I heard you the first time! What are you talking about?
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "I think you know\u2026"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 0
+  - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
+      give you the key will you leave me alone?"
+    Names: 4
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 1000000014000000
+    CharacterOn:
+    - {fileID: 259114118}
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 1
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+  currCounter: 0
+  maxCounter: 1
+--- !u!4 &1590063227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590063225}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 780851490}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621697829
 GameObject:
   m_ObjectHideFlags: 0
@@ -15107,8 +15396,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14e7ad8b6b78cdf4a8cc0582f4998bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15278,6 +15567,7 @@ GameObject:
   - component: {fileID: 1846208707}
   - component: {fileID: 1846208706}
   - component: {fileID: 1846208705}
+  - component: {fileID: 1846208708}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -15345,6 +15635,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846208708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846208704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199f9e0dbaf7cb4d88889f51a97d199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1885772244
 GameObject:
   m_ObjectHideFlags: 0
@@ -15998,8 +16300,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2135585597343286014, guid: 5aa8b770bc43046bc8d993d0d5b7f4a5, type: 3}
   m_Color: {r: 0, g: 0.38888907, b: 1, a: 1}
@@ -16423,8 +16725,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
   m_Color: {r: 0, g: 0.077801704, b: 1, a: 1}

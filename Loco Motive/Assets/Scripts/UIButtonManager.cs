@@ -28,6 +28,14 @@ public class UIButtonManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    /// <summary>
+    /// Moves player to a win Screen
+    /// </summary>
+    public void WinScreen()
+    {
+        SceneManager.LoadScene("WinScene");
+    }
+
 
 
 
