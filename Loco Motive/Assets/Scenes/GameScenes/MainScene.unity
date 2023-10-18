@@ -8454,8 +8454,8 @@ MonoBehaviour:
     messagesToMarkHasRead: 
     CharacterOn: []
     CharacterOff: []
-    AddInventoryItem: 1
-    InventoryItem: 1
+    AddInventoryItem: 0
+    InventoryItem: 0
   - Text: Thank You
     Names: 1
     Branch: []
@@ -14895,9 +14895,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Notebook
       objectReference: {fileID: 0}
+    - target: {fileID: 8377426827402538447, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8743285537560311024, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192776714847424936, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
