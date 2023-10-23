@@ -12,16 +12,17 @@ public class ComboLockController : MonoBehaviour
     public int correctDigitTwo;
     public int correctDigitThree;
     public GameObject OpenSafe;
-    public TMP_Text SafeText;
-    public GameObject DigitOne;
-    public GameObject DigitTwo;
-    public GameObject DigitThree;
-    //[SerializeField] GameObject winText;
+    public TMP_Text ButtonOne;
+    public TMP_Text ButtonTwo;
+    public TMP_Text ButtonThree;
+    private DialogueController dc;
+    private 
+
     // Start is called before the first frame update
     void Start()
     {
         OpenSafe.SetActive(false);
-        //winText.SetActive(false);
+        dc = FindObjectOfType<DialogueController>();
     }
 
     // Update is called once per frame
@@ -29,19 +30,61 @@ public class ComboLockController : MonoBehaviour
     {
         if (digitOne == correctDigitOne && digitTwo == correctDigitTwo && digitThree == correctDigitThree)
         {
-            OpenLock();
+           Unlock();
         }
-        SafeText.text = digitOne + "  " + digitTwo + "  " + digitThree;
     }
 
-    void OpenLock()
+    void UpdateDigitOne()
+    {
+        if (digitOne == 9)
+        {
+            digitOne = 0;
+        }
+        else
+        {
+            digitOne += 1;
+        }
+        ButtonOne.text = "" + digitOne;
+    }
+
+    void UpdateDigitTwo()
+    {
+        if (digitTwo == 9)
+        {
+            digitTwo = 0;
+        }
+        else
+        {
+            digitTwo += 1;
+        }
+        ButtonTwo.text = "" + digitTwo;
+    }
+
+    void UpdateDigitThree()
+    {
+        if (digitThree == 9)
+        {
+            digitThree = 0;
+        }
+        else
+        {
+            digitThree += 1;
+        }
+        ButtonThree.text = "" + digitThree;
+    }
+
+    void Unlock()
     {
         OpenSafe.SetActive(true);
-        //winText.SetActive(true);
-        Destroy(DigitOne);
-        Destroy(DigitTwo);
-        Destroy(DigitThree);
-        Destroy(SafeText);
-        Destroy(gameObject);
+        
+    }
+
+    void CloseLock()
+    {
+        dc.isTalking = false;
+        dc.InventoryButton.SetActive(false);
+        dc.NotebookButton.SetActive(false);
+        dc.cc.Movement.SetActive(false);
+        dc.cc.Map.SetActive(false);
     }
 }
