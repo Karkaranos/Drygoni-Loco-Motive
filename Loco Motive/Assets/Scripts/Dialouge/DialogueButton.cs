@@ -164,12 +164,6 @@ public class DialogueButton : MonoBehaviour
                     DC.currentInterrogation.currMessage++;
                 }
                 CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
-                if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
-                {
-                    int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
-                    Debug.Log("i = " + i);
-                    IB.AddItemToInventory(i);
-                }
             }
 
             //Runs if EndDialogue is true
@@ -186,6 +180,13 @@ public class DialogueButton : MonoBehaviour
                         }
                     
                     DC.currentInterrogation.currCounter++;
+
+                    if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
+                    {
+                        int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
+                        Debug.Log("i = " + i);
+                        IB.AddItemToInventory(i);
+                    }
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
                     {
