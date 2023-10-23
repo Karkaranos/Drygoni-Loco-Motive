@@ -1032,6 +1032,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121681484}
   m_CullTransparentMesh: 1
+--- !u!1 &136564931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136564932}
+  - component: {fileID: 136564934}
+  - component: {fileID: 136564933}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &136564932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136564931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.48000005, y: 0.38400003, z: 0.38400003}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: -40.000027}
+  m_SizeDelta: {x: 4800, y: 2700}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &136564933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136564931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 68c9ec0264d66a243a85f4148341e82c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &136564934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136564931}
+  m_CullTransparentMesh: 1
 --- !u!1 &212459825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1151,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What me?! But she was my wife!
     Names: 3
     Branch: []
@@ -1088,7 +1164,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Right, but with the will you had the most to gain from her death. Not to
       mention only you could have gotten into her room.
     Names: 1
@@ -1102,7 +1178,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "But I didn\u2019t kill her I swear! "
     Names: 3
     Branch: []
@@ -1115,7 +1191,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well done Casey, let's get off this train and go get dessert to treat ourselves!
     Names: 0
     Branch: []
@@ -1128,7 +1204,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: The End
     Names: 1
     Branch: []
@@ -1141,7 +1217,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -1677,7 +1753,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -2128,7 +2204,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 3
     Branch:
@@ -2143,7 +2219,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
       what actually happened? "
     Names: 1
@@ -2157,7 +2233,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
       me."
     Names: 3
@@ -2171,7 +2247,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: You only look more suspicious when you lie
     Names: 1
     Branch: []
@@ -2184,7 +2260,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
       big, we just both thought the other person had taken care of everything back
       home before we left."
@@ -2199,7 +2275,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "After that I left the room and didn\u2019t go back because Josie usually
       needs a while to cool off. I slept in the lounge last night and when I went
       to apologize in the morning\u2026"
@@ -2214,7 +2290,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
     Names: 3
     Branch: []
@@ -2227,7 +2303,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well that story makes a lot of sense with the other evidence we found.
       Thank you for telling us the truth. We will bring justice for Josephine.
     Names: 1
@@ -2243,7 +2319,7 @@ MonoBehaviour:
     CharacterOff:
     - {fileID: 682444746}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2364,46 +2440,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
-    - target: {fileID: 4147057866410262722, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: map
       value: 
       objectReference: {fileID: 1498759645}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: item1
-      value: 
-      objectReference: {fileID: 21300000, guid: 632e877b099ed7c43ad03ee3de940d1f, type: 3}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: item2
-      value: 
-      objectReference: {fileID: 21300000, guid: a170a14b1e017d14592954ad7745cc9b, type: 3}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: item3
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1f3a92eb522a240a22e71c6425b47f, type: 3}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: item4
-      value: 
-      objectReference: {fileID: 21300000, guid: 614c44207508d4748b1d90cb7fa26a1e, type: 3}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: item5
-      value: 
-      objectReference: {fileID: 21300000, guid: a2318042027b92746a5fd3477fd3271b, type: 3}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: itemText
       value: 
       objectReference: {fileID: 88567331}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: maxItems
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: notebookIcon
       value: 
       objectReference: {fileID: 1678524256}
+    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
+      propertyPath: inventorySize
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: movementArrows
       value: 
@@ -2812,7 +2864,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Alright everyone, I gathered you all here because I think I have figured
       it out who the murderer is.
     Names: 1
@@ -2826,7 +2878,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Really? Hurry up and spit it out!
     Names: 4
     Branch: []
@@ -2839,7 +2891,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Not so fast. It will make more sense if I explain how they did it first.
       Last night, Hana and Josephine were arguing. Besides being upset Hana has another
       motive\u2026"
@@ -2860,7 +2912,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: That's not right...
     Names: 1
     Branch: []
@@ -2873,7 +2925,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: There was a will in Josephine's luggage.
     Names: 1
     Branch: []
@@ -2886,7 +2938,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Huh? She had a will? She didn\u2019t even tell me about that\u2026"
     Names: 3
     Branch: []
@@ -2899,7 +2951,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Josephine was paranoid that someone wanted her dead and she had it prepared.
       She brought it with her so she could be sure it was safe.
     Names: 1
@@ -2913,7 +2965,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I- I can\u2019t believe she knew this would happen and didn\u2019t tell
       me."
     Names: 3
@@ -2927,7 +2979,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I imagine she was only trying to protect you from meeting the same fate.
       However, in the will Josephine left everything to you, Hana. Now that she has
       passed you\u2019re in charge of Defiant Door Studios."
@@ -2942,7 +2994,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "\u2026Huh?"
     Names: 3
     Branch: []
@@ -2955,7 +3007,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "WHAT?! YOU\u2019RE JOKING, RIGHT?"
     Names: 4
     Branch: []
@@ -2968,7 +3020,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "No it\u2019s true."
     Names: 0
     Branch: []
@@ -2981,7 +3033,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Hana doesn\u2019t know anything about the industry! Why would Josie do
       something so STUPID as leave her company to a complete noob?"
     Names: 4
@@ -2995,7 +3047,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Right, why would she leave me her company?
     Names: 3
     Branch: []
@@ -3008,7 +3060,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I can\u2019t surely say why but it is definitely written in her will.
       If I had to guess, she didn\u2019t want to risk the company going to her killer"
     Names: 1
@@ -3022,7 +3074,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Her killer? What are you insinuating? That she was killed by a coworker?
     Names: 4
     Branch: []
@@ -3035,7 +3087,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: It seems very likely. Do you remember what the murder weapon was?
     Names: 1
     Branch: []
@@ -3048,7 +3100,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: The murder weapon?
     Names: 4
     Branch: []
@@ -3061,7 +3113,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "The murder weapon was\u2026"
     Names: 1
     Branch:
@@ -3080,7 +3132,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: That isn't right...
     Names: 1
     Branch: []
@@ -3093,7 +3145,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Josie was killed by a knife. She had been stabbed several times.
     Names: 1
     Branch: []
@@ -3106,7 +3158,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: how awful!
     Names: 3
     Branch: []
@@ -3119,7 +3171,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I don\u2019t see how that means anything. Anyone can stab someone with
       a knife."
     Names: 4
@@ -3133,7 +3185,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Right but not this specific knife. The knife belongs to\u2026"
     Names: 1
     Branch:
@@ -3152,7 +3204,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: That isn't right...
     Names: 1
     Branch: []
@@ -3165,7 +3217,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: The knife was from your room Brady. The only way to get into the box is
       with the key that you wear around your neck.
     Names: 1
@@ -3179,7 +3231,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: '!'
     Names: 4
     Branch: []
@@ -3192,7 +3244,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "And don\u2019t make excuses about it being stolen, if that was true you
       should have brought it up earlier"
     Names: 0
@@ -3206,7 +3258,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Right, well- My key wasn\u2019t stolen.."
     Names: 4
     Branch: []
@@ -3219,7 +3271,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Brady! How could you stab Josie?! What did she do to you?
     Names: 3
     Branch: []
@@ -3232,7 +3284,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "More like what didn\u2019t she do! Working for her was terrible! She made
       us work overtime every day and always left me to clean up her messes!"
     Names: 4
@@ -3246,7 +3298,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "So you killed her? You\u2019re insane! If it was so bad why didn\u2019t
       you just quit?"
     Names: 3
@@ -3260,7 +3312,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Hunter do you mind?
     Names: 1
     Branch: []
@@ -3273,7 +3325,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: SHUT UP
     Names: 0
     Branch: []
@@ -3286,7 +3338,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Thank you. I didn\u2019t say that it was definitely Brady.  Who could
       unlock Josie\u2019s room?"
     Names: 1
@@ -3306,7 +3358,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: That isn't right...
     Names: 1
     Branch: []
@@ -3319,7 +3371,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Hana, you said you weren\u2019t in your room at all last night since you
       and Josie were fighting. "
     Names: 1
@@ -3333,7 +3385,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Right\u2026"
     Names: 3
     Branch: []
@@ -3346,7 +3398,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: But you were the only one who could unlock the door.
     Names: 1
     Branch: []
@@ -3359,7 +3411,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: " I guess that\u2019s true\u2026 but that doesn\u2019t mean it was me!
       My key could have been used after I fell asleep in the lounge."
     Names: 3
@@ -3373,7 +3425,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "That\u2019s true too."
     Names: 1
     Branch: []
@@ -3386,7 +3438,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "That about covers everything we found, doesn\u2019t it Casey?"
     Names: 0
     Branch: []
@@ -3399,7 +3451,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Yes you\u2019re right.  The Killer is\u2026 "
     Names: 1
     Branch: []
@@ -3419,7 +3471,7 @@ MonoBehaviour:
     - {fileID: 780851489}
     - {fileID: 1312352927}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3627,7 +3679,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1213168533}
+  - {fileID: 136564932}
   - {fileID: 397480163}
   - {fileID: 850380250}
   - {fileID: 2116435142}
@@ -3716,7 +3768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822.996, y: -396.27}
+  m_AnchoredPosition: {x: 791, y: -343}
   m_SizeDelta: {x: 272.006, y: 286.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &450589878
@@ -4670,7 +4722,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -4941,7 +4993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822.83, y: -421.525}
+  m_AnchoredPosition: {x: 804, y: -464}
   m_SizeDelta: {x: 250, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617486990
@@ -5153,7 +5205,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 3
     Branch:
@@ -5174,7 +5226,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -5187,7 +5239,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ' I was in the room with Josie'
     Names: 3
     Branch: []
@@ -5200,7 +5252,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: And she was dead when you woke up?
     Names: 1
     Branch: []
@@ -5213,7 +5265,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yes, I think so
     Names: 3
     Branch: []
@@ -5226,7 +5278,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: You think?
     Names: 1
     Branch: []
@@ -5239,7 +5291,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Well I left for breakfast while it was still dark in the room so I didn\u2019t
       see her but when I came back I found her."
     Names: 3
@@ -5253,7 +5305,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: A dead body should be hard to miss...
     Names: 1
     Branch: []
@@ -5266,7 +5318,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -5279,7 +5331,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -5293,7 +5345,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -5306,7 +5358,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -5320,7 +5372,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 1
     Branch: []
@@ -5333,7 +5385,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -5347,7 +5399,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -5360,7 +5412,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -5373,7 +5425,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -5386,7 +5438,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -5399,7 +5451,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -5413,7 +5465,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 1
+    InventoryItem: 
   - Text: Thank You
     Names: 1
     Branch: []
@@ -5426,7 +5478,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 2
+    InventoryItem: Piece1
   - Text: Do you have any idea who did this? Did Josephine have any enemies?
     Names: 1
     Branch: []
@@ -5439,7 +5491,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
       get along\u2026 Just between you and me, he kinda scares me."
     Names: 3
@@ -5453,7 +5505,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Why\u2019s that?"
     Names: 1
     Branch: []
@@ -5466,7 +5518,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Well, he really likes\u2026 knives"
     Names: 3
     Branch: []
@@ -5479,7 +5531,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Knives, huh? Good to know
     Names: 1
     Branch: []
@@ -5494,7 +5546,7 @@ MonoBehaviour:
     CharacterOff:
     - {fileID: 293799390}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Thank you for the help
     Names: 1
     Branch: []
@@ -5507,7 +5559,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5735,7 +5787,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -6027,7 +6079,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -6725,7 +6777,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -6871,7 +6923,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "uh\u2026 WHAT?! YOU\u2019RE JOKING RIGHT? "
     Names: 4
     Branch: []
@@ -6884,7 +6936,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "You had easy access to a collection of knives and you hated Josephine\u2019s
       company with a passion."
     Names: 1
@@ -6898,7 +6950,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Say sike rn\u2026 please"
     Names: 4
     Branch: []
@@ -6911,7 +6963,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Close your eyes, I\u2019ll get rid of this guy for you"
     Names: 0
     Branch: []
@@ -6924,7 +6976,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: WAIT WAIT WAIT
     Names: 4
     Branch: []
@@ -6937,7 +6989,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: The End
     Names: 1
     Branch: []
@@ -6950,7 +7002,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -7016,7 +7068,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -7750,7 +7802,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 619, y: -237}
+  m_AnchoredPosition: {x: 47, y: -208}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871331104
@@ -8193,7 +8245,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 3
     Branch:
@@ -8214,7 +8266,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
       what actually happened? "
     Names: 1
@@ -8228,7 +8280,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
       me."
     Names: 3
@@ -8242,7 +8294,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: You only look more suspicious when you lie
     Names: 1
     Branch: []
@@ -8255,7 +8307,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
       big, we just both thought the other person had taken care of everything back
       home before we left."
@@ -8270,7 +8322,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "After that I left the room and didn\u2019t go back because Josie usually
       needs a while to cool off. I slept in the lounge last night and when I went
       to apologize in the morning\u2026"
@@ -8285,7 +8337,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
     Names: 3
     Branch: []
@@ -8298,7 +8350,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well that story makes a lot of sense with the other evidence we found.
       Thank you for telling us the truth. We will bring justice for Josephine.
     Names: 1
@@ -8312,7 +8364,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -8325,7 +8377,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -8339,7 +8391,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -8352,7 +8404,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -8366,7 +8418,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 1
     Branch: []
@@ -8379,7 +8431,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -8393,7 +8445,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -8406,7 +8458,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -8419,7 +8471,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -8432,7 +8484,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -8445,7 +8497,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -8459,7 +8511,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Thank You
     Names: 1
     Branch: []
@@ -8472,7 +8524,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 2
+    InventoryItem: Piece1
   - Text: Do you have any idea who did this? Did Josephine have any enemies?
     Names: 1
     Branch: []
@@ -8485,7 +8537,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
       get along\u2026 Just between you and me, he kinda scares me."
     Names: 3
@@ -8499,7 +8551,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Why\u2019s that?"
     Names: 1
     Branch: []
@@ -8512,7 +8564,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Well, he really likes\u2026 knives"
     Names: 3
     Branch: []
@@ -8525,7 +8577,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Knives, huh? Good to know
     Names: 1
     Branch: []
@@ -8540,7 +8592,7 @@ MonoBehaviour:
     CharacterOff:
     - {fileID: 293799390}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Thank you for the help
     Names: 1
     Branch: []
@@ -8553,7 +8605,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -9676,7 +9728,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -9689,7 +9741,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -9702,7 +9754,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -9715,7 +9767,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -9728,7 +9780,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -9806,16 +9858,16 @@ RectTransform:
   m_GameObject: {fileID: 1200133926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.48, y: 0.384, z: 0.384}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1036465388}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.00019073, y: 0}
-  m_SizeDelta: {x: 1920, y: 286.55}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 4800, y: 2700}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1200133928
 MonoBehaviour:
@@ -9830,16 +9882,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 68c9ec0264d66a243a85f4148341e82c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -9854,82 +9906,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200133926}
-  m_CullTransparentMesh: 1
---- !u!1 &1213168532
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1213168533}
-  - component: {fileID: 1213168535}
-  - component: {fileID: 1213168534}
-  m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1213168533
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213168532}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 441351221}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.25, y: 0}
-  m_SizeDelta: {x: 772.5, y: 143.6227}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1213168534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213168532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1213168535
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213168532}
   m_CullTransparentMesh: 1
 --- !u!1 &1214022982
 GameObject:
@@ -10383,7 +10359,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Whatever
     Names: 4
     Branch:
@@ -10404,7 +10380,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -10417,7 +10393,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -10430,7 +10406,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well I need to get the facts straight before I can deduce anything
     Names: 1
     Branch: []
@@ -10443,7 +10419,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "You don\u2019t need to be a detective to figure out people go to sleep
       at night"
     Names: 4
@@ -10457,7 +10433,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -10470,7 +10446,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -10484,7 +10460,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
       fan of yours"
     Names: 1
@@ -10498,7 +10474,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -10511,7 +10487,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Nothing
     Names: 1
     Branch: []
@@ -10524,7 +10500,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Did you notice anything strange last night?
     Names: 1
     Branch: []
@@ -10537,7 +10513,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: How was I supposed to notice anything with Hana and Josie yelling last
       night!
     Names: 4
@@ -10553,7 +10529,7 @@ MonoBehaviour:
     CharacterOff:
     - {fileID: 794733250}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: They were yelling?
     Names: 1
     Branch: []
@@ -10566,7 +10542,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yeah, at each other.
     Names: 4
     Branch: []
@@ -10579,7 +10555,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -10592,7 +10568,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -10606,7 +10582,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
@@ -10619,7 +10595,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Hana mentioned you are a fan of knives
     Names: 1
     Branch: []
@@ -10632,7 +10608,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -10645,7 +10621,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -10658,7 +10634,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -10672,7 +10648,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -10685,7 +10661,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -10705,7 +10681,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -10718,7 +10694,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -10731,7 +10707,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -10744,7 +10720,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -10757,7 +10733,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 0
     Branch: []
@@ -10770,7 +10746,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -10783,7 +10759,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 0
     Branch: []
@@ -10796,7 +10772,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: OK OK JUST TAKE THE STUPID KEY
     Names: 4
     Branch: []
@@ -10809,7 +10785,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 4
+    InventoryItem: Key
   - Text: Thank you
     Names: 1
     Branch: []
@@ -10822,7 +10798,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -10835,7 +10811,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -10849,7 +10825,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -10863,7 +10839,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -10877,7 +10853,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 4
+    InventoryItem: Key
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -10890,7 +10866,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -10904,7 +10880,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -10917,7 +10893,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -10930,7 +10906,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -10943,7 +10919,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -10956,7 +10932,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -10969,7 +10945,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -10983,7 +10959,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 4
+    InventoryItem: Key
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11174,7 +11150,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Whatever
     Names: 4
     Branch:
@@ -11193,7 +11169,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -11206,7 +11182,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -11219,7 +11195,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well I need to get the facts straight before I can deduce anything
     Names: 1
     Branch: []
@@ -11232,7 +11208,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "You don\u2019t need to be a detective to figure out people go to sleep
       at night"
     Names: 4
@@ -11246,7 +11222,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -11259,7 +11235,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -11273,7 +11249,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
       fan of yours"
     Names: 1
@@ -11287,7 +11263,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -11300,7 +11276,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Nothing
     Names: 1
     Branch: []
@@ -11313,7 +11289,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Did you notice anything strange last night?
     Names: 1
     Branch: []
@@ -11326,7 +11302,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: How was I supposed to notice anything with Hana and Josie yelling last
       night!
     Names: 4
@@ -11342,7 +11318,7 @@ MonoBehaviour:
     CharacterOff:
     - {fileID: 794733250}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: They were yelling?
     Names: 1
     Branch: []
@@ -11355,7 +11331,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yeah, at each other.
     Names: 4
     Branch: []
@@ -11368,7 +11344,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -11381,7 +11357,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -11395,7 +11371,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
@@ -11408,7 +11384,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11626,7 +11602,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -12114,7 +12090,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -12506,7 +12482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -381, y: -313}
+  m_AnchoredPosition: {x: -250, y: -219}
   m_SizeDelta: {x: 465.828, y: 29.9}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1411646949
@@ -12564,8 +12540,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12742,7 +12718,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -12755,7 +12731,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -12768,7 +12744,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -12781,7 +12757,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -12794,7 +12770,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -12807,7 +12783,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -12821,7 +12797,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -12835,7 +12811,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yes
     Names: 0
     Branch: []
@@ -12848,7 +12824,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -12862,7 +12838,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -12877,7 +12853,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -12892,7 +12868,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -12906,7 +12882,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -12920,7 +12896,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -13122,7 +13098,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well, she looks dead.
     Names: 0
     Branch: []
@@ -13135,7 +13111,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 1
     Branch: []
@@ -13148,7 +13124,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "There\u2019s a lot of stab wounds, but the clothes aren\u2019t soaked
       with blood in all places"
     Names: 0
@@ -13162,7 +13138,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: How do you think she died?
     Names: 1
     Branch: []
@@ -13175,7 +13151,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: " Didn\u2019t you see all the stab wounds? Obviously, someone stabbed her.
       Several times too"
     Names: 0
@@ -13189,7 +13165,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -13883,7 +13859,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Whatever
     Names: 4
     Branch:
@@ -13898,7 +13874,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Hana mentioned you are a fan of knives
     Names: 1
     Branch: []
@@ -13913,7 +13889,7 @@ MonoBehaviour:
     CharacterOff:
     - {fileID: 682444746}
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -13926,7 +13902,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -13939,7 +13915,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -13953,7 +13929,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -13966,7 +13942,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -13986,7 +13962,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -13999,7 +13975,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -14012,7 +13988,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -14025,7 +14001,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -14038,7 +14014,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 0
     Branch: []
@@ -14051,7 +14027,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -14064,7 +14040,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ...
     Names: 0
     Branch: []
@@ -14077,7 +14053,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: OK OK JUST TAKE THE STUPID KEY
     Names: 4
     Branch: []
@@ -14090,7 +14066,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 4
+    InventoryItem: 
   - Text: Thank you
     Names: 1
     Branch: []
@@ -14103,7 +14079,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -14116,7 +14092,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -14130,7 +14106,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -14144,7 +14120,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -14158,7 +14134,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 4
+    InventoryItem: 
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -14171,7 +14147,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -14185,7 +14161,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -14198,7 +14174,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -14211,7 +14187,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -14224,7 +14200,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -14237,7 +14213,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -14250,7 +14226,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -14264,7 +14240,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 1
-    InventoryItem: 4
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -14967,7 +14943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 5.635, y: 23}
+  m_AnchoredPosition: {x: 170, y: 79}
   m_SizeDelta: {x: 1255.494, y: 214.1}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1710522196
@@ -15061,7 +15037,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -34.93689, y: 18.767578, z: -34.032104, w: 30.015984}
+  m_margin: {x: -34.93689, y: 18.767578, z: 129.70544, w: 30.015984}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -15102,8 +15078,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 65, y: 0}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1728337706
 CanvasRenderer:
@@ -15632,7 +15608,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -17077,7 +17053,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -17090,7 +17066,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -17103,7 +17079,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -17116,7 +17092,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -17129,7 +17105,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -17142,7 +17118,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -17156,7 +17132,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -17170,7 +17146,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: Yes
     Names: 0
     Branch: []
@@ -17183,7 +17159,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -17197,7 +17173,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -17212,7 +17188,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -17227,7 +17203,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -17241,7 +17217,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -17255,7 +17231,7 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 0
+    InventoryItem: 
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
