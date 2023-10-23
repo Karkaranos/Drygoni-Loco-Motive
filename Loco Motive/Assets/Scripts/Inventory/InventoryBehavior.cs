@@ -34,8 +34,8 @@ public class InventoryBehavior : MonoBehaviour
 
 
     [Header("Inventory Potential Contents")]
-    [SerializeField] private Sprite item1;
-    [SerializeField] private Sprite item2;
+    [SerializeField] private Sprite piece1;
+    [SerializeField] private Sprite piece2;
     [SerializeField] private Sprite item3;
     [SerializeField] private Sprite item4;
     [SerializeField] private Sprite item5;
@@ -46,6 +46,16 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private Image slot3;
     [SerializeField] private Image slot4;
     [SerializeField] private Image slot5;
+    [SerializeField] private Image slot6;
+    [SerializeField] private Image slot7;
+    [SerializeField] private Image slot8;
+    [SerializeField] private Image slot9;
+    [SerializeField] private Image slot10;
+    [SerializeField] private Image slot11;
+    [SerializeField] private Image slot12;
+    [SerializeField] private Image slot13;
+    [SerializeField] private Image slot14;
+    [SerializeField] private Image slot15;
 
     #endregion
 
@@ -180,12 +190,12 @@ public class InventoryBehavior : MonoBehaviour
         switch (itemIndex)
         {
             case 1:
-                newItem = item1;
+                newItem = piece1;
                 newName = Items.PIECE1;
                 pieceCounter++;
                 break;
             case 2:
-                newItem = item2;
+                newItem = piece2;
                 newName = Items.PIECE2;
                 pieceCounter++;
                 break;
