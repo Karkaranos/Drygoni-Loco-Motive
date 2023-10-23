@@ -12,12 +12,19 @@ using UnityEngine.SceneManagement;
 
 public class UIButtonManager : MonoBehaviour
 {
+    private AudioManager am;
+    private void Awake()
+    {
+        am = FindObjectOfType<AudioManager>();
+    }
+
     /// <summary>
     /// Moves the player to the main scene
     /// </summary>
     public void StartGame()
     {
         SceneManager.LoadScene("MainScene");
+        am.PlayGameMusic();
     }
 
     /// <summary>
@@ -26,6 +33,7 @@ public class UIButtonManager : MonoBehaviour
     public void TitleScreen()
     {
         SceneManager.LoadScene(0);
+        am.PlayMenuMusic();
     }
 
     /// <summary>
@@ -34,6 +42,7 @@ public class UIButtonManager : MonoBehaviour
     public void WinScreen()
     {
         SceneManager.LoadScene("WinScene");
+        am.PlayMenuMusic();
     }
 
 
