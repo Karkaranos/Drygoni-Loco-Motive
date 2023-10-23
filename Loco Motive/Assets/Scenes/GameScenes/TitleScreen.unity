@@ -744,7 +744,7 @@ MonoBehaviour:
     minSoundDistance: 0
     maxSoundDistance: 0
     source: {fileID: 0}
-  musicVolume: 0
+  musicVolume: 1
 --- !u!1 &1916110194
 GameObject:
   m_ObjectHideFlags: 0

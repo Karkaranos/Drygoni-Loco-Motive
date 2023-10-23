@@ -46,7 +46,6 @@ public class NotebookContentManager : MonoBehaviour
     /// </summary>
     void Start()
     {
-        print(pageCount);
         image = new Sprite[pageCount];
         timelineVisible = new bool[timelineCount];
         contentVisible = new bool[pageCount, ITEMS_PER_PAGE];

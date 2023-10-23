@@ -54,11 +54,13 @@ public class DialogueController : MonoBehaviour
     public AccusationInstance currentAccusation;
 
     public List<GameObject> ChoiceBranch;
+
+    private AudioManager am;
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        
+        am = GameObject.FindObjectOfType<AudioManager>();
         currentDialogue = openingDialogue;
         DialogueScreen.SetActive(true);
         NotebookButton.SetActive(false);
@@ -182,7 +184,7 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         UpdateScreen(currentInterrogation.AllMessages[0]);
-        
+        am.PlayInterrogationMusic();
     }
     
     public void StartAccusation()
@@ -233,6 +235,10 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
+        if (interrogating)
+        {
+            am.PlayGameMusic();
+        }
         interrogating = false;
         accusing = false;
     }

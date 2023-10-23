@@ -18,8 +18,10 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] Sounds;
     //public AudioMixerGroup masterMixer;
-    public float musicVolume;
+    public float musicVolume = 1;
 
+    private bool inInterrogation = false;
+    private bool gameStarted = false;
 
     /// <summary>
     /// Start is called before the first frame update. It ensures only one instance
@@ -190,11 +192,17 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void PlayGameMusic()
     {
-        PlayMuted("InterrogationBGM");
-        Sound sound = Array.Find(Sounds, sound => sound.name == "GameBGM");
-        if (sound.source.volume == 0)
+        if (!gameStarted)
+        {
+            PlayMuted("InterrogationBGM");
+            Play("GameBGM");
+            gameStarted = true;
+        }
+        if (inInterrogation)
         {
             Unmute("GameBGM");
+            Mute("InterrogationBGM");
+            inInterrogation = false;
         }
         else
         {
@@ -209,6 +217,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void PlayInterrogationMusic()
     {
+        inInterrogation = true;
         Unmute("InterrogationBGM");
         Mute("GameBGM");
     }
