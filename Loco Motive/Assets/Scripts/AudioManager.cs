@@ -17,7 +17,7 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] Sounds;
-    public AudioMixerGroup masterMixer;
+    //public AudioMixerGroup masterMixer;
     public float musicVolume;
 
 
@@ -39,9 +39,12 @@ public class AudioManager : MonoBehaviour
 
         foreach (Sound sound in Sounds)
         {
-            sound.source = gameObject.GetComponent<AudioSource>();
+            sound.source = gameObject.AddComponent<AudioSource>();
+            print("test");
+
+
             sound.source.clip = sound.audClip;
-            sound.source.outputAudioMixerGroup = masterMixer;
+            //sound.source.outputAudioMixerGroup = masterMixer;
             sound.source.volume = sound.clipVolume;
             sound.source.pitch = sound.clipPitch;
             sound.source.loop = sound.canLoop;
@@ -153,6 +156,8 @@ public class AudioManager : MonoBehaviour
             sound.source.volume = musicVolume;
         }
     }
+
+
 
     #endregion
 
