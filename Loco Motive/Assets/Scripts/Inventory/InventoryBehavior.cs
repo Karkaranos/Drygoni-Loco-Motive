@@ -10,6 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 
 public class InventoryBehavior : MonoBehaviour
@@ -32,16 +33,10 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private int maxItems;
     private int itemsCollected;
 
-
-    [Header("Inventory Potential Contents")]
-    [SerializeField] private Sprite piece1;
-    [SerializeField] private Sprite piece2;
-    [SerializeField] private Sprite item3;
-    [SerializeField] private Sprite item4;
-    [SerializeField] private Sprite item5;
-
     [Header("Inventory Slot References")]
-    [SerializeField] private Image slot1;
+    public Image[] inventorySpaces;
+    
+    /*[SerializeField] private Image slot1;
     [SerializeField] private Image slot2;
     [SerializeField] private Image slot3;
     [SerializeField] private Image slot4;
@@ -55,21 +50,23 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private Image slot12;
     [SerializeField] private Image slot13;
     [SerializeField] private Image slot14;
-    [SerializeField] private Image slot15;
+    [SerializeField] private Image slot15;*/
+
+
 
     #endregion
-
     public int itemAdded;
     public int itemRemoved;
     public int pieceCounter = 0;
     public bool keyCollected = false;
 
-    private Sprite[] inventoryVisual;
-    private Image[] inventorySpaces;
-    private Items[] inventoryName;
-    public enum Items { EMPTY, PIECE1, PIECE2, FULLNOTE, KEY, KNIFE }
+    private string[] inventoryName;
+    public Item[] itemObjects;
+    //public enum Items { EMPTY, PIECE1, PIECE2, FULLNOTE, KEY, KNIFE }
+
 
     private DialogueController dc;
+
 
     #endregion
 
@@ -82,15 +79,15 @@ public class InventoryBehavior : MonoBehaviour
     /// </summary>
     void Start()
     {
-        inventoryVisual = new Sprite[inventorySize];
-        inventorySpaces = new Image[inventorySize];
-        inventoryName = new Items[inventorySize];
+        //inventoryVisual = new Sprite[inventorySize];
+        //inventorySpaces = new Image[inventorySize];
+        inventoryName = new String[inventorySize];
 
         PopulateArrays();
 
         itemText.SetActive(false);
 
-        dc = GetComponent<DialogueController>();
+        dc = FindObjectOfType<DialogueController>();
     }
 
     /// <summary>
@@ -124,7 +121,7 @@ public class InventoryBehavior : MonoBehaviour
     public void OpenLargeView(int i)
     {
         inventoryLarge.SetActive(true);
-        largeObject.sprite = inventoryVisual[i-1];
+        largeObject.sprite = inventorySpaces[i-1].sprite;
     }
 
     public void CloseLargeView()
@@ -141,20 +138,20 @@ public class InventoryBehavior : MonoBehaviour
     {
         for (int i = 0; i < inventorySize; i++)
         {
-            inventoryVisual[i] = placeholder;
+            inventorySpaces[i].sprite = placeholder;
         }
 
         //See if can be simplified?
-        inventorySpaces[0] = slot1;
+        /*inventorySpaces[0] = slot1;
         inventorySpaces[1] = slot2;
         inventorySpaces[2] = slot3;
         inventorySpaces[3] = slot4;
-        inventorySpaces[4] = slot5;
+        inventorySpaces[4] = slot5;*/
 
 
         for (int i = 0; i < inventorySize; i++)
         {
-            inventoryName[i] = Items.EMPTY;
+            inventoryName[i] = "";
         }
     }
 
@@ -163,31 +160,36 @@ public class InventoryBehavior : MonoBehaviour
     /// then calls updating it
     /// </summary>
     /// <param name="itemIndex">The item number to be added</param>
-    public void AddItemToInventory(int itemIndex)
+    public void AddItemToInventory(string name)
     {
         //Temporary variables
         int currIndex = 0;
         bool emptySlotFound = false;
-        Sprite newItem;
-        Items newName;
+        //Sprite newItem;
+        //Items newName;
+
+        Item itemToAdd = Array.Find(itemObjects, itemToAdd => itemToAdd.itemName == name);
 
         //Runs until it finds an empty slot or knows the inventory is full
         while (!emptySlotFound && currIndex < inventorySize)
         {
             //If the current index is empty, empty slot found
-            if(inventoryVisual[currIndex] == placeholder)
+           
+            if(inventorySpaces[currIndex].sprite == placeholder)
             {
+                print("Empty found");
                 emptySlotFound = true;
             }
             //Otherwise check the next spot
             else
             {
                 currIndex++;
+
             }
         }
 
         //See if can simplify later
-        switch (itemIndex)
+        /*switch (itemIndex)
         {
             case 1:
                 newItem = piece1;
@@ -216,20 +218,20 @@ public class InventoryBehavior : MonoBehaviour
                 newItem = item5;
                 newName = Items.KNIFE;
                 break;
-        }
+        }*/
 
         //Add the new image to the visual inventory
-        inventoryVisual[currIndex] = newItem;
-        inventoryName[currIndex] = newName;
+        inventorySpaces[currIndex].sprite = itemToAdd.objectImage;
+        inventoryName[currIndex] = itemToAdd.itemName;
 
         //Checks if both pieces of CombineObject puzzle are collected
         if (pieceCounter == 2)
         {
-            RemoveItemFromInventory(Items.PIECE1);
-            RemoveItemFromInventory(Items.PIECE2);
+            RemoveItemFromInventory("Piece1");
+            RemoveItemFromInventory("Piece2");
             pieceCounter = 0;
             //Assign Full Note's ItemIndex when it is added
-            AddItemToInventory(3);
+            AddItemToInventory("FullNote");
         }
         //Update the Inventory to match its current state
         UpdateInventory();
@@ -240,7 +242,7 @@ public class InventoryBehavior : MonoBehaviour
     /// name, then calls updating it
     /// </summary>
     /// <param name="name"></param>
-    public void RemoveItemFromInventory(Items name)
+    public void RemoveItemFromInventory(String name)
     {
         //Temporary variables
         int currIndex = 0;
@@ -254,7 +256,7 @@ public class InventoryBehavior : MonoBehaviour
             {
                 //Stop the search and remove the item
                 itemFound = true;
-                inventoryVisual[currIndex] = placeholder;
+                inventorySpaces[currIndex].sprite = placeholder;
             }
             //Otherwise check the next spot
             else
@@ -281,7 +283,7 @@ public class InventoryBehavior : MonoBehaviour
     {
         for(int i=0; i<inventorySize; i++)
         {
-            inventorySpaces[i].sprite = inventoryVisual[i];
+            //inventorySpaces[i].sprite = inventoryVi[i];
         }
     }
 

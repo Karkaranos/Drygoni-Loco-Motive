@@ -3218,20 +3218,37 @@ MonoBehaviour:
   notebookIcon: {fileID: 0}
   itemText: {fileID: 0}
   maxItems: 0
-  item1: {fileID: 21300000, guid: e70c73eef1044924f8c2ba9c87449a1c, type: 3}
-  item2: {fileID: 21300000, guid: eec8700b5b83a9b4ba20f54402c580b6, type: 3}
-  item3: {fileID: 21300000, guid: ee18c27f2b465c84a9ea836eb5e9697b, type: 3}
-  item4: {fileID: 21300000, guid: 77360090a4767e2478b33c2503133c3f, type: 3}
-  item5: {fileID: 21300000, guid: 52ddb72d54fc44e4e93db435b2b044f6, type: 3}
-  slot1: {fileID: 6276588427011595298}
-  slot2: {fileID: 5674845558443372835}
-  slot3: {fileID: 127063232972641065}
-  slot4: {fileID: 1213148329967426797}
-  slot5: {fileID: 7120881605063697360}
+  inventorySpaces:
+  - {fileID: 6276588427011595298}
+  - {fileID: 5674845558443372835}
+  - {fileID: 127063232972641065}
+  - {fileID: 1213148329967426797}
+  - {fileID: 7120881605063697360}
+  - {fileID: 2460566023216847872}
+  - {fileID: 3756826079399166045}
+  - {fileID: 4236709202243706358}
+  - {fileID: 6329599441458637318}
+  - {fileID: 6618072369867974302}
+  - {fileID: 351669184539324639}
+  - {fileID: 8896964289707522767}
+  - {fileID: 7011617889189268316}
+  - {fileID: 3339949213354956761}
+  - {fileID: 5424951478109965077}
   itemAdded: 5
   itemRemoved: 0
   pieceCounter: 0
   keyCollected: 0
+  itemObjects:
+  - itemName: Key
+    objectImage: {fileID: 21300000, guid: 614c44207508d4748b1d90cb7fa26a1e, type: 3}
+  - itemName: Knife
+    objectImage: {fileID: 21300000, guid: a2318042027b92746a5fd3477fd3271b, type: 3}
+  - itemName: Piece1
+    objectImage: {fileID: 21300000, guid: 632e877b099ed7c43ad03ee3de940d1f, type: 3}
+  - itemName: Piece2
+    objectImage: {fileID: 21300000, guid: a170a14b1e017d14592954ad7745cc9b, type: 3}
+  - itemName: FullPaper
+    objectImage: {fileID: 21300000, guid: fa1f3a92eb522a240a22e71c6425b47f, type: 3}
 --- !u!1 &6073186271552759081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,7 +3642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116.59999, y: 153.4}
+  m_AnchoredPosition: {x: -204, y: 144}
   m_SizeDelta: {x: 26.8, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7956524479255303209

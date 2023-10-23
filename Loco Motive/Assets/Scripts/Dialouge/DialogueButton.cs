@@ -183,9 +183,8 @@ public class DialogueButton : MonoBehaviour
 
                     if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
                     {
-                        int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
-                        Debug.Log("i = " + i);
-                        IB.AddItemToInventory(i);
+                        string s = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem.ToString();
+                        IB.AddItemToInventory(s);
                     }
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
