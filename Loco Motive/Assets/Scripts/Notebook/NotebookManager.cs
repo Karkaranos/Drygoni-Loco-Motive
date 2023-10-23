@@ -61,7 +61,7 @@ public class NotebookManager : MonoBehaviour
     void Start()
     {
         ncm = GetComponent<NotebookContentManager>();
-        dc = GetComponent<DialogueController>();
+        dc = FindObjectOfType<DialogueController>();
 
         currentPage = 0;
 

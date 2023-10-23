@@ -16,5 +16,5 @@ public class DialogueMessage
     public List<GameObject> CharacterOn;
     public List<GameObject> CharacterOff;
     public bool AddInventoryItem;
-    public int InventoryItem;
+    public string InventoryItem;
 }

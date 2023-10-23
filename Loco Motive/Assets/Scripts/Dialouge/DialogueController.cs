@@ -60,7 +60,7 @@ public class DialogueController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        am = GameObject.FindObjectOfType<AudioManager>();
+        am = FindObjectOfType<AudioManager>();
         currentDialogue = openingDialogue;
         DialogueScreen.SetActive(true);
         NotebookButton.SetActive(false);

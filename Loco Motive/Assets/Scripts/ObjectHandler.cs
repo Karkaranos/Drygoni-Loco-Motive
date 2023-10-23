@@ -16,7 +16,7 @@ public class ObjectHandler : MonoBehaviour
     private InventoryBehavior ib;
     private NotebookContentManager ncm;
     private NotebookManager nm;
-    public int itemID;
+    public string itemID;
     [SerializeField] private int pageNumber;
     // Start is called before the first frame update
     void Start()
