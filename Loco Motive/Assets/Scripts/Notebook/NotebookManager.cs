@@ -51,6 +51,7 @@ public class NotebookManager : MonoBehaviour
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
     private NotebookContentManager ncm;
+    private DialogueController dc;
     #endregion
 
     #region Functions
@@ -60,6 +61,7 @@ public class NotebookManager : MonoBehaviour
     void Start()
     {
         ncm = GetComponent<NotebookContentManager>();
+        dc = GetComponent<DialogueController>();
 
         currentPage = 0;
 
@@ -94,6 +96,7 @@ public class NotebookManager : MonoBehaviour
         map.SetActive(false);
         movementArrows.SetActive(false);
         inventoryIcon.SetActive(false);
+        dc.isTalking = true;
     }
 
     /// <summary>
@@ -108,6 +111,7 @@ public class NotebookManager : MonoBehaviour
         map.SetActive(true);
         movementArrows.SetActive(true);
         inventoryIcon.SetActive(true);
+        dc.isTalking = false;
     }
 
     /// <summary>

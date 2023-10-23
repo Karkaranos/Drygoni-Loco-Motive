@@ -59,17 +59,12 @@ public class InventoryBehavior : MonoBehaviour
     private Items[] inventoryName;
     public enum Items { EMPTY, PIECE1, PIECE2, FULLNOTE, KEY, KNIFE }
 
-
+    private DialogueController dc;
 
     #endregion
 
 
     #region Functions
-
-    public void Test()
-    {
-        Debug.Log("hdskjlsdgfdhkfhsajhkfdsalbjhgfdshjss");
-    }
 
     /// <summary>
     /// Start is called on the first frame update. It creates the arrays and calls
@@ -85,6 +80,7 @@ public class InventoryBehavior : MonoBehaviour
 
         itemText.SetActive(false);
 
+        dc = GetComponent<DialogueController>();
     }
 
     /// <summary>
@@ -99,6 +95,7 @@ public class InventoryBehavior : MonoBehaviour
         map.SetActive(false);
         movementArrows.SetActive(false);
         notebookIcon.SetActive(false);
+        dc.isTalking = true;
     }
 
     /// <summary>
@@ -111,6 +108,7 @@ public class InventoryBehavior : MonoBehaviour
         map.SetActive(true);
         movementArrows.SetActive(true);
         notebookIcon.SetActive(true);
+        dc.isTalking = false;
     }
 
     public void OpenLargeView(int i)
