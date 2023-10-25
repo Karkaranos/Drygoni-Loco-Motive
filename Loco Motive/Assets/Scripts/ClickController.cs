@@ -216,6 +216,11 @@ public class ClickController : MonoBehaviour
                     ib.RemoveItemFromInventory("Key");
                 }
             }
+
+            else if (hit.collider.CompareTag("ComboLock"))
+            {
+                clc.OpenLock();
+            }
         }
     }
 
