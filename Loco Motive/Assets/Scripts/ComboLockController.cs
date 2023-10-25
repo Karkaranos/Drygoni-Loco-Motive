@@ -16,14 +16,13 @@ public class ComboLockController : MonoBehaviour
     public TMP_Text ButtonOne;
     public TMP_Text ButtonTwo;
     public TMP_Text ButtonThree;
-    private DialogueController dc;
+    public DialogueController dc;
     public GameObject ComboLock;
 
     // Start is called before the first frame update
     void Start()
     {
-        OpenSafe.SetActive(false);
-        dc = FindObjectOfType<DialogueController>();
+
     }
 
     // Update is called once per frame
@@ -35,7 +34,7 @@ public class ComboLockController : MonoBehaviour
         }
     }
 
-    void UpdateDigitOne()
+    public void UpdateDigitOne()
     {
         if (digitOne == 9)
         {
@@ -48,7 +47,7 @@ public class ComboLockController : MonoBehaviour
         ButtonOne.text = "" + digitOne;
     }
 
-    void UpdateDigitTwo()
+    public void UpdateDigitTwo()
     {
         if (digitTwo == 9)
         {
@@ -61,7 +60,7 @@ public class ComboLockController : MonoBehaviour
         ButtonTwo.text = "" + digitTwo;
     }
 
-    void UpdateDigitThree()
+    public void UpdateDigitThree()
     {
         if (digitThree == 9)
         {
@@ -77,8 +76,10 @@ public class ComboLockController : MonoBehaviour
     //This runs when the combination is correct
     void Unlock()
     {
+        //Runs
         OpenSafe.SetActive(true);
-        
+        ClosedSafe.SetActive(false);
+        CloseLock();
     }
 
     //This opens the combination lock
@@ -93,7 +94,7 @@ public class ComboLockController : MonoBehaviour
     }
 
     //This closes the combination lock
-    void CloseLock()
+    public void CloseLock()
     {
         dc.isTalking = false;
         dc.InventoryButton.SetActive(true);
