@@ -31,6 +31,7 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private GameObject notebookIcon;
     [SerializeField] private GameObject itemText;
     [SerializeField] private int maxItems;
+    [SerializeField] private GameObject visualUpdateNotification;
     private int itemsCollected;
 
     [Header("Inventory Slot References")]
@@ -68,6 +69,8 @@ public class InventoryBehavior : MonoBehaviour
         itemText.SetActive(false);
 
         dc = FindObjectOfType<DialogueController>();
+
+        visualUpdateNotification.SetActive(false);
     }
 
     /// <summary>
@@ -166,9 +169,14 @@ public class InventoryBehavior : MonoBehaviour
             }
         }
 
-        //Add the new image to the visual inventory
-        inventorySpaces[currIndex].sprite = itemToAdd.objectImage;
-        inventoryName[currIndex] = itemToAdd.itemName;
+        if (emptySlotFound)
+        {
+            //Add the new image to the visual inventory
+            inventorySpaces[currIndex].sprite = itemToAdd.objectImage;
+            inventoryName[currIndex] = itemToAdd.itemName;
+            StartCoroutine(NotifyUser());
+        }
+
 
         //Checks if both pieces of CombineObject puzzle are collected
         if (pieceCounter == 2)
@@ -244,7 +252,12 @@ public class InventoryBehavior : MonoBehaviour
         itemText.SetActive(false);
     }
 
-
+    IEnumerator NotifyUser()
+    {
+        visualUpdateNotification.SetActive(true);
+        yield return new WaitForSeconds(3);
+        visualUpdateNotification.SetActive(false);
+    }
 
     #endregion
 }
