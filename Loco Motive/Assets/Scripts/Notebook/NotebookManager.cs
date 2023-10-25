@@ -121,7 +121,7 @@ public class NotebookManager : MonoBehaviour
     public void GetPageInformation()
     {
         //Sets the content if the current page is NOT a timeline page
-        if (currentPage < ncm.pageCount - 1)
+        if (currentPage < ncm.pageCount - ncm.timelineCount/5)
         {
             notebookContentPage.SetActive(true);
             notebookTimelinePage.SetActive(false);
@@ -131,9 +131,8 @@ public class NotebookManager : MonoBehaviour
                 //If the player can see the content, set its text to the provided info
                 if (ncm.contentVisible[currentPage, i])
                 {
-                    //content[i].text = ncm.notebookContent[currentPage, i];
                     string[] temp = new string[ncm.ITEMS_PER_PAGE];
-                    temp = ncm.pages[currentPage];
+                    temp = ncm.pageContent[currentPage].content;
                     content[i].text = temp[i];
                 }
                 //Otherwise, indicate the player does not know the information
@@ -148,7 +147,7 @@ public class NotebookManager : MonoBehaviour
             //If the image should be visible, set it to the stored image
             if (ncm.contentVisible[currentPage, 6])
             {
-                photo.sprite = ncm.image[currentPage];
+                photo.sprite = ncm.pageContent[currentPage].photo;
             }
             //Otherwise set it to a blank image
             else
@@ -168,7 +167,7 @@ public class NotebookManager : MonoBehaviour
             {
                 if (ncm.timelineVisible[i])
                 {
-                    eventText[i].text = ncm.timelinenotebookContent[i];
+                    eventText[i].text = ncm.timelineContent[i];
                 }
                 else
                 {
