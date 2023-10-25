@@ -6,6 +6,7 @@ public class Room : MonoBehaviour
 {
     public Transform roomPos;
     public int roomNum;
+    public bool canBeAccessedViaMap;
     // Start is called before the first frame update
     void Start()
     {

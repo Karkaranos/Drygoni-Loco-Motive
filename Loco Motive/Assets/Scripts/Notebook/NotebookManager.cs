@@ -234,7 +234,10 @@ public class NotebookManager : MonoBehaviour
         ncm.AdvancedInformationVisible(pageNumber);
     }
 
-
+    /// <summary>
+    /// Calls revealing an event on the timeline
+    /// </summary>
+    /// <param name="eventNumber">the event to reveal</param>
     public void RevealNewTimelineEvent(int eventNumber)
     {
         ncm.RevealEvent(eventNumber);
