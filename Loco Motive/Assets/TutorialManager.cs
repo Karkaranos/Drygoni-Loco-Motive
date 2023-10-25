@@ -8,6 +8,8 @@ public class TutorialManager : MonoBehaviour
     public Arrow[] movementArrows;
     public ClickController CC;
     public int requirementsToUnlock;
+    [SerializeField] private GameObject HCDoorFlavor;
+    [SerializeField] private GameObject HCDoorEnter;
 
 
 
@@ -22,6 +24,7 @@ public class TutorialManager : MonoBehaviour
         EnableArrows(0);
         EnableArrows(2);
         EnableArrows(4);
+        HCDoorEnter.SetActive(false);
     }
 
     public void EnableRoom(int index)
@@ -48,7 +51,7 @@ public class TutorialManager : MonoBehaviour
             EnableArrows(8);
             EnableRoom(0);
         }
-        else if (CC.currentRoom == 4 && requirementsToUnlock == 4)
+        else if ((CC.currentRoom == 3 || CC.currentRoom==4) && requirementsToUnlock == 5)
         {
             requirementsToUnlock = 0;
             EnableArrows(3);
@@ -69,6 +72,10 @@ public class TutorialManager : MonoBehaviour
         else if (CC.currentRoom == 1)
         {
             EnableRoom(5);
+        }
+        if (HCDoorFlavor == null)
+        {
+            HCDoorEnter.SetActive(true);
         }
     }
 }
