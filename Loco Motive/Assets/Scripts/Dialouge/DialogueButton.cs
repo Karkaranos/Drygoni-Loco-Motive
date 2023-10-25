@@ -10,12 +10,14 @@ public class DialogueButton : MonoBehaviour
     public ClickController CC;
     public DialogueController DC;
     public InventoryBehavior IB;
+    public TutorialManager TM;
 
     public void Start()
     {
         CC = FindObjectOfType<ClickController>();
         DC = FindObjectOfType<DialogueController>();
         IB = FindObjectOfType<InventoryBehavior>();
+        TM = FindObjectOfType<TutorialManager>();
     }
     public void UpdateButton(int i, string s)
     {
@@ -123,6 +125,17 @@ public class DialogueButton : MonoBehaviour
                     }
                 }
                 CC.dc.UpdateScreen(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage]);
+
+                if(TM!=null && DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].conditionForTutorialProgression && !DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].hasRead)
+                {
+                    TM.requirementsToUnlock++;
+                    TM.IncreaseRequirement();
+                }
+
+                if (TM != null)
+                {
+                    DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].hasRead = true;
+                }
             }
 
             else

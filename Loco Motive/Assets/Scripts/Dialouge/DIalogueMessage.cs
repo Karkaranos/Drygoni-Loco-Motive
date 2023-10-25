@@ -17,4 +17,5 @@ public class DialogueMessage
     public List<GameObject> CharacterOff;
     public bool AddInventoryItem;
     public string InventoryItem;
+    public bool conditionForTutorialProgression;
 }

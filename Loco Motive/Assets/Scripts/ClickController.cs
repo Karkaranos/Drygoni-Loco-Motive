@@ -16,7 +16,7 @@ public class ClickController : MonoBehaviour
     private InputAction interact;
     private InputAction restart;
     private InputAction exit;
-    private int currentRoom;
+    public int currentRoom;
 
     private Vector2 currPos;
 
@@ -174,7 +174,8 @@ public class ClickController : MonoBehaviour
             {
                 hit.transform.GetComponent<NumberPadButtonBehavior>().OpenPad();
             }
-            if (hit.transform.GetComponent<RoomMove>())
+            if (hit.transform.GetComponent<RoomMove>() /*&& 
+                hit.transform.GetComponent<RoomMove>().canBeAccessed*/)
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
