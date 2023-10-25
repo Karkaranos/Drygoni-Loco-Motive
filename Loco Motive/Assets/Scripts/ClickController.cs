@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 public class ClickController : MonoBehaviour
@@ -15,7 +16,7 @@ public class ClickController : MonoBehaviour
     private InputAction interact;
     private InputAction restart;
     private InputAction exit;
-    private int currentRoom;
+    public int currentRoom;
 
     private Vector2 currPos;
 
@@ -69,9 +70,17 @@ public class ClickController : MonoBehaviour
 
         dc.opening = true;
 
-        currentRoom = 10;
+        if (SceneManager.GetActiveScene().name == "MainScene")
+        {
+            currentRoom = 10;
 
-        MapRooms[10].GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else
+        {
+            currentRoom = 8;            
+        }
+
+        MapRooms[currentRoom].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
     private void Restart_performed(InputAction.CallbackContext obj)
@@ -165,7 +174,8 @@ public class ClickController : MonoBehaviour
             {
                 hit.transform.GetComponent<NumberPadButtonBehavior>().OpenPad();
             }
-            if (hit.transform.GetComponent<RoomMove>())
+            if (hit.transform.GetComponent<RoomMove>() /*&& 
+                hit.transform.GetComponent<RoomMove>().canBeAccessed*/)
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);

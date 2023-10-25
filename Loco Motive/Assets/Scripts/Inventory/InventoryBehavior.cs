@@ -35,24 +35,6 @@ public class InventoryBehavior : MonoBehaviour
 
     [Header("Inventory Slot References")]
     public Image[] inventorySpaces;
-    
-    /*[SerializeField] private Image slot1;
-    [SerializeField] private Image slot2;
-    [SerializeField] private Image slot3;
-    [SerializeField] private Image slot4;
-    [SerializeField] private Image slot5;
-    [SerializeField] private Image slot6;
-    [SerializeField] private Image slot7;
-    [SerializeField] private Image slot8;
-    [SerializeField] private Image slot9;
-    [SerializeField] private Image slot10;
-    [SerializeField] private Image slot11;
-    [SerializeField] private Image slot12;
-    [SerializeField] private Image slot13;
-    [SerializeField] private Image slot14;
-    [SerializeField] private Image slot15;*/
-
-
 
     #endregion
     public int itemAdded;
@@ -79,8 +61,6 @@ public class InventoryBehavior : MonoBehaviour
     /// </summary>
     void Start()
     {
-        //inventoryVisual = new Sprite[inventorySize];
-        //inventorySpaces = new Image[inventorySize];
         inventoryName = new String[inventorySize];
 
         PopulateArrays();
@@ -118,12 +98,19 @@ public class InventoryBehavior : MonoBehaviour
         dc.isTalking = false;
     }
 
+    /// <summary>
+    /// Opens the zoomed in sprite view
+    /// </summary>
+    /// <param name="i">the object to zoom in on</param>
     public void OpenLargeView(int i)
     {
         inventoryLarge.SetActive(true);
         largeObject.sprite = inventorySpaces[i-1].sprite;
     }
 
+    /// <summary>
+    /// Closes the zoomed in sprite view
+    /// </summary>
     public void CloseLargeView()
     {
         inventoryLarge.SetActive(false);
@@ -140,14 +127,6 @@ public class InventoryBehavior : MonoBehaviour
         {
             inventorySpaces[i].sprite = placeholder;
         }
-
-        //See if can be simplified?
-        /*inventorySpaces[0] = slot1;
-        inventorySpaces[1] = slot2;
-        inventorySpaces[2] = slot3;
-        inventorySpaces[3] = slot4;
-        inventorySpaces[4] = slot5;*/
-
 
         for (int i = 0; i < inventorySize; i++)
         {
@@ -177,7 +156,6 @@ public class InventoryBehavior : MonoBehaviour
            
             if(inventorySpaces[currIndex].sprite == placeholder)
             {
-                print("Empty found");
                 emptySlotFound = true;
             }
             //Otherwise check the next spot
@@ -187,38 +165,6 @@ public class InventoryBehavior : MonoBehaviour
 
             }
         }
-
-        //See if can simplify later
-        /*switch (itemIndex)
-        {
-            case 1:
-                newItem = piece1;
-                newName = Items.PIECE1;
-                pieceCounter++;
-                break;
-            case 2:
-                newItem = piece2;
-                newName = Items.PIECE2;
-                pieceCounter++;
-                break;
-            case 3:
-                newItem = item3;
-                newName = Items.FULLNOTE;
-                //Change where pieceCounter++ is to where torn paper pieces are
-                pieceCounter++;
-                break;
-            case 4:
-                newItem = item4;
-                newName = Items.KEY;
-                keyCollected = true;
-                //Change where pieceCounter++ is to where torn paper pieces are
-                pieceCounter++;
-                break;
-            default:
-                newItem = item5;
-                newName = Items.KNIFE;
-                break;
-        }*/
 
         //Add the new image to the visual inventory
         inventorySpaces[currIndex].sprite = itemToAdd.objectImage;
@@ -287,6 +233,10 @@ public class InventoryBehavior : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Notifies the player when all physical items have been collected
+    /// </summary>
+    /// <returns>how long it waits for</returns>
     IEnumerator AllItemsCollected()
     {
         itemText.SetActive(true);

@@ -106,7 +106,7 @@ public class NotebookContentManager : MonoBehaviour
     /// <summary>
     /// Reveals all information about a page
     /// </summary>
-    /// <param name="pageNumber"></param>
+    /// <param name="pageNumber">the page number to reveal info on</param>
     public void AdvancedInformationVisible(int pageNumber)
     {
         for (int i = 0; i < ITEMS_PER_PAGE; i++)
@@ -115,6 +115,10 @@ public class NotebookContentManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Reveals an event
+    /// </summary>
+    /// <param name="eventNumber">the event to reveal</param>
     public void RevealEvent(int eventNumber)
     {
         timelineVisible[eventNumber] = true;
