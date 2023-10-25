@@ -26,7 +26,7 @@ public class TutorialManager : MonoBehaviour
 
     public void EnableRoom(int index)
     {
-        //roomReference[index].canBeAccessed = true;
+        roomReference[index].canBeAccessed = true;
     }
 
     public void EnableArrows(int index)
@@ -48,11 +48,27 @@ public class TutorialManager : MonoBehaviour
             EnableArrows(8);
             EnableRoom(0);
         }
-        else if (CC.currentRoom == 3 && requirementsToUnlock == 4)
+        else if (CC.currentRoom == 4 && requirementsToUnlock == 4)
         {
             requirementsToUnlock = 0;
             EnableArrows(3);
             EnableRoom(1);
+        }
+        else if (CC.currentRoom == 3)
+        {
+            EnableRoom(2);
+        }
+        else if (CC.currentRoom == 2)
+        {
+            EnableRoom(3);
+        }
+        else if (CC.currentRoom == 0)
+        {
+            EnableRoom(4);
+        }
+        else if (CC.currentRoom == 1)
+        {
+            EnableRoom(5);
         }
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - NumPadCollider
   - Lock
   - Map
+  - ComboLock
   layers:
   - Default
   - TransparentFX

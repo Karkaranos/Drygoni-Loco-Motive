@@ -174,8 +174,8 @@ public class ClickController : MonoBehaviour
             {
                 hit.transform.GetComponent<NumberPadButtonBehavior>().OpenPad();
             }
-            if (hit.transform.GetComponent<RoomMove>() /*&& 
-                hit.transform.GetComponent<RoomMove>().canBeAccessed*/)
+            if (hit.transform.GetComponent<RoomMove>() && 
+                hit.transform.GetComponent<RoomMove>().canBeAccessed)
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
@@ -195,7 +195,7 @@ public class ClickController : MonoBehaviour
                 currentRoom = roomNum;
             }
 
-            else if (hit.collider.GetComponent<DialogueInstance>())
+            if (hit.collider.GetComponent<DialogueInstance>())
             {
                 dc.currentDialogue = hit.collider.GetComponent<DialogueInstance>();
                 dc.StartDialogue();
