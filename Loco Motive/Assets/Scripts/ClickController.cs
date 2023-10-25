@@ -231,6 +231,12 @@ public class ClickController : MonoBehaviour
             {
                 clc.OpenLock();
             }
+
+            else if (hit.collider.CompareTag("Bed"))
+            {
+                TutorialManager tm = FindObjectOfType<TutorialManager>();
+                tm.StartGame();
+            }
         }
     }
 

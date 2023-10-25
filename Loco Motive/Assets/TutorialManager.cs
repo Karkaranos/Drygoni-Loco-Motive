@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class TutorialManager : MonoBehaviour
     public int requirementsToUnlock;
     [SerializeField] private GameObject HCDoorFlavor;
     [SerializeField] private GameObject HCDoorEnter;
+    private NotebookContentManager ncm;
 
 
 
     private void Start()
     {
         CC = FindObjectOfType<ClickController>();
+        ncm = FindObjectOfType<NotebookContentManager>();
         for(int i=0; i<movementArrows.Length; i++)
         {
             movementArrows[i].relatedObject.SetActive(false);
@@ -25,6 +28,18 @@ public class TutorialManager : MonoBehaviour
         EnableArrows(2);
         EnableArrows(4);
         HCDoorEnter.SetActive(false);
+
+        for(int i=0; i<3; i++)
+        {
+            ncm.AdvancedInformationVisible(i);
+        }
+
+        for(int i=0; i<5; i++)
+        {
+            ncm.RevealEvent(i);
+        }
+
+
     }
 
     public void EnableRoom(int index)
@@ -77,5 +92,12 @@ public class TutorialManager : MonoBehaviour
         {
             HCDoorEnter.SetActive(true);
         }
+    }
+
+    public void StartGame()
+    {
+        AudioManager am = FindObjectOfType<AudioManager>();
+        am.PlayGameMusic();
+        SceneManager.LoadScene("MainScene");
     }
 }
