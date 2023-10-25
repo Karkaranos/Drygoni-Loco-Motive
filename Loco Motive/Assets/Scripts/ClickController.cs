@@ -207,42 +207,6 @@ public class ClickController : MonoBehaviour
                 dc.StartDialogue();
             }
 
-            else if (hit.collider.CompareTag("DigitOne"))
-            {
-                if (clc.digitOne == 9)
-                {
-                    clc.digitOne = 0;
-                }
-                else
-                {
-                    clc.digitOne += 1;
-                }
-            }
-
-            else if (hit.collider.CompareTag("DigitTwo"))
-            {
-                if (clc.digitTwo == 9)
-                {
-                    clc.digitTwo = 0;
-                }
-                else
-                {
-                    clc.digitTwo += 1;
-                }
-            }
-
-            else if (hit.collider.CompareTag("DigitThree"))
-            {
-                if (clc.digitThree == 9)
-                {
-                    clc.digitThree = 0;
-                }
-                else
-                {
-                    clc.digitThree += 1;
-                }
-            }
-
             else if (hit.collider.CompareTag("NumPadCollider"))
             {
                 dc.numPadDialogue = true;
@@ -261,6 +225,11 @@ public class ClickController : MonoBehaviour
                     //Replace ITEM2 with the correct enum of the key
                     ib.RemoveItemFromInventory("Key");
                 }
+            }
+
+            else if (hit.collider.CompareTag("ComboLock"))
+            {
+                clc.OpenLock();
             }
         }
     }
