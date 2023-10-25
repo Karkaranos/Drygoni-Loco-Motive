@@ -202,6 +202,7 @@ public class DialogueButton : MonoBehaviour
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
                     {
+                        DC.interrogating = false;
                         DC.StopDialogue();
                     }
                     //If currCounter isn't equal to maxCounter, goes back to branches of interrogation
