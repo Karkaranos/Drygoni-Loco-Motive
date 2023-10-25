@@ -202,6 +202,7 @@ public class DialogueButton : MonoBehaviour
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
                     {
+                        DC.interrogating = false;
                         DC.StopDialogue();
                     }
                     //If currCounter isn't equal to maxCounter, goes back to branches of interrogation
@@ -252,13 +253,13 @@ public class DialogueButton : MonoBehaviour
                 //If correctAnswer is true, 
                 if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].correctAnswer == true)
                 {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(3);
                 }
 
                 //If correctAnswer is false, 
                 else if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].correctAnswer == false)
                 {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(4);
                 }
             }
         }

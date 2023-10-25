@@ -83,6 +83,13 @@ public class ClickController : MonoBehaviour
         MapRooms[currentRoom].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
+    private void OnDestroy()
+    {
+        interact.performed -= Interact_performed;
+        restart.performed -= Restart_performed;
+        exit.performed -= Exit_performed;
+    }
+
     private void Restart_performed(InputAction.CallbackContext obj)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
@@ -174,8 +181,8 @@ public class ClickController : MonoBehaviour
             {
                 hit.transform.GetComponent<NumberPadButtonBehavior>().OpenPad();
             }
-            if (hit.transform.GetComponent<RoomMove>() /*&& 
-                hit.transform.GetComponent<RoomMove>().canBeAccessed*/)
+            if (hit.transform.GetComponent<RoomMove>() && 
+                hit.transform.GetComponent<RoomMove>().canBeAccessed)
             {
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
@@ -195,7 +202,7 @@ public class ClickController : MonoBehaviour
                 currentRoom = roomNum;
             }
 
-            else if (hit.collider.GetComponent<DialogueInstance>())
+            if (hit.collider.GetComponent<DialogueInstance>())
             {
                 dc.currentDialogue = hit.collider.GetComponent<DialogueInstance>();
                 dc.StartDialogue();
@@ -230,6 +237,18 @@ public class ClickController : MonoBehaviour
             else if (hit.collider.CompareTag("ComboLock"))
             {
                 clc.OpenLock();
+            }
+
+            else if (hit.collider.CompareTag("Bed"))
+            {
+                TutorialManager tm = FindObjectOfType<TutorialManager>();
+                tm.StartGame();
+            }
+
+            if (hit.collider.CompareTag("OneShotText"))
+            {
+                DialogueInstance di = hit.transform.GetComponent<DialogueInstance>();
+                Destroy(di);
             }
         }
     }

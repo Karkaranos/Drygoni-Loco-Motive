@@ -45,6 +45,11 @@ public class UIButtonManager : MonoBehaviour
         am.PlayMenuMusic();
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("TutorialScene");
+        am.PlayTutorialMusic();
+    }
 
 
 
