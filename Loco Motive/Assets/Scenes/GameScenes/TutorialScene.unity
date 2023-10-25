@@ -182,7 +182,7 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
-    conditionForTutorialProgression: 0
+    conditionForTutorialProgression: 1
   - Text: I love answering questions.
     Names: 0
     Branch:
