@@ -16,4 +16,3 @@ public class Page
     public string[] content = new string[6];
 
 }
-}
