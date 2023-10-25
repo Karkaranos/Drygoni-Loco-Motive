@@ -98,6 +98,6 @@ public class TutorialManager : MonoBehaviour
     {
         AudioManager am = FindObjectOfType<AudioManager>();
         am.PlayGameMusic();
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(2);
     }
 }

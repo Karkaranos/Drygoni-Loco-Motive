@@ -189,7 +189,7 @@ MonoBehaviour:
     - choiceText: What did you pack?
       nextDialogue: 2
     - choiceText: Train?
-      nextDialogue: 8
+      nextDialogue: 9
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
@@ -235,6 +235,21 @@ MonoBehaviour:
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "Yeah of course! I can\u2019t just neglect my workout while we\u2019re
+      on a trip."
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -3482,7 +3497,7 @@ GameObject:
   - component: {fileID: 450589883}
   m_Layer: 0
   m_Name: FromLoungeToDining
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3680,12 +3695,12 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 00000000010000000200000003000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
-    conditionForTutorialProgression: 0
+    conditionForTutorialProgression: 1
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4267,7 +4282,7 @@ GameObject:
   - component: {fileID: 527717305}
   m_Layer: 0
   m_Name: FromDeluxeHallwayToHallway
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4448,7 +4463,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 000000000100000002000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -5174,7 +5189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: When do you think lunch is?
+  - Text: I'm tired. Let's sleep until tomorrow.
     Names: 0
     Branch: []
     NextTextOverride: 0
@@ -6066,7 +6081,7 @@ GameObject:
   - component: {fileID: 822818779}
   m_Layer: 0
   m_Name: FromDeluxeToNormalHall
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6247,7 +6262,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 000000000100000002000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -10915,7 +10930,7 @@ GameObject:
   - component: {fileID: 1484568292}
   m_Layer: 0
   m_Name: FromDiningToBar
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11097,12 +11112,12 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c7a93f42ee1738244a47bc5f1913ec06, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 000000000100000002000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
-    conditionForTutorialProgression: 0
+    conditionForTutorialProgression: 1
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11352,7 +11367,7 @@ GameObject:
   - component: {fileID: 1505744595}
   m_Layer: 0
   m_Name: FromNormalHallToLounge
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11526,21 +11541,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
-      else on the train."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
   - Text: "You\u2019re no fun."
     Names: 0
     Branch: []
@@ -11550,6 +11550,21 @@ MonoBehaviour:
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
+      else on the train."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 00000000010000000200000003000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -14349,7 +14364,7 @@ GameObject:
   - component: {fileID: 2087822342}
   m_Layer: 0
   m_Name: FromHallwayToLounge
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14546,12 +14561,12 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c7a93f42ee1738244a47bc5f1913ec06, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 00000000010000000200000003000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
-    conditionForTutorialProgression: 0
+    conditionForTutorialProgression: 1
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -14709,7 +14724,7 @@ GameObject:
   - component: {fileID: 2105732722}
   m_Layer: 0
   m_Name: HunterCaseyDoor
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14953,7 +14968,7 @@ MonoBehaviour:
     Portrait: {fileID: 21300000, guid: c7a93f42ee1738244a47bc5f1913ec06, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 00000000010000000200000003000000040000000500000006000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0

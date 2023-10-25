@@ -83,6 +83,13 @@ public class ClickController : MonoBehaviour
         MapRooms[currentRoom].GetComponent<SpriteRenderer>().color = Color.blue;
     }
 
+    private void OnDestroy()
+    {
+        interact.performed -= Interact_performed;
+        restart.performed -= Restart_performed;
+        exit.performed -= Exit_performed;
+    }
+
     private void Restart_performed(InputAction.CallbackContext obj)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
@@ -236,6 +243,12 @@ public class ClickController : MonoBehaviour
             {
                 TutorialManager tm = FindObjectOfType<TutorialManager>();
                 tm.StartGame();
+            }
+
+            if (hit.collider.CompareTag("OneShotText"))
+            {
+                DialogueInstance di = hit.transform.GetComponent<DialogueInstance>();
+                Destroy(di);
             }
         }
     }
