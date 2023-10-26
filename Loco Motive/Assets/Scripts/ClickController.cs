@@ -135,7 +135,7 @@ public class ClickController : MonoBehaviour
                 isHighlighted = true;
             }
         }
-        
+
         else if (isHighlighted == true)
         {
             if(hit.collider != null && hit.collider.gameObject.tag == "Map")
@@ -188,8 +188,8 @@ public class ClickController : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
                 Map.transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 Vector2 pos = transform.position;
-                pos.x += -15.45f;
-                pos.y += 2.5f;
+                //pos.x += -15.45f;
+                //pos.y += 2.5f;
                 Map.transform.position = pos;
                 arrLength = 0;
                 while (arrLength < MapRooms.Length)

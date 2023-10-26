@@ -1,3 +1,11 @@
+/*****************************************************************************
+// File Name :         Page.cs
+// Author :            Cade R. Naylor
+// Creation Date :     October 16, 2023
+//
+// Brief Description :  Oversees the Tutorial- Handles room unlocking and 
+                        Tutorial content management
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +13,7 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
+    #region Variables
     public RoomMove[] roomReference;
     public Arrow[] movementArrows;
     public ClickController CC;
@@ -13,8 +22,12 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject HCDoorEnter;
     private NotebookContentManager ncm;
 
+    #endregion Variables
 
-
+    /// <summary>
+    /// Start occurs on the first frame update. It enables room arrows and 
+    /// gets references to objects
+    /// </summary>
     private void Start()
     {
         CC = FindObjectOfType<ClickController>();
@@ -23,17 +36,22 @@ public class TutorialManager : MonoBehaviour
         {
             movementArrows[i].relatedObject.SetActive(false);
         }
+
+
+        //Enable movement arrows in non-hallway rooms
         EnableArrows(1);
         EnableArrows(0);
         EnableArrows(2);
         EnableArrows(4);
         HCDoorEnter.SetActive(false);
 
+        //Reveal player info
         for(int i=0; i<3; i++)
         {
             ncm.AdvancedInformationVisible(i);
         }
 
+        //Reveal timeline events
         for(int i=0; i<5; i++)
         {
             ncm.RevealEvent(i);
