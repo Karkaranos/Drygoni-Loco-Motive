@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -147,7 +147,7 @@ Transform:
   - {fileID: 1821093277722019586}
   - {fileID: 5646930412300725889}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034490080398312686
 GameObject:
@@ -1051,6 +1051,11 @@ MonoBehaviour:
   digitsInCode: 4
   codeText: {fileID: 5636593840027102637}
   numberPadObject: {fileID: 3670083648884795745}
+  numPadEvidence: {fileID: 0}
+  map: {fileID: 0}
+  movementArrows: {fileID: 0}
+  inventoryIcon: {fileID: 0}
+  notebookIcon: {fileID: 0}
   unlocked: 0
 --- !u!1 &2425930765453254340
 GameObject:
