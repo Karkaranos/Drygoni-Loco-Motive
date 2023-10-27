@@ -209,6 +209,7 @@ public class AudioManager : MonoBehaviour
         }
         Stop("TutorialBGM");
         Stop("MenuBGM");
+        Mute("ChoirBGM");
     }
 
     /// <summary>
@@ -219,6 +220,23 @@ public class AudioManager : MonoBehaviour
         inInterrogation = true;
         Unmute("InterrogationBGM");
         Mute("GameBGM");
+        Mute("ChoirBGM");
+    }
+
+    public void PlayCorporateLadderRoomMusic()
+    {
+        Mute("GameBGM");
+        Mute("InterrogationBGM");
+        Unmute("ChoirBGM");
+        Play("ChoirBGM");
+        print("corpStart");
+    }
+
+    public void StopCorporateLadderRoomMusic()
+    {
+        Stop("ChoirBGM");
+        print("corpStop");
+        Unmute("GameBGM");
     }
 
     #endregion
