@@ -813,7 +813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 68326666}
-  roomNum: 4
+  roomNum: 6
   canBeAccessedViaMap: 0
 --- !u!4 &68326666
 Transform:
@@ -2880,7 +2880,6 @@ GameObject:
   m_Component:
   - component: {fileID: 300404340}
   - component: {fileID: 300404343}
-  - component: {fileID: 300404342}
   - component: {fileID: 300404341}
   - component: {fileID: 300404344}
   m_Layer: 0
@@ -2950,20 +2949,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &300404342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300404339}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 0
 --- !u!212 &300404343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5536,7 +5521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 506347357}
-  roomNum: 10
+  roomNum: 9
   canBeAccessedViaMap: 0
 --- !u!4 &506347357
 Transform:
@@ -5997,7 +5982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 579665373}
-  roomNum: 4
+  roomNum: 3
   canBeAccessedViaMap: 0
 --- !u!4 &579665373
 Transform:
@@ -19978,7 +19963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 1920894809}
-  roomNum: 5
+  roomNum: 7
   canBeAccessedViaMap: 0
 --- !u!4 &1920894809
 Transform:
@@ -20813,16 +20798,16 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 629073667}
-  - {fileID: 555417511}
-  - {fileID: 506347357}
-  - {fileID: 1920894809}
-  - {fileID: 68326666}
-  - {fileID: 495125580}
-  - {fileID: 1493883061}
   - {fileID: 2137844751}
   - {fileID: 378678586}
-  - {fileID: 2088726315}
   - {fileID: 579665373}
+  - {fileID: 1493883061}
+  - {fileID: 495125580}
+  - {fileID: 68326666}
+  - {fileID: 1920894809}
+  - {fileID: 2088726315}
+  - {fileID: 506347357}
+  - {fileID: 555417511}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
