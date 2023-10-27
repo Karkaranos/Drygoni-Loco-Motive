@@ -44,6 +44,8 @@ public class ClickController : MonoBehaviour
     //Update this to dialogue being used
     [SerializeField] private GameObject[] MapRooms;
 
+    private AudioManager am;
+
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,7 @@ public class ClickController : MonoBehaviour
         mouseController.currentActionMap.Enable();
 
         nm = GameObject.Find("NotebookManager").GetComponent<NotebookManager>();
+        am = GameObject.FindObjectOfType<AudioManager>();
 
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
@@ -200,6 +203,15 @@ public class ClickController : MonoBehaviour
                 int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
                 MapRooms[roomNum].GetComponent<SpriteRenderer>().color = Color.blue;
                 currentRoom = roomNum;
+
+                if(currentRoom == 9)
+                {
+                    am.PlayCorporateLadderRoomMusic();
+                }
+                else
+                {
+                    am.StopCorporateLadderRoomMusic();
+                }
             }
 
             if (hit.collider.GetComponent<DialogueInstance>())

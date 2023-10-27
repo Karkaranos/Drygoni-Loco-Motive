@@ -813,8 +813,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 68326666}
-  roomNum: 4
-  canBeAccessedViaMap: 0
+  roomNum: 6
+  canBeAccessedViaMap: 1
 --- !u!4 &68326666
 Transform:
   m_ObjectHideFlags: 0
@@ -2962,8 +2962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 0
+  connectedRoom: {fileID: 2088726314}
+  canBeAccessed: 1
 --- !u!212 &300404343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3396,7 +3396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 378678586}
   roomNum: 2
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &378678586
 Transform:
   m_ObjectHideFlags: 0
@@ -5485,7 +5485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 495125580}
   roomNum: 5
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &495125580
 Transform:
   m_ObjectHideFlags: 0
@@ -5536,8 +5536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 506347357}
-  roomNum: 10
-  canBeAccessedViaMap: 0
+  roomNum: 9
+  canBeAccessedViaMap: 1
 --- !u!4 &506347357
 Transform:
   m_ObjectHideFlags: 0
@@ -5814,7 +5814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 555417511}
   roomNum: 10
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &555417511
 Transform:
   m_ObjectHideFlags: 0
@@ -5997,8 +5997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 579665373}
-  roomNum: 4
-  canBeAccessedViaMap: 0
+  roomNum: 3
+  canBeAccessedViaMap: 1
 --- !u!4 &579665373
 Transform:
   m_ObjectHideFlags: 0
@@ -6370,7 +6370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 1971994822}
   roomNum: 1
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &629073667
 Transform:
   m_ObjectHideFlags: 0
@@ -16295,7 +16295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 1493883061}
   roomNum: 4
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &1493883061
 Transform:
   m_ObjectHideFlags: 0
@@ -19978,8 +19978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 1920894809}
-  roomNum: 5
-  canBeAccessedViaMap: 0
+  roomNum: 7
+  canBeAccessedViaMap: 1
 --- !u!4 &1920894809
 Transform:
   m_ObjectHideFlags: 0
@@ -20857,7 +20857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 2088726315}
   roomNum: 8
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &2088726315
 Transform:
   m_ObjectHideFlags: 0
@@ -21509,7 +21509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPos: {fileID: 2137844751}
   roomNum: 0
-  canBeAccessedViaMap: 0
+  canBeAccessedViaMap: 1
 --- !u!4 &2137844751
 Transform:
   m_ObjectHideFlags: 0
