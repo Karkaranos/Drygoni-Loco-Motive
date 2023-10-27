@@ -27,21 +27,8 @@ public class NotebookContentManager : MonoBehaviour
 
     [SerializeField]
     private GameObject visualUpdateNotification;
-    //[SerializeField] private Sprite item1;
-    //[SerializeField] private Sprite item2;
 
-    /*public string[] page1notebookContent = new string[6];
-    public string[] page2notebookContent = new string[6];
-    public string[] page3notebookContent = new string[6];
-    public string[] page4notebookContent = new string[6];
-    public string[] page5notebookContent = new string[6];
-    public string[] page6notebookContent = new string[6];
-    public string[] page7notebookContent = new string[6];
-    public string[] page8notebookContent = new string[6];
-
-
-    public List<string[]> pages = new List<string[]>();
-    */
+    private AudioManager am;
 
     public string[] timelineContent;
     public Page[] pageContent;
@@ -77,26 +64,7 @@ public class NotebookContentManager : MonoBehaviour
 
         visualUpdateNotification.SetActive(false);
 
-        /*pages.Add(page1notebookContent);
-        pages.Add(page2notebookContent);
-        pages.Add(page3notebookContent);
-        pages.Add(page4notebookContent);
-        pages.Add(page5notebookContent);
-        pages.Add(page6notebookContent);
-        pages.Add(page7notebookContent);
-        pages.Add(timelinenotebookContent);
-        pages.Add(page8notebookContent);
-
-        */
-        //Assigning visuals
-        //image[0] = empty;
-        //image[1] = item1;
-        //image[2] = item2;
-
-        /*for(int i=0; i<5; i++)
-        {
-            BasicInformationVisible(i);
-        }*/
+        am = FindObjectOfType<AudioManager>();
 
         RevealEvent(4);
         RevealEvent(3);
@@ -138,10 +106,12 @@ public class NotebookContentManager : MonoBehaviour
     public void RevealEvent(int eventNumber)
     {
         timelineVisible[eventNumber] = true;
+        StartCoroutine(NotifyUser());
     }
 
     IEnumerator NotifyUser()
     {
+        am.Play("NotebookUpdate");
         visualUpdateNotification.SetActive(true);
         yield return new WaitForSeconds(3);
         visualUpdateNotification.SetActive(false);

@@ -49,6 +49,7 @@ public class InventoryBehavior : MonoBehaviour
 
 
     private DialogueController dc;
+    private AudioManager am;
 
 
     #endregion
@@ -69,6 +70,7 @@ public class InventoryBehavior : MonoBehaviour
         itemText.SetActive(false);
 
         dc = FindObjectOfType<DialogueController>();
+        am = FindObjectOfType<AudioManager>();
 
         visualUpdateNotification.SetActive(false);
     }
@@ -254,6 +256,7 @@ public class InventoryBehavior : MonoBehaviour
 
     IEnumerator NotifyUser()
     {
+        am.Play("InventoryUpdate");
         visualUpdateNotification.SetActive(true);
         yield return new WaitForSeconds(3);
         visualUpdateNotification.SetActive(false);
