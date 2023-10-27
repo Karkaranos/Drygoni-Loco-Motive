@@ -821,7 +821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746273279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.363628, y: -2.683331, z: 0.05156862}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -873,6 +873,36 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: TutorialBGM
     audClip: {fileID: 8300000, guid: 623c3044a4d4f0d46ae6423de1474e67, type: 3}
+    clipVolume: 1
+    clipPitch: 1
+    canLoop: 0
+    panStereo: 0
+    spacialBlend: 0
+    minSoundDistance: 0
+    maxSoundDistance: 0
+    source: {fileID: 0}
+  - name: InventoryUpdate
+    audClip: {fileID: 8300000, guid: 7bf455925a4393c4e80f0c4073cfc9ef, type: 3}
+    clipVolume: 1
+    clipPitch: 1
+    canLoop: 0
+    panStereo: 0
+    spacialBlend: 0
+    minSoundDistance: 0
+    maxSoundDistance: 0
+    source: {fileID: 0}
+  - name: NotebookUpdate
+    audClip: {fileID: 8300000, guid: 57960d3ae6df0e844b9a9db5fe2cbe21, type: 3}
+    clipVolume: 1
+    clipPitch: 1
+    canLoop: 0
+    panStereo: 0
+    spacialBlend: 0
+    minSoundDistance: 0
+    maxSoundDistance: 0
+    source: {fileID: 0}
+  - name: SafeUnlocked
+    audClip: {fileID: 8300000, guid: e3a6fe6083be570478e8b113ddd1d456, type: 3}
     clipVolume: 1
     clipPitch: 1
     canLoop: 0

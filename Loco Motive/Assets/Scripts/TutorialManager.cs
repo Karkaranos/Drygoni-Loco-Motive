@@ -57,7 +57,6 @@ public class TutorialManager : MonoBehaviour
             ncm.RevealEvent(i);
         }
 
-
     }
 
     public void EnableRoom(int index)
