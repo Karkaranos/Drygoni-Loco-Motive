@@ -1196,6 +1196,36 @@ MonoBehaviour:
     minSoundDistance: 0
     maxSoundDistance: 0
     source: {fileID: 0}
+  - name: FootstepOne
+    audClip: {fileID: 8300000, guid: 6d8690a5b3246594eb06535317ec6037, type: 3}
+    clipVolume: 1
+    clipPitch: 1
+    canLoop: 0
+    panStereo: 0
+    spacialBlend: 0
+    minSoundDistance: 0
+    maxSoundDistance: 0
+    source: {fileID: 0}
+  - name: FootstepTwo
+    audClip: {fileID: 8300000, guid: cb8620d5b5d2e8841a8af0c44a026779, type: 3}
+    clipVolume: 1
+    clipPitch: 1
+    canLoop: 0
+    panStereo: 0
+    spacialBlend: 0
+    minSoundDistance: 0
+    maxSoundDistance: 0
+    source: {fileID: 0}
+  - name: FootstepThree
+    audClip: {fileID: 8300000, guid: c66f80d6e481e4c47b5ebcafc78fe193, type: 3}
+    clipVolume: 1
+    clipPitch: 1
+    canLoop: 0
+    panStereo: 0
+    spacialBlend: 0
+    minSoundDistance: 0
+    maxSoundDistance: 0
+    source: {fileID: 0}
   musicVolume: 1
 --- !u!1 &1825189506
 GameObject:

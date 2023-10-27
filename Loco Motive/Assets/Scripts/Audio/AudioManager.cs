@@ -23,6 +23,8 @@ public class AudioManager : MonoBehaviour
     private bool inInterrogation = false;
     private bool gameStarted = false;
 
+    private int footstepTrack;
+
     /// <summary>
     /// Start is called before the first frame update. It ensures only one instance
     /// of this script and initializes Sound class
@@ -239,5 +241,21 @@ public class AudioManager : MonoBehaviour
         Unmute("GameBGM");
     }
 
+    public void PlayFootsteps()
+    {
+        footstepTrack = UnityEngine.Random.Range(1, 4);
+        if (footstepTrack == 1)
+        {
+            Play("FootstepOne");
+        }
+        else if (footstepTrack == 2)
+        {
+            Play("FootstepTwo");
+        }
+        else if (footstepTrack == 3)
+        {
+            Play("FootstepThree");
+        }
+    }
     #endregion
 }
