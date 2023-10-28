@@ -6,8 +6,6 @@
 // Brief Description :  Handles updating the notebook with what the player knows
                         and switching pages
 *****************************************************************************/
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -41,12 +39,7 @@ public class NotebookManager : MonoBehaviour
     private TMP_Text[] content;
 
     [Header("Timeline Content")]
-    [SerializeField] private TMP_Text event1;
-    [SerializeField] private TMP_Text event2;
-    [SerializeField] private TMP_Text event3;
-    [SerializeField] private TMP_Text event4;
-    [SerializeField] private TMP_Text event5;
-    private TMP_Text[] eventText;
+    public TMP_Text[] eventText;
 
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
@@ -74,12 +67,6 @@ public class NotebookManager : MonoBehaviour
         content[3] = bodyText2;
         content[4] = subHeader;
         content[5] = bodyText3;
-
-        eventText[0] = event1;
-        eventText[1] = event2;
-        eventText[2] = event3;
-        eventText[3] = event4;
-        eventText[4] = event5;
 
 
     }

@@ -14,6 +14,7 @@ public class ClickController : MonoBehaviour
 
     private InputAction mPos;
     private InputAction interact;
+    private InputAction revealInteractables;
     private InputAction restart;
     private InputAction exit;
     public int currentRoom;
@@ -44,6 +45,8 @@ public class ClickController : MonoBehaviour
     //Update this to dialogue being used
     [SerializeField] private GameObject[] MapRooms;
 
+    [SerializeField] private GameObject[] outlines;
+
     private AudioManager am;
 
 
@@ -60,10 +63,13 @@ public class ClickController : MonoBehaviour
         interact = mouseController.currentActionMap.FindAction("Interact");
         restart = mouseController.currentActionMap.FindAction("Restart");
         exit = mouseController.currentActionMap.FindAction("Exit");
+        revealInteractables = mouseController.currentActionMap.FindAction("RevealInteractables");
 
         interact.performed += Interact_performed;
         restart.performed += Restart_performed;
         exit.performed += Exit_performed;
+        revealInteractables.performed += Reveal_performed;
+        revealInteractables.canceled += Reveal_canceled;
 
 
         dc.ContinueText.text = "Continue";
@@ -84,6 +90,11 @@ public class ClickController : MonoBehaviour
         }
 
         MapRooms[currentRoom].GetComponent<SpriteRenderer>().color = Color.blue;
+
+        foreach (GameObject i in outlines)
+        {
+            i.SetActive(false);
+        }
     }
 
     private void OnDestroy()
@@ -91,11 +102,29 @@ public class ClickController : MonoBehaviour
         interact.performed -= Interact_performed;
         restart.performed -= Restart_performed;
         exit.performed -= Exit_performed;
+        revealInteractables.performed -= Reveal_performed;
+        revealInteractables.canceled -= Reveal_canceled;
     }
 
     private void Restart_performed(InputAction.CallbackContext obj)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
+    private void Reveal_performed(InputAction.CallbackContext obj)
+    {
+        foreach (GameObject i in outlines)
+        {
+            i.SetActive(true);
+        }
+    }
+
+    private void Reveal_canceled(InputAction.CallbackContext obj)
+    {
+        foreach (GameObject i in outlines)
+        {
+            i.SetActive(false);
+        }
     }
 
     private void Exit_performed(InputAction.CallbackContext obj)
