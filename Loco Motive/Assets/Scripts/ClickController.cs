@@ -216,6 +216,7 @@ public class ClickController : MonoBehaviour
             if (hit.transform.GetComponent<RoomMove>() && 
                 hit.transform.GetComponent<RoomMove>().canBeAccessed)
             {
+                am.PlayFootsteps();
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
                 Map.transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
