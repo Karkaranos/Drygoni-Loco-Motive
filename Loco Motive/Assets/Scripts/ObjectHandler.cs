@@ -18,6 +18,8 @@ public class ObjectHandler : MonoBehaviour
     private NotebookManager nm;
     public string itemID;
     [SerializeField] private int pageNumber;
+    public bool updatesUI;
+    public string scriptToUpdate;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,19 @@ public class ObjectHandler : MonoBehaviour
             ncm.BasicInformationVisible(pageNumber);
             nm.GetPageInformation();
             ncm.AdvancedInformationVisible(pageNumber);
+        }
+        if (updatesUI)
+        {
+            if(scriptToUpdate == "ib")
+            {
+                ib.iconIsEnabled = true;
+                ib.inventoryIcon.SetActive(true);
+            }
+            if(scriptToUpdate == "nm")
+            {
+                nm.iconIsEnabled = true;
+                nm.notebookIcon.SetActive(true);
+            }
         }
         Destroy(gameObject);
     }

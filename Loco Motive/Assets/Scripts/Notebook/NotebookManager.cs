@@ -19,7 +19,7 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private GameObject notebook;
     [SerializeField] private GameObject notebookContentPage;
     [SerializeField] private GameObject notebookTimelinePage;
-    [SerializeField] private GameObject notebookIcon;
+    public GameObject notebookIcon;
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
     [SerializeField] private GameObject lastPage;
@@ -45,6 +45,8 @@ public class NotebookManager : MonoBehaviour
 
     private NotebookContentManager ncm;
     private DialogueController dc;
+    private InventoryBehavior ib;
+    public bool iconIsEnabled;
     #endregion
 
     #region Functions
@@ -55,11 +57,12 @@ public class NotebookManager : MonoBehaviour
     {
         ncm = GetComponent<NotebookContentManager>();
         dc = FindObjectOfType<DialogueController>();
+        ib = FindObjectOfType<InventoryBehavior>();
 
         currentPage = 0;
 
         content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
-        eventText = new TMP_Text[ncm.timelineCount];
+        //eventText = new TMP_Text[ncm.timelineCount];
 
         content[0] = pageTitle;
         content[1] = imageCaption;
@@ -94,10 +97,17 @@ public class NotebookManager : MonoBehaviour
         notebook.SetActive(false);
         notebookContentPage.SetActive(false);
         notebookTimelinePage.SetActive(false);
-        notebookIcon.SetActive(true);
         map.SetActive(true);
         movementArrows.SetActive(true);
-        inventoryIcon.SetActive(true);
+        if (iconIsEnabled)
+        {
+            notebookIcon.SetActive(true);
+        }
+        if (ib.iconIsEnabled)
+        {
+            inventoryIcon.SetActive(true);
+        }
+
         dc.isTalking = false;
     }
 

@@ -111,7 +111,10 @@ public class NotebookContentManager : MonoBehaviour
 
     IEnumerator NotifyUser()
     {
-        am.Play("NotebookUpdate");
+        if(am != null)
+        {
+            am.Play("NotebookUpdate");
+        }
         visualUpdateNotification.SetActive(true);
         yield return new WaitForSeconds(3);
         visualUpdateNotification.SetActive(false);

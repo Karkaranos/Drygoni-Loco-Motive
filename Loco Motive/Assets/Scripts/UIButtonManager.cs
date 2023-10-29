@@ -23,12 +23,16 @@ public class UIButtonManager : MonoBehaviour
     private void Awake()
     {
         am = FindObjectOfType<AudioManager>();
-        creditCanvas = GameObject.Find("CreditCanvas");
-        creditText = GameObject.Find("Credits");
-        creditCanvas.SetActive(false);
-        creditResetPos = new Vector2(450, 250);
+        if(SceneManager.GetActiveScene().name == "TitleScreen")
+        {
+            creditCanvas = GameObject.Find("CreditCanvas");
+            creditText = GameObject.Find("Credits");
+            creditCanvas.SetActive(false);
+            creditResetPos = new Vector2(450, 250);
+    
+            titleCanvas = GameObject.Find("TitleCanvas");
+        }
 
-        titleCanvas = GameObject.Find("TitleCanvas");
     }
 
     /// <summary>

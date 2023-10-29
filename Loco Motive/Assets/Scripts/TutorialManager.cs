@@ -16,7 +16,7 @@ public class TutorialManager : MonoBehaviour
     #region Variables
     public RoomMove[] roomReference;
     public Arrow[] movementArrows;
-    public ClickController CC;
+    private ClickController CC;
     public int requirementsToUnlock;
     [SerializeField] private GameObject HCDoorFlavor;
     [SerializeField] private GameObject HCDoorEnter;
@@ -114,7 +114,10 @@ public class TutorialManager : MonoBehaviour
     public void StartGame()
     {
         AudioManager am = FindObjectOfType<AudioManager>();
-        am.PlayGameMusic();
+        if (am != null)
+        {
+            am.PlayGameMusic();
+        }
         SceneManager.LoadScene(2);
     }
 }
