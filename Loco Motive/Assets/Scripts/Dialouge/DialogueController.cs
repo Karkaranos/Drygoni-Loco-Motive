@@ -44,6 +44,7 @@ public class DialogueController : MonoBehaviour
     public GameObject InventoryButton;
     public GameObject NotebookButton;
     public GameObject AccusationButton;
+    public GameObject ExitButton;
 
     public ClickController cc;
     public StoredDialogue sd;
@@ -85,6 +86,7 @@ public class DialogueController : MonoBehaviour
         SpeakerName.text = getName(x.Names);
         PortraitImage.sprite = x.Portrait;
         InterrogateButton.SetActive(currentDialogue.canInterrogate);
+        AccusationButton.SetActive(currentDialogue.canAccuse);
         
         if (x.Branch.Count > 0)
         {
@@ -116,6 +118,7 @@ public class DialogueController : MonoBehaviour
         NotebookButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
+        ExitButton.SetActive(true);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
@@ -125,6 +128,7 @@ public class DialogueController : MonoBehaviour
             currentDialogue.StartText();
             InventoryButton.SetActive(false);
             NotebookButton.SetActive(false);
+            ExitButton.SetActive(false);
             //ButtonTextOne.text = "Yes";
             //ButtonTextTwo.text = "No";
             //DialogueBox.text = "Have you ever been on a train before?";
@@ -190,17 +194,20 @@ public class DialogueController : MonoBehaviour
         {
             am.PlayInterrogationMusic();
         }
+        ExitButton.SetActive(false);
 
     }
     
     public void StartAccusation()
     {
+        currentDialogue.canAccuse = false;
         currentAccusation = currentDialogue.thisAccusation;
         accusing = true;
         AccusationButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         UpdateScreen(currentAccusation.AllMessages[0]);
+        ExitButton.SetActive(false);
     }
         
 
