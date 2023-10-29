@@ -44,6 +44,7 @@ public class DialogueController : MonoBehaviour
     public GameObject InventoryButton;
     public GameObject NotebookButton;
     public GameObject AccusationButton;
+    public GameObject ExitButton;
 
     public ClickController cc;
     public StoredDialogue sd;
@@ -114,6 +115,7 @@ public class DialogueController : MonoBehaviour
         NotebookButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
+        ExitButton.SetActive(true);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
@@ -123,6 +125,7 @@ public class DialogueController : MonoBehaviour
             currentDialogue.StartText();
             InventoryButton.SetActive(false);
             NotebookButton.SetActive(false);
+            ExitButton.SetActive(false);
             //ButtonTextOne.text = "Yes";
             //ButtonTextTwo.text = "No";
             //DialogueBox.text = "Have you ever been on a train before?";
@@ -185,6 +188,7 @@ public class DialogueController : MonoBehaviour
         cc.Map.SetActive(false);
         UpdateScreen(currentInterrogation.AllMessages[0]);
         am.PlayInterrogationMusic();
+        ExitButton.SetActive(false);
     }
     
     public void StartAccusation()
@@ -195,6 +199,7 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         UpdateScreen(currentAccusation.AllMessages[0]);
+        ExitButton.SetActive(false);
     }
         
 
