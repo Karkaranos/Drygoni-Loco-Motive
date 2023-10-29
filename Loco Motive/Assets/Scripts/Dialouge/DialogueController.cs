@@ -84,6 +84,7 @@ public class DialogueController : MonoBehaviour
         SpeakerName.text = getName(x.Names);
         PortraitImage.sprite = x.Portrait;
         InterrogateButton.SetActive(currentDialogue.canInterrogate);
+        AccusationButton.SetActive(currentDialogue.canAccuse);
         
         if (x.Branch.Count > 0)
         {
@@ -193,6 +194,7 @@ public class DialogueController : MonoBehaviour
     
     public void StartAccusation()
     {
+        currentDialogue.canAccuse = false;
         currentAccusation = currentDialogue.thisAccusation;
         accusing = true;
         AccusationButton.SetActive(false);
