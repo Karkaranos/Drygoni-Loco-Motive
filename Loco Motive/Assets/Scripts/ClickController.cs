@@ -216,7 +216,10 @@ public class ClickController : MonoBehaviour
             if (hit.transform.GetComponent<RoomMove>() && 
                 hit.transform.GetComponent<RoomMove>().canBeAccessed)
             {
-                am.PlayFootsteps();
+                if (am != null)
+                {
+                    am.PlayFootsteps();
+                }
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
                 Map.transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
@@ -234,13 +237,17 @@ public class ClickController : MonoBehaviour
                 MapRooms[roomNum].GetComponent<SpriteRenderer>().color = Color.blue;
                 currentRoom = roomNum;
 
-                if(currentRoom == 9)
+                if(currentRoom == 9&&am!=null)
                 {
                     am.PlayCorporateLadderRoomMusic();
                 }
                 else
                 {
-                    am.StopCorporateLadderRoomMusic();
+                    if (am != null)
+                    {
+                        am.StopCorporateLadderRoomMusic();
+                    }
+
                 }
             }
 

@@ -140,7 +140,13 @@ MonoBehaviour:
   subHeader: {fileID: 5841092868100304831}
   photo: {fileID: 9091910057223982266}
   pageNumber: {fileID: 271918515189994112}
-  eventText: []
+  eventText:
+  - {fileID: 1788815271362934730}
+  - {fileID: 6848083287673325413}
+  - {fileID: 7103962774873735390}
+  - {fileID: 816511626073528076}
+  - {fileID: 7455763254032763413}
+  iconIsEnabled: 0
 --- !u!114 &6698150798536769162
 MonoBehaviour:
   m_ObjectHideFlags: 0

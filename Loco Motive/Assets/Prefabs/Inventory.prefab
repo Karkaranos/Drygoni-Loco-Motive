@@ -3206,7 +3206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249abb1b7bcb8014388862ef2515f245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 5
+  inventorySize: 15
   placeholder: {fileID: 21300000, guid: 7711a86a3b07a824f927ecbea66c28dc, type: 3}
   inventory: {fileID: 8461431341633235050}
   inventoryIcon: {fileID: 8593815368927769854}
@@ -3250,6 +3250,7 @@ MonoBehaviour:
     objectImage: {fileID: 21300000, guid: a170a14b1e017d14592954ad7745cc9b, type: 3}
   - itemName: FullPaper
     objectImage: {fileID: 21300000, guid: fa1f3a92eb522a240a22e71c6425b47f, type: 3}
+  iconIsEnabled: 0
 --- !u!1 &6073186271552759081
 GameObject:
   m_ObjectHideFlags: 0

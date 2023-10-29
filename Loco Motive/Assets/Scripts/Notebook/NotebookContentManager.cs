@@ -66,8 +66,8 @@ public class NotebookContentManager : MonoBehaviour
 
         am = FindObjectOfType<AudioManager>();
 
-        RevealEvent(4);
-        RevealEvent(3);
+        //RevealEvent(4);
+        //RevealEvent(3);
     }
 
     /// <summary>
@@ -111,7 +111,10 @@ public class NotebookContentManager : MonoBehaviour
 
     IEnumerator NotifyUser()
     {
-        am.Play("NotebookUpdate");
+        if(am != null)
+        {
+            am.Play("NotebookUpdate");
+        }
         visualUpdateNotification.SetActive(true);
         yield return new WaitForSeconds(3);
         visualUpdateNotification.SetActive(false);

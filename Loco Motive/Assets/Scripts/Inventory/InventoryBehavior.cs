@@ -22,7 +22,7 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private int inventorySize;
     [SerializeField] private Sprite placeholder;
     [SerializeField] private GameObject inventory;
-    [SerializeField] private GameObject inventoryIcon;
+    public GameObject inventoryIcon;
     [SerializeField] private GameObject notebookManager;
     [SerializeField] private GameObject inventoryLarge;
     [SerializeField] private Image largeObject;    
@@ -45,11 +45,12 @@ public class InventoryBehavior : MonoBehaviour
 
     private string[] inventoryName;
     public Item[] itemObjects;
-    //public enum Items { EMPTY, PIECE1, PIECE2, FULLNOTE, KEY, KNIFE }
+    public bool iconIsEnabled;
 
 
     private DialogueController dc;
     private AudioManager am;
+    private NotebookManager nb;
 
 
     #endregion
@@ -71,8 +72,18 @@ public class InventoryBehavior : MonoBehaviour
 
         dc = FindObjectOfType<DialogueController>();
         am = FindObjectOfType<AudioManager>();
+        nb = FindObjectOfType<NotebookManager>();
 
         visualUpdateNotification.SetActive(false);
+
+        if (!iconIsEnabled)
+        {
+            inventoryIcon.SetActive(false);
+        }
+        if (!nb.iconIsEnabled)
+        {
+            notebookIcon.SetActive(false);
+        }
     }
 
     /// <summary>
@@ -96,10 +107,16 @@ public class InventoryBehavior : MonoBehaviour
     public void CloseInventory()
     {
         inventory.SetActive(false);
-        inventoryIcon.SetActive(true);
+        if (iconIsEnabled)
+        {
+            inventoryIcon.SetActive(true);
+        }
         map.SetActive(true);
         movementArrows.SetActive(true);
-        notebookIcon.SetActive(true);
+        if (nb.iconIsEnabled)
+        {
+            notebookIcon.SetActive(true);
+        }
         dc.isTalking = false;
     }
 
@@ -256,7 +273,10 @@ public class InventoryBehavior : MonoBehaviour
 
     IEnumerator NotifyUser()
     {
-        am.Play("InventoryUpdate");
+        if (am != null)
+        {
+            am.Play("InventoryUpdate");
+        }
         visualUpdateNotification.SetActive(true);
         yield return new WaitForSeconds(3);
         visualUpdateNotification.SetActive(false);

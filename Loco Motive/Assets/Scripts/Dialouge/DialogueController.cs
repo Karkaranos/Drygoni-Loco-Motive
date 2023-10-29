@@ -53,6 +53,7 @@ public class DialogueController : MonoBehaviour
     public DialogueInstance currentDialogue;
     public InterrogationInstance currentInterrogation;
     public AccusationInstance currentAccusation;
+    private InventoryBehavior ib;
 
     public List<GameObject> ChoiceBranch;
 
@@ -62,6 +63,7 @@ public class DialogueController : MonoBehaviour
     void Start()
     {
         am = FindObjectOfType<AudioManager>();
+        ib = FindObjectOfType<InventoryBehavior>();
         currentDialogue = openingDialogue;
         DialogueScreen.SetActive(true);
         NotebookButton.SetActive(false);
@@ -188,8 +190,12 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         UpdateScreen(currentInterrogation.AllMessages[0]);
-        am.PlayInterrogationMusic();
+        if (am != null)
+        {
+            am.PlayInterrogationMusic();
+        }
         ExitButton.SetActive(false);
+
     }
     
     public void StartAccusation()
@@ -237,17 +243,30 @@ public class DialogueController : MonoBehaviour
     public void StopDialogue()
     {
         DialogueScreen.SetActive(false);
-        InventoryButton.SetActive(true);
-        NotebookButton.SetActive(true);
+        if (ib.iconIsEnabled)
+        {
+            InventoryButton.SetActive(true);
+        }
+        cc.Map.SetActive(true);
+        cc.Movement.SetActive(true);
+        if (nm.iconIsEnabled)
+        {
+            NotebookButton.SetActive(true);
+        }
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
-        if (interrogating)
+        if (interrogating && am != false)
         {
             am.PlayGameMusic();
         }
         interrogating = false;
         accusing = false;
+        GameObject lvc = GameObject.Find("LargeViewCanvas");
+        if (lvc != null)
+        {
+            lvc.SetActive(false);
+        }
     }
 
 
