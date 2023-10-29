@@ -66,8 +66,8 @@ public class NotebookContentManager : MonoBehaviour
 
         am = FindObjectOfType<AudioManager>();
 
-        RevealEvent(4);
-        RevealEvent(3);
+        //RevealEvent(4);
+        //RevealEvent(3);
     }
 
     /// <summary>

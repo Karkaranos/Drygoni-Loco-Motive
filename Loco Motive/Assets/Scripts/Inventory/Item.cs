@@ -15,4 +15,5 @@ public class Item
 {
     public string itemName;
     public Sprite objectImage;
+    public Sprite largeObjectImage;
 }

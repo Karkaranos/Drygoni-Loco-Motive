@@ -273,7 +273,10 @@ public class InventoryBehavior : MonoBehaviour
 
     IEnumerator NotifyUser()
     {
-        am.Play("InventoryUpdate");
+        if (am != null)
+        {
+            am.Play("InventoryUpdate");
+        }
         visualUpdateNotification.SetActive(true);
         yield return new WaitForSeconds(3);
         visualUpdateNotification.SetActive(false);

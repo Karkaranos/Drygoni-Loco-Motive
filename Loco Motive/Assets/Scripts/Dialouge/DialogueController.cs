@@ -186,7 +186,11 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         UpdateScreen(currentInterrogation.AllMessages[0]);
-        am.PlayInterrogationMusic();
+        if (am != null)
+        {
+            am.PlayInterrogationMusic();
+        }
+
     }
     
     public void StartAccusation()
@@ -245,12 +249,17 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
-        if (interrogating)
+        if (interrogating && am != false)
         {
             am.PlayGameMusic();
         }
         interrogating = false;
         accusing = false;
+        GameObject lvc = GameObject.Find("LargeViewCanvas");
+        if (lvc != null)
+        {
+            lvc.SetActive(false);
+        }
     }
 
 

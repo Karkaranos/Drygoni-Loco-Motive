@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectHandler : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class ObjectHandler : MonoBehaviour
     [SerializeField] private int pageNumber;
     public bool updatesUI;
     public string scriptToUpdate;
+    public Image largeView;
+    public GameObject largeViewObj;
+    public bool isTrain;
+    public Sprite largeViewSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,12 +42,14 @@ public class ObjectHandler : MonoBehaviour
         if (canBePickedUp)
         {
             ib.AddItemToInventory(itemID);
+            LargeObjectView();
         }
         if (updatesNotebook)
         {
             ncm.BasicInformationVisible(pageNumber);
             nm.GetPageInformation();
             ncm.AdvancedInformationVisible(pageNumber);
+            LargeObjectView();
         }
         if (updatesUI)
         {
@@ -57,6 +64,20 @@ public class ObjectHandler : MonoBehaviour
                 nm.notebookIcon.SetActive(true);
             }
         }
-        Destroy(gameObject);
+        if (!isTrain)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("ILikeTrains");
+        }
     }
+
+    public void LargeObjectView()
+    {
+        largeViewObj.SetActive(true);
+        largeView.sprite = largeViewSprite;
+    }
+
 }
