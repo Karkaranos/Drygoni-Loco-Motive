@@ -6,8 +6,6 @@
 // Brief Description :  Handles updating the notebook with what the player knows
                         and switching pages
 *****************************************************************************/
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -21,7 +19,7 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private GameObject notebook;
     [SerializeField] private GameObject notebookContentPage;
     [SerializeField] private GameObject notebookTimelinePage;
-    [SerializeField] private GameObject notebookIcon;
+    public GameObject notebookIcon;
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
     [SerializeField] private GameObject lastPage;
@@ -41,16 +39,14 @@ public class NotebookManager : MonoBehaviour
     private TMP_Text[] content;
 
     [Header("Timeline Content")]
-    [SerializeField] private TMP_Text event1;
-    [SerializeField] private TMP_Text event2;
-    [SerializeField] private TMP_Text event3;
-    [SerializeField] private TMP_Text event4;
-    [SerializeField] private TMP_Text event5;
-    private TMP_Text[] eventText;
+    public TMP_Text[] eventText;
 
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
     private NotebookContentManager ncm;
+    private DialogueController dc;
+    private InventoryBehavior ib;
+    public bool iconIsEnabled;
     #endregion
 
     #region Functions
@@ -60,11 +56,13 @@ public class NotebookManager : MonoBehaviour
     void Start()
     {
         ncm = GetComponent<NotebookContentManager>();
+        dc = FindObjectOfType<DialogueController>();
+        ib = FindObjectOfType<InventoryBehavior>();
 
         currentPage = 0;
 
         content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
-        eventText = new TMP_Text[ncm.timelineCount];
+        //eventText = new TMP_Text[ncm.timelineCount];
 
         content[0] = pageTitle;
         content[1] = imageCaption;
@@ -72,12 +70,6 @@ public class NotebookManager : MonoBehaviour
         content[3] = bodyText2;
         content[4] = subHeader;
         content[5] = bodyText3;
-
-        eventText[0] = event1;
-        eventText[1] = event2;
-        eventText[2] = event3;
-        eventText[3] = event4;
-        eventText[4] = event5;
 
 
     }
@@ -94,6 +86,7 @@ public class NotebookManager : MonoBehaviour
         map.SetActive(false);
         movementArrows.SetActive(false);
         inventoryIcon.SetActive(false);
+        dc.isTalking = true;
     }
 
     /// <summary>
@@ -104,10 +97,18 @@ public class NotebookManager : MonoBehaviour
         notebook.SetActive(false);
         notebookContentPage.SetActive(false);
         notebookTimelinePage.SetActive(false);
-        notebookIcon.SetActive(true);
         map.SetActive(true);
         movementArrows.SetActive(true);
-        inventoryIcon.SetActive(true);
+        if (iconIsEnabled)
+        {
+            notebookIcon.SetActive(true);
+        }
+        if (ib.iconIsEnabled)
+        {
+            inventoryIcon.SetActive(true);
+        }
+
+        dc.isTalking = false;
     }
 
     /// <summary>
@@ -117,7 +118,7 @@ public class NotebookManager : MonoBehaviour
     public void GetPageInformation()
     {
         //Sets the content if the current page is NOT a timeline page
-        if (currentPage < ncm.pageCount - 1)
+        if (currentPage < ncm.pageCount - ncm.timelineCount/5)
         {
             notebookContentPage.SetActive(true);
             notebookTimelinePage.SetActive(false);
@@ -127,9 +128,8 @@ public class NotebookManager : MonoBehaviour
                 //If the player can see the content, set its text to the provided info
                 if (ncm.contentVisible[currentPage, i])
                 {
-                    //content[i].text = ncm.notebookContent[currentPage, i];
                     string[] temp = new string[ncm.ITEMS_PER_PAGE];
-                    temp = ncm.pages[currentPage];
+                    temp = ncm.pageContent[currentPage].content;
                     content[i].text = temp[i];
                 }
                 //Otherwise, indicate the player does not know the information
@@ -144,7 +144,7 @@ public class NotebookManager : MonoBehaviour
             //If the image should be visible, set it to the stored image
             if (ncm.contentVisible[currentPage, 6])
             {
-                photo.sprite = ncm.image[currentPage];
+                photo.sprite = ncm.pageContent[currentPage].photo;
             }
             //Otherwise set it to a blank image
             else
@@ -164,7 +164,7 @@ public class NotebookManager : MonoBehaviour
             {
                 if (ncm.timelineVisible[i])
                 {
-                    eventText[i].text = ncm.timelinenotebookContent[i];
+                    eventText[i].text = ncm.timelineContent[i];
                 }
                 else
                 {
@@ -230,7 +230,10 @@ public class NotebookManager : MonoBehaviour
         ncm.AdvancedInformationVisible(pageNumber);
     }
 
-
+    /// <summary>
+    /// Calls revealing an event on the timeline
+    /// </summary>
+    /// <param name="eventNumber">the event to reveal</param>
     public void RevealNewTimelineEvent(int eventNumber)
     {
         ncm.RevealEvent(eventNumber);

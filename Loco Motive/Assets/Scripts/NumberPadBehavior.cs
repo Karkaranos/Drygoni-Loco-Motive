@@ -30,6 +30,8 @@ public class NumberPadBehavior : MonoBehaviour
     [SerializeField] private GameObject inventoryIcon;
     [SerializeField] private GameObject notebookIcon;
 
+    private DialogueController dc;
+
 
     public bool unlocked = false;
     #endregion
@@ -39,6 +41,7 @@ public class NumberPadBehavior : MonoBehaviour
     private void Start()
     {
         numPadEvidence.SetActive(false);
+        dc = FindObjectOfType<DialogueController>();
     }
 
     /// <summary>
@@ -150,6 +153,7 @@ public class NumberPadBehavior : MonoBehaviour
         movementArrows.SetActive(true);
         notebookIcon.SetActive(true);
         inventoryIcon.SetActive(true);
+        dc.isTalking = false;
     }
 
     /// <summary>
@@ -164,6 +168,7 @@ public class NumberPadBehavior : MonoBehaviour
         movementArrows.SetActive(false);
         notebookIcon.SetActive(false);
         inventoryIcon.SetActive(false);
+        dc.isTalking = true;
     }
     #endregion
 }

@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 69}
-  m_SizeDelta: {x: 1000, y: 160}
+  m_SizeDelta: {x: 900, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4251127587648458912
 CanvasRenderer:
@@ -129,6 +129,9 @@ MonoBehaviour:
   inventoryManager: {fileID: 0}
   nextPage: {fileID: 2711199456678359715}
   lastPage: {fileID: 8951303982713928808}
+  movementArrows: {fileID: 0}
+  map: {fileID: 0}
+  inventoryIcon: {fileID: 0}
   pageTitle: {fileID: 790336301480410344}
   imageCaption: {fileID: 837916126815847609}
   bodyText1: {fileID: 3657316840711111212}
@@ -137,11 +140,13 @@ MonoBehaviour:
   subHeader: {fileID: 5841092868100304831}
   photo: {fileID: 9091910057223982266}
   pageNumber: {fileID: 271918515189994112}
-  event1: {fileID: 1788815271362934730}
-  event2: {fileID: 6848083287673325413}
-  event3: {fileID: 7103962774873735390}
-  event4: {fileID: 816511626073528076}
-  event5: {fileID: 7455763254032763413}
+  eventText:
+  - {fileID: 1788815271362934730}
+  - {fileID: 6848083287673325413}
+  - {fileID: 7103962774873735390}
+  - {fileID: 816511626073528076}
+  - {fileID: 7455763254032763413}
+  iconIsEnabled: 0
 --- !u!114 &6698150798536769162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,90 +161,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageCount: 8
   timelineCount: 5
-  image: []
   timelineVisible: 
   empty: {fileID: 21300000, guid: acc0dfc6735b6bc43a7d19a3010de21e, type: 3}
-  item1: {fileID: 21300000, guid: e70c73eef1044924f8c2ba9c87449a1c, type: 3}
-  item2: {fileID: 21300000, guid: eec8700b5b83a9b4ba20f54402c580b6, type: 3}
-  page1notebookContent:
-  - Josephine
-  - A photo of Josephine
-  - Josephine is the founder and CEO of Defiant Door Studios. She is an ambitious
-    person and is very extroverted and confident. She hired Hunter and I to investigate
-    her potential murder.
-  - "She unfortunately was right to hire us. She was found dead lying in a pool of
-    blood in her and Hana\u2019s room on Monday morning. Josephine was stabbed several
-    times with a sharp object- whoever killed her wanted to make sure the job was
-    done. "
-  - Suspects
-  - 'Alex Brady Dominic Hana '
-  page2notebookContent:
-  - Hana
-  - A photo of Hana
-  - Hana is the quiet and introverted wife of Josephine. She is respectful and values
-    her self-preservation.  She and Josephine share a room.
-  - 'On Sunday Night, she fought with Josephine and spent the night sleeping in the
-    lounge instead. She was visibly shaken up by this experience '
-  - Potential Motive
-  - Financial Gain
-  page3notebookContent:
-  - Brady
-  - A photo of Brady
-  - Brady is the CTO of Defiant Door Studios. He is a very organized person, although
-    is very rude to others and is known for resorting to violence.
-  - 'Brady also owns and takes care of an extensive knife collection he brought with
-    him. His hobbies include sending hate mail to Josephine.  '
-  - Potential Motive
-  - Hatred
-  page4notebookContent:
-  - Crime Scene
-  - Where the body was discovered
-  - 'This room was shared by Josephine and Hana. Whatever they did in their room
-    would have been their business and kept behind closed doors had someone not murdered
-    Josephine here. '
-  - "Josephine\u2019s body was discovered in a pool of blood slumped against a chair
-    in the corner. She had been stabbed several times and left for several hours. "
-  - ' '
-  - ' '
-  page5notebookContent:
-  - Note
-  - This note feels threatening
-  - ' '
-  - ' '
-  - Potential Suspects
-  - Brady
-  page6notebookContent:
-  - Knife
-  - "Brady\u2019s prized knife"
-  - "This knife was missing from Brady\u2019s knife collection. It was kept in a
-    locked box in his room with the key around his neck. "
-  - "Brady claims it was kept separate because it\u2019s his favorite knife and he
-    prefers to keep it secure, but is there a more sinister reason?"
-  - Potential Suspects
-  - Brady
-  page7notebookContent:
-  - Will
-  - "Josephine\u2019s Last Will and Testament"
-  - 'Josephine brought her will with her onto the train. It leaves all of her money
-    and possessions in the care of Hana, as well as declaring Alex the new owner
-    of Defiant Door Studios. '
-  - A strange object to bring onto a train. Perhaps she suspected she would die and
-    brought it as insurance?
-  - Potential Suspects
-  - Hana
-  page8notebookContent:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  timelinenotebookContent:
-  - Brady is in his room polishing his knives
-  - As Brady is trying to sleep, he overhears fighting
-  - Hana is kicked out and sits in the Lounge
-  - Josephine is killed late Sunday Night
-  - Josephine's body is discovered on Monday Morning
+  visualUpdateNotification: {fileID: 8566129110739547837}
+  timelineContent: []
+  pageContent: []
   ITEMS_PER_PAGE: 7
 --- !u!1 &1109446462162531266
 GameObject:
@@ -276,8 +202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282.9, y: -197.2}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 228.49998, y: -197.1}
+  m_SizeDelta: {x: 100, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &157961207134161150
 CanvasRenderer:
@@ -403,8 +329,8 @@ RectTransform:
   m_GameObject: {fileID: 1344411250242975812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 4, z: 4}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 7, y: 4.6666665, z: 4.6666665}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7135451338615042773}
   m_RootOrder: -1
@@ -435,14 +361,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8775268, b: 0.5803922, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f39e1601793ce8f46a93cef6dc626704, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -533,7 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -731,8 +657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -281.65134, y: 205}
-  m_SizeDelta: {x: -128.6973, y: 0}
+  m_AnchoredPosition: {x: 1.3613, y: -1}
+  m_SizeDelta: {x: -1.9746, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6491228575912322931
 CanvasRenderer:
@@ -825,7 +751,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.12590837, y: 0, z: 0, w: -1.0509262}
+  m_margin: {x: -0.7963805, y: 0, z: 0, w: -1.0509262}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -867,7 +793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 275, y: -181}
+  m_AnchoredPosition: {x: 258.5, y: -197.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8373858408743611812
@@ -999,7 +925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -57}
+  m_AnchoredPosition: {x: -7.8, y: -57}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6315009042402978991
@@ -1401,6 +1327,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3254524265019055224}
+  - {fileID: 1066308655970179815}
   m_Father: {fileID: 6816820452680036965}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1642,7 +1569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 164.27246, y: -65.819244}
+  m_AnchoredPosition: {x: 140, y: -65.819244}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8395969872205374328
@@ -2016,8 +1943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: -34}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -250, y: 165}
+  m_SizeDelta: {x: 31.2658, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7974544340611518909
 CanvasRenderer:
@@ -2148,8 +2075,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169.12344, y: -116.6445}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 140, y: -116.6445}
+  m_SizeDelta: {x: 229, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5883444948476804563
 CanvasRenderer:
@@ -2330,7 +2257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2582,7 +2509,7 @@ GameObject:
   - component: {fileID: 4320414885466564077}
   - component: {fileID: 4999265411172343175}
   m_Layer: 5
-  m_Name: Notebook
+  m_Name: UPDATEME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2737,8 +2664,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179.70749, y: 165.1545}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -150, y: 165.1545}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &698106658507246457
 CanvasRenderer:
@@ -2811,7 +2738,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2831,7 +2758,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -54.951324, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.019821167, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2872,8 +2799,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.66348, y: -96.57901}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -145, y: -96.57901}
+  m_SizeDelta: {x: 229, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &24315704652878197
 CanvasRenderer:
@@ -2950,7 +2877,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 3
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -2968,7 +2895,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -0.000000009938771, y: 0, z: -0.000000009938771, w: -53.462597}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3009,8 +2936,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162.28795, y: 172.65149}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 140, y: 165}
+  m_SizeDelta: {x: 229, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3687638576606335096
 CanvasRenderer:
@@ -3150,6 +3077,143 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8566129110739547837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066308655970179815}
+  - component: {fileID: 5373203634303894861}
+  - component: {fileID: 4933084903469677854}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1066308655970179815
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566129110739547837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5656386886315156994}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -350, y: -160}
+  m_SizeDelta: {x: 30, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5373203634303894861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566129110739547837}
+  m_CullTransparentMesh: 1
+--- !u!114 &4933084903469677854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566129110739547837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '!
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -0.0000066784683, y: 0, z: -3.5660934, w: -0.00000003496899}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8743285537560311024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,7 +3358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264, y: -181}
+  m_AnchoredPosition: {x: -262, y: -195.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3383092530685887252

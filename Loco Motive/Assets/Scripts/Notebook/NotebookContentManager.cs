@@ -12,29 +12,26 @@ using UnityEngine;
 public class NotebookContentManager : MonoBehaviour
 {
     #region Variables
-    public int pageCount = 7;
+    [HideInInspector]
+    public int pageCount;
 
-    public int timelineCount = 5;
+    [HideInInspector]
+    public int timelineCount;
 
-    public Sprite[] image;
+    //public Sprite[] image;
+    [HideInInspector]
     public bool[,] contentVisible;
+    [HideInInspector]
     public bool[] timelineVisible;
     public Sprite empty;
-    [SerializeField] private Sprite item1;
-    [SerializeField] private Sprite item2;
 
-    public string[] page1notebookContent = new string[6];
-    public string[] page2notebookContent = new string[6];
-    public string[] page3notebookContent = new string[6];
-    public string[] page4notebookContent = new string[6];
-    public string[] page5notebookContent = new string[6];
-    public string[] page6notebookContent = new string[6];
-    public string[] page7notebookContent = new string[6];
-    public string[] page8notebookContent = new string[6];
+    [SerializeField]
+    private GameObject visualUpdateNotification;
 
-    public string[] timelinenotebookContent = new string[5];
+    private AudioManager am;
 
-    public List<string[]> pages = new List<string[]>();
+    public string[] timelineContent;
+    public Page[] pageContent;
 
     public int ITEMS_PER_PAGE = 7;
     #endregion
@@ -46,14 +43,15 @@ public class NotebookContentManager : MonoBehaviour
     /// </summary>
     void Start()
     {
-        print(pageCount);
-        image = new Sprite[pageCount];
+        pageCount = pageContent.Length + (timelineContent.Length / 5);
+        timelineCount = timelineContent.Length;
+        //image = new Sprite[pageCount];
         timelineVisible = new bool[timelineCount];
         contentVisible = new bool[pageCount, ITEMS_PER_PAGE];
 
         for (int i = 0; i < ITEMS_PER_PAGE; i++)
         {
-            for (int j = 0; j < pageCount; j++)
+            for (int j = 5; j < pageCount; j++)
             {
                 contentVisible[j, i] = false;
             }
@@ -64,29 +62,12 @@ public class NotebookContentManager : MonoBehaviour
             timelineVisible[i] = false;
         }
 
-        pages.Add(page1notebookContent);
-        pages.Add(page2notebookContent);
-        pages.Add(page3notebookContent);
-        pages.Add(page4notebookContent);
-        pages.Add(page5notebookContent);
-        pages.Add(page6notebookContent);
-        pages.Add(page7notebookContent);
-        pages.Add(timelinenotebookContent);
-        //pages.Add(page8notebookContent);
+        visualUpdateNotification.SetActive(false);
 
+        am = FindObjectOfType<AudioManager>();
 
-        //Assigning visuals
-        image[0] = empty;
-        image[1] = item1;
-        image[2] = item2;
-
-        BasicInformationVisible(0);
-        BasicInformationVisible(1);
-        BasicInformationVisible(2);
-        BasicInformationVisible(3);
-
-        RevealEvent(4);
-        RevealEvent(3);
+        //RevealEvent(4);
+        //RevealEvent(3);
     }
 
     /// <summary>
@@ -102,23 +83,41 @@ public class NotebookContentManager : MonoBehaviour
                 contentVisible[pageNumber, i] = true;
             }
         }
+        StartCoroutine(NotifyUser());
     }
 
     /// <summary>
     /// Reveals all information about a page
     /// </summary>
-    /// <param name="pageNumber"></param>
+    /// <param name="pageNumber">the page number to reveal info on</param>
     public void AdvancedInformationVisible(int pageNumber)
     {
         for (int i = 0; i < ITEMS_PER_PAGE; i++)
         {
             contentVisible[pageNumber, i] = true;
         }
+        StartCoroutine(NotifyUser());
     }
 
+    /// <summary>
+    /// Reveals an event
+    /// </summary>
+    /// <param name="eventNumber">the event to reveal</param>
     public void RevealEvent(int eventNumber)
     {
         timelineVisible[eventNumber] = true;
+        StartCoroutine(NotifyUser());
+    }
+
+    IEnumerator NotifyUser()
+    {
+        if(am != null)
+        {
+            am.Play("NotebookUpdate");
+        }
+        visualUpdateNotification.SetActive(true);
+        yield return new WaitForSeconds(3);
+        visualUpdateNotification.SetActive(false);
     }
 
     #endregion

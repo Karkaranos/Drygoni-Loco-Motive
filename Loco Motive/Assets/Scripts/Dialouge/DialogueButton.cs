@@ -10,12 +10,14 @@ public class DialogueButton : MonoBehaviour
     public ClickController CC;
     public DialogueController DC;
     public InventoryBehavior IB;
+    public TutorialManager TM;
 
     public void Start()
     {
         CC = FindObjectOfType<ClickController>();
         DC = FindObjectOfType<DialogueController>();
         IB = FindObjectOfType<InventoryBehavior>();
+        TM = FindObjectOfType<TutorialManager>();
     }
     public void UpdateButton(int i, string s)
     {
@@ -94,7 +96,7 @@ public class DialogueButton : MonoBehaviour
     public void ContinueProgress()
     {
         //Progresses dialogue if not in an interrogation or accusation
-        if (DC.interrogating == false)
+        if (DC.interrogating == false && DC.accusing == false)
         {
             if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].EndDialogue == false)
             {
@@ -123,6 +125,17 @@ public class DialogueButton : MonoBehaviour
                     }
                 }
                 CC.dc.UpdateScreen(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage]);
+
+                if(TM!=null && DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].conditionForTutorialProgression && !DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].hasRead)
+                {
+                    TM.requirementsToUnlock++;
+                    TM.IncreaseRequirement();
+                }
+
+                if (TM != null)
+                {
+                    DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].hasRead = true;
+                }
             }
 
             else
@@ -164,12 +177,6 @@ public class DialogueButton : MonoBehaviour
                     DC.currentInterrogation.currMessage++;
                 }
                 CC.dc.UpdateScreen(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage]);
-                if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
-                {
-                    int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
-                    Debug.Log("i = " + i);
-                    IB.AddItemToInventory(i);
-                }
             }
 
             //Runs if EndDialogue is true
@@ -186,9 +193,16 @@ public class DialogueButton : MonoBehaviour
                         }
                     
                     DC.currentInterrogation.currCounter++;
+
+                    if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
+                    {
+                        string s = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem.ToString();
+                        IB.AddItemToInventory(s);
+                    }
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
                     {
+                        DC.interrogating = false;
                         DC.StopDialogue();
                     }
                     //If currCounter isn't equal to maxCounter, goes back to branches of interrogation
@@ -239,13 +253,13 @@ public class DialogueButton : MonoBehaviour
                 //If correctAnswer is true, 
                 if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].correctAnswer == true)
                 {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(3);
                 }
 
                 //If correctAnswer is false, 
                 else if (DC.currentAccusation.AllMessages[DC.currentAccusation.currMessage].correctAnswer == false)
                 {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(4);
                 }
             }
         }

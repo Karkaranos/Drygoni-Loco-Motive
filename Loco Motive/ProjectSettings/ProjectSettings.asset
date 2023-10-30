@@ -159,7 +159,7 @@ PlayerSettings:
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Bratwurst: 0
-    Standalone: 0
+    Standalone: Alpha
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1

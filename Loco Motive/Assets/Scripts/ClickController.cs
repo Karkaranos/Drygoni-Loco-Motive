@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 public class ClickController : MonoBehaviour
@@ -13,9 +14,10 @@ public class ClickController : MonoBehaviour
 
     private InputAction mPos;
     private InputAction interact;
+    private InputAction revealInteractables;
     private InputAction restart;
     private InputAction exit;
-    private int currentRoom;
+    public int currentRoom;
 
     private Vector2 currPos;
 
@@ -43,6 +45,10 @@ public class ClickController : MonoBehaviour
     //Update this to dialogue being used
     [SerializeField] private GameObject[] MapRooms;
 
+    [SerializeField] private GameObject[] outlines;
+
+    private AudioManager am;
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,15 +57,19 @@ public class ClickController : MonoBehaviour
         mouseController.currentActionMap.Enable();
 
         nm = GameObject.Find("NotebookManager").GetComponent<NotebookManager>();
+        am = GameObject.FindObjectOfType<AudioManager>();
 
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
         restart = mouseController.currentActionMap.FindAction("Restart");
         exit = mouseController.currentActionMap.FindAction("Exit");
+        revealInteractables = mouseController.currentActionMap.FindAction("RevealInteractables");
 
         interact.performed += Interact_performed;
         restart.performed += Restart_performed;
         exit.performed += Exit_performed;
+        revealInteractables.performed += Reveal_performed;
+        revealInteractables.canceled += Reveal_canceled;
 
 
         dc.ContinueText.text = "Continue";
@@ -69,14 +79,52 @@ public class ClickController : MonoBehaviour
 
         dc.opening = true;
 
-        currentRoom = 10;
+        if (SceneManager.GetActiveScene().name == "MainScene")
+        {
+            currentRoom = 10;
 
-        MapRooms[10].GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else
+        {
+            currentRoom = 8;            
+        }
+
+        MapRooms[currentRoom].GetComponent<SpriteRenderer>().color = Color.blue;
+
+        foreach (GameObject i in outlines)
+        {
+            i.SetActive(false);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        interact.performed -= Interact_performed;
+        restart.performed -= Restart_performed;
+        exit.performed -= Exit_performed;
+        revealInteractables.performed -= Reveal_performed;
+        revealInteractables.canceled -= Reveal_canceled;
     }
 
     private void Restart_performed(InputAction.CallbackContext obj)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
+    private void Reveal_performed(InputAction.CallbackContext obj)
+    {
+        foreach (GameObject i in outlines)
+        {
+            i.SetActive(true);
+        }
+    }
+
+    private void Reveal_canceled(InputAction.CallbackContext obj)
+    {
+        foreach (GameObject i in outlines)
+        {
+            i.SetActive(false);
+        }
     }
 
     private void Exit_performed(InputAction.CallbackContext obj)
@@ -119,7 +167,7 @@ public class ClickController : MonoBehaviour
                 isHighlighted = true;
             }
         }
-        
+
         else if (isHighlighted == true)
         {
             if(hit.collider != null && hit.collider.gameObject.tag == "Map")
@@ -165,14 +213,19 @@ public class ClickController : MonoBehaviour
             {
                 hit.transform.GetComponent<NumberPadButtonBehavior>().OpenPad();
             }
-            if (hit.transform.GetComponent<RoomMove>())
+            if (hit.transform.GetComponent<RoomMove>() && 
+                hit.transform.GetComponent<RoomMove>().canBeAccessed)
             {
+                if (am != null)
+                {
+                    am.PlayFootsteps();
+                }
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);
                 Map.transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 Vector2 pos = transform.position;
-                pos.x += -15.45f;
-                pos.y += 2.5f;
+                //pos.x += -15.45f;
+                //pos.y += 2.5f;
                 Map.transform.position = pos;
                 arrLength = 0;
                 while (arrLength < MapRooms.Length)
@@ -183,9 +236,22 @@ public class ClickController : MonoBehaviour
                 int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
                 MapRooms[roomNum].GetComponent<SpriteRenderer>().color = Color.blue;
                 currentRoom = roomNum;
+
+                if(currentRoom == 9&&am!=null)
+                {
+                    am.PlayCorporateLadderRoomMusic();
+                }
+                else
+                {
+                    if (am != null)
+                    {
+                        am.StopCorporateLadderRoomMusic();
+                    }
+
+                }
             }
 
-            else if (hit.collider.GetComponent<DialogueInstance>())
+            if (hit.collider.GetComponent<DialogueInstance>())
             {
                 dc.currentDialogue = hit.collider.GetComponent<DialogueInstance>();
                 dc.StartDialogue();
@@ -195,42 +261,6 @@ public class ClickController : MonoBehaviour
                 dc.currTalkChar = 1;
                 dc.strLength = 0;
                 dc.StartDialogue();
-            }
-
-            else if (hit.collider.CompareTag("DigitOne"))
-            {
-                if (clc.digitOne == 9)
-                {
-                    clc.digitOne = 0;
-                }
-                else
-                {
-                    clc.digitOne += 1;
-                }
-            }
-
-            else if (hit.collider.CompareTag("DigitTwo"))
-            {
-                if (clc.digitTwo == 9)
-                {
-                    clc.digitTwo = 0;
-                }
-                else
-                {
-                    clc.digitTwo += 1;
-                }
-            }
-
-            else if (hit.collider.CompareTag("DigitThree"))
-            {
-                if (clc.digitThree == 9)
-                {
-                    clc.digitThree = 0;
-                }
-                else
-                {
-                    clc.digitThree += 1;
-                }
             }
 
             else if (hit.collider.CompareTag("NumPadCollider"))
@@ -249,8 +279,25 @@ public class ClickController : MonoBehaviour
                     OpenLockBox.SetActive(true);
                     Lock.SetActive(false);
                     //Replace ITEM2 with the correct enum of the key
-                    ib.RemoveItemFromInventory(InventoryBehavior.Items.KEY);
+                    ib.RemoveItemFromInventory("Key");
                 }
+            }
+
+            else if (hit.collider.CompareTag("ComboLock"))
+            {
+                clc.OpenLock();
+            }
+
+            else if (hit.collider.CompareTag("Bed"))
+            {
+                TutorialManager tm = FindObjectOfType<TutorialManager>();
+                tm.StartGame();
+            }
+
+            if (hit.collider.CompareTag("OneShotText"))
+            {
+                DialogueInstance di = hit.transform.GetComponent<DialogueInstance>();
+                Destroy(di);
             }
         }
     }
