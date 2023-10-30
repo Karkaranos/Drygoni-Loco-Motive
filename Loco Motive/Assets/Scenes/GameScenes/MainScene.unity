@@ -539,6 +539,8 @@ MonoBehaviour:
   interrogating: 0
   accusing: 0
   PortraitImage: {fileID: 1728337707}
+  timeBtwnChars: 0.05
+  timeBtwnWords: 0.1
   DialogueBox: {fileID: 1710522197}
   DialogueBoxInterrogation: {fileID: 397480165}
   SpeakerName: {fileID: 1411646950}
@@ -563,7 +565,7 @@ MonoBehaviour:
   InterrogateButton: {fileID: 871331102}
   InventoryButton: {fileID: 393542774}
   NotebookButton: {fileID: 1678524256}
-  AccusationButton: {fileID: 0}
+  AccusationButton: {fileID: 1590271409}
   ExitButton: {fileID: 1474669755}
   cc: {fileID: 1319127852}
   sd: {fileID: 863328926}
@@ -577,6 +579,7 @@ MonoBehaviour:
   - {fileID: 105666863}
   - {fileID: 248876575}
   - {fileID: 1685009729}
+  _textMeshPro: {fileID: 1710522197}
 --- !u!4 &45641576
 Transform:
   m_ObjectHideFlags: 0
