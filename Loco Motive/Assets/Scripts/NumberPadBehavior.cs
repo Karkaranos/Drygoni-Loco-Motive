@@ -22,13 +22,22 @@ public class NumberPadBehavior : MonoBehaviour
     private int playerGuess = 0;
     private bool playerGuessStartWith0 = false;
     private int digitsEntered=0;
-    [SerializeField] private TMP_Text codeText;
+    [SerializeField] private TMP_Text codeText;    
+    [SerializeField] private Image comboImage;
     [SerializeField] private GameObject numberPadObject;
     [SerializeField] private GameObject numPadEvidence;
     [SerializeField] private GameObject map;
     [SerializeField] private GameObject movementArrows;
     [SerializeField] private GameObject inventoryIcon;
     [SerializeField] private GameObject notebookIcon;
+
+    [Header("Put Sprites Here")]
+    [SerializeField]
+    private Sprite standardNumberPad;
+    [SerializeField]
+    private Sprite wrongCombo;
+    [SerializeField]
+    private Sprite rightCombo;
 
     private DialogueController dc;
 
@@ -114,7 +123,7 @@ public class NumberPadBehavior : MonoBehaviour
             if(code == playerGuess)
             {
                 unlocked = true;
-                print("Lock Broken!");
+                StartCoroutine(RightCode());
                 numberPad.SetActive(false);
                 numberPadObject.SetActive(false);
                 numPadEvidence.SetActive(true);
@@ -124,9 +133,9 @@ public class NumberPadBehavior : MonoBehaviour
             {
                 playerGuess = 0;
                 digitsEntered = 0;
-                print("fail");
                 playerGuessStartWith0 = false;
                 codeText.text = "WRONG";
+                StartCoroutine("WrongCode");
             }
         }
         else
@@ -169,6 +178,20 @@ public class NumberPadBehavior : MonoBehaviour
         notebookIcon.SetActive(false);
         inventoryIcon.SetActive(false);
         dc.isTalking = true;
+    }
+
+    IEnumerator RightCode()
+    {
+        comboImage.sprite = rightCombo;
+        yield return new WaitForSeconds(1f);
+        comboImage.sprite = standardNumberPad;
+    }
+
+    IEnumerator WrongCode()
+    {
+        comboImage.sprite = wrongCombo;
+        yield return new WaitForSeconds(1f);
+        comboImage.sprite = standardNumberPad;
     }
     #endregion
 }
