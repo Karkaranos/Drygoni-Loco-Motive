@@ -795,7 +795,8 @@ MonoBehaviour:
   InterrogateButton: {fileID: 871331102}
   InventoryButton: {fileID: 393542774}
   NotebookButton: {fileID: 1678524256}
-  AccusationButton: {fileID: 0}
+  AccusationButton: {fileID: 80743896}
+  ExitButton: {fileID: 80743896}
   cc: {fileID: 1319127852}
   sd: {fileID: 863328926}
   nm: {fileID: 1703891788}
@@ -969,6 +970,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &80743896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80743897}
+  m_Layer: 0
+  m_Name: FillerObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &80743897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80743896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 207.65213, y: 379.34232, z: -0.38057965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &88567331
 GameObject:
   m_ObjectHideFlags: 0
