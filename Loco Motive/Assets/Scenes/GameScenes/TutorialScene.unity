@@ -771,6 +771,8 @@ MonoBehaviour:
   interrogating: 0
   accusing: 0
   PortraitImage: {fileID: 1728337707}
+  timeBtwnChars: 0.05
+  timeBtwnWords: 0.1
   DialogueBox: {fileID: 1710522197}
   DialogueBoxInterrogation: {fileID: 397480165}
   SpeakerName: {fileID: 1411646950}
@@ -795,8 +797,8 @@ MonoBehaviour:
   InterrogateButton: {fileID: 871331102}
   InventoryButton: {fileID: 393542774}
   NotebookButton: {fileID: 1678524256}
-  AccusationButton: {fileID: 0}
-  ExitButton: {fileID: 0}
+  AccusationButton: {fileID: 1489480047}
+  ExitButton: {fileID: 1489480047}
   cc: {fileID: 1319127852}
   sd: {fileID: 863328926}
   nm: {fileID: 1703891788}
@@ -809,6 +811,7 @@ MonoBehaviour:
   - {fileID: 105666863}
   - {fileID: 248876575}
   - {fileID: 1685009729}
+  _textMeshPro: {fileID: 1710522197}
 --- !u!4 &45641576
 Transform:
   m_ObjectHideFlags: 0
@@ -15074,7 +15077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2104534795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15430,9 +15433,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
   - Text: "There isn\u2019t enough room on the bed for us both to fit with a pillow
       wall in between. Plus, if we made a wall of pillows, there would not be any
-      for us to sleep on. Hunter, why don\u2019t you grab a couple of pillows and
-      a blanket, then take them and sleep on the couch? That way we can both have
-      our own spaces. "
+      for us to sleep on. "
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -15446,6 +15447,21 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
+  - Text: "Hunter, why don\u2019t you grab a couple of pillows and a blanket, then
+      take them and sleep on the couch? That way we can both have our own spaces. "
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 00000000010000000200000003000000040000000500000006000000
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 1
   - Text: Aww okay. (I always get stuck with the couch)
     Names: 0
     Branch: []
