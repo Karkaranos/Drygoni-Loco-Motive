@@ -184,8 +184,8 @@ MonoBehaviour:
   m_text: Hana is distraught and dissapointed in you. Hunter doesn't get his cake
     :(
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 5857557353024744869, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -594,8 +594,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: (This is the bad ending)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 5857557353024744869, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -729,8 +729,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Murderer got away.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 5857557353024744869, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -835,6 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d199f9e0dbaf7cb4d88889f51a97d199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
 --- !u!114 &1653381020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,8 +956,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 5857557353024744869, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1222,10 +1223,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thank you for playing our First Playable! '
+  m_text: Thank you for playing our Alpha!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 5857557353024744869, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

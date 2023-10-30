@@ -16,7 +16,7 @@ public class ClickController : MonoBehaviour
     private InputAction interact;
     private InputAction revealInteractables;
     private InputAction restart;
-    private InputAction exit;
+    private InputAction pause;
     public int currentRoom;
 
     private Vector2 currPos;
@@ -48,11 +48,14 @@ public class ClickController : MonoBehaviour
     [SerializeField] private GameObject[] outlines;
 
     private AudioManager am;
+    private UIButtonManager uibm;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        uibm = FindObjectOfType<UIButtonManager>();
+
         mouseController = GetComponent<PlayerInput>();
         mouseController.currentActionMap.Enable();
 
@@ -62,12 +65,12 @@ public class ClickController : MonoBehaviour
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
         restart = mouseController.currentActionMap.FindAction("Restart");
-        exit = mouseController.currentActionMap.FindAction("Exit");
+        pause = mouseController.currentActionMap.FindAction("Pause");
         revealInteractables = mouseController.currentActionMap.FindAction("RevealInteractables");
 
         interact.performed += Interact_performed;
         restart.performed += Restart_performed;
-        exit.performed += Exit_performed;
+        pause.performed += Pause_performed;
         revealInteractables.performed += Reveal_performed;
         revealInteractables.canceled += Reveal_canceled;
 
@@ -95,13 +98,15 @@ public class ClickController : MonoBehaviour
         {
             i.SetActive(false);
         }
+
+        uibm.Resume();
     }
 
     private void OnDestroy()
     {
         interact.performed -= Interact_performed;
         restart.performed -= Restart_performed;
-        exit.performed -= Exit_performed;
+        pause.performed -= Pause_performed;
         revealInteractables.performed -= Reveal_performed;
         revealInteractables.canceled -= Reveal_canceled;
     }
@@ -127,9 +132,16 @@ public class ClickController : MonoBehaviour
         }
     }
 
-    private void Exit_performed(InputAction.CallbackContext obj)
+    private void Pause_performed(InputAction.CallbackContext obj)
     {
-        Application.Quit();
+        if (uibm.isPaused)
+        {
+            uibm.Resume();
+        }
+        else
+        {
+            uibm.Pause();
+        }
     }
 
     void Update()

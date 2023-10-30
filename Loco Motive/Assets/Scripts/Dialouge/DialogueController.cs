@@ -17,6 +17,9 @@ public class DialogueController : MonoBehaviour
     public bool interrogating = false;
     public bool accusing = false;
     public Image PortraitImage;
+    public float timeBtwnChars;
+    public float timeBtwnWords;
+    int endCheckCounter;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -58,6 +61,10 @@ public class DialogueController : MonoBehaviour
     public List<GameObject> ChoiceBranch;
 
     private AudioManager am;
+
+    //Class used in making typewriter text work
+    [SerializeField] TextMeshProUGUI _textMeshPro;
+
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -82,9 +89,10 @@ public class DialogueController : MonoBehaviour
     public void UpdateScreen(DialogueMessage x)
     {
         DialogueScreen.SetActive(true);
-        DialogueBox.text = x.Text;
         SpeakerName.text = getName(x.Names);
         PortraitImage.sprite = x.Portrait;
+        _textMeshPro.text = x.Text;
+        StartCoroutine(Speaking());
         InterrogateButton.SetActive(currentDialogue.canInterrogate);
         AccusationButton.SetActive(currentDialogue.canAccuse);
         
@@ -269,5 +277,46 @@ public class DialogueController : MonoBehaviour
         }
     }
 
+    public IEnumerator Speaking()
+    {
+        _textMeshPro.ForceMeshUpdate();
+        int totalVisibleCharacters = _textMeshPro.textInfo.characterCount;
+        int counter = 0;
 
+        while (true)
+        {
+            int visibleCount = counter % (totalVisibleCharacters + 1);
+            _textMeshPro.maxVisibleCharacters = visibleCount;
+
+            if(visibleCount >= totalVisibleCharacters)
+            {
+                Invoke("EndCheck", timeBtwnWords);
+                break;
+            }
+
+            counter += 1;
+            yield return new WaitForSeconds(timeBtwnChars);
+        }
+    }
+
+    public void EndCheck()
+    {
+
+    }
+
+    //IEnumerator Speaking(string targetSpeech)
+    //{
+    //    DialogueBox.text = "";
+
+    //    while (DialogueBox.text != targetSpeech)
+    //    {
+    //        DialogueBox.text += targetSpeech[DialogueBox.text.Length];
+    //        yield return new WaitForSeconds(.01f);
+    //    }
+    //    //IsWaitingForInput = true;
+    //    //while (IsWaitingForInput)
+    //    //{
+    //    //    yield return new WaitForEndOfFrame();
+    //    //}
+    //}
 }

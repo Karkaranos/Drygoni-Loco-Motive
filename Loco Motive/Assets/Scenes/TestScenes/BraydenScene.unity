@@ -5519,6 +5519,12 @@ MonoBehaviour:
   updatesNotebook: 0
   itemID: 
   pageNumber: 0
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
 --- !u!114 &582488926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6031,6 +6037,12 @@ MonoBehaviour:
   updatesNotebook: 0
   itemID: 3
   pageNumber: 3
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
 --- !u!61 &605363010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6665,6 +6677,12 @@ MonoBehaviour:
   updatesNotebook: 0
   itemID: 2
   pageNumber: 3
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
 --- !u!61 &724468871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21940,6 +21958,12 @@ MonoBehaviour:
   updatesNotebook: 0
   itemID: Piece1
   pageNumber: 3
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
 --- !u!212 &2116497478
 SpriteRenderer:
   m_ObjectHideFlags: 0

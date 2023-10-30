@@ -16,7 +16,8 @@ public class UIButtonManager : MonoBehaviour
     private GameObject titleCanvas;
     private GameObject creditCanvas;
     private Vector2 creditResetPos;
-
+    private GameObject pauseMenu;
+    public bool isPaused;
     /// <summary>
     /// Called upon the scene's start; 
     /// </summary>
@@ -31,6 +32,10 @@ public class UIButtonManager : MonoBehaviour
             creditResetPos = new Vector2(450, 250);
     
             titleCanvas = GameObject.Find("TitleCanvas");
+        }
+        else
+        {
+            pauseMenu = GameObject.Find("PauseMenu");
         }
 
     }
@@ -89,7 +94,7 @@ public class UIButtonManager : MonoBehaviour
     IEnumerator CreditScroll()
     {
        creditText.transform.position = creditResetPos;
-        for (int i=0; i<1350; i += 1)
+        for (int i=0; i<1500; i += 1)
         {
             Vector2 creditPos = creditText.transform.position;
             creditPos.y += Screen.height/500f;
@@ -99,6 +104,40 @@ public class UIButtonManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         titleCanvas.SetActive(true);
         creditCanvas.SetActive(false);
+    }
+
+    /// <summary>
+    /// Restarts the current scene
+    /// </summary>
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    /// <summary>
+    /// Quits the game
+    /// </summary>
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    /// <summary>
+    /// Resumes the game when paused
+    /// </summary>
+    public void Resume()
+    {
+        isPaused = false;
+        pauseMenu.SetActive(false);
+    }
+
+    /// <summary>
+    /// Pauses the game
+    /// </summary>
+    public void Pause()
+    {
+        isPaused = true;
+        pauseMenu.SetActive(true);
     }
 
 }
