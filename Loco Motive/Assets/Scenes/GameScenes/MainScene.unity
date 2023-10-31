@@ -3879,6 +3879,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1678524256}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
+      propertyPath: iconIsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: inventorySize
       value: 15
       objectReference: {fileID: 0}
@@ -23063,6 +23067,10 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 1498759645}
+    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: iconIsEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: inventoryIcon
       value: 
