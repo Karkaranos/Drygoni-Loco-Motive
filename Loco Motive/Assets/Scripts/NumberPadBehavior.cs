@@ -142,7 +142,6 @@ public class NumberPadBehavior : MonoBehaviour
         {
             playerGuess = 0;
             digitsEntered = 0;
-            print("fail");
             playerGuessStartWith0 = false;
             codeText.text = "WRONG";
         }
