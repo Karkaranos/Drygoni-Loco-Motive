@@ -295,6 +295,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "We really have to share this tiny room? There\u2019s only one bed\u2026"
     Names: 1
     Branch: []
@@ -311,6 +312,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ' I call dibs! '
     Names: 0
     Branch: []
@@ -327,6 +329,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 'Now, now, as your superior, I will be making the executive decision that
       this bed is mine. '
     Names: 1
@@ -344,6 +347,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Hey, I have an idea! What if we take the pillows and use them to create
       a wall so we don\u2019t wake each other during the night? You\u2019re small
       so that\u2019ll work fine."
@@ -362,6 +366,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "There isn\u2019t enough room on the bed for us both to fit with a pillow
       wall in between. Plus, if we made a wall of pillows, there would not be any
       for us to sleep on. Hunter, why don\u2019t you grab a couple of pillows and
@@ -382,6 +387,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Aww okay. (I always get stuck with the couch)
     Names: 0
     Branch: []
@@ -398,6 +404,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -674,6 +681,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Do you think he goes by Alex?
     Names: 0
     Branch: []
@@ -690,6 +698,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I don\u2019t know. Ask when you meet him."
     Names: 1
     Branch: []
@@ -706,6 +715,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -1853,6 +1863,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What me?! But she was my wife!
     Names: 3
     Branch: []
@@ -1869,6 +1880,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Right, but with the will you had the most to gain from her death. Not to
       mention only you could have gotten into her room.
     Names: 1
@@ -1886,6 +1898,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "But I didn\u2019t kill her I swear! "
     Names: 3
     Branch: []
@@ -1902,6 +1915,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Well done Casey, let's get off this train and go get dessert to treat ourselves!
     Names: 0
     Branch: []
@@ -1918,6 +1932,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -1934,6 +1949,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3193,6 +3209,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3209,6 +3226,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3225,6 +3243,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3241,6 +3260,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3257,6 +3277,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3273,6 +3294,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3289,6 +3311,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3305,6 +3328,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3321,6 +3345,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3337,6 +3362,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3353,6 +3379,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3369,6 +3396,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3385,6 +3413,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3401,6 +3430,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3417,6 +3447,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3433,6 +3464,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3449,6 +3481,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3465,6 +3498,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3481,6 +3515,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 
     Names: 0
     Branch: []
@@ -3497,6 +3532,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3769,6 +3805,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: " I hope they aren\u2019t going to cram everyone else in that room."
     Names: 0
     Branch: []
@@ -3785,6 +3822,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "No way we\u2019d all fit. I can\u2019t imagine them buying a private train
       with only 2 rooms."
     Names: 1
@@ -3802,6 +3840,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Yeah, that makes sense\u2026 Maybe it\u2019s ladder storage?"
     Names: 0
     Branch: []
@@ -3818,6 +3857,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Looks like there are already mysteries. Too bad the door is locked.
     Names: 1
     Branch: []
@@ -3834,6 +3874,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4198,12 +4239,12 @@ GameObject:
   - component: {fileID: 438098459}
   - component: {fileID: 438098458}
   m_Layer: 0
-  m_Name: Hunter(AccusationDl)
+  m_Name: Accusation
   m_TagString: Hunter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &438098457
 Transform:
   m_ObjectHideFlags: 0
@@ -4215,7 +4256,8 @@ Transform:
   m_LocalPosition: {x: -1.41, y: -0.0588, z: -1}
   m_LocalScale: {x: 0.8632, y: 0.9054, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1007054978}
   m_Father: {fileID: 378678586}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4278,69 +4320,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: Well, let's go over everything
+  - Text: So what do you think? Are you done investigating?
     Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Alright everyone, I gathered you all here because I think I have figured
-      it out who the murderer is.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Really? Hurry up and spit it out!
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Not so fast. It will make more sense if I explain how they did it first.
-      Last night, Hana and Josephine were arguing. Besides being upset Hana has another
-      motive\u2026"
-    Names: 1
     Branch:
-    - choiceText: REALLY angry
-      nextDialogue: 4
-    - choiceText: The Will
-      nextDialogue: 5
-    - choiceText: Poor dining choices
-      nextDialogue: 4
+    - choiceText: No
+      nextDialogue: 1
+    - choiceText: I'm ready
+      nextDialogue: 3
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -4351,28 +4340,13 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
-  - Text: That's not right...
-    Names: 1
-    Branch: []
-    NextTextOverride: 3
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: There was a will in Josephine's luggage.
+    startsAccusation: 0
+  - Text: I need a bit more time
     Names: 1
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -4383,658 +4357,1679 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
-  - Text: "Huh? She had a will? She didn\u2019t even tell me about that\u2026"
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8781a7b1a89d21a4c815dc1310e7f621, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Josephine was paranoid that someone wanted her dead and she had it prepared.
-      She brought it with her so she could be sure it was safe.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "I- I can\u2019t believe she knew this would happen and didn\u2019t tell
-      me."
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "I imagine she was only trying to protect you from meeting the same fate.
-      However, in the will Josephine left everything to you, Hana. Now that she has
-      passed you\u2019re in charge of Defiant Door Studios."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "\u2026Huh?"
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8781a7b1a89d21a4c815dc1310e7f621, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "WHAT?! YOU\u2019RE JOKING, RIGHT?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "No it\u2019s true."
+    startsAccusation: 0
+  - Text: Ok! Let me know when you're done!
     Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Hana doesn\u2019t know anything about the industry! Why would Josie do
-      something so STUPID as leave her company to a complete noob?"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Right, why would she leave me her company?
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "I can\u2019t surely say why but it is definitely written in her will.
-      If I had to guess, she didn\u2019t want to risk the company going to her killer"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Her killer? What are you insinuating? That she was killed by a coworker?
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: It seems very likely. Do you remember what the murder weapon was?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: The murder weapon?
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "The murder weapon was\u2026"
-    Names: 1
-    Branch:
-    - choiceText: A candlestick
-      nextDialogue: 20
-    - choiceText: A rope
-      nextDialogue: 20
-    - choiceText: A Knife
-      nextDialogue: 21
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: That isn't right...
-    Names: 1
-    Branch: []
-    NextTextOverride: 19
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Josie was killed by a knife. She had been stabbed several times.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: how awful!
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "I don\u2019t see how that means anything. Anyone can stab someone with
-      a knife."
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Right but not this specific knife. The knife belongs to\u2026"
-    Names: 1
-    Branch:
-    - choiceText: Brady
-      nextDialogue: 26
-    - choiceText: Hana
-      nextDialogue: 25
-    - choiceText: Hunter
-      nextDialogue: 25
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: That isn't right...
-    Names: 1
-    Branch: []
-    NextTextOverride: 24
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: The knife was from your room Brady. The only way to get into the box is
-      with the key that you wear around your neck.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: '!'
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: fd97b46aa67cf3946a93fb6d5c68fd39, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "And don\u2019t make excuses about it being stolen, if that was true you
-      should have brought it up earlier"
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Right, well- My key wasn\u2019t stolen.."
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 7897f007071a0304390e9950b585a2cb, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Brady! How could you stab Josie?! What did she do to you?
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 003bf00687002dc49977efba7d69b5f7, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "More like what didn\u2019t she do! Working for her was terrible! She made
-      us work overtime every day and always left me to clean up her messes!"
-    Names: 4
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: cfefa1987e12e5045b33e3335004242d, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "So you killed her? You\u2019re insane! If it was so bad why didn\u2019t
-      you just quit?"
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 003bf00687002dc49977efba7d69b5f7, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: Hunter do you mind?
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: SHUT UP
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Thank you. I didn\u2019t say that it was definitely Brady.  Who could
-      unlock Josie\u2019s room?"
-    Names: 1
-    Branch:
-    - choiceText: Hana
-      nextDialogue: 37
-    - choiceText: Me
-      nextDialogue: 36
-    - choiceText: Brady
-      nextDialogue: 36
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: That isn't right...
-    Names: 1
-    Branch: []
-    NextTextOverride: 35
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Hana, you said you weren\u2019t in your room at all last night since you
-      and Josie were fighting. "
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Right\u2026"
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: But you were the only one who could unlock the door.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: " I guess that\u2019s true\u2026 but that doesn\u2019t mean it was me!
-      My key could have been used after I fell asleep in the lounge."
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "That\u2019s true too."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "That about covers everything we found, doesn\u2019t it Casey?"
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-  - Text: "Yes you\u2019re right.  The Killer is\u2026 "
-    Names: 1
     Branch: []
     NextTextOverride: 0
     EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn:
-    - {fileID: 1829183097}
-    - {fileID: 1344404020}
-    - {fileID: 1295947190}
-    CharacterOff:
-    - {fileID: 590738571}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 1312352927}
+    CharacterOn: []
+    CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I'd like to talk to everyone together so we can go over the events.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Well, we\u2019re already all here in the lounge so you should hurry and
+      get started."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I\u2019d like to start by talking about the state of Josephine\u2019s
+      body. Hana, if you want to step out I understand."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "No. I\u2019ll be ok."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Then let me review what we know. Josephine was found in her room this
+      morning by her wife. She had been stabbed and there was a message written in
+      her blood. She was probably killed between 10:00 and 12:00 last night. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "We know both Brady and Alex met with Josephine after dinner. The last
+      person to see Josephine, besides the killer, was Hana. We know that Josephine
+      was still alive then because\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Fight
+      nextDialogue: 10
+    - choiceText: Lounge
+      nextDialogue: 9
+    - choiceText: Alex
+      nextDialogue: 9
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I don't quite think that was right...
+    Names: 1
+    Branch: []
+    NextTextOverride: 8
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Brady, you heard Hana and Josephine fighting last night.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Yeah I definitely heard both of their voices. They were so loud I couldn\u2019t
+      have missed it."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "And you said that was around 10:00 so Josephine couldn\u2019t have been
+      killed till after that. We should go over everyone\u2019s alibi during that
+      time. Alex and Dominic were together almost all night."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "So we\u2019re clear? "
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 2be797e0edc3b4441bf1049a24eb4d7e, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Ayy, high five!
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Not so fast, you both took breaks. When Dominic took a break he saw Hana
+      in the lounge, just like she had said. He also left Alex alone in his room.
+      That was just before 11:00. Brady was in his room and went to shower a few
+      minutes later.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I only left the lounge when I went to check on Josie.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "And then you killed her\u2026"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 4e133afbbed7a8742b649715b50426e0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: No Hunter.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: But she was the only one who had a key!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 4e133afbbed7a8742b649715b50426e0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Yes, but Josephine could have opened the door and let someone in whether
+      or not they had a key. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Why would she just let the killer come in?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Maybe she didn\u2019t know they were going to kill her? She let me and
+      Brady into her room for our meetings."
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: d67cf08a7988b12428962992b7ca46b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Right, I think somebody met with Josephine without telling anyone. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Since Dominic and Alex were together and she was upset with me it would
+      have been Brady right?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Why me?! I was in the shower until I talked to you!
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Josephine also suffered several stab wounds. She was most likely stabbed
+      by\u2026"
+    Names: 1
+    Branch:
+    - choiceText: A fork
+      nextDialogue: 27
+    - choiceText: Her scissors
+      nextDialogue: 27
+    - choiceText: Brady's knife
+      nextDialogue: 28
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: There was no evidence she was stabbed by that.
+    Names: 1
+    Branch: []
+    NextTextOverride: 26
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'She was probably stabbed by your knife, Brady. It even had blood on it. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I would never use my knife for stabbing people! It\u2019s far too important
+      to get dirty."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: You keep your knife locked in a box that can only be unlocked with your
+      key right?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Yeah, and there isn\u2019t a spare key on the train."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Was there any point where you didn\u2019t have the key with you?"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Well I guess I left it in my room while I showered.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 698064bfea47a6a4da9b24183cffd6ac, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Did you lock your room?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'No, then I would need to take my keys into the bathroom anyway. '
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So you left your keys and room completely unattended for 20 minutes while
+      you showered.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "If I knew someone would get my knives dirty I obviously wouldn\u2019t
+      have done that."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "That\u2019s not what you should be worried about!"
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "So anyone could have used Brady\u2019s knife."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "If anyone could have used the knife maybe there\u2019s another clue?"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Let\u2019s consider how she died."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "You mean it wasn\u2019t the knife?"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 30511b8ed27665b4e8d9d50a2f04119a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I think they used the knife after she died to throw us off.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "This killer used my knife as a distraction? They shouldn\u2019t have used
+      it at all!"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Calm down, the culprit isn\u2019t going to get away."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So if the knife was used after death what really killed her?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "The only other weapon I was able to find besides the knife was\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Note
+      nextDialogue: 48
+    - choiceText: Empty Vial
+      nextDialogue: 49
+    - choiceText: Game Console
+      nextDialogue: 48
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: If someone killed her with that, I would be impressed.
+    Names: 1
+    Branch: []
+    NextTextOverride: 47
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'I actually found an empty poison vial at the bar. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "At the bar? Anyone could have used it then\u2026"
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I think we\u2019ll start by talking about how Josephine took the poison.
+      Since the vial was at the bar it was probably given to her with her\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Drink
+      nextDialogue: 53
+    - choiceText: Food
+      nextDialogue: 52
+    - choiceText: Medication
+      nextDialogue: 52
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I don't recall seeing any evidence of that in her room.
+    Names: 1
+    Branch: []
+    NextTextOverride: 51
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Since they left the vial at the bar they probably put something into her
+      drink. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "But, she wasn\u2019t drinking at the bar last night. "
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So then somebody would just have to have brought it to her.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Oh! And that\u2019s who-"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "And that\u2019s our killer."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Hey, I wanted to say it!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Nobody brought a drink to Josephine though.
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Right, we all had drinks from the bar with dinner.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "But we didn\u2019t prepare those on our own so I think they were all safe.
+      The killer would have had a hard time making sure the poison was in the right
+      drink if they handed it off."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So then Josephine drank something after dinner?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Right, she had\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Soda
+      nextDialogue: 64
+    - choiceText: Water
+      nextDialogue: 64
+    - choiceText: Tea
+      nextDialogue: 65
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: You don't usually see that in the type of cup we found in her room.
+    Names: 1
+    Branch: []
+    NextTextOverride: 63
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: There was a tea cup in her room so she probably had tea.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Of course it was tea. Tea always tastes weird so you would never notice
+      poison!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Josie always preferred tea to coffee.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Yeah but we all knew that since she drinks a cup every morning at the office.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 698064bfea47a6a4da9b24183cffd6ac, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Hana, you were in the lounge most of the evening. Did you see anyone walk
+      through with a cup of tea?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Oh yeah Dominic had a cup of tea.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Wow, you don\u2019t even like tea."
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: And did he bring the tea back to your room Alex?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: No, he came back with nothing.
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Anything to say about that?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I don\u2019t like what you\u2019re implying. It could have just as easily
+      been Hana."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3c0cc5a20b14bcf4abe0dbf072efcd9c, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Dominic, did you leave your room unlocked at any point?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Of course not, I\u2019m more responsible than Brady."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Hey!  '
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Dominic doesn\u2019t have to bother locking his room, nobody is brave
+      enough to go through that mess anyway!"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "So you\u2019re saying nobody could have gone into your room?"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "No. I locked it as soon as I left. I don\u2019t see why we need to bring
+      that up. "
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 30511b8ed27665b4e8d9d50a2f04119a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Since the poison is clearly from your room.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "What? I don\u2019t have any poison in my room."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3c0cc5a20b14bcf4abe0dbf072efcd9c, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Really? You have plenty of poisonous plants.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "They aren\u2019t for murder, they\u2019re his little friends. Like Brady\u2019s
+      knives!"
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Ew no my knives are way cooler than some plants.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: a2e31cb02e383d3409e59594f2f0bcc0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I didn\u2019t even know they were poisonous."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 364c65de58d0b9b4481f5bc52e1bbf1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Really? Because in your room we also found\u2026"
+    Names: 1
+    Branch:
+    - choiceText: A mess
+      nextDialogue: 89
+    - choiceText: Letter home
+      nextDialogue: 89
+    - choiceText: Books on Toxins
+      nextDialogue: 90
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: While that may have been in his room, is it really relevant here?
+    Names: 1
+    Branch: []
+    NextTextOverride: 88
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: There were quite a few books about poisonous plants with clear pictures.
+      Not to mention, some of those plants were exotic, not something you just get
+      on accident.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "That\u2019s\u2026 so weird\u2026"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 30511b8ed27665b4e8d9d50a2f04119a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Those were the main things I wanted to talk about.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Well, who did it?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I think I know...
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: What are you waiting for? Go talk to them and accuse them!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
   thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
+  thisAccusation: {fileID: 1007054979}
 --- !u!212 &438098460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6414,6 +7409,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -7049,6 +8045,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12439,6 +13436,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "uh\u2026 WHAT?! YOU\u2019RE JOKING RIGHT? "
     Names: 4
     Branch: []
@@ -12455,6 +13453,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "You had easy access to a collection of knives and you hated Josephine\u2019s
       company with a passion."
     Names: 1
@@ -12472,6 +13471,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Say sike rn\u2026 please"
     Names: 4
     Branch: []
@@ -12488,6 +13488,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Close your eyes, I\u2019ll get rid of this guy for you"
     Names: 0
     Branch: []
@@ -12504,6 +13505,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: WAIT WAIT WAIT
     Names: 4
     Branch: []
@@ -12520,6 +13522,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -12536,6 +13539,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12800,6 +13804,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Oh! Let\u2019s go in!"
     Names: 0
     Branch: []
@@ -12816,6 +13821,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -13028,6 +14034,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -14387,6 +15394,1637 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006553538}
   m_CullTransparentMesh: 1
+--- !u!1 &1007054977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007054978}
+  - component: {fileID: 1007054979}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1007054978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007054977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438098457}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007054979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007054977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2ac35dd237d9c418524e876d633d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: 'Then let me review what we know. Josephine was found in her room this
+      morning by her wife. She had been stabbed and there was a message written in
+      her blood. She was probably killed between 10:00 and 12:00 last night. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "We know both Brady and Alex met with Josephine after dinner. The last
+      person to see Josephine, besides the killer, was Hana. We know that Josephine
+      was still alive then because\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Fight
+      nextDialogue: 3
+    - choiceText: Lounge
+      nextDialogue: 2
+    - choiceText: Alex
+      nextDialogue: 2
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I don't quite think that was right...
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Brady, you heard Hana and Josephine fighting last night.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Yeah I definitely heard both of their voices. They were so loud I couldn\u2019t
+      have missed it."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "And you said that was around 10:00 so Josephine couldn\u2019t have been
+      killed till after that. We should go over everyone\u2019s alibi during that
+      time. Alex and Dominic were together almost all night."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "So we\u2019re clear? "
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 2be797e0edc3b4441bf1049a24eb4d7e, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Ayy, high five!
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Not so fast, you both took breaks. When Dominic took a break he saw Hana
+      in the lounge, just like she had said. He also left Alex alone in his room.
+      That was just before 11:00. Brady was in his room and went to shower a few
+      minutes later.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I only left the lounge when I went to check on Josie.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "And then you killed her\u2026"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 4e133afbbed7a8742b649715b50426e0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: No Hunter.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: But she was the only one who had a key!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 4e133afbbed7a8742b649715b50426e0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Yes, but Josephine could have opened the door and let someone in whether
+      or not they had a key. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Why would she just let the killer come in?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Maybe she didn\u2019t know they were going to kill her? She let me and
+      Brady into her room for our meetings."
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: d67cf08a7988b12428962992b7ca46b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Right, I think somebody met with Josephine without telling anyone. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Since Dominic and Alex were together and she was upset with me it would
+      have been Brady right?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Why me?! I was in the shower until I talked to you!
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Josephine also suffered several stab wounds. She was most likely stabbed
+      by\u2026"
+    Names: 1
+    Branch:
+    - choiceText: A fork
+      nextDialogue: 20
+    - choiceText: Her scissors
+      nextDialogue: 20
+    - choiceText: Brady's knife
+      nextDialogue: 21
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: There was no evidence she was stabbed by that.
+    Names: 1
+    Branch: []
+    NextTextOverride: 19
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'She was probably stabbed by your knife, Brady. It even had blood on it. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I would never use my knife for stabbing people! It\u2019s far too important
+      to get dirty."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: You keep your knife locked in a box that can only be unlocked with your
+      key right?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Yeah, and there isn\u2019t a spare key on the train."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Was there any point where you didn\u2019t have the key with you?"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Well I guess I left it in my room while I showered.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 698064bfea47a6a4da9b24183cffd6ac, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Did you lock your room?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'No, then I would need to take my keys into the bathroom anyway. '
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So you left your keys and room completely unattended for 20 minutes while
+      you showered.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "If I knew someone would get my knives dirty I obviously wouldn\u2019t
+      have done that."
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "That\u2019s not what you should be worried about!"
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "So anyone could have used Brady\u2019s knife."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "If anyone could have used the knife maybe there\u2019s another clue?"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Let\u2019s consider how she died."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "You mean it wasn\u2019t the knife?"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 30511b8ed27665b4e8d9d50a2f04119a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I think they used the knife after she died to throw us off.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "This killer used my knife as a distraction? They shouldn\u2019t have used
+      it at all!"
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Calm down, the culprit isn\u2019t going to get away."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So if the knife was used after death what really killed her?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "The only other weapon I was able to find besides the knife was\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Note
+      nextDialogue: 41
+    - choiceText: Empty Vial
+      nextDialogue: 42
+    - choiceText: Game Console
+      nextDialogue: 41
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: If someone killed her with that, I would be impressed.
+    Names: 1
+    Branch: []
+    NextTextOverride: 40
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'I actually found an empty poison vial at the bar. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "At the bar? Anyone could have used it then\u2026"
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I think we\u2019ll start by talking about how Josephine took the poison.
+      Since the vial was at the bar it was probably given to her with her\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Drink
+      nextDialogue: 46
+    - choiceText: Food
+      nextDialogue: 45
+    - choiceText: Medication
+      nextDialogue: 45
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I don't recall seeing any evidence of that in her room.
+    Names: 1
+    Branch: []
+    NextTextOverride: 44
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Since they left the vial at the bar they probably put something into her
+      drink. '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "But, she wasn\u2019t drinking at the bar last night. "
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So then somebody would just have to have brought it to her.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Oh! And that\u2019s who-"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "And that\u2019s our killer."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Hey, I wanted to say it!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Nobody brought a drink to Josephine though.
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Right, we all had drinks from the bar with dinner.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "But we didn\u2019t prepare those on our own so I think they were all safe.
+      The killer would have had a hard time making sure the poison was in the right
+      drink if they handed it off."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: So then Josephine drank something after dinner?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Right, she had\u2026"
+    Names: 1
+    Branch:
+    - choiceText: Soda
+      nextDialogue: 57
+    - choiceText: Water
+      nextDialogue: 57
+    - choiceText: Tea
+      nextDialogue: 58
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: You don't usually see that in the type of cup we found in her room.
+    Names: 1
+    Branch: []
+    NextTextOverride: 56
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: There was a tea cup in her room so she probably had tea.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Of course it was tea. Tea always tastes weird so you would never notice
+      poison!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Josie always preferred tea to coffee.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Yeah but we all knew that since she drinks a cup every morning at the office.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 698064bfea47a6a4da9b24183cffd6ac, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Hana, you were in the lounge most of the evening. Did you see anyone walk
+      through with a cup of tea?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Oh yeah Dominic had a cup of tea.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Wow, you don\u2019t even like tea."
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: And did he bring the tea back to your room Alex?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: No, he came back with nothing.
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Anything to say about that?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I don\u2019t like what you\u2019re implying. It could have just as easily
+      been Hana."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3c0cc5a20b14bcf4abe0dbf072efcd9c, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Dominic, did you leave your room unlocked at any point?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Of course not, I\u2019m more responsible than Brady."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: 'Hey!  '
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Dominic doesn\u2019t have to bother locking his room, nobody is brave
+      enough to go through that mess anyway!"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "So you\u2019re saying nobody could have gone into your room?"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "No. I locked it as soon as I left. I don\u2019t see why we need to bring
+      that up. "
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 30511b8ed27665b4e8d9d50a2f04119a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Since the poison is clearly from your room.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "What? I don\u2019t have any poison in my room."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3c0cc5a20b14bcf4abe0dbf072efcd9c, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Really? You have plenty of poisonous plants.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "They aren\u2019t for murder, they\u2019re his little friends. Like Brady\u2019s
+      knives!"
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Ew no my knives are way cooler than some plants.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: a2e31cb02e383d3409e59594f2f0bcc0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "I didn\u2019t even know they were poisonous."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 364c65de58d0b9b4481f5bc52e1bbf1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "Really? Because in your room we also found\u2026"
+    Names: 1
+    Branch:
+    - choiceText: A mess
+      nextDialogue: 82
+    - choiceText: Letter home
+      nextDialogue: 82
+    - choiceText: Books on Toxins
+      nextDialogue: 83
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 364c65de58d0b9b4481f5bc52e1bbf1a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: While that may have been in his room, is it really relevant here?
+    Names: 1
+    Branch: []
+    NextTextOverride: 81
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: There were quite a few books about poisonous plants with clear pictures.
+      Not to mention, some of those plants were exotic, not something you just get
+      on accident.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: "That\u2019s\u2026 so weird\u2026"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 30511b8ed27665b4e8d9d50a2f04119a, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Those were the main things I wanted to talk about.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: Well, who did it?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: I think I know...
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  - Text: What are you waiting for? Go talk to them and accuse them!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    startsAccusation: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 1007054979}
 --- !u!1 &1008852891
 GameObject:
   m_ObjectHideFlags: 0
@@ -14449,6 +17087,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ...
     Names: 3
     Branch:
@@ -14473,6 +17112,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -14489,6 +17129,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: After dinner I was in the room. Josie came later and both Alex and Brady
       came in to talk to her about business.
     Names: 3
@@ -14506,6 +17147,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: When Josephine came in did she have a drink?
     Names: 1
     Branch: []
@@ -14522,6 +17164,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
       met with the others either."
     Names: 3
@@ -14539,6 +17182,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I see, please continue.
     Names: 1
     Branch: []
@@ -14555,6 +17199,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
       together about the trip. We ended up getting upset with each other since we
       both thought the other had taken care of everything in the house before we
@@ -14574,6 +17219,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What time was this?
     Names: 1
     Branch: []
@@ -14590,6 +17236,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
       a few neighbors to make sure our house was taken care of.
     Names: 3
@@ -14607,6 +17254,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Did you see anyone while you were in the lounge?
     Names: 1
     Branch: []
@@ -14623,6 +17271,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
       was having trouble sleeping. I saw Bradey a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
@@ -14641,6 +17290,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: And what time was that?
     Names: 1
     Branch: []
@@ -14657,6 +17307,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: It was probably 11:20.
     Names: 3
     Branch:
@@ -14677,6 +17328,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
@@ -14693,6 +17345,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
       to relax and that\u2019s not possible with you yelling!\u201D And I tried to
       apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
@@ -14712,6 +17365,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
@@ -14728,6 +17382,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
       too. OH! His hair was wet! I thought it was weird but it makes sense because
@@ -14747,6 +17402,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Wait how does a shower on a train even work?
     Names: 0
     Branch: []
@@ -14763,6 +17419,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I\u2019ll explain later, we\u2019re getting off track."
     Names: 1
     Branch: []
@@ -14779,6 +17436,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Ha, nice one.
     Names: 0
     Branch: []
@@ -14795,6 +17453,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
     Names: 1
     Branch: []
@@ -14811,6 +17470,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Was that helpful?
     Names: 3
     Branch: []
@@ -14827,6 +17487,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Yes. What happened next?
     Names: 1
     Branch: []
@@ -14843,6 +17504,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
       I knocked on the door and assumed she was mad or asleep so I just went back
       into the lounge. I accidentally fell asleep soon after.'
@@ -14861,6 +17523,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
@@ -14877,6 +17540,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -14893,6 +17557,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -14910,6 +17575,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -14926,6 +17592,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -14943,6 +17610,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -14960,6 +17628,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -14976,6 +17645,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -14992,6 +17662,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -15008,6 +17679,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -15024,6 +17696,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -15041,6 +17714,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -15058,6 +17732,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Oh that was my junior year of college. I was hanging out with Josie and
       Dominic that day.
     Names: 3
@@ -15079,6 +17754,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Were you and Dominic close at the time?
     Names: 1
     Branch: []
@@ -15095,6 +17771,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
       like guys so I broke it off. I feel like he was upset since our relationship
       hasn\u2019t really been the same since."
@@ -15113,6 +17790,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Were you and Josephine together yet?
     Names: 1
     Branch: []
@@ -15129,6 +17807,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "No. We weren\u2019t super close during school but we kept in contact after.
       That\u2019s also when we started dating. We just kept getting closer after
       that."
@@ -15147,6 +17826,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I see. But you were all getting along recently?
     Names: 1
     Branch: []
@@ -15163,6 +17843,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
       but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
@@ -15180,6 +17861,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
@@ -15196,6 +17878,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -16791,6 +19474,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -16807,6 +19491,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -16823,6 +19508,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -16839,6 +19525,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -16855,6 +19542,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -17582,6 +20270,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Whatever
     Names: 4
     Branch:
@@ -17606,6 +20295,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -17622,6 +20312,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -17638,6 +20329,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Can you give me something more concrete? Any details?
     Names: 1
     Branch: []
@@ -17654,6 +20346,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I was in my pajamas and then I got into the bed and fell asleep.
     Names: 4
     Branch: []
@@ -17670,6 +20363,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What were you doing before that?
     Names: 1
     Branch: []
@@ -17686,6 +20380,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 'I went to talk to Josephine right after dinner and briefed her on how
       our games would run on different systems and what to expect at the conference.
       Then I went to my room to try and relax by polishing my knives which was IMPOSSIBLE
@@ -17705,6 +20400,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -17721,6 +20417,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out. They eventually
       stopped though. After I finished cleaning my blades I went to take a shower."
@@ -17739,6 +20436,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Did you lock the door when you left?
     Names: 1
     Branch: []
@@ -17755,6 +20453,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Huh? No, I guess not. It\u2019s weird to bring keys into the shower."
     Names: 4
     Branch: []
@@ -17771,6 +20470,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: So what times were you in the shower?
     Names: 1
     Branch: []
@@ -17787,6 +20487,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I don\u2019t know. It was probably around 11:00 when I went in and around
       11:15 - 11:20 I left."
     Names: 4
@@ -17804,6 +20505,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Did you see anyone after that?
     Names: 1
     Branch: []
@@ -17820,6 +20522,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: " Yeah I went to grab a snack before bed and I saw Hana. We talked for
       a few minutes about how it\u2019s rude to be so loud so late at night."
     Names: 4
@@ -17837,6 +20540,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I see.
     Names: 1
     Branch: []
@@ -17853,6 +20557,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I was told that you carry knives.
     Names: 1
     Branch: []
@@ -17869,6 +20574,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -17885,6 +20591,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -17901,6 +20608,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -17918,6 +20626,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -17934,6 +20643,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -17957,6 +20667,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -17973,6 +20684,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -17989,6 +20701,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -18005,6 +20718,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -18021,6 +20735,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -18037,6 +20752,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -18053,6 +20769,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -18069,6 +20786,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: OK OK JUST TAKE THE STUPID KEY!
     Names: 4
     Branch: []
@@ -18085,6 +20803,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Thank you.
     Names: 1
     Branch: []
@@ -18101,6 +20820,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -18117,6 +20837,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -18134,6 +20855,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -18151,6 +20873,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -18168,6 +20891,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -18184,6 +20908,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -18201,6 +20926,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -18217,6 +20943,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -18233,6 +20960,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -18249,6 +20977,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -18265,6 +20994,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -18281,6 +21011,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -18298,6 +21029,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -18314,6 +21046,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -18331,6 +21064,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I\u2019m not actually a fan of the company. I\u2019m also not a fan of
       yours."
     Names: 1
@@ -18348,6 +21082,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -18364,6 +21099,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Nothing.
     Names: 1
     Branch: []
@@ -18380,6 +21116,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Have you seen this note before?
     Names: 1
     Branch: []
@@ -18396,6 +21133,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Yeah. I wrote it.
     Names: 4
     Branch: []
@@ -18412,6 +21150,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Why?
     Names: 1
     Branch: []
@@ -18428,6 +21167,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Because Josephine needed to be constantly reminded that she was bad at
       her job!
     Names: 4
@@ -18445,6 +21185,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "That doesn\u2019t sound like a healthy work life."
     Names: 1
     Branch: []
@@ -18461,6 +21202,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: " It wasn\u2019t! She was a terrible boss. She never took responsibility
       for her mistakes. She would say, \u201CI want this game running on every console
       by next week.\u201D And I would say, \u201CThat\u2019s not possible.\u201D"
@@ -18479,6 +21221,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "But she didn\u2019t listen and then SHE would get mad at ME when it wasn\u2019t
       done like it wasn\u2019t her fault for making such an unreasonable request."
     Names: 4
@@ -18500,6 +21243,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "That must have been difficult working under someone who doesn\u2019t communicate."
     Names: 1
     Branch: []
@@ -18516,6 +21260,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "You\u2019re telling me. She\u2019s lucky to have me otherwise her company
       would have shut down long ago but she doesn\u2019t even see all I do for her."
     Names: 4
@@ -18533,6 +21278,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "If it was so bad why didn\u2019t you leave?"
     Names: 1
     Branch: []
@@ -18549,6 +21295,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I mean the pay was pretty nice. I was kinda hoping she would give up some
       control so things wouldn\u2019t be so stressful but that never seemed to happen."
     Names: 4
@@ -18566,6 +21313,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: You wanted a change in management then?
     Names: 1
     Branch: []
@@ -18582,6 +21330,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Oh yeah for sure. It didn\u2019t have to be me but I just wanted someone
       who was easier to work with ya\u2019know?"
     Names: 4
@@ -18599,6 +21348,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -18716,6 +21466,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -19202,6 +21953,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 'Oh look, more couches! I can push them together and make a bed even bigger
       than yours! '
     Names: 0
@@ -19219,6 +21971,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "You\u2019re no fun."
     Names: 0
     Branch: []
@@ -19235,6 +21988,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
       else on the train."
     Names: 1
@@ -19252,6 +22006,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -19689,6 +22444,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -20010,6 +22766,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 'Well, who would just leave their room unlocked? '
     Names: 0
     Branch: []
@@ -20026,6 +22783,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "That\u2019s a good point."
     Names: 1
     Branch: []
@@ -20042,6 +22800,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -20663,6 +23422,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -21080,6 +23840,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: These must be the standard rooms.
     Names: 1
     Branch: []
@@ -21096,6 +23857,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Wow, these rooms must be even smaller than the others.
     Names: 0
     Branch: []
@@ -21112,6 +23874,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -21646,6 +24409,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Well, she looks dead.
     Names: 0
     Branch: []
@@ -21662,6 +24426,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -21678,6 +24443,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "There\u2019s a lot of stab wounds, but the clothes aren\u2019t soaked
       with blood in all places"
     Names: 0
@@ -21695,6 +24461,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: How do you think she died?
     Names: 1
     Branch: []
@@ -21711,6 +24478,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: " Didn\u2019t you see all the stab wounds? Obviously, someone stabbed her.
       Several times too"
     Names: 0
@@ -21728,6 +24496,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -23494,6 +26263,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Oh that sucks, trains are cramped enough. It must be pretty uncomfortable
       to share such a tiny space. That stinks for them!
     Names: 0
@@ -23511,6 +26281,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Yeah, it would be pretty tight. They must be pretty close.
     Names: 1
     Branch: []
@@ -23527,6 +26298,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -24010,6 +26782,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ...
     Names: 3
     Branch:
@@ -24034,6 +26807,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -24050,6 +26824,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: After dinner I was in the room. Josie came later and both Alex and Brady
       came in to talk to her about business.
     Names: 3
@@ -24067,6 +26842,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: When Josephine came in did she have a drink?
     Names: 1
     Branch: []
@@ -24083,6 +26859,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
       met with the others either."
     Names: 3
@@ -24100,6 +26877,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I see, please continue.
     Names: 1
     Branch: []
@@ -24116,6 +26894,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
       together about the trip. We ended up getting upset with each other since we
       both thought the other had taken care of everything in the house before we
@@ -24135,6 +26914,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What time was this?
     Names: 1
     Branch: []
@@ -24151,6 +26931,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
       a few neighbors to make sure our house was taken care of.
     Names: 3
@@ -24168,6 +26949,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Did you see anyone while you were in the lounge?
     Names: 1
     Branch: []
@@ -24184,6 +26966,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
       was having trouble sleeping. I saw Bradey a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
@@ -24202,6 +26985,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: And what time was that?
     Names: 1
     Branch: []
@@ -24218,6 +27002,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: It was probably 11:20.
     Names: 3
     Branch:
@@ -24238,6 +27023,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
@@ -24254,6 +27040,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
       to relax and that\u2019s not possible with you yelling!\u201D And I tried to
       apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
@@ -24273,6 +27060,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
@@ -24289,6 +27077,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
       too. OH! His hair was wet! I thought it was weird but it makes sense because
@@ -24308,6 +27097,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Wait how does a shower on a train even work?
     Names: 0
     Branch: []
@@ -24324,6 +27114,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I\u2019ll explain later, we\u2019re getting off track."
     Names: 1
     Branch: []
@@ -24340,6 +27131,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Ha, nice one.
     Names: 0
     Branch: []
@@ -24356,6 +27148,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
     Names: 1
     Branch: []
@@ -24372,6 +27165,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Was that helpful?
     Names: 3
     Branch: []
@@ -24388,6 +27182,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Yes. What happened next?
     Names: 1
     Branch: []
@@ -24404,6 +27199,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
       I knocked on the door and assumed she was mad or asleep so I just went back
       into the lounge. I accidentally fell asleep soon after.'
@@ -24422,6 +27218,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
@@ -24438,6 +27235,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -24454,6 +27252,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -24471,6 +27270,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -24487,6 +27287,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -24504,6 +27305,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -24521,6 +27323,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -24537,6 +27340,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -24553,6 +27357,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -24569,6 +27374,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -24585,6 +27391,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -24602,6 +27409,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -24619,6 +27427,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Oh that was my junior year of college. I was hanging out with Josie and
       Dominic that day.
     Names: 3
@@ -24640,6 +27449,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Were you and Dominic close at the time?
     Names: 1
     Branch: []
@@ -24656,6 +27466,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
       like guys so I broke it off. I feel like he was upset since our relationship
       hasn\u2019t really been the same since."
@@ -24674,6 +27485,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Were you and Josephine together yet?
     Names: 1
     Branch: []
@@ -24690,6 +27502,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "No. We weren\u2019t super close during school but we kept in contact after.
       That\u2019s also when we started dating. We just kept getting closer after
       that."
@@ -24708,6 +27521,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I see. But you were all getting along recently?
     Names: 1
     Branch: []
@@ -24724,6 +27538,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
       but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
@@ -24741,6 +27556,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
@@ -24757,6 +27573,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -25749,6 +28566,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -26762,6 +29580,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I don\u2019t think they are the same person."
     Names: 1
     Branch: []
@@ -26778,6 +29597,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Maybe not but I think Brady is a good name for a good person.
     Names: 0
     Branch: []
@@ -26794,6 +29614,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -26810,6 +29631,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -27367,6 +30189,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -27646,6 +30469,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -27662,6 +30486,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -27678,6 +30503,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -27694,6 +30520,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -27710,6 +30537,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -27726,6 +30554,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -27743,6 +30572,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -27760,6 +30590,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: Yes
     Names: 0
     Branch: []
@@ -27776,6 +30607,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -27793,6 +30625,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -27811,6 +30644,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -27829,6 +30663,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -27846,6 +30681,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -27863,6 +30699,7 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    startsAccusation: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0

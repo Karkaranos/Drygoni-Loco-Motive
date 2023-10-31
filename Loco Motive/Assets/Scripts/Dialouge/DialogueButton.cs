@@ -149,7 +149,14 @@ public class DialogueButton : MonoBehaviour
 
             else
             {
-                DC.StopDialogue();
+                if(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].startsAccusation == true)
+                {
+                    DC.StartAccusation();
+                }
+                else
+                {
+                    DC.StopDialogue();
+                }
             }
         }
 
