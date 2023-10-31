@@ -4005,6 +4005,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1678524256}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
+      propertyPath: iconIsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: inventorySize
       value: 15
       objectReference: {fileID: 0}
@@ -22303,9 +22307,9 @@ MonoBehaviour:
   digitOne: 0
   digitTwo: 0
   digitThree: 0
-  correctDigitOne: 0
-  correctDigitTwo: 0
-  correctDigitThree: 0
+  correctDigitOne: 3
+  correctDigitTwo: 5
+  correctDigitThree: 4
   OpenSafe: {fileID: 1522555020}
   ClosedSafe: {fileID: 986837040}
   ButtonOne: {fileID: 1050517052}
@@ -23637,6 +23641,10 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 1498759645}
+    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: iconIsEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: inventoryIcon
       value: 
