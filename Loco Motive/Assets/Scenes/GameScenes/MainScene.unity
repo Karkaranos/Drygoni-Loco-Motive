@@ -2039,12 +2039,8 @@ MonoBehaviour:
   largeViewSprite: {fileID: 0}
   updatesTimeline: 0
   timelineEventNum: 0
-  CharacterOn:
-  - {fileID: 1109416240}
-  - {fileID: 1919062717}
-  CharacterOff:
-  - {fileID: 1924408558}
-  - {fileID: 1091249266}
+  CharacterOn: []
+  CharacterOff: []
 --- !u!1 &136564931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,7 +5955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4147057866410262722, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: map
@@ -6172,7 +6168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &438098457
 Transform:
   m_ObjectHideFlags: 0
@@ -30794,7 +30790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303426333515695901, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8377426827402538447, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_UiScaleMode
@@ -31768,10 +31764,8 @@ MonoBehaviour:
   largeViewSprite: {fileID: 0}
   updatesTimeline: 0
   timelineEventNum: 0
-  CharacterOn:
-  - {fileID: 2039306032}
-  CharacterOff:
-  - {fileID: 640125280}
+  CharacterOn: []
+  CharacterOff: []
 --- !u!1 &1792878596
 GameObject:
   m_ObjectHideFlags: 0
@@ -35788,10 +35782,8 @@ MonoBehaviour:
   largeViewSprite: {fileID: 0}
   updatesTimeline: 0
   timelineEventNum: 0
-  CharacterOn:
-  - {fileID: 1793143536}
-  CharacterOff:
-  - {fileID: 2039306032}
+  CharacterOn: []
+  CharacterOff: []
 --- !u!1 &2137844749
 GameObject:
   m_ObjectHideFlags: 0
@@ -35855,7 +35847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167172818018222410, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8301631662063629103, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_Pivot.x
