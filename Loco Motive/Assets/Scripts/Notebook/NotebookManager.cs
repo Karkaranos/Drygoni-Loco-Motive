@@ -62,7 +62,7 @@ public class NotebookManager : MonoBehaviour
         currentPage = 0;
 
         content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
-        //eventText = new TMP_Text[ncm.timelineCount];
+        eventText = new TMP_Text[ncm.timelineCount];
 
         content[0] = pageTitle;
         content[1] = imageCaption;

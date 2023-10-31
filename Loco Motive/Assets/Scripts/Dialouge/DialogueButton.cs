@@ -11,6 +11,7 @@ public class DialogueButton : MonoBehaviour
     public DialogueController DC;
     public InventoryBehavior IB;
     public TutorialManager TM;
+    public NotebookContentManager NCM;
 
     public void Start()
     {
@@ -18,6 +19,7 @@ public class DialogueButton : MonoBehaviour
         DC = FindObjectOfType<DialogueController>();
         IB = FindObjectOfType<InventoryBehavior>();
         TM = FindObjectOfType<TutorialManager>();
+        NCM = FindObjectOfType<NotebookContentManager>();
     }
     public void UpdateButton(int i, string s)
     {
@@ -42,6 +44,7 @@ public class DialogueButton : MonoBehaviour
         
         else if (DC.interrogating == true && DC.accusing == false)
         {
+            Debug.Log("Dialogue Branched");
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count != 0)
             {
                 for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count; i++)
@@ -136,6 +139,12 @@ public class DialogueButton : MonoBehaviour
                 {
                     DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].hasRead = true;
                 }
+
+                if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].updatesTimeline == true)
+                {
+                    Debug.Log("UPDATE Timeline");
+                    NCM.RevealEvent(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].timelineEventNum);
+                }
             }
 
             else
@@ -147,7 +156,11 @@ public class DialogueButton : MonoBehaviour
         //Progresses dialogue if in an interrogation
         else if (DC.interrogating == true && DC.accusing == false)
         {
-
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].updatesTimeline == true)
+            {
+                Debug.Log("UPDATE Timeline");
+                NCM.RevealEvent(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].timelineEventNum);
+            }
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count != 0)
             {
                 for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count; i++)
@@ -162,6 +175,11 @@ public class DialogueButton : MonoBehaviour
                 {
                     DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOff[i].SetActive(false);
                 }
+            }
+
+            if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].updatesTimeline == true)
+            {
+                NCM.RevealEvent(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].timelineEventNum);
             }
 
             //Progresses dialogue if EndDialogue is false
