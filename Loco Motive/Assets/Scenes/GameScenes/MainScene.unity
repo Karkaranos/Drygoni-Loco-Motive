@@ -156,6 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 831853327}
   - {fileID: 1036465388}
+  - {fileID: 441351221}
   - {fileID: 88567332}
   - {fileID: 235424796}
   m_Father: {fileID: 0}
@@ -292,8 +293,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "We really have to share this tiny room? There\u2019s only one bed\u2026"
     Names: 1
     Branch: []
@@ -308,8 +307,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ' I call dibs! '
     Names: 0
     Branch: []
@@ -324,8 +321,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: 'Now, now, as your superior, I will be making the executive decision that
       this bed is mine. '
     Names: 1
@@ -341,8 +336,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Hey, I have an idea! What if we take the pillows and use them to create
       a wall so we don\u2019t wake each other during the night? You\u2019re small
       so that\u2019ll work fine."
@@ -359,8 +352,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "There isn\u2019t enough room on the bed for us both to fit with a pillow
       wall in between. Plus, if we made a wall of pillows, there would not be any
       for us to sleep on. Hunter, why don\u2019t you grab a couple of pillows and
@@ -379,8 +370,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Aww okay. (I always get stuck with the couch)
     Names: 0
     Branch: []
@@ -395,8 +384,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -555,26 +542,26 @@ MonoBehaviour:
   timeBtwnChars: 0.05
   timeBtwnWords: 0.1
   DialogueBox: {fileID: 1710522197}
-  DialogueBoxInterrogation: {fileID: 0}
+  DialogueBoxInterrogation: {fileID: 397480165}
   SpeakerName: {fileID: 1411646950}
-  SpeakerNameInterrogation: {fileID: 0}
+  SpeakerNameInterrogation: {fileID: 850380252}
   ButtonTextOne: {fileID: 863471916}
   ButtonTextTwo: {fileID: 1989096827}
   ContinueText: {fileID: 1267546739}
-  InterrogateQuestionOne: {fileID: 0}
-  InterrogateQuestionTwo: {fileID: 0}
-  InterrogateQuestionThree: {fileID: 0}
-  InterrogateQuestionFour: {fileID: 0}
+  InterrogateQuestionOne: {fileID: 1543493769}
+  InterrogateQuestionTwo: {fileID: 1067350910}
+  InterrogateQuestionThree: {fileID: 2124216468}
+  InterrogateQuestionFour: {fileID: 1214160737}
   DialogueScreen: {fileID: 1036465387}
-  InterrogationScreen: {fileID: 0}
+  InterrogationScreen: {fileID: 441351220}
   BranchButtons: {fileID: 441537240}
-  BranchButttonsInterrogation: {fileID: 0}
-  BranchButtonInterrogation1: {fileID: 0}
-  BranchButtonInterrogation2: {fileID: 0}
-  BranchButtonInterrogation3: {fileID: 0}
-  BranchButtonInterrogation4: {fileID: 0}
+  BranchButttonsInterrogation: {fileID: 1214622095}
+  BranchButtonInterrogation1: {fileID: 742485475}
+  BranchButtonInterrogation2: {fileID: 2014253588}
+  BranchButtonInterrogation3: {fileID: 1963261023}
+  BranchButtonInterrogation4: {fileID: 1032534389}
   ContinueButton: {fileID: 617486988}
-  ContinueButtonInterrogation: {fileID: 0}
+  ContinueButtonInterrogation: {fileID: 1039539741}
   InterrogateButton: {fileID: 871331102}
   InventoryButton: {fileID: 393542774}
   NotebookButton: {fileID: 1678524256}
@@ -620,7 +607,7 @@ GameObject:
   - component: {fileID: 61387463}
   - component: {fileID: 61387466}
   - component: {fileID: 61387465}
-  - component: {fileID: 61387467}
+  - component: {fileID: 61387464}
   m_Layer: 0
   m_Name: AlexDoor
   m_TagString: Untagged
@@ -643,6 +630,67 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61387464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61387462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: "The name says, \u201CAlexander\u201D. It\u2019s locked."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Do you think he goes by Alex?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 1
+  - Text: "I don\u2019t know. Ask when you meet him."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
 --- !u!61 &61387465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -740,20 +788,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &61387467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61387462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 1920894808}
-  canBeAccessed: 1
 --- !u!1 &68326664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1230,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &105666865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,6 +1479,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121681484}
+  m_CullTransparentMesh: 1
+--- !u!1 &136564931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136564932}
+  - component: {fileID: 136564934}
+  - component: {fileID: 136564933}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &136564932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136564931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.48000005, y: 0.38400003, z: 0.38400003}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: 4800, y: 2700}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &136564933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136564931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 68c9ec0264d66a243a85f4148341e82c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &136564934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136564931}
   m_CullTransparentMesh: 1
 --- !u!1 &184178020
 GameObject:
@@ -1721,8 +1830,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What me?! But she was my wife!
     Names: 3
     Branch: []
@@ -1737,8 +1844,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Right, but with the will you had the most to gain from her death. Not to
       mention only you could have gotten into her room.
     Names: 1
@@ -1754,8 +1859,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "But I didn\u2019t kill her I swear! "
     Names: 3
     Branch: []
@@ -1770,8 +1873,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well done Casey, let's get off this train and go get dessert to treat ourselves!
     Names: 0
     Branch: []
@@ -1786,8 +1887,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -1802,8 +1901,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2121,7 +2218,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &248876578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,8 +2498,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
 --- !u!61 &259114120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2753,8 +2847,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -3373,8 +3465,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 3
     Branch:
@@ -3391,8 +3481,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
       what actually happened? "
     Names: 1
@@ -3408,8 +3496,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
       me."
     Names: 3
@@ -3425,8 +3511,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: You only look more suspicious when you lie
     Names: 1
     Branch: []
@@ -3441,8 +3525,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
       big, we just both thought the other person had taken care of everything back
       home before we left."
@@ -3459,8 +3541,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "After that I left the room and didn\u2019t go back because Josie usually
       needs a while to cool off. I slept in the lounge last night and when I went
       to apologize in the morning\u2026"
@@ -3477,8 +3557,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
     Names: 3
     Branch: []
@@ -3493,8 +3571,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well that story makes a lot of sense with the other evidence we found.
       Thank you for telling us the truth. We will bring justice for Josephine.
     Names: 1
@@ -3512,8 +3588,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3641,8 +3715,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: " I hope they aren\u2019t going to cram everyone else in that room."
     Names: 0
     Branch: []
@@ -3657,8 +3729,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "No way we\u2019d all fit. I can\u2019t imagine them buying a private train
       with only 2 rooms."
     Names: 1
@@ -3674,8 +3744,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Yeah, that makes sense\u2026 Maybe it\u2019s ladder storage?"
     Names: 0
     Branch: []
@@ -3690,8 +3758,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Looks like there are already mysteries. Too bad the door is locked.
     Names: 1
     Branch: []
@@ -3706,8 +3772,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3920,6 +3984,141 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8593815368927769854, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
   m_PrefabInstance: {fileID: 393542771}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &397480162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397480163}
+  - component: {fileID: 397480164}
+  - component: {fileID: 397480165}
+  m_Layer: 5
+  m_Name: DialogueTextI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &397480163
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397480162}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &397480164
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397480162}
+  m_CullTransparentMesh: 1
+--- !u!114 &397480165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397480162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -186.72787, y: -16.415619, z: -99.71985, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &438098456
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,8 +4226,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Alright everyone, I gathered you all here because I think I have figured
       it out who the murderer is.
     Names: 1
@@ -4044,8 +4241,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Really? Hurry up and spit it out!
     Names: 4
     Branch: []
@@ -4060,8 +4255,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Not so fast. It will make more sense if I explain how they did it first.
       Last night, Hana and Josephine were arguing. Besides being upset Hana has another
       motive\u2026"
@@ -4084,8 +4277,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: That's not right...
     Names: 1
     Branch: []
@@ -4100,8 +4291,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: There was a will in Josephine's luggage.
     Names: 1
     Branch: []
@@ -4116,8 +4305,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Huh? She had a will? She didn\u2019t even tell me about that\u2026"
     Names: 3
     Branch: []
@@ -4132,8 +4319,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Josephine was paranoid that someone wanted her dead and she had it prepared.
       She brought it with her so she could be sure it was safe.
     Names: 1
@@ -4149,8 +4334,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I- I can\u2019t believe she knew this would happen and didn\u2019t tell
       me."
     Names: 3
@@ -4166,8 +4349,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I imagine she was only trying to protect you from meeting the same fate.
       However, in the will Josephine left everything to you, Hana. Now that she has
       passed you\u2019re in charge of Defiant Door Studios."
@@ -4184,8 +4365,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "\u2026Huh?"
     Names: 3
     Branch: []
@@ -4200,8 +4379,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "WHAT?! YOU\u2019RE JOKING, RIGHT?"
     Names: 4
     Branch: []
@@ -4216,8 +4393,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "No it\u2019s true."
     Names: 0
     Branch: []
@@ -4232,8 +4407,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Hana doesn\u2019t know anything about the industry! Why would Josie do
       something so STUPID as leave her company to a complete noob?"
     Names: 4
@@ -4249,8 +4422,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Right, why would she leave me her company?
     Names: 3
     Branch: []
@@ -4265,8 +4436,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I can\u2019t surely say why but it is definitely written in her will.
       If I had to guess, she didn\u2019t want to risk the company going to her killer"
     Names: 1
@@ -4282,8 +4451,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Her killer? What are you insinuating? That she was killed by a coworker?
     Names: 4
     Branch: []
@@ -4298,8 +4465,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: It seems very likely. Do you remember what the murder weapon was?
     Names: 1
     Branch: []
@@ -4314,8 +4479,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: The murder weapon?
     Names: 4
     Branch: []
@@ -4330,8 +4493,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "The murder weapon was\u2026"
     Names: 1
     Branch:
@@ -4352,8 +4513,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: That isn't right...
     Names: 1
     Branch: []
@@ -4368,8 +4527,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Josie was killed by a knife. She had been stabbed several times.
     Names: 1
     Branch: []
@@ -4384,8 +4541,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: how awful!
     Names: 3
     Branch: []
@@ -4400,8 +4555,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I don\u2019t see how that means anything. Anyone can stab someone with
       a knife."
     Names: 4
@@ -4417,8 +4570,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Right but not this specific knife. The knife belongs to\u2026"
     Names: 1
     Branch:
@@ -4439,8 +4590,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: That isn't right...
     Names: 1
     Branch: []
@@ -4455,8 +4604,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: The knife was from your room Brady. The only way to get into the box is
       with the key that you wear around your neck.
     Names: 1
@@ -4472,8 +4619,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: '!'
     Names: 4
     Branch: []
@@ -4488,8 +4633,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "And don\u2019t make excuses about it being stolen, if that was true you
       should have brought it up earlier"
     Names: 0
@@ -4505,8 +4648,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Right, well- My key wasn\u2019t stolen.."
     Names: 4
     Branch: []
@@ -4521,8 +4662,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Brady! How could you stab Josie?! What did she do to you?
     Names: 3
     Branch: []
@@ -4537,8 +4676,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "More like what didn\u2019t she do! Working for her was terrible! She made
       us work overtime every day and always left me to clean up her messes!"
     Names: 4
@@ -4554,8 +4691,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "So you killed her? You\u2019re insane! If it was so bad why didn\u2019t
       you just quit?"
     Names: 3
@@ -4571,8 +4706,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Hunter do you mind?
     Names: 1
     Branch: []
@@ -4587,8 +4720,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: SHUT UP
     Names: 0
     Branch: []
@@ -4603,8 +4734,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Thank you. I didn\u2019t say that it was definitely Brady.  Who could
       unlock Josie\u2019s room?"
     Names: 1
@@ -4626,8 +4755,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: That isn't right...
     Names: 1
     Branch: []
@@ -4642,8 +4769,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Hana, you said you weren\u2019t in your room at all last night since you
       and Josie were fighting. "
     Names: 1
@@ -4659,8 +4784,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Right\u2026"
     Names: 3
     Branch: []
@@ -4675,8 +4798,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: But you were the only one who could unlock the door.
     Names: 1
     Branch: []
@@ -4691,8 +4812,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: " I guess that\u2019s true\u2026 but that doesn\u2019t mean it was me!
       My key could have been used after I fell asleep in the lounge."
     Names: 3
@@ -4708,8 +4827,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "That\u2019s true too."
     Names: 1
     Branch: []
@@ -4724,8 +4841,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "That about covers everything we found, doesn\u2019t it Casey?"
     Names: 0
     Branch: []
@@ -4740,8 +4855,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Yes you\u2019re right.  The Killer is\u2026 "
     Names: 1
     Branch: []
@@ -4763,8 +4876,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4943,6 +5054,88 @@ Transform:
   m_Father: {fileID: 495125580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &441351220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441351221}
+  - component: {fileID: 441351223}
+  - component: {fileID: 441351222}
+  m_Layer: 5
+  m_Name: InterrogationScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &441351221
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441351220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 136564932}
+  - {fileID: 397480163}
+  - {fileID: 850380250}
+  - {fileID: 2116435142}
+  - {fileID: 1039539742}
+  - {fileID: 1214622096}
+  m_Father: {fileID: 35015780}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &441351222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441351220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.49411765}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &441351223
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441351220}
+  m_CullTransparentMesh: 1
 --- !u!1 &441537240
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,8 +6257,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -6227,7 +6418,6 @@ MonoBehaviour:
   DC: {fileID: 0}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &617486991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6419,8 +6609,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 3
     Branch:
@@ -6443,8 +6631,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -6459,8 +6645,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ' I was in the room with Josie'
     Names: 3
     Branch: []
@@ -6475,8 +6659,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: And she was dead when you woke up?
     Names: 1
     Branch: []
@@ -6491,8 +6673,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yes, I think so
     Names: 3
     Branch: []
@@ -6507,8 +6687,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: You think?
     Names: 1
     Branch: []
@@ -6523,8 +6701,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Well I left for breakfast while it was still dark in the room so I didn\u2019t
       see her but when I came back I found her."
     Names: 3
@@ -6540,8 +6716,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: A dead body should be hard to miss...
     Names: 1
     Branch: []
@@ -6556,8 +6730,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -6572,8 +6744,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -6589,8 +6759,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -6605,8 +6773,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -6622,8 +6788,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -6638,8 +6802,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -6655,8 +6817,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -6671,8 +6831,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -6687,8 +6845,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -6703,8 +6859,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -6719,8 +6873,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -6736,8 +6888,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Thank You
     Names: 1
     Branch: []
@@ -6752,8 +6902,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: Piece1
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Do you have any idea who did this? Did Josephine have any enemies?
     Names: 1
     Branch: []
@@ -6768,8 +6916,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
       get along\u2026 Just between you and me, he kinda scares me."
     Names: 3
@@ -6785,8 +6931,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Why\u2019s that?"
     Names: 1
     Branch: []
@@ -6801,8 +6945,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Well, he really likes\u2026 knives"
     Names: 3
     Branch: []
@@ -6817,8 +6959,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Knives, huh? Good to know
     Names: 1
     Branch: []
@@ -6835,8 +6975,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Thank you for the help
     Names: 1
     Branch: []
@@ -6851,8 +6989,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -6938,8 +7074,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -7367,8 +7501,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12380,8 +12512,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
 --- !u!61 &737432522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12494,6 +12624,140 @@ Transform:
   m_Father: {fileID: 378678586}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &742485475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742485476}
+  - component: {fileID: 742485479}
+  - component: {fileID: 742485478}
+  - component: {fileID: 742485477}
+  m_Layer: 5
+  m_Name: BranchIOne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &742485476
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742485475}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1543493767}
+  m_Father: {fileID: 1214622096}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -116, y: -0.5}
+  m_SizeDelta: {x: 92.6823, y: 17.3779}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &742485477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742485475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 742485478}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &742485478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742485475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &742485479
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742485475}
+  m_CullTransparentMesh: 1
 --- !u!1 &773500630
 GameObject:
   m_ObjectHideFlags: 0
@@ -12641,8 +12905,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -12790,8 +13052,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "uh\u2026 WHAT?! YOU\u2019RE JOKING RIGHT? "
     Names: 4
     Branch: []
@@ -12806,8 +13066,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "You had easy access to a collection of knives and you hated Josephine\u2019s
       company with a passion."
     Names: 1
@@ -12823,8 +13081,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Say sike rn\u2026 please"
     Names: 4
     Branch: []
@@ -12839,8 +13095,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Close your eyes, I\u2019ll get rid of this guy for you"
     Names: 0
     Branch: []
@@ -12855,8 +13109,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: WAIT WAIT WAIT
     Names: 4
     Branch: []
@@ -12871,8 +13123,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -12887,8 +13137,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12956,8 +13204,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -13135,7 +13381,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &810011159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13241,6 +13486,7 @@ GameObject:
   - component: {fileID: 819094639}
   - component: {fileID: 819094643}
   - component: {fileID: 819094642}
+  - component: {fileID: 819094641}
   - component: {fileID: 819094640}
   m_Layer: 0
   m_Name: HunterCaseyDoorDialogue
@@ -13286,8 +13532,54 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
+--- !u!114 &819094641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819094638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: "This nameplate says \u201CCasey and Hunter\u201D. This must be our room.
+      It\u2019s unlocked."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 1
+  - Text: "Oh! Let\u2019s go in!"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 1
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
 --- !u!61 &819094642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13489,6 +13781,141 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &850380249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850380250}
+  - component: {fileID: 850380251}
+  - component: {fileID: 850380252}
+  m_Layer: 5
+  m_Name: SpeakerNameI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &850380250
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850380249}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 8, y: -155}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &850380251
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850380249}
+  m_CullTransparentMesh: 1
+--- !u!114 &850380252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850380249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -186.72787, y: -16.415619, z: -133.37683, w: 36.93519}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &863328925
 GameObject:
   m_ObjectHideFlags: 0
@@ -14612,8 +15039,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 3
     Branch:
@@ -14636,8 +15061,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
       what actually happened? "
     Names: 1
@@ -14653,8 +15076,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
       me."
     Names: 3
@@ -14670,8 +15091,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: You only look more suspicious when you lie
     Names: 1
     Branch: []
@@ -14686,8 +15105,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
       big, we just both thought the other person had taken care of everything back
       home before we left."
@@ -14704,8 +15121,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "After that I left the room and didn\u2019t go back because Josie usually
       needs a while to cool off. I slept in the lounge last night and when I went
       to apologize in the morning\u2026"
@@ -14722,8 +15137,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
     Names: 3
     Branch: []
@@ -14738,8 +15151,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well that story makes a lot of sense with the other evidence we found.
       Thank you for telling us the truth. We will bring justice for Josephine.
     Names: 1
@@ -14755,8 +15166,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -14771,8 +15180,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -14788,8 +15195,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -14804,8 +15209,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -14821,8 +15224,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -14837,8 +15238,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -14854,8 +15253,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -14870,8 +15267,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -14886,8 +15281,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -14902,8 +15295,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -14918,8 +15309,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -14935,8 +15324,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Thank You
     Names: 1
     Branch: []
@@ -14951,8 +15338,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: Piece1
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Do you have any idea who did this? Did Josephine have any enemies?
     Names: 1
     Branch: []
@@ -14967,8 +15352,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
       get along\u2026 Just between you and me, he kinda scares me."
     Names: 3
@@ -14984,8 +15367,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Why\u2019s that?"
     Names: 1
     Branch: []
@@ -15000,8 +15381,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Well, he really likes\u2026 knives"
     Names: 3
     Branch: []
@@ -15016,8 +15395,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Knives, huh? Good to know
     Names: 1
     Branch: []
@@ -15034,8 +15411,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Thank you for the help
     Names: 1
     Branch: []
@@ -15050,8 +15425,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -15059,6 +15432,140 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 4
+--- !u!1 &1032534389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032534390}
+  - component: {fileID: 1032534393}
+  - component: {fileID: 1032534392}
+  - component: {fileID: 1032534391}
+  m_Layer: 5
+  m_Name: BranchIFour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032534390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032534389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1214160735}
+  m_Father: {fileID: 1214622096}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 44.3}
+  m_SizeDelta: {x: 92.6823, y: 17.3779}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1032534391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032534389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1032534392}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchFour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1032534392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032534389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1032534393
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032534389}
+  m_CullTransparentMesh: 1
 --- !u!1 &1036465387
 GameObject:
   m_ObjectHideFlags: 0
@@ -15144,6 +15651,159 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036465387}
+  m_CullTransparentMesh: 1
+--- !u!1 &1039539741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039539742}
+  - component: {fileID: 1039539746}
+  - component: {fileID: 1039539745}
+  - component: {fileID: 1039539744}
+  - component: {fileID: 1039539743}
+  m_Layer: 5
+  m_Name: ContinueInterrogation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1039539742
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039539741}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1734805705}
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 330.65887, y: -205.4}
+  m_SizeDelta: {x: 92.6823, y: 17.3779}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1039539743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039539741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591ab3433c31e0e4f8db9eb580117652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextDialogue: 0
+  ButtonText: {fileID: 0}
+  CC: {fileID: 1319127852}
+  DC: {fileID: 0}
+  IB: {fileID: 0}
+  TM: {fileID: 0}
+--- !u!114 &1039539744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039539741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1039539745}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1039539743}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ContinueProgress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1039539745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039539741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1039539746
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039539741}
   m_CullTransparentMesh: 1
 --- !u!1 &1050517050
 GameObject:
@@ -15415,6 +16075,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056606901}
   m_CullTransparentMesh: 1
+--- !u!1 &1067350907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1067350908}
+  - component: {fileID: 1067350909}
+  - component: {fileID: 1067350910}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1067350908
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067350907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2014253589}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1067350909
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067350907}
+  m_CullTransparentMesh: 1
+--- !u!114 &1067350910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067350907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1094013968
 GameObject:
   m_ObjectHideFlags: 0
@@ -15970,8 +16765,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 1
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
 --- !u!212 &1144834371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16138,8 +16931,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -16154,8 +16945,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -16170,8 +16959,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -16186,8 +16973,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -16202,8 +16987,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -16559,6 +17342,181 @@ Transform:
   m_Father: {fileID: 555417511}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1214160734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214160735}
+  - component: {fileID: 1214160736}
+  - component: {fileID: 1214160737}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1214160735
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214160734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1032534390}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1214160736
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214160734}
+  m_CullTransparentMesh: 1
+--- !u!114 &1214160737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214160734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1214622095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214622096}
+  m_Layer: 5
+  m_Name: BranchButtonsI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1214622096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214622095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 742485476}
+  - {fileID: 2014253589}
+  - {fileID: 1963261024}
+  - {fileID: 1032534390}
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 17, y: -182}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1218577735
 GameObject:
   m_ObjectHideFlags: 0
@@ -16754,8 +17712,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Whatever
     Names: 4
     Branch:
@@ -16778,8 +17734,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -16794,8 +17748,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -16810,8 +17762,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well I need to get the facts straight before I can deduce anything
     Names: 1
     Branch: []
@@ -16826,8 +17776,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "You don\u2019t need to be a detective to figure out people go to sleep
       at night"
     Names: 4
@@ -16843,8 +17791,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -16859,8 +17805,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -16876,8 +17820,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
       fan of yours"
     Names: 1
@@ -16893,8 +17835,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -16909,8 +17849,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Nothing
     Names: 1
     Branch: []
@@ -16925,8 +17863,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Did you notice anything strange last night?
     Names: 1
     Branch: []
@@ -16941,8 +17877,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: How was I supposed to notice anything with Hana and Josie yelling last
       night!
     Names: 4
@@ -16960,8 +17894,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: They were yelling?
     Names: 1
     Branch: []
@@ -16976,8 +17908,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yeah, at each other.
     Names: 4
     Branch: []
@@ -16992,8 +17922,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -17008,8 +17936,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -17025,8 +17951,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
@@ -17041,8 +17965,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Hana mentioned you are a fan of knives
     Names: 1
     Branch: []
@@ -17057,8 +17979,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -17073,8 +17993,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -17089,8 +18007,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -17106,8 +18022,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -17122,8 +18036,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -17145,8 +18057,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -17161,8 +18071,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -17177,8 +18085,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -17193,8 +18099,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -17209,8 +18113,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -17225,8 +18127,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -17241,8 +18141,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -17257,8 +18155,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: OK OK JUST TAKE THE STUPID KEY
     Names: 4
     Branch: []
@@ -17273,8 +18169,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: Key
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Thank you
     Names: 1
     Branch: []
@@ -17289,8 +18183,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -17305,8 +18197,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -17322,8 +18212,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -17339,8 +18227,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -17356,8 +18242,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: Key
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -17372,8 +18256,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -17389,8 +18271,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -17405,8 +18285,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -17421,8 +18299,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -17437,8 +18313,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -17453,8 +18327,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -17469,8 +18341,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -17486,8 +18356,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: Key
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -17922,8 +18790,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: 'Oh look, more couches! I can push them together and make a bed even bigger
       than yours! '
     Names: 0
@@ -17939,8 +18805,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "You\u2019re no fun."
     Names: 0
     Branch: []
@@ -17955,8 +18819,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
       else on the train."
     Names: 1
@@ -17972,8 +18834,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -18135,8 +18995,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Whatever
     Names: 4
     Branch:
@@ -18157,8 +19015,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -18173,8 +19029,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -18189,8 +19043,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well I need to get the facts straight before I can deduce anything
     Names: 1
     Branch: []
@@ -18205,8 +19057,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "You don\u2019t need to be a detective to figure out people go to sleep
       at night"
     Names: 4
@@ -18222,8 +19072,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -18238,8 +19086,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -18255,8 +19101,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I\u2019m not actually a fan of the company. I\u2019m especially not a
       fan of yours"
     Names: 1
@@ -18272,8 +19116,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -18288,8 +19130,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Nothing
     Names: 1
     Branch: []
@@ -18304,8 +19144,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Did you notice anything strange last night?
     Names: 1
     Branch: []
@@ -18320,8 +19158,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: How was I supposed to notice anything with Hana and Josie yelling last
       night!
     Names: 4
@@ -18339,8 +19175,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: They were yelling?
     Names: 1
     Branch: []
@@ -18355,8 +19189,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yeah, at each other.
     Names: 4
     Branch: []
@@ -18371,8 +19203,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -18387,8 +19217,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -18404,8 +19232,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "That\u2019s good to know"
     Names: 1
     Branch: []
@@ -18420,8 +19246,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -18763,8 +19587,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -19033,7 +19855,7 @@ GameObject:
   - component: {fileID: 1324114792}
   - component: {fileID: 1324114795}
   - component: {fileID: 1324114794}
-  - component: {fileID: 1324114796}
+  - component: {fileID: 1324114793}
   m_Layer: 0
   m_Name: DominicDoor
   m_TagString: Untagged
@@ -19056,6 +19878,67 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324114793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324114791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: "This door says \u201CDominic\u201D, also locked."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: 'Well, who would just leave their room unlocked? '
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 1
+  - Text: "That\u2019s a good point."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
 --- !u!61 &1324114794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19153,20 +20036,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1324114796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324114791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 68326665}
-  canBeAccessed: 1
 --- !u!1 &1326643989
 GameObject:
   m_ObjectHideFlags: 0
@@ -19684,8 +20553,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -20101,8 +20968,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: These must be the standard rooms.
     Names: 1
     Branch: []
@@ -20117,8 +20982,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Wow, these rooms must be even smaller than the others.
     Names: 0
     Branch: []
@@ -20133,8 +20996,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -20667,8 +21528,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well, she looks dead.
     Names: 0
     Branch: []
@@ -20683,8 +21542,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -20699,8 +21556,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "There\u2019s a lot of stab wounds, but the clothes aren\u2019t soaked
       with blood in all places"
     Names: 0
@@ -20716,8 +21571,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: How do you think she died?
     Names: 1
     Branch: []
@@ -20732,8 +21585,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: " Didn\u2019t you see all the stab wounds? Obviously, someone stabbed her.
       Several times too"
     Names: 0
@@ -20749,8 +21600,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -21126,7 +21975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1498759646
 Transform:
   m_ObjectHideFlags: 0
@@ -21439,6 +22288,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1543493766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543493767}
+  - component: {fileID: 1543493768}
+  - component: {fileID: 1543493769}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1543493767
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543493766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 742485476}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1543493768
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543493766}
+  m_CullTransparentMesh: 1
+--- !u!114 &1543493769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543493766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1547073001
 GameObject:
   m_ObjectHideFlags: 0
@@ -21560,8 +22544,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Whatever
     Names: 4
     Branch:
@@ -21578,8 +22560,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Hana mentioned you are a fan of knives
     Names: 1
     Branch: []
@@ -21596,8 +22576,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -21612,8 +22590,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -21628,8 +22604,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -21645,8 +22619,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -21661,8 +22633,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -21684,8 +22654,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -21700,8 +22668,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -21716,8 +22682,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -21732,8 +22696,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -21748,8 +22710,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -21764,8 +22724,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -21780,8 +22738,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -21796,8 +22752,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: OK OK JUST TAKE THE STUPID KEY
     Names: 4
     Branch: []
@@ -21812,8 +22766,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Thank you
     Names: 1
     Branch: []
@@ -21828,8 +22780,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -21844,8 +22794,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -21861,8 +22809,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -21878,8 +22824,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -21895,8 +22839,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -21911,8 +22853,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -21928,8 +22868,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -21944,8 +22882,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -21960,8 +22896,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -21976,8 +22910,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -21992,8 +22924,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -22008,8 +22938,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -22025,8 +22953,6 @@ MonoBehaviour:
     AddInventoryItem: 1
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -22756,7 +23682,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &1685009732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22914,8 +23839,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Oh that sucks, trains are cramped enough. It must be pretty uncomfortable
       to share such a tiny space. That stinks for them!
     Names: 0
@@ -22931,8 +23854,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yeah, it would be pretty tight. They must be pretty close.
     Names: 1
     Branch: []
@@ -22947,8 +23868,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -23577,6 +24496,141 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1734805704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734805705}
+  - component: {fileID: 1734805707}
+  - component: {fileID: 1734805706}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1734805705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734805704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1039539742}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1734805706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734805704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Continue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1734805707
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734805704}
+  m_CullTransparentMesh: 1
 --- !u!1 &1752428832
 GameObject:
   m_ObjectHideFlags: 0
@@ -24214,8 +25268,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -24999,6 +26051,140 @@ Transform:
   m_Father: {fileID: 2059116426}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1963261023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963261024}
+  - component: {fileID: 1963261027}
+  - component: {fileID: 1963261026}
+  - component: {fileID: 1963261025}
+  m_Layer: 5
+  m_Name: BranchIThree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1963261024
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963261023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2124216466}
+  m_Father: {fileID: 1214622096}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0}
+  m_SizeDelta: {x: 92.6823, y: 17.3779}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1963261025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963261023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1963261026}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchThree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1963261026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963261023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1963261027
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963261023}
+  m_CullTransparentMesh: 1
 --- !u!1 &1971994821
 GameObject:
   m_ObjectHideFlags: 0
@@ -25041,7 +26227,7 @@ GameObject:
   - component: {fileID: 1979004299}
   - component: {fileID: 1979004302}
   - component: {fileID: 1979004301}
-  - component: {fileID: 1979004303}
+  - component: {fileID: 1979004300}
   m_Layer: 0
   m_Name: BradyDoor
   m_TagString: Untagged
@@ -25064,6 +26250,82 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1979004300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979004298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: "Oh this door says \u201CBrady\u201D. A friend of mine has that name too!
+      I\u2019m sure we\u2019ll get along just as well. "
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "I don\u2019t think they are the same person."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 1
+  - Text: Maybe not but I think Brady is a good name for a good person.
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "Right\u2026"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
 --- !u!61 &1979004301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25161,20 +26423,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1979004303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979004298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 495125579}
-  canBeAccessed: 1
 --- !u!1 &1989096824
 GameObject:
   m_ObjectHideFlags: 0
@@ -25310,6 +26558,140 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &2014253588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2014253589}
+  - component: {fileID: 2014253592}
+  - component: {fileID: 2014253591}
+  - component: {fileID: 2014253590}
+  m_Layer: 5
+  m_Name: BranchITwo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2014253589
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014253588}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1067350908}
+  m_Father: {fileID: 1214622096}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -116, y: 44.30002}
+  m_SizeDelta: {x: 92.6823, y: 17.3779}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2014253590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014253588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2014253591}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2014253591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014253588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2014253592
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014253588}
+  m_CullTransparentMesh: 1
 --- !u!1 &2044781850
 GameObject:
   m_ObjectHideFlags: 0
@@ -25352,8 +26734,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 831853326}
   isTrain: 0
   largeViewSprite: {fileID: 21300000, guid: 632e877b099ed7c43ad03ee3de940d1f, type: 3}
-  updatesTimeline: 0
-  timelineEventNum: 0
 --- !u!212 &2044781853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25494,8 +26874,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -25773,8 +27151,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -25789,8 +27165,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -25805,8 +27179,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -25821,8 +27193,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -25837,8 +27207,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -25853,8 +27221,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -25870,8 +27236,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -25887,8 +27251,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: Yes
     Names: 0
     Branch: []
@@ -25903,8 +27265,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -25920,8 +27280,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -25938,8 +27296,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -25956,8 +27312,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -25973,8 +27327,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -25990,8 +27342,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -26012,6 +27362,217 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2116435141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2116435142}
+  - component: {fileID: 2116435144}
+  - component: {fileID: 2116435143}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2116435142
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116435141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441351221}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -332, y: -161}
+  m_SizeDelta: {x: 72.0711, y: 72.0711}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2116435143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116435141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2116435144
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116435141}
+  m_CullTransparentMesh: 1
+--- !u!1 &2124216465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2124216466}
+  - component: {fileID: 2124216467}
+  - component: {fileID: 2124216468}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2124216466
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124216465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1963261024}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2124216467
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124216465}
+  m_CullTransparentMesh: 1
+--- !u!114 &2124216468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124216465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2137844749
 GameObject:
   m_ObjectHideFlags: 0
@@ -26072,10 +27633,6 @@ PrefabInstance:
     - target: {fileID: 6167172818018222410, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_Name
       value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 6167172818018222410, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8301631662063629103, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_Pivot.x
