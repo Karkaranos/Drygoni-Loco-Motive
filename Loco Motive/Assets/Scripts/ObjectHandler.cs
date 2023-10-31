@@ -66,7 +66,7 @@ public class ObjectHandler : MonoBehaviour
                 nm.notebookIcon.SetActive(true);
             }
         }
-        if (updatesNotebook == true)
+        if (updatesTimeline == true)
         {
             ncm.RevealEvent(timelineEventNum);
         }
