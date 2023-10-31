@@ -147,6 +147,17 @@ public class DialogueController : MonoBehaviour
             //DialogueBox.text = "Have you ever been on a train before?";
             //SpeakerName.text = "Hunter";
         }
+        else
+        {
+            DialogueScreen.SetActive(true);
+            ContinueButton.SetActive(false);
+            BranchButtons.SetActive(true);
+            InterrogateButton.SetActive(false);
+            currentDialogue.StartText();
+            InventoryButton.SetActive(false);
+            NotebookButton.SetActive(false);
+            ExitButton.SetActive(true);
+        }
         //else if (numPadDialogue == true)
         //{
         //    DialogueScreen.SetActive(true);
@@ -301,6 +312,7 @@ public class DialogueController : MonoBehaviour
         BranchTwo.GetComponent<Image>().color = Color.white;
         BranchThree.GetComponent<Image>().color = Color.white;
         BranchFour.GetComponent<Image>().color = Color.white;
+        opening = false;
     }
 
     public IEnumerator Speaking()
