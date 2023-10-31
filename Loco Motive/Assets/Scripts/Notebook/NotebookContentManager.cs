@@ -43,7 +43,7 @@ public class NotebookContentManager : MonoBehaviour
     /// </summary>
     void Start()
     {
-        pageCount = pageContent.Length + (timelineContent.Length / 5);
+        pageCount = pageContent.Length + (int)Mathf.Ceil(timelineContent.Length / 5);
         timelineCount = timelineContent.Length;
         //image = new Sprite[pageCount];
         timelineVisible = new bool[timelineCount];
