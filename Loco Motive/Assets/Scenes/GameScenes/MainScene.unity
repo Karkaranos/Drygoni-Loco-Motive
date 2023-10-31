@@ -379,6 +379,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We really have to share this tiny room? There\u2019s only one bed\u2026"
     Names: 1
     Branch: []
@@ -395,6 +397,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' I call dibs! '
     Names: 0
     Branch: []
@@ -411,6 +415,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Now, now, as your superior, I will be making the executive decision that
       this bed is mine. '
     Names: 1
@@ -428,6 +434,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Hey, I have an idea! What if we take the pillows and use them to create
       a wall so we don\u2019t wake each other during the night? You\u2019re small
       so that\u2019ll work fine."
@@ -446,6 +454,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "There isn\u2019t enough room on the bed for us both to fit with a pillow
       wall in between. Plus, if we made a wall of pillows, there would not be any
       for us to sleep on. Hunter, why don\u2019t you grab a couple of pillows and
@@ -466,6 +476,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Aww okay. (I always get stuck with the couch)
     Names: 0
     Branch: []
@@ -482,6 +494,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -762,6 +776,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Do you think he goes by Alex?
     Names: 0
     Branch: []
@@ -778,6 +794,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t know. Ask when you meet him."
     Names: 1
     Branch: []
@@ -794,6 +812,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -1314,6 +1334,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -1332,6 +1354,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I found this business card that says \u201CCEO\u201D instead of \u201CCFO\u201D,
       care to explain?"
     Names: 1
@@ -1349,6 +1373,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Oh that sounds bad now but the bottom line of the \u201CE\u201D is written
       in pen. My son did that for me on Father\u2019s day. He was like, \u201COne
       day you\u2019ll be a CEO.\u201D because he knew that\u2019s what I\u2019ve
@@ -1368,6 +1394,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You\u2019re right, this line is clearly not printed. It even says \u201CJoseph\u201D
       on the back in messy writing."
     Names: 1
@@ -1385,6 +1413,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Isn\u2019t he so good at writing? They grow up so fast!"
     Names: 2
     Branch: []
@@ -1401,6 +1431,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Sure\u2026"
     Names: 1
     Branch: []
@@ -1417,6 +1449,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 7
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2268,8 +2302,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2329,6 +2363,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What me?! But she was my wife!
     Names: 3
     Branch: []
@@ -2345,6 +2381,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Right, but with the will you had the most to gain from her death. Not to
       mention only you could have gotten into her room.
     Names: 1
@@ -2362,6 +2400,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "But I didn\u2019t kill her I swear! "
     Names: 3
     Branch: []
@@ -2378,6 +2418,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Well done Casey, let's get off this train and go get dessert to treat ourselves!
     Names: 0
     Branch: []
@@ -2394,6 +2436,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -2410,6 +2454,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2896,6 +2942,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -2918,6 +2966,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -2934,6 +2984,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We were just coworkers.
     Names: 2
     Branch: []
@@ -2950,6 +3002,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: When did you meet?
     Names: 1
     Branch: []
@@ -2966,6 +3020,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: A couple of years back when Josie was starting Defiant Door Studios. We
       got along and she hired me to handle finances.
     Names: 2
@@ -2983,6 +3039,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you give me a description of what you were doing last night?
     Names: 1
     Branch: []
@@ -2999,6 +3057,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: At 8:30 Josie agreed to meet with me and we talked about budgeting for
       the trip. After that Dominic came to my room and we played games together for
       the rest of the night.
@@ -3017,6 +3077,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019m surprised that you have a whole game console set up with you."
     Names: 1
     Branch: []
@@ -3033,6 +3095,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah and people are even more shocked when they find out I\u2019m a terrible
       electrician!"
     Names: 2
@@ -3050,6 +3114,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "\u2026Deep breath Casey\u2026  So you and Dominic were together all night?
       You didn\u2019t split up at any point? "
     Names: 1
@@ -3067,6 +3133,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'We did take a couple of breaks. '
     Names: 2
     Branch: []
@@ -3083,6 +3151,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Can you tell me the times and length of the breaks? '
     Names: 1
     Branch: []
@@ -3099,6 +3169,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Dominic left to grab a drink around 11:00 so I just sat and read my book.
       It felt like he was gone for a while so I just assumed he was sitting at the
       bar to drink or he ran into someone and started talking. He likes talking.
@@ -3117,6 +3189,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Do you know what he had to drink?
     Names: 1
     Branch: []
@@ -3133,6 +3207,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Does that really matter? It was probably something with caffeine so he
       could stay up later but I\u2019m not sure since he didn\u2019t bring it back
       with him."
@@ -3151,6 +3227,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And did you guys separate any other points?
     Names: 1
     Branch: []
@@ -3167,6 +3245,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I left around 12:45 to get some coffee.
     Names: 2
     Branch: []
@@ -3183,6 +3263,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Did you run into anyone? '
     Names: 1
     Branch: []
@@ -3199,6 +3281,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I saw Hana in the lounge but she was asleep. I thought about waking her
       up so he could sleep in her own room but I didn\u2019t want to bother her.
       She seemed to be fine sleeping in the lounge. I went straight back to my room
@@ -3218,6 +3302,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s pretty late, I assume you went to bed after?"
     Names: 1
     Branch: []
@@ -3234,6 +3320,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah, Dominic said he was too tired to keep going so he went back to his
       room. The coffee kept me up a bit so I read until I fell asleep.
     Names: 2
@@ -3251,6 +3339,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And Josephine would be dead when you woke up in the morning.
     Names: 1
     Branch: []
@@ -3267,6 +3357,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Maybe I should have woken up in the afternoon.
     Names: 2
     Branch: []
@@ -3283,6 +3375,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -3299,6 +3393,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see you brought a printed photo of you and your kid. Could you tell me-
     Names: 1
     Branch: []
@@ -3315,6 +3411,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s Joe! He is the sweetest little boy you\u2019ll ever meet!
       Isn\u2019t he cute?"
     Names: 2
@@ -3332,6 +3430,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Uhhh\u2026"
     Names: 1
     Branch: []
@@ -3348,6 +3448,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You don\u2019t have to say it, I know he is. Just seeing this picture
       makes me miss him so much!"
     Names: 2
@@ -3365,6 +3467,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "What\u2019s Joe short for?"
     Names: 1
     Branch: []
@@ -3381,6 +3485,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Since he\u2019s only 3."
     Names: 2
     Branch: []
@@ -3397,6 +3503,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "\u2026"
     Names: 1
     Branch: []
@@ -3413,6 +3521,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Feel free to laugh.
     Names: 2
     Branch: []
@@ -3429,6 +3539,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "There\u2019s no need."
     Names: 1
     Branch: []
@@ -3445,6 +3557,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t get it\u2026"
     Names: 0
     Branch: []
@@ -3461,6 +3575,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -3477,6 +3593,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -3493,6 +3611,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: September 9th of 2020! The happiest day of my life! The second was the
       day I married my wife. Oh this one time we got little Joseph a cake for his
       birthday, right? And he was so small he had never had cake before and-
@@ -3511,6 +3631,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019ve heard enough thank you. It\u2019s so annoying how people keep
       talking about their kids at work."
     Names: 1
@@ -3528,6 +3650,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 1
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3666,8 +3790,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4011,8 +4135,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4382,6 +4506,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ask away!
     Names: 5
     Branch:
@@ -4404,6 +4530,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -4420,6 +4548,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We\u2019re friends and coworkers."
     Names: 5
     Branch: []
@@ -4436,6 +4566,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How long have you known each other?
     Names: 1
     Branch: []
@@ -4452,6 +4584,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Since college. When Josie started her company she invited me on board.
     Names: 5
     Branch: []
@@ -4468,6 +4602,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So you were close?
     Names: 1
     Branch: []
@@ -4484,6 +4620,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We were but not so much after graduation, not until we started working
       together again. It\u2019s awful what happened to her, isn\u2019t it?"
     Names: 5
@@ -4501,6 +4639,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yes, it\u2019s upsetting that some people can be so cruel."
     Names: 1
     Branch: []
@@ -4517,6 +4657,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Do you have any idea who could have done it?
     Names: 5
     Branch:
@@ -4537,6 +4679,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t. I still need to gather more clues."
     Names: 1
     Branch: []
@@ -4553,6 +4697,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I do but I don't want to make any accusations until I finish investigating.
     Names: 1
     Branch: []
@@ -4569,6 +4715,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Alright, well keep me posted ok? Maybe I can help you out too.
     Names: 5
     Branch: []
@@ -4585,6 +4733,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah, sure.
     Names: 1
     Branch: []
@@ -4601,6 +4751,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you tell me what you were doing the night of the crime?
     Names: 1
     Branch: []
@@ -4617,6 +4769,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Alex and I were playing video games almost all night.
     Names: 5
     Branch: []
@@ -4633,6 +4787,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Was there any point when you two were separated?
     Names: 1
     Branch: []
@@ -4649,6 +4805,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah we each left to get a drink from the bar.
     Names: 5
     Branch: []
@@ -4665,6 +4823,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you have any alcohol?
     Names: 1
     Branch: []
@@ -4681,6 +4841,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Oh no, just wine with dinner. Alex and I both got some caffeine so we could
       stay up and finish our game.
     Names: 5
@@ -4698,6 +4860,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And how long were each of you gone?
     Names: 1
     Branch: []
@@ -4714,6 +4878,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " I left first and wasn\u2019t gone for too long. Alex left a couple of
       hours later and was back in only a few minutes."
     Names: 5
@@ -4731,6 +4897,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you see anyone other than Alex after dinner?
     Names: 1
     Branch: []
@@ -4747,6 +4915,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah Hana was in the lounge when I went to the bar. We didn\u2019t talk
       much other than saying \u201CGood night\u201D to each other. I feel so bad
       for her. Losing Josephine is hard on all of us but for her especially."
@@ -4765,6 +4935,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yes, death comes for us all eventually.
     Names: 1
     Branch: []
@@ -4781,6 +4953,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s pretty dark don\u2019t you think?"
     Names: 5
     Branch: []
@@ -4797,6 +4971,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We need to face the truth no matter how dark it is.
     Names: 1
     Branch: []
@@ -4813,6 +4989,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I bet you\u2019re really fun at parties, huh?"
     Names: 5
     Branch: []
@@ -4829,6 +5007,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Hey Casey is plenty of fun! They play chess with me when it gets slow at
       work!
     Names: 0
@@ -4846,6 +5026,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' So, moving on. When did you go to bed?'
     Names: 1
     Branch: []
@@ -4862,6 +5044,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We finished our game around 2:00 AM. I was super tired by then and fell
       asleep as soon as I got into my room.
     Names: 5
@@ -4879,6 +5063,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So the last time you saw Josephine was at dinner?
     Names: 1
     Branch: []
@@ -4895,6 +5081,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yup. Weird to think that was the last time ever. It was the last time
       you saw her too, right? Though I guess you weren\u2019t really acquainted so
       not much has changed for you."
@@ -4913,6 +5101,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "It\u2019s true we weren\u2019t close friends like you are but when I did
       talk to her she seemed pleasant and people cared about her. Whether or not
       we were close doesn\u2019t change the fact her death is a tragedy that I hope
@@ -4932,6 +5122,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Aw, Casey.
     Names: 0
     Branch: []
@@ -4948,6 +5140,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Josie has always been thorough in her work. Seems it was no different when
       she hired a PI.
     Names: 5
@@ -4965,6 +5159,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I found this photo in your room, could you tell me about it?
     Names: 1
     Branch: []
@@ -4981,6 +5177,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Sure. Josie, Hana, and I all met at university. Our friend group was pretty
       close back then and that picture was taken one day when we all went out to
       lunch.
@@ -4999,6 +5197,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You and Hana look closer in this picture than you are now. You\u2019ve
       barely talked together."
     Names: 1
@@ -5016,6 +5216,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s because we were dating at the time."
     Names: 5
     Branch: []
@@ -5032,6 +5234,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Oh really? How was the relationship? '
     Names: 1
     Branch: []
@@ -5048,6 +5252,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' It was good for a while but she ended up breaking it off. She came out
       and told me she would rather be with a girl.'
     Names: 5
@@ -5065,6 +5271,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And did she start seeing Josephine right after?
     Names: 1
     Branch: []
@@ -5081,6 +5289,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No they didn\u2019t get together till after graduation but they had always
       been close leading up to it."
     Names: 5
@@ -5098,6 +5308,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I see. Even though that\u2019s all in the past now it\u2019s still good
       for me to keep in mind."
     Names: 1
@@ -5115,6 +5327,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 3
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5390,6 +5604,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " I hope they aren\u2019t going to cram everyone else in that room."
     Names: 0
     Branch: []
@@ -5406,6 +5622,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No way we\u2019d all fit. I can\u2019t imagine them buying a private train
       with only 2 rooms."
     Names: 1
@@ -5423,6 +5641,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah, that makes sense\u2026 Maybe it\u2019s ladder storage?"
     Names: 0
     Branch: []
@@ -5439,6 +5659,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Looks like there are already mysteries. Too bad the door is locked.
     Names: 1
     Branch: []
@@ -5455,6 +5677,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5971,6 +6195,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I need a bit more time
     Names: 1
     Branch: []
@@ -5987,6 +6213,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ok! Let me know when you're done!
     Names: 0
     Branch: []
@@ -6003,6 +6231,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I'd like to talk to everyone together so we can go over the events.
     Names: 1
     Branch: []
@@ -6019,6 +6249,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Well, we\u2019re already all here in the lounge so you should hurry and
       get started."
     Names: 4
@@ -6036,6 +6268,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019d like to start by talking about the state of Josephine\u2019s
       body. Hana, if you want to step out I understand."
     Names: 1
@@ -6053,6 +6287,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No. I\u2019ll be ok."
     Names: 3
     Branch: []
@@ -6069,6 +6305,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Then let me review what we know. Josephine was found in her room this
       morning by her wife. She had been stabbed and there was a message written in
       her blood. She was probably killed between 10:00 and 12:00 last night. '
@@ -6087,6 +6325,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We know both Brady and Alex met with Josephine after dinner. The last
       person to see Josephine, besides the killer, was Hana. We know that Josephine
       was still alive then because\u2026"
@@ -6111,6 +6351,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I don't quite think that was right...
     Names: 1
     Branch: []
@@ -6127,6 +6369,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Brady, you heard Hana and Josephine fighting last night.
     Names: 1
     Branch: []
@@ -6143,6 +6387,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah I definitely heard both of their voices. They were so loud I couldn\u2019t
       have missed it."
     Names: 4
@@ -6160,6 +6406,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And you said that was around 10:00 so Josephine couldn\u2019t have been
       killed till after that. We should go over everyone\u2019s alibi during that
       time. Alex and Dominic were together almost all night."
@@ -6178,6 +6426,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "So we\u2019re clear? "
     Names: 2
     Branch: []
@@ -6194,6 +6444,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ayy, high five!
     Names: 5
     Branch: []
@@ -6210,6 +6462,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Not so fast, you both took breaks. When Dominic took a break he saw Hana
       in the lounge, just like she had said. He also left Alex alone in his room.
       That was just before 11:00. Brady was in his room and went to shower a few
@@ -6229,6 +6483,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I only left the lounge when I went to check on Josie.
     Names: 3
     Branch: []
@@ -6245,6 +6501,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And then you killed her\u2026"
     Names: 0
     Branch: []
@@ -6261,6 +6519,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: No Hunter.
     Names: 1
     Branch: []
@@ -6277,6 +6537,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: But she was the only one who had a key!
     Names: 0
     Branch: []
@@ -6293,6 +6555,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Yes, but Josephine could have opened the door and let someone in whether
       or not they had a key. '
     Names: 1
@@ -6310,6 +6574,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Why would she just let the killer come in?
     Names: 0
     Branch: []
@@ -6326,6 +6592,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Maybe she didn\u2019t know they were going to kill her? She let me and
       Brady into her room for our meetings."
     Names: 2
@@ -6343,6 +6611,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Right, I think somebody met with Josephine without telling anyone. '
     Names: 1
     Branch: []
@@ -6359,6 +6629,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Since Dominic and Alex were together and she was upset with me it would
       have been Brady right?
     Names: 3
@@ -6376,6 +6648,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Why me?! I was in the shower until I talked to you!
     Names: 4
     Branch: []
@@ -6392,6 +6666,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Josephine also suffered several stab wounds. She was most likely stabbed
       by\u2026"
     Names: 1
@@ -6415,6 +6691,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: There was no evidence she was stabbed by that.
     Names: 1
     Branch: []
@@ -6431,6 +6709,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'She was probably stabbed by your knife, Brady. It even had blood on it. '
     Names: 1
     Branch: []
@@ -6447,6 +6727,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I would never use my knife for stabbing people! It\u2019s far too important
       to get dirty."
     Names: 4
@@ -6464,6 +6746,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: You keep your knife locked in a box that can only be unlocked with your
       key right?
     Names: 1
@@ -6481,6 +6765,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah, and there isn\u2019t a spare key on the train."
     Names: 4
     Branch: []
@@ -6497,6 +6783,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Was there any point where you didn\u2019t have the key with you?"
     Names: 1
     Branch: []
@@ -6513,6 +6801,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Well I guess I left it in my room while I showered.
     Names: 4
     Branch: []
@@ -6529,6 +6819,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you lock your room?
     Names: 1
     Branch: []
@@ -6545,6 +6837,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'No, then I would need to take my keys into the bathroom anyway. '
     Names: 4
     Branch: []
@@ -6561,6 +6855,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So you left your keys and room completely unattended for 20 minutes while
       you showered.
     Names: 1
@@ -6578,6 +6874,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "If I knew someone would get my knives dirty I obviously wouldn\u2019t
       have done that."
     Names: 4
@@ -6595,6 +6893,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s not what you should be worried about!"
     Names: 3
     Branch: []
@@ -6611,6 +6911,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "So anyone could have used Brady\u2019s knife."
     Names: 1
     Branch: []
@@ -6627,6 +6929,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "If anyone could have used the knife maybe there\u2019s another clue?"
     Names: 0
     Branch: []
@@ -6643,6 +6947,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Let\u2019s consider how she died."
     Names: 1
     Branch: []
@@ -6659,6 +6965,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You mean it wasn\u2019t the knife?"
     Names: 5
     Branch: []
@@ -6675,6 +6983,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I think they used the knife after she died to throw us off.
     Names: 1
     Branch: []
@@ -6691,6 +7001,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "This killer used my knife as a distraction? They shouldn\u2019t have used
       it at all!"
     Names: 4
@@ -6708,6 +7020,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Calm down, the culprit isn\u2019t going to get away."
     Names: 1
     Branch: []
@@ -6724,6 +7038,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So if the knife was used after death what really killed her?
     Names: 3
     Branch: []
@@ -6740,6 +7056,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "The only other weapon I was able to find besides the knife was\u2026"
     Names: 1
     Branch:
@@ -6762,6 +7080,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: If someone killed her with that, I would be impressed.
     Names: 1
     Branch: []
@@ -6778,6 +7098,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'I actually found an empty poison vial at the bar. '
     Names: 1
     Branch: []
@@ -6794,6 +7116,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "At the bar? Anyone could have used it then\u2026"
     Names: 3
     Branch: []
@@ -6810,6 +7134,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I think we\u2019ll start by talking about how Josephine took the poison.
       Since the vial was at the bar it was probably given to her with her\u2026"
     Names: 1
@@ -6833,6 +7159,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I don't recall seeing any evidence of that in her room.
     Names: 1
     Branch: []
@@ -6849,6 +7177,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Since they left the vial at the bar they probably put something into her
       drink. '
     Names: 1
@@ -6866,6 +7196,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "But, she wasn\u2019t drinking at the bar last night. "
     Names: 3
     Branch: []
@@ -6882,6 +7214,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So then somebody would just have to have brought it to her.
     Names: 1
     Branch: []
@@ -6898,6 +7232,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Oh! And that\u2019s who-"
     Names: 0
     Branch: []
@@ -6914,6 +7250,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And that\u2019s our killer."
     Names: 1
     Branch: []
@@ -6930,6 +7268,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Hey, I wanted to say it!
     Names: 0
     Branch: []
@@ -6946,6 +7286,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Nobody brought a drink to Josephine though.
     Names: 2
     Branch: []
@@ -6962,6 +7304,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Right, we all had drinks from the bar with dinner.
     Names: 5
     Branch: []
@@ -6978,6 +7322,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "But we didn\u2019t prepare those on our own so I think they were all safe.
       The killer would have had a hard time making sure the poison was in the right
       drink if they handed it off."
@@ -6996,6 +7342,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So then Josephine drank something after dinner?
     Names: 3
     Branch: []
@@ -7012,6 +7360,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Right, she had\u2026"
     Names: 1
     Branch:
@@ -7034,6 +7384,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: You don't usually see that in the type of cup we found in her room.
     Names: 1
     Branch: []
@@ -7050,6 +7402,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: There was a tea cup in her room so she probably had tea.
     Names: 1
     Branch: []
@@ -7066,6 +7420,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Of course it was tea. Tea always tastes weird so you would never notice
       poison!
     Names: 0
@@ -7083,6 +7439,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Josie always preferred tea to coffee.
     Names: 3
     Branch: []
@@ -7099,6 +7457,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah but we all knew that since she drinks a cup every morning at the office.
     Names: 4
     Branch: []
@@ -7115,6 +7475,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Hana, you were in the lounge most of the evening. Did you see anyone walk
       through with a cup of tea?
     Names: 1
@@ -7132,6 +7494,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Oh yeah Dominic had a cup of tea.
     Names: 3
     Branch: []
@@ -7148,6 +7512,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Wow, you don\u2019t even like tea."
     Names: 2
     Branch: []
@@ -7164,6 +7530,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And did he bring the tea back to your room Alex?
     Names: 1
     Branch: []
@@ -7180,6 +7548,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: No, he came back with nothing.
     Names: 2
     Branch: []
@@ -7196,6 +7566,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Anything to say about that?
     Names: 1
     Branch: []
@@ -7212,6 +7584,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t like what you\u2019re implying. It could have just as easily
       been Hana."
     Names: 5
@@ -7229,6 +7603,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Dominic, did you leave your room unlocked at any point?
     Names: 1
     Branch: []
@@ -7245,6 +7621,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Of course not, I\u2019m more responsible than Brady."
     Names: 5
     Branch: []
@@ -7261,6 +7639,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Hey!  '
     Names: 4
     Branch: []
@@ -7277,6 +7657,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Dominic doesn\u2019t have to bother locking his room, nobody is brave
       enough to go through that mess anyway!"
     Names: 0
@@ -7294,6 +7676,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "So you\u2019re saying nobody could have gone into your room?"
     Names: 1
     Branch: []
@@ -7310,6 +7694,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No. I locked it as soon as I left. I don\u2019t see why we need to bring
       that up. "
     Names: 5
@@ -7327,6 +7713,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Since the poison is clearly from your room.
     Names: 1
     Branch: []
@@ -7343,6 +7731,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "What? I don\u2019t have any poison in my room."
     Names: 5
     Branch: []
@@ -7359,6 +7749,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Really? You have plenty of poisonous plants.
     Names: 1
     Branch: []
@@ -7375,6 +7767,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "They aren\u2019t for murder, they\u2019re his little friends. Like Brady\u2019s
       knives!"
     Names: 2
@@ -7392,6 +7786,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ew no my knives are way cooler than some plants.
     Names: 4
     Branch: []
@@ -7408,6 +7804,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I didn\u2019t even know they were poisonous."
     Names: 5
     Branch: []
@@ -7424,6 +7822,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Really? Because in your room we also found\u2026"
     Names: 1
     Branch:
@@ -7446,6 +7846,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: While that may have been in his room, is it really relevant here?
     Names: 1
     Branch: []
@@ -7462,6 +7864,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: There were quite a few books about poisonous plants with clear pictures.
       Not to mention, some of those plants were exotic, not something you just get
       on accident.
@@ -7480,6 +7884,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s\u2026 so weird\u2026"
     Names: 5
     Branch: []
@@ -7496,6 +7902,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Those were the main things I wanted to talk about.
     Names: 1
     Branch: []
@@ -7512,6 +7920,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Well, who did it?
     Names: 0
     Branch: []
@@ -7528,6 +7938,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I think I know...
     Names: 1
     Branch: []
@@ -7544,6 +7956,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What are you waiting for? Go talk to them and accuse them!
     Names: 0
     Branch: []
@@ -7560,6 +7974,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -8303,8 +8719,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8977,6 +9393,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -9396,6 +9814,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -9515,6 +9935,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ask away!
     Names: 5
     Branch:
@@ -9533,6 +9955,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I found this photo in your room, could you tell me about it?
     Names: 1
     Branch: []
@@ -9549,6 +9973,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Sure. Josie, Hana, and I all met at university. Our friend group was pretty
       close back then and that picture was taken one day when we all went out to
       lunch.
@@ -9567,6 +9993,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You and Hana look closer in this picture than you are now. You\u2019ve
       barely talked together."
     Names: 1
@@ -9584,6 +10012,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s because we were dating at the time."
     Names: 5
     Branch: []
@@ -9600,6 +10030,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Oh really? How was the relationship? '
     Names: 1
     Branch: []
@@ -9616,6 +10048,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' It was good for a while but she ended up breaking it off. She came out
       and told me she would rather be with a girl.'
     Names: 5
@@ -9633,6 +10067,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And did she start seeing Josephine right after?
     Names: 1
     Branch: []
@@ -9649,6 +10085,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No they didn\u2019t get together till after graduation but they had always
       been close leading up to it."
     Names: 5
@@ -9666,6 +10104,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I see. Even though that\u2019s all in the past now it\u2019s still good
       for me to keep in mind."
     Names: 1
@@ -9683,6 +10123,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 3
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -10017,6 +10459,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -15407,6 +15851,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "uh\u2026 WHAT?! YOU\u2019RE JOKING RIGHT? "
     Names: 4
     Branch: []
@@ -15423,6 +15869,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You had easy access to a collection of knives and you hated Josephine\u2019s
       company with a passion."
     Names: 1
@@ -15440,6 +15888,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Say sike rn\u2026 please"
     Names: 4
     Branch: []
@@ -15456,6 +15906,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Close your eyes, I\u2019ll get rid of this guy for you"
     Names: 0
     Branch: []
@@ -15472,6 +15924,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: WAIT WAIT WAIT
     Names: 4
     Branch: []
@@ -15488,6 +15942,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -15504,6 +15960,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -15864,6 +16322,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Oh! Let\u2019s go in!"
     Names: 0
     Branch: []
@@ -15880,6 +16340,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -16092,6 +16554,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -16944,8 +17408,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17020,6 +17484,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -17040,6 +17506,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -17056,6 +17524,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We were just coworkers.
     Names: 2
     Branch: []
@@ -17072,6 +17542,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: When did you meet?
     Names: 1
     Branch: []
@@ -17088,6 +17560,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: A couple of years back when Josie was starting Defiant Door Studios. We
       got along and she hired me to handle finances.
     Names: 2
@@ -17105,6 +17579,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you give me a description of what you were doing last night?
     Names: 1
     Branch: []
@@ -17121,6 +17597,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: At 8:30 Josie agreed to meet with me and we talked about budgeting for
       the trip. After that Dominic came to my room and we played games together for
       the rest of the night.
@@ -17139,6 +17617,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019m surprised that you have a whole game console set up with you."
     Names: 1
     Branch: []
@@ -17155,6 +17635,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah and people are even more shocked when they find out I\u2019m a terrible
       electrician!"
     Names: 2
@@ -17172,6 +17654,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "\u2026Deep breath Casey\u2026  So you and Dominic were together all night?
       You didn\u2019t split up at any point? "
     Names: 1
@@ -17189,6 +17673,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'We did take a couple of breaks. '
     Names: 2
     Branch: []
@@ -17205,6 +17691,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Can you tell me the times and length of the breaks? '
     Names: 1
     Branch: []
@@ -17221,6 +17709,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Dominic left to grab a drink around 11:00 so I just sat and read my book.
       It felt like he was gone for a while so I just assumed he was sitting at the
       bar to drink or he ran into someone and started talking. He likes talking.
@@ -17239,6 +17729,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Do you know what he had to drink?
     Names: 1
     Branch: []
@@ -17255,6 +17747,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Does that really matter? It was probably something with caffeine so he
       could stay up later but I\u2019m not sure since he didn\u2019t bring it back
       with him."
@@ -17273,6 +17767,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And did you guys separate any other points?
     Names: 1
     Branch: []
@@ -17289,6 +17785,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I left around 12:45 to get some coffee.
     Names: 2
     Branch: []
@@ -17305,6 +17803,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Did you run into anyone? '
     Names: 1
     Branch: []
@@ -17321,6 +17821,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I saw Hana in the lounge but she was asleep. I thought about waking her
       up so he could sleep in her own room but I didn\u2019t want to bother her.
       She seemed to be fine sleeping in the lounge. I went straight back to my room
@@ -17340,6 +17842,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s pretty late, I assume you went to bed after?"
     Names: 1
     Branch: []
@@ -17356,6 +17860,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah, Dominic said he was too tired to keep going so he went back to his
       room. The coffee kept me up a bit so I read until I fell asleep.
     Names: 2
@@ -17373,6 +17879,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And Josephine would be dead when you woke up in the morning.
     Names: 1
     Branch: []
@@ -17389,6 +17897,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Maybe I should have woken up in the afternoon.
     Names: 2
     Branch: []
@@ -17405,6 +17915,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -17421,6 +17933,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -17559,8 +18073,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17983,6 +18497,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ...
     Names: 3
     Branch:
@@ -18007,6 +18523,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -18023,6 +18541,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: After dinner I was in the room. Josie came later and both Alex and Brady
       came in to talk to her about business.
     Names: 3
@@ -18040,6 +18560,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: When Josephine came in did she have a drink?
     Names: 1
     Branch: []
@@ -18056,6 +18578,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
       met with the others either."
     Names: 3
@@ -18073,6 +18597,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see, please continue.
     Names: 1
     Branch: []
@@ -18089,6 +18615,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
       together about the trip. We ended up getting upset with each other since we
       both thought the other had taken care of everything in the house before we
@@ -18108,6 +18636,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What time was this?
     Names: 1
     Branch: []
@@ -18124,6 +18654,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
       a few neighbors to make sure our house was taken care of.
     Names: 3
@@ -18141,6 +18673,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you see anyone while you were in the lounge?
     Names: 1
     Branch: []
@@ -18157,6 +18691,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
       was having trouble sleeping. I saw Bradey a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
@@ -18175,6 +18711,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And what time was that?
     Names: 1
     Branch: []
@@ -18191,6 +18729,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: It was probably 11:20.
     Names: 3
     Branch:
@@ -18211,6 +18751,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
@@ -18227,6 +18769,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
       to relax and that\u2019s not possible with you yelling!\u201D And I tried to
       apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
@@ -18246,6 +18790,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
@@ -18262,6 +18808,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
       too. OH! His hair was wet! I thought it was weird but it makes sense because
@@ -18281,6 +18829,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Wait how does a shower on a train even work?
     Names: 0
     Branch: []
@@ -18297,6 +18847,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019ll explain later, we\u2019re getting off track."
     Names: 1
     Branch: []
@@ -18313,6 +18865,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ha, nice one.
     Names: 0
     Branch: []
@@ -18329,6 +18883,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
     Names: 1
     Branch: []
@@ -18345,6 +18901,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Was that helpful?
     Names: 3
     Branch: []
@@ -18361,6 +18919,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yes. What happened next?
     Names: 1
     Branch: []
@@ -18377,6 +18937,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
       I knocked on the door and assumed she was mad or asleep so I just went back
       into the lounge. I accidentally fell asleep soon after.'
@@ -18395,6 +18957,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
@@ -18411,6 +18975,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 4
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -18427,6 +18993,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -18444,6 +19012,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -18460,6 +19030,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -18477,6 +19049,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -18494,6 +19068,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -18510,6 +19086,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -18526,6 +19104,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -18542,6 +19122,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -18558,6 +19140,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -18575,6 +19159,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -18592,6 +19178,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Oh that was my junior year of college. I was hanging out with Josie and
       Dominic that day.
     Names: 3
@@ -18613,6 +19201,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Were you and Dominic close at the time?
     Names: 1
     Branch: []
@@ -18629,6 +19219,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
       like guys so I broke it off. I feel like he was upset since our relationship
       hasn\u2019t really been the same since."
@@ -18647,6 +19239,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Were you and Josephine together yet?
     Names: 1
     Branch: []
@@ -18663,6 +19257,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No. We weren\u2019t super close during school but we kept in contact after.
       That\u2019s also when we started dating. We just kept getting closer after
       that."
@@ -18681,6 +19277,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see. But you were all getting along recently?
     Names: 1
     Branch: []
@@ -18697,6 +19295,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
       but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
@@ -18714,6 +19314,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
@@ -18730,8 +19332,10 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 3
   dc: {fileID: 0}
-  canInterrogate: 0
+  canInterrogate: 1
   canAccuse: 0
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
@@ -19710,6 +20314,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -19961,6 +20567,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -20149,8 +20757,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20659,6 +21267,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -20675,6 +21285,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -20691,6 +21303,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -20707,6 +21321,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -20723,6 +21339,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -20904,8 +21522,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21450,6 +22068,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Whatever
     Names: 4
     Branch:
@@ -21474,6 +22094,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -21490,6 +22112,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -21506,6 +22130,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you give me something more concrete? Any details?
     Names: 1
     Branch: []
@@ -21522,6 +22148,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I was in my pajamas and then I got into the bed and fell asleep.
     Names: 4
     Branch: []
@@ -21538,6 +22166,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What were you doing before that?
     Names: 1
     Branch: []
@@ -21554,6 +22184,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'I went to talk to Josephine right after dinner and briefed her on how
       our games would run on different systems and what to expect at the conference.
       Then I went to my room to try and relax by polishing my knives which was IMPOSSIBLE
@@ -21573,6 +22205,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -21589,6 +22223,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out. They eventually
       stopped though. After I finished cleaning my blades I went to take a shower."
@@ -21607,6 +22243,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you lock the door when you left?
     Names: 1
     Branch: []
@@ -21623,6 +22261,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Huh? No, I guess not. It\u2019s weird to bring keys into the shower."
     Names: 4
     Branch: []
@@ -21639,6 +22279,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So what times were you in the shower?
     Names: 1
     Branch: []
@@ -21655,6 +22297,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t know. It was probably around 11:00 when I went in and around
       11:15 - 11:20 I left."
     Names: 4
@@ -21672,6 +22316,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you see anyone after that?
     Names: 1
     Branch: []
@@ -21688,6 +22334,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " Yeah I went to grab a snack before bed and I saw Hana. We talked for
       a few minutes about how it\u2019s rude to be so loud so late at night."
     Names: 4
@@ -21705,6 +22353,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see.
     Names: 1
     Branch: []
@@ -21721,6 +22371,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I was told that you carry knives.
     Names: 1
     Branch: []
@@ -21737,6 +22389,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -21753,6 +22407,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -21769,6 +22425,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -21786,6 +22444,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -21802,6 +22462,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
@@ -21825,6 +22487,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' Fine.'
     Names: 1
     Branch: []
@@ -21841,6 +22505,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -21857,6 +22523,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -21873,6 +22541,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -21889,6 +22559,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -21905,6 +22577,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -21921,6 +22595,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -21937,6 +22613,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: OK OK JUST TAKE THE STUPID KEY!
     Names: 4
     Branch: []
@@ -21953,6 +22631,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Thank you.
     Names: 1
     Branch: []
@@ -21969,6 +22649,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -21985,6 +22667,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -22002,6 +22686,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -22019,6 +22705,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -22036,6 +22724,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -22052,6 +22742,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -22069,6 +22761,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -22085,6 +22779,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -22101,6 +22797,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -22117,6 +22815,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -22133,6 +22833,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -22149,6 +22851,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -22166,6 +22870,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -22182,6 +22888,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -22199,6 +22907,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019m not actually a fan of the company. I\u2019m also not a fan of
       yours."
     Names: 1
@@ -22216,6 +22926,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -22232,6 +22944,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Nothing.
     Names: 1
     Branch: []
@@ -22248,6 +22962,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Have you seen this note before?
     Names: 1
     Branch: []
@@ -22264,6 +22980,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah. I wrote it.
     Names: 4
     Branch: []
@@ -22280,6 +22998,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Why?
     Names: 1
     Branch: []
@@ -22296,6 +23016,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Because Josephine needed to be constantly reminded that she was bad at
       her job!
     Names: 4
@@ -22313,6 +23035,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That doesn\u2019t sound like a healthy work life."
     Names: 1
     Branch: []
@@ -22329,6 +23053,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " It wasn\u2019t! She was a terrible boss. She never took responsibility
       for her mistakes. She would say, \u201CI want this game running on every console
       by next week.\u201D And I would say, \u201CThat\u2019s not possible.\u201D"
@@ -22347,6 +23073,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "But she didn\u2019t listen and then SHE would get mad at ME when it wasn\u2019t
       done like it wasn\u2019t her fault for making such an unreasonable request."
     Names: 4
@@ -22368,6 +23096,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That must have been difficult working under someone who doesn\u2019t communicate."
     Names: 1
     Branch: []
@@ -22384,6 +23114,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You\u2019re telling me. She\u2019s lucky to have me otherwise her company
       would have shut down long ago but she doesn\u2019t even see all I do for her."
     Names: 4
@@ -22401,6 +23133,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "If it was so bad why didn\u2019t you leave?"
     Names: 1
     Branch: []
@@ -22417,6 +23151,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I mean the pay was pretty nice. I was kinda hoping she would give up some
       control so things wouldn\u2019t be so stressful but that never seemed to happen."
     Names: 4
@@ -22434,6 +23170,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: You wanted a change in management then?
     Names: 1
     Branch: []
@@ -22450,6 +23188,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Oh yeah for sure. It didn\u2019t have to be me but I just wanted someone
       who was easier to work with ya\u2019know?"
     Names: 4
@@ -22467,6 +23207,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 2
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -22689,8 +23431,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22903,6 +23645,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Oh look, more couches! I can push them together and make a bed even bigger
       than yours! '
     Names: 0
@@ -22920,6 +23664,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You\u2019re no fun."
     Names: 0
     Branch: []
@@ -22936,6 +23682,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
       else on the train."
     Names: 1
@@ -22953,6 +23701,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -23387,6 +24137,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ...
     Names: 3
     Branch:
@@ -23409,6 +24161,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -23425,6 +24179,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: After dinner I was in the room. Josie came later and both Alex and Brady
       came in to talk to her about business.
     Names: 3
@@ -23442,6 +24198,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: When Josephine came in did she have a drink?
     Names: 1
     Branch: []
@@ -23458,6 +24216,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
       met with the others either."
     Names: 3
@@ -23475,6 +24235,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see, please continue.
     Names: 1
     Branch: []
@@ -23491,6 +24253,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
       together about the trip. We ended up getting upset with each other since we
       both thought the other had taken care of everything in the house before we
@@ -23510,6 +24274,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What time was this?
     Names: 1
     Branch: []
@@ -23526,6 +24292,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
       a few neighbors to make sure our house was taken care of.
     Names: 3
@@ -23543,6 +24311,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you see anyone while you were in the lounge?
     Names: 1
     Branch: []
@@ -23559,6 +24329,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
       was having trouble sleeping. I saw Bradey a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
@@ -23577,6 +24349,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And what time was that?
     Names: 1
     Branch: []
@@ -23593,6 +24367,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: It was probably 11:20.
     Names: 3
     Branch:
@@ -23613,6 +24389,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
@@ -23629,6 +24407,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
       to relax and that\u2019s not possible with you yelling!\u201D And I tried to
       apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
@@ -23648,6 +24428,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
@@ -23664,6 +24446,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
       too. OH! His hair was wet! I thought it was weird but it makes sense because
@@ -23683,6 +24467,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Wait how does a shower on a train even work?
     Names: 0
     Branch: []
@@ -23699,6 +24485,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019ll explain later, we\u2019re getting off track."
     Names: 1
     Branch: []
@@ -23715,6 +24503,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ha, nice one.
     Names: 0
     Branch: []
@@ -23731,6 +24521,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
     Names: 1
     Branch: []
@@ -23747,6 +24539,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Was that helpful?
     Names: 3
     Branch: []
@@ -23763,6 +24557,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yes. What happened next?
     Names: 1
     Branch: []
@@ -23779,6 +24575,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
       I knocked on the door and assumed she was mad or asleep so I just went back
       into the lounge. I accidentally fell asleep soon after.'
@@ -23797,6 +24595,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
@@ -23813,6 +24613,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -23829,6 +24631,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -23846,6 +24650,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -23862,6 +24668,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -23879,6 +24687,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -23951,6 +24761,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -24272,6 +25084,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Well, who would just leave their room unlocked? '
     Names: 0
     Branch: []
@@ -24288,6 +25102,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s a good point."
     Names: 1
     Branch: []
@@ -24304,6 +25120,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -24817,8 +25635,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24925,6 +25743,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -25129,8 +25949,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25342,6 +26162,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: These must be the standard rooms.
     Names: 1
     Branch: []
@@ -25358,6 +26180,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Wow, these rooms must be even smaller than the others.
     Names: 0
     Branch: []
@@ -25374,6 +26198,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -25906,6 +26732,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Ask away!
     Names: 5
     Branch:
@@ -25926,6 +26754,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -25942,6 +26772,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We\u2019re friends and coworkers."
     Names: 5
     Branch: []
@@ -25958,6 +26790,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How long have you known each other?
     Names: 1
     Branch: []
@@ -25974,6 +26808,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Since college. When Josie started her company she invited me on board.
     Names: 5
     Branch: []
@@ -25990,6 +26826,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So you were close?
     Names: 1
     Branch: []
@@ -26006,6 +26844,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "We were but not so much after graduation, not until we started working
       together again. It\u2019s awful what happened to her, isn\u2019t it?"
     Names: 5
@@ -26023,6 +26863,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yes, it\u2019s upsetting that some people can be so cruel."
     Names: 1
     Branch: []
@@ -26039,6 +26881,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Do you have any idea who could have done it?
     Names: 5
     Branch:
@@ -26059,6 +26903,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t. I still need to gather more clues."
     Names: 1
     Branch: []
@@ -26075,6 +26921,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I do but I don't want to make any accusations until I finish investigating.
     Names: 1
     Branch: []
@@ -26091,6 +26939,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Alright, well keep me posted ok? Maybe I can help you out too.
     Names: 5
     Branch: []
@@ -26107,6 +26957,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah, sure.
     Names: 1
     Branch: []
@@ -26123,6 +26975,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Can you tell me what you were doing the night of the crime?
     Names: 1
     Branch: []
@@ -26139,6 +26993,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Alex and I were playing video games almost all night.
     Names: 5
     Branch: []
@@ -26155,6 +27011,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Was there any point when you two were separated?
     Names: 1
     Branch: []
@@ -26171,6 +27029,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah we each left to get a drink from the bar.
     Names: 5
     Branch: []
@@ -26187,6 +27047,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you have any alcohol?
     Names: 1
     Branch: []
@@ -26203,6 +27065,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Oh no, just wine with dinner. Alex and I both got some caffeine so we could
       stay up and finish our game.
     Names: 5
@@ -26220,6 +27084,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: And how long were each of you gone?
     Names: 1
     Branch: []
@@ -26236,6 +27102,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " I left first and wasn\u2019t gone for too long. Alex left a couple of
       hours later and was back in only a few minutes."
     Names: 5
@@ -26253,6 +27121,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Did you see anyone other than Alex after dinner?
     Names: 1
     Branch: []
@@ -26269,6 +27139,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah Hana was in the lounge when I went to the bar. We didn\u2019t talk
       much other than saying \u201CGood night\u201D to each other. I feel so bad
       for her. Losing Josephine is hard on all of us but for her especially."
@@ -26287,6 +27159,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yes, death comes for us all eventually.
     Names: 1
     Branch: []
@@ -26303,6 +27177,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s pretty dark don\u2019t you think?"
     Names: 5
     Branch: []
@@ -26319,6 +27195,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We need to face the truth no matter how dark it is.
     Names: 1
     Branch: []
@@ -26335,6 +27213,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I bet you\u2019re really fun at parties, huh?"
     Names: 5
     Branch: []
@@ -26351,6 +27231,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Hey Casey is plenty of fun! They play chess with me when it gets slow at
       work!
     Names: 0
@@ -26368,6 +27250,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' So, moving on. When did you go to bed?'
     Names: 1
     Branch: []
@@ -26384,6 +27268,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We finished our game around 2:00 AM. I was super tired by then and fell
       asleep as soon as I got into my room.
     Names: 5
@@ -26401,6 +27287,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: So the last time you saw Josephine was at dinner?
     Names: 1
     Branch: []
@@ -26417,6 +27305,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yup. Weird to think that was the last time ever. It was the last time
       you saw her too, right? Though I guess you weren\u2019t really acquainted so
       not much has changed for you."
@@ -26435,6 +27325,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "It\u2019s true we weren\u2019t close friends like you are but when I did
       talk to her she seemed pleasant and people cared about her. Whether or not
       we were close doesn\u2019t change the fact her death is a tragedy that I hope
@@ -26454,6 +27346,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Aw, Casey.
     Names: 0
     Branch: []
@@ -26470,6 +27364,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Josie has always been thorough in her work. Seems it was no different when
       she hired a PI.
     Names: 5
@@ -26487,6 +27383,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -26558,6 +27456,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Well, she looks dead.
     Names: 0
     Branch: []
@@ -26574,6 +27474,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -26590,6 +27492,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "There\u2019s a lot of stab wounds, but the clothes aren\u2019t soaked
       with blood in all places"
     Names: 0
@@ -26607,6 +27511,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How do you think she died?
     Names: 1
     Branch: []
@@ -26623,6 +27529,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " Didn\u2019t you see all the stab wounds? Obviously, someone stabbed her.
       Several times too"
     Names: 0
@@ -26640,6 +27548,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -27173,8 +28083,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -28049,6 +28959,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -28067,6 +28979,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see you brought a printed photo of you and your kid. Could you tell me-
     Names: 1
     Branch: []
@@ -28083,6 +28997,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s Joe! He is the sweetest little boy you\u2019ll ever meet!
       Isn\u2019t he cute?"
     Names: 2
@@ -28100,6 +29016,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Uhhh\u2026"
     Names: 1
     Branch: []
@@ -28116,6 +29034,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "You don\u2019t have to say it, I know he is. Just seeing this picture
       makes me miss him so much!"
     Names: 2
@@ -28133,6 +29053,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "What\u2019s Joe short for?"
     Names: 1
     Branch: []
@@ -28149,6 +29071,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Since he\u2019s only 3."
     Names: 2
     Branch: []
@@ -28165,6 +29089,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "\u2026"
     Names: 1
     Branch: []
@@ -28181,6 +29107,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Feel free to laugh.
     Names: 2
     Branch: []
@@ -28197,6 +29125,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "There\u2019s no need."
     Names: 1
     Branch: []
@@ -28213,6 +29143,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t get it\u2026"
     Names: 0
     Branch: []
@@ -28229,6 +29161,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -28245,6 +29179,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -28261,6 +29197,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: September 9th of 2020! The happiest day of my life! The second was the
       day I married my wife. Oh this one time we got little Joseph a cake for his
       birthday, right? And he was so small he had never had cake before and-
@@ -28279,6 +29217,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I\u2019ve heard enough thank you. It\u2019s so annoying how people keep
       talking about their kids at work."
     Names: 1
@@ -28296,6 +29236,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 1
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -28768,6 +29710,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Oh that sucks, trains are cramped enough. It must be pretty uncomfortable
       to share such a tiny space. That stinks for them!
     Names: 0
@@ -28785,6 +29729,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yeah, it would be pretty tight. They must be pretty close.
     Names: 1
     Branch: []
@@ -28801,6 +29747,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -28941,28 +29889,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.size
-      value: 5
+      value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[0].photo
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e5d3c07f8bca3d46a2e8fade4c7da13, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].photo
       value: 
-      objectReference: {fileID: 21300000, guid: acc0dfc6735b6bc43a7d19a3010de21e, type: 3}
+      objectReference: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[2].photo
       value: 
-      objectReference: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+      objectReference: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[3].photo
       value: 
-      objectReference: {fileID: 21300000, guid: acc0dfc6735b6bc43a7d19a3010de21e, type: 3}
+      objectReference: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[4].photo
       value: 
-      objectReference: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+      objectReference: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].photo
       value: 
-      objectReference: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+      objectReference: {fileID: 21300000, guid: 3787cefa42a277f4e98eb85a9268861a, type: 3}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].photo
+      value: 
+      objectReference: {fileID: 21300000, guid: 972a3eb541bfb984cac696b330bc3c11, type: 3}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].photo
+      value: 
+      objectReference: {fileID: 21300000, guid: 5918997276b9f9b42aa7bd9150fd808d, type: 3}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].photo
+      value: 
+      objectReference: {fileID: 21300000, guid: a2318042027b92746a5fd3477fd3271b, type: 3}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].photo
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d9f31a2be2e1fc46b57dcf67176d282, type: 3}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].photo
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d9f31a2be2e1fc46b57dcf67176d282, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[0].content.Array.size
       value: 6
@@ -28985,6 +29957,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
@@ -29013,7 +30005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[0].content.Array.data[5]
-      value: 'Alex\nBrady\nDominic\n Hana '
+      value: 'Alex,\nBrady,\nDominic,\n Hana '
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[0]
@@ -29021,23 +30013,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[1]
-      value: 
+      value: A photo of Alex
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[2]
-      value: 
+      value: Alex is the CFO of Defiant Door Studios. He is a hardworking businessman
+        and a strong leader who likes connecting with others. His son is very important
+        to him.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[3]
-      value: 
+      value: 'He is obsessed with his son, Joseph, who was born September 9, 2020.
+        Alex has a significant amount of books in his room about taking over a company,
+        and is an avid gamer. '
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[4]
-      value: 
+      value: Potential Motive
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[5]
-      value: 
+      value: Climbing the Corporate Ladder
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[2].content.Array.data[0]
@@ -29071,23 +30067,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[3].content.Array.data[1]
-      value: 
+      value: A photo of Dominic
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[3].content.Array.data[2]
-      value: 
+      value: Dominic is the COO of Defiant Door Studios. He is a warm and friendly
+        person. He looks out for others in the company and is pleasant to be around.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[3].content.Array.data[3]
-      value: 
+      value: 'Dominic and Josephine are old friends from High School. He used to
+        date Hana until she started dating Josephine instead. He is into medicinal
+        plants and alternative medicine. '
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[3].content.Array.data[4]
-      value: 
+      value: Potential Motive
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[3].content.Array.data[5]
-      value: 
+      value: Jealousy
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[4].content.Array.data[0]
@@ -29113,33 +30112,167 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[4].content.Array.data[5]
-      value: 'Financial Gainna '
+      value: Financial Gain
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[0]
-      value: 
+      value: "Josephine\u2019s Body"
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[1]
-      value: A photo of Hana
+      value: "Brady\u2019s prized knife"
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[2]
-      value: Hana is the quiet and introverted wife of Josephine. She is respectful
-        and values her self-preservation.  She and Josephine share a room.
+      value: 'Josephine was found Monday Morning murdered in her room. She was discovered
+        sitting on a chair in a pool of blood. Rigor Mortis had started to set in
+        with clotting. '
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[3]
-      value: 'On Sunday Night, she fought with Josephine and spent the night sleeping
-        in the lounge instead. She was visibly shaken up by this experience '
+      value: This indicates she was dead for several hours. She was stabbed several
+        times, but blood was clotting before she was stabbed. Was stabbing the cause
+        of death or something else?
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[4]
-      value: Potential Motive
+      value: Potential Suspects
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[5]
-      value: 'Financial Gainna '
+      value: 'Alex, Brady, Dominic, Hana '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.data[0]
+      value: Tea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.data[1]
+      value: Teacup found at the crime scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.data[2]
+      value: "Someone had tea with Josephine the previous night and left the teacup
+        here. They must have gotten it from the train\u2019s bar. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.data[3]
+      value: An empty vial was found in the bar. Perhaps the two are connected?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.data[4]
+      value: Potential Suspects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[6].content.Array.data[5]
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.data[0]
+      value: CEO Books
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.data[1]
+      value: Books about Leadership
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.data[2]
+      value: In addition to the CEO Card, Alex has numerous books in his room relating
+        to taking over a company, becoming a stronger leader, and climbing the corporate
+        ladder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.data[3]
+      value: Alex said he brought them so he can become a more responsible leader.
+        But why have books on taking over a company and becoming a CEO if the goal
+        is simply to become a better leader?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.data[4]
+      value: Potential Suspects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[7].content.Array.data[5]
+      value: 'Alex  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.data[0]
+      value: Knife
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.data[1]
+      value: "Brady\u2019s prized knife"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.data[2]
+      value: "This knife was missing from Brady\u2019s knife collection. It was kept
+        in a locked box in his room with the key around his neck. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.data[3]
+      value: "Brady claims it was kept separate because it\u2019s his favorite knife
+        and he prefers to keep it secure, but is there a more sinister reason?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.data[4]
+      value: Potential Suspects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[8].content.Array.data[5]
+      value: Brady
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.data[0]
+      value: Plant Books
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.data[1]
+      value: Books about Toxicology
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.data[2]
+      value: 'Dominic has several books in his room relating to poisonous plants
+        and animals, as well as books relating to plants as a whole. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.data[3]
+      value: I asked him about it and learned he is into herbal-based medicine and
+        home remedies. Is he telling the truth or disguising something more sinister?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.data[4]
+      value: Potential Suspects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[9].content.Array.data[5]
+      value: Dominic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.data[0]
+      value: Will
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.data[1]
+      value: "Josephine\u2019s Last Will and Testament  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.data[2]
+      value: 'Josephine brought her will with her onto the train. It leaves all of
+        her money and possessions in the care of Hana, as well as declaring Alex
+        the new owner of Defiant Door Studios. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.data[3]
+      value: A strange object to bring onto a train. Perhaps she suspected she would
+        die and brought it as insurance?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.data[4]
+      value: Potential Suspects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: pageContent.Array.data[10].content.Array.data[5]
+      value: Hana
       objectReference: {fileID: 0}
     - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_RootOrder
@@ -29699,8 +30832,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30307,6 +31440,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -30458,6 +31593,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -30870,6 +32007,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -31226,6 +32365,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ...
     Names: 3
     Branch:
@@ -31244,6 +32385,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -31261,6 +32404,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Oh that was my junior year of college. I was hanging out with Josie and
       Dominic that day.
     Names: 3
@@ -31282,6 +32427,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Were you and Dominic close at the time?
     Names: 1
     Branch: []
@@ -31298,6 +32445,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
       like guys so I broke it off. I feel like he was upset since our relationship
       hasn\u2019t really been the same since."
@@ -31316,6 +32465,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Were you and Josephine together yet?
     Names: 1
     Branch: []
@@ -31332,6 +32483,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "No. We weren\u2019t super close during school but we kept in contact after.
       That\u2019s also when we started dating. We just kept getting closer after
       that."
@@ -31350,6 +32503,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I see. But you were all getting along recently?
     Names: 1
     Branch: []
@@ -31366,6 +32521,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
       but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
@@ -31383,6 +32540,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
@@ -31399,6 +32558,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 1
+    pageInfoToReveal: 3
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -31672,8 +32833,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387584039
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31796,6 +32957,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -32015,6 +33178,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -32302,6 +33467,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I don\u2019t think they are the same person."
     Names: 1
     Branch: []
@@ -32318,6 +33485,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 1
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Maybe not but I think Brady is a good name for a good person.
     Names: 0
     Branch: []
@@ -32334,6 +33503,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -32350,6 +33521,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -32831,6 +34004,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -33074,6 +34249,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -33353,6 +34530,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -33369,6 +34548,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -33385,6 +34566,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -33401,6 +34584,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -33417,6 +34602,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -33433,6 +34620,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -33450,6 +34639,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -33467,6 +34658,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: Yes
     Names: 0
     Branch: []
@@ -33483,6 +34676,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -33500,6 +34695,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -33518,6 +34715,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -33536,6 +34735,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -33553,6 +34754,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -33570,6 +34773,8 @@ MonoBehaviour:
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0

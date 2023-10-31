@@ -20,4 +20,6 @@ public class DialogueMessage
     public bool conditionForTutorialProgression;
     public bool updatesTimeline;
     public int timelineEventNum;
+    public bool revealInfoNotebook;
+    public int pageInfoToReveal;
 }

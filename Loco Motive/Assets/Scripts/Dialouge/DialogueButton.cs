@@ -212,6 +212,12 @@ public class DialogueButton : MonoBehaviour
                     
                     DC.currentInterrogation.currCounter++;
 
+                    if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].revealInfoNotebook)
+                    {
+                        NotebookManager nm = FindObjectOfType<NotebookManager>();
+                        nm.RevealComplexInformation(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].pageInfoToReveal);
+                    }
+
                     if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
                     {
                         string s = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem.ToString();

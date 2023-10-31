@@ -9,6 +9,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class NotebookManager : MonoBehaviour
 {
@@ -71,6 +72,13 @@ public class NotebookManager : MonoBehaviour
         content[4] = subHeader;
         content[5] = bodyText3;
 
+        if(SceneManager.GetActiveScene().name == "MainScene")
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                RevealInformation(i);
+            }
+        }
 
     }
 
@@ -228,6 +236,15 @@ public class NotebookManager : MonoBehaviour
     public void RevealComplexInformation(int pageNumber)
     {
         ncm.AdvancedInformationVisible(pageNumber);
+    }
+
+    /// <summary>
+    /// Calls revealing all information for a page
+    /// </summary>
+    /// <param name="pageNumber"></param>
+    public void RevealInformation(int pageNumber)
+    {
+        ncm.BasicInformationVisible(pageNumber);
     }
 
     /// <summary>
