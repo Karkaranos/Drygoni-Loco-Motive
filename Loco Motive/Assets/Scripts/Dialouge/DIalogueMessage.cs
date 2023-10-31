@@ -18,4 +18,6 @@ public class DialogueMessage
     public bool AddInventoryItem;
     public string InventoryItem;
     public bool conditionForTutorialProgression;
+    public bool updatesTimeline;
+    public int timelineEventNum;
 }

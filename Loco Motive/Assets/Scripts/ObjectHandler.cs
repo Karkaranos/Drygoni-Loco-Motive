@@ -25,6 +25,8 @@ public class ObjectHandler : MonoBehaviour
     public GameObject largeViewObj;
     public bool isTrain;
     public Sprite largeViewSprite;
+    public bool updatesTimeline;
+    public int timelineEventNum;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,10 @@ public class ObjectHandler : MonoBehaviour
                 nm.iconIsEnabled = true;
                 nm.notebookIcon.SetActive(true);
             }
+        }
+        if (updatesNotebook == true)
+        {
+            ncm.RevealEvent(timelineEventNum);
         }
         if (!isTrain)
         {
