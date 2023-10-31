@@ -100,6 +100,8 @@ public class ClickController : MonoBehaviour
         }
 
         uibm.Resume();
+
+        MapRooms[arrLength].GetComponent<SpriteRenderer>().color = Color.clear;
     }
 
     private void OnDestroy()
@@ -149,57 +151,57 @@ public class ClickController : MonoBehaviour
         currPos = mPos.ReadValue<Vector2>();
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(currPos), Vector2.zero);
 
-        if (hit.collider != null && dc.isTalking == false && 
-            hit.collider.gameObject.tag != "Map")
-        {
-            if (isHighlighted == false)
-            {
-                HighlightedObject = hit.collider.gameObject;
-                originalColor = HighlightedObject.GetComponent<SpriteRenderer>().color;
-                HighlightedObject.GetComponent<SpriteRenderer>().color = Color.white;
-                isHighlighted = true;
-            }
-        }
-        else if (hit.collider != null && hit.collider.gameObject.tag == "Map")
-        {
-            if (!isHighlighted)
-            {
-                HighlightedObject = hit.collider.gameObject;
-                //If the current room is being hovered over, set the original color to blue
-                if (HighlightedObject == MapRooms[currentRoom])
-                {
-                    originalColor = Color.blue;
-                }
-                //Otherwise set the original color to white
-                else
-                {
-                    originalColor = Color.white;
-                }
-                HighlightedObject.GetComponent<SpriteRenderer>().color = Color.green;
-                isHighlighted = true;
-            }
-        }
+        //if (hit.collider != null && dc.isTalking == false && 
+        //    hit.collider.gameObject.tag != "Map")
+        //{
+        //    if (isHighlighted == false)
+        //    {
+        //        HighlightedObject = hit.collider.gameObject;
+        //        originalColor = HighlightedObject.GetComponent<SpriteRenderer>().color;
+        //        HighlightedObject.GetComponent<SpriteRenderer>().color = Color.white;
+        //        isHighlighted = true;
+        //    }
+        //}
+        //else if (hit.collider != null && hit.collider.gameObject.tag == "Map")
+        //{
+        //    if (!isHighlighted)
+        //    {
+        //        HighlightedObject = hit.collider.gameObject;
+        //        //If the current room is being hovered over, set the original color to blue
+        //        if (HighlightedObject == MapRooms[currentRoom])
+        //        {
+        //            originalColor = Color.blue;
+        //        }
+        //        //Otherwise set the original color to white
+        //        else
+        //        {
+        //            originalColor = Color.white;
+        //        }
+        //        HighlightedObject.GetComponent<SpriteRenderer>().color = Color.green;
+        //        isHighlighted = true;
+        //    }
+        //}
 
-        else if (isHighlighted == true)
-        {
-            if(hit.collider != null && hit.collider.gameObject.tag == "Map")
-            {
-                if (HighlightedObject == MapRooms[currentRoom])
-                {
-                    originalColor = Color.blue;
-                }
-                //Otherwise set the original color to white
-                else
-                {
-                    originalColor = Color.white;
-                }
-            }
-            HighlightedObject.GetComponent<SpriteRenderer>().color = originalColor;
-            isHighlighted = false;
+        //else if (isHighlighted == true)
+        //{
+        //    if(hit.collider != null && hit.collider.gameObject.tag == "Map")
+        //    {
+        //        if (HighlightedObject == MapRooms[currentRoom])
+        //        {
+        //            originalColor = Color.blue;
+        //        }
+        //        //Otherwise set the original color to white
+        //        else
+        //        {
+        //            originalColor = Color.white;
+        //        }
+        //    }
+        //    HighlightedObject.GetComponent<SpriteRenderer>().color = originalColor;
+        //    isHighlighted = false;
 
 
 
-        }
+        //}
 
     }
 
@@ -242,7 +244,7 @@ public class ClickController : MonoBehaviour
                 arrLength = 0;
                 while (arrLength < MapRooms.Length)
                 {
-                    MapRooms[arrLength].GetComponent<SpriteRenderer>().color = Color.white;
+                    MapRooms[arrLength].GetComponent<SpriteRenderer>().color = Color.clear;
                     arrLength++;
                 }
                 int roomNum = hit.collider.gameObject.GetComponent<RoomMove>().connectedRoom.roomNum;
