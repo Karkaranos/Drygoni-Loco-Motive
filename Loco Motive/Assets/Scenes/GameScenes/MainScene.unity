@@ -1903,6 +1903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129144439}
   - component: {fileID: 129144440}
+  - component: {fileID: 129144441}
   m_Layer: 0
   m_Name: placeholder_collegephoto
   m_TagString: Untagged
@@ -1977,6 +1978,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &129144441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129144438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2551202155e5b4caa03074c9c32e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePickedUp: 0
+  updatesNotebook: 0
+  itemID: 
+  pageNumber: 0
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
+  updatesTimeline: 0
+  timelineEventNum: 0
+  CharacterOn:
+  - {fileID: 1109416240}
+  - {fileID: 1919062717}
+  CharacterOff:
+  - {fileID: 1924408558}
+  - {fileID: 1091249266}
 --- !u!1 &136564931
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,7 +8964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &590738572
 Transform:
   m_ObjectHideFlags: 0
@@ -9307,7 +9338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &640125281
 Transform:
   m_ObjectHideFlags: 0
@@ -19960,7 +19991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1109416241
 Transform:
   m_ObjectHideFlags: 0
@@ -30156,6 +30187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1787382600}
   - component: {fileID: 1787382601}
+  - component: {fileID: 1787382602}
   m_Layer: 0
   m_Name: Placeholder_ChildPhoto
   m_TagString: Untagged
@@ -30230,6 +30262,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1787382602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787382599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2551202155e5b4caa03074c9c32e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePickedUp: 0
+  updatesNotebook: 0
+  itemID: 
+  pageNumber: 0
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
+  updatesTimeline: 0
+  timelineEventNum: 0
+  CharacterOn:
+  - {fileID: 2039306032}
+  CharacterOff:
+  - {fileID: 640125280}
 --- !u!1 &1792878596
 GameObject:
   m_ObjectHideFlags: 0
@@ -30393,7 +30453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1793143537
 Transform:
   m_ObjectHideFlags: 0
@@ -30956,7 +31016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1844464235
 Transform:
   m_ObjectHideFlags: 0
@@ -33991,6 +34051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126120181}
   - component: {fileID: 2126120182}
+  - component: {fileID: 2126120183}
   m_Layer: 0
   m_Name: Placeholder_NOTpoisonbookstheyrebusiness
   m_TagString: Untagged
@@ -34065,6 +34126,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2126120183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126120180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2551202155e5b4caa03074c9c32e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePickedUp: 0
+  updatesNotebook: 0
+  itemID: 
+  pageNumber: 0
+  updatesUI: 0
+  scriptToUpdate: 
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
+  updatesTimeline: 0
+  timelineEventNum: 0
+  CharacterOn:
+  - {fileID: 1793143536}
+  CharacterOff:
+  - {fileID: 2039306032}
 --- !u!1 &2137844749
 GameObject:
   m_ObjectHideFlags: 0
