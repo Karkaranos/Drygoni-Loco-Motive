@@ -5848,7 +5848,7 @@ GameObject:
   - component: {fileID: 590738573}
   - component: {fileID: 590738576}
   m_Layer: 0
-  m_Name: Hana(Truth) Full
+  m_Name: Hana Full
   m_TagString: Hunter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13729,7 +13729,96 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Can you recount what you were doing last night?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: After dinner I was in the room. Josie came later and both Alex and Brady
+      came in to talk to her about business.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: When Josephine came in did she have a drink?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
+      met with the others either."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: I see, please continue.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: I was reading in the bed. After they all finished Josie and I were talking
+      together about the trip. We ended up getting upset with each other since we
+      both thought the other had taken care of everything in the house before we
+      left. I ended up stepping out so we could both calm down for a bit.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13741,17 +13830,108 @@ MonoBehaviour:
   - Text: ...
     Names: 3
     Branch:
-    - choiceText: Where actually were you?
+    - choiceText: Testimony
       nextDialogue: 2
     - choiceText: Relation to victim
-      nextDialogue: 9
+      nextDialogue: 26
     - choiceText: Anything strange?
+      nextDialogue: 30
+    - choiceText: College Photo
+      nextDialogue: 36
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: What time was this?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
+      a few neighbors to make sure our house was taken care of.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Did you see anyone while you were in the lounge?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
+      was having trouble sleeping. I saw Bradey a little bit later. It sounded like
+      he heard us fighting and scolded me for being loud.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: And what time was that?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: It was probably 11:20.
+    Names: 3
+    Branch:
+    - choiceText: Can you tell me more about what he said?
       nextDialogue: 14
-    - choiceText: Any Ideas?
-      nextDialogue: 21
+    - choiceText: Can you tell me more about what he looked like?
+      nextDialogue: 16
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13760,13 +13940,12 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "Brady said that you and Josephine weren\u2019t getting along last night,
-      what actually happened? "
+  - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13775,13 +13954,15 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "I\u2019m sorry, you\u2019re right. I just didn\u2019t want you to suspect
-      me."
+  - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
+      to relax and that\u2019s not possible with you yelling!\u201D And I tried to
+      apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
+      happen again and he left."
     Names: 3
     Branch: []
-    NextTextOverride: 0
+    NextTextOverride: 22
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13790,12 +13971,12 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: You only look more suspicious when you lie
+  - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13804,14 +13985,15 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "Right, I\u2019ll tell you the truth. We did fight but it wasn\u2019t anything
-      big, we just both thought the other person had taken care of everything back
-      home before we left."
+  - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
+      cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
+      too. OH! His hair was wet! I thought it was weird but it makes sense because
+      there\u2019s a shower on the train."
     Names: 3
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13820,14 +14002,68 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "After that I left the room and didn\u2019t go back because Josie usually
-      needs a while to cool off. I slept in the lounge last night and when I went
-      to apologize in the morning\u2026"
+  - Text: Wait how does a shower on a train even work?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "I\u2019ll explain later, we\u2019re getting off track."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Ha, nice one.
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
+    Names: 1
+    Branch: []
+    NextTextOverride: 22
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Was that helpful?
     Names: 3
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13836,12 +14072,28 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: " I can\u2019t believe our last moments together were spent like that\u2026 "
+  - Text: Yes. What happened next?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
+      I knocked on the door and assumed she was mad or asleep so I just went back
+      into the lounge. I accidentally fell asleep soon after.'
     Names: 3
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13850,13 +14102,12 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: Well that story makes a lot of sense with the other evidence we found.
-      Thank you for telling us the truth. We will bring justice for Josephine.
+  - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
     NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13870,7 +14121,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13885,7 +14136,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13899,7 +14150,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -13912,23 +14163,9 @@ MonoBehaviour:
       now\u2026"
     Names: 3
     Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 003bf00687002dc49977efba7d69b5f7, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-  - Text: ...
-    Names: 1
-    Branch: []
     NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -14012,8 +14249,8 @@ MonoBehaviour:
       you to have it."
     Names: 3
     Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
+    NextTextOverride: 1
+    EndDialogue: 1
     Portrait: {fileID: 21300000, guid: 3c58aa4118d43934f9c25444578519ad, type: 3}
     hasRead: 0
     correctAnswer: 0
@@ -14021,28 +14258,15 @@ MonoBehaviour:
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
-    InventoryItem: 
+    InventoryItem: Piece
     conditionForTutorialProgression: 0
-  - Text: Thank You
-    Names: 1
-    Branch: []
-    NextTextOverride: 1
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 1
-    InventoryItem: Piece1
-    conditionForTutorialProgression: 0
-  - Text: Do you have any idea who did this? Did Josephine have any enemies?
+  - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
+      it?"
     Names: 1
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -14051,13 +14275,106 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "Well I\u2019m not sure about enemies but she and Brady didn\u2019t really
-      get along\u2026 Just between you and me, he kinda scares me."
+  - Text: Oh that was my junior year of college. I was hanging out with Josie and
+      Dominic that day.
+    Names: 3
+    Branch:
+    - choiceText: Were you and Dominic Close?
+      nextDialogue: 38
+    - choiceText: Were you and Josephine Close?
+      nextDialogue: 40
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Were you and Dominic close at the time?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
+      like guys so I broke it off. I feel like he was upset since our relationship
+      hasn\u2019t really been the same since."
+    Names: 3
+    Branch: []
+    NextTextOverride: 42
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: Were you and Josephine together yet?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "No. We weren\u2019t super close during school but we kept in contact after.
+      That\u2019s also when we started dating. We just kept getting closer after
+      that."
+    Names: 3
+    Branch: []
+    NextTextOverride: 42
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: I see. But you were all getting along recently?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+  - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
+      but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -14066,56 +14383,12 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-  - Text: "Why\u2019s that?"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-  - Text: "Well, he really likes\u2026 knives"
-    Names: 3
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-  - Text: Knives, huh? Good to know
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn:
-    - {fileID: 0}
-    CharacterOff:
-    - {fileID: 0}
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-  - Text: Thank you for the help
+  - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
     NextTextOverride: 1
     EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
