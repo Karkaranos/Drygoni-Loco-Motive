@@ -21330,9 +21330,9 @@ MonoBehaviour:
   digitOne: 0
   digitTwo: 0
   digitThree: 0
-  correctDigitOne: 3
-  correctDigitTwo: 5
-  correctDigitThree: 4
+  correctDigitOne: 0
+  correctDigitTwo: 0
+  correctDigitThree: 0
   OpenSafe: {fileID: 1522555020}
   ClosedSafe: {fileID: 986837040}
   ButtonOne: {fileID: 1050517052}
