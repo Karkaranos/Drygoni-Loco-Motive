@@ -44,7 +44,6 @@ public class DialogueButton : MonoBehaviour
         
         else if (DC.interrogating == true && DC.accusing == false)
         {
-            Debug.Log("Dialogue Branched");
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count != 0)
             {
                 for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count; i++)
@@ -84,15 +83,6 @@ public class DialogueButton : MonoBehaviour
                 DC.StopDialogue();
             }
         }
-
-
-        //This never runs- it only runs this entire function when the dialogue button option is clicked
-        /*if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
-        {
-            int i = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem;
-            Debug.Log("i = " + i);
-            IB.AddItemToInventory(i);
-        }*/
     }
 
     //Progress dialogue when hitting continue button
@@ -142,7 +132,6 @@ public class DialogueButton : MonoBehaviour
 
                 if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].updatesTimeline == true)
                 {
-                    Debug.Log("UPDATE Timeline");
                     NCM.RevealEvent(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].timelineEventNum);
                 }
             }
@@ -158,7 +147,6 @@ public class DialogueButton : MonoBehaviour
         {
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].updatesTimeline == true)
             {
-                Debug.Log("UPDATE Timeline");
                 NCM.RevealEvent(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].timelineEventNum);
             }
             if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].CharacterOn.Count != 0)

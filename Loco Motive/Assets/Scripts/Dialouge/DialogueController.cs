@@ -131,7 +131,6 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         ExitButton.SetActive(true);
-        Debug.Log(isTalking);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
