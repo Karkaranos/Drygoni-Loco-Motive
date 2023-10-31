@@ -124,14 +124,12 @@ public class DialogueController : MonoBehaviour
     /// </summary>
     public void StartDialogue()
     {
-        Debug.Log("This works");
         isTalking = true;
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         ExitButton.SetActive(true);
-        Debug.Log(isTalking);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
