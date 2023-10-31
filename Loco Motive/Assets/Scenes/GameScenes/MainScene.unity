@@ -997,6 +997,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88567331}
   m_CullTransparentMesh: 1
+--- !u!1 &92356751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92356752}
+  m_Layer: 0
+  m_Name: Dominic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &92356752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92356751}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.54999924, y: 0.25, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1924408559}
+  - {fileID: 1919062718}
+  - {fileID: 819450465}
+  m_Father: {fileID: 378678586}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97968997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4152,13 +4186,13 @@ Transform:
   m_Children:
   - {fileID: 458293379}
   - {fileID: 737432524}
-  - {fileID: 590738572}
+  - {fileID: 1542904475}
   - {fileID: 1312352928}
+  - {fileID: 1248851169}
   - {fileID: 1829183101}
   - {fileID: 1344404024}
+  - {fileID: 92356752}
   - {fileID: 438098457}
-  - {fileID: 1248851169}
-  - {fileID: 819450465}
   m_Father: {fileID: 2059116426}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6833,12 +6867,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590738571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.04, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1008852892}
-  m_Father: {fileID: 378678586}
+  m_Father: {fileID: 1542904475}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &590738573
@@ -7179,6 +7213,243 @@ Transform:
   m_Father: {fileID: 2059116426}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &648682604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 648682605}
+  - component: {fileID: 648682606}
+  m_Layer: 0
+  m_Name: InterrogationThingamajigs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &648682605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648682604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4903815, y: -0.9333379, z: 0.04193196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1919062718}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648682606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648682604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: I have a few things to ask if you don't mind.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Ask away!
+    Names: 5
+    Branch:
+    - choiceText: Photo
+      nextDialogue: 2
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I found this photo in your room, could you tell me about it?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Sure. Josie, Hana, and I all met at university. Our friend group was pretty
+      close back then and that picture was taken one day when we all went out to
+      lunch.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "You and Hana look closer in this picture than you are now. You\u2019ve
+      barely talked together."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "That\u2019s because we were dating at the time."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 235cadc06dd7a7e48b472aa939d52ccb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: 'Oh really? How was the relationship? '
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: ' It was good for a while but she ended up breaking it off. She came out
+      and told me she would rather be with a girl.'
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: And did she start seeing Josephine right after?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "No they didn\u2019t get together till after graduation but they had always
+      been close leading up to it."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "I see. Even though that\u2019s all in the past now it\u2019s still good
+      for me to keep in mind."
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+  currCounter: 0
+  maxCounter: 1
 --- !u!1 &659377424
 GameObject:
   m_ObjectHideFlags: 0
@@ -13405,7 +13676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &819450465
 Transform:
   m_ObjectHideFlags: 0
@@ -13414,12 +13685,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819450464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 0.25, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 341632465}
-  m_Father: {fileID: 378678586}
+  m_Father: {fileID: 92356752}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &819450466
@@ -15671,7 +15942,7 @@ MonoBehaviour:
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
   currCounter: 0
-  maxCounter: 4
+  maxCounter: 3
 --- !u!1 &1032534389
 GameObject:
   m_ObjectHideFlags: 0
@@ -16535,6 +16806,173 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1091249266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091249267}
+  - component: {fileID: 1091249270}
+  - component: {fileID: 1091249269}
+  - component: {fileID: 1091249268}
+  m_Layer: 0
+  m_Name: HanaPreI
+  m_TagString: Hunter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1091249267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091249266}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1308721158}
+  m_Father: {fileID: 1542904475}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1091249268
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091249266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.1477394, y: -2.3539495}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2814102, y: 3.9889374}
+  m_EdgeRadius: 0
+--- !u!114 &1091249269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091249266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: Did you find anything?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 1
+  canAccuse: 0
+  thisInterrogation: {fileID: 1308721159}
+  thisAccusation: {fileID: 0}
+--- !u!212 &1091249270
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091249266}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7b8ee7006f06e9f4583b3017012a49ae, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1094013968
 GameObject:
   m_ObjectHideFlags: 0
@@ -16614,6 +17052,173 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.87, y: 6.11}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1109416240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1109416241}
+  - component: {fileID: 1109416244}
+  - component: {fileID: 1109416243}
+  - component: {fileID: 1109416242}
+  m_Layer: 0
+  m_Name: HanaPhoto
+  m_TagString: Hunter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1109416241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109416240}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1894601049}
+  m_Father: {fileID: 1542904475}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1109416242
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109416240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.1477394, y: -2.3539495}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2814102, y: 3.9889374}
+  m_EdgeRadius: 0
+--- !u!114 &1109416243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109416240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: Did you find anything?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 1
+  canAccuse: 0
+  thisInterrogation: {fileID: 1894601050}
+  thisAccusation: {fileID: 0}
+--- !u!212 &1109416244
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109416240}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7b8ee7006f06e9f4583b3017012a49ae, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -20093,6 +20698,567 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1308721157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308721158}
+  - component: {fileID: 1308721159}
+  m_Layer: 0
+  m_Name: InterrogationThingamajigs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1308721158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308721157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4903815, y: -0.9333379, z: 0.04193196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1091249267}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308721159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308721157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: I have a few Questions and I would appreciate your cooporation
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: ...
+    Names: 3
+    Branch:
+    - choiceText: Testimony
+      nextDialogue: 2
+    - choiceText: Relation to victim
+      nextDialogue: 26
+    - choiceText: Anything strange?
+      nextDialogue: 30
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Can you recount what you were doing last night?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: After dinner I was in the room. Josie came later and both Alex and Brady
+      came in to talk to her about business.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: When Josephine came in did she have a drink?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
+      met with the others either."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I see, please continue.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I was reading in the bed. After they all finished Josie and I were talking
+      together about the trip. We ended up getting upset with each other since we
+      both thought the other had taken care of everything in the house before we
+      left. I ended up stepping out so we could both calm down for a bit.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: What time was this?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
+      a few neighbors to make sure our house was taken care of.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Did you see anyone while you were in the lounge?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
+      was having trouble sleeping. I saw Bradey a little bit later. It sounded like
+      he heard us fighting and scolded me for being loud.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: And what time was that?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: It was probably 11:20.
+    Names: 3
+    Branch:
+    - choiceText: Can you tell me more about what he said?
+      nextDialogue: 14
+    - choiceText: Can you tell me more about what he looked like?
+      nextDialogue: 16
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Can you go into more detail about what Brady was saying?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
+      to relax and that\u2019s not possible with you yelling!\u201D And I tried to
+      apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
+      happen again and he left."
+    Names: 3
+    Branch: []
+    NextTextOverride: 22
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Can you tell me about Brady\u2019s appearance?"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
+      cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
+      too. OH! His hair was wet! I thought it was weird but it makes sense because
+      there\u2019s a shower on the train."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Wait how does a shower on a train even work?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "I\u2019ll explain later, we\u2019re getting off track."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Ha, nice one.
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
+    Names: 1
+    Branch: []
+    NextTextOverride: 22
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Was that helpful?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Yes. What happened next?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
+      I knocked on the door and assumed she was mad or asleep so I just went back
+      into the lounge. I accidentally fell asleep soon after.'
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: That all makes sense, thank you.
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: What was your relation to Mrs. Josephine?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "We\u2019re married. She brought me with her to keep her company so neither
+      of us would get lonely."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: So you two were close?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
+      now\u2026"
+    Names: 3
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+  currCounter: 0
+  maxCounter: 2
 --- !u!1 &1312352927
 GameObject:
   m_ObjectHideFlags: 0
@@ -22051,6 +23217,656 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1438855441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438855442}
+  - component: {fileID: 1438855443}
+  m_Layer: 0
+  m_Name: InterrogationThingamajigs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1438855442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438855441}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4903815, y: -0.9333379, z: 0.04193196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1924408559}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438855443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438855441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: I have a few things to ask if you don't mind.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Ask away!
+    Names: 5
+    Branch:
+    - choiceText: Relation to victim
+      nextDialogue: 2
+    - choiceText: Testimony
+      nextDialogue: 14
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: What would you say your relationship to the victim was?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "We\u2019re friends and coworkers."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: How long have you known each other?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Since college. When Josie started her company she invited me on board.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 235cadc06dd7a7e48b472aa939d52ccb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: So you were close?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "We were but not so much after graduation, not until we started working
+      together again. It\u2019s awful what happened to her, isn\u2019t it?"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Yes, it\u2019s upsetting that some people can be so cruel."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Do you have any idea who could have done it?
+    Names: 5
+    Branch:
+    - choiceText: No
+      nextDialogue: 10
+    - choiceText: Yes
+      nextDialogue: 11
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "I don\u2019t. I still need to gather more clues."
+    Names: 1
+    Branch: []
+    NextTextOverride: 12
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I do but I don't want to make any accusations until I finish investigating.
+    Names: 1
+    Branch: []
+    NextTextOverride: 12
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Alright, well keep me posted ok? Maybe I can help you out too.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Yeah, sure.
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Can you tell me what you were doing the night of the crime?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Alex and I were playing video games almost all night.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 235cadc06dd7a7e48b472aa939d52ccb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Was there any point when you two were separated?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Yeah we each left to get a drink from the bar.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Did you have any alcohol?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Oh no, just wine with dinner. Alex and I both got some caffeine so we could
+      stay up and finish our game.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 235cadc06dd7a7e48b472aa939d52ccb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: And how long were each of you gone?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: " I left first and wasn\u2019t gone for too long. Alex left a couple of
+      hours later and was back in only a few minutes."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Did you see anyone other than Alex after dinner?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Yeah Hana was in the lounge when I went to the bar. We didn\u2019t talk
+      much other than saying \u201CGood night\u201D to each other. I feel so bad
+      for her. Losing Josephine is hard on all of us but for her especially."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Yes, death comes for us all eventually.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "That\u2019s pretty dark don\u2019t you think?"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: We need to face the truth no matter how dark it is.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "I bet you\u2019re really fun at parties, huh?"
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Hey Casey is plenty of fun! They play chess with me when it gets slow at
+      work!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 4e133afbbed7a8742b649715b50426e0, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: ' So, moving on. When did you go to bed?'
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: We finished our game around 2:00 AM. I was super tired by then and fell
+      asleep as soon as I got into my room.
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: So the last time you saw Josephine was at dinner?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Yup. Weird to think that was the last time ever. It was the last time
+      you saw her too, right? Though I guess you weren\u2019t really acquainted so
+      not much has changed for you."
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "It\u2019s true we weren\u2019t close friends like you are but when I did
+      talk to her she seemed pleasant and people cared about her. Whether or not
+      we were close doesn\u2019t change the fact her death is a tragedy that I hope
+      that I can help people move past."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Aw, Casey.
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Josie has always been thorough in her work. Seems it was no different when
+      she hired a PI.
+    Names: 5
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+  currCounter: 0
+  maxCounter: 2
 --- !u!1 &1463173129
 GameObject:
   m_ObjectHideFlags: 0
@@ -22885,6 +24701,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1542904474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1542904475}
+  m_Layer: 0
+  m_Name: Hana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542904475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542904474}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.020000458, y: 0.04, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1091249267}
+  - {fileID: 1109416241}
+  - {fileID: 590738572}
+  m_Father: {fileID: 378678586}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543493766
 GameObject:
   m_ObjectHideFlags: 0
@@ -26685,6 +28535,248 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 506347356}
   canBeAccessed: 1
+--- !u!1 &1894601048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894601049}
+  - component: {fileID: 1894601050}
+  m_Layer: 0
+  m_Name: InterrogationThingamajigs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1894601049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894601048}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4903815, y: -0.9333379, z: 0.04193196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1109416241}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1894601050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894601048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e07be52e22e5ca4c8e3e2f59d1b8934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: I have a few Questions and I would appreciate your cooporation
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: ...
+    Names: 3
+    Branch:
+    - choiceText: College Photo
+      nextDialogue: 2
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
+      it?"
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Oh that was my junior year of college. I was hanging out with Josie and
+      Dominic that day.
+    Names: 3
+    Branch:
+    - choiceText: Were you and Dominic Close?
+      nextDialogue: 38
+    - choiceText: Were you and Josephine Close?
+      nextDialogue: 40
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Were you and Dominic close at the time?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
+      like guys so I broke it off. I feel like he was upset since our relationship
+      hasn\u2019t really been the same since."
+    Names: 3
+    Branch: []
+    NextTextOverride: 42
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: Were you and Josephine together yet?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "No. We weren\u2019t super close during school but we kept in contact after.
+      That\u2019s also when we started dating. We just kept getting closer after
+      that."
+    Names: 3
+    Branch: []
+    NextTextOverride: 42
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: I see. But you were all getting along recently?
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
+      but it wasn\u2019t ever a serious problem. All that drama is in the past now."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  - Text: "That\u2019s good to hear."
+    Names: 1
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 8e6d249435cfcf84889a5b8a9c764877, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+  currCounter: 0
+  maxCounter: 1
 --- !u!1 &1903220824
 GameObject:
   m_ObjectHideFlags: 0
@@ -26965,6 +29057,173 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1919062717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919062718}
+  - component: {fileID: 1919062721}
+  - component: {fileID: 1919062720}
+  - component: {fileID: 1919062719}
+  m_Layer: 0
+  m_Name: DominicPhoto
+  m_TagString: Hunter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1919062718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919062717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 648682605}
+  m_Father: {fileID: 92356752}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1919062719
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919062717}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -7.6113987, y: -1.9759053}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0852623, y: 5.031042}
+  m_EdgeRadius: 0
+--- !u!114 &1919062720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919062717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: So... how's it going?
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 1
+  canAccuse: 0
+  thisInterrogation: {fileID: 648682606}
+  thisAccusation: {fileID: 0}
+--- !u!212 &1919062721
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919062717}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 94e4d8d78efeae0478d62eb1f3888e72, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1920894807
 GameObject:
   m_ObjectHideFlags: 0
@@ -27013,6 +29272,173 @@ Transform:
   m_Father: {fileID: 2059116426}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1924408558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1924408559}
+  - component: {fileID: 1924408562}
+  - component: {fileID: 1924408561}
+  - component: {fileID: 1924408560}
+  m_Layer: 0
+  m_Name: DominicPreI
+  m_TagString: Hunter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1924408559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924408558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1438855442}
+  m_Father: {fileID: 92356752}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1924408560
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924408558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -7.6113987, y: -1.9759053}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0852623, y: 5.031042}
+  m_EdgeRadius: 0
+--- !u!114 &1924408561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924408558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: So... how's it going?
+    Names: 5
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+  dc: {fileID: 0}
+  canInterrogate: 1
+  canAccuse: 0
+  thisInterrogation: {fileID: 1438855443}
+  thisAccusation: {fileID: 0}
+--- !u!212 &1924408562
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924408558}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2055395327
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 94e4d8d78efeae0478d62eb1f3888e72, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1963261023
 GameObject:
   m_ObjectHideFlags: 0
