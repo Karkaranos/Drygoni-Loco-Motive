@@ -48,6 +48,10 @@ public class DialogueController : MonoBehaviour
     public GameObject NotebookButton;
     public GameObject AccusationButton;
     public GameObject ExitButton;
+    public GameObject BranchOne;
+    public GameObject BranchTwo;
+    public GameObject BranchThree;
+    public GameObject BranchFour;
 
     public ClickController cc;
     public StoredDialogue sd;
@@ -120,14 +124,13 @@ public class DialogueController : MonoBehaviour
     /// </summary>
     public void StartDialogue()
     {
-        Debug.Log("This works");
+        //Debug.Log("This works");
         isTalking = true;
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
         ExitButton.SetActive(true);
-        Debug.Log(isTalking);
         if (opening == true)
         {
             DialogueScreen.SetActive(true);
@@ -142,6 +145,17 @@ public class DialogueController : MonoBehaviour
             //ButtonTextTwo.text = "No";
             //DialogueBox.text = "Have you ever been on a train before?";
             //SpeakerName.text = "Hunter";
+        }
+        else
+        {
+            DialogueScreen.SetActive(true);
+            ContinueButton.SetActive(false);
+            BranchButtons.SetActive(true);
+            InterrogateButton.SetActive(false);
+            currentDialogue.StartText();
+            InventoryButton.SetActive(false);
+            NotebookButton.SetActive(false);
+            ExitButton.SetActive(true);
         }
         //else if (numPadDialogue == true)
         //{
@@ -249,6 +263,23 @@ public class DialogueController : MonoBehaviour
                 return "???";
         }
     }
+
+    public void BranchOneClicked()
+    {
+        BranchOne.GetComponent<Image>().color = Color.cyan;
+    }
+    public void BranchTwoClicked()
+    {
+        BranchTwo.GetComponent<Image>().color = Color.cyan;
+    }
+    public void BranchThreeClicked()
+    {
+        BranchThree.GetComponent<Image>().color = Color.cyan;
+    }
+    public void BranchFourClicked()
+    {
+        BranchFour.GetComponent<Image>().color = Color.cyan;
+    }
     public void StopDialogue()
     {
         DialogueScreen.SetActive(false);
@@ -276,6 +307,11 @@ public class DialogueController : MonoBehaviour
         {
             lvc.SetActive(false);
         }
+        BranchOne.GetComponent<Image>().color = Color.white;
+        BranchTwo.GetComponent<Image>().color = Color.white;
+        BranchThree.GetComponent<Image>().color = Color.white;
+        BranchFour.GetComponent<Image>().color = Color.white;
+        opening = false;
     }
 
     public IEnumerator Speaking()

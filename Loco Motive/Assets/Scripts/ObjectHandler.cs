@@ -27,6 +27,8 @@ public class ObjectHandler : MonoBehaviour
     public Sprite largeViewSprite;
     public bool updatesTimeline;
     public int timelineEventNum;
+    public List<GameObject> CharacterOn;
+    public List<GameObject> CharacterOff;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,23 @@ public class ObjectHandler : MonoBehaviour
             ib.AddItemToInventory(itemID);
             LargeObjectView();
         }
+
+        if (CharacterOn.Count != 0)
+        {
+            for (int i = 0; i < CharacterOn.Count; i++)
+            {
+                CharacterOn[i].SetActive(true);
+            }
+        }
+
+        if (CharacterOff.Count != 0)
+        {
+            for (int i = 0; i < CharacterOff.Count; i++)
+            {
+                CharacterOff[i].SetActive(true);
+            }
+        }
+
         if (updatesNotebook)
         {
             ncm.BasicInformationVisible(pageNumber);
@@ -66,7 +85,7 @@ public class ObjectHandler : MonoBehaviour
                 nm.notebookIcon.SetActive(true);
             }
         }
-        if (updatesNotebook == true)
+        if (updatesTimeline == true)
         {
             ncm.RevealEvent(timelineEventNum);
         }
