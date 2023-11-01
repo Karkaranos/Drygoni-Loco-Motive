@@ -124,6 +124,7 @@ public class DialogueController : MonoBehaviour
     /// </summary>
     public void StartDialogue()
     {
+        //Debug.Log("This works");
         isTalking = true;
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
