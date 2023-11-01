@@ -3217,8 +3217,9 @@ MonoBehaviour:
   movementArrows: {fileID: 0}
   notebookIcon: {fileID: 0}
   itemText: {fileID: 0}
-  maxItems: 0
+  maxItems: 10
   visualUpdateNotification: {fileID: 6626460031930277773}
+  itemsCollected: 0
   inventorySpaces:
   - {fileID: 6276588427011595298}
   - {fileID: 5674845558443372835}
