@@ -69,8 +69,8 @@ public class ObjectHandler : MonoBehaviour
         if (updatesNotebook)
         {
             ncm.BasicInformationVisible(pageNumber);
-            nm.GetPageInformation();
-            ncm.AdvancedInformationVisible(pageNumber);
+            //nm.GetPageInformation();
+            //ncm.AdvancedInformationVisible(pageNumber);
             //LargeObjectView();
         }
         if (updatesUI)
