@@ -67,7 +67,11 @@ public class InventoryBehavior : MonoBehaviour
     {
         inventoryName = new String[inventorySize];
         accusation = GameObject.Find("Hunter(AccusationDl)");
-        accusation.SetActive(false);
+        if (accusation != null)
+        {
+            accusation.SetActive(false);
+        }
+        
 
         PopulateArrays();
 
