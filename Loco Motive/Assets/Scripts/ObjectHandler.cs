@@ -29,6 +29,7 @@ public class ObjectHandler : MonoBehaviour
     public int timelineEventNum;
     public List<GameObject> CharacterOn;
     public List<GameObject> CharacterOff;
+    public bool noDestroy;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,7 +71,7 @@ public class ObjectHandler : MonoBehaviour
             ncm.BasicInformationVisible(pageNumber);
             nm.GetPageInformation();
             ncm.AdvancedInformationVisible(pageNumber);
-            LargeObjectView();
+            //LargeObjectView();
         }
         if (updatesUI)
         {
@@ -91,7 +92,11 @@ public class ObjectHandler : MonoBehaviour
         }
         if (!isTrain)
         {
-            Destroy(gameObject);
+            if (!noDestroy)
+            {
+                Destroy(gameObject);
+            }
+
         }
         else
         {
