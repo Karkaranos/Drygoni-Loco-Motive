@@ -51,6 +51,7 @@ public class InventoryBehavior : MonoBehaviour
     private DialogueController dc;
     private AudioManager am;
     private NotebookManager nb;
+    private GameObject accusation;
 
 
     #endregion
@@ -65,6 +66,8 @@ public class InventoryBehavior : MonoBehaviour
     void Start()
     {
         inventoryName = new String[inventorySize];
+        accusation = GameObject.Find("Hunter(AccusationDl)");
+        accusation.SetActive(false);
 
         PopulateArrays();
 
@@ -244,6 +247,7 @@ public class InventoryBehavior : MonoBehaviour
         if(itemsCollected >= maxItems)
         {
             StartCoroutine(AllItemsCollected());
+            accusation.SetActive(true);
         }
 
     }
