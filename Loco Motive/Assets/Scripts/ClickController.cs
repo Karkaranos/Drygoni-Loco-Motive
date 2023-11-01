@@ -26,6 +26,7 @@ public class ClickController : MonoBehaviour
     public DialogueController dc;
     public InventoryBehavior ib;
     public NumberPadBehavior npb;
+    public NumberPadBehavior npb2;
 
     private Color originalColor;
     private GameObject HighlightedObject;

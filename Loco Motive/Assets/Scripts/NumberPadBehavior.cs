@@ -30,6 +30,8 @@ public class NumberPadBehavior : MonoBehaviour
     [SerializeField] private GameObject movementArrows;
     [SerializeField] private GameObject inventoryIcon;
     [SerializeField] private GameObject notebookIcon;
+    [SerializeField] private GameObject OpenLockbox;
+    [SerializeField] private GameObject ClosedLockbox;
 
     [Header("Put Sprites Here")]
     [SerializeField]
@@ -127,6 +129,9 @@ public class NumberPadBehavior : MonoBehaviour
                 numberPad.SetActive(false);
                 numberPadObject.SetActive(false);
                 numPadEvidence.SetActive(true);
+                OpenLockbox.SetActive(true);
+                ClosedLockbox.SetActive(false);
+                numberPadObject.SetActive(false);
             }
             //Otherwise reset the lock
             else
