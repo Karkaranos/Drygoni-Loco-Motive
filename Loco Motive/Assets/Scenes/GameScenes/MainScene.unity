@@ -1981,7 +1981,7 @@ MonoBehaviour:
   timelineEventNum: 0
   CharacterOn:
   - {fileID: 1919062717}
-  - {fileID: 1109416240}
+  - {fileID: 590738571}
   CharacterOff:
   - {fileID: 1091249266}
   - {fileID: 1924408558}
@@ -25811,8 +25811,6 @@ MonoBehaviour:
       nextDialogue: 2
     - choiceText: Relation to victim
       nextDialogue: 26
-    - choiceText: Anything strange?
-      nextDialogue: 30
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
