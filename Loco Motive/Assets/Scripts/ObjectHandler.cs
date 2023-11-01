@@ -47,7 +47,7 @@ public class ObjectHandler : MonoBehaviour
         if (canBePickedUp)
         {
             ib.AddItemToInventory(itemID);
-            LargeObjectView();
+            //LargeObjectView();
         }
 
         if (CharacterOn.Count != 0)

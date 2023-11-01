@@ -401,7 +401,6 @@ GameObject:
   - component: {fileID: 45556414}
   - component: {fileID: 45556413}
   - component: {fileID: 45556412}
-  - component: {fileID: 45556411}
   m_Layer: 0
   m_Name: HunterCaseyDoor
   m_TagString: OneShotText
@@ -424,158 +423,6 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &45556411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45556409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: 'Wow look, we have our own window! '
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "We really have to share this tiny room? There\u2019s only one bed\u2026"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: ' I call dibs! '
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: 'Now, now, as your superior, I will be making the executive decision that
-      this bed is mine. '
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "Hey, I have an idea! What if we take the pillows and use them to create
-      a wall so we don\u2019t wake each other during the night? You\u2019re small
-      so that\u2019ll work fine."
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "There isn\u2019t enough room on the bed for us both to fit with a pillow
-      wall in between. Plus, if we made a wall of pillows, there would not be any
-      for us to sleep on. Hunter, why don\u2019t you grab a couple of pillows and
-      a blanket, then take them and sleep on the couch? That way we can both have
-      our own spaces. "
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: Aww okay. (I always get stuck with the couch)
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c7a93f42ee1738244a47bc5f1913ec06, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 00000000010000000200000003000000040000000500000006000000
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
 --- !u!114 &45556412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
+  connectedRoom: {fileID: 1493883060}
   canBeAccessed: 1
 --- !u!61 &45556413
 BoxCollider2D:
@@ -798,7 +645,7 @@ GameObject:
   - component: {fileID: 61387463}
   - component: {fileID: 61387466}
   - component: {fileID: 61387465}
-  - component: {fileID: 61387464}
+  - component: {fileID: 61387467}
   m_Layer: 0
   m_Name: AlexDoor
   m_TagString: Untagged
@@ -821,79 +668,6 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61387464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61387462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: "The name says, \u201CAlexander\u201D. It\u2019s locked."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: Do you think he goes by Alex?
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "I don\u2019t know. Ask when you meet him."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
 --- !u!61 &61387465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -991,6 +765,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &61387467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61387462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedRoom: {fileID: 1920894808}
+  canBeAccessed: 1
 --- !u!1 &68326664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,7 +1969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePickedUp: 1
   updatesNotebook: 0
-  itemID: 
+  itemID: CollegePhoto
   pageNumber: 0
   updatesUI: 0
   scriptToUpdate: 
@@ -6246,7 +6034,7 @@ GameObject:
   - component: {fileID: 392002283}
   - component: {fileID: 392002286}
   - component: {fileID: 392002285}
-  - component: {fileID: 392002284}
+  - component: {fileID: 392002287}
   m_Layer: 0
   m_Name: CorporateLadderDoor
   m_TagString: Untagged
@@ -6269,116 +6057,6 @@ Transform:
   m_Father: {fileID: 2088726315}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &392002284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392002282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: "Huh? It says\u2026 \u201CCorporate Ladder\u201D?"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: " I hope they aren\u2019t going to cram everyone else in that room."
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "No way we\u2019d all fit. I can\u2019t imagine them buying a private train
-      with only 2 rooms."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "Yeah, that makes sense\u2026 Maybe it\u2019s ladder storage?"
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 33c06d56be8b127418e74c7a24d27d15, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: Looks like there are already mysteries. Too bad the door is locked.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: 7fb3d498a86377844be9227aaaae5d84, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
 --- !u!61 &392002285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6476,6 +6154,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &392002287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392002282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedRoom: {fileID: 506347356}
+  canBeAccessed: 1
 --- !u!1001 &393542771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6544,6 +6236,10 @@ PrefabInstance:
       propertyPath: itemText
       value: 
       objectReference: {fileID: 88567331}
+    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
+      propertyPath: maxItems
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: notebookIcon
       value: 
@@ -10375,7 +10071,6 @@ Transform:
   - {fileID: 61387463}
   - {fileID: 1324114792}
   - {fileID: 1979004299}
-  - {fileID: 819094639}
   - {fileID: 1279277358}
   - {fileID: 45556410}
   m_Father: {fileID: 2059116426}
@@ -17928,221 +17623,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810011156}
   m_CullTransparentMesh: 1
---- !u!1 &819094638
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 819094639}
-  - component: {fileID: 819094643}
-  - component: {fileID: 819094642}
-  - component: {fileID: 819094641}
-  - component: {fileID: 819094640}
-  m_Layer: 0
-  m_Name: HunterCaseyDoorDialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &819094639
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819094638}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6563, y: -0.1599, z: -6.6217065}
-  m_LocalScale: {x: 0.9674, y: 1.5420312, z: 0.6666667}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 579665373}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &819094640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819094638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2551202155e5b4caa03074c9c32e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePickedUp: 0
-  updatesNotebook: 0
-  itemID: 
-  pageNumber: 0
-  updatesUI: 0
-  scriptToUpdate: 
-  largeView: {fileID: 0}
-  largeViewObj: {fileID: 0}
-  isTrain: 0
-  largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
-  noDestroy: 0
---- !u!114 &819094641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819094638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: "This nameplate says \u201CCasey and Hunter\u201D. This must be our room.
-      It\u2019s unlocked."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "Oh! Let\u2019s go in!"
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
---- !u!61 &819094642
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819094638}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0991157, y: 0.035532236}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.1982315, y: 1.0710645}
-  m_EdgeRadius: 0
---- !u!212 &819094643
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819094638}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &819450464
 GameObject:
   m_ObjectHideFlags: 0
@@ -27445,7 +26925,7 @@ GameObject:
   - component: {fileID: 1324114792}
   - component: {fileID: 1324114795}
   - component: {fileID: 1324114794}
-  - component: {fileID: 1324114793}
+  - component: {fileID: 1324114796}
   m_Layer: 0
   m_Name: DominicDoor
   m_TagString: Untagged
@@ -27468,79 +26948,6 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1324114793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324114791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: "This door says \u201CDominic\u201D, also locked."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: 'Well, who would just leave their room unlocked? '
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "That\u2019s a good point."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
 --- !u!61 &1324114794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27638,6 +27045,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1324114796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324114791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedRoom: {fileID: 68326665}
+  canBeAccessed: 1
 --- !u!1 &1326643989
 GameObject:
   m_ObjectHideFlags: 0
@@ -32617,7 +32038,7 @@ GameObject:
   - component: {fileID: 1701524424}
   - component: {fileID: 1701524427}
   - component: {fileID: 1701524426}
-  - component: {fileID: 1701524425}
+  - component: {fileID: 1701524428}
   m_Layer: 0
   m_Name: JosephineAndHanaDoor
   m_TagString: Untagged
@@ -32640,81 +32061,6 @@ Transform:
   m_Father: {fileID: 2088726315}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1701524425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701524423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: "The nameplate says \u201CJosephine & Hana\u201D. It looks like they are
-      sharing a room. "
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: Oh that sucks, trains are cramped enough. It must be pretty uncomfortable
-      to share such a tiny space. That stinks for them!
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c7a93f42ee1738244a47bc5f1913ec06, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: Yeah, it would be pretty tight. They must be pretty close.
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: e4187e610860c1646b8ca3db20611d53, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
 --- !u!61 &1701524426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32812,6 +32158,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1701524428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701524423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedRoom: {fileID: 555417510}
+  canBeAccessed: 1
 --- !u!1001 &1703891784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33912,7 +33272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePickedUp: 1
   updatesNotebook: 0
-  itemID: 
+  itemID: FailureNote
   pageNumber: 0
   updatesUI: 0
   scriptToUpdate: 
@@ -36733,7 +36093,7 @@ GameObject:
   - component: {fileID: 1979004299}
   - component: {fileID: 1979004302}
   - component: {fileID: 1979004301}
-  - component: {fileID: 1979004300}
+  - component: {fileID: 1979004303}
   m_Layer: 0
   m_Name: BradyDoor
   m_TagString: Untagged
@@ -36756,98 +36116,6 @@ Transform:
   m_Father: {fileID: 579665373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1979004300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979004298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currMessage: 0
-  AllMessages:
-  - Text: "Oh this door says \u201CBrady\u201D. A friend of mine has that name too!
-      I\u2019m sure we\u2019ll get along just as well. "
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: e43992ae616e63145a4f1fd47d381b02, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "I don\u2019t think they are the same person."
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: Maybe not but I think Brady is a good name for a good person.
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  - Text: "Right\u2026"
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: c77a11d5798da064f9aa936e159e8963, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-  dc: {fileID: 0}
-  canInterrogate: 0
-  canAccuse: 0
-  thisInterrogation: {fileID: 0}
-  thisAccusation: {fileID: 0}
 --- !u!61 &1979004301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36945,6 +36213,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1979004303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979004298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedRoom: {fileID: 495125579}
+  canBeAccessed: 1
 --- !u!1 &1989096824
 GameObject:
   m_ObjectHideFlags: 0
