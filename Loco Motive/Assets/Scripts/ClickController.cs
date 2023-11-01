@@ -64,6 +64,8 @@ public class ClickController : MonoBehaviour
         am = GameObject.FindObjectOfType<AudioManager>();
         npb = GameObject.FindObjectOfType<NumberPadBehavior>();
 
+        clc = FindObjectOfType<ComboLockController>();
+
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
         restart = mouseController.currentActionMap.FindAction("Restart");

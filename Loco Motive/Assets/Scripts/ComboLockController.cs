@@ -22,7 +22,7 @@ public class ComboLockController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        ComboLock.SetActive(false);
     }
 
     // Update is called once per frame
