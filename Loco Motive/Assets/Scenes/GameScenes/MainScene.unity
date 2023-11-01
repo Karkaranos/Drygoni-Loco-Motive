@@ -20875,8 +20875,8 @@ MonoBehaviour:
     messagesToMarkHasRead: 
     CharacterOn: []
     CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: Piece
+    AddInventoryItem: 1
+    InventoryItem: Piece2
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0

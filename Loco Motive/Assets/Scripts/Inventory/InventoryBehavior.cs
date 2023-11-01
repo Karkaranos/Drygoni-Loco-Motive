@@ -208,7 +208,15 @@ public class InventoryBehavior : MonoBehaviour
             }
         }
 
+        if (name == "Piece1")
+        {
+            pieceCounter++;
+        }
 
+        else if (name == "Piece2")
+        {
+            pieceCounter++;
+        }
         //Checks if both pieces of CombineObject puzzle are collected
         if (pieceCounter == 2)
         {
@@ -216,7 +224,7 @@ public class InventoryBehavior : MonoBehaviour
             RemoveItemFromInventory("Piece2");
             pieceCounter = 0;
             //Assign Full Note's ItemIndex when it is added
-            AddItemToInventory("FullNote");
+            AddItemToInventory("FullPaper");
         }
         //Update the Inventory to match its current state
         UpdateInventory();
