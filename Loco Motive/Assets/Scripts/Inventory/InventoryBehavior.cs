@@ -32,7 +32,7 @@ public class InventoryBehavior : MonoBehaviour
     [SerializeField] private GameObject itemText;
     [SerializeField] private int maxItems;
     [SerializeField] private GameObject visualUpdateNotification;
-    private int itemsCollected;
+    public int itemsCollected;
 
     [Header("Inventory Slot References")]
     public Image[] inventorySpaces;
@@ -201,6 +201,7 @@ public class InventoryBehavior : MonoBehaviour
             inventorySpaces[currIndex].sprite = itemToAdd.objectImage;
             inventoryName[currIndex] = itemToAdd.itemName;
             StartCoroutine(NotifyUser());
+            itemsCollected++;
 
             if(name == "Key")
             {
@@ -228,6 +229,11 @@ public class InventoryBehavior : MonoBehaviour
         }
         //Update the Inventory to match its current state
         UpdateInventory();
+        if (itemsCollected >= maxItems)
+        {
+            StartCoroutine(AllItemsCollected());
+            accusation.SetActive(true);
+        }
     }
 
     /// <summary>
@@ -260,12 +266,6 @@ public class InventoryBehavior : MonoBehaviour
 
         //Update the Inventory to match its current state
         UpdateInventory();
-        itemsCollected++;
-        if(itemsCollected >= maxItems)
-        {
-            StartCoroutine(AllItemsCollected());
-            accusation.SetActive(true);
-        }
 
     }
 
