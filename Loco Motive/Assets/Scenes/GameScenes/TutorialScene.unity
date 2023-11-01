@@ -183,10 +183,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: I love answering questions.
     Names: 0
     Branch:
@@ -207,10 +203,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Your suitcase is super heavy, I told you to pack light.
     Names: 1
     Branch: []
@@ -225,10 +217,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "It\u2019s not THAT bad."
     Names: 0
     Branch: []
@@ -243,10 +231,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "I can\u2019t even lift it! Did you pack lead weights or something?"
     Names: 1
     Branch: []
@@ -261,10 +245,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Yeah of course! I can\u2019t just neglect my workout while we\u2019re
       on a trip."
     Names: 0
@@ -280,10 +260,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "\u2026But\u2026Did you have to pack so much?"
     Names: 1
     Branch: []
@@ -298,10 +274,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "I didn\u2019t! These are just my weekend weights! "
     Names: 0
     Branch: []
@@ -316,10 +288,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "You\u2019re unbelievable\u2026"
     Names: 1
     Branch: []
@@ -334,10 +302,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Have you traveled by train before?
     Names: 1
     Branch: []
@@ -352,10 +316,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Oh yeah, I used to love trains as a kid! My parents took me on the train
       to visit the city for the day.
     Names: 0
@@ -371,10 +331,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Oh that actually sounds nice. I was expecting some wild story like usual.
     Names: 1
     Branch: []
@@ -389,10 +345,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "It was nice! Until I got lost and ended up in a fishing boat\u2026"
     Names: 0
     Branch: []
@@ -407,10 +359,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "H- How does that even happen? Actually, I don\u2019t think I\u2019d understand
       your explanation either."
     Names: 1
@@ -428,10 +376,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Where did my notebook and briefcase go?
     Names: 1
     Branch: []
@@ -446,10 +390,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: I hid them! It's a fun game. I played it all the time with my parents!
     Names: 0
     Branch: []
@@ -464,10 +404,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -482,10 +418,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: What did I do now?
     Names: 0
     Branch: []
@@ -500,10 +432,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -518,10 +446,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: It's not that hard! If you get stuck you should right click.
     Names: 0
     Branch: []
@@ -536,10 +460,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: You still should not have taken them in the first place.
     Names: 1
     Branch: []
@@ -554,10 +474,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -855,7 +771,7 @@ MonoBehaviour:
   interrogating: 0
   accusing: 0
   PortraitImage: {fileID: 1728337707}
-  timeBtwnChars: 0.05
+  timeBtwnChars: 0.01
   timeBtwnWords: 0.1
   DialogueBox: {fileID: 1710522197}
   DialogueBoxInterrogation: {fileID: 397480165}
@@ -883,10 +799,6 @@ MonoBehaviour:
   NotebookButton: {fileID: 1678524256}
   AccusationButton: {fileID: 1489480047}
   ExitButton: {fileID: 1489480047}
-  BranchOne: {fileID: 0}
-  BranchTwo: {fileID: 0}
-  BranchThree: {fileID: 0}
-  BranchFour: {fileID: 0}
   cc: {fileID: 1319127852}
   sd: {fileID: 863328926}
   nm: {fileID: 1703891788}
@@ -1261,10 +1173,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "I don\u2019t think they are the same person."
     Names: 1
     Branch: []
@@ -1279,10 +1187,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Maybe not but I think Brady is a good name for a good person.
     Names: 0
     Branch: []
@@ -1297,10 +1201,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -1315,10 +1215,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -1459,7 +1355,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &105666865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2077,10 +1972,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Do you think he goes by Alex?
     Names: 0
     Branch: []
@@ -2095,10 +1986,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "I don\u2019t know. Ask when you meet him."
     Names: 1
     Branch: []
@@ -2113,10 +2000,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2545,7 +2428,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &248876578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2681,10 +2563,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
 --- !u!61 &259114120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3082,10 +2960,6 @@ PrefabInstance:
       propertyPath: itemText
       value: 
       objectReference: {fileID: 88567331}
-    - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
-      propertyPath: maxItems
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: notebookIcon
       value: 
@@ -4053,10 +3927,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Do you have any idea how expensive a ticket is? I can\u2019t afford it
       on my wage."
     Names: 1
@@ -4072,10 +3942,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Do you think the food is any good? I\u2019m kinda hungry\u2026"
     Names: 0
     Branch: []
@@ -4090,10 +3956,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "I\u2019m sure it\u2019s fine but we shouldn't eat now, we need to find
       everyone else first."
     Names: 1
@@ -4109,10 +3971,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4542,10 +4400,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
 --- !u!1 &527717300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,10 +4574,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: These must be the standard rooms.
     Names: 1
     Branch: []
@@ -4738,10 +4588,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Wow, these rooms must be even smaller than the others.
     Names: 0
     Branch: []
@@ -4756,10 +4602,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5110,7 +4952,6 @@ MonoBehaviour:
   DC: {fileID: 0}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &617486991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5596,10 +5437,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: I'm tired. Let's sleep until tomorrow.
     Names: 0
     Branch: []
@@ -5614,10 +5451,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -6459,10 +6292,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: " I hope they aren\u2019t going to cram everyone else in that room."
     Names: 0
     Branch: []
@@ -6477,10 +6306,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "No way we\u2019d all fit. I can\u2019t imagine them buying a private train
       with only 2 rooms."
     Names: 1
@@ -6496,10 +6321,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Yeah, that makes sense\u2026 Maybe it\u2019s ladder storage?"
     Names: 0
     Branch: []
@@ -6514,10 +6335,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Looks like there are already mysteries. Too bad the door is locked.
     Names: 1
     Branch: []
@@ -6532,10 +6349,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -6697,7 +6510,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &810011159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6966,10 +6778,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: These must be the standard rooms.
     Names: 1
     Branch: []
@@ -6984,10 +6792,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Wow, these rooms must be even smaller than the others.
     Names: 0
     Branch: []
@@ -7002,10 +6806,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -7038,7 +6838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824348779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2, y: -0.3, z: 0}
+  m_LocalPosition: {x: -0.03, y: -0.3, z: 0}
   m_LocalScale: {x: 0.8632, y: 0.9054, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7119,10 +6919,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: I just had a few things I wanted to ask you.
     Names: 1
     Branch: []
@@ -7137,10 +6933,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Oh, is that what the red exclamation mark is for?
     Names: 0
     Branch: []
@@ -7155,10 +6947,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -7899,7 +7687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47, y: -208}
+  m_AnchoredPosition: {x: 756, y: -82}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871331104
@@ -8408,7 +8196,6 @@ MonoBehaviour:
   DC: {fileID: 0}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &1039539744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9054,10 +8841,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Oh that sucks, trains are cramped enough. It must be pretty uncomfortable
       to share such a tiny space. That stinks for them!
     Names: 0
@@ -9073,10 +8856,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Yeah, it would be pretty tight. They must be pretty close.
     Names: 1
     Branch: []
@@ -9091,10 +8870,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -9259,10 +9034,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: 'Well, who would just leave their room unlocked? '
     Names: 0
     Branch: []
@@ -9277,10 +9048,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "That\u2019s a good point."
     Names: 1
     Branch: []
@@ -9295,10 +9062,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -9465,10 +9228,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Oh! Let\u2019s go in!"
     Names: 0
     Branch: []
@@ -9483,10 +9242,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -9611,10 +9366,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
 --- !u!1 &1146581125
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,10 +9556,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -9823,10 +9570,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -9841,10 +9584,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -9859,10 +9598,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -9877,10 +9612,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11377,10 +11108,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -11395,10 +11122,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -11413,10 +11136,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -11431,10 +11150,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -11449,10 +11164,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -11467,10 +11178,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -11486,10 +11193,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -11505,10 +11208,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Yes
     Names: 0
     Branch: []
@@ -11523,10 +11222,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -11542,10 +11237,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -11562,10 +11253,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -11582,10 +11269,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -11601,10 +11284,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -11620,10 +11299,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12023,10 +11698,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Now is hardly the time. It\u2019s the middle of the day."
     Names: 1
     Branch: []
@@ -12041,10 +11712,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "They said to make ourselves comfortable. You don\u2019t need to be so
       uptight."
     Names: 0
@@ -12060,10 +11727,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12484,10 +12147,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: 'Oh look, more couches! I can push them together and make a bed even bigger
       than yours! '
     Names: 0
@@ -12503,10 +12162,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "You\u2019re no fun."
     Names: 0
     Branch: []
@@ -12521,10 +12176,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
       else on the train."
     Names: 1
@@ -12540,10 +12191,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12999,10 +12646,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: I thought it'd be funny!
     Names: 0
     Branch: []
@@ -13017,10 +12660,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -13035,10 +12674,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -13066,10 +12701,6 @@ MonoBehaviour:
   largeViewObj: {fileID: 0}
   isTrain: 0
   largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
 --- !u!61 &1651692154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13376,7 +13007,6 @@ MonoBehaviour:
   DC: {fileID: 45641575}
   IB: {fileID: 0}
   TM: {fileID: 0}
-  NCM: {fileID: 0}
 --- !u!114 &1685009732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15382,10 +15012,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: 'Oh look, more couches! I can push them together and make a bed even bigger
       than yours! '
     Names: 0
@@ -15401,10 +15027,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
       else on the train."
     Names: 1
@@ -15420,10 +15042,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "You\u2019re no fun."
     Names: 0
     Branch: []
@@ -15438,10 +15056,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -15492,10 +15106,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Whoa, Casey...This is nice!
     Names: 0
     Branch: []
@@ -15510,10 +15120,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: This is only the entrance, the luxury cars are the ones you should be impressed
       with.
     Names: 1
@@ -15529,10 +15135,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: This looks like one of the resident cars. There are 2 doors so only 2 rooms.
     Names: 1
     Branch: []
@@ -15547,10 +15149,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: You think these are our rooms?
     Names: 0
     Branch: []
@@ -15565,10 +15163,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "No, I don\u2019t think so. These rooms look pretty big. We should check
       the nameplates."
     Names: 1
@@ -15584,10 +15178,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -15782,10 +15372,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "We really have to share this tiny room? There\u2019s only one bed\u2026"
     Names: 1
     Branch: []
@@ -15800,10 +15386,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: ' I call dibs! '
     Names: 0
     Branch: []
@@ -15818,10 +15400,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: 'Now, now, as your superior, I will be making the executive decision that
       this bed is mine. '
     Names: 1
@@ -15837,10 +15415,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Hey, I have an idea! What if we take the pillows and use them to create
       a wall so we don\u2019t wake each other during the night? You\u2019re small
       so that\u2019ll work fine."
@@ -15857,10 +15431,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "There isn\u2019t enough room on the bed for us both to fit with a pillow
       wall in between. Plus, if we made a wall of pillows, there would not be any
       for us to sleep on. "
@@ -15877,10 +15447,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: "Hunter, why don\u2019t you grab a couple of pillows and a blanket, then
       take them and sleep on the couch? That way we can both have our own spaces. "
     Names: 1
@@ -15896,10 +15462,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   - Text: Aww okay. (I always get stuck with the couch)
     Names: 0
     Branch: []
@@ -15914,10 +15476,6 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 1
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
