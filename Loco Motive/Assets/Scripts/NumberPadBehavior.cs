@@ -51,6 +51,7 @@ public class NumberPadBehavior : MonoBehaviour
 
     private void Start()
     {
+        numberPad.SetActive(false);
         numPadEvidence.SetActive(false);
         dc = FindObjectOfType<DialogueController>();
     }
@@ -126,12 +127,6 @@ public class NumberPadBehavior : MonoBehaviour
             {
                 unlocked = true;
                 StartCoroutine(RightCode());
-                numberPad.SetActive(false);
-                numberPadObject.SetActive(false);
-                numPadEvidence.SetActive(true);
-                OpenLockbox.SetActive(true);
-                ClosedLockbox.SetActive(false);
-                numberPadObject.SetActive(false);
             }
             //Otherwise reset the lock
             else
@@ -190,6 +185,12 @@ public class NumberPadBehavior : MonoBehaviour
         comboImage.sprite = rightCombo;
         yield return new WaitForSeconds(1f);
         comboImage.sprite = standardNumberPad;
+        CloseLock();
+        OpenLockbox.SetActive(true);
+        ClosedLockbox.SetActive(false);
+        numPadEvidence.SetActive(true);
+        Destroy(numberPad);
+        Destroy(numberPadObject);
     }
 
     IEnumerator WrongCode()

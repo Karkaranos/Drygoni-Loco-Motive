@@ -201,6 +201,11 @@ public class InventoryBehavior : MonoBehaviour
             inventorySpaces[currIndex].sprite = itemToAdd.objectImage;
             inventoryName[currIndex] = itemToAdd.itemName;
             StartCoroutine(NotifyUser());
+
+            if(name == "Key")
+            {
+                keyCollected = true;
+            }
         }
 
 

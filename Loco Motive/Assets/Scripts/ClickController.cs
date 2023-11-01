@@ -283,19 +283,19 @@ public class ClickController : MonoBehaviour
                 dc.currentDialogue = hit.collider.GetComponent<DialogueInstance>();
                 dc.StartDialogue();
             }
-            else if (hit.collider.CompareTag("SuspectOne"))
+            if (hit.collider.CompareTag("SuspectOne"))
             {
                 dc.currTalkChar = 1;
                 dc.strLength = 0;
                 dc.StartDialogue();
             }
 
-            else if (hit.collider.CompareTag("NumPadCollider"))
+            if (hit.collider.CompareTag("NumPadCollider"))
             {
                 npb.OpenLock();
             }
 
-            else if (hit.collider.CompareTag("Lock"))
+            if (hit.collider.CompareTag("Lock"))
             {
                 if (ib.keyCollected == true)
                 {

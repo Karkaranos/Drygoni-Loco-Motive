@@ -231,13 +231,11 @@ public class AudioManager : MonoBehaviour
         Mute("InterrogationBGM");
         Unmute("ChoirBGM");
         Play("ChoirBGM");
-        print("corpStart");
     }
 
     public void StopCorporateLadderRoomMusic()
     {
         Stop("ChoirBGM");
-        print("corpStop");
         Unmute("GameBGM");
     }
 

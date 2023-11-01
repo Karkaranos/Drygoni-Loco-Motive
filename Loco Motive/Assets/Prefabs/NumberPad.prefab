@@ -1058,9 +1058,11 @@ MonoBehaviour:
   movementArrows: {fileID: 0}
   inventoryIcon: {fileID: 0}
   notebookIcon: {fileID: 0}
-  standardNumberPad: {fileID: 0}
-  wrongCombo: {fileID: 0}
-  rightCombo: {fileID: 0}
+  OpenLockbox: {fileID: 0}
+  ClosedLockbox: {fileID: 0}
+  standardNumberPad: {fileID: 21300000, guid: 1b18a2d05fcd7ac478da4168309cc962, type: 3}
+  wrongCombo: {fileID: 21300000, guid: b99f064cb907c034f8decb47bfc8d666, type: 3}
+  rightCombo: {fileID: 21300000, guid: a7ae10579cd6af743b2f6456ee968bd6, type: 3}
   unlocked: 0
 --- !u!1 &2425930765453254340
 GameObject:
