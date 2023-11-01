@@ -25,6 +25,7 @@ public class ClickController : MonoBehaviour
     private StoredDialogue sd;
     public DialogueController dc;
     public InventoryBehavior ib;
+    public NumberPadBehavior npb;
 
     private Color originalColor;
     private GameObject HighlightedObject;
@@ -61,6 +62,7 @@ public class ClickController : MonoBehaviour
 
         nm = GameObject.Find("NotebookManager").GetComponent<NotebookManager>();
         am = GameObject.FindObjectOfType<AudioManager>();
+        npb = GameObject.FindObjectOfType<NumberPadBehavior>();
 
         mPos = mouseController.currentActionMap.FindAction("MousePosition");
         interact = mouseController.currentActionMap.FindAction("Interact");
@@ -279,11 +281,7 @@ public class ClickController : MonoBehaviour
 
             else if (hit.collider.CompareTag("NumPadCollider"))
             {
-                dc.numPadDialogue = true;
-                dc.needNumInfo = true;
-                dc.StartDialogue();
-                NumPadCollider.SetActive(false);
-                //dc.strLength = 1;
+                npb.OpenLock();
             }
 
             else if (hit.collider.CompareTag("Lock"))
