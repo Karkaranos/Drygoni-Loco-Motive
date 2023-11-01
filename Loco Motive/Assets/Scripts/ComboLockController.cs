@@ -11,6 +11,7 @@ public class ComboLockController : MonoBehaviour
     public int correctDigitOne;
     public int correctDigitTwo;
     public int correctDigitThree;
+    public bool solved = false;
     public GameObject OpenSafe;
     public GameObject ClosedSafe;
     public TMP_Text ButtonOne;
@@ -28,9 +29,12 @@ public class ComboLockController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (digitOne == correctDigitOne && digitTwo == correctDigitTwo && digitThree == correctDigitThree)
+        if (solved == false)
         {
-           Unlock();
+            if (digitOne == correctDigitOne && digitTwo == correctDigitTwo && digitThree == correctDigitThree)
+            {
+                Unlock();
+            }
         }
     }
 
@@ -77,6 +81,7 @@ public class ComboLockController : MonoBehaviour
     void Unlock()
     {
         //Runs
+        solved = true;
         OpenSafe.SetActive(true);
         ClosedSafe.SetActive(false);
         CloseLock();
