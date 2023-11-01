@@ -134,7 +134,11 @@ public class ClickController : MonoBehaviour
     {
         foreach (GameObject i in outlines)
         {
-            i.SetActive(false);
+            if (i != null)
+            {
+                i.SetActive(false);
+            }
+
         }
     }
 
