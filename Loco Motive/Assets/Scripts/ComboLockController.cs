@@ -80,7 +80,6 @@ public class ComboLockController : MonoBehaviour
     //This runs when the combination is correct
     void Unlock()
     {
-        //Runs
         solved = true;
         OpenSafe.SetActive(true);
         ClosedSafe.SetActive(false);
