@@ -1340,7 +1340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 1
+  spaceID: 6
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &1829800701047639613
 GameObject:
@@ -1565,7 +1565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 3
+  spaceID: 8
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &2140079796930315492
 GameObject:
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 4
+  spaceID: 14
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &3347315705845009891
 GameObject:
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 2
+  spaceID: 12
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &3510457580996886594
 GameObject:
@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 5
+  spaceID: 10
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &4147057866410262722
 GameObject:
@@ -2235,7 +2235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 4
+  spaceID: 9
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &4980494944448497280
 GameObject:
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 5
+  spaceID: 15
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &5484568902062091486
 GameObject:
@@ -3573,7 +3573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 1
+  spaceID: 11
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &6515789070604235477
 GameObject:
@@ -4632,7 +4632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae5717bca0989649b598dee1eb5e22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceID: 2
+  spaceID: 7
   ibObject: {fileID: 6028724120595559748}
 --- !u!1 &9109463614204894886
 GameObject:

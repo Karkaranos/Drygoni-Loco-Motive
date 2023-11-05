@@ -788,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.839447, y: -52.982956}
+  m_AnchoredPosition: {x: 0, y: -52.982956}
   m_SizeDelta: {x: 720, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946747915
@@ -1424,7 +1424,7 @@ MonoBehaviour:
     audClip: {fileID: 8300000, guid: 623c3044a4d4f0d46ae6423de1474e67, type: 3}
     clipVolume: 1
     clipPitch: 1
-    canLoop: 0
+    canLoop: 1
     panStereo: 0
     spacialBlend: 0
     minSoundDistance: 0
@@ -1434,7 +1434,7 @@ MonoBehaviour:
     audClip: {fileID: 8300000, guid: 69f035083ab918245a1e3034d52566cf, type: 3}
     clipVolume: 1
     clipPitch: 1
-    canLoop: 0
+    canLoop: 1
     panStereo: 0
     spacialBlend: 0
     minSoundDistance: 0

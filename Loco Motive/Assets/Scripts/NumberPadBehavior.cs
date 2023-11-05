@@ -63,7 +63,7 @@ public class NumberPadBehavior : MonoBehaviour
     public void NumberPressed(int number)
     {
         //If there are fewer digits entered than digits in the code, add to the code
-        if (digitsEntered < digitsInCode)
+        if (digitsEntered < 9)
         {
             //If the current guess is 0, run these checks
             if (playerGuess == 0)
@@ -107,10 +107,14 @@ public class NumberPadBehavior : MonoBehaviour
                 codeText.text = playerGuess.ToString();
             }
         }
-        //Otherwise if there are the same number of digits in both, check the code
+        //Otherwise if the lock is about to overflow, reset it
         else
         {
-            CheckCode();
+            playerGuess = 0;
+            digitsEntered = 0;
+            playerGuessStartWith0 = false;
+            codeText.text = "ERROR";
+            StartCoroutine("WrongCode");
         }
     }
 
@@ -142,9 +146,9 @@ public class NumberPadBehavior : MonoBehaviour
         {
             playerGuess = 0;
             digitsEntered = 0;
-            print("fail");
             playerGuessStartWith0 = false;
             codeText.text = "WRONG";
+            StartCoroutine("WrongCode");
         }
     }
 
