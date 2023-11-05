@@ -19,7 +19,6 @@ public class DialogueController : MonoBehaviour
     public Image PortraitImage;
     public float timeBtwnChars;
     public float timeBtwnWords;
-    int endCheckCounter;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -54,7 +53,6 @@ public class DialogueController : MonoBehaviour
     public GameObject BranchFour;
 
     public ClickController cc;
-    public StoredDialogue sd;
     public NotebookManager nm;
     public DialogueInstance openingDialogue;
     public DialogueInstance currentDialogue;
@@ -81,7 +79,6 @@ public class DialogueController : MonoBehaviour
         InventoryButton.SetActive(false);
         StartDialogue();
         isTalking = true;
-        //UpdateScreen(currentDialogue.AllMessages[currentDialogue.currMessage]);
     }
 
     // Update is called once per frame
@@ -124,7 +121,6 @@ public class DialogueController : MonoBehaviour
     /// </summary>
     public void StartDialogue()
     {
-        //Debug.Log("This works");
         isTalking = true;
         InventoryButton.SetActive(false);
         NotebookButton.SetActive(false);
@@ -141,10 +137,6 @@ public class DialogueController : MonoBehaviour
             InventoryButton.SetActive(false);
             NotebookButton.SetActive(false);
             ExitButton.SetActive(false);
-            //ButtonTextOne.text = "Yes";
-            //ButtonTextTwo.text = "No";
-            //DialogueBox.text = "Have you ever been on a train before?";
-            //SpeakerName.text = "Hunter";
         }
         else
         {
@@ -157,51 +149,6 @@ public class DialogueController : MonoBehaviour
             NotebookButton.SetActive(false);
             ExitButton.SetActive(true);
         }
-        //else if (numPadDialogue == true)
-        //{
-        //    DialogueScreen.SetActive(true);
-        //    SpeakerName.text = sd.numPadNames[currDialogue];
-        //    DialogueBox.text = sd.numPad[currDialogue];
-        //    ContinueButton.SetActive(true);
-        //    BranchButtons.SetActive(false);
-        //    InterrogateButton.SetActive(false);
-        //}
-        //else if (currTalkChar == 0)
-        //{
-        //    DialogueScreen.SetActive(true);
-        //    SpeakerName.text = "Hunter";
-        //    //ButtonTextOne.text = sd.hResponse[0];
-        //    //ButtonTextTwo.text = sd.hResponse[1];
-        //    DialogueBox.text = sd.hDialogue[currDialogue];
-        //    ContinueButton.SetActive(true);
-        //    //BranchButtons.SetActive(true);
-        //    if (needNumInfo == true)
-        //    {
-        //        InterrogateButton.SetActive(true);
-        //    }
-        //    else
-        //    {
-        //        InterrogateButton.SetActive(false);
-        //    }
-        //}
-        //else if (currTalkChar == 1)
-        //{
-        //    DialogueScreen.SetActive(true);
-        //    SpeakerName.text = "Alexander";
-        //    //ButtonTextOne.text = sd.sOneResponse[0];
-        //    //ButtonTextTwo.text = sd.sOneResponse[1];
-        //    DialogueBox.text = sd.sOneDialogue[currDialogue];
-        //    ContinueButton.SetActive(true);
-        //    BranchButtons.SetActive(false);
-        //    if (interrogateEvidence >= 1)
-        //    {
-        //        InterrogateButton.SetActive(true);
-        //    }
-        //    else
-        //    {
-        //        InterrogateButton.SetActive(false);
-        //    }
-        //}
     }
 
     public void StartInterrogation()
@@ -340,20 +287,4 @@ public class DialogueController : MonoBehaviour
     {
 
     }
-
-    //IEnumerator Speaking(string targetSpeech)
-    //{
-    //    DialogueBox.text = "";
-
-    //    while (DialogueBox.text != targetSpeech)
-    //    {
-    //        DialogueBox.text += targetSpeech[DialogueBox.text.Length];
-    //        yield return new WaitForSeconds(.01f);
-    //    }
-    //    //IsWaitingForInput = true;
-    //    //while (IsWaitingForInput)
-    //    //{
-    //    //    yield return new WaitForEndOfFrame();
-    //    //}
-    //}
 }

@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class ClickController : MonoBehaviour
 {
     private int arrLength = 0;
-    private bool isHighlighted = false;
     private PlayerInput mouseController;
 
     private InputAction mPos;
@@ -22,14 +21,10 @@ public class ClickController : MonoBehaviour
     private Vector2 currPos;
 
     public ComboLockController clc;
-    private StoredDialogue sd;
     public DialogueController dc;
     public InventoryBehavior ib;
     public NumberPadBehavior npb;
     public NumberPadBehavior npb2;
-
-    private Color originalColor;
-    private GameObject HighlightedObject;
 
     public GameObject NumPadCollider;
     public GameObject Movement;
@@ -162,60 +157,6 @@ public class ClickController : MonoBehaviour
     void Update()
     {
         currPos = mPos.ReadValue<Vector2>();
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(currPos), Vector2.zero);
-
-        //if (hit.collider != null && dc.isTalking == false && 
-        //    hit.collider.gameObject.tag != "Map")
-        //{
-        //    if (isHighlighted == false)
-        //    {
-        //        HighlightedObject = hit.collider.gameObject;
-        //        originalColor = HighlightedObject.GetComponent<SpriteRenderer>().color;
-        //        HighlightedObject.GetComponent<SpriteRenderer>().color = Color.white;
-        //        isHighlighted = true;
-        //    }
-        //}
-        //else if (hit.collider != null && hit.collider.gameObject.tag == "Map")
-        //{
-        //    if (!isHighlighted)
-        //    {
-        //        HighlightedObject = hit.collider.gameObject;
-        //        //If the current room is being hovered over, set the original color to blue
-        //        if (HighlightedObject == MapRooms[currentRoom])
-        //        {
-        //            originalColor = Color.blue;
-        //        }
-        //        //Otherwise set the original color to white
-        //        else
-        //        {
-        //            originalColor = Color.white;
-        //        }
-        //        HighlightedObject.GetComponent<SpriteRenderer>().color = Color.green;
-        //        isHighlighted = true;
-        //    }
-        //}
-
-        //else if (isHighlighted == true)
-        //{
-        //    if(hit.collider != null && hit.collider.gameObject.tag == "Map")
-        //    {
-        //        if (HighlightedObject == MapRooms[currentRoom])
-        //        {
-        //            originalColor = Color.blue;
-        //        }
-        //        //Otherwise set the original color to white
-        //        else
-        //        {
-        //            originalColor = Color.white;
-        //        }
-        //    }
-        //    HighlightedObject.GetComponent<SpriteRenderer>().color = originalColor;
-        //    isHighlighted = false;
-
-
-
-        //}
-
     }
 
 
@@ -282,17 +223,6 @@ public class ClickController : MonoBehaviour
             {
                 dc.currentDialogue = hit.collider.GetComponent<DialogueInstance>();
                 dc.StartDialogue();
-            }
-            if (hit.collider.CompareTag("SuspectOne"))
-            {
-                dc.currTalkChar = 1;
-                dc.strLength = 0;
-                dc.StartDialogue();
-            }
-
-            if (hit.collider.CompareTag("NumPadCollider"))
-            {
-                npb.OpenLock();
             }
 
             if (hit.collider.CompareTag("Lock"))
