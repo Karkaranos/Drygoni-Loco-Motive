@@ -29,7 +29,6 @@ public class UIButtonManager : MonoBehaviour
             creditCanvas = GameObject.Find("CreditCanvas");
             creditText = GameObject.Find("Credits");
             creditCanvas.SetActive(false);
-            creditResetPos = new Vector2(450, 250);
     
             titleCanvas = GameObject.Find("TitleCanvas");
         }
@@ -93,7 +92,7 @@ public class UIButtonManager : MonoBehaviour
     /// <returns>Time between each position incrmement</returns>
     IEnumerator CreditScroll()
     {
-       creditText.transform.position = creditResetPos;
+       creditText.transform.position = new Vector2(Screen.width/2, Screen.height/2);
         for (int i=0; i<1500; i += 1)
         {
             Vector2 creditPos = creditText.transform.position;
