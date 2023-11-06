@@ -21,6 +21,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject HCDoorFlavor;
     [SerializeField] private GameObject HCDoorEnter;
     private NotebookContentManager ncm;
+    [SerializeField] private GameObject map;
 
     #endregion Variables
 
@@ -36,6 +37,8 @@ public class TutorialManager : MonoBehaviour
         {
             movementArrows[i].relatedObject.SetActive(false);
         }
+
+        map.SetActive(false);
 
 
         //Enable movement arrows in non-hallway rooms

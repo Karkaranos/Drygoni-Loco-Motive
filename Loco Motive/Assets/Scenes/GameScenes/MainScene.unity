@@ -606,7 +606,6 @@ MonoBehaviour:
   BranchThree: {fileID: 248876575}
   BranchFour: {fileID: 1685009729}
   cc: {fileID: 1319127852}
-  sd: {fileID: 863328926}
   nm: {fileID: 1703891788}
   openingDialogue: {fileID: 2104534795}
   currentDialogue: {fileID: 0}
@@ -2038,6 +2037,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3399303564810398548, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 1498759645}
     - target: {fileID: 6167172818018222410, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_Name
       value: PauseMenu
@@ -18555,118 +18558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c025613e9d27f4e8692c9e055e2320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDialogue:
-  - 
-  openingResponses:
-  - 
-  - 
-  openingNames:
-  - 
-  openingB1:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  oB1Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  openingB2:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  oB2Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  numPad:
-  - 
-  - 
-  numPadNames:
-  - 
-  - 
-  hDialogue:
-  - 
-  hDialogueIQuestion:
-  - 
-  - 
-  - 
-  hDialogueIB1:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hDialogueIB2:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hDialogueIB3:
-  - 
-  - 
-  hIB1Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hIB2Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hIB3Names:
-  - 
-  - 
-  sOneDialogue:
-  - 
-  sOneQuestionsI1:
-  - 
-  - 
-  sOneDialogueI1B1:
-  - 
-  - 
-  - 
-  - 
-  sOneDialogueI1B2:
-  - 
-  - 
-  - 
-  - 
-  - 
-  sOneI1B1Names:
-  - 
-  - 
-  - 
-  - 
-  sOneI1B2Names:
-  - 
-  - 
-  - 
-  - 
-  - 
 --- !u!4 &863328927
 Transform:
   m_ObjectHideFlags: 0
@@ -32766,7 +32657,7 @@ PrefabInstance:
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].photo
       value: 
-      objectReference: {fileID: 21300000, guid: 3787cefa42a277f4e98eb85a9268861a, type: 3}
+      objectReference: {fileID: -124649083, guid: f35163dddf673ea4b9c0c35a2fb0917a, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[6].photo
       value: 
@@ -32786,7 +32677,7 @@ PrefabInstance:
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[10].photo
       value: 
-      objectReference: {fileID: 21300000, guid: 9d9f31a2be2e1fc46b57dcf67176d282, type: 3}
+      objectReference: {fileID: 21300000, guid: af440358cf7d0d74d98dcd87e6e1737f, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[0].content.Array.size
       value: 6
@@ -32857,7 +32748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[0].content.Array.data[5]
-      value: 'Alex,\nBrady,\nDominic,\n Hana '
+      value: Alex<br>Brady<br>Dominic<br>Hana
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[1].content.Array.data[0]
@@ -32968,11 +32859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[0]
-      value: "Josephine\u2019s Body"
+      value: Body
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[1]
-      value: "Brady\u2019s prized knife"
+      value: "Josephine\u2019s Body"
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[2]
@@ -32992,7 +32883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[5]
-      value: 'Alex, Brady, Dominic, Hana '
+      value: Alex<br>Brady<br>Dominic<br>Hana
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[6].content.Array.data[0]
@@ -38844,9 +38735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePickedUp: 1
-  updatesNotebook: 0
+  updatesNotebook: 1
   itemID: CEOBooks
-  pageNumber: 0
+  pageNumber: 7
   updatesUI: 0
   scriptToUpdate: 
   largeView: {fileID: 0}
