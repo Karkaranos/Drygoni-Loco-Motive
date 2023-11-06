@@ -225,6 +225,13 @@ public class AudioManager : MonoBehaviour
         Mute("ChoirBGM");
     }
 
+    public void StopInterrogationMusic()
+    {
+        inInterrogation = false;
+        Mute("InterrogationBGM");
+        Unmute("GameBGM");
+    }
+
     public void PlayCorporateLadderRoomMusic()
     {
         Mute("GameBGM");

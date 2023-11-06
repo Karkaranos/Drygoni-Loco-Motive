@@ -243,10 +243,7 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
-        if (interrogating && am != false)
-        {
-            am.PlayGameMusic();
-        }
+        am.StopInterrogationMusic();
         interrogating = false;
         accusing = false;
         GameObject lvc = GameObject.Find("LargeViewCanvas");
