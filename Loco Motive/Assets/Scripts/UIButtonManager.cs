@@ -18,6 +18,11 @@ public class UIButtonManager : MonoBehaviour
     private Vector2 creditResetPos;
     private GameObject pauseMenu;
     public bool isPaused;
+    private GameObject map;
+    private GameObject notebookIcon;
+    private GameObject inventoryIcon;
+    private DialogueController dc;
+    private GameObject movementArrows;
     /// <summary>
     /// Called upon the scene's start; 
     /// </summary>
@@ -34,7 +39,14 @@ public class UIButtonManager : MonoBehaviour
         }
         else
         {
+            if(SceneManager.GetActiveScene().name == "MainScene" || 
+                SceneManager.GetActiveScene().name == "TutorialScene")
             pauseMenu = GameObject.Find("PauseMenu");
+            map = GameObject.Find("Map");
+            notebookIcon = GameObject.Find("NotebookIcons");
+            inventoryIcon = GameObject.Find("InventoryIcons");
+            dc = FindObjectOfType<DialogueController>();
+            movementArrows = GameObject.Find("Movement");
         }
 
     }
@@ -126,8 +138,45 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Resume()
     {
-        isPaused = false;
         pauseMenu.SetActive(false);
+        if (dc != null && !dc.isTalking)
+        {
+            isPaused = false;
+            movementArrows.SetActive(true);
+
+            for (int i = 0; i < 2; i++)
+            {
+                if (notebookIcon != null)
+                {
+                    notebookIcon.SetActive(true);
+                }
+                else
+                {
+                    notebookIcon = GameObject.Find("NotebookIcons");
+                }
+
+                if (inventoryIcon != null)
+                {
+                    inventoryIcon.SetActive(true);
+                }
+                else
+                {
+                    inventoryIcon = GameObject.Find("InventoryIcons");
+
+                }
+
+                if (map != null)
+                {
+                    map.SetActive(true);
+                }
+                else
+                {
+                    notebookIcon = GameObject.Find("Map");
+                }
+            }
+        }
+
+
     }
 
     /// <summary>
@@ -135,8 +184,44 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Pause()
     {
-        isPaused = true;
-        pauseMenu.SetActive(true);
+        if(dc!=null && !dc.isTalking)
+        {
+            isPaused = true;
+            pauseMenu.SetActive(true);
+            movementArrows.SetActive(false);
+
+            for (int i = 0; i < 2; i++)
+            {
+                if (notebookIcon != null)
+                {
+                    notebookIcon.SetActive(false);
+                }
+                else
+                {
+                    notebookIcon = GameObject.Find("NotebookIcons");
+                }
+
+                if (inventoryIcon != null)
+                {
+                    inventoryIcon.SetActive(false);
+                }
+                else
+                {
+                    inventoryIcon = GameObject.Find("InventoryIcons");
+
+                }
+
+                if (map != null)
+                {
+                    map.SetActive(false);
+                }
+                else
+                {
+                    notebookIcon = GameObject.Find("Map");
+                }
+            }
+        }
+        
     }
 
 }

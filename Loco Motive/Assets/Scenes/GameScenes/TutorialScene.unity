@@ -972,7 +972,6 @@ MonoBehaviour:
   BranchThree: {fileID: 248876575}
   BranchFour: {fileID: 1685009729}
   cc: {fileID: 1319127852}
-  sd: {fileID: 863328926}
   nm: {fileID: 1703891788}
   openingDialogue: {fileID: 2104534795}
   currentDialogue: {fileID: 0}
@@ -1046,8 +1045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  connectedRoom: {fileID: 1493883060}
+  canBeAccessed: 0
 --- !u!61 &51414975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2327,7 +2326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188474675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.02, y: 0.01, z: -0.13222842}
+  m_LocalPosition: {x: 40, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3811,7 +3810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  canBeAccessed: 0
 --- !u!61 &436603434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4673,7 +4672,7 @@ GameObject:
   - component: {fileID: 498327929}
   - component: {fileID: 498327930}
   - component: {fileID: 498327932}
-  - component: {fileID: 498327931}
+  - component: {fileID: 498327933}
   m_Layer: 0
   m_Name: notebook
   m_TagString: Untagged
@@ -4690,8 +4689,8 @@ Transform:
   m_GameObject: {fileID: 498327928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.35, y: -2.4, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1493883061}
   m_RootOrder: -1
@@ -4737,7 +4736,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f0a94d080bfdcdb418bb64a36287667a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a7afeb2ea6dd634983518f4d44542bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4748,7 +4747,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &498327931
+--- !u!114 &498327932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498327928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2551202155e5b4caa03074c9c32e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePickedUp: 0
+  updatesNotebook: 0
+  itemID: 
+  pageNumber: 0
+  updatesUI: 1
+  scriptToUpdate: nm
+  largeView: {fileID: 0}
+  largeViewObj: {fileID: 0}
+  isTrain: 0
+  largeViewSprite: {fileID: 0}
+  updatesTimeline: 0
+  timelineEventNum: 0
+  CharacterOn: []
+  CharacterOff: []
+  noDestroy: 0
+--- !u!61 &498327933
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4784,42 +4810,15 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 10.24, y: 10.24}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
---- !u!114 &498327932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498327928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2551202155e5b4caa03074c9c32e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePickedUp: 0
-  updatesNotebook: 0
-  itemID: 
-  pageNumber: 0
-  updatesUI: 1
-  scriptToUpdate: nm
-  largeView: {fileID: 0}
-  largeViewObj: {fileID: 0}
-  isTrain: 0
-  largeViewSprite: {fileID: 0}
-  updatesTimeline: 0
-  timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
-  noDestroy: 0
 --- !u!1 &527717300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5509,7 +5508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 1971994822}
-  roomNum: 1
+  roomNum: 0
   canBeAccessedViaMap: 0
 --- !u!4 &629073667
 Transform:
@@ -5809,8 +5808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  connectedRoom: {fileID: 2137844750}
+  canBeAccessed: 0
 --- !u!61 &682143215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6355,7 +6354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  canBeAccessed: 0
 --- !u!61 &724050086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6717,8 +6716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  connectedRoom: {fileID: 629073666}
+  canBeAccessed: 0
 --- !u!61 &788722213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7665,12 +7664,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomReference:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1065542234}
+  - {fileID: 1288453780}
+  - {fileID: 51414974}
+  - {fileID: 1114615868}
+  - {fileID: 682143214}
+  - {fileID: 788722212}
   movementArrows:
   - containedInRoom: 8
     relatedObject: {fileID: 527717300}
@@ -7695,6 +7694,7 @@ MonoBehaviour:
   requirementsToUnlock: 0
   HCDoorFlavor: {fileID: 1125668898}
   HCDoorEnter: {fileID: 2105732717}
+  map: {fileID: 188474675}
 --- !u!4 &831758367
 Transform:
   m_ObjectHideFlags: 0
@@ -8019,118 +8019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c025613e9d27f4e8692c9e055e2320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDialogue:
-  - 
-  openingResponses:
-  - 
-  - 
-  openingNames:
-  - 
-  openingB1:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  oB1Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  openingB2:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  oB2Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  numPad:
-  - 
-  - 
-  numPadNames:
-  - 
-  - 
-  hDialogue:
-  - 
-  hDialogueIQuestion:
-  - 
-  - 
-  - 
-  hDialogueIB1:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hDialogueIB2:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hDialogueIB3:
-  - 
-  - 
-  hIB1Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hIB2Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  hIB3Names:
-  - 
-  - 
-  sOneDialogue:
-  - 
-  sOneQuestionsI1:
-  - 
-  - 
-  sOneDialogueI1B1:
-  - 
-  - 
-  - 
-  - 
-  sOneDialogueI1B2:
-  - 
-  - 
-  - 
-  - 
-  - 
-  sOneI1B1Names:
-  - 
-  - 
-  - 
-  - 
-  sOneI1B2Names:
-  - 
-  - 
-  - 
-  - 
-  - 
 --- !u!4 &863328927
 Transform:
   m_ObjectHideFlags: 0
@@ -9067,7 +8955,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1065542233}
   - component: {fileID: 1065542237}
-  - component: {fileID: 1065542236}
   - component: {fileID: 1065542235}
   - component: {fileID: 1065542234}
   m_Layer: 0
@@ -9104,7 +8991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
+  connectedRoom: {fileID: 1717835023}
   canBeAccessed: 1
 --- !u!61 &1065542235
 BoxCollider2D:
@@ -9151,20 +9038,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1065542236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1065542232}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 1
 --- !u!212 &1065542237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9617,7 +9490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  canBeAccessed: 0
 --- !u!61 &1094312590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9967,8 +9840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  connectedRoom: {fileID: 378678585}
+  canBeAccessed: 0
 --- !u!61 &1114615869
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11452,8 +11325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e457ace3df7a934d96177d821a4d77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  connectedRoom: {fileID: 1573050832}
+  canBeAccessed: 0
 --- !u!61 &1288453781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11721,6 +11594,7 @@ MonoBehaviour:
   dc: {fileID: 45641575}
   ib: {fileID: 393542773}
   npb: {fileID: 0}
+  npb2: {fileID: 0}
   NumPadCollider: {fileID: 0}
   Movement: {fileID: 272795224}
   Map: {fileID: 188474675}
@@ -13619,9 +13493,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1651692151}
   - component: {fileID: 1651692155}
-  - component: {fileID: 1651692154}
   - component: {fileID: 1651692153}
   - component: {fileID: 1651692152}
+  - component: {fileID: 1651692156}
   m_Layer: 0
   m_Name: briefcase
   m_TagString: Untagged
@@ -13638,7 +13512,7 @@ Transform:
   m_GameObject: {fileID: 1651692150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.03, y: -2.55, z: -1}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 378678586}
@@ -13745,51 +13619,6 @@ MonoBehaviour:
   CharacterOn: []
   CharacterOff: []
   noDestroy: 0
---- !u!61 &1651692154
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651692150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.59, y: 19.54}
-    newSize: {x: 17.59, y: 19.54}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 17.59, y: 19.54}
-  m_EdgeRadius: 0
 --- !u!212 &1651692155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13831,7 +13660,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c72ec4ad3d27046468b2644d04a199c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7aac7398e62bb2e42ae41c9f5ace3160, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13842,6 +13671,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1651692156
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651692150}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 1.9499999, y: 1.9699999, z: 2.3899999, w: 2.1499999}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 10.24}
+    newSize: {x: 17.59, y: 19.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.24, y: 10.24}
+  m_EdgeRadius: 0
 --- !u!1 &1678524256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3967631951613078608, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
@@ -14012,7 +13886,7 @@ PrefabInstance:
     - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: map
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 188474675}
     - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: inventoryIcon
       value: 
@@ -14859,7 +14733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  canBeAccessed: 0
 --- !u!61 &1808046825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15530,6 +15404,7 @@ MonoBehaviour:
   correctDigitOne: 4
   correctDigitTwo: 2
   correctDigitThree: 0
+  solved: 0
   OpenSafe: {fileID: 1454298254}
   ClosedSafe: {fileID: 0}
   ButtonOne: {fileID: 0}
@@ -16169,7 +16044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 0}
-  canBeAccessed: 1
+  canBeAccessed: 0
 --- !u!61 &2096283969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17129,7 +17004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPos: {fileID: 2137844751}
-  roomNum: 0
+  roomNum: 1
   canBeAccessedViaMap: 0
 --- !u!4 &2137844751
 Transform:
