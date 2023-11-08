@@ -90,7 +90,7 @@ public class DialogueController : MonoBehaviour
     public void UpdateScreen(DialogueMessage x)
     {
         DialogueScreen.SetActive(true);
-        SpeakerName.text = getName(x.Names);
+        //SpeakerName.text = getName(x.Names);
         PortraitImage.sprite = x.Portrait;
         _textMeshPro.text = x.Text;
         StartCoroutine(Speaking());
