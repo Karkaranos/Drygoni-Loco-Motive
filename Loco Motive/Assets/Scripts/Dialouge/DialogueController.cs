@@ -229,6 +229,11 @@ public class DialogueController : MonoBehaviour
     }
     public void StopDialogue()
     {
+        GameObject temp = GameObject.Find("LargeViewCanvas");
+        if (temp != null)
+        {
+            temp.SetActive(false);
+        }
         DialogueScreen.SetActive(false);
         if (ib.iconIsEnabled)
         {
