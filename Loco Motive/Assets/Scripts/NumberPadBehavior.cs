@@ -157,7 +157,7 @@ public class NumberPadBehavior : MonoBehaviour
     /// </summary>
     public void CloseLock()
     {
-        numberPad.SetActive(false);
+        //numberPad.SetActive(false);
         playerGuess = 0;
         digitsEntered = 0;
         numberPadObject.SetActive(true);
