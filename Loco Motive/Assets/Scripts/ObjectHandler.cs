@@ -30,6 +30,8 @@ public class ObjectHandler : MonoBehaviour
     public List<GameObject> CharacterOn;
     public List<GameObject> CharacterOff;
     public bool noDestroy;
+    public bool fullyRevealsNotebookPage;
+    private int teaCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +46,18 @@ public class ObjectHandler : MonoBehaviour
     /// </summary>
     public void Interact()
     {
+        if(gameObject.tag == "TeaCupRequirement")
+        {
+            teaCount++;
+            if(teaCount == 2)
+            {
+                ncm.AdvancedInformationVisible(6);
+            }
+        }
         if (canBePickedUp)
         {
             ib.AddItemToInventory(itemID);
-            //LargeObjectView();
+            LargeObjectView();
         }
 
         if (CharacterOn.Count != 0)
@@ -69,9 +79,12 @@ public class ObjectHandler : MonoBehaviour
         if (updatesNotebook)
         {
             ncm.BasicInformationVisible(pageNumber);
-            //nm.GetPageInformation();
-            //ncm.AdvancedInformationVisible(pageNumber);
-            //LargeObjectView();
+            LargeObjectView();
+        }
+        if (fullyRevealsNotebookPage)
+        {
+            ncm.AdvancedInformationVisible(pageNumber);
+            LargeObjectView();
         }
         if (updatesUI)
         {
