@@ -19,6 +19,10 @@ public class DialogueController : MonoBehaviour
     public Image PortraitImage;
     public float timeBtwnChars;
     public float timeBtwnWords;
+    public bool branchOneRead = false;
+    public bool branchTwoRead = false;
+    public bool branchThreeRead = false;
+    public bool branchFourRead = false;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -213,19 +217,56 @@ public class DialogueController : MonoBehaviour
 
     public void BranchOneClicked()
     {
-        BranchOne.GetComponent<Image>().color = Color.cyan;
+        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        {
+            if (branchOneRead == true)
+            {
+                BranchOne.GetComponent<Image>().color = Color.cyan;
+            }
+            else
+            {
+                branchOneRead = true;
+            }
+        }
     }
     public void BranchTwoClicked()
     {
-        BranchTwo.GetComponent<Image>().color = Color.cyan;
+        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        {
+            if (branchTwoRead == true)
+            {
+                BranchTwo.GetComponent<Image>().color = Color.cyan;
+            }
+            else
+            {
+                branchTwoRead = true;
+            }
+        }
+        
     }
     public void BranchThreeClicked()
     {
-        BranchThree.GetComponent<Image>().color = Color.cyan;
+        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        {
+            if (branchThreeRead == true)
+            {
+                BranchThree.GetComponent<Image>().color = Color.cyan;
+            }
+            else
+            {
+                branchThreeRead = true;
+            }
+        }
     }
     public void BranchFourClicked()
     {
-        BranchFour.GetComponent<Image>().color = Color.cyan;
+        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        {
+            if (branchFourRead == false)
+            {
+                branchFourRead = true;
+            }
+        }
     }
     public void StopDialogue()
     {
