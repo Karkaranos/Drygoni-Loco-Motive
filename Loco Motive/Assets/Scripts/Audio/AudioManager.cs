@@ -17,8 +17,8 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] Sounds;
-    //public AudioMixerGroup masterMixer;
-    public float musicVolume = 1;
+    public AudioMixerGroup masterMixer;
+    public float musicVolume;
 
     private bool inInterrogation = false;
     private bool gameStarted = false;
@@ -31,8 +31,8 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     void Start()
     {
-        int numULSC = FindObjectsOfType<AudioManager>().Length;
-        if (numULSC != 1)
+        int numAM = FindObjectsOfType<AudioManager>().Length;
+        if (numAM != 1)
         {
             Destroy(this.gameObject);
         }
@@ -47,7 +47,7 @@ public class AudioManager : MonoBehaviour
 
 
             sound.source.clip = sound.audClip;
-            //sound.source.outputAudioMixerGroup = masterMixer;
+            sound.source.outputAudioMixerGroup = masterMixer;
             sound.source.volume = sound.clipVolume;
             sound.source.pitch = sound.clipPitch;
             sound.source.loop = sound.canLoop;
@@ -130,7 +130,7 @@ public class AudioManager : MonoBehaviour
         if (sound != null)
         {
             sound.source.Play();
-            sound.source.volume = 0;
+            sound.source.volume = 0.0f;
         }
     }
 
@@ -143,7 +143,7 @@ public class AudioManager : MonoBehaviour
         Sound sound = Array.Find(Sounds, sound => sound.name == audioName);
         if (sound != null)
         {
-            sound.source.volume = 0;
+            sound.source.volume = 0.0f;
         }
     }
 
