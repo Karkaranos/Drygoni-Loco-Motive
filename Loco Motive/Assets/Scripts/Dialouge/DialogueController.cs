@@ -248,7 +248,10 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
-        am.StopInterrogationMusic();
+        if (am != null)
+        {
+            am.StopInterrogationMusic();
+        }
         interrogating = false;
         accusing = false;
         GameObject lvc = GameObject.Find("LargeViewCanvas");
@@ -268,9 +271,11 @@ public class DialogueController : MonoBehaviour
         _textMeshPro.ForceMeshUpdate();
         int totalVisibleCharacters = _textMeshPro.textInfo.characterCount;
         int counter = 0;
-
+        Coroutine typing;
+     
         while (true)
         {
+            typing = StartCoroutine(am.Typing());
             int visibleCount = counter % (totalVisibleCharacters + 1);
             _textMeshPro.maxVisibleCharacters = visibleCount;
 
@@ -283,6 +288,7 @@ public class DialogueController : MonoBehaviour
             counter += 1;
             yield return new WaitForSeconds(timeBtwnChars);
         }
+        StopCoroutine(typing);
     }
 
     public void EndCheck()

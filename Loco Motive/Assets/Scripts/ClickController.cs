@@ -187,6 +187,7 @@ public class ClickController : MonoBehaviour
                 if (am != null)
                 {
                     am.PlayFootsteps();
+                    am.PlayDoor();
                 }
                 transform.position = hit.transform.GetComponent<RoomMove>().connectedRoom.roomPos.position;
                 transform.position = new Vector3(transform.position.x, transform.position.y, -10);

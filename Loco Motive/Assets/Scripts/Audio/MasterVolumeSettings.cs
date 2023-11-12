@@ -32,7 +32,7 @@ public class MasterVolumeSettings : MonoBehaviour
 
         RefreshSlider(_value);
         PlayerPrefs.SetFloat("SavedMasterVolume", _value);
-        print(masterMixer.SetFloat("MasterVolume", Mathf.Log10(_value / 100) * 20f));
+        masterMixer.SetFloat("MasterVolume", Mathf.Log10(_value / 100) * 20f);
         
     }
 

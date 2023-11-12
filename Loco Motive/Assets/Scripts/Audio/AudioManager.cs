@@ -11,6 +11,7 @@ audio source to each of them. Can call sound by using the name of the audio in t
 inspector
 *****************************************************************************/
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -24,6 +25,8 @@ public class AudioManager : MonoBehaviour
     private bool gameStarted = false;
 
     private int footstepTrack;
+
+    private string previousTrack;
 
     /// <summary>
     /// Start is called before the first frame update. It ensures only one instance
@@ -209,8 +212,8 @@ public class AudioManager : MonoBehaviour
         {
             Play("GameBGM");
         }
-        Stop("TutorialBGM");
-        Stop("MenuBGM");
+        Mute("TutorialBGM");
+        Mute("MenuBGM");
         Mute("ChoirBGM");
     }
 
@@ -260,6 +263,45 @@ public class AudioManager : MonoBehaviour
         else if (footstepTrack == 3)
         {
             Play("FootstepThree");
+        }
+    }
+
+    public void PlayDoor()
+    {
+        Play("Door");
+    }
+
+    public void PlayPauseMusic()
+    {
+        for (int i=0; i<4; i++)
+        {
+            if (Sounds[i].source.volume > 0)
+            {
+                previousTrack = Sounds[i].name;
+            }
+        }
+        print(previousTrack);
+        if(previousTrack != "TutorialBGM")
+        {
+            PlayMuted(previousTrack);
+            Unmute("TutorialBGM");
+            Play("TutorialBGM");
+        }
+    }
+
+    public void EndPauseMusic()
+    {
+        Unmute(previousTrack);
+        Mute("TutorialBGM");
+    }
+
+    public IEnumerator Typing()
+    {
+        while (true)
+        {
+            Play("Typing");
+            float wait = UnityEngine.Random.Range(.2f, .6f);
+            yield return new WaitForSeconds(wait);
         }
     }
     #endregion
