@@ -1342,7 +1342,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: "I found this business card that says \u201CCEO\u201D instead of \u201CCFO\u201D,
       care to explain?"
     Names: 1
@@ -1617,9 +1617,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 105666864}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchTwoClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1629,9 +1629,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchTwoClicked
+      - m_Target: {fileID: 105666864}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3310,9 +3310,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248876577}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchThreeClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3322,9 +3322,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchThreeClicked
+      - m_Target: {fileID: 248876577}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3461,7 +3461,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -5127,7 +5127,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -11454,7 +11454,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: I found this photo in your room, could you tell me about it?
     Names: 1
     Branch: []
@@ -18798,9 +18798,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 810011158}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchOneClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18810,9 +18810,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchOneClicked
+      - m_Target: {fileID: 810011158}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21029,7 +21029,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -25598,7 +25598,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -27348,7 +27348,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -29809,7 +29809,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -32164,7 +32164,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: I see you brought a printed photo of you and your kid. Could you tell me-
     Names: 1
     Branch: []
@@ -32951,9 +32951,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1685009731}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchFourClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32963,9 +32963,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchFourClicked
+      - m_Target: {fileID: 1685009731}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36164,7 +36164,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1

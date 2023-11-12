@@ -248,28 +248,14 @@ public class DialogueController : MonoBehaviour
     {
         if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
-            if (branchOneRead == true)
-            {
-                BranchOne.GetComponent<Image>().color = Color.cyan;
-            }
-            else
-            {
-                branchOneRead = true;
-            }
+            branchOneRead = true;
         }
     }
     public void BranchTwoClicked()
     {
         if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
-            if (branchTwoRead == true)
-            {
-                BranchTwo.GetComponent<Image>().color = Color.cyan;
-            }
-            else
-            {
-                branchTwoRead = true;
-            }
+            branchTwoRead = true;
         }
         
     }
@@ -277,24 +263,14 @@ public class DialogueController : MonoBehaviour
     {
         if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
-            if (branchThreeRead == true)
-            {
-                BranchThree.GetComponent<Image>().color = Color.cyan;
-            }
-            else
-            {
-                branchThreeRead = true;
-            }
+            branchThreeRead = true;
         }
     }
     public void BranchFourClicked()
     {
         if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
-            if (branchFourRead == false)
-            {
-                branchFourRead = true;
-            }
+            branchFourRead = true;
         }
     }
     public void StopDialogue()
