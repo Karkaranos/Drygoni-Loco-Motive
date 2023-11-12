@@ -23,6 +23,8 @@ public class UIButtonManager : MonoBehaviour
     private GameObject inventoryIcon;
     private DialogueController dc;
     private GameObject movementArrows;
+    private GameObject settingsMenu;
+    private bool inSettings;
     /// <summary>
     /// Called upon the scene's start; 
     /// </summary>
@@ -34,19 +36,22 @@ public class UIButtonManager : MonoBehaviour
             creditCanvas = GameObject.Find("CreditCanvas");
             creditText = GameObject.Find("Credits");
             creditCanvas.SetActive(false);
+            settingsMenu = GameObject.Find("Settings");
+            settingsMenu.SetActive(false);
     
             titleCanvas = GameObject.Find("TitleCanvas");
         }
-        else
-        {
-            if(SceneManager.GetActiveScene().name == "MainScene" || 
+        else if(SceneManager.GetActiveScene().name == "MainScene" || 
                 SceneManager.GetActiveScene().name == "TutorialScene")
+        {
             pauseMenu = GameObject.Find("PauseMenu");
             map = GameObject.Find("Map");
             notebookIcon = GameObject.Find("NotebookIcons");
             inventoryIcon = GameObject.Find("InventoryIcons");
             dc = FindObjectOfType<DialogueController>();
             movementArrows = GameObject.Find("Movement");
+            settingsMenu = GameObject.Find("Settings");
+            settingsMenu.SetActive(false);
         }
 
     }
@@ -139,7 +144,7 @@ public class UIButtonManager : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
-        if (dc != null && !dc.isTalking)
+        if (dc != null && !dc.isTalking && !inSettings)
         {
             isPaused = false;
             movementArrows.SetActive(true);
@@ -174,8 +179,8 @@ public class UIButtonManager : MonoBehaviour
                     notebookIcon = GameObject.Find("Map");
                 }
             }
+            am.EndPauseMusic();
         }
-
 
     }
 
@@ -220,8 +225,28 @@ public class UIButtonManager : MonoBehaviour
                     notebookIcon = GameObject.Find("Map");
                 }
             }
+            am.PlayPauseMusic();
         }
-        
+    }
+
+    public void OpenSettings()
+    {
+        inSettings = true;
+        if(pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
+        settingsMenu.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        inSettings = false;
+        if(pauseMenu != null)
+        {
+            pauseMenu.SetActive(true);
+        }
+        settingsMenu.SetActive(false);
     }
 
 }

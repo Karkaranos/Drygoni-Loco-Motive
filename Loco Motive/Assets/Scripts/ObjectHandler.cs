@@ -98,6 +98,7 @@ public class ObjectHandler : MonoBehaviour
                 nm.iconIsEnabled = true;
                 nm.notebookIcon.SetActive(true);
             }
+            LargeObjectView();
         }
         if (updatesTimeline == true)
         {
