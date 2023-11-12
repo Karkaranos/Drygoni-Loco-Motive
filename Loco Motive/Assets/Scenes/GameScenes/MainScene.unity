@@ -1342,7 +1342,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: "I found this business card that says \u201CCEO\u201D instead of \u201CCFO\u201D,
       care to explain?"
     Names: 1
@@ -1617,9 +1617,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 105666864}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchTwoClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1629,9 +1629,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchTwoClicked
+      - m_Target: {fileID: 105666864}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2361,33 +2361,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1035585897799210518, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1846208708}
-    - target: {fileID: 1035585897799210518, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenSettings
+    - target: {fileID: 714670926904202549, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
       objectReference: {fileID: 0}
-    - target: {fileID: 5465724493918533516, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1846208708}
-    - target: {fileID: 5465724493918533516, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Quit
+    - target: {fileID: 761860526270465333, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
       objectReference: {fileID: 0}
-    - target: {fileID: 5517458439011101038, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1846208708}
-    - target: {fileID: 5517458439011101038, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Resume
+    - target: {fileID: 883427953472311320, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
       objectReference: {fileID: 0}
+    - target: {fileID: 1730090165937214044, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399303564810398548, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 1498759645}
     - target: {fileID: 6167172818018222410, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310410925028574495, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 8301631662063629103, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_Pivot.x
@@ -2473,13 +2473,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8784883099683162661, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1846208708}
-    - target: {fileID: 8784883099683162661, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartScene
+    - target: {fileID: 9083432059313398297, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194425454309856121, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3310,9 +3310,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248876577}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchThreeClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3322,9 +3322,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchThreeClicked
+      - m_Target: {fileID: 248876577}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3461,7 +3461,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -5127,7 +5127,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -6789,7 +6789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574313664590639677, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 8461431341633235050, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_IsActive
@@ -6809,7 +6809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887262857832007771, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: NaN
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11454,7 +11454,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: I found this photo in your room, could you tell me about it?
     Names: 1
     Branch: []
@@ -18798,9 +18798,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 810011158}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchOneClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18810,9 +18810,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchOneClicked
+      - m_Target: {fileID: 810011158}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19913,7 +19913,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -20129,8 +20129,26 @@ MonoBehaviour:
     pageInfoToReveal: 0
     mainBranching: 0
   - Text: Dominic left to grab a drink around 11:00 so I just sat and read my book.
-      It felt like he was gone for a while so I just assumed he was sitting at the
-      bar to drink or he ran into someone and started talking. He likes talking.
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: d67cf08a7988b12428962992b7ca46b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: It felt like he was gone for a while so I just assumed he was sitting at
+      the bar to drink or he ran into someone and started talking. He likes talking.
     Names: 2
     Branch: []
     NextTextOverride: 0
@@ -20247,9 +20265,27 @@ MonoBehaviour:
     pageInfoToReveal: 0
     mainBranching: 0
   - Text: "I saw Hana in the lounge but she was asleep. I thought about waking her
-      up so he could sleep in her own room but I didn\u2019t want to bother her.
-      She seemed to be fine sleeping in the lounge. I went straight back to my room
-      and we finally beat the level at 2:00. "
+      up so he could sleep in her own room but I didn\u2019t want to bother her"
+    Names: 2
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: d67cf08a7988b12428962992b7ca46b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: 'She seemed to be fine sleeping in the lounge. I went straight back to
+      my room and we finally beat the level at 2:00. '
     Names: 2
     Branch: []
     NextTextOverride: 0
@@ -20993,7 +21029,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -25542,11 +25578,11 @@ MonoBehaviour:
     - choiceText: Testimony
       nextDialogue: 2
     - choiceText: Knives
-      nextDialogue: 18
+      nextDialogue: 20
     - choiceText: Realtion
-      nextDialogue: 44
+      nextDialogue: 46
     - choiceText: Hatemail
-      nextDialogue: 49
+      nextDialogue: 51
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
@@ -25562,7 +25598,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -25658,10 +25694,28 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
-  - Text: 'I went to talk to Josephine right after dinner and briefed her on how
-      our games would run on different systems and what to expect at the conference.
-      Then I went to my room to try and relax by polishing my knives which was IMPOSSIBLE
-      with Josephine and Hana arguing so loud. '
+  - Text: I went to talk to Josephine right after dinner and briefed her on how our
+      games would run on different systems and what to expect at the conference.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: 'Then I went to my room to try and relax by polishing my knives which was
+      IMPOSSIBLE with Josephine and Hana arguing so loud. '
     Names: 4
     Branch: []
     NextTextOverride: 0
@@ -25700,13 +25754,32 @@ MonoBehaviour:
     pageInfoToReveal: 0
     mainBranching: 0
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
-      care so I put on my headphones to try and drown the sound out. They eventually
-      stopped though. After I finished cleaning my blades I went to take a shower."
+      care so I put on my headphones to try and drown the sound out."
     Names: 4
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: They eventually stopped though. After I finished cleaning my blades I went
+      to take a shower.
+    Names: 4
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 698064bfea47a6a4da9b24183cffd6ac, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -25816,8 +25889,8 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
-  - Text: " Yeah I went to grab a snack before bed and I saw Hana. We talked for
-      a few minutes about how it\u2019s rude to be so loud so late at night."
+  - Text: "Yeah I went to grab a snack before bed and I saw Hana. We talked for a
+      few minutes about how it\u2019s rude to be so loud so late at night."
     Names: 4
     Branch: []
     NextTextOverride: 0
@@ -25874,7 +25947,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
-  - Text: huh yeah? So? Is that a crime?
+  - Text: Huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
     NextTextOverride: 0
@@ -25977,7 +26050,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
-  - Text: ' Fine.'
+  - Text: Fine.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -27259,7 +27332,7 @@ MonoBehaviour:
     - choiceText: Testimony
       nextDialogue: 2
     - choiceText: Relation to victim
-      nextDialogue: 26
+      nextDialogue: 28
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
@@ -27275,7 +27348,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -27374,13 +27447,32 @@ MonoBehaviour:
     pageInfoToReveal: 0
     mainBranching: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
-      together about the trip. We ended up getting upset with each other since we
-      both thought the other had taken care of everything in the house before we
-      left. I ended up stepping out so we could both calm down for a bit.
+      together about the trip.
     Names: 3
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: We ended up getting upset with each other since we both thought the other
+      had taken care of everything in the house before we left. I ended up stepping
+      out so we could both calm down for a bit.
+    Names: 3
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
     Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
     hasRead: 0
     correctAnswer: 0
@@ -27578,13 +27670,32 @@ MonoBehaviour:
     mainBranching: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
-      too. OH! His hair was wet! I thought it was weird but it makes sense because
-      there\u2019s a shower on the train."
+      too."
     Names: 3
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: "OH! His hair was wet! I thought it was weird but it makes sense because
+      there\u2019s a shower on the train."
+    Names: 3
+    Branch: []
+    NextTextOverride: 1
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -28538,8 +28649,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -28556,8 +28667,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29698,7 +29809,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -30066,7 +30177,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
-  - Text: " I left first and wasn\u2019t gone for too long. Alex left a couple of
+  - Text: "I left first and wasn\u2019t gone for too long. Alex left a couple of
       hours later and was back in only a few minutes."
     Names: 5
     Branch: []
@@ -30222,7 +30333,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
-  - Text: ' So, moving on. When did you go to bed?'
+  - Text: So, moving on. When did you go to bed?
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -30302,9 +30413,27 @@ MonoBehaviour:
     pageInfoToReveal: 0
     mainBranching: 0
   - Text: "It\u2019s true we weren\u2019t close friends like you are but when I did
-      talk to her she seemed pleasant and people cared about her. Whether or not
-      we were close doesn\u2019t change the fact her death is a tragedy that I hope
-      that I can help people move past."
+      talk to her she seemed pleasant and people cared about her."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+  - Text: "Whether or not we were close doesn\u2019t change the fact her death is
+      a tragedy that I hope that I can help people move past."
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -32035,7 +32164,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: I see you brought a printed photo of you and your kid. Could you tell me-
     Names: 1
     Branch: []
@@ -32822,9 +32951,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1685009731}
-        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
-        m_MethodName: ProgText
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchFourClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32834,9 +32963,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 45641575}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: BranchFourClicked
+      - m_Target: {fileID: 1685009731}
+        m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
+        m_MethodName: ProgText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33059,7 +33188,7 @@ PrefabInstance:
       objectReference: {fileID: 393542772}
     - target: {fileID: 1066308655970179815, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 1497755525887939833, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_IsActive
@@ -33067,7 +33196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3254524265019055224, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 4933084903469677854, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: m_margin.w
@@ -33596,7 +33725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 170, y: 183}
+  m_AnchoredPosition: {x: 144, y: 187}
   m_SizeDelta: {x: 1255.494, y: 214.1}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1710522196
@@ -36035,7 +36164,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -37572,135 +37701,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &2007235624
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2891333553736142056, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_Name
-      value: Settings
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4410521944441702489, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4410521944441702489, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546751242058279032, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1846208708}
-    - target: {fileID: 7546751242058279032, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettings
-      objectReference: {fileID: 0}
-    - target: {fileID: 8069770011206142263, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8069770011206142263, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8069770011206142263, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
 --- !u!1 &2014253588
 GameObject:
   m_ObjectHideFlags: 0
@@ -38781,7 +38781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
