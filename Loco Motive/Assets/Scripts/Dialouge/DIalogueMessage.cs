@@ -22,4 +22,5 @@ public class DialogueMessage
     public int timelineEventNum;
     public bool revealInfoNotebook;
     public int pageInfoToReveal;
+    public bool mainBranching;
 }
