@@ -19913,7 +19913,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []

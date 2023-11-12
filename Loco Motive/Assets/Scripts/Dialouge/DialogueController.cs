@@ -107,6 +107,35 @@ public class DialogueController : MonoBehaviour
             {
                 ChoiceBranch[i].GetComponent<DialogueButton>().UpdateButton(x.Branch[i].nextDialogue, x.Branch[i].choiceText);
                 ChoiceBranch[i].SetActive(true);
+                if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+                {
+                    if (branchOneRead == true)
+                    {
+                        Debug.Log("BranchOne Color Set");
+                        BranchOne.GetComponent<Image>().color = Color.cyan;
+                    }
+                    if (branchTwoRead == true)
+                    {
+                        Debug.Log("BranchTwo Color Set");
+                        BranchTwo.GetComponent<Image>().color = Color.cyan;
+                    }
+                    if (branchThreeRead == true)
+                    {
+                        Debug.Log("BranchThree Color Set");
+                        BranchThree.GetComponent<Image>().color = Color.cyan;
+                    }
+                    if (branchFourRead == true)
+                    {
+                        Debug.Log("BranchFour Color Set");
+                        BranchFour.GetComponent<Image>().color = Color.cyan;
+                    }
+                    Debug.Log("Colors Have Been Set");
+                }
+                else
+                {
+                    Debug.Log("No Colors Were Set");
+                    ChoiceBranch[i].GetComponent<Image>().color = Color.white;
+                }
             }
             ContinueButton.SetActive(false);
         }
@@ -297,10 +326,10 @@ public class DialogueController : MonoBehaviour
         {
             lvc.SetActive(false);
         }
-        BranchOne.GetComponent<Image>().color = Color.white;
-        BranchTwo.GetComponent<Image>().color = Color.white;
-        BranchThree.GetComponent<Image>().color = Color.white;
-        BranchFour.GetComponent<Image>().color = Color.white;
+        branchOneRead = false;
+        branchTwoRead = false;
+        branchThreeRead = false;
+        branchFourRead = false;
         opening = false;
     }
 
