@@ -317,6 +317,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: The tiny pirate escaped!
     Names: 0
     Branch: []
@@ -336,6 +337,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What?
     Names: 1
     Branch: []
@@ -355,6 +357,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s what\u2019s on the label! A pirate flag."
     Names: 0
     Branch: []
@@ -374,6 +377,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No, it\u2019s not. It\u2019s a skull on a warning label. Pirate flag?
       Seriously?"
     Names: 1
@@ -394,6 +398,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -1322,6 +1327,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -1343,6 +1349,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: "I found this business card that says \u201CCEO\u201D instead of \u201CCFO\u201D,
       care to explain?"
     Names: 1
@@ -1363,6 +1370,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Oh that sounds bad now but the bottom line of the \u201CE\u201D is written
       in pen. My son did that for me on Father\u2019s day. He was like, \u201COne
       day you\u2019ll be a CEO.\u201D because he knew that\u2019s what I\u2019ve
@@ -1385,6 +1393,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You\u2019re right, this line is clearly not printed. It even says \u201CJoseph\u201D
       on the back in messy writing."
     Names: 1
@@ -1405,6 +1414,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Isn\u2019t he so good at writing? They grow up so fast!"
     Names: 2
     Branch: []
@@ -1424,6 +1434,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Sure\u2026"
     Names: 1
     Branch: []
@@ -1443,6 +1454,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 7
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -1450,6 +1462,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 1
+  itemCollected: 0
 --- !u!1 &104112071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +1907,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Yes. He seems very passionate about nature given his books. '
     Names: 1
     Branch: []
@@ -1913,6 +1927,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: But these books specialize in poisonous plants.
     Names: 0
     Branch: []
@@ -1932,6 +1947,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s true, I\u2019d say he was worried about being poisoned but
       these pictures match a lot of the plants around the room. Strange."
     Names: 1
@@ -1952,6 +1968,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2291,6 +2308,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Me and my friends from college are still close too!
     Names: 0
     Branch: []
@@ -2310,6 +2328,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I still have a few grudges from college.
     Names: 1
     Branch: []
@@ -2329,6 +2348,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026Um\u2026 Do you want to talk about it?"
     Names: 0
     Branch: []
@@ -2348,6 +2368,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -2852,6 +2873,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What me?! But she was my wife!
     Names: 3
     Branch: []
@@ -2871,6 +2893,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Right, but with the will you had the most to gain from her death. Not to
       mention only you could have gotten into her room.
     Names: 1
@@ -2891,6 +2914,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "But I didn\u2019t kill her I swear! "
     Names: 3
     Branch: []
@@ -2910,6 +2934,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well done Casey, let's get off this train and go get dessert to treat ourselves!
     Names: 0
     Branch: []
@@ -2929,6 +2954,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -2948,6 +2974,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -3437,6 +3464,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -3462,6 +3490,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -3481,6 +3510,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We were just coworkers.
     Names: 2
     Branch: []
@@ -3500,6 +3530,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: When did you meet?
     Names: 1
     Branch: []
@@ -3519,6 +3550,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: A couple of years back when Josie was starting Defiant Door Studios. We
       got along and she hired me to handle finances.
     Names: 2
@@ -3539,6 +3571,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you give me a description of what you were doing last night?
     Names: 1
     Branch: []
@@ -3558,6 +3591,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: At 8:30 Josie agreed to meet with me and we talked about budgeting for
       the trip. After that Dominic came to my room and we played games together for
       the rest of the night.
@@ -3579,6 +3613,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019m surprised that you have a whole game console set up with you."
     Names: 1
     Branch: []
@@ -3598,6 +3633,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah and people are even more shocked when they find out I\u2019m a terrible
       electrician!"
     Names: 2
@@ -3618,6 +3654,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026Deep breath Casey\u2026  So you and Dominic were together all night?
       You didn\u2019t split up at any point? "
     Names: 1
@@ -3638,6 +3675,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'We did take a couple of breaks. '
     Names: 2
     Branch: []
@@ -3657,6 +3695,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Can you tell me the times and length of the breaks? '
     Names: 1
     Branch: []
@@ -3676,6 +3715,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Dominic left to grab a drink around 11:00 so I just sat and read my book.
       It felt like he was gone for a while so I just assumed he was sitting at the
       bar to drink or he ran into someone and started talking. He likes talking.
@@ -3697,6 +3737,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Do you know what he had to drink?
     Names: 1
     Branch: []
@@ -3716,6 +3757,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Does that really matter? It was probably something with caffeine so he
       could stay up later but I\u2019m not sure since he didn\u2019t bring it back
       with him."
@@ -3737,6 +3779,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And did you guys separate any other points?
     Names: 1
     Branch: []
@@ -3756,6 +3799,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I left around 12:45 to get some coffee.
     Names: 2
     Branch: []
@@ -3775,6 +3819,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Did you run into anyone? '
     Names: 1
     Branch: []
@@ -3794,6 +3839,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I saw Hana in the lounge but she was asleep. I thought about waking her
       up so he could sleep in her own room but I didn\u2019t want to bother her.
       She seemed to be fine sleeping in the lounge. I went straight back to my room
@@ -3816,6 +3862,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s pretty late, I assume you went to bed after?"
     Names: 1
     Branch: []
@@ -3835,6 +3882,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah, Dominic said he was too tired to keep going so he went back to his
       room. The coffee kept me up a bit so I read until I fell asleep.
     Names: 2
@@ -3855,6 +3903,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And Josephine would be dead when you woke up in the morning.
     Names: 1
     Branch: []
@@ -3874,6 +3923,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Maybe I should have woken up in the afternoon.
     Names: 2
     Branch: []
@@ -3893,6 +3943,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -3912,6 +3963,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I see you brought a printed photo of you and your kid. Could you tell me-
     Names: 1
     Branch: []
@@ -3931,6 +3983,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s Joe! He is the sweetest little boy you\u2019ll ever meet!
       Isn\u2019t he cute?"
     Names: 2
@@ -3951,6 +4004,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Uhhh\u2026"
     Names: 1
     Branch: []
@@ -3970,6 +4024,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You don\u2019t have to say it, I know he is. Just seeing this picture
       makes me miss him so much!"
     Names: 2
@@ -3990,6 +4045,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "What\u2019s Joe short for?"
     Names: 1
     Branch: []
@@ -4009,6 +4065,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Since he\u2019s only 3."
     Names: 2
     Branch: []
@@ -4028,6 +4085,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026"
     Names: 1
     Branch: []
@@ -4047,6 +4105,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Feel free to laugh.
     Names: 2
     Branch: []
@@ -4066,6 +4125,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "There\u2019s no need."
     Names: 1
     Branch: []
@@ -4085,6 +4145,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t get it\u2026"
     Names: 0
     Branch: []
@@ -4104,6 +4165,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -4123,6 +4185,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -4142,6 +4205,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: September 9th of 2020! The happiest day of my life! The second was the
       day I married my wife. Oh this one time we got little Joseph a cake for his
       birthday, right? And he was so small he had never had cake before and-
@@ -4163,6 +4227,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019ve heard enough thank you. It\u2019s so annoying how people keep
       talking about their kids at work."
     Names: 1
@@ -4183,6 +4248,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 1
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -4190,6 +4256,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 3
+  itemCollected: 0
 --- !u!1 &257524746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4879,6 +4946,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Wow, there\u2019s even a skull on the label! "
     Names: 0
     Branch: []
@@ -4898,6 +4966,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5103,6 +5172,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ask away!
     Names: 5
     Branch:
@@ -5128,6 +5198,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -5147,6 +5218,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We\u2019re friends and coworkers."
     Names: 5
     Branch: []
@@ -5166,6 +5238,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How long have you known each other?
     Names: 1
     Branch: []
@@ -5185,6 +5258,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Since college. When Josie started her company she invited me on board.
     Names: 5
     Branch: []
@@ -5204,6 +5278,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So you were close?
     Names: 1
     Branch: []
@@ -5223,6 +5298,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We were but not so much after graduation, not until we started working
       together again. It\u2019s awful what happened to her, isn\u2019t it?"
     Names: 5
@@ -5243,6 +5319,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yes, it\u2019s upsetting that some people can be so cruel."
     Names: 1
     Branch: []
@@ -5262,6 +5339,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Do you have any idea who could have done it?
     Names: 5
     Branch:
@@ -5285,6 +5363,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t. I still need to gather more clues."
     Names: 1
     Branch: []
@@ -5304,6 +5383,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I do but I don't want to make any accusations until I finish investigating.
     Names: 1
     Branch: []
@@ -5323,6 +5403,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Alright, well keep me posted ok? Maybe I can help you out too.
     Names: 5
     Branch: []
@@ -5342,6 +5423,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah, sure.
     Names: 1
     Branch: []
@@ -5361,6 +5443,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you tell me what you were doing the night of the crime?
     Names: 1
     Branch: []
@@ -5380,6 +5463,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Alex and I were playing video games almost all night.
     Names: 5
     Branch: []
@@ -5399,6 +5483,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Was there any point when you two were separated?
     Names: 1
     Branch: []
@@ -5418,6 +5503,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah we each left to get a drink from the bar.
     Names: 5
     Branch: []
@@ -5437,6 +5523,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you have any alcohol?
     Names: 1
     Branch: []
@@ -5456,6 +5543,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Oh no, just wine with dinner. Alex and I both got some caffeine so we could
       stay up and finish our game.
     Names: 5
@@ -5476,6 +5564,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And how long were each of you gone?
     Names: 1
     Branch: []
@@ -5495,6 +5584,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: " I left first and wasn\u2019t gone for too long. Alex left a couple of
       hours later and was back in only a few minutes."
     Names: 5
@@ -5515,6 +5605,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you see anyone other than Alex after dinner?
     Names: 1
     Branch: []
@@ -5534,6 +5625,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah Hana was in the lounge when I went to the bar. We didn\u2019t talk
       much other than saying \u201CGood night\u201D to each other. I feel so bad
       for her. Losing Josephine is hard on all of us but for her especially."
@@ -5555,6 +5647,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yes, death comes for us all eventually.
     Names: 1
     Branch: []
@@ -5574,6 +5667,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s pretty dark don\u2019t you think?"
     Names: 5
     Branch: []
@@ -5593,6 +5687,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We need to face the truth no matter how dark it is.
     Names: 1
     Branch: []
@@ -5612,6 +5707,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I bet you\u2019re really fun at parties, huh?"
     Names: 5
     Branch: []
@@ -5631,6 +5727,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Hey Casey is plenty of fun! They play chess with me when it gets slow at
       work!
     Names: 0
@@ -5651,6 +5748,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ' So, moving on. When did you go to bed?'
     Names: 1
     Branch: []
@@ -5670,6 +5768,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We finished our game around 2:00 AM. I was super tired by then and fell
       asleep as soon as I got into my room.
     Names: 5
@@ -5690,6 +5789,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So the last time you saw Josephine was at dinner?
     Names: 1
     Branch: []
@@ -5709,6 +5809,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yup. Weird to think that was the last time ever. It was the last time
       you saw her too, right? Though I guess you weren\u2019t really acquainted so
       not much has changed for you."
@@ -5730,6 +5831,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "It\u2019s true we weren\u2019t close friends like you are but when I did
       talk to her she seemed pleasant and people cared about her. Whether or not
       we were close doesn\u2019t change the fact her death is a tragedy that I hope
@@ -5752,6 +5854,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Aw, Casey.
     Names: 0
     Branch: []
@@ -5771,6 +5874,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Josie has always been thorough in her work. Seems it was no different when
       she hired a PI.
     Names: 5
@@ -5791,6 +5895,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I found this photo in your room, could you tell me about it?
     Names: 1
     Branch: []
@@ -5810,6 +5915,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Sure. Josie, Hana, and I all met at university. Our friend group was pretty
       close back then and that picture was taken one day when we all went out to
       lunch.
@@ -5831,6 +5937,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You and Hana look closer in this picture than you are now. You\u2019ve
       barely talked together."
     Names: 1
@@ -5851,6 +5958,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s because we were dating at the time."
     Names: 5
     Branch: []
@@ -5870,6 +5978,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Oh really? How was the relationship? '
     Names: 1
     Branch: []
@@ -5889,6 +5998,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ' It was good for a while but she ended up breaking it off. She came out
       and told me she would rather be with a girl.'
     Names: 5
@@ -5909,6 +6019,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And did she start seeing Josephine right after?
     Names: 1
     Branch: []
@@ -5928,6 +6039,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No they didn\u2019t get together till after graduation but they had always
       been close leading up to it."
     Names: 5
@@ -5948,6 +6060,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I see. Even though that\u2019s all in the past now it\u2019s still good
       for me to keep in mind."
     Names: 1
@@ -5968,6 +6081,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 3
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -5975,6 +6089,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 3
+  itemCollected: 0
 --- !u!1 &348112252
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,6 +6910,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8593815368927769854, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637099740770494140, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -7224,6 +7343,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I need a bit more time
     Names: 1
     Branch: []
@@ -7243,6 +7363,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ok! Let me know when you're done!
     Names: 0
     Branch: []
@@ -7262,6 +7383,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I'd like to talk to everyone together so we can go over the events.
     Names: 1
     Branch: []
@@ -7281,6 +7403,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Well, we\u2019re already all here in the lounge so you should hurry and
       get started."
     Names: 4
@@ -7301,6 +7424,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019d like to start by talking about the state of Josephine\u2019s
       body. Hana, if you want to step out I understand."
     Names: 1
@@ -7321,6 +7445,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No. I\u2019ll be ok."
     Names: 3
     Branch: []
@@ -7340,6 +7465,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Then let me review what we know. Josephine was found in her room this
       morning by her wife. She had been stabbed and there was a message written in
       her blood. She was probably killed between 10:00 and 12:00 last night. '
@@ -7361,6 +7487,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We know both Brady and Alex met with Josephine after dinner. The last
       person to see Josephine, besides the killer, was Hana. We know that Josephine
       was still alive then because\u2026"
@@ -7388,6 +7515,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I don't quite think that was right...
     Names: 1
     Branch: []
@@ -7407,6 +7535,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Brady, you heard Hana and Josephine fighting last night.
     Names: 1
     Branch: []
@@ -7426,6 +7555,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah I definitely heard both of their voices. They were so loud I couldn\u2019t
       have missed it."
     Names: 4
@@ -7446,6 +7576,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And you said that was around 10:00 so Josephine couldn\u2019t have been
       killed till after that. We should go over everyone\u2019s alibi during that
       time. Alex and Dominic were together almost all night."
@@ -7467,6 +7598,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "So we\u2019re clear? "
     Names: 2
     Branch: []
@@ -7486,6 +7618,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ayy, high five!
     Names: 5
     Branch: []
@@ -7505,6 +7638,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Not so fast, you both took breaks. When Dominic took a break he saw Hana
       in the lounge, just like she had said. He also left Alex alone in his room.
       That was just before 11:00. Brady was in his room and went to shower a few
@@ -7527,6 +7661,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I only left the lounge when I went to check on Josie.
     Names: 3
     Branch: []
@@ -7546,6 +7681,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And then you killed her\u2026"
     Names: 0
     Branch: []
@@ -7565,6 +7701,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: No Hunter.
     Names: 1
     Branch: []
@@ -7584,6 +7721,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: But she was the only one who had a key!
     Names: 0
     Branch: []
@@ -7603,6 +7741,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Yes, but Josephine could have opened the door and let someone in whether
       or not they had a key. '
     Names: 1
@@ -7623,6 +7762,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Why would she just let the killer come in?
     Names: 0
     Branch: []
@@ -7642,6 +7782,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Maybe she didn\u2019t know they were going to kill her? She let me and
       Brady into her room for our meetings."
     Names: 2
@@ -7662,6 +7803,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Right, I think somebody met with Josephine without telling anyone. '
     Names: 1
     Branch: []
@@ -7681,6 +7823,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Since Dominic and Alex were together and she was upset with me it would
       have been Brady right?
     Names: 3
@@ -7701,6 +7844,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Why me?! I was in the shower until I talked to you!
     Names: 4
     Branch: []
@@ -7720,6 +7864,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Josephine also suffered several stab wounds. She was most likely stabbed
       by\u2026"
     Names: 1
@@ -7746,6 +7891,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: There was no evidence she was stabbed by that.
     Names: 1
     Branch: []
@@ -7765,6 +7911,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'She was probably stabbed by your knife, Brady. It even had blood on it. '
     Names: 1
     Branch: []
@@ -7784,6 +7931,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I would never use my knife for stabbing people! It\u2019s far too important
       to get dirty."
     Names: 4
@@ -7804,6 +7952,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: You keep your knife locked in a box that can only be unlocked with your
       key right?
     Names: 1
@@ -7824,6 +7973,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah, and there isn\u2019t a spare key on the train."
     Names: 4
     Branch: []
@@ -7843,6 +7993,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Was there any point where you didn\u2019t have the key with you?"
     Names: 1
     Branch: []
@@ -7862,6 +8013,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well I guess I left it in my room while I showered.
     Names: 4
     Branch: []
@@ -7881,6 +8033,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you lock your room?
     Names: 1
     Branch: []
@@ -7900,6 +8053,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'No, then I would need to take my keys into the bathroom anyway. '
     Names: 4
     Branch: []
@@ -7919,6 +8073,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So you left your keys and room completely unattended for 20 minutes while
       you showered.
     Names: 1
@@ -7939,6 +8094,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "If I knew someone would get my knives dirty I obviously wouldn\u2019t
       have done that."
     Names: 4
@@ -7959,6 +8115,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s not what you should be worried about!"
     Names: 3
     Branch: []
@@ -7978,6 +8135,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "So anyone could have used Brady\u2019s knife."
     Names: 1
     Branch: []
@@ -7997,6 +8155,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "If anyone could have used the knife maybe there\u2019s another clue?"
     Names: 0
     Branch: []
@@ -8016,6 +8175,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Let\u2019s consider how she died."
     Names: 1
     Branch: []
@@ -8035,6 +8195,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You mean it wasn\u2019t the knife?"
     Names: 5
     Branch: []
@@ -8054,6 +8215,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I think they used the knife after she died to throw us off.
     Names: 1
     Branch: []
@@ -8073,6 +8235,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "This killer used my knife as a distraction? They shouldn\u2019t have used
       it at all!"
     Names: 4
@@ -8093,6 +8256,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Calm down, the culprit isn\u2019t going to get away."
     Names: 1
     Branch: []
@@ -8112,6 +8276,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So if the knife was used after death what really killed her?
     Names: 3
     Branch: []
@@ -8131,6 +8296,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "The only other weapon I was able to find besides the knife was\u2026"
     Names: 1
     Branch:
@@ -8156,6 +8322,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: If someone killed her with that, I would be impressed.
     Names: 1
     Branch: []
@@ -8175,6 +8342,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'I actually found an empty poison vial at the bar. '
     Names: 1
     Branch: []
@@ -8194,6 +8362,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "At the bar? Anyone could have used it then\u2026"
     Names: 3
     Branch: []
@@ -8213,6 +8382,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I think we\u2019ll start by talking about how Josephine took the poison.
       Since the vial was at the bar it was probably given to her with her\u2026"
     Names: 1
@@ -8239,6 +8409,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I don't recall seeing any evidence of that in her room.
     Names: 1
     Branch: []
@@ -8258,6 +8429,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Since they left the vial at the bar they probably put something into her
       drink. '
     Names: 1
@@ -8278,6 +8450,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "But, she wasn\u2019t drinking at the bar last night. "
     Names: 3
     Branch: []
@@ -8297,6 +8470,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So then somebody would just have to have brought it to her.
     Names: 1
     Branch: []
@@ -8316,6 +8490,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Oh! And that\u2019s who-"
     Names: 0
     Branch: []
@@ -8335,6 +8510,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And that\u2019s our killer."
     Names: 1
     Branch: []
@@ -8354,6 +8530,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Hey, I wanted to say it!
     Names: 0
     Branch: []
@@ -8373,6 +8550,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Nobody brought a drink to Josephine though.
     Names: 2
     Branch: []
@@ -8392,6 +8570,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Right, we all had drinks from the bar with dinner.
     Names: 5
     Branch: []
@@ -8411,6 +8590,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "But we didn\u2019t prepare those on our own so I think they were all safe.
       The killer would have had a hard time making sure the poison was in the right
       drink if they handed it off."
@@ -8432,6 +8612,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So then Josephine drank something after dinner?
     Names: 3
     Branch: []
@@ -8451,6 +8632,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Right, she had\u2026"
     Names: 1
     Branch:
@@ -8476,6 +8658,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: You don't usually see that in the type of cup we found in her room.
     Names: 1
     Branch: []
@@ -8495,6 +8678,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: There was a tea cup in her room so she probably had tea.
     Names: 1
     Branch: []
@@ -8514,6 +8698,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Of course it was tea. Tea always tastes weird so you would never notice
       poison!
     Names: 0
@@ -8534,6 +8719,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Josie always preferred tea to coffee.
     Names: 3
     Branch: []
@@ -8553,6 +8739,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah but we all knew that since she drinks a cup every morning at the office.
     Names: 4
     Branch: []
@@ -8572,6 +8759,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Hana, you were in the lounge most of the evening. Did you see anyone walk
       through with a cup of tea?
     Names: 1
@@ -8592,6 +8780,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Oh yeah Dominic had a cup of tea.
     Names: 3
     Branch: []
@@ -8611,6 +8800,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Wow, you don\u2019t even like tea."
     Names: 2
     Branch: []
@@ -8630,6 +8820,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And did he bring the tea back to your room Alex?
     Names: 1
     Branch: []
@@ -8649,6 +8840,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: No, he came back with nothing.
     Names: 2
     Branch: []
@@ -8668,6 +8860,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Anything to say about that?
     Names: 1
     Branch: []
@@ -8687,6 +8880,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t like what you\u2019re implying. It could have just as easily
       been Hana."
     Names: 5
@@ -8707,6 +8901,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Dominic, did you leave your room unlocked at any point?
     Names: 1
     Branch: []
@@ -8726,6 +8921,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Of course not, I\u2019m more responsible than Brady."
     Names: 5
     Branch: []
@@ -8745,6 +8941,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Hey!  '
     Names: 4
     Branch: []
@@ -8764,6 +8961,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Dominic doesn\u2019t have to bother locking his room, nobody is brave
       enough to go through that mess anyway!"
     Names: 0
@@ -8784,6 +8982,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "So you\u2019re saying nobody could have gone into your room?"
     Names: 1
     Branch: []
@@ -8803,6 +9002,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No. I locked it as soon as I left. I don\u2019t see why we need to bring
       that up. "
     Names: 5
@@ -8823,6 +9023,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Since the poison is clearly from your room.
     Names: 1
     Branch: []
@@ -8842,6 +9043,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "What? I don\u2019t have any poison in my room."
     Names: 5
     Branch: []
@@ -8861,6 +9063,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Really? You have plenty of poisonous plants.
     Names: 1
     Branch: []
@@ -8880,6 +9083,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "They aren\u2019t for murder, they\u2019re his little friends. Like Brady\u2019s
       knives!"
     Names: 2
@@ -8900,6 +9104,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ew no my knives are way cooler than some plants.
     Names: 4
     Branch: []
@@ -8919,6 +9124,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I didn\u2019t even know they were poisonous."
     Names: 5
     Branch: []
@@ -8938,6 +9144,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Really? Because in your room we also found\u2026"
     Names: 1
     Branch:
@@ -8963,6 +9170,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: While that may have been in his room, is it really relevant here?
     Names: 1
     Branch: []
@@ -8982,6 +9190,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: There were quite a few books about poisonous plants with clear pictures.
       Not to mention, some of those plants were exotic, not something you just get
       on accident.
@@ -9003,6 +9212,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s\u2026 so weird\u2026"
     Names: 5
     Branch: []
@@ -9022,6 +9232,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Those were the main things I wanted to talk about.
     Names: 1
     Branch: []
@@ -9041,6 +9252,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well, who did it?
     Names: 0
     Branch: []
@@ -9060,6 +9272,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I think I know...
     Names: 1
     Branch: []
@@ -9079,6 +9292,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What are you waiting for? Go talk to them and accuse them!
     Names: 0
     Branch: []
@@ -9112,6 +9326,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -10891,6 +11106,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -11312,6 +11528,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -11434,6 +11651,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ask away!
     Names: 5
     Branch:
@@ -11455,6 +11673,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: I found this photo in your room, could you tell me about it?
     Names: 1
     Branch: []
@@ -11474,6 +11693,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Sure. Josie, Hana, and I all met at university. Our friend group was pretty
       close back then and that picture was taken one day when we all went out to
       lunch.
@@ -11495,6 +11715,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You and Hana look closer in this picture than you are now. You\u2019ve
       barely talked together."
     Names: 1
@@ -11515,6 +11736,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s because we were dating at the time."
     Names: 5
     Branch: []
@@ -11534,6 +11756,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Oh really? How was the relationship? '
     Names: 1
     Branch: []
@@ -11553,6 +11776,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ' It was good for a while but she ended up breaking it off. She came out
       and told me she would rather be with a girl.'
     Names: 5
@@ -11573,6 +11797,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And did she start seeing Josephine right after?
     Names: 1
     Branch: []
@@ -11592,6 +11817,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No they didn\u2019t get together till after graduation but they had always
       been close leading up to it."
     Names: 5
@@ -11612,6 +11838,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I see. Even though that\u2019s all in the past now it\u2019s still good
       for me to keep in mind."
     Names: 1
@@ -11632,6 +11859,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 3
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -11639,6 +11867,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 1
+  itemCollected: 0
 --- !u!1 &649381928
 GameObject:
   m_ObjectHideFlags: 0
@@ -11788,6 +12017,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Huh me? Are you serious?
     Names: 5
     Branch: []
@@ -11807,6 +12037,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Maybe we should review how you pulled it off. After Josephine left dinner
       she went to her room. You went to Alex\u2019s room and played games. You took
       a break and saw Hana was in the lounge meaning Josephine was alone."
@@ -11828,6 +12059,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: You made tea with the poisonous leaves from your room and took it to Josephine.
       You heard Brady go into the shower and took the opportunity to take his knife.
       You used it to fake the cause of death and write the message in blood.
@@ -11849,6 +12081,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Because Brady had locked te bathroom door you couldn\u2019t wash anything
       and used Josephine\u2019s finger to write the message. You also had to return
       the knife bloodied. After you went back to Alex\u2019s room and waited for
@@ -11871,6 +12104,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How did I do?
     Names: 1
     Branch: []
@@ -11890,6 +12124,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Completely wrong of course. You really think I did all that? I didn\u2019t
       even have a motive!"
     Names: 5
@@ -11910,6 +12145,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Overall it seemed multiple people had a motive of some kind.
     Names: 1
     Branch: []
@@ -11929,6 +12165,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Alex was in line to take over the company. Brady desperately wanted a
       change in management and Hana had just fought with Josephine. On top of that,
       all of Josephine\u2019s belongings were supposed to go to Hana but nobody knew
@@ -11951,6 +12188,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And Dominic is clear!
     Names: 0
     Branch: []
@@ -11970,6 +12208,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Not quite. He and Josephine have known each other for a long time. He
       even dated her wife. I can\u2019t say for sure how their relationship was since
       Josephine isn\u2019t here."
@@ -11991,6 +12230,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Actually, I have a guess. Dominic, are you still mad I broke up with you
       and dated Josephine? There\u2019s been a lot of tension between you two for
       a while now."
@@ -12012,6 +12252,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Well of course I\u2019m mad. We were in love! We had everything! It was
       good. I gave you everything I could and you threw it all away?"
     Names: 5
@@ -12032,6 +12273,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I like women! We\u2019ve been over this. It may have been good for you
       but you had no idea how I felt."
     Names: 3
@@ -12052,6 +12294,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ah, a motive.
     Names: 1
     Branch: []
@@ -12071,6 +12314,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: A wild motive appeared! I knew there was one around here somewhere.
     Names: 0
     Branch: []
@@ -12090,6 +12334,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So then, you killed Josephine because you were jealous.
     Names: 1
     Branch: []
@@ -12109,6 +12354,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you really..? Because of me?
     Names: 3
     Branch: []
@@ -12128,6 +12374,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Hana, you did nothing wrong.
     Names: 1
     Branch: []
@@ -12147,6 +12394,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "What did she have that I didn\u2019t? Hana, love, it\u2019s alright. Whatever
       she did to force you into marrying her, it\u2019s all over. I\u2019m here now."
     Names: 5
@@ -12167,6 +12415,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Be mine again and everything will be alright. You\u2019ll forget Josie
       in no time. Do you know how hard the breakup was for me? You saying nothing
       was real? I love you, and I know you love me too."
@@ -12188,6 +12437,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You\u2019re insane! You KILLED my wife!"
     Names: 3
     Branch: []
@@ -12207,6 +12457,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Well, since he admitted it I\u2019m going to assume this was the right
       choice."
     Names: 1
@@ -12227,6 +12478,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Case closed! We should get cake!
     Names: 0
     Branch: []
@@ -12246,6 +12498,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12581,6 +12834,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -12832,6 +13086,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Unless Brady is hiding a nasty cut I think it\u2019s safe to assume this
       is the victim's blood."
     Names: 1
@@ -12852,6 +13107,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: The shape matches the wounds on the body too.
     Names: 0
     Branch: []
@@ -12871,6 +13127,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019ll be taking this as evidence."
     Names: 1
     Branch: []
@@ -12890,6 +13147,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -13089,6 +13347,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: You mean you don't bring your will everywhere with you? How do you ever
       get things done?
     Names: 0
@@ -13109,6 +13368,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Not that type of will. This Will details the distribution of her belongings
       after death.
     Names: 1
@@ -13129,6 +13389,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Are we in it?
     Names: 0
     Branch: []
@@ -13148,6 +13409,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ... No, but Hana is the new CEO of Defiant Door Studios.
     Names: 0
     Branch: []
@@ -13167,6 +13429,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -18651,6 +18914,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well why would she? Tea is disgusting!
     Names: 0
     Branch: []
@@ -18670,6 +18934,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Not everyone hates tea as much as you do, Hunter.
     Names: 1
     Branch: []
@@ -18689,6 +18954,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -18928,6 +19194,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -19891,6 +20158,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -19914,6 +20182,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: What was your relationship with the victim?
     Names: 1
     Branch: []
@@ -19933,6 +20202,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We were just coworkers.
     Names: 2
     Branch: []
@@ -19952,6 +20222,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: When did you meet?
     Names: 1
     Branch: []
@@ -19971,6 +20242,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: A couple of years back when Josie was starting Defiant Door Studios. We
       got along and she hired me to handle finances.
     Names: 2
@@ -19991,6 +20263,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you give me a description of what you were doing last night?
     Names: 1
     Branch: []
@@ -20010,6 +20283,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: At 8:30 Josie agreed to meet with me and we talked about budgeting for
       the trip. After that Dominic came to my room and we played games together for
       the rest of the night.
@@ -20031,6 +20305,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019m surprised that you have a whole game console set up with you."
     Names: 1
     Branch: []
@@ -20050,6 +20325,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah and people are even more shocked when they find out I\u2019m a terrible
       electrician!"
     Names: 2
@@ -20070,6 +20346,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026Deep breath Casey\u2026  So you and Dominic were together all night?
       You didn\u2019t split up at any point? "
     Names: 1
@@ -20090,6 +20367,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'We did take a couple of breaks. '
     Names: 2
     Branch: []
@@ -20109,6 +20387,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Can you tell me the times and length of the breaks? '
     Names: 1
     Branch: []
@@ -20128,6 +20407,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Dominic left to grab a drink around 11:00 so I just sat and read my book.
     Names: 2
     Branch: []
@@ -20147,6 +20427,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: It felt like he was gone for a while so I just assumed he was sitting at
       the bar to drink or he ran into someone and started talking. He likes talking.
     Names: 2
@@ -20167,6 +20448,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Do you know what he had to drink?
     Names: 1
     Branch: []
@@ -20186,6 +20468,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Does that really matter? It was probably something with caffeine so he
       could stay up later but I\u2019m not sure since he didn\u2019t bring it back
       with him."
@@ -20207,6 +20490,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And did you guys separate any other points?
     Names: 1
     Branch: []
@@ -20226,6 +20510,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I left around 12:45 to get some coffee.
     Names: 2
     Branch: []
@@ -20245,6 +20530,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Did you run into anyone? '
     Names: 1
     Branch: []
@@ -20264,6 +20550,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I saw Hana in the lounge but she was asleep. I thought about waking her
       up so he could sleep in her own room but I didn\u2019t want to bother her"
     Names: 2
@@ -20284,6 +20571,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'She seemed to be fine sleeping in the lounge. I went straight back to
       my room and we finally beat the level at 2:00. '
     Names: 2
@@ -20304,6 +20592,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s pretty late, I assume you went to bed after?"
     Names: 1
     Branch: []
@@ -20323,6 +20612,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah, Dominic said he was too tired to keep going so he went back to his
       room. The coffee kept me up a bit so I read until I fell asleep.
     Names: 2
@@ -20343,6 +20633,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And Josephine would be dead when you woke up in the morning.
     Names: 1
     Branch: []
@@ -20362,6 +20653,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Maybe I should have woken up in the afternoon.
     Names: 2
     Branch: []
@@ -20381,6 +20673,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Right\u2026"
     Names: 1
     Branch: []
@@ -20400,6 +20693,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -20407,6 +20701,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 2
+  itemCollected: 0
 --- !u!1 &950536675
 GameObject:
   m_ObjectHideFlags: 0
@@ -21003,6 +21298,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ...
     Names: 3
     Branch:
@@ -21030,6 +21326,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -21049,6 +21346,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: After dinner I was in the room. Josie came later and both Alex and Brady
       came in to talk to her about business.
     Names: 3
@@ -21069,6 +21367,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: When Josephine came in did she have a drink?
     Names: 1
     Branch: []
@@ -21088,6 +21387,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
       met with the others either."
     Names: 3
@@ -21108,6 +21408,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I see, please continue.
     Names: 1
     Branch: []
@@ -21127,6 +21428,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
       together about the trip. We ended up getting upset with each other since we
       both thought the other had taken care of everything in the house before we
@@ -21149,6 +21451,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What time was this?
     Names: 1
     Branch: []
@@ -21168,6 +21471,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
       a few neighbors to make sure our house was taken care of.
     Names: 3
@@ -21188,6 +21492,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you see anyone while you were in the lounge?
     Names: 1
     Branch: []
@@ -21207,6 +21512,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
       was having trouble sleeping. I saw Bradey a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
@@ -21228,6 +21534,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And what time was that?
     Names: 1
     Branch: []
@@ -21247,6 +21554,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: It was probably 11:20.
     Names: 3
     Branch:
@@ -21270,6 +21578,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
@@ -21289,6 +21598,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
       to relax and that\u2019s not possible with you yelling!\u201D And I tried to
       apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
@@ -21311,6 +21621,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
@@ -21330,6 +21641,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
       too. OH! His hair was wet! I thought it was weird but it makes sense because
@@ -21352,6 +21664,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Wait how does a shower on a train even work?
     Names: 0
     Branch: []
@@ -21371,6 +21684,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019ll explain later, we\u2019re getting off track."
     Names: 1
     Branch: []
@@ -21390,6 +21704,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ha, nice one.
     Names: 0
     Branch: []
@@ -21409,6 +21724,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
     Names: 1
     Branch: []
@@ -21428,6 +21744,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Was that helpful?
     Names: 3
     Branch: []
@@ -21447,6 +21764,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yes. What happened next?
     Names: 1
     Branch: []
@@ -21466,6 +21784,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
       I knocked on the door and assumed she was mad or asleep so I just went back
       into the lounge. I accidentally fell asleep soon after.'
@@ -21487,6 +21806,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
@@ -21506,6 +21826,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 4
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -21525,6 +21846,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -21545,6 +21867,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -21564,6 +21887,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -21584,6 +21908,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Was there anything strange leading up to the incident? Maybe some way she
       behaved? Something she said?
     Names: 1
@@ -21604,6 +21929,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: No I really had no idea something like this could happen!
     Names: 3
     Branch: []
@@ -21623,6 +21949,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Nothing?
     Names: 1
     Branch: []
@@ -21642,6 +21969,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well actually. She gave me a note.
     Names: 3
     Branch: []
@@ -21661,6 +21989,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What does it say?
     Names: 1
     Branch: []
@@ -21680,6 +22009,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
       you to have it."
     Names: 3
@@ -21700,6 +22030,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -21720,6 +22051,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Oh that was my junior year of college. I was hanging out with Josie and
       Dominic that day.
     Names: 3
@@ -21744,6 +22076,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Were you and Dominic close at the time?
     Names: 1
     Branch: []
@@ -21763,6 +22096,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
       like guys so I broke it off. I feel like he was upset since our relationship
       hasn\u2019t really been the same since."
@@ -21784,6 +22118,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Were you and Josephine together yet?
     Names: 1
     Branch: []
@@ -21803,6 +22138,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No. We weren\u2019t super close during school but we kept in contact after.
       That\u2019s also when we started dating. We just kept getting closer after
       that."
@@ -21824,6 +22160,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I see. But you were all getting along recently?
     Names: 1
     Branch: []
@@ -21843,6 +22180,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
       but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
@@ -21863,6 +22201,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
@@ -21882,6 +22221,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 3
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -21889,6 +22229,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 3
+  itemCollected: 0
 --- !u!1 &1032534389
 GameObject:
   m_ObjectHideFlags: 0
@@ -22382,6 +22723,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Yeah. '
     Names: 1
     Branch: []
@@ -22401,6 +22743,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -23053,6 +23396,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -23343,6 +23687,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I guess his poetry was too bad for even him to read.
     Names: 0
     Branch: []
@@ -23362,6 +23707,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Or somebody needed paper to write a note.
     Names: 1
     Branch: []
@@ -23381,6 +23727,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -23676,6 +24023,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -24377,6 +24725,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Huh? Me? No I didn\u2019t."
     Names: 2
     Branch: []
@@ -24396,6 +24745,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "It was simple really. When Dominic stepped out you went into Brady\u2019s
       room and took the knife. Then you asked to talk to Josephine and she let you
       in and you killed her."
@@ -24417,6 +24767,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "But didn\u2019t you say yourself she was killed by poison?"
     Names: 2
     Branch: []
@@ -24436,6 +24787,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: That was just a red herring.
     Names: 1
     Branch: []
@@ -24455,6 +24807,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Have fun\u2026 IN PRISON! Boom. Mic drop."
     Names: 0
     Branch: []
@@ -24474,6 +24827,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -24598,6 +24952,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: '*Bonk*'
     Names: 1
     Branch: []
@@ -24617,6 +24972,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "OW! What\u2019d you do that for?"
     Names: 0
     Branch: []
@@ -24636,6 +24992,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: AHHHHHHHH!
     Names: 3
     Branch: []
@@ -24655,6 +25012,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: That sounded like Hana, We should go check her room
     Names: 1
     Branch: []
@@ -24674,6 +25032,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -25572,13 +25931,14 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Whatever
     Names: 4
     Branch:
     - choiceText: Testimony
       nextDialogue: 2
     - choiceText: Knives
-      nextDialogue: 20
+      nextDialogue: 19
     - choiceText: Realtion
       nextDialogue: 46
     - choiceText: Hatemail
@@ -25599,6 +25959,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: Where were you last night?
     Names: 1
     Branch: []
@@ -25618,6 +25979,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Uh sleeping? In my room?  What kind of question is that?
     Names: 4
     Branch: []
@@ -25637,6 +25999,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you give me something more concrete? Any details?
     Names: 1
     Branch: []
@@ -25656,6 +26019,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I was in my pajamas and then I got into the bed and fell asleep.
     Names: 4
     Branch: []
@@ -25675,6 +26039,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What were you doing before that?
     Names: 1
     Branch: []
@@ -25694,6 +26059,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I went to talk to Josephine right after dinner and briefed her on how our
       games would run on different systems and what to expect at the conference.
     Names: 4
@@ -25714,6 +26080,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Then I went to my room to try and relax by polishing my knives which was
       IMPOSSIBLE with Josephine and Hana arguing so loud. '
     Names: 4
@@ -25734,6 +26101,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So they were arguing? Do you know what about?
     Names: 1
     Branch: []
@@ -25753,6 +26121,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t know. Something about their garden back home? I didn\u2019t
       care so I put on my headphones to try and drown the sound out."
     Names: 4
@@ -25773,6 +26142,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: They eventually stopped though. After I finished cleaning my blades I went
       to take a shower.
     Names: 4
@@ -25793,6 +26163,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you lock the door when you left?
     Names: 1
     Branch: []
@@ -25812,6 +26183,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Huh? No, I guess not. It\u2019s weird to bring keys into the shower."
     Names: 4
     Branch: []
@@ -25831,6 +26203,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So what times were you in the shower?
     Names: 1
     Branch: []
@@ -25850,6 +26223,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t know. It was probably around 11:00 when I went in and around
       11:15 - 11:20 I left."
     Names: 4
@@ -25870,6 +26244,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you see anyone after that?
     Names: 1
     Branch: []
@@ -25889,6 +26264,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah I went to grab a snack before bed and I saw Hana. We talked for a
       few minutes about how it\u2019s rude to be so loud so late at night."
     Names: 4
@@ -25909,6 +26285,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I see.
     Names: 1
     Branch: []
@@ -25928,6 +26305,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I was told that you carry knives.
     Names: 1
     Branch: []
@@ -25947,6 +26325,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Huh yeah? So? Is that a crime?
     Names: 4
     Branch: []
@@ -25966,6 +26345,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well no, but do you have any knives with you?
     Names: 1
     Branch: []
@@ -25985,6 +26365,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
       people out there\u2026"
     Names: 4
@@ -26005,6 +26386,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Would you mind if I took a look at your collection?
     Names: 1
     Branch: []
@@ -26024,16 +26406,17 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I certainly do mind! I\u2019m not gonna let you confiscate any of my babies
       as \u201Cevidence\u201D"
     Names: 4
     Branch:
     - choiceText: The Usual
-      nextDialogue: 24
+      nextDialogue: 25
     - choiceText: Or else...
-      nextDialogue: 33
+      nextDialogue: 34
     - choiceText: THE corporate ladder
-      nextDialogue: 37
+      nextDialogue: 38
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 3cecfe4e68dea504f87107f9fd199e25, type: 3}
@@ -26050,6 +26433,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Fine.
     Names: 1
     Branch: []
@@ -26069,6 +26453,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Should we go with the usual?
     Names: 0
     Branch: []
@@ -26088,6 +26473,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah, I guess that\u2019s our only option\u2026"
     Names: 1
     Branch: []
@@ -26107,6 +26493,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "What? What\u2019s the usual?"
     Names: 4
     Branch: []
@@ -26126,6 +26513,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -26145,6 +26533,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "WHAT\u2019S THE USUAL?!"
     Names: 4
     Branch: []
@@ -26164,6 +26553,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ...
     Names: 0
     Branch: []
@@ -26183,6 +26573,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: OK OK JUST TAKE THE STUPID KEY!
     Names: 4
     Branch: []
@@ -26202,6 +26593,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Thank you.
     Names: 1
     Branch: []
@@ -26221,6 +26613,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 1
   - Text: "Give me the key\u2026 Or else\u2026"
     Names: 0
     Branch: []
@@ -26240,6 +26633,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026Or else what? You know you\u2019re supposed to put a threat after
       that right?"
     Names: 4
@@ -26260,6 +26654,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Aw man I thought that would work. Guess we\u2019ll just have to knock
       him out."
     Names: 0
@@ -26280,6 +26675,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "There\u2019s no reason to do something so drastic! Look you can just take
       the key, just don\u2019t touch my knives alright?"
     Names: 4
@@ -26300,6 +26696,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 1
   - Text: Are you familiar with The Corporate Ladder?
     Names: 1
     Branch: []
@@ -26319,6 +26716,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah of course I work a corporate job. You start at entry level and eventually
       work your way to the top.
     Names: 4
@@ -26339,6 +26737,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: No, I mean THE Corporate Ladder
     Names: 1
     Branch: []
@@ -26358,6 +26757,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026what?"
     Names: 4
     Branch: []
@@ -26377,6 +26777,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: THE Corporate Ladder!
     Names: 0
     Branch: []
@@ -26396,6 +26797,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I heard you the first time! What are you talking about?
     Names: 4
     Branch: []
@@ -26415,6 +26817,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I think you know\u2026"
     Names: 0
     Branch: []
@@ -26434,6 +26837,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I really don\u2019t but I don\u2019t think I want to find out so if I
       give you the key will you leave me alone?"
     Names: 4
@@ -26454,6 +26858,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 1
   - Text: How were you and Josephine acquainted?
     Names: 1
     Branch: []
@@ -26473,6 +26878,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "She\u2019s my boss. We work at Defiant Door Studios together. Didn\u2019t
       you say you were a fan? Shouldn\u2019t you already know that?"
     Names: 4
@@ -26493,6 +26899,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019m not actually a fan of the company. I\u2019m also not a fan of
       yours."
     Names: 1
@@ -26513,6 +26920,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What was that?!
     Names: 4
     Branch: []
@@ -26532,6 +26940,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Nothing.
     Names: 1
     Branch: []
@@ -26551,6 +26960,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Have you seen this note before?
     Names: 1
     Branch: []
@@ -26570,6 +26980,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah. I wrote it.
     Names: 4
     Branch: []
@@ -26589,6 +27000,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Why?
     Names: 1
     Branch: []
@@ -26608,6 +27020,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Because Josephine needed to be constantly reminded that she was bad at
       her job!
     Names: 4
@@ -26628,6 +27041,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That doesn\u2019t sound like a healthy work life."
     Names: 1
     Branch: []
@@ -26647,6 +27061,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: " It wasn\u2019t! She was a terrible boss. She never took responsibility
       for her mistakes. She would say, \u201CI want this game running on every console
       by next week.\u201D And I would say, \u201CThat\u2019s not possible.\u201D"
@@ -26668,14 +27083,15 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "But she didn\u2019t listen and then SHE would get mad at ME when it wasn\u2019t
       done like it wasn\u2019t her fault for making such an unreasonable request."
     Names: 4
     Branch:
     - choiceText: Sounds stressful
-      nextDialogue: 56
-    - choiceText: "Why didn\u2019t you quit?"
       nextDialogue: 58
+    - choiceText: "Why didn\u2019t you quit?"
+      nextDialogue: 60
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
@@ -26692,6 +27108,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That must have been difficult working under someone who doesn\u2019t communicate."
     Names: 1
     Branch: []
@@ -26711,11 +27128,12 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You\u2019re telling me. She\u2019s lucky to have me otherwise her company
       would have shut down long ago but she doesn\u2019t even see all I do for her."
     Names: 4
     Branch: []
-    NextTextOverride: 60
+    NextTextOverride: 62
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 698064bfea47a6a4da9b24183cffd6ac, type: 3}
     hasRead: 0
@@ -26731,6 +27149,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "If it was so bad why didn\u2019t you leave?"
     Names: 1
     Branch: []
@@ -26750,6 +27169,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I mean the pay was pretty nice. I was kinda hoping she would give up some
       control so things wouldn\u2019t be so stressful but that never seemed to happen."
     Names: 4
@@ -26770,6 +27190,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: You wanted a change in management then?
     Names: 1
     Branch: []
@@ -26789,6 +27210,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Oh yeah for sure. It didn\u2019t have to be me but I just wanted someone
       who was easier to work with ya\u2019know?"
     Names: 4
@@ -26809,6 +27231,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 2
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -26816,6 +27239,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 4
+  itemCollected: 0
 --- !u!1 &1252026103
 GameObject:
   m_ObjectHideFlags: 0
@@ -27326,6 +27750,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ...
     Names: 3
     Branch:
@@ -27349,6 +27774,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: Can you recount what you were doing last night?
     Names: 1
     Branch: []
@@ -27368,6 +27794,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: After dinner I was in the room. Josie came later and both Alex and Brady
       came in to talk to her about business.
     Names: 3
@@ -27388,6 +27815,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: When Josephine came in did she have a drink?
     Names: 1
     Branch: []
@@ -27407,6 +27835,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No, she didn\u2019t. She didn\u2019t have anything to drink while she
       met with the others either."
     Names: 3
@@ -27427,6 +27856,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I see, please continue.
     Names: 1
     Branch: []
@@ -27446,6 +27876,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I was reading in the bed. After they all finished Josie and I were talking
       together about the trip.
     Names: 3
@@ -27466,6 +27897,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We ended up getting upset with each other since we both thought the other
       had taken care of everything in the house before we left. I ended up stepping
       out so we could both calm down for a bit.
@@ -27487,6 +27919,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What time was this?
     Names: 1
     Branch: []
@@ -27506,6 +27939,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I left the room around 10:00. I just went to sit in the lounge. I contacted
       a few neighbors to make sure our house was taken care of.
     Names: 3
@@ -27526,6 +27960,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you see anyone while you were in the lounge?
     Names: 1
     Branch: []
@@ -27545,6 +27980,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
       was having trouble sleeping. I saw Bradey a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
@@ -27566,6 +28002,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And what time was that?
     Names: 1
     Branch: []
@@ -27585,6 +28022,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: It was probably 11:20.
     Names: 3
     Branch:
@@ -27608,6 +28046,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you go into more detail about what Brady was saying?
     Names: 1
     Branch: []
@@ -27627,6 +28066,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "He said, \u201CYou\u2019re so inconsiderate to argue so late. I was trying
       to relax and that\u2019s not possible with you yelling!\u201D And I tried to
       apologize and explain that it wasn\u2019t on purpose. I promised it wouldn\u2019t
@@ -27649,6 +28089,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Can you tell me about Brady\u2019s appearance?"
     Names: 1
     Branch: []
@@ -27668,6 +28109,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "He looked tired I guess. He doesn\u2019t drink coffee like the others
       cause it\u2019s too bitter. It didn\u2019t help that he was wearing pajamas
       too."
@@ -27689,6 +28131,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "OH! His hair was wet! I thought it was weird but it makes sense because
       there\u2019s a shower on the train."
     Names: 3
@@ -27709,6 +28152,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Wait how does a shower on a train even work?
     Names: 0
     Branch: []
@@ -27728,6 +28172,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019ll explain later, we\u2019re getting off track."
     Names: 1
     Branch: []
@@ -27747,6 +28192,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ha, nice one.
     Names: 0
     Branch: []
@@ -27766,6 +28212,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Don\u2019t high-five me. It wasn\u2019t on purpose."
     Names: 1
     Branch: []
@@ -27785,6 +28232,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Was that helpful?
     Names: 3
     Branch: []
@@ -27804,6 +28252,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yes. What happened next?
     Names: 1
     Branch: []
@@ -27823,6 +28272,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ' After Brady mentioned the fight I thought I should go apologize to Josie.
       I knocked on the door and assumed she was mad or asleep so I just went back
       into the lounge. I accidentally fell asleep soon after.'
@@ -27844,6 +28294,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: That all makes sense, thank you.
     Names: 1
     Branch: []
@@ -27863,6 +28314,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: What was your relation to Mrs. Josephine?
     Names: 1
     Branch: []
@@ -27882,6 +28334,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We\u2019re married. She brought me with her to keep her company so neither
       of us would get lonely."
     Names: 3
@@ -27902,6 +28355,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So you two were close?
     Names: 1
     Branch: []
@@ -27921,6 +28375,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Of course! I love her more than anything! Well- I guess I should say \u201Cloved\u201D
       now\u2026"
     Names: 3
@@ -27941,6 +28396,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -27948,6 +28404,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 2
+  itemCollected: 0
 --- !u!1 &1312352927
 GameObject:
   m_ObjectHideFlags: 0
@@ -28016,6 +28473,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -29067,6 +29525,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -29787,6 +30246,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Ask away!
     Names: 5
     Branch:
@@ -29810,6 +30270,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: What would you say your relationship to the victim was?
     Names: 1
     Branch: []
@@ -29829,6 +30290,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We\u2019re friends and coworkers."
     Names: 5
     Branch: []
@@ -29848,6 +30310,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How long have you known each other?
     Names: 1
     Branch: []
@@ -29867,6 +30330,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Since college. When Josie started her company she invited me on board.
     Names: 5
     Branch: []
@@ -29886,6 +30350,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So you were close?
     Names: 1
     Branch: []
@@ -29905,6 +30370,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "We were but not so much after graduation, not until we started working
       together again. It\u2019s awful what happened to her, isn\u2019t it?"
     Names: 5
@@ -29925,6 +30391,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yes, it\u2019s upsetting that some people can be so cruel."
     Names: 1
     Branch: []
@@ -29944,6 +30411,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Do you have any idea who could have done it?
     Names: 5
     Branch:
@@ -29967,6 +30435,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t. I still need to gather more clues."
     Names: 1
     Branch: []
@@ -29986,6 +30455,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I do but I don't want to make any accusations until I finish investigating.
     Names: 1
     Branch: []
@@ -30005,6 +30475,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Alright, well keep me posted ok? Maybe I can help you out too.
     Names: 5
     Branch: []
@@ -30024,6 +30495,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah, sure.
     Names: 1
     Branch: []
@@ -30043,6 +30515,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Can you tell me what you were doing the night of the crime?
     Names: 1
     Branch: []
@@ -30062,6 +30535,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Alex and I were playing video games almost all night.
     Names: 5
     Branch: []
@@ -30081,6 +30555,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Was there any point when you two were separated?
     Names: 1
     Branch: []
@@ -30100,6 +30575,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah we each left to get a drink from the bar.
     Names: 5
     Branch: []
@@ -30119,6 +30595,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you have any alcohol?
     Names: 1
     Branch: []
@@ -30138,6 +30615,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Oh no, just wine with dinner. Alex and I both got some caffeine so we could
       stay up and finish our game.
     Names: 5
@@ -30158,6 +30636,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: And how long were each of you gone?
     Names: 1
     Branch: []
@@ -30177,6 +30656,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I left first and wasn\u2019t gone for too long. Alex left a couple of
       hours later and was back in only a few minutes."
     Names: 5
@@ -30197,6 +30677,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Did you see anyone other than Alex after dinner?
     Names: 1
     Branch: []
@@ -30216,6 +30697,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah Hana was in the lounge when I went to the bar. We didn\u2019t talk
       much other than saying \u201CGood night\u201D to each other. I feel so bad
       for her. Losing Josephine is hard on all of us but for her especially."
@@ -30237,6 +30719,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yes, death comes for us all eventually.
     Names: 1
     Branch: []
@@ -30256,6 +30739,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s pretty dark don\u2019t you think?"
     Names: 5
     Branch: []
@@ -30275,6 +30759,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We need to face the truth no matter how dark it is.
     Names: 1
     Branch: []
@@ -30294,6 +30779,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I bet you\u2019re really fun at parties, huh?"
     Names: 5
     Branch: []
@@ -30313,6 +30799,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Hey Casey is plenty of fun! They play chess with me when it gets slow at
       work!
     Names: 0
@@ -30333,6 +30820,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So, moving on. When did you go to bed?
     Names: 1
     Branch: []
@@ -30352,6 +30840,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We finished our game around 2:00 AM. I was super tired by then and fell
       asleep as soon as I got into my room.
     Names: 5
@@ -30372,6 +30861,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: So the last time you saw Josephine was at dinner?
     Names: 1
     Branch: []
@@ -30391,6 +30881,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yup. Weird to think that was the last time ever. It was the last time
       you saw her too, right? Though I guess you weren\u2019t really acquainted so
       not much has changed for you."
@@ -30412,6 +30903,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "It\u2019s true we weren\u2019t close friends like you are but when I did
       talk to her she seemed pleasant and people cared about her."
     Names: 1
@@ -30432,6 +30924,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Whether or not we were close doesn\u2019t change the fact her death is
       a tragedy that I hope that I can help people move past."
     Names: 1
@@ -30452,6 +30945,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Aw, Casey.
     Names: 0
     Branch: []
@@ -30471,6 +30965,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Josie has always been thorough in her work. Seems it was no different when
       she hired a PI.
     Names: 5
@@ -30491,6 +30986,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -30498,6 +30994,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 2
+  itemCollected: 0
 --- !u!1 &1447966185
 GameObject:
   m_ObjectHideFlags: 0
@@ -30563,6 +31060,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "uh\u2026 WHAT?! YOU\u2019RE JOKING RIGHT? "
     Names: 4
     Branch: []
@@ -30582,6 +31080,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You had easy access to a collection of knives and you hated Josephine\u2019s
       company with a passion. You turned on the shower so we would think you were
       in there. Then you went to her room to talk business but snapped and killed
@@ -30604,6 +31103,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Say sike rn\u2026 please"
     Names: 4
     Branch: []
@@ -30623,6 +31123,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Close your eyes, I\u2019ll get rid of this guy for you"
     Names: 0
     Branch: []
@@ -30642,6 +31143,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: WAIT WAIT WAIT
     Names: 4
     Branch: []
@@ -30661,6 +31163,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: The End
     Names: 1
     Branch: []
@@ -30680,6 +31183,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -30754,6 +31258,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Well, she looks dead.
     Names: 0
     Branch: []
@@ -30773,6 +31278,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ...
     Names: 1
     Branch: []
@@ -30792,6 +31298,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "There\u2019s a lot of stab wounds, but the clothes aren\u2019t soaked
       with blood in all places"
     Names: 0
@@ -30812,6 +31319,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How do you think she died?
     Names: 1
     Branch: []
@@ -30831,6 +31339,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: " Didn\u2019t you see all the stab wounds? Obviously, someone stabbed her.
       Several times too"
     Names: 0
@@ -30851,6 +31360,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That was my first thought too. However\u2026 For now, let\u2019s continue
       to investigate."
     Names: 1
@@ -30871,6 +31381,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -32144,6 +32655,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: How can I help you?
     Names: 2
     Branch:
@@ -32165,6 +32677,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: I see you brought a printed photo of you and your kid. Could you tell me-
     Names: 1
     Branch: []
@@ -32184,6 +32697,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s Joe! He is the sweetest little boy you\u2019ll ever meet!
       Isn\u2019t he cute?"
     Names: 2
@@ -32204,6 +32718,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Uhhh\u2026"
     Names: 1
     Branch: []
@@ -32223,6 +32738,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "You don\u2019t have to say it, I know he is. Just seeing this picture
       makes me miss him so much!"
     Names: 2
@@ -32243,6 +32759,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "What\u2019s Joe short for?"
     Names: 1
     Branch: []
@@ -32262,6 +32779,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Since he\u2019s only 3."
     Names: 2
     Branch: []
@@ -32281,6 +32799,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "\u2026"
     Names: 1
     Branch: []
@@ -32300,6 +32819,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Feel free to laugh.
     Names: 2
     Branch: []
@@ -32319,6 +32839,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "There\u2019s no need."
     Names: 1
     Branch: []
@@ -32338,6 +32859,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I don\u2019t get it\u2026"
     Names: 0
     Branch: []
@@ -32357,6 +32879,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -32376,6 +32899,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "And when is Joe\u2019s birthday? "
     Names: 1
     Branch: []
@@ -32395,6 +32919,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: September 9th of 2020! The happiest day of my life! The second was the
       day I married my wife. Oh this one time we got little Joseph a cake for his
       birthday, right? And he was so small he had never had cake before and-
@@ -32416,6 +32941,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I\u2019ve heard enough thank you. It\u2019s so annoying how people keep
       talking about their kids at work."
     Names: 1
@@ -32436,6 +32962,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 1
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -32443,6 +32970,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 1
+  itemCollected: 0
 --- !u!1 &1649360443
 GameObject:
   m_ObjectHideFlags: 0
@@ -32785,6 +33313,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -34375,6 +34904,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yeah, who mails their hatemail these days?
     Names: 0
     Branch: []
@@ -34394,6 +34924,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Maybe it was written here?
     Names: 1
     Branch: []
@@ -34413,6 +34944,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -34869,6 +35401,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Awwww, his kid is even smaller than him!
     Names: 0
     Branch: []
@@ -34888,6 +35421,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s usually how that works\u2026 "
     Names: 1
     Branch: []
@@ -34907,6 +35441,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -35170,6 +35705,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -35785,6 +36321,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -36144,6 +36681,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ...
     Names: 3
     Branch:
@@ -36165,6 +36703,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 1
+    knifeDialogue: 0
   - Text: "I found this photograph in Dominic\u2019s room, can you tell me about
       it?"
     Names: 1
@@ -36185,6 +36724,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Oh that was my junior year of college. I was hanging out with Josie and
       Dominic that day.
     Names: 3
@@ -36209,6 +36749,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Were you and Dominic close at the time?
     Names: 1
     Branch: []
@@ -36228,6 +36769,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah we were. We were actually dating but I kinda realized I didn\u2019t
       like guys so I broke it off. I feel like he was upset since our relationship
       hasn\u2019t really been the same since."
@@ -36249,6 +36791,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Were you and Josephine together yet?
     Names: 1
     Branch: []
@@ -36268,6 +36811,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "No. We weren\u2019t super close during school but we kept in contact after.
       That\u2019s also when we started dating. We just kept getting closer after
       that."
@@ -36289,6 +36833,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I see. But you were all getting along recently?
     Names: 1
     Branch: []
@@ -36308,6 +36853,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Yeah I think so. Josie complained about Dominic being kinda rude sometimes
       but it wasn\u2019t ever a serious problem. All that drama is in the past now."
     Names: 3
@@ -36328,6 +36874,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s good to hear."
     Names: 1
     Branch: []
@@ -36347,6 +36894,7 @@ MonoBehaviour:
     revealInfoNotebook: 1
     pageInfoToReveal: 3
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -36354,6 +36902,7 @@ MonoBehaviour:
   thisAccusation: {fileID: 0}
   currCounter: 0
   maxCounter: 1
+  itemCollected: 0
 --- !u!1 &1903220824
 GameObject:
   m_ObjectHideFlags: 0
@@ -36649,6 +37198,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -36885,6 +37435,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -37644,6 +38195,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -37948,6 +38500,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 1
   canAccuse: 0
@@ -38199,6 +38752,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Where's the rest of it?
     Names: 0
     Branch: []
@@ -38218,6 +38772,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I'm not sure.
     Names: 1
     Branch: []
@@ -38237,6 +38792,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -38355,6 +38911,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 1
@@ -38940,6 +39497,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Josie\u2026 Josie is\u2026!"
     Names: 3
     Branch: []
@@ -38959,6 +39517,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "She\u2019s dead."
     Names: 4
     Branch: []
@@ -38978,6 +39537,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "I can\u2019t- There- It can\u2019t be real-"
     Names: 3
     Branch: []
@@ -38997,6 +39557,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Actually, we knew this might happen
     Names: 1
     Branch: []
@@ -39016,6 +39577,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: W-What do you mean?
     Names: 3
     Branch: []
@@ -39035,6 +39597,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
       assistant, Hunter, of Casey Files Detective Agency
     Names: 1
@@ -39055,6 +39618,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: ' Y-You mean you knew something might happen? My wife is d-d-dead! And
       you knew it could happen?'
     Names: 3
@@ -39075,6 +39639,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: Yes
     Names: 0
     Branch: []
@@ -39094,6 +39659,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: 'Earlier this week, I received a phone call from Mrs. Josephine asking
       for our help. '
     Names: 1
@@ -39114,6 +39680,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: I know tensions are high right now, but trust me, we will figure out who
       murdered her. I ask that you all remain in this room while Hunter and I investigate
       the train.
@@ -39135,6 +39702,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: We will be conducting interviews with each of you. It is to your advantage
       to cooperate and provide us with any important information you may know surrounding
       this case.
@@ -39156,6 +39724,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: " I will not rest until we are able to find the culprit and put them behind
       bars. Now, if you\u2019ll excuse me, I have a crime scene to investigate."
     Names: 1
@@ -39176,6 +39745,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "All of you should wait in the lounge and we\u2019ll come get you if we
       have questions or found something."
     Names: 0
@@ -39196,6 +39766,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0
@@ -39621,6 +40192,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "Pretty standard stuff for self-improvement and managing finances. It\u2019s
       good to see he doesn\u2019t spend all his time with his video games."
     Names: 1
@@ -39641,6 +40213,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "But \u201CHow to Take Over a Company\u201D? Boringggggg."
     Names: 0
     Branch: []
@@ -39660,6 +40233,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "That\u2019s a weird thing to have books for since Josephine should have
       trained him if she was planning to pass it on. Unless, he knew she wouldn\u2019t
       be there to teach him?"
@@ -39681,6 +40255,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   - Text: "There were other business cards that said \u201C Alexander: CFO\u201D
       but this one says \u201CCEO\u201D. Last time I checked, Josephine is the CEO.
       I should ask him about why he has this."
@@ -39702,6 +40277,7 @@ MonoBehaviour:
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
+    knifeDialogue: 0
   dc: {fileID: 0}
   canInterrogate: 0
   canAccuse: 0

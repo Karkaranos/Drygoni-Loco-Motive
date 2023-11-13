@@ -188,15 +188,19 @@ public class DialogueButton : MonoBehaviour
             //Runs if EndDialogue is true
             else
             {
+                if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].knifeDialogue == true && DC.currentInterrogation.itemCollected == true)
+                {
+                    DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead = true;
+                }
                 //If hasRead is false, sets hasRead to true and adds 1 to currCounter
                 if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead == false)
                 {
                     DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead = true;
               
-                        for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].messagesToMarkHasRead.Count; i++)
-                        {
-                            DC.currentInterrogation.AllMessages[DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].messagesToMarkHasRead[i]].hasRead = true;
-                        }
+                        //for (int i = 0; i < DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].messagesToMarkHasRead.Count; i++)
+                        //{
+                        //    DC.currentInterrogation.AllMessages[DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].messagesToMarkHasRead[i]].hasRead = true;
+                        //}
                     
                     DC.currentInterrogation.currCounter++;
 
@@ -206,10 +210,11 @@ public class DialogueButton : MonoBehaviour
                         nm.RevealComplexInformation(DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].pageInfoToReveal);
                     }
 
-                    if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem)
+                    if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].AddInventoryItem && DC.currentInterrogation.itemCollected == false)
                     {
                         string s = DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].InventoryItem.ToString();
                         IB.AddItemToInventory(s);
+                        DC.currentInterrogation.itemCollected = true;
                     }
                     //If currCounter is equal to maxCounter, ends interrogation
                     if (DC.currentInterrogation.currCounter == DC.currentInterrogation.maxCounter)
