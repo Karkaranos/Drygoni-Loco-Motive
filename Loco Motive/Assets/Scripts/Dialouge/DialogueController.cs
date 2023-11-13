@@ -344,7 +344,10 @@ public class DialogueController : MonoBehaviour
 
         }
         isTyping = false;
-        am.Stop("Typing");
+        if (am != null)
+        {
+            am.Stop("Typing");
+        }
         /*
         if(am!= null)
         {
