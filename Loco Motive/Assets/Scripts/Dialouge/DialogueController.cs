@@ -321,7 +321,14 @@ public class DialogueController : MonoBehaviour
      
         while (true)
         {
-            typing = StartCoroutine(am.Typing());
+            if (am != null)
+            {
+                typing = StartCoroutine(am.Typing());
+            }
+            else
+            {
+                typing = StartCoroutine(EmptyCoroutine());
+            }
             int visibleCount = counter % (totalVisibleCharacters + 1);
             _textMeshPro.maxVisibleCharacters = visibleCount;
 
@@ -334,11 +341,20 @@ public class DialogueController : MonoBehaviour
             counter += 1;
             yield return new WaitForSeconds(timeBtwnChars);
         }
-        StopCoroutine(typing);
+        if (am != null)
+        {
+            StopCoroutine(typing);
+        }
+
     }
 
     public void EndCheck()
     {
 
+    }
+
+    IEnumerator EmptyCoroutine()
+    {
+        yield return null;
     }
 }

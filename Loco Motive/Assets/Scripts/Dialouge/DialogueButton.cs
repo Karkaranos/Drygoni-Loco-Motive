@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueButton : MonoBehaviour
 {
@@ -88,6 +89,11 @@ public class DialogueButton : MonoBehaviour
     //Progress dialogue when hitting continue button
     public void ContinueProgress()
     {
+        if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].changesScene == true)
+        {
+            TutorialManager tm = FindObjectOfType<TutorialManager>();
+            tm.StartGame();
+        }
         //Progresses dialogue if not in an interrogation or accusation
         if (DC.interrogating == false && DC.accusing == false)
         {
@@ -188,6 +194,10 @@ public class DialogueButton : MonoBehaviour
             //Runs if EndDialogue is true
             else
             {
+                if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].changesScene == true)
+                {
+                    SceneManager.LoadScene(2);
+                }
                 //If hasRead is false, sets hasRead to true and adds 1 to currCounter
                 if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead == false)
                 {
