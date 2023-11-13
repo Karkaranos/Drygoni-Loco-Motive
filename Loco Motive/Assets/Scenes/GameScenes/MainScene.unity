@@ -13714,9 +13714,7 @@ MonoBehaviour:
     changesScene: 0
     scene: 
   - Text: "Because Brady had locked the bathroom door you couldn\u2019t wash anything
-      and used Josephine\u2019s finger to write the message. You also had to return
-      the knife bloodied. After you went back to Alex\u2019s room and waited for
-      her body to be discovered."
+      and used Josephine\u2019s finger to write the message."
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -13738,10 +13736,8 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "Because Brady had locked the bathroom door you couldn\u2019t wash anything
-      and used Josephine\u2019s finger to write the message. You also had to return
-      the knife bloodied. After you went back to Alex\u2019s room and waited for
-      her body to be discovered."
+  - Text: "You also had to return the knife bloodied. After you went back to Alex\u2019s
+      room and waited for her body to be discovered."
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -13830,10 +13826,8 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "Alex was in line to take over the company. Brady desperately wanted a
-      change in management and Hana had just fought with Josephine. On top of that,
-      all of Josephine\u2019s belongings were supposed to go to Hana but nobody knew
-      that at the time."
+  - Text: Alex was in line to take over the company. Brady desperately wanted a change
+      in management and Hana had just fought with Josephine.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -13855,10 +13849,8 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "Alex was in line to take over the company. Brady desperately wanted a
-      change in management and Hana had just fought with Josephine. On top of that,
-      all of Josephine\u2019s belongings were supposed to go to Hana but nobody knew
-      that at the time."
+  - Text: "On top of that, all of Josephine\u2019s belongings were supposed to go
+      to Hana but nobody knew that at the time."
     Names: 1
     Branch: []
     NextTextOverride: 0
