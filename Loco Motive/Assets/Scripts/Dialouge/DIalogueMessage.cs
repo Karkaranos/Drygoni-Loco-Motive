@@ -23,4 +23,5 @@ public class DialogueMessage
     public bool revealInfoNotebook;
     public int pageInfoToReveal;
     public bool mainBranching;
+    public bool knifeDialogue = false;
 }
