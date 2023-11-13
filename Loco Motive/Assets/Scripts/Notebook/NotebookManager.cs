@@ -63,7 +63,6 @@ public class NotebookManager : MonoBehaviour
         currentPage = 0;
 
         content = new TMP_Text[TEXT_ITEMS_PER_PAGE];
-        eventText = new TMP_Text[ncm.timelineCount];
 
         content[0] = pageTitle;
         content[1] = imageCaption;
@@ -168,11 +167,12 @@ public class NotebookManager : MonoBehaviour
             notebookContentPage.SetActive(false);
             notebookTimelinePage.SetActive(true);
 
-            for (int i = 0; i < ncm.timelineCount; i++)
+            for (int i = 0; i < eventText.Length; i++)
             {
                 if (ncm.timelineVisible[i])
                 {
-                    eventText[i].text = ncm.timelineContent[i];
+                    //THIS IS NULL FIX IT 
+                    eventText[i].text = ncm.timelineContent[i%eventText.Length];
                 }
                 else
                 {

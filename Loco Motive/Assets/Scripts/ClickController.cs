@@ -244,8 +244,8 @@ public class ClickController : MonoBehaviour
 
             else if (hit.collider.CompareTag("Bed"))
             {
-                TutorialManager tm = FindObjectOfType<TutorialManager>();
-                tm.StartGame();
+                hit.transform.GetComponent<DialogueInstance>().canInterrogate = true;
+                hit.transform.GetChild(0).GetComponent<InterrogationInstance>().currCounter = 0;
             }
 
             if (hit.collider.CompareTag("OneShotText"))
