@@ -63,6 +63,7 @@ public class AudioManager : MonoBehaviour
             sound.source.minDistance = sound.minSoundDistance;
             sound.source.maxDistance = sound.maxSoundDistance;
             sound.source.rolloffMode = AudioRolloffMode.Linear;
+            sound.source.playOnAwake = false;
         }
 
         PlayMenuMusic();
@@ -99,6 +100,7 @@ public class AudioManager : MonoBehaviour
         {
             sound.source.Stop();
         }
+
     }
 
 
@@ -303,11 +305,12 @@ public class AudioManager : MonoBehaviour
 
     public IEnumerator Typing()
     {
+
         while (true)
         {
             Play("Typing");
-            float wait = UnityEngine.Random.Range(.2f, .6f);
-            yield return new WaitForSeconds(wait);
+            //float wait = UnityEngine.Random.Range(.2f, .6f);
+            yield return new WaitForSeconds(2);
         }
     }
     #endregion

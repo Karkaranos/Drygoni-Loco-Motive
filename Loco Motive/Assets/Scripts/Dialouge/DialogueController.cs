@@ -317,19 +317,21 @@ public class DialogueController : MonoBehaviour
         _textMeshPro.ForceMeshUpdate();
         int totalVisibleCharacters = _textMeshPro.textInfo.characterCount;
         int counter = 0;
-        Coroutine typing;
-     
-        while (true)
+        int visibleCount = 0;
+        bool isTyping = false;
+        //Coroutine typing = null;
+        while (visibleCount < totalVisibleCharacters)
         {
-            if (am != null)
+            if (am != null && !isTyping)
             {
-                typing = StartCoroutine(am.Typing());
+                am.Play("Typing");
+                isTyping = true;
             }
             else
             {
-                typing = StartCoroutine(EmptyCoroutine());
+                //typing = StartCoroutine(EmptyCoroutine());
             }
-            int visibleCount = counter % (totalVisibleCharacters + 1);
+            visibleCount = counter % (totalVisibleCharacters + 1);
             _textMeshPro.maxVisibleCharacters = visibleCount;
 
             if(visibleCount >= totalVisibleCharacters)
@@ -340,11 +342,19 @@ public class DialogueController : MonoBehaviour
 
             counter += 1;
             yield return new WaitForSeconds(timeBtwnChars);
+
         }
-        if (am != null)
+        isTyping = false;
+        am.Stop("Typing");
+        /*
+        if(am!= null)
         {
+            print("sdhgjshkgdjkgjhdskjhgd");
             StopCoroutine(typing);
-        }
+            am.Stop("Typing");
+            typing = null;
+        }*/
+
 
     }
 
