@@ -104,6 +104,10 @@ public class ObjectHandler : MonoBehaviour
         {
             ncm.RevealEvent(timelineEventNum);
         }
+        if(tag == "body")
+        {
+            updatesNotebook = false;
+        }
         if (!isTrain)
         {
             if (!noDestroy)

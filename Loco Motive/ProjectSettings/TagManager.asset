@@ -16,6 +16,7 @@ TagManager:
   - Bed
   - OneShotText
   - TeaCupRequirement
+  - Body
   layers:
   - Default
   - TransparentFX

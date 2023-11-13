@@ -77,6 +77,7 @@ public class NotebookManager : MonoBehaviour
             {
                 RevealInformation(i);
             }
+            RevealComplexInformation(0);
         }
 
     }
