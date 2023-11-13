@@ -153,6 +153,10 @@ public class DialogueController : MonoBehaviour
         NotebookButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
+        BranchOne.GetComponent<Image>().color = Color.white;
+        BranchTwo.GetComponent<Image>().color = Color.white;
+        BranchThree.GetComponent<Image>().color = Color.white;
+        BranchFour.GetComponent<Image>().color = Color.white;
         ExitButton.SetActive(true);
         if (opening == true)
         {
