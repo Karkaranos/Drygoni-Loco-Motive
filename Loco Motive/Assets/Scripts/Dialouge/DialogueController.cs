@@ -111,29 +111,23 @@ public class DialogueController : MonoBehaviour
                 {
                     if (branchOneRead == true)
                     {
-                        Debug.Log("BranchOne Color Set");
                         BranchOne.GetComponent<Image>().color = Color.cyan;
                     }
                     if (branchTwoRead == true)
                     {
-                        Debug.Log("BranchTwo Color Set");
                         BranchTwo.GetComponent<Image>().color = Color.cyan;
                     }
                     if (branchThreeRead == true)
                     {
-                        Debug.Log("BranchThree Color Set");
                         BranchThree.GetComponent<Image>().color = Color.cyan;
                     }
                     if (branchFourRead == true)
                     {
-                        Debug.Log("BranchFour Color Set");
                         BranchFour.GetComponent<Image>().color = Color.cyan;
                     }
-                    Debug.Log("Colors Have Been Set");
                 }
                 else
                 {
-                    Debug.Log("No Colors Were Set");
                     ChoiceBranch[i].GetComponent<Image>().color = Color.white;
                 }
             }
@@ -189,6 +183,7 @@ public class DialogueController : MonoBehaviour
         currentDialogue.canInterrogate = false;
         currentInterrogation = currentDialogue.thisInterrogation;
         interrogating = true;
+        currentInterrogation.currCounter = 0;
         InterrogateButton.SetActive(false);
         cc.Movement.SetActive(false);
         cc.Map.SetActive(false);
@@ -297,6 +292,10 @@ public class DialogueController : MonoBehaviour
         if (am != null)
         {
             am.StopInterrogationMusic();
+        }
+        if (interrogating == true)
+        {
+            //currentInterrogation.currCounter = 0;
         }
         interrogating = false;
         accusing = false;

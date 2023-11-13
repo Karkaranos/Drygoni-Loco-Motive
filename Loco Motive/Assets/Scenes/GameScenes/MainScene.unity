@@ -12572,7 +12572,6 @@ MonoBehaviour:
     scene: 
   - Text: You made tea with the poisonous leaves from your room and took it to Josephine.
       You heard Brady go into the shower and took the opportunity to take his knife.
-      You used it to fake the cause of death and write the message in blood.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -12594,7 +12593,54 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "Because Brady had locked te bathroom door you couldn\u2019t wash anything
+  - Text: You used it to fake the cause of death and write the message in blood.
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "Because Brady had locked the bathroom door you couldn\u2019t wash anything
+      and used Josephine\u2019s finger to write the message. You also had to return
+      the knife bloodied. After you went back to Alex\u2019s room and waited for
+      her body to be discovered."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "Because Brady had locked the bathroom door you couldn\u2019t wash anything
       and used Josephine\u2019s finger to write the message. You also had to return
       the knife bloodied. After you went back to Alex\u2019s room and waited for
       her body to be discovered."
@@ -12670,6 +12716,31 @@ MonoBehaviour:
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 1d490312eaebd6845ab18cd09f8ae432, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "Alex was in line to take over the company. Brady desperately wanted a
+      change in management and Hana had just fought with Josephine. On top of that,
+      all of Josephine\u2019s belongings were supposed to go to Hana but nobody knew
+      that at the time."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -32073,8 +32144,29 @@ MonoBehaviour:
     scene: 
   - Text: "You had easy access to a collection of knives and you hated Josephine\u2019s
       company with a passion. You turned on the shower so we would think you were
-      in there. Then you went to her room to talk business but snapped and killed
-      her instead."
+      in there."
+    Names: 1
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: Then you went to her room to talk business but snapped and killed her instead.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -34024,28 +34116,6 @@ MonoBehaviour:
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-    mainBranching: 0
-    knifeDialogue: 0
-    changesScene: 0
-    scene: 
-  - Text: "And when is Joe\u2019s birthday? "
-    Names: 1
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
