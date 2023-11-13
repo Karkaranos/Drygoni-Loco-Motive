@@ -23,6 +23,7 @@ public class DialogueController : MonoBehaviour
     public bool branchTwoRead = false;
     public bool branchThreeRead = false;
     public bool branchFourRead = false;
+    public int textSpeed = 1;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -35,6 +36,7 @@ public class DialogueController : MonoBehaviour
     public TMP_Text InterrogateQuestionTwo;
     public TMP_Text InterrogateQuestionThree;
     public TMP_Text InterrogateQuestionFour;
+    public TMP_Text CurrentTextSpeed;
 
     public GameObject DialogueScreen;
     public GameObject InterrogationScreen;
@@ -362,6 +364,31 @@ public class DialogueController : MonoBehaviour
         }*/
 
 
+    }
+
+    public void ToggleTextSpeed()
+    {
+        textSpeed++;
+        if (textSpeed > 3)
+        {
+            textSpeed = 1;
+        }
+        if (textSpeed == 1)
+        {
+            CurrentTextSpeed.text = "Slow";
+            timeBtwnChars = .2f;
+        }
+        else if (textSpeed == 2)
+        {
+            CurrentTextSpeed.text = "Medium";
+            timeBtwnChars = .1f;
+        }
+        else if (textSpeed == 3)
+        {
+            CurrentTextSpeed.text = "Fast";
+            timeBtwnChars = .01f;
+        }
+        
     }
 
     public void EndCheck()
