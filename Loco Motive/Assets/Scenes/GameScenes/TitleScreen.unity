@@ -1805,6 +1805,9 @@ MonoBehaviour:
     source: {fileID: 0}
   masterMixer: {fileID: 24300002, guid: f6669caa8abf36144bd2b79ab583f2ef, type: 2}
   musicVolume: 0.4
+  glassTexture: {fileID: 2800000, guid: a015434b3ea24f843b6b2a26437286a7, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1825189506
 GameObject:
   m_ObjectHideFlags: 0

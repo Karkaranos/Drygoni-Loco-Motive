@@ -28,6 +28,10 @@ public class AudioManager : MonoBehaviour
 
     private string previousTrack;
 
+    public Texture2D glassTexture;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+
     /// <summary>
     /// Start is called before the first frame update. It ensures only one instance
     /// of this script and initializes Sound class
@@ -62,6 +66,8 @@ public class AudioManager : MonoBehaviour
         }
 
         PlayMenuMusic();
+
+        Cursor.SetCursor(glassTexture, hotSpot, cursorMode);
     }
 
 
