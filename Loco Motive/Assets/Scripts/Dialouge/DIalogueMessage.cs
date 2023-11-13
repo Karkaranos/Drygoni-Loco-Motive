@@ -24,4 +24,6 @@ public class DialogueMessage
     public int pageInfoToReveal;
     public bool mainBranching;
     public bool knifeDialogue = false;
+    public bool changesScene;
+    public string scene;
 }
