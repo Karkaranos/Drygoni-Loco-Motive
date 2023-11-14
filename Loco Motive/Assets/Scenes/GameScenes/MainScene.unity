@@ -45090,7 +45090,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45112,7 +45112,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 8a9ffd5b0747d3747a6e045e2fde87ad, type: 3}
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45134,7 +45134,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6353c19c9cf787f4dac8d6c10e4f9c1a, type: 3}
+    Portrait: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45156,7 +45156,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
+    Portrait: {fileID: 21300000, guid: f1ae3893d39df81469eebd46d2be670d, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45178,7 +45178,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45200,7 +45200,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 003bf00687002dc49977efba7d69b5f7, type: 3}
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45223,7 +45223,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45246,7 +45246,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 6af953371fa5b6f4497629fba7140647, type: 3}
+    Portrait: {fileID: 21300000, guid: f1ae3893d39df81469eebd46d2be670d, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45268,7 +45268,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45291,7 +45291,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45315,7 +45315,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45339,7 +45339,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45362,7 +45362,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: c284f59f7268ee7438accc1fdfcca612, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -45385,7 +45385,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: f5294151f91a1cb4c81555612a86bb38, type: 3}
+    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
