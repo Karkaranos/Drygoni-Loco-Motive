@@ -143,6 +143,7 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Resume()
     {
+        dc.isTalking = false;
         pauseMenu.SetActive(false);
         if (dc != null && !dc.isTalking && !inSettings)
         {
@@ -192,6 +193,7 @@ public class UIButtonManager : MonoBehaviour
         if(dc!=null && !dc.isTalking)
         {
             isPaused = true;
+            dc.isTalking = true;
             pauseMenu.SetActive(true);
             movementArrows.SetActive(false);
 
