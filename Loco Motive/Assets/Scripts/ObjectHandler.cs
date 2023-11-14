@@ -32,12 +32,14 @@ public class ObjectHandler : MonoBehaviour
     public bool noDestroy;
     public bool fullyRevealsNotebookPage;
     private int teaCount;
+    private AudioManager am;
     // Start is called before the first frame update
     void Start()
     {
         ib = GameObject.Find("InventoryManager").GetComponent<InventoryBehavior>();
         ncm = GameObject.Find("NotebookManager").GetComponent<NotebookContentManager>();
         nm = GameObject.Find("NotebookManager").GetComponent<NotebookManager>();
+        am = GameObject.Find("AudioManager").GetComponent<AudioManager>();
 
     }
 
@@ -118,7 +120,10 @@ public class ObjectHandler : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<AudioManager>().Play("ILikeTrains");
+            if (am != null)
+            {
+                am.Play("ILikeTrains");
+            }
         }
     }
 
