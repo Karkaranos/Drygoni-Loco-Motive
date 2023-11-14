@@ -61,6 +61,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void StartGame()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         SceneManager.LoadScene("MainScene");
         am.PlayGameMusic();
     }
@@ -70,6 +74,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void TitleScreen()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         SceneManager.LoadScene(0);
         am.PlayMenuMusic();
     }
@@ -79,6 +87,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void WinScreen()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         SceneManager.LoadScene("WinScene");
         am.PlayMenuMusic();
     }
@@ -88,6 +100,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Tutorial()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         SceneManager.LoadScene("TutorialScene");
         am.PlayTutorialMusic();
     }
@@ -97,6 +113,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Credits()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         titleCanvas.SetActive(false);
         creditCanvas.SetActive(true);
         StartCoroutine(CreditScroll());
@@ -127,6 +147,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void RestartScene()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -135,6 +159,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Quit()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         Application.Quit();
     }
 
@@ -143,6 +171,10 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Resume()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         dc.isTalking = false;
         pauseMenu.SetActive(false);
         if (dc != null && !dc.isTalking && !inSettings)
@@ -190,7 +222,11 @@ public class UIButtonManager : MonoBehaviour
     /// </summary>
     public void Pause()
     {
-        if(dc!=null && !dc.isTalking)
+        if (am != null)
+        {
+            am.Play("Click");
+        }
+        if (dc!=null && !dc.isTalking)
         {
             isPaused = true;
             dc.isTalking = true;
@@ -233,6 +269,10 @@ public class UIButtonManager : MonoBehaviour
 
     public void OpenSettings()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         inSettings = true;
         if(pauseMenu != null)
         {
@@ -243,6 +283,10 @@ public class UIButtonManager : MonoBehaviour
 
     public void CloseSettings()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         inSettings = false;
         if(pauseMenu != null)
         {

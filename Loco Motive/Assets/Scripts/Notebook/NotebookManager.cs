@@ -47,6 +47,7 @@ public class NotebookManager : MonoBehaviour
     private NotebookContentManager ncm;
     private DialogueController dc;
     private InventoryBehavior ib;
+    private AudioManager am;
     public bool iconIsEnabled;
     #endregion
 
@@ -59,6 +60,7 @@ public class NotebookManager : MonoBehaviour
         ncm = GetComponent<NotebookContentManager>();
         dc = FindObjectOfType<DialogueController>();
         ib = FindObjectOfType<InventoryBehavior>();
+        am = FindObjectOfType<AudioManager>();
 
         currentPage = 0;
 
@@ -87,6 +89,10 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void OpenNotebook()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         notebook.SetActive(true);
         inventoryManager.GetComponent<InventoryBehavior>().CloseInventory();
         GetPageInformation();
@@ -102,6 +108,10 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void CloseNotebook()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         notebook.SetActive(false);
         notebookContentPage.SetActive(false);
         notebookTimelinePage.SetActive(false);
@@ -211,6 +221,10 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void NextPage()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         if (currentPage < ncm.pageCount - 1)
         {
             currentPage++;
@@ -223,6 +237,10 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void PreviousPage()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         if (currentPage > 0)
         {
             currentPage--;

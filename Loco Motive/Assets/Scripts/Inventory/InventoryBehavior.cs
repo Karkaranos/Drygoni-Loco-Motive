@@ -98,6 +98,10 @@ public class InventoryBehavior : MonoBehaviour
     /// </summary>
     public void OpenInventory()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         notebookManager.GetComponent<NotebookManager>().CloseNotebook();
         inventory.SetActive(true);
         UpdateInventory();
@@ -113,6 +117,10 @@ public class InventoryBehavior : MonoBehaviour
     /// </summary>
     public void CloseInventory()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         inventory.SetActive(false);
         if (iconIsEnabled)
         {
@@ -133,6 +141,10 @@ public class InventoryBehavior : MonoBehaviour
     /// <param name="i">the object to zoom in on</param>
     public void OpenLargeView(int i)
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         inventoryLarge.SetActive(true);
         largeObject.sprite = inventorySpaces[i-1].sprite;
     }
@@ -142,6 +154,10 @@ public class InventoryBehavior : MonoBehaviour
     /// </summary>
     public void CloseLargeView()
     {
+        if (am != null)
+        {
+            am.Play("Click");
+        }
         inventoryLarge.SetActive(false);
         largeObject.sprite = placeholder;
     }
