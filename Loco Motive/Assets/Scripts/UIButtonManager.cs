@@ -175,7 +175,15 @@ public class UIButtonManager : MonoBehaviour
         {
             am.Play("Click");
         }
-        dc.isTalking = false;
+        if (dc.opening == false)
+        {
+            dc.isTalking = false;
+        }
+        else
+        {
+            dc.isTalking = true;
+        }
+        
         pauseMenu.SetActive(false);
         if (dc != null && !dc.isTalking && !inSettings)
         {
