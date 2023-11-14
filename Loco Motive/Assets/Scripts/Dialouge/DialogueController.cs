@@ -377,6 +377,7 @@ public class DialogueController : MonoBehaviour
         {
             CurrentTextSpeed.text = "Slow";
             timeBtwnChars = .2f;
+            Debug.Log("this runs");
         }
         else if (textSpeed == 2)
         {

@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class RepeatingBackground : MonoBehaviour
 {
-    public float scrollSpeed = 3;
+    public float scrollSpeed = 10;
 
-    public const float ScrollWidth = 8;
+    public float ScrollWidth = 48;
+
+    public float numBackgroundObjects;
+
+    private void Start()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +31,6 @@ public class RepeatingBackground : MonoBehaviour
 
     public virtual void Offscreen(ref Vector2 pos)
     {
-        pos.x += 2 * ScrollWidth;
+        pos.x += 19.2f * numBackgroundObjects;
     }
 }
