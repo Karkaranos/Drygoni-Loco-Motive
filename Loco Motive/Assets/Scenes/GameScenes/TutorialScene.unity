@@ -299,7 +299,7 @@ MonoBehaviour:
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
-    mainBranching: 0
+    mainBranching: 1
     knifeDialogue: 0
     changesScene: 0
     scene: 
@@ -1204,6 +1204,7 @@ MonoBehaviour:
   branchTwoRead: 0
   branchThreeRead: 0
   branchFourRead: 0
+  textSpeed: 1
   DialogueBox: {fileID: 1710522197}
   DialogueBoxInterrogation: {fileID: 397480165}
   SpeakerName: {fileID: 1411646950}
@@ -1215,6 +1216,7 @@ MonoBehaviour:
   InterrogateQuestionTwo: {fileID: 1067350910}
   InterrogateQuestionThree: {fileID: 2124216468}
   InterrogateQuestionFour: {fileID: 1214160737}
+  CurrentTextSpeed: {fileID: 0}
   DialogueScreen: {fileID: 1036465387}
   InterrogationScreen: {fileID: 441351220}
   BranchButtons: {fileID: 441537240}
@@ -7895,7 +7897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &682444747
 Transform:
   m_ObjectHideFlags: 0
@@ -18104,7 +18106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 170, y: 0}
+  m_AnchoredPosition: {x: 170, y: 185}
   m_SizeDelta: {x: 1255.494, y: 214.1}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1710522196
@@ -18294,7 +18296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 65, y: 0}
+  m_AnchoredPosition: {x: 65, y: 70}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1728337706
