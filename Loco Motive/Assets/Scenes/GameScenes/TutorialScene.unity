@@ -1677,7 +1677,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 100}
+  m_SizeDelta: {x: 1200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88567333
 MonoBehaviour:
@@ -10067,7 +10067,7 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Oh, is that what the red exclamation mark is for?
+  - Text: Oh, is that what the red question mark is for?
     Names: 0
     Branch: []
     NextTextOverride: 0
