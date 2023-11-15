@@ -16,9 +16,9 @@ public class UIButtonManager : MonoBehaviour
     private GameObject titleCanvas;
     private GameObject creditCanvas;
     private Vector2 creditResetPos;
-    private GameObject pauseMenu;
+    public GameObject pauseMenu;
     public bool isPaused;
-    private GameObject map;
+    public GameObject map;
     private GameObject notebookIcon;
     private GameObject inventoryIcon;
     private DialogueController dc;
@@ -38,6 +38,7 @@ public class UIButtonManager : MonoBehaviour
             creditCanvas.SetActive(false);
             settingsMenu = GameObject.Find("Settings");
             settingsMenu.SetActive(false);
+            pauseMenu.SetActive(false);
     
             titleCanvas = GameObject.Find("TitleCanvas");
         }
@@ -52,6 +53,7 @@ public class UIButtonManager : MonoBehaviour
             movementArrows = GameObject.Find("Movement");
             settingsMenu = GameObject.Find("Settings");
             settingsMenu.SetActive(false);
+            pauseMenu.SetActive(false);
         }
 
     }

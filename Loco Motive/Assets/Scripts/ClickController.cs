@@ -99,7 +99,7 @@ public class ClickController : MonoBehaviour
             i.SetActive(false);
         }
 
-        uibm.Resume();
+        uibm.map.SetActive(false);
 
         MapRooms[arrLength].GetComponent<SpriteRenderer>().color = Color.clear;
     }
@@ -244,8 +244,8 @@ public class ClickController : MonoBehaviour
 
             else if (hit.collider.CompareTag("Bed"))
             {
-                hit.transform.GetComponent<DialogueInstance>().canInterrogate = true;
-                hit.transform.GetChild(0).GetComponent<InterrogationInstance>().currCounter = 0;
+                TutorialManager tm = FindObjectOfType<TutorialManager>();
+                tm.StartGame();
             }
 
             if (hit.collider.CompareTag("OneShotText"))
