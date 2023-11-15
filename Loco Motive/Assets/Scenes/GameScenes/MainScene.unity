@@ -30319,7 +30319,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 8
+    timelineEventNum: 7
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30364,7 +30364,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 10
+    timelineEventNum: 9
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -39863,7 +39863,7 @@ PrefabInstance:
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].photo
       value: 
-      objectReference: {fileID: -124649083, guid: f35163dddf673ea4b9c0c35a2fb0917a, type: 3}
+      objectReference: {fileID: 166206773, guid: f5379c889ee069f45bba0eb6d0be3f37, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[6].photo
       value: 
