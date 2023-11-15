@@ -80,6 +80,7 @@ public class NotebookManager : MonoBehaviour
                 RevealInformation(i);
             }
             RevealComplexInformation(0);
+            RevealNewTimelineEvent(14);
         }
 
     }
@@ -177,18 +178,19 @@ public class NotebookManager : MonoBehaviour
         {
             notebookContentPage.SetActive(false);
             notebookTimelinePage.SetActive(true);
-
+            int index = (currentPage - ncm.pageContent.Length) * 5;
             for (int i = 0; i < eventText.Length; i++)
             {
-                if (ncm.timelineVisible[i])
+                if (ncm.timelineVisible[index])
                 {
                     //THIS IS NULL FIX IT 
-                    eventText[i].text = ncm.timelineContent[i%eventText.Length];
+                    eventText[i].text = ncm.timelineContent[index];
                 }
                 else
                 {
                     eventText[i].text = "???";
                 }
+                index++;
             }
 
 

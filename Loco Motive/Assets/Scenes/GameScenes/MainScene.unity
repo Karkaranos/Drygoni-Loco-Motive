@@ -4696,7 +4696,7 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
+    updatesTimeline: 1
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
@@ -4832,8 +4832,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -4878,8 +4878,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -4922,8 +4922,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5014,8 +5014,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 14
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -6889,7 +6889,7 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
+    updatesTimeline: 1
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
@@ -7023,8 +7023,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -7069,8 +7069,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 5
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -7225,8 +7225,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 13
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -23235,7 +23235,7 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
+    updatesTimeline: 1
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
@@ -23369,8 +23369,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -23438,8 +23438,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -23482,8 +23482,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -23595,8 +23595,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 13
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30138,8 +30138,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 1
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30206,8 +30206,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 1
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30251,8 +30251,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 3
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30318,8 +30318,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30363,8 +30363,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 10
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -30408,8 +30408,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -32441,8 +32441,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 2
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -32531,8 +32531,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 4
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -32600,8 +32600,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 4
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -32646,8 +32646,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 5
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -32668,8 +32668,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 10
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -32787,8 +32787,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 9
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -35489,7 +35489,7 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
+    updatesTimeline: 1
     timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
@@ -35623,8 +35623,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -35669,8 +35669,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 5
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -35825,8 +35825,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 13
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -39775,6 +39775,70 @@ PrefabInstance:
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.size
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[0]
+      value: Alex and Dominic start playing games in Alex's room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[1]
+      value: Brady is trying to wind down for the night.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[2]
+      value: Hana and Josephine are in their room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[3]
+      value: The two of them fight. Brady overhears it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[4]
+      value: Hana leaves Josephine's room and moves to the lounge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[5]
+      value: Hana sees Dominic pass through the Lounge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[6]
+      value: Dominic gets a drink from the bar and returns with nothing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[7]
+      value: Brady takes a shower, leaving his door unlocked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[8]
+      value: Dominic returns to playing games with Alex.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[9]
+      value: Brady finishes showering. He grabs a snack from the dining car.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[10]
+      value: Hana and Brady talk before Brady returns to his room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[11]
+      value: 'Alex sees Hana asleep when he grabs a drink. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[12]
+      value: 'Dominic and Alex stop gaming after midnight. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[13]
+      value: Brady, Dominic, and Alex go to sleep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[14]
+      value: Josephine's body is discovered the following morning.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[0].photo
