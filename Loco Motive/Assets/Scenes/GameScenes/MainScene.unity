@@ -27674,6 +27674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NumberPadAlex
       objectReference: {fileID: 0}
+    - target: {fileID: 741458504395178844, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2348095707597911503, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -34010,6 +34014,10 @@ PrefabInstance:
     - target: {fileID: 741458504395178844, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: m_Name
       value: NumberPadHanaJosephine
+      objectReference: {fileID: 0}
+    - target: {fileID: 741458504395178844, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2348095707597911503, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: m_IsActive
@@ -46769,7 +46777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2104534795
 MonoBehaviour:
   m_ObjectHideFlags: 0
