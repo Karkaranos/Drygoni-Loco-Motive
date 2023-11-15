@@ -38,7 +38,7 @@ public class UIButtonManager : MonoBehaviour
             creditCanvas.SetActive(false);
             settingsMenu = GameObject.Find("Settings");
             settingsMenu.SetActive(false);
-            pauseMenu.SetActive(false);
+            //pauseMenu.SetActive(false);
     
             titleCanvas = GameObject.Find("TitleCanvas");
         }
