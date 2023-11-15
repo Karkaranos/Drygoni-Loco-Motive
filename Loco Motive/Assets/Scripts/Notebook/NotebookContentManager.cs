@@ -59,10 +59,18 @@ public class NotebookContentManager : MonoBehaviour
                 }
             }
 
-            for (int i = 0; i < timelineCount; i++)
+            for (int i = 0; i < timelineCount-1; i++)
             {
                 timelineVisible[i] = false;
             }
+
+            for(int i=1; i<5; i++)
+            {
+                BasicInformationVisible(i);
+            }
+            AdvancedInformationVisible(0);
+
+
         }
 
 
