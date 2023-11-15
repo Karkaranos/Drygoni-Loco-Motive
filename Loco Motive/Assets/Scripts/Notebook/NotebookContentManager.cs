@@ -49,18 +49,22 @@ public class NotebookContentManager : MonoBehaviour
         timelineVisible = new bool[timelineCount];
         contentVisible = new bool[pageCount, ITEMS_PER_PAGE];
 
-        for (int i = 0; i < ITEMS_PER_PAGE; i++)
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainScene")
         {
-            for (int j = 5; j < pageCount; j++)
+            for (int i = 0; i < ITEMS_PER_PAGE; i++)
             {
-                contentVisible[j, i] = false;
+                for (int j = 5; j < pageCount; j++)
+                {
+                    contentVisible[j, i] = false;
+                }
+            }
+
+            for (int i = 0; i < timelineCount; i++)
+            {
+                timelineVisible[i] = false;
             }
         }
 
-        for (int i = 0; i < timelineCount; i++)
-        {
-            timelineVisible[i] = false;
-        }
 
         visualUpdateNotification.SetActive(false);
 
