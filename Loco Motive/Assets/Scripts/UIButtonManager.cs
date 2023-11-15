@@ -64,9 +64,10 @@ public class UIButtonManager : MonoBehaviour
         if (am != null)
         {
             am.Play("Click");
+            am.PlayGameMusic();
         }
         SceneManager.LoadScene("MainScene");
-        am.PlayGameMusic();
+
     }
 
     /// <summary>
@@ -77,9 +78,9 @@ public class UIButtonManager : MonoBehaviour
         if (am != null)
         {
             am.Play("Click");
+            am.PlayMenuMusic();
         }
         SceneManager.LoadScene(0);
-        am.PlayMenuMusic();
     }
 
     /// <summary>
@@ -90,9 +91,9 @@ public class UIButtonManager : MonoBehaviour
         if (am != null)
         {
             am.Play("Click");
+            am.PlayMenuMusic();
         }
         SceneManager.LoadScene("WinScene");
-        am.PlayMenuMusic();
     }
 
     /// <summary>
@@ -103,9 +104,9 @@ public class UIButtonManager : MonoBehaviour
         if (am != null)
         {
             am.Play("Click");
+            am.PlayTutorialMusic();
         }
         SceneManager.LoadScene("TutorialScene");
-        am.PlayTutorialMusic();
     }
 
     /// <summary>
@@ -212,7 +213,10 @@ public class UIButtonManager : MonoBehaviour
                     notebookIcon = GameObject.Find("Map");
                 }
             }
-            am.EndPauseMusic();
+            if (am != null)
+            {
+                am.EndPauseMusic();
+            }
         }
 
     }
@@ -263,7 +267,10 @@ public class UIButtonManager : MonoBehaviour
                     notebookIcon = GameObject.Find("Map");
                 }
             }
-            am.PlayPauseMusic();
+            if (am != null)
+            {
+                am.PlayPauseMusic();
+            }
         }
     }
 
