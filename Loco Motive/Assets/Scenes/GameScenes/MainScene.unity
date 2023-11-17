@@ -8887,7 +8887,7 @@ Transform:
   m_GameObject: {fileID: 438098456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.5, y: -0.41, z: -1}
-  m_LocalScale: {x: 0.7, y: 0.73422146, z: 0.81093603}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 378678586}
@@ -11183,15 +11183,13 @@ MonoBehaviour:
     - {fileID: 1994049292}
     CharacterOff:
     - {fileID: 1109416240}
+    - {fileID: 1091249266}
     - {fileID: 1312352927}
     - {fileID: 1919062717}
+    - {fileID: 1924408558}
     - {fileID: 1793143536}
-    - {fileID: 1542904474}
-    - {fileID: 92356751}
     - {fileID: 640125280}
-    - {fileID: 1844464234}
     - {fileID: 2039306032}
-    - {fileID: 1793143536}
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
@@ -22030,7 +22028,7 @@ Transform:
   m_GameObject: {fileID: 819450464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 341632465}
@@ -39175,7 +39173,7 @@ Transform:
   m_GameObject: {fileID: 1672874981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1447966186}
@@ -43745,7 +43743,7 @@ Transform:
   m_GameObject: {fileID: 1919062717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 648682605}
@@ -43985,7 +43983,7 @@ Transform:
   m_GameObject: {fileID: 1924408558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1438855442}
@@ -46037,7 +46035,7 @@ Transform:
   m_GameObject: {fileID: 2054128598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.54999924, y: 0.25, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 657590473}
@@ -47552,8 +47550,10 @@ MonoBehaviour:
   largeViewSprite: {fileID: 21300000, guid: d3681602f40344e40ab1a4f64226aabb, type: 3}
   updatesTimeline: 0
   timelineEventNum: 0
-  CharacterOn: []
-  CharacterOff: []
+  CharacterOn:
+  - {fileID: 1793143536}
+  CharacterOff:
+  - {fileID: 2039306032}
   noDestroy: 0
   fullyRevealsNotebookPage: 1
 --- !u!61 &2126120184
