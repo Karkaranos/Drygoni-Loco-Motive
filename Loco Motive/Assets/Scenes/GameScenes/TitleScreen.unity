@@ -943,10 +943,9 @@ MonoBehaviour:
     Marks\n\nProgrammers:\t\tBrayden Reyes\n\t\t\tCade Naylor\n\nWriters: \t\tAce
     Ferrari\n\t\t\tCade Naylor\n\nUI/UX: \t\t\tVan Marks\n\nMusic: \t\t\t\"Angelic
     Choir\" from Pixabay\n\t\t\tAll other Music by Mac Rapach\n\nSFX: \t\t\t\"I Like
-    Trains\" by Tomska\n\t\t\t\"LightSwitch\" by SoundReality\n\t\t\tAll others from
-    Kaboom\n\nFonts: \t\t\tyoungones by Ratticsassin makes Fonts\n\t\t\tDogTown Typewriter
-    by Lukas Krakora\n\nCorporate Ladder: \tBallymore\n\nHonorary Member: \tZach
-    Abbott\n\n"
+    Trains\" by Tomska\n\t\t\tAll others by Cade Naylor\n\nFonts: \t\t\tyoungones
+    by Ratticsassin makes Fonts\n\t\t\tDogTown Typewriter by Lukas Krakora\n\nCorporate
+    Ladder: \tBallymore\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
   m_sharedMaterial: {fileID: 5857557353024744869, guid: 66e2cda2cfbf62b4ba429626a202c0e0, type: 2}
