@@ -46878,7 +46878,7 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Actually, we knew this might happen
+  - Text: Actually, we knew this might happen.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -46923,7 +46923,7 @@ MonoBehaviour:
     changesScene: 0
     scene: 
   - Text: Let us formally introduce ourselves. I am Detective Casey and this is my
-      assistant, Hunter, of Casey Files Detective Agency
+      assistant, Hunter, of Casey Files Detective Agency.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -46968,7 +46968,7 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Yes
+  - Text: Yes.
     Names: 0
     Branch: []
     NextTextOverride: 0
