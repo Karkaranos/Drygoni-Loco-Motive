@@ -1732,7 +1732,7 @@ MonoBehaviour:
     maxSoundDistance: 0
     source: {fileID: 0}
   - name: FootstepOne
-    audClip: {fileID: 8300000, guid: 835cfd9d519257442bfef5b54ccf9302, type: 3}
+    audClip: {fileID: 8300000, guid: 70488a3bdba4bf64da1067867494be34, type: 3}
     clipVolume: 0.7
     clipPitch: 1
     canLoop: 0
@@ -1742,7 +1742,7 @@ MonoBehaviour:
     maxSoundDistance: 0
     source: {fileID: 0}
   - name: FootstepTwo
-    audClip: {fileID: 8300000, guid: 8c76759d2ce3d00459f38c927e3282ea, type: 3}
+    audClip: {fileID: 8300000, guid: 0075255535e46664d9a13006974f1413, type: 3}
     clipVolume: 0.7
     clipPitch: 1
     canLoop: 0
@@ -1752,7 +1752,7 @@ MonoBehaviour:
     maxSoundDistance: 0
     source: {fileID: 0}
   - name: FootstepThree
-    audClip: {fileID: 8300000, guid: 88314396e137998448ff3b183f657394, type: 3}
+    audClip: {fileID: 8300000, guid: 9fb782e83ebab5d45aa52566f264f404, type: 3}
     clipVolume: 0.7
     clipPitch: 1
     canLoop: 0
@@ -1772,8 +1772,8 @@ MonoBehaviour:
     maxSoundDistance: 0
     source: {fileID: 0}
   - name: Door
-    audClip: {fileID: 8300000, guid: 59ebd5b68bd4acd489c9286fb554e401, type: 3}
-    clipVolume: 0.1
+    audClip: {fileID: 8300000, guid: ae188e38cb30f6c488d404546512f5b5, type: 3}
+    clipVolume: 0.7
     clipPitch: 1
     canLoop: 0
     panStereo: 0
@@ -1783,7 +1783,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Click
     audClip: {fileID: 8300000, guid: 8b4f61619b674a04d992b8d433286be6, type: 3}
-    clipVolume: 0.3
+    clipVolume: 0.8
     clipPitch: 1
     canLoop: 0
     panStereo: 0
