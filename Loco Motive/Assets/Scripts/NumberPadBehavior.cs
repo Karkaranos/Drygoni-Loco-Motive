@@ -16,11 +16,8 @@ public class NumberPadBehavior : MonoBehaviour
 {
     #region Variables
     [SerializeField] private GameObject numberPad;
-    [SerializeField] private int code;
-    [SerializeField] private bool startsWith0;
-    [SerializeField] private int digitsInCode;
-    private int playerGuess = 0;
-    private bool playerGuessStartWith0 = false;
+    [SerializeField] private string code;
+    private string playerGuess = "----";
     private int digitsEntered=0;
     [SerializeField] private TMP_Text codeText;    
     [SerializeField] private Image comboImage;
@@ -62,58 +59,27 @@ public class NumberPadBehavior : MonoBehaviour
     /// <param name="number"></param>
     public void NumberPressed(int number)
     {
-        //If there are fewer digits entered than digits in the code, add to the code
-        if (digitsEntered < 9)
+        //Set the code to be blank if starting a new guess
+        if(digitsEntered == 0)
         {
-            //If the current guess is 0, run these checks
-            if (playerGuess == 0)
-            {
-                //If the current guess is 0, player inputted 0,  and the guess
-                //doesn't start with 0, signal the guess starts with a 0
-                if (!playerGuessStartWith0 && number == 0)
-                {
-                    playerGuessStartWith0 = true;
-                }
-                //Otherwise if the player didn't input 0 or the number already has
-                //a zero, run these checks
-                else
-                {
-                    //If there are many digits and input is 0, multiply it by 10
-                    if(digitsEntered > 0 && number == 0)
-                    {
-                        playerGuess *= 10;
-                    }
-                    //otherwise just add the inputted number
-                    else
-                    {
-                        playerGuess += number;
-                    }
-                }
-            }
-            //If the current guess isn't 0, multiply it by 10 and add the input
-            else
-            {
-                playerGuess *= 10;
-                playerGuess += number;
-            }
+            playerGuess = "";
+        }
+
+        //If there are fewer digits entered than digits in the code, add to the code
+        if (digitsEntered < 4)
+        {
+            playerGuess += number;
+
             //Increase the number of digits guessed
             digitsEntered++;
-            if (playerGuessStartWith0 && playerGuess!=0)
-            {
-                codeText.text = "0" + playerGuess;
-            }
-            else
-            {
-                codeText.text = playerGuess.ToString();
-            }
+            codeText.text = playerGuess;
         }
         //Otherwise if the lock is about to overflow, reset it
         else
         {
-            playerGuess = 0;
+            playerGuess = "----";
             digitsEntered = 0;
-            playerGuessStartWith0 = false;
-            codeText.text = "ERROR";
+            codeText.text = "OVERFLOW";
             StartCoroutine("WrongCode");
         }
     }
@@ -123,30 +89,16 @@ public class NumberPadBehavior : MonoBehaviour
     /// </summary>
     public void CheckCode()
     {
-        //If both codes start or don't start with 0, check the number
-        if (startsWith0 == playerGuessStartWith0)
+        //Check the code
+        if (code.Equals(playerGuess))
         {
-            //If the codes are equal, break the lock
-            if(code == playerGuess)
-            {
-                unlocked = true;
-                StartCoroutine(RightCode());
-            }
-            //Otherwise reset the lock
-            else
-            {
-                playerGuess = 0;
-                digitsEntered = 0;
-                playerGuessStartWith0 = false;
-                codeText.text = "WRONG";
-                StartCoroutine("WrongCode");
-            }
+            unlocked = true;
+            StartCoroutine(RightCode());
         }
         else
         {
-            playerGuess = 0;
+            playerGuess = "----";
             digitsEntered = 0;
-            playerGuessStartWith0 = false;
             codeText.text = "WRONG";
             StartCoroutine("WrongCode");
         }
@@ -158,10 +110,9 @@ public class NumberPadBehavior : MonoBehaviour
     public void CloseLock()
     {
         numberPad.SetActive(false);
-        playerGuess = 0;
+        playerGuess = "----";
         digitsEntered = 0;
         numberPadObject.SetActive(true);
-        playerGuessStartWith0 = false;
         map.SetActive(true);
         movementArrows.SetActive(true);
         notebookIcon.SetActive(true);
@@ -202,6 +153,7 @@ public class NumberPadBehavior : MonoBehaviour
         comboImage.sprite = wrongCombo;
         yield return new WaitForSeconds(1f);
         comboImage.sprite = standardNumberPad;
+        codeText.text = "----";
     }
     #endregion
 }

@@ -71,7 +71,8 @@ public class InventoryBehavior : MonoBehaviour
         {
             accusation.SetActive(false);
         }
-        
+
+        CloseLargeView();
 
         PopulateArrays();
 
@@ -133,6 +134,7 @@ public class InventoryBehavior : MonoBehaviour
             notebookIcon.SetActive(true);
         }
         dc.isTalking = false;
+        CloseLargeView();
     }
 
     /// <summary>
@@ -141,12 +143,16 @@ public class InventoryBehavior : MonoBehaviour
     /// <param name="i">the object to zoom in on</param>
     public void OpenLargeView(int i)
     {
-        if (am != null)
+        if(inventorySpaces[i-1].sprite != placeholder)
         {
-            am.Play("Click");
+            print("shkj");
+            if (am != null)
+            {
+                am.Play("Click");
+            }
+            inventoryLarge.SetActive(true);
+            largeObject.sprite = inventorySpaces[i - 1].sprite;
         }
-        inventoryLarge.SetActive(true);
-        largeObject.sprite = inventorySpaces[i-1].sprite;
     }
 
     /// <summary>
