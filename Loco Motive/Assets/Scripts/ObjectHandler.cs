@@ -16,6 +16,7 @@ public class ObjectHandler : MonoBehaviour
     public bool updatesNotebook;
     private InventoryBehavior ib;
     private NotebookContentManager ncm;
+    private DialogueController dc;
     private NotebookManager nm;
     public string itemID;
     [SerializeField] private int pageNumber;
@@ -38,7 +39,7 @@ public class ObjectHandler : MonoBehaviour
         ib = GameObject.Find("InventoryManager").GetComponent<InventoryBehavior>();
         ncm = GameObject.Find("NotebookManager").GetComponent<NotebookContentManager>();
         nm = GameObject.Find("NotebookManager").GetComponent<NotebookManager>();
-
+        dc = GameObject.Find("DialogueController").GetComponent<DialogueController>();
     }
 
     /// <summary>
@@ -63,6 +64,10 @@ public class ObjectHandler : MonoBehaviour
         {
             ib.AddItemToInventory(itemID);
             LargeObjectView();
+            if (dc.isTutorial == true)
+            {
+                dc.TutorialCounterUpdate();
+            }
         }
 
         if (CharacterOn.Count != 0)

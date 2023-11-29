@@ -24,6 +24,9 @@ public class DialogueController : MonoBehaviour
     public bool branchThreeRead = false;
     public bool branchFourRead = false;
     public int textSpeed = 1;
+    public bool isTutorial = false;
+    public int tutorialCounter = 0;
+    public int maxTutorialCounter;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -57,6 +60,7 @@ public class DialogueController : MonoBehaviour
     public GameObject BranchTwo;
     public GameObject BranchThree;
     public GameObject BranchFour;
+    public GameObject BedCollider;
 
     public ClickController cc;
     public NotebookManager nm;
@@ -69,6 +73,8 @@ public class DialogueController : MonoBehaviour
     public List<GameObject> ChoiceBranch;
 
     private AudioManager am;
+
+
 
     //Class used in making typewriter text work
     [SerializeField] TextMeshProUGUI _textMeshPro;
@@ -301,7 +307,10 @@ public class DialogueController : MonoBehaviour
         }
         if (interrogating == true)
         {
-            //currentInterrogation.currCounter = 0;
+            if (isTutorial == true)
+            {
+                TutorialCounterUpdate();
+            }
         }
         interrogating = false;
         accusing = false;
@@ -399,5 +408,14 @@ public class DialogueController : MonoBehaviour
     IEnumerator EmptyCoroutine()
     {
         yield return null;
+    }
+
+    public void TutorialCounterUpdate()
+    {
+        tutorialCounter++;
+        if (tutorialCounter >= maxTutorialCounter)
+        {
+            BedCollider.SetActive(true);
+        }
     }
 }
