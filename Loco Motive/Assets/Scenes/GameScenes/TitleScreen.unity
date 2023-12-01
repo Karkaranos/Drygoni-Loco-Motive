@@ -770,17 +770,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913850444}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1891716043}
+  m_Father: {fileID: 946747914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 0, y: 83}
   m_SizeDelta: {x: 350, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &913850446
@@ -909,7 +909,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 913850445}
   m_Father: {fileID: 1891716043}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1805,7 +1806,7 @@ MonoBehaviour:
     audClip: {fileID: 8300000, guid: 16f13288fdba157428862b6904303063, type: 3}
     clipVolume: 1
     clipPitch: 1
-    canLoop: 1
+    canLoop: 0
     panStereo: 0
     spacialBlend: 0
     minSoundDistance: 0
@@ -1815,7 +1816,7 @@ MonoBehaviour:
     audClip: {fileID: 8300000, guid: cbc6c5862c7798a4094f6f8e464789f0, type: 3}
     clipVolume: 1
     clipPitch: 1
-    canLoop: 1
+    canLoop: 0
     panStereo: 0
     spacialBlend: 0
     minSoundDistance: 0
@@ -2056,7 +2057,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 946747914}
-  - {fileID: 913850445}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

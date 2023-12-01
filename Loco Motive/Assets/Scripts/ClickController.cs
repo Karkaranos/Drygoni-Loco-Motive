@@ -116,6 +116,11 @@ public class ClickController : MonoBehaviour
     private void Restart_performed(InputAction.CallbackContext obj)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        if (am != null)
+        {
+            am.StopAllSounds();
+            am.PlayMenuMusic();
+        }
     }
 
     private void Reveal_performed(InputAction.CallbackContext obj)
