@@ -121,6 +121,6 @@ public class TutorialManager : MonoBehaviour
         {
             am.PlayGameMusic();
         }
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(5);
     }
 }
