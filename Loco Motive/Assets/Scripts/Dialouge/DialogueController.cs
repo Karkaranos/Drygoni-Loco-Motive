@@ -115,7 +115,8 @@ public class DialogueController : MonoBehaviour
             {
                 ChoiceBranch[i].GetComponent<DialogueButton>().UpdateButton(x.Branch[i].nextDialogue, x.Branch[i].choiceText);
                 ChoiceBranch[i].SetActive(true);
-                if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+
+                if (interrogating && currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
                 {
                     if (branchOneRead == true)
                     {
@@ -253,14 +254,14 @@ public class DialogueController : MonoBehaviour
 
     public void BranchOneClicked()
     {
-        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        if (interrogating && currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
             branchOneRead = true;
         }
     }
     public void BranchTwoClicked()
     {
-        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        if (interrogating && currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
             branchTwoRead = true;
         }
@@ -268,14 +269,14 @@ public class DialogueController : MonoBehaviour
     }
     public void BranchThreeClicked()
     {
-        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        if (interrogating && currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
             branchThreeRead = true;
         }
     }
     public void BranchFourClicked()
     {
-        if (currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
+        if (interrogating && currentInterrogation.AllMessages[currentInterrogation.currMessage].mainBranching == true)
         {
             branchFourRead = true;
         }
