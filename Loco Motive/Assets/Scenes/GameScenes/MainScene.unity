@@ -1819,7 +1819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -3666,7 +3666,7 @@ GameObject:
   - component: {fileID: 159007662}
   m_Layer: 0
   m_Name: PocketKnives
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3862,7 +3862,7 @@ GameObject:
   - component: {fileID: 167082980}
   m_Layer: 0
   m_Name: LargeBoxPlant1
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5160,7 +5160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -5338,7 +5338,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 0
+    timelineEventNum: 2
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5405,8 +5405,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 3
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5474,7 +5474,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 6
+    timelineEventNum: 9
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5495,8 +5495,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5520,7 +5520,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 8
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5563,8 +5563,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 1
-    timelineEventNum: 11
+    updatesTimeline: 0
+    timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5610,8 +5610,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 16
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -5656,7 +5656,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 14
+    timelineEventNum: 17
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -6059,8 +6059,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 255401405}
-  - component: {fileID: 255401407}
   - component: {fileID: 255401406}
+  - component: {fileID: 255401407}
   m_Layer: 0
   m_Name: Painting
   m_TagString: OneShotText
@@ -6169,8 +6169,8 @@ MonoBehaviour:
   canAccuse: 0
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
---- !u!61 &255401407
-BoxCollider2D:
+--- !u!60 &255401407
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6201,7 +6201,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.089653015, y: -0.12327361}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6211,9 +6211,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.927555, y: 1.7396417}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.1087799, y: 0.72280455}
+      - {x: 1.1044769, y: -0.47486615}
+      - {x: -1.3364248, y: -0.4899137}
+      - {x: -1.338243, y: -1.0050822}
+      - {x: 1.5275475, y: -0.9712777}
+      - {x: 1.478404, y: 0.72819084}
+  m_UseDelaunayMesh: 0
 --- !u!1 &257524746
 GameObject:
   m_ObjectHideFlags: 0
@@ -6510,7 +6516,7 @@ GameObject:
   - component: {fileID: 268944588}
   m_Layer: 0
   m_Name: Painting3
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6648,7 +6654,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20492744, y: -0.20708203}
+  m_Offset: {x: 0.90127945, y: -0.20708203}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6659,7 +6665,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.3312798, y: 1.0752263}
+  m_Size: {x: 5.118866, y: 1.0752263}
   m_EdgeRadius: 0
 --- !u!1 &272795224
 GameObject:
@@ -7859,7 +7865,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 0
+    timelineEventNum: 3
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -7902,8 +7908,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 7
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -7947,8 +7953,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 7
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -7993,7 +7999,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 6
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -8039,7 +8045,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 5
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -8195,7 +8201,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 13
+    timelineEventNum: 17
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -10125,7 +10131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008217275, y: 0.08217311}
+  m_Offset: {x: -0.008217275, y: -0.32353312}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10136,7 +10142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6409525, y: 4.023975}
+  m_Size: {x: 1.6409525, y: 3.2125626}
   m_EdgeRadius: 0
 --- !u!114 &424844660
 MonoBehaviour:
@@ -10502,7 +10508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currMessage: 0
+  currMessage: 3
   AllMessages:
   - Text: So what do you think? Are you done investigating?
     Names: 0
@@ -10664,9 +10670,9 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: 'Then let me review what we know. Josephine was found in her room this
-      morning by her wife. She had been stabbed and there was a message written in
-      her blood. She was probably killed between 10:00 and 12:00 last night. '
+  - Text: Let me review what we know. Josephine was found in her room this morning
+      by her wife. She had been stabbed. She was probably killed between 10:00 and
+      12:00 yesterday night.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -10853,10 +10859,9 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Not so fast, you both took breaks. When Dominic took a break he saw Hana
-      in the lounge, just like she had said. He also left Alex alone in his room.
-      That was just before 11:00. Brady was in his room and went to shower a few
-      minutes later.
+  - Text: Not so fast. Dominic took a break and saw Hana in the lounge, just as she
+      had said. He also left Alex alone in his room just before 11:00. Brady was
+      in his room and went to shower a few minutes later.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -14318,7 +14323,7 @@ GameObject:
   - component: {fileID: 513376321}
   m_Layer: 0
   m_Name: Obj_plant3Small
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14943,8 +14948,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578177224}
-  - component: {fileID: 578177226}
   - component: {fileID: 578177225}
+  - component: {fileID: 578177226}
   m_Layer: 0
   m_Name: Painting
   m_TagString: OneShotText
@@ -15052,8 +15057,8 @@ MonoBehaviour:
   canAccuse: 0
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
---- !u!61 &578177226
-BoxCollider2D:
+--- !u!60 &578177226
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15084,7 +15089,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.031290174, y: 0.062580585}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15094,9 +15099,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.5227926, y: 2.6270933}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.62116146, y: 1.3802245}
+      - {x: 0.6164446, y: 0.7118795}
+      - {x: -1.2860804, y: 0.71774626}
+      - {x: -1.2846351, y: -1.2244468}
+      - {x: 1.1975294, y: -1.1708428}
+      - {x: 1.1855736, y: 1.3810937}
+  m_UseDelaunayMesh: 0
 --- !u!1 &579665371
 GameObject:
   m_ObjectHideFlags: 0
@@ -15339,7 +15350,7 @@ GameObject:
   - component: {fileID: 605104234}
   m_Layer: 0
   m_Name: Painting1
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15455,7 +15466,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09771633, y: -0.10993075}
+  m_Offset: {x: -0.09771633, y: -0.5567794}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15466,7 +15477,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6840115, y: 2.050448}
+  m_Size: {x: 1.6840115, y: 1.4780798}
   m_EdgeRadius: 0
 --- !u!1 &612551994
 GameObject:
@@ -23293,7 +23304,7 @@ GameObject:
   - component: {fileID: 768813552}
   m_Layer: 0
   m_Name: Obj_Plant2
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23808,7 +23819,7 @@ GameObject:
   - component: {fileID: 799734553}
   m_Layer: 0
   m_Name: Painting1
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25060,7 +25071,7 @@ GameObject:
   - component: {fileID: 853164470}
   m_Layer: 0
   m_Name: Obj_plant4
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25597,7 +25608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -25773,7 +25784,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 0
+    timelineEventNum: 2
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -25840,8 +25851,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 3
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -25907,7 +25918,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 6
+    timelineEventNum: 9
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -25929,8 +25940,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 7
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -25976,7 +25987,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 8
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -26019,8 +26030,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 1
-    timelineEventNum: 11
+    updatesTimeline: 0
+    timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -26064,8 +26075,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 16
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -26133,7 +26144,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 13
+    timelineEventNum: 17
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -26375,7 +26386,7 @@ GameObject:
   - component: {fileID: 966586720}
   m_Layer: 0
   m_Name: Other
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27266,7 +27277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -27355,8 +27366,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 1
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27447,8 +27458,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 5
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27492,8 +27503,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27538,8 +27549,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27560,8 +27571,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 10
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27586,8 +27597,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 13
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27680,8 +27691,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 12
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27836,8 +27847,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 14
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -27858,8 +27869,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 15
     revealInfoNotebook: 1
     pageInfoToReveal: 4
     mainBranching: 0
@@ -28509,11 +28520,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1018263654}
-  - component: {fileID: 1018263656}
   - component: {fileID: 1018263655}
+  - component: {fileID: 1018263656}
   m_Layer: 0
   m_Name: Painting2
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28640,7 +28651,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
@@ -28751,8 +28762,8 @@ MonoBehaviour:
   canAccuse: 0
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
---- !u!61 &1018263656
-BoxCollider2D:
+--- !u!60 &1018263656
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -28783,7 +28794,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.073355675, y: 0.0440135}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -28793,9 +28804,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.90489, y: 1.5575037}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.8472018, y: 0.8516846}
+      - {x: -2.0027483, y: 0.7809298}
+      - {x: -1.9765577, y: 0.43143904}
+      - {x: 0.79003394, y: 0.43143916}
+      - {x: 0.826601, y: -0.7515302}
+      - {x: 1.8679161, y: -0.7696405}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1020521285
 GameObject:
   m_ObjectHideFlags: 0
@@ -28809,7 +28826,7 @@ GameObject:
   - component: {fileID: 1020521287}
   m_Layer: 0
   m_Name: Machete
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33775,7 +33792,7 @@ MonoBehaviour:
       nextDialogue: 2
     - choiceText: Knives
       nextDialogue: 19
-    - choiceText: Realtion
+    - choiceText: Relation
       nextDialogue: 46
     - choiceText: Hatemail
       nextDialogue: 51
@@ -33878,8 +33895,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 1
-    timelineEventNum: 1
+    updatesTimeline: 0
+    timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -33923,8 +33940,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 1
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -33947,7 +33964,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 1
+    timelineEventNum: 4
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -33992,7 +34009,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 3
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -34014,8 +34031,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 10
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -34058,8 +34075,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 1
-    timelineEventNum: 7
+    updatesTimeline: 0
+    timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -34104,7 +34121,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 9
+    timelineEventNum: 12
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -34149,7 +34166,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 11
+    timelineEventNum: 13
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -34222,7 +34239,7 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Well no, but do you have any knives with you?
+  - Text: Well no, but why did you bring your knives with you?
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -34244,8 +34261,8 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "Of course, I couldn\u2019t just leave them at home! There are some crazy
-      people out there\u2026"
+  - Text: "I couldn\u2019t just leave them at home! There are some crazy people out
+      there\u2026"
     Names: 4
     Branch: []
     NextTextOverride: 0
@@ -35794,7 +35811,7 @@ GameObject:
   - component: {fileID: 1295628757}
   m_Layer: 0
   m_Name: Painting1
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35909,7 +35926,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.021205187, y: -0.4559064}
+  m_Offset: {x: -0.021205187, y: -0.8064704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -35920,7 +35937,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5089192, y: 3.7778502}
+  m_Size: {x: 1.5089192, y: 3.0767221}
   m_EdgeRadius: 0
 --- !u!1 &1295947190
 GameObject:
@@ -36237,7 +36254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -36266,6 +36283,8 @@ MonoBehaviour:
       nextDialogue: 2
     - choiceText: Relation to victim
       nextDialogue: 28
+    - choiceText: Anything Strange
+      nextDialogue: 32
     NextTextOverride: 0
     EndDialogue: 0
     Portrait: {fileID: 21300000, guid: cf2f2de844641cc43af579b5352caaed, type: 3}
@@ -36323,7 +36342,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 2
+    timelineEventNum: 1
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36344,8 +36363,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 2
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36413,7 +36432,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 4
+    timelineEventNum: 5
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36482,7 +36501,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 4
+    timelineEventNum: 6
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36512,7 +36531,7 @@ MonoBehaviour:
     changesScene: 0
     scene: 
   - Text: I saw Dominic. He was just passing through to grab a drink. I guess he
-      was having trouble sleeping. I saw Bradey a little bit later. It sounded like
+      was having trouble sleeping. I saw Brady a little bit later. It sounded like
       he heard us fighting and scolded me for being loud.
     Names: 3
     Branch: []
@@ -36528,7 +36547,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 5
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36575,8 +36594,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 13
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36668,8 +36687,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 1
-    timelineEventNum: 9
+    updatesTimeline: 0
+    timelineEventNum: 0
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36691,8 +36710,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 12
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36847,8 +36866,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 14
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36869,8 +36888,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 15
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -36958,6 +36977,140 @@ MonoBehaviour:
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: Was there anything strange leading up to the incident? Maybe some way she
+      behaved? Something she said?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: 'No I really had no idea something like this could happen! '
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: e40acd163716f3b409579d40009bb3ae, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: Nothing?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: Well actually. She gave me a note.
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 5fcbf9e10d7abd2478a39d48241b233d, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: What does it say?
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "I\u2019m honestly not sure what it means. Maybe it would be better for
+      you to have it."
+    Names: 3
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 1
+    InventoryItem: Piece2
     conditionForTutorialProgression: 0
     updatesTimeline: 0
     timelineEventNum: 0
@@ -39820,7 +39973,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 0
+    timelineEventNum: 3
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -39863,8 +40016,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 7
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -39908,8 +40061,8 @@ MonoBehaviour:
     AddInventoryItem: 0
     InventoryItem: 
     conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
+    updatesTimeline: 1
+    timelineEventNum: 11
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -39954,7 +40107,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 6
+    timelineEventNum: 16
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -40000,7 +40153,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 5
+    timelineEventNum: 8
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -40156,7 +40309,7 @@ MonoBehaviour:
     InventoryItem: 
     conditionForTutorialProgression: 0
     updatesTimeline: 1
-    timelineEventNum: 13
+    timelineEventNum: 17
     revealInfoNotebook: 0
     pageInfoToReveal: 0
     mainBranching: 0
@@ -40962,7 +41115,7 @@ GameObject:
   - component: {fileID: 1470674536}
   m_Layer: 0
   m_Name: Obj_GameConsol
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41048,28 +41201,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: Hey Casey! Want to let loose a little and play a round or two?
-    Names: 0
-    Branch: []
-    NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
-    hasRead: 0
-    correctAnswer: 0
-    messagesToMarkHasRead: 
-    CharacterOn: []
-    CharacterOff: []
-    AddInventoryItem: 0
-    InventoryItem: 
-    conditionForTutorialProgression: 0
-    updatesTimeline: 0
-    timelineEventNum: 0
-    revealInfoNotebook: 0
-    pageInfoToReveal: 0
-    mainBranching: 0
-    knifeDialogue: 0
-    changesScene: 0
-    scene: 
   - Text: Hey Casey! Want to let loose a little and play a round or two?
     Names: 0
     Branch: []
@@ -41569,7 +41700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498759645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.55, y: -23.8, z: -0.13222842}
+  m_LocalPosition: {x: 50, y: -12, z: -0.13222842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -43243,7 +43374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -44342,7 +44473,7 @@ GameObject:
   - component: {fileID: 1698629159}
   m_Layer: 0
   m_Name: Painting2
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44771,66 +44902,89 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.size
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[0]
-      value: Alex and Dominic start playing games in Alex's room.
+      value: 6:00 PM<br>Everyone has dinner together.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[1]
-      value: Brady is trying to wind down for the night.
+      value: 8:00 PM<br>Brady meets with Josephine. They fight about the company's
+        technology.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[2]
-      value: Hana and Josephine are in their room.
+      value: 8:30 PM<br>Alex meets with Josephine. They discuss the company's direction.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[3]
-      value: The two of them fight. Brady overhears it.
+      value: 9:00 PM<br>Alex and Dominic start playing games in Alex's room.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[4]
-      value: Hana leaves Josephine's room and moves to the lounge.
+      value: Brady is in his room, trying to wind down for the night.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[5]
-      value: Hana sees Dominic pass through the Lounge.
+      value: Hana and Josephine are in their room.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[6]
-      value: Dominic gets a drink from the bar and returns with nothing.
+      value: 10:00 PM<br>Hana and Josephine fight. Hana moves to the lounge.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[7]
-      value: Brady takes a shower, leaving his door unlocked.
+      value: 10:50 PM<br>Dominic gets a drink from the bar. He returns with nothing.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[8]
-      value: Dominic returns to playing games with Alex.
+      value: Hana sees Dominic pass through the Lounge.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[9]
-      value: Brady finishes showering. He grabs a snack from the dining car.
+      value: Alex reads a book while waiting for Dominic to return.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[10]
-      value: Hana and Brady talk before Brady returns to his room.
+      value: 11:00 PM<br>Brady goes to take a shower.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[11]
-      value: 'Alex sees Hana asleep when he grabs a drink. '
+      value: 11:15 PM<br>Dominic returns to playing games with Alex.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[12]
-      value: 'Dominic and Alex stop gaming after midnight. '
+      value: 11:20 PM<br>Brady finishes showering. He grabs a snack from the dining
+        car.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[13]
-      value: Brady, Dominic, and Alex go to sleep.
+      value: Hana and Brady talk before Brady returns to his room.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: timelineContent.Array.data[14]
+      value: 11:30 PM<br>Hana knocks on Josephine's door and gets no response.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[15]
+      value: Hana figures Josephine is mad at her and sleeps in the lounge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[16]
+      value: '12:45 AM<br>Alex sees Hana asleep when he grabs a drink. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[17]
+      value: 2:00 AM<br>Alex and Dominic stop playing games. Dominic returns to his
+        room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[18]
+      value: 2:30 AM<br>Everyone is asleep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
+      propertyPath: timelineContent.Array.data[19]
       value: Josephine's body is discovered the following morning.
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
@@ -45072,9 +45226,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[3]
-      value: This indicates she was dead for several hours. She was stabbed several
-        times, but blood was clotting before she was stabbed. Was stabbing the cause
-        of death or something else?
+      value: 'This indicates she was dead for several hours. She had been stabbed
+        several times, but the blood had already started to clot. Was stabbing the
+        cause of death or was it done after death to throw us off?  '
       objectReference: {fileID: 0}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[5].content.Array.data[4]
@@ -45314,7 +45468,7 @@ GameObject:
   - component: {fileID: 1708918884}
   m_Layer: 0
   m_Name: Towel
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45859,7 +46013,7 @@ GameObject:
   - component: {fileID: 1734114080}
   m_Layer: 0
   m_Name: Rainbow Knife
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46344,7 +46498,7 @@ GameObject:
   - component: {fileID: 1739129491}
   m_Layer: 0
   m_Name: SmallPlant1
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48387,11 +48541,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1835168285}
   - component: {fileID: 1835168288}
-  - component: {fileID: 1835168287}
   - component: {fileID: 1835168286}
+  - component: {fileID: 1835168289}
   m_Layer: 0
   m_Name: Paintings
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48474,51 +48628,6 @@ MonoBehaviour:
   canAccuse: 0
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
---- !u!61 &1835168287
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835168284}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 3.1338587, y: 2.0508347}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.9955997, y: 1.6452065}
-  m_EdgeRadius: 0
 --- !u!61 &1835168288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48551,7 +48660,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06252289, y: -0.04608631}
+  m_Offset: {x: -0.06252289, y: -0.42265892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -48562,8 +48671,59 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.566246, y: 3.7651691}
+  m_Size: {x: 1.566246, y: 3.012024}
   m_EdgeRadius: 0
+--- !u!60 &1835168289
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835168284}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.192482, y: 2.832655}
+      - {x: 1.1828585, y: 2.4805887}
+      - {x: 4.0636196, y: 2.4673195}
+      - {x: 4.106829, y: 1.2997915}
+      - {x: 5.1317687, y: 1.2997916}
+      - {x: 5.0682554, y: 2.8069534}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1841910140
 GameObject:
   m_ObjectHideFlags: 0
@@ -49269,7 +49429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I have a few Questions and I would appreciate your cooporation
+  - Text: I have a few questions and I would appreciate your cooporation
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -50360,6 +50520,282 @@ Transform:
   m_Father: {fileID: 378678586}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1944540898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944540899}
+  - component: {fileID: 1944540901}
+  - component: {fileID: 1944540900}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: OneShotText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944540899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944540898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2068197063}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944540900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944540898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bf70698fed1974e8a8a690df5fc520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currMessage: 0
+  AllMessages:
+  - Text: 'Did the other Brady you know also own an extensive knife collection? '
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: No. He had a lot of cute cats. Ooh, what if the knives are secretly cats?
+      That would be cool, Casey!
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: Knives are not cats.
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: db89aba21f7cbb248be9100fbf1e62cb, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "That\u2019s what you think."
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: I hope no one runs across this room and panics upon seeing all the knives.
+      Why on earth would you bring a knife collection on a company trip with you?
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "Late-night snacks? Speaking of which\u2026when\u2019s lunchtime?"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 691d5796587ae064aa71870df8bae456, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "We are trying to figure out who murdered someone and you\u2019re worried
+      about lunchtime?"
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 7208877b1aa4e8f43b64d9d534c3e5d5, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  - Text: "I\u2019m hungry."
+    Names: 0
+    Branch: []
+    NextTextOverride: 0
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    hasRead: 0
+    correctAnswer: 0
+    messagesToMarkHasRead: 
+    CharacterOn: []
+    CharacterOff: []
+    AddInventoryItem: 0
+    InventoryItem: 
+    conditionForTutorialProgression: 0
+    updatesTimeline: 0
+    timelineEventNum: 0
+    revealInfoNotebook: 0
+    pageInfoToReveal: 0
+    mainBranching: 0
+    knifeDialogue: 0
+    changesScene: 0
+    scene: 
+  dc: {fileID: 0}
+  canInterrogate: 0
+  canAccuse: 0
+  thisInterrogation: {fileID: 0}
+  thisAccusation: {fileID: 0}
+--- !u!61 &1944540901
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944540898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.23152065, y: 1.1747437}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.014164, y: 3.3494873}
+  m_EdgeRadius: 0
 --- !u!1 &1960816180
 GameObject:
   m_ObjectHideFlags: 0
@@ -50453,11 +50889,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1961540416}
-  - component: {fileID: 1961540418}
   - component: {fileID: 1961540417}
+  - component: {fileID: 1961540418}
   m_Layer: 0
   m_Name: Painting2
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50541,8 +50977,8 @@ MonoBehaviour:
   canAccuse: 0
   thisInterrogation: {fileID: 0}
   thisAccusation: {fileID: 0}
---- !u!61 &1961540418
-BoxCollider2D:
+--- !u!60 &1961540418
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -50573,7 +51009,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16645145, y: -0.19419432}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -50583,9 +51019,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.99613, y: 1.6473122}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.103075, y: 0.5238323}
+      - {x: -1.8438711, y: 0.57686114}
+      - {x: -1.817884, y: 0.2028395}
+      - {x: 1.0540329, y: 0.16315866}
+      - {x: 1.0757904, y: -0.962029}
+      - {x: 2.0323534, y: -0.98060423}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1963261023
 GameObject:
   m_ObjectHideFlags: 0
@@ -51130,7 +51572,7 @@ GameObject:
   - component: {fileID: 1992225223}
   m_Layer: 0
   m_Name: Mess
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52370,7 +52812,7 @@ GameObject:
   - component: {fileID: 2049382557}
   m_Layer: 0
   m_Name: Obj_plant3Large
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52815,7 +53257,7 @@ GameObject:
   - component: {fileID: 2068197064}
   m_Layer: 0
   m_Name: Obj_KnifeCollection
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52838,6 +53280,7 @@ Transform:
   - {fileID: 2084952309}
   - {fileID: 159007661}
   - {fileID: 966586719}
+  - {fileID: 1944540899}
   m_Father: {fileID: 495125580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -52990,7 +53433,7 @@ GameObject:
   - component: {fileID: 2084952310}
   m_Layer: 0
   m_Name: Orange
-  m_TagString: Untagged
+  m_TagString: OneShotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53759,7 +54202,7 @@ MonoBehaviour:
     Branch: []
     NextTextOverride: 0
     EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: bccdfa26487395844b7963da90e7dfa2, type: 3}
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
