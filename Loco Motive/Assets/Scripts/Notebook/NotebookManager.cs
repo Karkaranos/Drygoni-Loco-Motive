@@ -80,7 +80,9 @@ public class NotebookManager : MonoBehaviour
                 RevealInformation(i);
             }
             RevealComplexInformation(0);
-            RevealNewTimelineEvent(14);
+            RevealNewTimelineEvent(0);
+            RevealNewTimelineEvent(18);
+            RevealNewTimelineEvent(19);
         }
 
     }

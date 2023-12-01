@@ -70,7 +70,7 @@ public class NotebookContentManager : MonoBehaviour
             }
             AdvancedInformationVisible(0);
 
-            RevealEvent(14);
+            //RevealEvent(14);
         }
 
 
