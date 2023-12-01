@@ -177,6 +177,14 @@ public class AudioManager : MonoBehaviour
 
     #region Play Music
 
+    public void StopAllSounds()
+    {
+        for(int i=3; i<Sounds.Length; i++)
+        {
+            Sounds[i].source.Stop();
+        }
+    }
+
     /// <summary>
     /// Plays menu music and stops other tracks
     /// </summary>
@@ -185,6 +193,7 @@ public class AudioManager : MonoBehaviour
         Stop("InterrogationBGM");
         Stop("GameBGM");
         Stop("TutorialBGM");
+        Unmute("MenuBGM");
         Play("MenuBGM");
     }
 
@@ -293,7 +302,7 @@ public class AudioManager : MonoBehaviour
         {
             PlayMuted(previousTrack);
             Unmute("TutorialBGM");
-            Play("TutorialBGM");
+            //Play("TutorialBGM");
         }
     }
 

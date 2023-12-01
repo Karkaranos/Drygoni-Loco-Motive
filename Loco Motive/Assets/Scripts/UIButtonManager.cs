@@ -133,7 +133,7 @@ public class UIButtonManager : MonoBehaviour
     IEnumerator CreditScroll()
     {
        creditText.transform.position = new Vector2(Screen.width/2, Screen.height/2);
-        for (int i=0; i<1500; i += 1)
+        for (int i=0; i<1400; i += 1)
         {
             Vector2 creditPos = creditText.transform.position;
             creditPos.y += Screen.height/500f;
@@ -295,6 +295,10 @@ public class UIButtonManager : MonoBehaviour
         {
             pauseMenu.SetActive(false);
         }
+        if (titleCanvas != null)
+        {
+            titleCanvas.SetActive(false);
+        }
         settingsMenu.SetActive(true);
     }
 
@@ -308,6 +312,10 @@ public class UIButtonManager : MonoBehaviour
         if(pauseMenu != null)
         {
             pauseMenu.SetActive(true);
+        }
+        if (titleCanvas != null)
+        {
+            titleCanvas.SetActive(true);
         }
         settingsMenu.SetActive(false);
     }
