@@ -27,6 +27,8 @@ public class DialogueController : MonoBehaviour
     public bool isTutorial = false;
     public int tutorialCounter = 0;
     public int maxTutorialCounter;
+    public bool boneCounterVisible = false;
+    public int boneCounterValue = 0;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -40,6 +42,7 @@ public class DialogueController : MonoBehaviour
     public TMP_Text InterrogateQuestionThree;
     public TMP_Text InterrogateQuestionFour;
     public TMP_Text CurrentTextSpeed;
+    public TMP_Text BoneCounterText;
 
     public GameObject DialogueScreen;
     public GameObject InterrogationScreen;
@@ -61,6 +64,7 @@ public class DialogueController : MonoBehaviour
     public GameObject BranchThree;
     public GameObject BranchFour;
     public GameObject BedCollider;
+    public GameObject BoneCounter;
 
     public ClickController cc;
     public NotebookManager nm;
@@ -418,5 +422,11 @@ public class DialogueController : MonoBehaviour
         {
             BedCollider.SetActive(true);
         }
+    }
+
+    public void UpdateBoneCounter()
+    {
+        boneCounterValue += 206;
+        BoneCounterText.text = "Bones = " + boneCounterValue;
     }
 }

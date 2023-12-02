@@ -83,6 +83,7 @@ public class ObjectHandler : MonoBehaviour
             for (int i = 0; i < CharacterOff.Count; i++)
             {
                 CharacterOff[i].SetActive(true);
+                dc.UpdateBoneCounter();
             }
         }
 

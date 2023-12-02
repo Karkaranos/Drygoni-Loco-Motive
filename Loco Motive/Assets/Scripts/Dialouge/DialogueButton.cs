@@ -121,6 +121,7 @@ public class DialogueButton : MonoBehaviour
                     for (int i = 0; i < DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOff.Count; i++)
                     {
                         DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].CharacterOff[i].SetActive(false);
+                        DC.UpdateBoneCounter();
                     }
                 }
                 CC.dc.UpdateScreen(DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage]);

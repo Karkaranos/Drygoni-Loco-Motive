@@ -16,6 +16,7 @@ public class ClickController : MonoBehaviour
     private InputAction revealInteractables;
     private InputAction restart;
     private InputAction pause;
+    private InputAction revealBC;
     public int currentRoom;
 
     private Vector2 currPos;
@@ -67,12 +68,14 @@ public class ClickController : MonoBehaviour
         restart = mouseController.currentActionMap.FindAction("Restart");
         pause = mouseController.currentActionMap.FindAction("Pause");
         revealInteractables = mouseController.currentActionMap.FindAction("RevealInteractables");
+        revealBC = mouseController.currentActionMap.FindAction("RevealBoneCounter");
 
         interact.performed += Interact_performed;
         restart.performed += Restart_performed;
         pause.performed += Pause_performed;
         revealInteractables.performed += Reveal_performed;
         revealInteractables.canceled += Reveal_canceled;
+        revealBC.performed += RevealBC_performed;
 
 
         dc.ContinueText.text = "Continue";
@@ -102,6 +105,12 @@ public class ClickController : MonoBehaviour
         uibm.map.SetActive(false);
 
         MapRooms[arrLength].GetComponent<SpriteRenderer>().color = Color.clear;
+    }
+
+    private void RevealBC_performed(InputAction.CallbackContext obj)
+    {
+        dc.BoneCounter.SetActive(true);
+        dc.BoneCounterText.text = "Bones = " + dc.boneCounterValue;
     }
 
     private void OnDestroy()
