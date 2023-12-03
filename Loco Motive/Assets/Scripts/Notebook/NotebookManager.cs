@@ -73,7 +73,7 @@ public class NotebookManager : MonoBehaviour
         content[4] = subHeader;
         content[5] = bodyText3;
 
-        if(SceneManager.GetActiveScene().name == "MainScene")
+        if(SceneManager.GetActiveScene().buildIndex==2)
         {
             for (int i = 0; i < 5; i++)
             {
@@ -83,6 +83,17 @@ public class NotebookManager : MonoBehaviour
             RevealNewTimelineEvent(0);
             RevealNewTimelineEvent(18);
             RevealNewTimelineEvent(19);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            RevealComplexInformation(0);
+            RevealComplexInformation(1);
+            RevealComplexInformation(2);
+            for(int i=0; i<5; i++)
+            {
+                RevealNewTimelineEvent(i);
+            }
         }
 
     }

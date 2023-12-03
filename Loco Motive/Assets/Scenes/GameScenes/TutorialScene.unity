@@ -713,7 +713,8 @@ MonoBehaviour:
     hasRead: 0
     correctAnswer: 0
     messagesToMarkHasRead: 
-    CharacterOn: []
+    CharacterOn:
+    - {fileID: 1505744590}
     CharacterOff: []
     AddInventoryItem: 0
     InventoryItem: 
@@ -1684,7 +1685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currMessage: 0
   AllMessages:
-  - Text: I can't go to bed until I've found my briefcase
+  - Text: I can't go to bed until I've found my briefcase.
     Names: 1
     Branch: []
     NextTextOverride: 0
@@ -2335,6 +2336,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchTwoClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 105666864}
         m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
         m_MethodName: ProgText
@@ -4165,6 +4178,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchThreeClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 248876577}
         m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
         m_MethodName: ProgText
@@ -9613,6 +9638,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchOneClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 810011158}
         m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
         m_MethodName: ProgText
@@ -13783,7 +13820,7 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Well, you see, thee was this one time...
+  - Text: Well, you see, there was this one time...
     Names: 0
     Branch: []
     NextTextOverride: 0
@@ -17176,15 +17213,16 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "You\u2019re no fun."
-    Names: 0
+  - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
+      else on the train."
+    Names: 1
     Branch: []
     NextTextOverride: 0
-    EndDialogue: 1
-    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
+    EndDialogue: 0
+    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 
+    messagesToMarkHasRead: 00000000010000000200000003000000
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -17198,16 +17236,15 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: "Maybe you shouldn\u2019t do that, it will probably be a problem for everyone
-      else on the train."
-    Names: 1
+  - Text: "You\u2019re no fun."
+    Names: 0
     Branch: []
     NextTextOverride: 0
-    EndDialogue: 0
-    Portrait: {fileID: 21300000, guid: 502975e16f1f6b44cac12ce2d6fd02b3, type: 3}
+    EndDialogue: 1
+    Portrait: {fileID: 21300000, guid: 7707663fd9053f34e9196145a6d9ceb9, type: 3}
     hasRead: 0
     correctAnswer: 0
-    messagesToMarkHasRead: 00000000010000000200000003000000
+    messagesToMarkHasRead: 
     CharacterOn: []
     CharacterOff: []
     AddInventoryItem: 0
@@ -18266,6 +18303,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 45641575}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+        m_MethodName: BranchFourClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1685009731}
         m_TargetAssemblyTypeName: DialogueButton, Assembly-CSharp
         m_MethodName: ProgText
@@ -18853,7 +18902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 160, y: 185}
+  m_AnchoredPosition: {x: 160, y: 0}
   m_SizeDelta: {x: 1255.494, y: 214.1}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1710522196
@@ -19043,7 +19092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 65, y: 70}
+  m_AnchoredPosition: {x: 65, y: 0}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1728337706

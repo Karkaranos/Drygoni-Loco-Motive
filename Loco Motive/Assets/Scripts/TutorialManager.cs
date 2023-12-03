@@ -86,7 +86,7 @@ public class TutorialManager : MonoBehaviour
             EnableArrows(8);
             EnableRoom(0);
         }
-        else if ((CC.currentRoom == 3 || CC.currentRoom==4) && requirementsToUnlock == 5)
+        else if ((CC.currentRoom == 3 || CC.currentRoom==4) && requirementsToUnlock == 6)
         {
             requirementsToUnlock = 0;
             EnableArrows(3);
