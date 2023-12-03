@@ -45217,7 +45217,7 @@ PrefabInstance:
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[8].photo
       value: 
-      objectReference: {fileID: 21300000, guid: a2318042027b92746a5fd3477fd3271b, type: 3}
+      objectReference: {fileID: 21300000, guid: 53481cb8913e6e340a17ece0753e32b3, type: 3}
     - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
       propertyPath: pageContent.Array.data[9].photo
       value: 
