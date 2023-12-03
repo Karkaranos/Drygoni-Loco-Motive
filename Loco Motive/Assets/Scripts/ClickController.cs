@@ -248,6 +248,10 @@ public class ClickController : MonoBehaviour
                     Lock.SetActive(false);
                     //Replace ITEM2 with the correct enum of the key
                     ib.RemoveItemFromInventory("Key");
+                    if(am!=null)
+                    {
+                        am.Play("Key");
+                    }
                 }
             }
 
