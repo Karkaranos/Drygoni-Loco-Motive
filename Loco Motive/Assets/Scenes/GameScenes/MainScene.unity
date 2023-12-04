@@ -49210,7 +49210,7 @@ MonoBehaviour:
     knifeDialogue: 0
     changesScene: 0
     scene: 
-  - Text: Well, you see, thee was this one time...
+  - Text: Well, you see, there was this one time...
     Names: 0
     Branch: []
     NextTextOverride: 0

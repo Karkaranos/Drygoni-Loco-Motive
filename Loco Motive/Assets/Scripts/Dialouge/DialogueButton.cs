@@ -201,7 +201,7 @@ public class DialogueButton : MonoBehaviour
                 }
                 if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].changesScene == true)
                 {
-                    SceneManager.LoadScene(2);
+                    //SceneManager.LoadScene(2);
                 }
                 //If hasRead is false, sets hasRead to true and adds 1 to currCounter
                 if (DC.currentInterrogation.AllMessages[DC.currentInterrogation.currMessage].hasRead == false)

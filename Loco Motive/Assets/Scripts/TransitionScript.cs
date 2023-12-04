@@ -8,5 +8,6 @@ public class TransitionScript : MonoBehaviour
     public void GoToMainScene()
     {
         SceneManager.LoadScene(2);
+        Debug.Log("WOAHDONTDOTHAT");
     }
 }

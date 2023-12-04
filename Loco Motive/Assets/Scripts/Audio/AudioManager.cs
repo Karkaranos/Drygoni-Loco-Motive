@@ -202,10 +202,10 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void PlayTutorialMusic()
     {
-        Stop("InterrogationBGM");
-        Stop("GameBGM");
+        Mute("InterrogationBGM");
+        Mute("GameBGM");
         Play("TutorialBGM");
-        Stop("MenuBGM");
+        Mute("MenuBGM");
     }
 
     /// <summary>
@@ -308,8 +308,8 @@ public class AudioManager : MonoBehaviour
 
     public void EndPauseMusic()
     {
-        Unmute(previousTrack);
         Mute("TutorialBGM");
+        Unmute(previousTrack);
     }
 
     public IEnumerator Typing()
