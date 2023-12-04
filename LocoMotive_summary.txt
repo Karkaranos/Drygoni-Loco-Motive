@@ -1,0 +1,14 @@
+Loco Motive
+
+Loco Motive is a 2D Point and Click Murder Mystery Visual Novel. You play as Casey Files, a private detective hired to investigate 
+the death of Mrs. Josephine Reallastname, the CEO of a game company. She, along with her wife and the CFO, COO, and CTO of Defiant Door Studios, 
+embark on a cross-country train journey to celebrate the recent success of their game, Loco Motive. But when Josephine winds up dead, it is up to 
+you and your somewhat trusty sidekick, Hunter, to investigate the clues and deduce who killed her. Will you stay on track and find the culprit? Or will
+you run out of steam and put the wrong person behind bars? 
+
+A game by Drygioni
+
+Ace Ferrari ● Designer
+Brayden Reyes ● Programmer
+Cade Naylor ● Producer
+Van Marks ● Artist
