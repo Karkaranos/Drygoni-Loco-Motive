@@ -69,10 +69,23 @@ public class NotebookContentManager : MonoBehaviour
                 BasicInformationVisible(i);
             }
             AdvancedInformationVisible(0);
+            RevealEvent(0);
+            RevealEvent(18);
+            RevealEvent(19);
 
-            //RevealEvent(14);
         }
 
+        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TutorialScene")
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                AdvancedInformationVisible(i);
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                RevealEvent(i);
+            }
+        }
 
         visualUpdateNotification.SetActive(false);
 
