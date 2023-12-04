@@ -153,6 +153,7 @@ public class UIButtonManager : MonoBehaviour
         if (am != null)
         {
             am.Play("Click");
+            am.EndPauseMusic();
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

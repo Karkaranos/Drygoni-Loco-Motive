@@ -89,11 +89,11 @@ public class DialogueButton : MonoBehaviour
     //Progress dialogue when hitting continue button
     public void ContinueProgress()
     {
-        if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].changesScene == true)
+        /*if (DC.currentDialogue.AllMessages[DC.currentDialogue.currMessage].changesScene == true)
         {
             TutorialManager tm = FindObjectOfType<TutorialManager>();
             tm.StartGame();
-        }
+        }*/
         //Progresses dialogue if not in an interrogation or accusation
         if (DC.interrogating == false && DC.accusing == false)
         {

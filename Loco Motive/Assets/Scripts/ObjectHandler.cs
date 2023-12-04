@@ -47,11 +47,11 @@ public class ObjectHandler : MonoBehaviour
     /// </summary>
     public void Interact()
     {
-        if(gameObject.tag == "Bed")
+        /*if(gameObject.tag == "Bed")
         {
             TutorialManager tm = FindObjectOfType<TutorialManager>();
             tm.StartGame();
-        }
+        }*/
         if(gameObject.tag == "TeaCupRequirement")
         {
             teaCount++;
