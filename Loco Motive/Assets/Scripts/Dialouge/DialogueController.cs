@@ -306,7 +306,7 @@ public class DialogueController : MonoBehaviour
         cc.Movement.SetActive(true);
         cc.Map.SetActive(true);
         isTalking = false;
-        if (am != null)
+        if (am != null && cc.currentRoom!=9)
         {
             am.StopInterrogationMusic();
         }
