@@ -9,7 +9,7 @@ public class DialogueMessage
     public List<Choice> Branch;
     public int NextTextOverride;
     public bool EndDialogue;
-    public Sprite Portrait;
+    public Sprite[] Portrait;
     public bool hasRead = false;
     public bool correctAnswer = false;
     public List<int> messagesToMarkHasRead;

@@ -29,6 +29,8 @@ public class DialogueController : MonoBehaviour
     public int maxTutorialCounter;
     public bool boneCounterVisible = false;
     public int boneCounterValue = 0;
+    public bool isYapping = false;
+    public Sprite[] currentSprites;
 
     public TMP_Text DialogueBox;
     public TMP_Text DialogueBoxInterrogation;
@@ -107,7 +109,8 @@ public class DialogueController : MonoBehaviour
     {
         DialogueScreen.SetActive(true);
         //SpeakerName.text = getName(x.Names);
-        PortraitImage.sprite = x.Portrait;
+        currentSprites = x.Portrait;
+        PortraitImage.sprite = x.Portrait[0];
         _textMeshPro.text = x.Text;
         StartCoroutine(Speaking());
         InterrogateButton.SetActive(currentDialogue.canInterrogate);
@@ -338,6 +341,8 @@ public class DialogueController : MonoBehaviour
         int counter = 0;
         int visibleCount = 0;
         bool isTyping = false;
+        isYapping = true;
+        StartCoroutine(Yapping());
         //Coroutine typing = null;
         while (visibleCount < totalVisibleCharacters)
         {
@@ -355,6 +360,7 @@ public class DialogueController : MonoBehaviour
 
             if(visibleCount >= totalVisibleCharacters)
             {
+                isYapping = false;
                 Invoke("EndCheck", timeBtwnWords);
                 break;
             }
@@ -378,6 +384,63 @@ public class DialogueController : MonoBehaviour
         }*/
 
 
+    }
+
+    public IEnumerator Yapping()
+    {
+        int maxLength = currentSprites.Length;
+        int counter = 0;
+        bool countingUp = true;
+        float waitLength = .5f;
+        while (isYapping == true)
+        {
+            print("Yapping " + counter);
+            if (countingUp == true)
+            {
+                counter++;
+                if (counter < maxLength - 1)
+                {
+                    PortraitImage.sprite = currentSprites[counter];
+                    yield return new WaitForSeconds(waitLength);
+                }
+                else
+                {
+                    PortraitImage.sprite = currentSprites[counter];
+                    countingUp = false;
+                    yield return new WaitForSeconds(waitLength);
+                }
+            }
+            else
+            {
+                counter--;
+                if (counter > 0)
+                {
+                    PortraitImage.sprite = currentSprites[counter];
+                    yield return new WaitForSeconds(waitLength);
+                }
+                else
+                {
+                    PortraitImage.sprite = currentSprites[counter];
+                    countingUp = true;
+                    yield return new WaitForSeconds(waitLength);
+                }
+            }
+        }
+        while (counter > 0)
+        {
+            counter--;
+            if (counter > 0)
+            {
+                PortraitImage.sprite = currentSprites[counter];
+                yield return new WaitForSeconds(waitLength);
+            }
+            else
+            {
+                PortraitImage.sprite = currentSprites[counter];
+                countingUp = true;
+                yield return new WaitForSeconds(waitLength);
+            }
+        }
     }
 
     public void ToggleTextSpeed()
