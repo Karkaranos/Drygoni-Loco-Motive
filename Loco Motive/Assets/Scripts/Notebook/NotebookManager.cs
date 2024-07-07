@@ -20,7 +20,11 @@ public class NotebookManager : MonoBehaviour
     [SerializeField] private GameObject notebook;
     [SerializeField] private GameObject notebookContentPage;
     [SerializeField] private GameObject notebookTimelinePage;
+    [SerializeField] private GameObject notebookWriteablePage;
+    [SerializeField] private int writeablePageCount = 0;
     public GameObject notebookIcon;
+    private int pageCount;
+    
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
     [SerializeField] private GameObject lastPage;
@@ -41,6 +45,10 @@ public class NotebookManager : MonoBehaviour
 
     [Header("Timeline Content")]
     public TMP_Text[] eventText;
+
+    [Header("Writeable Content"), Tooltip("One page at a time- title, body, title, body, etc")]
+    public TMP_InputField[] writtenText;
+    [SerializeField] private int itemsPerWrittenPage;
 
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
@@ -149,11 +157,12 @@ public class NotebookManager : MonoBehaviour
     /// </summary>
     public void GetPageInformation()
     {
-        //Sets the content if the current page is NOT a timeline page
-        if (currentPage < ncm.pageCount - ncm.timelineCount/5)
+        //Sets the content if the current page is NOT a timeline page and is not writeable
+        if (currentPage < ncm.nonwriteablePageCount - (int)Mathf.Ceil(ncm.timelineContent.Length / 5))
         {
             notebookContentPage.SetActive(true);
             notebookTimelinePage.SetActive(false);
+            notebookWriteablePage.SetActive(false);
             //Sets the visible content
             for (int i = 0; i < TEXT_ITEMS_PER_PAGE; i++)
             {
@@ -187,10 +196,11 @@ public class NotebookManager : MonoBehaviour
 
         }
         //If is a timeline page
-        else
+        else if (currentPage < ncm.nonwriteablePageCount)
         {
             notebookContentPage.SetActive(false);
             notebookTimelinePage.SetActive(true);
+            notebookWriteablePage.SetActive(false);
             int index = (currentPage - ncm.pageContent.Length) * 5;
             for (int i = 0; i < eventText.Length; i++)
             {
@@ -208,6 +218,20 @@ public class NotebookManager : MonoBehaviour
 
 
         }
+        //If it is a writeable page
+        else
+        {
+            notebookContentPage.SetActive(false);
+            notebookTimelinePage.SetActive(false);
+            notebookWriteablePage.SetActive(true);
+            print(currentPage - ncm.nonwriteablePageCount);
+            string[] temp = GetComponent<WriteableContentManager>().LoadPageInformation(currentPage - ncm.nonwriteablePageCount);
+            for(int i=0; i<writtenText.Length; i++)
+            {
+                writtenText[i].text = temp[i];
+            }
+
+        }
 
         if (currentPage == 0)
         {
@@ -218,7 +242,7 @@ public class NotebookManager : MonoBehaviour
             lastPage.SetActive(true);
         }
 
-        if (currentPage + 1 < ncm.pageCount)
+        if (currentPage + 1 < (ncm.nonwriteablePageCount + writeablePageCount))
         {
             nextPage.SetActive(true);
         }
@@ -227,7 +251,7 @@ public class NotebookManager : MonoBehaviour
             nextPage.SetActive(false);
         }
 
-        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
+        pageNumber.text = currentPage + 1 + " of " + (ncm.nonwriteablePageCount + writeablePageCount);
 
     }
 
@@ -240,7 +264,7 @@ public class NotebookManager : MonoBehaviour
         {
             am.Play("Click");
         }
-        if (currentPage < ncm.pageCount - 1)
+        if (currentPage < (ncm.nonwriteablePageCount + writeablePageCount - 1))
         {
             currentPage++;
             GetPageInformation();
