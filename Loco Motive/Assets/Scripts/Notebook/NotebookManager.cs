@@ -251,6 +251,7 @@ public class NotebookManager : MonoBehaviour
             nextPage.SetActive(false);
         }
 
+
         pageNumber.text = currentPage + 1 + " of " + (ncm.nonwriteablePageCount + writeablePageCount);
 
     }
@@ -266,7 +267,12 @@ public class NotebookManager : MonoBehaviour
         }
         if (currentPage < (ncm.nonwriteablePageCount + writeablePageCount - 1))
         {
+            /*if(currentPage > ncm.nonwriteablePageCount)
+            {
+                GetComponent<WriteableContentManager>().UpdateSavedData(currentPage - ncm.nonwriteablePageCount);
+            }*/
             currentPage++;
+            
             GetPageInformation();
         }
     }

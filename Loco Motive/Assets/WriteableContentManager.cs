@@ -17,6 +17,8 @@ public class WriteableContentManager : MonoBehaviour
     public string[] pageContent;
     [SerializeField] string contentFilePath;
     [SerializeField] string titleFilePath;
+    NotebookManager nm;
+    NotebookContentManager ncm;
 
     [HideInInspector]
     public char[] seperators = { '~' };
@@ -29,6 +31,8 @@ public class WriteableContentManager : MonoBehaviour
         pageContent = File.ReadAllLines(contentFilePath)[0].Split(seperators);
         //TryReadingData(pageContent, contentFilePath);
         //TryReadingData(pageTitles, titleFilePath);
+        nm = GetComponent<NotebookManager>();
+        ncm = GetComponent<NotebookContentManager>();
 
     }
 
@@ -36,7 +40,11 @@ public class WriteableContentManager : MonoBehaviour
     {
         string[] results = new string[4];
         int index = 0;
-        for(int i=0; i<2; i++)
+        results[0] = pageTitles[2 * startingPage];
+        results[1] = pageContent[2 * startingPage];
+        results[2] = pageTitles[2 * startingPage + 1];
+        results[3] = pageContent[2 * startingPage + 1];
+        /*for(int i=0; i<2; i++)
         {
             results[index] = pageTitles[startingPage];
             index++;
@@ -44,11 +52,40 @@ public class WriteableContentManager : MonoBehaviour
             index++;
             startingPage++;
 
-        }
+        }*/
 
         return results;
     }
 
+    public void UpdateFirstTitle(string s)
+    {
+        pageTitles[2 * (nm.currentPage - ncm.nonwriteablePageCount)] = s;
+    }
+    public void UpdateSecondTitle(string s)
+    {
+        pageTitles[2 * (nm.currentPage - ncm.nonwriteablePageCount)+1] = s;
+    }
+
+    public void UpdateFirstContent(string s)
+    {
+        pageContent[2 * (nm.currentPage - ncm.nonwriteablePageCount)] = s;
+    }
+    public void UpdateSecondContent(string s)
+    {
+        pageContent[2 * (nm.currentPage - ncm.nonwriteablePageCount) + 1] = s;
+    }
+/*
+    public void UpdateSavedData(int previousPage)
+    {
+        pageTitles[2 * previousPage] = nm.writtenText[0].text;
+        pageContent[2 * previousPage] = nm.writtenText[1].text;
+        pageTitles[2 * previousPage + 1] = nm.writtenText[2].text;
+        pageContent[2 * previousPage + 1] = nm.writtenText[3].text;
+
+        File.WriteAllText(titleFilePath, pageTitles[0] + "~");
+        File.WriteAllText(contentFilePath, pageContent[0] + "~");
+    }
+*/
     private void TryReadingData(string[] sArr, string potentialFile)
     {
         try
