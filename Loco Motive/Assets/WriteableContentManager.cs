@@ -78,7 +78,15 @@ public class WriteableContentManager : MonoBehaviour
     {
 
         File.WriteAllText(titleFilePath, pageTitles[0] + "~");
+        for(int i=1; i<pageTitles.Length; i++)
+        {
+            File.AppendAllText(titleFilePath, pageTitles[i] + "~");
+        }
         File.WriteAllText(contentFilePath, pageContent[0] + "~");
+        for (int i = 1; i < pageContent.Length; i++)
+        {
+            File.AppendAllText(contentFilePath, pageContent[i] + "~");
+        }
     }
 
     private void TryReadingData(string[] sArr, string potentialFile)
