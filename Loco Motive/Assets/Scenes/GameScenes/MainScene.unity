@@ -52522,16 +52522,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WriteableNotebook
       objectReference: {fileID: 0}
-    - target: {fileID: 8514560291427316590, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
-      propertyPath: m_text
-      value: "\u200B"
-      objectReference: {fileID: 0}
     - target: {fileID: 8743285537560311024, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8767896300828773337, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
-      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

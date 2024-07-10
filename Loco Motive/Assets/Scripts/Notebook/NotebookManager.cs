@@ -53,6 +53,7 @@ public class NotebookManager : MonoBehaviour
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
     private NotebookContentManager ncm;
+    private WriteableContentManager wcm;
     private DialogueController dc;
     private InventoryBehavior ib;
     private AudioManager am;
@@ -69,6 +70,7 @@ public class NotebookManager : MonoBehaviour
         dc = FindObjectOfType<DialogueController>();
         ib = FindObjectOfType<InventoryBehavior>();
         am = FindObjectOfType<AudioManager>();
+        wcm = GetComponent<WriteableContentManager>();
 
         currentPage = 0;
 
@@ -137,8 +139,12 @@ public class NotebookManager : MonoBehaviour
         notebook.SetActive(false);
         notebookContentPage.SetActive(false);
         notebookTimelinePage.SetActive(false);
+        notebookWriteablePage.SetActive(false);
         map.SetActive(true);
         movementArrows.SetActive(true);
+
+        CheckSave();
+
         if (iconIsEnabled)
         {
             notebookIcon.SetActive(true);
@@ -149,6 +155,14 @@ public class NotebookManager : MonoBehaviour
         }
 
         dc.isTalking = false;
+    }
+
+    private void CheckSave()
+    {
+        if(currentPage >= ncm.nonwriteablePageCount)
+        {
+            wcm.UpdateSavedData();
+        }
     }
 
     /// <summary>
@@ -267,10 +281,7 @@ public class NotebookManager : MonoBehaviour
         }
         if (currentPage < (ncm.nonwriteablePageCount + writeablePageCount - 1))
         {
-            /*if(currentPage > ncm.nonwriteablePageCount)
-            {
-                GetComponent<WriteableContentManager>().UpdateSavedData(currentPage - ncm.nonwriteablePageCount);
-            }*/
+            CheckSave();
             currentPage++;
             
             GetPageInformation();
@@ -288,6 +299,7 @@ public class NotebookManager : MonoBehaviour
         }
         if (currentPage > 0)
         {
+            CheckSave();
             currentPage--;
             GetPageInformation();
         }

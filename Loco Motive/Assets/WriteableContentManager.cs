@@ -39,7 +39,6 @@ public class WriteableContentManager : MonoBehaviour
     public string[] LoadPageInformation(int startingPage)
     {
         string[] results = new string[4];
-        int index = 0;
         results[0] = pageTitles[2 * startingPage];
         results[1] = pageContent[2 * startingPage];
         results[2] = pageTitles[2 * startingPage + 1];
@@ -74,18 +73,14 @@ public class WriteableContentManager : MonoBehaviour
     {
         pageContent[2 * (nm.currentPage - ncm.nonwriteablePageCount) + 1] = s;
     }
-/*
-    public void UpdateSavedData(int previousPage)
+
+    public void UpdateSavedData()
     {
-        pageTitles[2 * previousPage] = nm.writtenText[0].text;
-        pageContent[2 * previousPage] = nm.writtenText[1].text;
-        pageTitles[2 * previousPage + 1] = nm.writtenText[2].text;
-        pageContent[2 * previousPage + 1] = nm.writtenText[3].text;
 
         File.WriteAllText(titleFilePath, pageTitles[0] + "~");
         File.WriteAllText(contentFilePath, pageContent[0] + "~");
     }
-*/
+
     private void TryReadingData(string[] sArr, string potentialFile)
     {
         try
