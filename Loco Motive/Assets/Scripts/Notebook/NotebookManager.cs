@@ -17,7 +17,7 @@ public class NotebookManager : MonoBehaviour
 
     [Header("Notebook General")]
     public int currentPage;
-    [SerializeField] private GameObject notebook;
+    [SerializeField] public GameObject notebook;
     [SerializeField] private GameObject notebookContentPage;
     [SerializeField] private GameObject notebookTimelinePage;
     [SerializeField] private GameObject notebookWriteablePage;

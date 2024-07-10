@@ -52459,6 +52459,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1498759645}
     - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: iconIsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
       propertyPath: inventoryIcon
       value: 
       objectReference: {fileID: 393542774}
@@ -52470,6 +52474,10 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 393542772}
+    - target: {fileID: 1066308655970179815, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6352096140925575131, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
       propertyPath: m_IsActive
       value: 0
