@@ -12,8 +12,8 @@ using UnityEngine;
 public class NotebookContentManager : MonoBehaviour
 {
     #region Variables
-    [HideInInspector]
-    public int pageCount;
+    //[HideInInspector]
+    public int nonwriteablePageCount;
 
     [HideInInspector]
     public int timelineCount;
@@ -43,17 +43,17 @@ public class NotebookContentManager : MonoBehaviour
     /// </summary>
     void Start()
     {
-        pageCount = pageContent.Length + (int)Mathf.Ceil(timelineContent.Length / 5);
+        nonwriteablePageCount = pageContent.Length + (int)Mathf.Ceil(timelineContent.Length / 5);
         timelineCount = timelineContent.Length;
         //image = new Sprite[pageCount];
         timelineVisible = new bool[timelineCount];
-        contentVisible = new bool[pageCount, ITEMS_PER_PAGE];
+        contentVisible = new bool[nonwriteablePageCount, ITEMS_PER_PAGE];
 
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainScene")
         {
             for (int i = 0; i < ITEMS_PER_PAGE; i++)
             {
-                for (int j = 5; j < pageCount; j++)
+                for (int j = 5; j < nonwriteablePageCount; j++)
                 {
                     contentVisible[j, i] = false;
                 }

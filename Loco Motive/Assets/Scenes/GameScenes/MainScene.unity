@@ -911,7 +911,7 @@ MonoBehaviour:
   ContinueButtonInterrogation: {fileID: 1039539741}
   InterrogateButton: {fileID: 871331102}
   InventoryButton: {fileID: 393542774}
-  NotebookButton: {fileID: 1678524256}
+  NotebookButton: {fileID: 522644396}
   AccusationButton: {fileID: 1590271409}
   ExitButton: {fileID: 1474669755}
   BranchOne: {fileID: 810011156}
@@ -921,7 +921,7 @@ MonoBehaviour:
   BedCollider: {fileID: 0}
   BoneCounter: {fileID: 872198442}
   cc: {fileID: 1319127852}
-  nm: {fileID: 1703891788}
+  nm: {fileID: 140404221}
   openingDialogue: {fileID: 2104534795}
   currentDialogue: {fileID: 0}
   currentInterrogation: {fileID: 0}
@@ -945,7 +945,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &61387462
 GameObject:
@@ -3164,7 +3164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8301631662063629103, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8301631662063629103, guid: bea5211b36f967e4997ce2deff3b0be5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3463,6 +3463,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136564931}
   m_CullTransparentMesh: 1
+--- !u!1 &140404220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 985061391084082379, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+  m_PrefabInstance: {fileID: 2064113195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &140404221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+  m_PrefabInstance: {fileID: 2064113195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140404220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261e44f5445f47e4a9f7967ac7bdc0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &150672960 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8780327462423485060, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
@@ -6537,7 +6553,7 @@ Transform:
   - {fileID: 1918584662}
   - {fileID: 1125445335}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279145550
 GameObject:
@@ -9495,7 +9511,7 @@ PrefabInstance:
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: notebookIcon
       value: 
-      objectReference: {fileID: 1678524256}
+      objectReference: {fileID: 522644396}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: iconIsEnabled
       value: 1
@@ -9511,7 +9527,7 @@ PrefabInstance:
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: notebookManager
       value: 
-      objectReference: {fileID: 1703891785}
+      objectReference: {fileID: 140404220}
     - target: {fileID: 4378290760853861518, guid: 3d038776a87edd84aa4797498de6835c, type: 3}
       propertyPath: itemObjects.Array.size
       value: 15
@@ -14478,6 +14494,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 555417510}
   canBeAccessed: 1
+--- !u!1 &522644396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3967631951613078608, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+  m_PrefabInstance: {fileID: 2064113195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &530039322
 GameObject:
   m_ObjectHideFlags: 0
@@ -15359,7 +15380,7 @@ Transform:
   - {fileID: 153049789}
   - {fileID: 2120860529}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &617486988
 GameObject:
@@ -23135,7 +23156,7 @@ Transform:
   - {fileID: 802974588}
   - {fileID: 719705024}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &768813549
 GameObject:
@@ -29799,7 +29820,7 @@ Transform:
   - {fileID: 132352701}
   - {fileID: 1782032732}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1050517050
 GameObject:
@@ -31394,7 +31415,7 @@ PrefabInstance:
     - target: {fileID: 4969101885001630393, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: notebookIcon
       value: 
-      objectReference: {fileID: 1678524256}
+      objectReference: {fileID: 0}
     - target: {fileID: 4969101885001630393, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: ClosedLockbox
       value: 
@@ -38141,7 +38162,7 @@ PrefabInstance:
     - target: {fileID: 4969101885001630393, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: notebookIcon
       value: 
-      objectReference: {fileID: 1678524256}
+      objectReference: {fileID: 0}
     - target: {fileID: 4969101885001630393, guid: cc8ce55f669da6b47b32c075ee85187a, type: 3}
       propertyPath: ClosedLockbox
       value: 
@@ -41738,7 +41759,7 @@ Transform:
   - {fileID: 1888518417}
   - {fileID: 519901247}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503869228
 GameObject:
@@ -41850,7 +41871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4126992514923362387, guid: d6b5b0ceccfec2c4381279ef30a0a32d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -42289,7 +42310,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1537223040 stripped
 MonoBehaviour:
@@ -44226,11 +44247,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1678524256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3967631951613078608, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-  m_PrefabInstance: {fileID: 1703891784}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1685009729
 GameObject:
   m_ObjectHideFlags: 0
@@ -44857,625 +44873,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectedRoom: {fileID: 555417510}
   canBeAccessed: 1
---- !u!1001 &1703891784
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: map
-      value: 
-      objectReference: {fileID: 1498759645}
-    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: iconIsEnabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: inventoryIcon
-      value: 
-      objectReference: {fileID: 393542774}
-    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: movementArrows
-      value: 
-      objectReference: {fileID: 272795224}
-    - target: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: inventoryManager
-      value: 
-      objectReference: {fileID: 393542772}
-    - target: {fileID: 1066308655970179815, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1497755525887939833, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3254524265019055224, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933084903469677854, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_margin.w
-      value: NaN
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933084903469677854, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_margin.x
-      value: NaN
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933084903469677854, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_margin.y
-      value: NaN
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933084903469677854, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_margin.z
-      value: NaN
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233292958682544148, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[0]
-      value: 6:00 PM<br>Everyone has dinner together.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[1]
-      value: 8:00 PM<br>Brady meets with Josephine. They fight about the company's
-        technology.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[2]
-      value: 8:30 PM<br>Alex meets with Josephine. They discuss the company's direction.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[3]
-      value: 9:00 PM<br>Alex and Dominic start playing games in Alex's room.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[4]
-      value: Brady is in his room, trying to wind down for the night.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[5]
-      value: Hana and Josephine are in their room.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[6]
-      value: 10:00 PM<br>Hana and Josephine fight. Hana moves to the lounge.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[7]
-      value: 10:50 PM<br>Dominic gets a drink from the bar. He returns with nothing.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[8]
-      value: Hana sees Dominic pass through the Lounge.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[9]
-      value: Alex reads a book while waiting for Dominic to return.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[10]
-      value: 11:00 PM<br>Brady goes to take a shower.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[11]
-      value: 11:15 PM<br>Dominic returns to playing games with Alex.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[12]
-      value: 11:20 PM<br>Brady finishes showering. He grabs a snack from the dining
-        car.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[13]
-      value: Hana and Brady talk before Brady returns to his room.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[14]
-      value: 11:30 PM<br>Hana knocks on Josephine's door and gets no response.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[15]
-      value: Hana figures Josephine is mad at her and sleeps in the lounge.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[16]
-      value: '12:45 AM<br>Alex sees Hana asleep when he grabs a drink. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[17]
-      value: 2:00 AM<br>Alex and Dominic stop playing games. Dominic returns to his
-        room.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[18]
-      value: 2:30 AM<br>Everyone is asleep.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: timelineContent.Array.data[19]
-      value: Josephine's body is discovered the following morning.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 7e5d3c07f8bca3d46a2e8fade4c7da13, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 3f9172325a055b045abd5735c5cd0e83, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 06f8c192c9a72c4458a4cf7795251729, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 3d7689da7d84fe24d84d162a49a91f26, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 065db2a9ea1308b46be579a9ef89e855, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].photo
-      value: 
-      objectReference: {fileID: 166206773, guid: f5379c889ee069f45bba0eb6d0be3f37, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 29dd26a6b8349ab47b0d178d880d8daa, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: d3681602f40344e40ab1a4f64226aabb, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 53481cb8913e6e340a17ece0753e32b3, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: 56645c6dec488ba419714449a1aa09da, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].photo
-      value: 
-      objectReference: {fileID: 21300000, guid: af440358cf7d0d74d98dcd87e6e1737f, type: 3}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.data[0]
-      value: Josephine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.data[1]
-      value: A photo of Josephine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.data[2]
-      value: Josephine is the founder and CEO of Defiant Door Studios. She is an
-        ambitious person and is very extroverted and confident. She hired Hunter
-        and I to investigate her potential murder.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.data[3]
-      value: "She unfortunately was right to hire us. She was found dead lying in
-        a pool of blood in her and Hana\u2019s room on Monday morning. Josephine
-        was stabbed several times with a sharp object."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.data[4]
-      value: Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[0].content.Array.data[5]
-      value: Alex<br>Brady<br>Dominic<br>Hana
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.data[0]
-      value: Alex
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.data[1]
-      value: A photo of Alex
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.data[2]
-      value: Alex is the CFO of Defiant Door Studios. He is a hardworking businessman
-        and a strong leader who likes connecting with others. His son is very important
-        to him.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.data[3]
-      value: 'He is obsessed with his son, Joseph, who was born September 9, 2020.
-        Alex has a significant amount of books in his room about taking over a company,
-        and is an avid gamer. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.data[4]
-      value: Potential Motive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[1].content.Array.data[5]
-      value: Climbing the Corporate Ladder
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.data[0]
-      value: Brady
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.data[1]
-      value: A photo of Brady
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.data[2]
-      value: Brady is the CTO of Defiant Door Studios. He is a very organized person,
-        although is very rude to others and is known for resorting to violence.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.data[3]
-      value: Brady also owns and takes care of an extensive knife collection he brought
-        with him. His hobbies include sending hate mail to Josephine.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.data[4]
-      value: Potential Motive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[2].content.Array.data[5]
-      value: Hatred
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.data[0]
-      value: Dominic
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.data[1]
-      value: A photo of Dominic
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.data[2]
-      value: Dominic is the COO of Defiant Door Studios. He is a warm and friendly
-        person. He looks out for others in the company and is pleasant to be around.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.data[3]
-      value: 'Dominic and Josephine are old friends from High School. He used to
-        date Hana until she started dating Josephine instead. He is into medicinal
-        plants and alternative medicine. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.data[4]
-      value: Potential Motive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[3].content.Array.data[5]
-      value: Jealousy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.data[0]
-      value: Hana
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.data[1]
-      value: A photo of Hana
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.data[2]
-      value: Hana is the quiet and introverted wife of Josephine. She is respectful
-        and values her self-preservation.  She and Josephine share a room.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.data[3]
-      value: 'On Sunday Night, she fought with Josephine and spent the night sleeping
-        in the lounge instead. She was visibly shaken up by this experience '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.data[4]
-      value: Potential Motive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[4].content.Array.data[5]
-      value: Financial Gain
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.data[0]
-      value: Body
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.data[1]
-      value: "Josephine\u2019s Body"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.data[2]
-      value: 'Josephine was found Monday Morning murdered in her room. She was discovered
-        sitting on a chair in a pool of blood. Rigor Mortis had started to set in
-        with clotting. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.data[3]
-      value: 'This indicates she was dead for several hours. She had been stabbed
-        several times, but the blood had already started to clot. Was stabbing the
-        cause of death or was it done after death to throw us off?  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.data[4]
-      value: Potential Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[5].content.Array.data[5]
-      value: Alex<br>Brady<br>Dominic<br>Hana
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.data[0]
-      value: Tea
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.data[1]
-      value: Teacup found at the crime scene
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.data[2]
-      value: "Someone had tea with Josephine the previous night and left the teacup
-        here. They must have gotten it from the train\u2019s bar. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.data[3]
-      value: An empty vial was found in the bar. Perhaps the two are connected?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.data[4]
-      value: Potential Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[6].content.Array.data[5]
-      value: ???
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.data[0]
-      value: CEO Books
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.data[1]
-      value: Books about Leadership
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.data[2]
-      value: In addition to the CEO Card, Alex has numerous books in his room relating
-        to taking over a company, becoming a stronger leader, and climbing the corporate
-        ladder.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.data[3]
-      value: Alex claims he brought them so he can become a more responsible leader.
-        But why have books on taking over a company and becoming a CEO if the goal
-        is simply to become a better leader?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.data[4]
-      value: Potential Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[7].content.Array.data[5]
-      value: 'Alex  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.data[0]
-      value: Knife
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.data[1]
-      value: "Brady\u2019s prized knife"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.data[2]
-      value: "This knife was missing from Brady\u2019s knife collection. It was kept
-        in a locked box in his room with the key around his neck. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.data[3]
-      value: "Brady claims it was kept separate because it\u2019s his favorite knife
-        and he prefers to keep it secure, but is there a more sinister reason?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.data[4]
-      value: Potential Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[8].content.Array.data[5]
-      value: Brady
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.data[0]
-      value: Plant Books
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.data[1]
-      value: Books about Toxicology
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.data[2]
-      value: 'Dominic has several books in his room relating to poisonous plants
-        and animals, as well as books relating to plants as a whole. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.data[3]
-      value: He is into herbal-based medicine and home remedies, as far as he'll
-        say. Is he telling the truth or disguising something more sinister?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.data[4]
-      value: Potential Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[9].content.Array.data[5]
-      value: Dominic
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.data[0]
-      value: Will
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.data[1]
-      value: "Josephine\u2019s Last Will and Testament  "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.data[2]
-      value: 'Josephine brought her will with her onto the train. It leaves all of
-        her money and possessions in the care of Hana, as well as declaring Alex
-        the new owner of Defiant Door Studios. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.data[3]
-      value: A strange object to bring onto a train. Perhaps she suspected she would
-        die and brought it as insurance?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.data[4]
-      value: Potential Suspects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698150798536769162, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: pageContent.Array.data[10].content.Array.data[5]
-      value: Hana
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816820452680036965, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303426333515695901, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_Name
-      value: Notebook
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303426333515695901, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8377426827402538447, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8743285537560311024, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9192776714847424936, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
---- !u!1 &1703891785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 985061391084082379, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-  m_PrefabInstance: {fileID: 1703891784}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1703891788 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 141840427315596257, guid: 9ec772bce756b05489e102bb134417b4, type: 3}
-  m_PrefabInstance: {fileID: 1703891784}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703891785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 261e44f5445f47e4a9f7967ac7bdc0bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1708918882
 GameObject:
   m_ObjectHideFlags: 0
@@ -53047,8 +52444,101 @@ Transform:
   - {fileID: 579665373}
   - {fileID: 495125580}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2064113195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 1498759645}
+    - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: iconIsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: inventoryIcon
+      value: 
+      objectReference: {fileID: 393542774}
+    - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: movementArrows
+      value: 
+      objectReference: {fileID: 272795224}
+    - target: {fileID: 141840427315596257, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 393542772}
+    - target: {fileID: 1066308655970179815, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352096140925575131, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816820452680036965, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303426333515695901, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_Name
+      value: WriteableNotebook
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743285537560311024, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3fd67fd0458ab3488b78e3cacd23451, type: 3}
 --- !u!1 &2068197062
 GameObject:
   m_ObjectHideFlags: 0

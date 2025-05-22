@@ -109,8 +109,11 @@ public class ClickController : MonoBehaviour
 
     private void RevealBC_performed(InputAction.CallbackContext obj)
     {
-        dc.BoneCounter.SetActive(true);
-        dc.BoneCounterText.text = "Bones = " + dc.boneCounterValue;
+        if(!nm.notebook.activeInHierarchy)
+        {
+            dc.BoneCounter.SetActive(true);
+            dc.BoneCounterText.text = "Bones = " + dc.boneCounterValue;
+        }
     }
 
     private void OnDestroy()
@@ -124,12 +127,16 @@ public class ClickController : MonoBehaviour
 
     private void Restart_performed(InputAction.CallbackContext obj)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-        if (am != null)
+        if(!nm.notebook.activeInHierarchy)
         {
-            am.StopAllSounds();
-            am.PlayMenuMusic();
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            if (am != null)
+            {
+                am.StopAllSounds();
+                am.PlayMenuMusic();
+            }
         }
+
     }
 
     private void Reveal_performed(InputAction.CallbackContext obj)
