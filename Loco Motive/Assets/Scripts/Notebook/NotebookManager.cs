@@ -17,10 +17,14 @@ public class NotebookManager : MonoBehaviour
 
     [Header("Notebook General")]
     public int currentPage;
-    [SerializeField] private GameObject notebook;
+    [SerializeField] public GameObject notebook;
     [SerializeField] private GameObject notebookContentPage;
     [SerializeField] private GameObject notebookTimelinePage;
+    [SerializeField] private GameObject notebookWriteablePage;
+    [SerializeField] private int writeablePageCount = 0;
     public GameObject notebookIcon;
+    private int pageCount;
+    
     [SerializeField] private GameObject inventoryManager;
     [SerializeField] private GameObject nextPage;
     [SerializeField] private GameObject lastPage;
@@ -42,9 +46,14 @@ public class NotebookManager : MonoBehaviour
     [Header("Timeline Content")]
     public TMP_Text[] eventText;
 
+    [Header("Writeable Content"), Tooltip("One page at a time- title, body, title, body, etc")]
+    public TMP_InputField[] writtenText;
+    [SerializeField] private int itemsPerWrittenPage;
+
     private static int TEXT_ITEMS_PER_PAGE = 6;
 
     private NotebookContentManager ncm;
+    private WriteableContentManager wcm;
     private DialogueController dc;
     private InventoryBehavior ib;
     private AudioManager am;
@@ -61,6 +70,7 @@ public class NotebookManager : MonoBehaviour
         dc = FindObjectOfType<DialogueController>();
         ib = FindObjectOfType<InventoryBehavior>();
         am = FindObjectOfType<AudioManager>();
+        wcm = GetComponent<WriteableContentManager>();
 
         currentPage = 0;
 
@@ -129,8 +139,12 @@ public class NotebookManager : MonoBehaviour
         notebook.SetActive(false);
         notebookContentPage.SetActive(false);
         notebookTimelinePage.SetActive(false);
+        notebookWriteablePage.SetActive(false);
         map.SetActive(true);
         movementArrows.SetActive(true);
+
+        CheckSave();
+
         if (iconIsEnabled)
         {
             notebookIcon.SetActive(true);
@@ -143,17 +157,26 @@ public class NotebookManager : MonoBehaviour
         dc.isTalking = false;
     }
 
+    private void CheckSave()
+    {
+        if(currentPage >= ncm.nonwriteablePageCount)
+        {
+            wcm.UpdateSavedData();
+        }
+    }
+
     /// <summary>
     /// Takes the current page and checks what information is available, then sets
     /// the current information to what the player knows for each item
     /// </summary>
     public void GetPageInformation()
     {
-        //Sets the content if the current page is NOT a timeline page
-        if (currentPage < ncm.pageCount - ncm.timelineCount/5)
+        //Sets the content if the current page is NOT a timeline page and is not writeable
+        if (currentPage < ncm.nonwriteablePageCount - (int)Mathf.Ceil(ncm.timelineContent.Length / 5))
         {
             notebookContentPage.SetActive(true);
             notebookTimelinePage.SetActive(false);
+            notebookWriteablePage.SetActive(false);
             //Sets the visible content
             for (int i = 0; i < TEXT_ITEMS_PER_PAGE; i++)
             {
@@ -187,10 +210,11 @@ public class NotebookManager : MonoBehaviour
 
         }
         //If is a timeline page
-        else
+        else if (currentPage < ncm.nonwriteablePageCount)
         {
             notebookContentPage.SetActive(false);
             notebookTimelinePage.SetActive(true);
+            notebookWriteablePage.SetActive(false);
             int index = (currentPage - ncm.pageContent.Length) * 5;
             for (int i = 0; i < eventText.Length; i++)
             {
@@ -208,6 +232,20 @@ public class NotebookManager : MonoBehaviour
 
 
         }
+        //If it is a writeable page
+        else
+        {
+            notebookContentPage.SetActive(false);
+            notebookTimelinePage.SetActive(false);
+            notebookWriteablePage.SetActive(true);
+            print(currentPage - ncm.nonwriteablePageCount);
+            string[] temp = GetComponent<WriteableContentManager>().LoadPageInformation(currentPage - ncm.nonwriteablePageCount);
+            for(int i=0; i<writtenText.Length; i++)
+            {
+                writtenText[i].text = temp[i];
+            }
+
+        }
 
         if (currentPage == 0)
         {
@@ -218,7 +256,7 @@ public class NotebookManager : MonoBehaviour
             lastPage.SetActive(true);
         }
 
-        if (currentPage + 1 < ncm.pageCount)
+        if (currentPage + 1 < (ncm.nonwriteablePageCount + writeablePageCount))
         {
             nextPage.SetActive(true);
         }
@@ -227,7 +265,8 @@ public class NotebookManager : MonoBehaviour
             nextPage.SetActive(false);
         }
 
-        pageNumber.text = currentPage + 1 + " of " + ncm.pageCount;
+
+        pageNumber.text = currentPage + 1 + " of " + (ncm.nonwriteablePageCount + writeablePageCount);
 
     }
 
@@ -240,9 +279,11 @@ public class NotebookManager : MonoBehaviour
         {
             am.Play("Click");
         }
-        if (currentPage < ncm.pageCount - 1)
+        if (currentPage < (ncm.nonwriteablePageCount + writeablePageCount - 1))
         {
+            CheckSave();
             currentPage++;
+            
             GetPageInformation();
         }
     }
@@ -258,6 +299,7 @@ public class NotebookManager : MonoBehaviour
         }
         if (currentPage > 0)
         {
+            CheckSave();
             currentPage--;
             GetPageInformation();
         }
